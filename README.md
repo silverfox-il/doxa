@@ -48,7 +48,9 @@ slides:                              # 2–10 שקופיות, רק ב־mode: ren
 - או משנים ידנית ל־`approved: true` ב־`post.yaml` ועושים push.
 
 פוסט עם `approved: false` לא יתפרסם אף פעם. אם הסרת את התווית, זה **לא** מבטל את האישור. כדי לבטל, משנים ל־`approved: false` ב־`post.yaml`.
-אם משנים פוסט אחרי שאושר, השקופיות מתרנדרות מחדש וה־Issue מתעדכן, אבל האישור נשאר. חשוב לבדוק שוב.
+האישור קשור לתוכן. ברגע האישור המערכת שומרת טביעת אצבע (`approved_hash`) של הכיתוב, השקופיות, שעת הפרסום וקובצי ה־JPEG.
+אם משנים משהו אחרי האישור, הרינדור הבא מבטל את האישור, מסיר את התווית `approved` ומוסיף תגובה ב־Issue. כדי לאשר שוב, בודקים את הגרסה החדשה ומוסיפים את התווית מחדש.
+פוסט שהתוכן שלו השתנה מאז האישור לא יתפרסם.
 
 ## STATUS.md
 
@@ -94,7 +96,8 @@ issues). Publishing (M4) and token refresh/alerts (M5) are not built yet, so not
 | Add `queue/<id>/post.yaml` and push | owner | `render.yml` validates, renders `slides/*.jpg` (or checks prebuilt JPEGs), commits them and updates `STATUS.md` |
 | Review | GitHub | `render.yml` opens/refreshes the issue `Approve: <id>` with slides pinned to the commit SHA, the caption and `publish_at` |
 | Approve | owner | add the `approved` label (`approve.yml` writes `approved: true`) **or** set `approved: true` in `post.yaml` |
-| Publish | — | milestone 4 |
+| Edit after approval | owner | the next render sees a changed content hash (`approved_hash`), resets `approved`, removes the label and comments on the issue |
+| Publish | — | milestone 4 (only posts whose `approved_hash` still matches) |
 
 ### CLI
 
