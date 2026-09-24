@@ -4,6 +4,8 @@
 * ``doxa render [ID...]``   — render render-mode posts; validate prebuilt ones.
 * ``doxa changed BASE HEAD`` — print post ids touched between two commits.
 * ``doxa status``          — regenerate STATUS.md.
+* ``doxa open-issues ID...`` — open/refresh the approval issue for rendered posts.
+* ``doxa approve-sync``    — copy the issue's ``approved`` label into post.yaml.
 * ``doxa publish``         — milestone 4; registered as a stub that refuses to run.
 """
 
@@ -19,9 +21,11 @@ import click
 
 from . import slides, status
 from .queue import (
+    POST_ID_RE,
     RENDERABLE_STATUSES,
     TZ,
     Mode,
+    Post,
     QueueError,
     Status,
     dump_post,
@@ -101,6 +105,27 @@ def validate(ctx: click.Context) -> None:
     click.echo(f"✓ {count} post(s) valid" if count else "no posts in queue/")
 
 
+def _select(root: Path, post_ids: tuple[str, ...]) -> list[tuple[Path, Post]]:
+    """Load the named posts (all when empty); unknown ids are reported and skipped."""
+    queue_dir = _queue_dir(root)
+    if post_ids:
+        paths = []
+        for pid in post_ids:
+            path = queue_dir / pid / "post.yaml"
+            if not POST_ID_RE.match(pid):
+                _fail([f"not a post id: {pid!r}"])
+            if path.is_file():
+                paths.append(path)
+            else:
+                click.echo(f"- {pid}: no post.yaml, skipping")
+    else:
+        paths = iter_post_files(queue_dir)
+    try:
+        return [(p, load_post(p)) for p in paths]
+    except QueueError as e:
+        _fail([str(e)])
+
+
 @main.command("render")
 @click.argument("post_ids", nargs=-1)
 @click.pass_context
@@ -113,21 +138,8 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
     from . import render
 
     root: Path = ctx.obj["root"]
-    queue_dir = _queue_dir(root)
-    if post_ids:
-        paths = [queue_dir / pid / "post.yaml" for pid in post_ids]
-        for missing in (p for p in paths if not p.is_file()):
-            click.echo(f"- {missing.parent.name}: no post.yaml (deleted?), skipping")
-        paths = [p for p in paths if p.is_file()]
-    else:
-        paths = iter_post_files(queue_dir)
-
     done: list[str] = []
-    for path in paths:
-        try:
-            post = load_post(path)
-        except QueueError as e:
-            _fail([str(e)])
+    for path, post in _select(root, post_ids):
         if post.status not in RENDERABLE_STATUSES:
             click.echo(f"- {post.id}: status {post.status.value}, not re-rendering")
             continue
@@ -158,20 +170,24 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
 def changed(ctx: click.Context, base: str, head: str) -> None:
     """Print ids of posts touched between commits BASE and HEAD, one per line.
 
-    An all-zero BASE (first push of a branch) means "every post".
+    An all-zero or unknown BASE (first push, force push) means "every post".
     """
     root: Path = ctx.obj["root"]
+    all_ids = [p.parent.name for p in iter_post_files(_queue_dir(root))]
     if set(base) == {"0"}:
-        ids = [p.parent.name for p in iter_post_files(_queue_dir(root))]
+        ids = all_ids
     else:
-        out = subprocess.run(
+        proc = subprocess.run(
             ["git", "diff", "--name-only", base, head, "--", "queue/"],
             cwd=root,
             capture_output=True,
             text=True,
-            check=True,
-        ).stdout
-        ids = post_ids_from_paths(out.splitlines())
+        )
+        if proc.returncode != 0:
+            click.echo(f"git diff failed ({proc.stderr.strip()}); using every post", err=True)
+            ids = all_ids
+        else:
+            ids = post_ids_from_paths(proc.stdout.splitlines())
     for pid in ids:
         click.echo(pid)
 
@@ -182,6 +198,51 @@ def status_cmd(ctx: click.Context) -> None:
     """Regenerate STATUS.md."""
     out = status.write_status(ctx.obj["root"], _now())
     click.echo(f"✓ wrote {out.name}")
+
+
+@main.command("open-issues")
+@click.argument("post_ids", nargs=-1)
+@click.option("--sha", envvar="DOXA_SHA", required=True, help="Commit SHA to pin raw URLs to.")
+@click.pass_context
+def open_issues(ctx: click.Context, post_ids: tuple[str, ...], sha: str) -> None:
+    """Open or refresh the `Approve: <id>` issue for rendered POST_IDS."""
+    from . import approval, github
+
+    slug = github.repo_slug()
+    approval.ensure_approved_label()
+    for path, post in _select(ctx.obj["root"], post_ids):
+        if post.status != Status.rendered:
+            click.echo(f"- {post.id}: status {post.status.value}, no approval issue")
+            continue
+        n = len(slides.slide_files(path.parent / "slides"))
+        number, created = approval.upsert_approval_issue(post, slug, sha, n)
+        click.echo(f"✓ {post.id}: {'opened' if created else 'updated'} issue #{number}")
+
+
+@main.command("approve-sync")
+@click.argument("post_ids", nargs=-1)
+@click.option(
+    "--from-issue-title",
+    "issue_title",
+    default=None,
+    help="Take the post id from an approval issue title (as sent by approve.yml).",
+)
+@click.pass_context
+def approve_sync(ctx: click.Context, post_ids: tuple[str, ...], issue_title: str | None) -> None:
+    """Write `approved: true` for posts whose approval issue has the `approved` label."""
+    from . import approval
+
+    if issue_title is not None:
+        pid = approval.post_id_from_title(issue_title)
+        if pid is None:
+            _fail([f"not an approval issue title: {issue_title!r}"])
+        post_ids = (*post_ids, pid)
+    changed_ids = []
+    for path, post in _select(ctx.obj["root"], post_ids):
+        if approval.sync_label_to_yaml(post.id, path):
+            changed_ids.append(post.id)
+            click.echo(f"✓ {post.id}: approved via label")
+    click.echo(f"{len(changed_ids)} post(s) updated")
 
 
 @main.command()

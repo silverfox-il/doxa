@@ -85,3 +85,15 @@ def test_status_table_newest_first_and_next_scheduled(repo):
     assert "[link](https://ig/p/1)" in rows[2]
     assert "boom \\| bad line" in rows[0]
     assert "**Next scheduled:** `2026-09-26-b`" in text
+
+
+def test_changed_unknown_base_falls_back_to_every_post(repo):
+    prebuilt(repo, "2026-09-25-a")
+    result = run(repo, "changed", "deadbeef", "HEAD")  # tmp dir is not a git repo
+    assert result.output.split()[-1] == "2026-09-25-a"
+
+
+def test_render_rejects_path_like_ids(repo):
+    result = run(repo, "render", "../../etc")
+    assert result.exit_code == 1
+    assert "not a post id" in result.output
