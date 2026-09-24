@@ -5,8 +5,13 @@ A "post" is a directory under ``queue/<id>/`` containing ``post.yaml`` and a
 
 * Owner-authored: ``id``, ``publish_at``, ``approved``, ``mode``, ``caption``,
   ``slides``.
-* System-written (never edited by hand): ``status``, ``ig_media_id``,
-  ``permalink``, ``published_at``, ``error``.
+* System-written (never edited by hand): ``approved_hash``, ``status``,
+  ``ig_media_id``, ``permalink``, ``published_at``, ``error``.
+
+Approval is bound to content: ``approved_hash`` records :func:`content_hash`
+at approval time, and a post is publishable only while the two still match.
+Any edit after approval (caption, slides, schedule, slide JPEGs) breaks the
+match, and the next render resets ``approved`` to false.
 
 The pydantic models below are the single source of truth for the schema; the
 ``doxa validate`` command validates every ``post.yaml`` against them.
@@ -15,6 +20,8 @@ The pydantic models below are the single source of truth for the schema; the
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
+import json
 import re
 from enum import Enum
 from pathlib import Path
@@ -135,6 +142,7 @@ class Post(BaseModel):
     slides: list[Slide] = Field(default_factory=list)
 
     # --- system-written ---
+    approved_hash: str | None = None
     status: Status = Status.queued
     ig_media_id: str | None = None
     permalink: str | None = None
@@ -193,6 +201,41 @@ class Post(BaseModel):
         if now.tzinfo is None:
             raise ValueError("now must be timezone-aware")
         return self.publish_at_dt <= now
+
+
+def slide_files(slides_dir: Path) -> list[Path]:
+    """``<n>.jpg`` files in numeric order (``2.jpg`` before ``10.jpg``)."""
+    files = [f for f in slides_dir.glob("*.jpg") if f.stem.isdigit()]
+    return sorted(files, key=lambda f: int(f.stem))
+
+
+# Owner-authored fields that define what gets published. ``approved`` itself is
+# excluded (flipping it is not an edit), as are all system-written fields.
+_CONTENT_FIELDS = {"id", "publish_at", "mode", "caption", "slides"}
+
+
+def content_hash(post: Post, post_dir: Path) -> str:
+    """Fingerprint of everything that would be published for this post.
+
+    Covers the owner-authored fields (parsed, so YAML formatting and comments
+    don't matter) and the bytes of every slide JPEG in ``slides/``.
+    """
+    h = hashlib.sha256()
+    fields = post.model_dump(mode="json", include=_CONTENT_FIELDS)
+    h.update(json.dumps(fields, sort_keys=True, ensure_ascii=False).encode("utf-8"))
+    for f in slide_files(post_dir / "slides"):
+        h.update(f"|{f.name}|".encode())
+        h.update(hashlib.sha256(f.read_bytes()).digest())
+    return f"sha256:{h.hexdigest()}"
+
+
+def approval_is_current(post: Post, post_dir: Path) -> bool:
+    """True when the post is approved *and* unchanged since approval."""
+    return (
+        post.approved
+        and post.approved_hash is not None
+        and post.approved_hash == content_hash(post, post_dir)
+    )
 
 
 class QueueError(Exception):
@@ -276,14 +319,16 @@ def select_publishable(
 ) -> tuple[Path, Post] | None:
     """Pick the single post to publish this run, or ``None``.
 
-    Rules (see spec §5): ``approved: true``, status in {rendered,
-    failed-retryable}, and ``publish_at <= now``. If several qualify, the one
-    with the earliest ``publish_at`` wins (oldest debt first).
+    Rules (see spec §5): approved with an unchanged content hash, status in
+    {rendered, failed-retryable}, and ``publish_at <= now``. If several
+    qualify, the one with the earliest ``publish_at`` wins (oldest debt first).
     """
     eligible = [
         (path, post)
         for path, post in posts
-        if post.approved and post.status in PUBLISHABLE_STATUSES and post.is_due(now)
+        if post.status in PUBLISHABLE_STATUSES
+        and post.is_due(now)
+        and approval_is_current(post, path.parent)
     ]
     if not eligible:
         return None

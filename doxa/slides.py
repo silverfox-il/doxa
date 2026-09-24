@@ -10,18 +10,14 @@ from pathlib import Path
 
 from PIL import Image
 
-from .queue import MAX_SLIDES, MIN_SLIDES
+from .queue import MAX_SLIDES, MIN_SLIDES, slide_files
+
+__all__ = ["slide_files", "validate_slides"]
 
 SLIDE_W = 1080
 SLIDE_H = 1350
 # Instagram rejects images above 8 MB (Meta docs, POST /<IG_ID>/media).
 MAX_BYTES = 8 * 1024 * 1024
-
-
-def slide_files(slides_dir: Path) -> list[Path]:
-    """``*.jpg`` files in numeric order (``2.jpg`` before ``10.jpg``)."""
-    files = [f for f in slides_dir.glob("*.jpg") if f.stem.isdigit()]
-    return sorted(files, key=lambda f: int(f.stem))
 
 
 def validate_slides(slides_dir: Path) -> list[str]:

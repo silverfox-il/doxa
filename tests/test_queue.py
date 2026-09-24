@@ -12,6 +12,8 @@ from doxa.queue import (
     TZ,
     Post,
     Status,
+    approval_is_current,
+    content_hash,
     dump_post,
     load_post,
     parse_local,
@@ -137,7 +139,12 @@ NOW = dt.datetime(2026, 9, 25, 9, 0, tzinfo=TZ)
 
 
 def _pp(post_id: str, **kw) -> tuple[Path, Post]:
-    return Path(f"queue/{post_id}/post.yaml"), Post.model_validate(render_post_data(post_id, **kw))
+    """(path, post) with a valid approval hash whenever ``approved=True``."""
+    path = Path(f"queue/{post_id}/post.yaml")
+    p = Post.model_validate(render_post_data(post_id, **kw))
+    if p.approved:
+        p.approved_hash = content_hash(p, path.parent)
+    return path, p
 
 
 def test_select_requires_approval_status_and_due_time():
@@ -201,3 +208,75 @@ def test_post_ids_from_paths():
         "queue/README.md",
     ]
     assert post_ids_from_paths(paths) == ["2026-09-25-a", "2026-09-26-b"]
+
+
+# --- approval hash ----------------------------------------------------------
+
+
+def _approved_on_disk(repo, **kw):
+    """Approved post written to disk with 2 slide JPEGs and a matching hash."""
+    from .conftest import make_jpeg
+
+    path = write_post(repo, render_post_data(approved=True, status="rendered", **kw))
+    for i in (1, 2):
+        make_jpeg(path.parent / "slides" / f"{i}.jpg", color=(10 * i, 20, 30))
+    p = load_post(path)
+    p.approved_hash = content_hash(p, path.parent)
+    dump_post(p, path)
+    return path
+
+
+def test_hash_ignores_yaml_formatting_and_approval_flag(repo):
+    path = _approved_on_disk(repo)
+    p = load_post(path)
+    h = content_hash(p, path.parent)
+    path.write_text("# a comment\n" + path.read_text(encoding="utf-8"), encoding="utf-8")
+    assert content_hash(load_post(path), path.parent) == h
+    assert content_hash(p.model_copy(update={"approved": False}), path.parent) == h
+    assert approval_is_current(p, path.parent)
+
+
+@pytest.mark.parametrize(
+    "edit",
+    [
+        {"caption": "כיתוב אחר"},
+        {"publish_at": "2026-09-25 08:00"},
+        {"mode": "prebuilt", "slides": []},
+    ],
+)
+def test_hash_changes_on_any_owner_edit(repo, edit):
+    path = _approved_on_disk(repo)
+    p = load_post(path)
+    edited = Post.model_validate({**p.model_dump(mode="json"), **edit})
+    assert content_hash(edited, path.parent) != p.approved_hash
+    assert not approval_is_current(edited, path.parent)
+
+
+def test_hash_changes_when_slide_text_changes(repo):
+    path = _approved_on_disk(repo)
+    p = load_post(path)
+    p.slides[0].title = "כותרת חדשה"
+    assert not approval_is_current(p, path.parent)
+
+
+def test_hash_changes_when_slide_jpegs_change(repo):
+    from .conftest import make_jpeg
+
+    path = _approved_on_disk(repo)
+    slides = path.parent / "slides"
+    make_jpeg(slides / "2.jpg", color=(200, 0, 0))
+    assert not approval_is_current(load_post(path), path.parent)
+
+    path = _approved_on_disk(repo)  # fresh approval
+    make_jpeg(slides / "3.jpg")
+    assert not approval_is_current(load_post(path), path.parent)
+
+
+def test_approved_without_hash_or_with_stale_hash_is_not_publishable(repo):
+    path = _approved_on_disk(repo)
+    p = load_post(path)
+    assert select_publishable([(path, p)], NOW) is not None
+    no_hash = p.model_copy(update={"approved_hash": None})
+    assert select_publishable([(path, no_hash)], NOW) is None
+    stale = p.model_copy(update={"caption": "שונה אחרי אישור"})
+    assert select_publishable([(path, stale)], NOW) is None
