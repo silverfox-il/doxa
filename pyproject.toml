@@ -1,0 +1,40 @@
+[project]
+name = "doxa"
+version = "0.1.0"
+description = "Instagram carousel publisher for @the_silver_fox_men — a small, boring, bulletproof git-based queue."
+requires-python = ">=3.12"
+dependencies = [
+    "click==8.1.7",
+    "pydantic==2.9.2",
+    "pyyaml==6.0.2",
+    "requests==2.32.3",
+    "playwright==1.47.0",
+    "pillow==10.4.0",
+    "tzdata==2024.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "ruff==0.6.9",
+]
+
+[project.scripts]
+doxa = "doxa.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["doxa*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

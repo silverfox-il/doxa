@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Test output (golden-test diffs, scratch renders)
+tests/_out/
+
+# Secrets — never commit
+.env
+.env.*
+*.token
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
