@@ -135,7 +135,7 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
     Prebuilt posts are only validated. Posts already publishing, published or
     failed are never touched, so a re-render can never make them publishable.
     """
-    from . import render
+    from . import approval, render
 
     root: Path = ctx.obj["root"]
     done: list[str] = []
@@ -153,8 +153,14 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
         problems = slides.validate_slides(post_dir / "slides")
         if problems:
             _fail([f"{post.id}: {p}" for p in problems])
-        if post.status != Status.rendered:
-            post.status = Status.rendered
+        before = post.model_copy()
+        post.status = Status.rendered
+        outcome = approval.reconcile(post, post_dir)
+        if outcome == "reset":
+            click.echo(f"! {post.id}: changed after approval, approval reset")
+        elif outcome == "stamped":
+            click.echo(f"✓ {post.id}: approved in post.yaml, content hash recorded")
+        if post != before:
             dump_post(post, path)
         done.append(post.id)
         click.echo(f"✓ {post.id} ready ({post.mode.value})")
@@ -215,7 +221,7 @@ def open_issues(ctx: click.Context, post_ids: tuple[str, ...], sha: str) -> None
             click.echo(f"- {post.id}: status {post.status.value}, no approval issue")
             continue
         n = len(slides.slide_files(path.parent / "slides"))
-        number, created = approval.upsert_approval_issue(post, slug, sha, n)
+        number, created = approval.upsert_approval_issue(post, path.parent, slug, sha, n)
         click.echo(f"✓ {post.id}: {'opened' if created else 'updated'} issue #{number}")
 
 

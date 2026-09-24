@@ -85,6 +85,8 @@ def test_status_table_newest_first_and_next_scheduled(repo):
     assert "[link](https://ig/p/1)" in rows[2]
     assert "boom \\| bad line" in rows[0]
     assert "**Next scheduled:** `2026-09-26-b`" in text
+    # 2026-09-26-b is approved in YAML but has no approval hash yet.
+    assert "| ⚠️ stale |" in rows[1]
 
 
 def test_changed_unknown_base_falls_back_to_every_post(repo):

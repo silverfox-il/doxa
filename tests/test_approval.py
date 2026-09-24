@@ -9,7 +9,7 @@ from click.testing import CliRunner
 
 from doxa import approval, github
 from doxa.cli import main
-from doxa.queue import Post, load_post
+from doxa.queue import Post, approval_is_current, content_hash, dump_post, load_post
 
 from .conftest import make_jpeg, render_post_data, write_post
 
@@ -42,15 +42,24 @@ class FakeGh:
                     "title": opts["--title"],
                     "body": opts["--body"],
                     "labels": set(),
+                    "comments": [],
                     "state": "open",
                 }
                 return f"https://github.com/{SLUG}/issues/{number}\n"
+            case ["issue", "edit"] if args[3] == "--remove-label":
+                self.issues[int(args[2])]["labels"].discard(args[4])
+                return ""
             case ["issue", "edit"]:
                 self.issues[int(args[2])]["body"] = args[4]
                 return ""
             case ["issue", "view"]:
-                names = self.issues[int(args[2])]["labels"]
-                return json.dumps({"labels": [{"name": n} for n in sorted(names)]})
+                issue = self.issues[int(args[2])]
+                if args[-1] == "body":
+                    return json.dumps({"body": issue["body"]})
+                return json.dumps({"labels": [{"name": n} for n in sorted(issue["labels"])]})
+            case ["issue", "comment"]:
+                self.issues[int(args[2])]["comments"].append(args[4])
+                return ""
             case ["label", "create"]:
                 self.labels.add(args[2])
                 return ""
@@ -81,9 +90,9 @@ def run(root, *args):
 # --- body -------------------------------------------------------------------
 
 
-def test_body_has_pinned_slides_caption_and_schedule():
+def test_body_has_pinned_slides_caption_and_schedule(tmp_path):
     post = Post.model_validate(render_post_data(caption="שלום ```x``` עולם"))
-    body = approval.build_issue_body(post, SLUG, SHA, 2)
+    body = approval.build_issue_body(post, tmp_path, SLUG, SHA, 2)
     for n in (1, 2):
         url = f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-test/slides/{n}.jpg"
         assert url in body
@@ -94,9 +103,13 @@ def test_body_has_pinned_slides_caption_and_schedule():
     assert "````\nשלום ```x``` עולם\n````" in body
 
 
-def test_body_shows_approved_state():
+def test_body_shows_approved_and_stale_states(tmp_path):
     post = Post.model_validate(render_post_data(approved=True))
-    assert approval.build_issue_body(post, SLUG, SHA, 2).startswith("✅ **Approved**")
+    post.approved_hash = content_hash(post, tmp_path)
+    assert approval.build_issue_body(post, tmp_path, SLUG, SHA, 2).startswith("✅ **Approved**")
+    post.caption = "שונה"
+    stale = approval.build_issue_body(post, tmp_path, SLUG, SHA, 2)
+    assert stale.startswith("⚠️ **Approval is stale**")
 
 
 @pytest.mark.parametrize(
@@ -177,7 +190,9 @@ def test_label_sync_preserves_everything_else(repo, gh):
     gh.issues[1]["labels"].add("approved")
     run(repo, "approve-sync")
     after = load_post(path)
-    assert after.model_copy(update={"approved": False}) == before
+    assert after.approved_hash == content_hash(after, path.parent)
+    assert approval_is_current(after, path.parent)
+    assert after.model_copy(update={"approved": False, "approved_hash": None}) == before
 
 
 def test_other_labels_do_not_approve(repo, gh):
@@ -202,3 +217,93 @@ def test_repo_slug_from_remote(monkeypatch):
 
     monkeypatch.setattr(github.subprocess, "run", lambda *a, **k: Done())
     assert github.repo_slug() == "silverfox-il/doxa"
+
+
+# --- approval reset ---------------------------------------------------------
+
+
+def _approve_via_label(repo, gh, path):
+    run(repo, "open-issues", "--sha", SHA)
+    gh.issues[1]["labels"].add("approved")
+    run(repo, "approve-sync")
+    run(repo, "open-issues", "--sha", SHA)
+    assert gh.issues[1]["body"].startswith("✅ **Approved**")
+    assert approval_is_current(load_post(path), path.parent)
+
+
+def test_edit_after_label_approval_resets_and_comments(repo, gh):
+    path = rendered_post(repo)
+    _approve_via_label(repo, gh, path)
+
+    # Owner edits the caption after approving, then pushes -> render.yml.
+    post = load_post(path)
+    post.caption = "כיתוב חדש אחרי האישור"
+    dump_post(post, path)
+    rendered = run(repo, "render", "2026-09-25-test")
+    assert "approval reset" in rendered.output
+    after = load_post(path)
+    assert after.approved is False and after.approved_hash is None
+
+    run(repo, "open-issues", "--sha", SHA)
+    assert gh.issues[1]["body"].startswith("⏳ **Waiting for approval**")
+    assert gh.issues[1]["comments"] == [approval.RESET_COMMENT]
+    assert "approved" not in gh.issues[1]["labels"]
+
+    # A label sync now finds no label, so nothing is re-approved by accident.
+    assert "0 post(s) updated" in run(repo, "approve-sync").output
+    assert load_post(path).approved is False
+
+    # Refreshing again does not repeat the comment.
+    run(repo, "open-issues", "--sha", SHA)
+    assert len(gh.issues[1]["comments"]) == 1
+
+
+def test_relabel_after_reset_approves_new_content(repo, gh):
+    path = rendered_post(repo)
+    _approve_via_label(repo, gh, path)
+    make_jpeg(path.parent / "slides" / "2.jpg", color=(200, 10, 10))  # replaced slide
+    run(repo, "render")
+    run(repo, "open-issues", "--sha", SHA)
+    assert load_post(path).approved is False
+    gh.issues[1]["labels"].add("approved")  # owner reviews and labels again
+    result = run(repo, "approve-sync", "2026-09-25-test")
+    assert "approved via label" in result.output
+    assert approval_is_current(load_post(path), path.parent)
+
+
+def test_unchanged_rerender_keeps_approval(repo, gh):
+    path = rendered_post(repo)
+    _approve_via_label(repo, gh, path)
+    before = path.read_text(encoding="utf-8")
+    result = run(repo, "render")
+    assert result.exit_code == 0
+    assert path.read_text(encoding="utf-8") == before
+
+
+def test_manual_yaml_approval_is_stamped_on_render(repo):
+    path = rendered_post(repo, approved=True)
+    assert load_post(path).approved_hash is None
+    result = run(repo, "render")
+    assert "content hash recorded" in result.output
+    assert approval_is_current(load_post(path), path.parent)
+
+
+def test_unapproved_post_drops_leftover_hash(repo):
+    path = rendered_post(repo, approved_hash="sha256:old")
+    run(repo, "render")
+    assert load_post(path).approved_hash is None
+
+
+@pytest.mark.parametrize(
+    "outcome,kw",
+    [
+        ("stamped", {"approved": True}),
+        ("reset", {"approved": True, "approved_hash": "sha256:old"}),
+        ("cleared", {"approved": False, "approved_hash": "sha256:old"}),
+        (None, {"approved": False}),
+    ],
+)
+def test_reconcile_outcomes(tmp_path, outcome, kw):
+    post = Post.model_validate(render_post_data(**kw))
+    assert approval.reconcile(post, tmp_path) == outcome
+    assert (post.approved_hash is not None) == post.approved

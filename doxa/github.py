@@ -68,9 +68,22 @@ def update_issue_body(number: int, body: str) -> None:
     _gh(["issue", "edit", str(number), "--body", body])
 
 
+def issue_body(number: int) -> str:
+    out = _gh(["issue", "view", str(number), "--json", "body"])
+    return json.loads(out or "{}").get("body", "")
+
+
+def comment_issue(number: int, body: str) -> None:
+    _gh(["issue", "comment", str(number), "--body", body])
+
+
 def issue_labels(number: int) -> set[str]:
     out = _gh(["issue", "view", str(number), "--json", "labels"])
     return {lbl["name"] for lbl in json.loads(out or "{}").get("labels", [])}
+
+
+def remove_label(number: int, label: str) -> None:
+    _gh(["issue", "edit", str(number), "--remove-label", label])
 
 
 def ensure_label(name: str, color: str, description: str) -> None:
