@@ -1,24 +1,50 @@
 """``doxa`` command-line interface.
 
-* ``doxa validate`` — validate every post.yaml (and any committed slide JPEGs).
-* ``doxa publish``  — milestone 4; registered as a stub that refuses to run.
+* ``doxa validate``        — validate every post.yaml (and any committed slide JPEGs).
+* ``doxa render [ID...]``   — render render-mode posts; validate prebuilt ones.
+* ``doxa changed BASE HEAD`` — print post ids touched between two commits.
+* ``doxa status``          — regenerate STATUS.md.
+* ``doxa publish``         — milestone 4; registered as a stub that refuses to run.
 """
 
 from __future__ import annotations
 
+import datetime as dt
+import subprocess
 import sys
 from pathlib import Path
+from typing import NoReturn
 
 import click
 
-from . import slides
-from .queue import Mode, QueueError, Status, iter_post_files, load_post
+from . import slides, status
+from .queue import (
+    RENDERABLE_STATUSES,
+    TZ,
+    Mode,
+    QueueError,
+    Status,
+    dump_post,
+    iter_post_files,
+    load_post,
+    post_ids_from_paths,
+)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def _queue_dir(root: Path) -> Path:
     return root / "queue"
+
+
+def _now() -> dt.datetime:
+    return dt.datetime.now(TZ)
+
+
+def _fail(lines: list[str]) -> NoReturn:
+    for line in lines:
+        click.echo(f"✗ {line}", err=True)
+    sys.exit(1)
 
 
 def validate_queue(root: Path) -> tuple[int, list[str]]:
@@ -73,6 +99,89 @@ def validate(ctx: click.Context) -> None:
         click.echo(f"\n{len(errors)} problem(s) in {count} post(s)", err=True)
         sys.exit(1)
     click.echo(f"✓ {count} post(s) valid" if count else "no posts in queue/")
+
+
+@main.command("render")
+@click.argument("post_ids", nargs=-1)
+@click.pass_context
+def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
+    """Render POST_IDS (default: every queued/rendered post) to slides/*.jpg.
+
+    Prebuilt posts are only validated. Posts already publishing, published or
+    failed are never touched, so a re-render can never make them publishable.
+    """
+    from . import render
+
+    root: Path = ctx.obj["root"]
+    queue_dir = _queue_dir(root)
+    if post_ids:
+        paths = [queue_dir / pid / "post.yaml" for pid in post_ids]
+        for missing in (p for p in paths if not p.is_file()):
+            click.echo(f"- {missing.parent.name}: no post.yaml (deleted?), skipping")
+        paths = [p for p in paths if p.is_file()]
+    else:
+        paths = iter_post_files(queue_dir)
+
+    done: list[str] = []
+    for path in paths:
+        try:
+            post = load_post(path)
+        except QueueError as e:
+            _fail([str(e)])
+        if post.status not in RENDERABLE_STATUSES:
+            click.echo(f"- {post.id}: status {post.status.value}, not re-rendering")
+            continue
+        post_dir = path.parent
+        if post.mode == Mode.render:
+            click.echo(f"rendering {post.id} ({len(post.slides)} slides)…")
+            try:
+                render.render_post(post, post_dir, root=root)
+            except render.RenderError as e:
+                _fail([f"{post.id}: {e}"])
+        problems = slides.validate_slides(post_dir / "slides")
+        if problems:
+            _fail([f"{post.id}: {p}" for p in problems])
+        if post.status != Status.rendered:
+            post.status = Status.rendered
+            dump_post(post, path)
+        done.append(post.id)
+        click.echo(f"✓ {post.id} ready ({post.mode.value})")
+
+    status.write_status(root, _now())
+    click.echo(f"{len(done)} post(s) rendered/validated")
+
+
+@main.command()
+@click.argument("base")
+@click.argument("head")
+@click.pass_context
+def changed(ctx: click.Context, base: str, head: str) -> None:
+    """Print ids of posts touched between commits BASE and HEAD, one per line.
+
+    An all-zero BASE (first push of a branch) means "every post".
+    """
+    root: Path = ctx.obj["root"]
+    if set(base) == {"0"}:
+        ids = [p.parent.name for p in iter_post_files(_queue_dir(root))]
+    else:
+        out = subprocess.run(
+            ["git", "diff", "--name-only", base, head, "--", "queue/"],
+            cwd=root,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout
+        ids = post_ids_from_paths(out.splitlines())
+    for pid in ids:
+        click.echo(pid)
+
+
+@main.command("status")
+@click.pass_context
+def status_cmd(ctx: click.Context) -> None:
+    """Regenerate STATUS.md."""
+    out = status.write_status(ctx.obj["root"], _now())
+    click.echo(f"✓ wrote {out.name}")
 
 
 @main.command()
