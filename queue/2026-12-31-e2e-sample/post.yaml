@@ -1,0 +1,17 @@
+id: 2026-12-31-e2e-sample
+publish_at: "2026-12-31 07:00"
+approved: false
+mode: render
+caption: |
+  בדיקת מערכת — פוסט זמני, יימחק. בגיל 50 אתה לא גמור. 🦊
+slides:
+  - background: assets/backgrounds/e2e-sample.jpg
+    kicker: "בדיקה"
+    title: "בגיל 50.\nאתה לא גמור"
+    accent: "אתה בשיא"
+    body: "רק שכחו להגיד לך"
+    layout: bottom
+  - background: assets/backgrounds/e2e-sample.jpg
+    title: "25: הכללים"
+    layout: list
+    items: ["גוף", "ביטחון", "דייטינג שעובד היום"]
