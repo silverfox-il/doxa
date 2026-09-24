@@ -1,0 +1,52 @@
+name: goldens
+
+# Re-render the renderer's golden PNGs on ubuntu (the CI reference platform).
+# Trigger: commit an empty tests/golden/REGENERATE file, or run manually.
+# Review the resulting PNG diff on GitHub before trusting it.
+
+on:
+  push:
+    branches: [main]
+    paths: [tests/golden/REGENERATE]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: doxa-goldens
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: |
+          pip install -e ".[dev]"
+          python -m playwright install --with-deps chromium
+
+      - name: Render goldens
+        run: python -m tests.golden.gen
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -q --ignore-unmatch tests/golden/REGENERATE
+          git add tests/golden/*.png
+          if git diff --cached --quiet; then
+            echo "goldens unchanged"
+            exit 0
+          fi
+          git commit -m "test: regenerate renderer goldens on ubuntu"
+          git push
