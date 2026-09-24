@@ -1,0 +1,96 @@
+name: render
+
+# Owner pushes a post under queue/ -> render its slides (or validate prebuilt
+# JPEGs), commit them, then open/refresh the "Approve: <id>" issue.
+
+on:
+  push:
+    branches: [main]
+    paths: ["queue/**"]
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: "Post id to (re)render. Empty = every queued/rendered post."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+# Shared with approve.yml: one writer to queue/ at a time.
+concurrency:
+  group: doxa-queue
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: |
+          pip install -e .
+          python -m playwright install --with-deps chromium
+
+      - name: Pick posts
+        id: pick
+        env:
+          BEFORE: ${{ github.event.before }}
+          INPUT_POST_ID: ${{ inputs.post_id }}
+        run: |
+          if [ -n "$INPUT_POST_ID" ]; then
+            ids="$INPUT_POST_ID"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            ids="$(doxa changed 0000000000000000000000000000000000000000 HEAD | xargs)"
+          else
+            ids="$(doxa changed "$BEFORE" "$GITHUB_SHA" | xargs)"
+          fi
+          echo "posts: ${ids:-none}"
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+
+      - name: Validate queue
+        run: doxa validate
+
+      - name: Render
+        if: steps.pick.outputs.ids != ''
+        env:
+          IDS: ${{ steps.pick.outputs.ids }}
+        # $IDS is intentionally unquoted: one argument per post id.
+        run: doxa render $IDS
+
+      - name: Commit slides and STATUS.md
+        id: commit
+        if: steps.pick.outputs.ids != ''
+        env:
+          IDS: ${{ steps.pick.outputs.ids }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add queue STATUS.md
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "render: $IDS"
+            git pull --rebase --quiet origin main
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Open or refresh approval issues
+        if: steps.pick.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IDS: ${{ steps.pick.outputs.ids }}
+          DOXA_SHA: ${{ steps.commit.outputs.sha }}
+        run: doxa open-issues $IDS
