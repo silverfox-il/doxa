@@ -3,7 +3,7 @@ publish_at: 2026-12-31 07:00
 approved: true
 mode: render
 caption: |
-  בדיקת מערכת — פוסט זמני, יימחק. בגיל 50 אתה לא גמור. 🦊
+  בדיקת מערכת — פוסט זמני, יימחק (נערך אחרי אישור). בגיל 50 אתה לא גמור. 🦊
 slides:
 - background: assets/backgrounds/e2e-sample.jpg
   kicker: בדיקה
