@@ -1,6 +1,6 @@
 id: 2026-12-31-e2e-sample
 publish_at: 2026-12-31 07:00
-approved: false
+approved: true
 mode: render
 caption: |
   בדיקת מערכת — פוסט זמני, יימחק. בגיל 50 אתה לא גמור. 🦊
@@ -24,7 +24,7 @@ slides:
   - גוף
   - ביטחון
   - דייטינג שעובד היום
-approved_hash: null
+approved_hash: sha256:b4c72aadafd897a2e2c156f0e2028350ee1a05130b164ba8446666932c5d85a7
 status: rendered
 ig_media_id: null
 permalink: null

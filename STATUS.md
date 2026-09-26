@@ -7,4 +7,4 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-12-31 | `2026-12-31-e2e-sample` | — | rendered | — | — |
+| 2026-12-31 | `2026-12-31-e2e-sample` | ✅ | rendered | — | — |
