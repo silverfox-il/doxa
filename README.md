@@ -78,6 +78,7 @@ pytest -q && ruff check .
 
 **מתג בטיחות:** ריצות ה־cron מפרסמות באמת רק אם משתנה ה־repo ‏`DOXA_LIVE` שווה `true`.
 המשתנה נמצא ב־Settings ← Secrets and variables ← Actions ← Variables. עד שמגדירים אותו, כל ריצה אוטומטית היא הרצה יבשה.
+**מדיניות:** מגדירים `DOXA_LIVE=true` רק אחרי שהפרסום הידני הראשון הצליח. כדי לעצור פרסום אוטומטי בכל רגע, מוחקים את המשתנה או משנים אותו ל־`false`.
 
 **הרצה יבשה (dry run):** נכנסים ל־Actions ← publish ← Run workflow. משאירים את `dry_run` מסומן, ואם רוצים ממלאים `post_id`.
 ההרצה בודקת את כל מה שאפשר: אישור, שעה, קובצי JPEG, שכל כתובת תמונה מחזירה 200, ומכסת פרסום. היא מדפיסה מה הייתה שולחת לאינסטגרם, אבל לא שולחת כלום ולא משנה שום קובץ.
@@ -101,6 +102,9 @@ Actions. Full spec: [`DOXA_SPEC.md`](DOXA_SPEC.md).
 **Status:** milestones 1–4 are done (queue + `doxa validate`, Hebrew RTL renderer, approval
 issues, publisher). Scheduled publishing stays in dry-run mode until the repo variable
 `DOXA_LIVE` is `true`. Token refresh and alerts (M5) are not built yet.
+
+**`DOXA_LIVE` policy:** set it to `true` only after the first manual live publish has succeeded.
+Deleting the variable (or setting it to anything else) stops automatic publishing at once.
 
 ### Workflow
 
