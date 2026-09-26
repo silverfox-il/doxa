@@ -68,6 +68,10 @@ def update_issue_body(number: int, body: str) -> None:
     _gh(["issue", "edit", str(number), "--body", body])
 
 
+def close_issue(number: int, comment: str) -> None:
+    _gh(["issue", "close", str(number), "--comment", comment])
+
+
 def issue_body(number: int) -> str:
     out = _gh(["issue", "view", str(number), "--json", "body"])
     return json.loads(out or "{}").get("body", "")

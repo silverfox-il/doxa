@@ -6,7 +6,8 @@
 * ``doxa status``          — regenerate STATUS.md.
 * ``doxa open-issues ID...`` — open/refresh the approval issue for rendered posts.
 * ``doxa approve-sync``    — copy the issue's ``approved`` label into post.yaml.
-* ``doxa publish``         — milestone 4; registered as a stub that refuses to run.
+* ``doxa publish``         — publish one approved, due post (dry run unless ``--live``).
+* ``doxa check``           — verify the Instagram token: prints username, user_id, quota.
 """
 
 from __future__ import annotations
@@ -251,11 +252,76 @@ def approve_sync(ctx: click.Context, post_ids: tuple[str, ...], issue_title: str
     click.echo(f"{len(changed_ids)} post(s) updated")
 
 
+def _client():
+    """Instagram client from IG_ACCESS_TOKEN / IG_USER_ID. Never echoes either value."""
+    import os
+
+    from .instagram import Client
+
+    token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+    user_id = os.environ.get("IG_USER_ID", "").strip()
+    missing = [n for n, v in (("IG_ACCESS_TOKEN", token), ("IG_USER_ID", user_id)) if not v]
+    if missing:
+        _fail([f"{', '.join(missing)} not set (repo secrets in Actions, env vars locally)"])
+    return Client(access_token=token, ig_user_id=user_id)
+
+
+def _head_sha(root: Path) -> str:
+    return subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, check=True
+    ).stdout.strip()
+
+
 @main.command()
-def publish() -> None:
-    """(milestone 4) Publish one due, approved post. Not implemented yet."""
-    click.echo("publish is implemented in milestone 4", err=True)
-    sys.exit(2)
+@click.option(
+    "--dry-run/--live",
+    default=True,
+    help="Dry run (default) makes no POST to Meta and commits nothing. --live publishes.",
+)
+@click.option("--post-id", default=None, help="Publish this post instead of the oldest due one.")
+@click.option("--sha", envvar="DOXA_SHA", default=None, help="Commit to pin image URLs to.")
+@click.pass_context
+def publish(ctx: click.Context, dry_run: bool, post_id: str | None, sha: str | None) -> None:
+    """Publish at most one approved, due post to Instagram."""
+    from . import github
+    from .publish import GitCommitter, Publisher
+
+    root: Path = ctx.obj["root"]
+    if post_id and not POST_ID_RE.match(post_id):
+        _fail([f"not a post id: {post_id!r}"])
+    publisher = Publisher(
+        root=root,
+        client=_client(),
+        slug=github.repo_slug(),
+        sha=sha or _head_sha(root),
+        committer=GitCommitter(root),
+        log=click.echo,
+    )
+    sys.exit(publisher.run(dry_run=dry_run, post_id=post_id))
+
+
+@main.command()
+@click.option("--expect-username", default=None, help="Fail unless the token belongs to this.")
+def check(expect_username: str | None) -> None:
+    """Check the Instagram token: print ONLY username, user_id and quota."""
+    from .instagram import InstagramError
+
+    client = _client()
+    try:
+        me = client.me()
+        quota = client.publishing_quota()
+    except InstagramError as e:
+        _fail([str(e)])
+    click.echo(f"username: {me['username']}")
+    click.echo(f"user_id:  {me['user_id']}")
+    click.echo(f"quota:    {quota}")
+    problems = []
+    if me["user_id"] != client.ig_user_id:
+        problems.append("IG_USER_ID does not match the account the token belongs to")
+    if expect_username and me["username"] != expect_username:
+        problems.append(f"expected username {expect_username}")
+    if problems:
+        _fail(problems)
 
 
 if __name__ == "__main__":

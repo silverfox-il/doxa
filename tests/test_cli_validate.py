@@ -72,5 +72,9 @@ def test_prebuilt_rejects_png_named_jpg_and_too_few(repo):
     assert "1 slides, need 2-10" in result.output
 
 
-def test_publish_is_a_stub(repo):
-    assert run(repo, "publish").exit_code == 2
+def test_publish_without_secrets_refuses(repo, monkeypatch):
+    monkeypatch.delenv("IG_ACCESS_TOKEN", raising=False)
+    monkeypatch.delenv("IG_USER_ID", raising=False)
+    result = run(repo, "publish")
+    assert result.exit_code == 1
+    assert "IG_ACCESS_TOKEN, IG_USER_ID not set" in result.output
