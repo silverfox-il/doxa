@@ -152,20 +152,29 @@ class Client:
             raise InstagramError(f"unexpected content_publishing_limit response: {out}") from None
 
     # --- carousel publish flow (spec §1) --------------------------------------
+    # Request bodies are built by these static methods so a dry run can log
+    # exactly what a live run sends.
+
+    @staticmethod
+    def carousel_item_body(image_url: str) -> dict[str, Any]:
+        return {"image_url": image_url, "is_carousel_item": True}
+
+    @staticmethod
+    def carousel_body(children: list[str], caption: str) -> dict[str, Any]:
+        return {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption}
+
+    @staticmethod
+    def publish_body(creation_id: str) -> dict[str, Any]:
+        return {"creation_id": creation_id}
 
     def create_carousel_item(self, image_url: str) -> str:
         """Child container for one slide. Returns container id."""
-        out = self._post(
-            f"/{self.ig_user_id}/media", {"image_url": image_url, "is_carousel_item": True}
-        )
+        out = self._post(f"/{self.ig_user_id}/media", self.carousel_item_body(image_url))
         return str(out["id"])
 
     def create_carousel_container(self, children: list[str], caption: str) -> str:
         """Parent CAROUSEL container. Returns container id."""
-        out = self._post(
-            f"/{self.ig_user_id}/media",
-            {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption},
-        )
+        out = self._post(f"/{self.ig_user_id}/media", self.carousel_body(children, caption))
         return str(out["id"])
 
     def container_status(self, container_id: str) -> str:
@@ -196,7 +205,7 @@ class Client:
 
     def publish(self, creation_id: str) -> str:
         """Publish a FINISHED container. Returns the new media id."""
-        out = self._post(f"/{self.ig_user_id}/media_publish", {"creation_id": creation_id})
+        out = self._post(f"/{self.ig_user_id}/media_publish", self.publish_body(creation_id))
         return str(out["id"])
 
     def get_media(self, media_id: str) -> dict[str, Any]:

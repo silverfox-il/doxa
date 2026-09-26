@@ -159,8 +159,16 @@ def test_dry_run_reads_everything_sends_nothing(repo, gh_calls):
     ]
     text = "\n".join(logs)
     assert "DRY RUN" in text
-    assert text.count("would POST /17841400000000000/media  image_url=") == 3
-    assert "media_type=CAROUSEL" in text and "media_publish" in text
+    base = "https://graph.instagram.com/v26.0/17841400000000000"
+    assert text.count(f"would POST {base}/media  (child") == 3
+    url1 = f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-post/slides/1.jpg"
+    assert f'{{"image_url": "{url1}", "is_carousel_item": true}}' in text
+    assert (
+        '{"media_type": "CAROUSEL", "children": "<child-1-id>,<child-2-id>,<child-3-id>", '
+        '"caption": "שורה ראשונה\\nשורה שנייה #סילברפוקס"}'
+    ) in text
+    assert f"would POST {base}/media_publish" in text
+    assert '{"creation_id": "<carousel-id>"}' in text
     assert "a live run would publish" in text
 
 

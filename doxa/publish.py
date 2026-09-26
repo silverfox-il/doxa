@@ -24,6 +24,7 @@ commits nothing and touches no issue.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import subprocess
 import time
 from collections.abc import Callable
@@ -35,6 +36,7 @@ import requests
 
 from . import approval, github, slides, status
 from .instagram import (
+    API_VERSION,
     Client,
     InstagramError,
     InstagramRetryableError,
@@ -244,17 +246,27 @@ class Publisher:
         return self._publish(post, path, urls, str(quota))
 
     def _log_plan(self, post: Post, urls: list[str], blockers: list[str]) -> None:
+        """Log the exact JSON bodies a live run would POST (ids are placeholders)."""
         user = self.client.ig_user_id
+        base = f"https://graph.instagram.com/{API_VERSION}/{user}"
+
+        def body(b: dict) -> str:
+            return json.dumps(b, ensure_ascii=False)
+
         for i, url in enumerate(urls, start=1):
-            self.log(f"  would POST /{user}/media  image_url={url} is_carousel_item=true  ({i})")
-        self.log(
-            f"  would POST /{user}/media  media_type=CAROUSEL children=<{len(urls)} ids> "
-            f"caption=<{len(post.caption)} chars>"
-        )
-        for line in post.caption.rstrip("\n").splitlines():
+            self.log(f"  would POST {base}/media  (child {i}/{len(urls)})")
+            self.log(f"    {body(Client.carousel_item_body(url))}")
+        children = [f"<child-{i}-id>" for i in range(1, len(urls) + 1)]
+        self.log(f"  would POST {base}/media  (carousel)")
+        self.log(f"    {body(Client.carousel_body(children, post.caption))}")
+        lines = post.caption.rstrip("\n").splitlines()
+        self.log(f"  caption: {len(post.caption)} chars, {len(lines)} lines:")
+        for line in lines:
             self.log(f"    | {line}")
-        self.log(f"  would poll status_code every {self.poll_s:.0f}s (max 5 min)")
-        self.log(f"  would commit status: publishing, then POST /{user}/media_publish")
+        self.log(f"  would poll GET /<carousel-id>?fields=status_code every {self.poll_s:.0f}s")
+        self.log("  would commit status: publishing, then:")
+        self.log(f"  would POST {base}/media_publish")
+        self.log(f"    {body(Client.publish_body('<carousel-id>'))}")
         if blockers:
             self.log(
                 f"✓ dry run complete — nothing was sent (a live run is BLOCKED: "
