@@ -1,13 +1,13 @@
 id: 2026-09-27-manifesto
 publish_at: 2026-09-27 08:00
-approved: false
+approved: true
 mode: prebuilt
 caption: |-
   בגיל 50 אתה לא גמור. אתה בשיא. 🦊
   העמוד הזה הוא לגבר שחוזר למשחק אחרי 20 שנה: גוף, ביטחון, ודייטינג שעובד היום.
   כל בוקר פוסט אחד. תעקוב, ותגיב "בפנים" אם אתה מתחיל היום.
 slides: []
-approved_hash: null
+approved_hash: sha256:9abcb9c06f5384e497fd5180fd04b0f2dd6ce836d1eece144e757cf2dd14e77e
 status: rendered
 ig_media_id: null
 permalink: null

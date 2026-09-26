@@ -7,4 +7,4 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-09-27 | `2026-09-27-manifesto` | — | rendered | — | — |
+| 2026-09-27 | `2026-09-27-manifesto` | ✅ | rendered | — | — |
