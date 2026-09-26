@@ -5,8 +5,8 @@
 מפרסם קרוסלות אינסטגרם בעברית עבור ‎@the_silver_fox_men. תור מבוסס git, רץ על GitHub Actions, בלי שרת.
 המפרט המלא: [`DOXA_SPEC.md`](DOXA_SPEC.md).
 
-> **מצב נוכחי:** אבני דרך 1–3 מוכנות: תור, סכימה, `validate`, רינדור שקופיות, ו־Issue לאישור.
-> פרסום לאינסטגרם (אבן דרך 4) ורענון טוקן והתראות (אבן דרך 5) עוד לא קיימים. שום דבר לא עולה לאינסטגרם בינתיים.
+> **מצב נוכחי:** אבני דרך 1–4 מוכנות: תור, רינדור, Issue לאישור, ומפרסם.
+> הפרסום האוטומטי כבוי עד שמדליקים את המתג `DOXA_LIVE` (פירוט למטה). רענון טוקן והתראות (אבן דרך 5) עוד לא קיימים.
 
 ## איך מוסיפים פוסט
 
@@ -72,9 +72,21 @@ pytest -q && ruff check .
 
 <div dir="rtl">
 
+## פרסום
+
+`publish.yml` רץ כל שעה עגולה. בכל ריצה הוא מפרסם לכל היותר פוסט אחד: הפוסט הוותיק ביותר שאושר, שהתוכן שלו לא השתנה מאז האישור, ושהגיעה שעת הפרסום שלו.
+
+**מתג בטיחות:** ריצות ה־cron מפרסמות באמת רק אם משתנה ה־repo ‏`DOXA_LIVE` שווה `true`.
+המשתנה נמצא ב־Settings ← Secrets and variables ← Actions ← Variables. עד שמגדירים אותו, כל ריצה אוטומטית היא הרצה יבשה.
+
+**הרצה יבשה (dry run):** נכנסים ל־Actions ← publish ← Run workflow. משאירים את `dry_run` מסומן, ואם רוצים ממלאים `post_id`.
+ההרצה בודקת את כל מה שאפשר: אישור, שעה, קובצי JPEG, שכל כתובת תמונה מחזירה 200, ומכסת פרסום. היא מדפיסה מה הייתה שולחת לאינסטגרם, אבל לא שולחת כלום ולא משנה שום קובץ.
+**פרסום ידני:** אותו מסך, עם `dry_run` לא מסומן.
+
+**בדיקת טוקן:** Actions ← healthcheck ← Run workflow. הבדיקה מדפיסה רק את שם המשתמש, את ה־user_id ואת המכסה, ונכשלת אם החשבון הוא לא ‎@the_silver_fox_men.
+
 ## בקרוב
 
-- **הרצה יבשה (dry run):** תגיע באבן דרך 4. ‏`publish.yml` יורץ עם `dry_run`.
 - **החלפת טוקן:** תגיע באבן דרך 5. ‏`refresh-token.yml` ירוץ פעם בשבוע.
 
 </div>
@@ -86,8 +98,9 @@ pytest -q && ruff check .
 Hebrew Instagram carousel publisher for @the_silver_fox_men: a git-based queue running on GitHub
 Actions. Full spec: [`DOXA_SPEC.md`](DOXA_SPEC.md).
 
-**Status:** milestones 1–3 are done (queue schema + `doxa validate`, Hebrew RTL renderer, approval
-issues). Publishing (M4) and token refresh/alerts (M5) are not built yet, so nothing reaches Instagram.
+**Status:** milestones 1–4 are done (queue + `doxa validate`, Hebrew RTL renderer, approval
+issues, publisher). Scheduled publishing stays in dry-run mode until the repo variable
+`DOXA_LIVE` is `true`. Token refresh and alerts (M5) are not built yet.
 
 ### Workflow
 
@@ -97,7 +110,7 @@ issues). Publishing (M4) and token refresh/alerts (M5) are not built yet, so not
 | Review | GitHub | `render.yml` opens/refreshes the issue `Approve: <id>` with slides pinned to the commit SHA, the caption and `publish_at` |
 | Approve | owner | add the `approved` label (`approve.yml` writes `approved: true`) **or** set `approved: true` in `post.yaml` |
 | Edit after approval | owner | the next render sees a changed content hash (`approved_hash`), resets `approved`, removes the label and comments on the issue |
-| Publish | — | milestone 4 (only posts whose `approved_hash` still matches) |
+| Publish | `publish.yml` (hourly) | at most one approved, due post whose `approved_hash` still matches; live only when `DOXA_LIVE=true` or when started manually with `dry_run` unticked |
 
 ### CLI
 
@@ -108,6 +121,8 @@ doxa changed BASE HEAD        # post ids touched between two commits
 doxa status                   # regenerate STATUS.md
 doxa open-issues --sha SHA [ID...]            # open/refresh approval issues (needs gh + GH_TOKEN)
 doxa approve-sync [ID...] [--from-issue-title T]  # copy the `approved` label into post.yaml
+doxa publish [--live] [--post-id ID] [--sha SHA]   # dry run unless --live (needs IG_* env vars)
+doxa check [--expect-username U]                   # prints only username, user_id, quota
 ```
 
 ### Tests
@@ -120,3 +135,14 @@ doxa approve-sync [ID...] [--from-issue-title T]  # copy the `approved` label in
   accept an intentional visual change, commit an empty `tests/golden/REGENERATE` file. The
   `goldens` workflow re-renders on ubuntu, commits the PNGs and deletes the marker. Review the PNG
   diff before you trust it.
+
+### Publisher safety
+
+- Order: recover any post stuck in `publishing` (if Instagram already has its caption, the post
+  is marked published, otherwise `failed-retryable`), check eligibility, validate the JPEGs,
+  HEAD-check the commit-pinned raw URLs, check `content_publishing_limit`, create the containers,
+  poll until `FINISHED`, **commit `status: publishing`**, then call `media_publish`.
+- Container creation and reads are retried 3 times with exponential backoff on 5xx and throttling
+  errors. `media_publish` is never retried automatically. If its outcome is unclear, the post stays
+  `publishing` and the next run checks Instagram before it tries again.
+- The token is sent only in the `Authorization: Bearer` header. It never appears in a URL or a log.
