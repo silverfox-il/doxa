@@ -1,0 +1,68 @@
+name: publish
+
+# Publishes at most one approved, due post per run (see doxa/publish.py).
+#
+# Safety switch: the hourly cron only publishes for real once the repo
+# variable DOXA_LIVE is "true" (Settings -> Secrets and variables -> Actions ->
+# Variables). Until then every scheduled run is a dry run. A manual run
+# publishes only when started with dry_run unticked.
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: check everything, send nothing to Instagram"
+        type: boolean
+        default: true
+      post_id:
+        description: "Post id (empty = oldest approved, due post)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: doxa-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Publish
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
+          DOXA_SHA: ${{ github.sha }}
+          EVENT: ${{ github.event_name }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          INPUT_POST_ID: ${{ inputs.post_id }}
+          DOXA_LIVE: ${{ vars.DOXA_LIVE }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mode="--dry-run"
+          if [ "$EVENT" = "schedule" ] && [ "$DOXA_LIVE" = "true" ]; then mode="--live"; fi
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_DRY_RUN" = "false" ]; then mode="--live"; fi
+          args=("$mode")
+          if [ -n "$INPUT_POST_ID" ]; then args+=(--post-id "$INPUT_POST_ID"); fi
+          doxa publish "${args[@]}"
