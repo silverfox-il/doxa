@@ -1,0 +1,33 @@
+id: 2026-10-21-grey-not-problem
+publish_at: 2026-10-21 07:30
+approved: false
+mode: render
+caption: |-
+  שמור את הרשימה, ותתחיל מהמספרה השבוע. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הגוף
+  title: הזקן האפור הוא לא בעיה.
+  accent: ההזנחה כן.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: אפור זה סקסי.
+  body: |-
+    מה שלא: זקן לא מסודר, שיער באוזניים,
+    וחולצה מלפני 15 שנה שנמתחה על הכרס.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: מספרה אחת לשבועיים
+  body: |-
+    זקן קצר ומסודר
+    קרם לחות וקרם הגנה, כן גם לך
+    בושם אחד טוב
+    3 חולצות כהות שיושבות עליך טוב
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    זה לא עניין של יוהרה.
+    זה עניין של כבוד עצמי.
+  layout: bottom
