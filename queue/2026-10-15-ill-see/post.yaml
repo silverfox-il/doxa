@@ -1,0 +1,38 @@
+id: 2026-10-15-ill-see
+publish_at: 2026-10-15 07:30
+approved: false
+mode: render
+caption: |-
+  הגבר הוא הפרס. הוא לא רודף.
+  עקוב. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: '"אני אראה"'
+  accent: זה לא "כן".
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: קבעת איתה, והיא אמרה
+  body: |-
+    "אני אראה איך יהיה לי השבוע".
+    ואתה בודק וואטסאפ וכותב "נו, מה החלטת?"
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    עצור.
+    "אני אראה" אומר שאתה לא בעדיפות עכשיו.
+    זה בסדר. זה מידע.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    תענה בקלילות: "סבבה, תעדכני".
+    ותמשיך בחיים שלך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: אם היא חוזרת, מצוין.
+  body: |-
+    אם לא, חסכת שבועיים של המתנה.
+    גבר עם חיים מלאים לא מחכה ליד הטלפון.
+  layout: bottom
