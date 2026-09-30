@@ -1,0 +1,34 @@
+id: 2026-10-08-second-divorce
+publish_at: 2026-10-08 07:30
+approved: false
+mode: render
+caption: |-
+  לאט זה לא חולשה. לאט זה חוכמה של מי שכבר שילם פעם אחת.
+  שמור את זה לרגע שתתלהב. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: לא לחזור על הטעות
+  title: גירושים שניים עולים
+  accent: |-
+    יותר מהראשונים.
+    לא רק בכסף.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    בפעם הראשונה היית צעיר,
+    והיה זמן לבנות מחדש.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    בפעם השנייה הזמן הוא
+    הנכס הכי יקר שלך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'אז בפרק ב'' לא ממהרים:'
+  body: |-
+    לא עוברים לגור יחד אחרי 3 חודשים
+    כי "מרגישים שזה זה".
+    ולא מערבבים כסף לפני שמכירים באמת.
+  layout: bottom
