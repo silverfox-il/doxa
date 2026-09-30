@@ -1,0 +1,39 @@
+id: 2026-10-29-first-small-step
+publish_at: 2026-10-29 07:30
+approved: false
+mode: render
+caption: |-
+  מה הצעד הקטן שלך היום? תגיב אותו, ותעשה אותו עוד לפני הצהריים. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הפריים
+  title: הצעד הראשון אחרי הגירושים
+  accent: |-
+    לא צריך להיות גדול.
+    הוא צריך להיות היום.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: דני, בן 49. שלושה חודשים אחרי שיצא מהבית,
+  body: |-
+    הוא שם לב שהוא לא יצא מהדירה
+    בסוף שבוע שלם.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    באותו ערב הוא לא התחיל דיאטה,
+    לא נרשם לאפליקציה
+    ולא החליט לשנות את החיים.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    הוא ירד להליכה של 20 דקות.
+    למחרת שוב.
+    אחרי חודש הוא נרשם לחדר כושר.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    צעד אחד קטן, כל יום.
+    ככה בונים גבר מחדש.
+  layout: bottom
