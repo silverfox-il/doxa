@@ -7,6 +7,11 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-12 | `2026-10-12-first-date-home` | — | rendered | — | — |
+| 2026-10-11 | `2026-10-11-sleep-debt` | — | queued | — | — |
+| 2026-10-10 | `2026-10-10-nobody-cares` | — | queued | — | — |
+| 2026-10-09 | `2026-10-09-no-scrolls` | — | queued | — | — |
+| 2026-10-08 | `2026-10-08-second-divorce` | — | queued | — | — |
 | 2026-10-07 | `2026-10-07-three-cards` | — | rendered | — | — |
 | 2026-10-06 | `2026-10-06-iron-not-running` | — | queued | — | — |
 | 2026-10-05 | `2026-10-05-belly-decision` | — | queued | — | — |
