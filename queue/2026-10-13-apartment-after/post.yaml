@@ -1,0 +1,36 @@
+id: 2026-10-13-apartment-after
+publish_at: 2026-10-13 07:30
+approved: false
+mode: render
+caption: |-
+  דני, בן 47, גר שנה וחצי עם ארגזים. סוף שבוע אחד של סדר, והדירה הפכה למקום שהוא גאה להזמין אליו. תתחיל השבוע.
+  שמור את הרשימה. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הפריים
+  title: 'הדירה אחרי הגירושים:'
+  accent: חדר של מסכן, או מבצר?
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: רוב הגברים גרים שנתיים עם ארגזים בסלון
+  body: |-
+    ומקרר עם שלוש בירות וקטשופ,
+    כי "זה זמני".
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    אבל הדירה היא אתה.
+    ככה אתה מרגיש כשאתה חוזר הביתה.
+    וככה היא תרגיש כשתבוא.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: סוף שבוע אחד ואתה בבית אחר
+  layout: list
+  items:
+  - מיטה אמיתית ומצעים טובים
+  - תאורה חמה
+  - צמח אחד
+  - מטבח שאפשר לבשל בו
+  - שתי כוסות יין טובות
