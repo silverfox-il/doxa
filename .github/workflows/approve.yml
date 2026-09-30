@@ -1,11 +1,17 @@
 name: approve
 
-# Owner adds the "approved" label to an "Approve: <id>" issue -> write
-# `approved: true` into queue/<id>/post.yaml and refresh the issue.
+# Owner adds the "approved" label to "Approve: <id>" issues -> write
+# `approved: true` into queue/<id>/post.yaml and refresh the issues.
+#
+# Every run syncs ALL labeled issues, not only the one that fired it. Bulk
+# labeling fires many runs at once and the shared concurrency group drops the
+# pending ones, so a per-issue sync would silently miss approvals.
+# workflow_dispatch lets the owner (or a scheduled check) re-run the full sync.
 
 on:
   issues:
     types: [labeled]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,9 +24,9 @@ concurrency:
 
 jobs:
   sync:
-    if: "github.event.label.name == 'approved' && startsWith(github.event.issue.title, 'Approve: ')"
+    if: "github.event_name == 'workflow_dispatch' || (github.event.label.name == 'approved' && startsWith(github.event.issue.title, 'Approve: '))"
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -33,30 +39,32 @@ jobs:
       - name: Install
         run: pip install -e .
 
-      - name: Copy label into post.yaml
+      - name: Copy every approved label into post.yaml
+        id: sync
         env:
           GH_TOKEN: ${{ github.token }}
-          # Untrusted text: only ever passed as an argument, never interpolated.
-          TITLE: ${{ github.event.issue.title }}
-        run: doxa approve-sync --from-issue-title "$TITLE"
-
-      - name: Commit and refresh the issue
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TITLE: ${{ github.event.issue.title }}
         run: |
-          id="${TITLE#Approve: }"
+          doxa approve-sync | tee sync.log
+          ids="$(sed -n 's/^✓ \([^:]*\): approved via label$/\1/p' sync.log | xargs)"
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and refresh the issues
+        if: steps.sync.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IDS: ${{ steps.sync.outputs.ids }}
+        run: |
           doxa status
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # queue/ can vanish when the last post is deleted; add it only if present.
           if [ -d queue ]; then git add -A queue; fi
           git add STATUS.md
           if git diff --cached --quiet; then
             echo "already approved"
             exit 0
           fi
-          git commit -m "approve: $id via issue label"
+          git commit -m "approve: $IDS via issue label"
           git pull --rebase --quiet origin main
           git push origin HEAD:main
-          doxa open-issues --sha "$(git rev-parse HEAD)" "$id"
+          # $IDS is intentionally unquoted: one argument per post id.
+          doxa open-issues --sha "$(git rev-parse HEAD)" $IDS
