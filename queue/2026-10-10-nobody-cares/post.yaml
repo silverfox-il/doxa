@@ -1,6 +1,6 @@
 id: 2026-10-10-nobody-cares
 publish_at: 2026-10-10 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   תגיב: מה הדבר שאתה דוחה בגלל "מה יגידו"? 🦊
@@ -44,7 +44,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:dde768df500aff7b74269c5accb09f014eaf2d5ee6fce05a000da5698c459927
 status: rendered
 ig_media_id: null
 permalink: null

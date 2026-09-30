@@ -1,6 +1,6 @@
 id: 2026-10-15-ill-see
 publish_at: 2026-10-15 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הגבר הוא הפרס. הוא לא רודף.
@@ -52,7 +52,7 @@ slides:
     גבר עם חיים מלאים לא מחכה ליד הטלפון.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:a7fa74a5ea038a397855ec72816fa9e2eb55d56cc456fcd3e167ed07b4a0801f
 status: rendered
 ig_media_id: null
 permalink: null

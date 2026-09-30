@@ -1,6 +1,6 @@
 id: 2026-10-20-kids-watching
 publish_at: 2026-10-20 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הם לא צריכים אבא מושלם. הם צריכים אבא שקם.
@@ -49,7 +49,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:828ccd16adfa5bfc67efb0d180108361445713e8737ca1957dafaf96346391cc
 status: rendered
 ig_media_id: null
 permalink: null

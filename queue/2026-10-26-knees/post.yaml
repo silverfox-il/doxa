@@ -1,6 +1,6 @@
 id: 2026-10-26-knees
 publish_at: 2026-10-26 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   תייג חבר שהברכיים שלו הפכו לתירוץ. 🦊
@@ -43,7 +43,7 @@ slides:
     אבל אל תיתן לו להפוך לעשור של ספה.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:1fb6eb21c099c03fa2a23b33c54ba27c4b123fa0b8e5b557790c2cefd8b5ce79
 status: rendered
 ig_media_id: null
 permalink: null

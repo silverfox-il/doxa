@@ -1,6 +1,6 @@
 id: 2026-10-09-no-scrolls
 publish_at: 2026-10-09 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   פחות מילים, יותר נוכחות.
@@ -53,7 +53,7 @@ slides:
     את ההיכרות עושים על כוס יין.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:ae5b2151d46a88db905d8678576a71c6ec8af0c9b2a0e31bf80a80061eacfdef
 status: rendered
 ig_media_id: null
 permalink: null

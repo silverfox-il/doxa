@@ -1,6 +1,6 @@
 id: 2026-10-27-quiet-money
 publish_at: 2026-10-27 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   וגם: אתה לא כספומט של אף אחת. הערך שלך הוא אתה, לא הארנק.
@@ -44,7 +44,7 @@ slides:
     תבנה את זה, בשקט.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:7f2fc3f9274464ef6483db6f69f4f47ff2a3c7045601937c9e67b062881bbdf2
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-21-grey-not-problem
 publish_at: 2026-10-21 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   שמור את הרשימה, ותתחיל מהמספרה השבוע. 🦊
@@ -43,7 +43,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:e2b109ec71b0b9f358e1cfcf0f417e673f4053419a952d9264f6e6a83533bc72
 status: rendered
 ig_media_id: null
 permalink: null

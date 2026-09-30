@@ -1,6 +1,6 @@
 id: 2026-10-04-ex-nicer-version
 publish_at: 2026-10-04 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   לא היא. אתה. זה החלק היחיד שבשליטה שלך.
@@ -44,7 +44,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:457c77b426044fda55b49b6e26f922802814a1bced03a5650d8e3fdfb6f4f8d7
 status: rendered
 ig_media_id: null
 permalink: null

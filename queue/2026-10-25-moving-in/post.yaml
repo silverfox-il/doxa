@@ -1,6 +1,6 @@
 id: 2026-10-25-moving-in
 publish_at: 2026-10-25 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   זה לא ייעוץ משפטי. זו המלצה ללכת לקבל אחד.
@@ -45,7 +45,7 @@ slides:
     לפני, לא אחרי.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:cd9b5db8f14a1728a501a7d29b9f50a244258a243304c873692ea4ce4f55a398
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-18-why-divorced
 publish_at: 2026-10-18 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   שני משפטים. לא יותר. תתאמן עליהם מול המראה.
@@ -49,7 +49,7 @@ slides:
     שני משפטים, וממשיכים.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:be11fd0cf93bf7cf769f2da169d388fef47299e73228be63ad3c10879e63ab7e
 status: rendered
 ig_media_id: null
 permalink: null

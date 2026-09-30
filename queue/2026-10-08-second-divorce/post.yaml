@@ -1,6 +1,6 @@
 id: 2026-10-08-second-divorce
 publish_at: 2026-10-08 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   לאט זה לא חולשה. לאט זה חוכמה של מי שכבר שילם פעם אחת.
@@ -45,7 +45,7 @@ slides:
     ולא מערבבים כסף לפני שמכירים באמת.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:e917f844ee0f6211323cdccd3212c67c043f7fbacbd57e6354ad125b201f13cf
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-29-first-small-step
 publish_at: 2026-10-29 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   מה הצעד הקטן שלך היום? תגיב אותו, ותעשה אותו עוד לפני הצהריים. 🦊
@@ -54,7 +54,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:033b0ed6804486f017e9f07d3c946df148b4b672d358ec2d7a4c7bc5b9c2cffd
 status: rendered
 ig_media_id: null
 permalink: null

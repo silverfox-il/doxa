@@ -1,6 +1,6 @@
 id: 2026-10-23-stop-apologizing
 publish_at: 2026-10-23 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   בן 46, בן 53, בן 58. זה מספר. לא התנצלות.
@@ -50,7 +50,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:7c3fe777468dbeaaa0b358f9b475aca1e9bf7a1c917977f2ffa54fee7dbd9d8c
 status: rendered
 ig_media_id: null
 permalink: null

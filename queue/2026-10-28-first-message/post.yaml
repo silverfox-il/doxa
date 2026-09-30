@@ -1,6 +1,6 @@
 id: 2026-10-28-first-message
 publish_at: 2026-10-28 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   ספציפי, קליל, שאלה אחת. וכמה הודעות אחר כך, מבקשים מספר.
@@ -52,7 +52,7 @@ slides:
     תגידי שלא נפלת במלכודת הפסטל דה נאטה."
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:31dbc5c0bf1a82a44f03e629be2334e7d0bc8a0f97d2e9e449c5f057cd01b3cb
 status: rendered
 ig_media_id: null
 permalink: null

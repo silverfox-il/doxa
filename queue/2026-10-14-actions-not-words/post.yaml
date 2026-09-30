@@ -1,6 +1,6 @@
 id: 2026-10-14-actions-not-words
 publish_at: 2026-10-14 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   תסתכל מה היא עושה, לא מה היא אומרת. וגם על עצמך.
@@ -51,7 +51,7 @@ slides:
     תהיה גבר שהמעשים שלו מתאימים למילים.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:2d5f147894a316f7bf8eccdf66c0f9d3e1a570244ff32533a24bbd68e9387a3b
 status: rendered
 ig_media_id: null
 permalink: null

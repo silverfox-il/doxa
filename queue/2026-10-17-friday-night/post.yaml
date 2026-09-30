@@ -1,6 +1,6 @@
 id: 2026-10-17-friday-night
 publish_at: 2026-10-17 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   תגיב: מה הטקס שלך ביום שישי? 🦊
@@ -55,7 +55,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:03aa58c6405b19079a2d47b37ed8ad39a91a8d39710b445c81942e6878a5de84
 status: rendered
 ig_media_id: null
 permalink: null

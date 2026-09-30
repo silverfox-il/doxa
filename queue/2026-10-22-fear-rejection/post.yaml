@@ -1,6 +1,6 @@
 id: 2026-10-22-fear-rejection
 publish_at: 2026-10-22 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   שרדת דברים הרבה יותר קשים מהודעה שלא נענתה.
@@ -50,7 +50,7 @@ slides:
     תשתמש בו.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:966c65a9d75d588a4039d2a83dc924fc63d04d2ed4aa42d7196f3b3e0cd1bf63
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-16-three-workouts
 publish_at: 2026-10-16 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   בגיל שלך לא מתאמנים יותר. מתאמנים חכם יותר.
@@ -56,7 +56,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:6449eec1b3ea6c033cf972caab91720c473988603c658197cd77e2da1f1069b0
 status: rendered
 ig_media_id: null
 permalink: null

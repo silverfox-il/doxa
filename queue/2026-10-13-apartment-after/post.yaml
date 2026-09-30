@@ -1,6 +1,6 @@
 id: 2026-10-13-apartment-after
 publish_at: 2026-10-13 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   דני, בן 47, גר שנה וחצי עם ארגזים. סוף שבוע אחד של סדר, והדירה הפכה למקום שהוא גאה להזמין אליו. תתחיל השבוע.
@@ -46,7 +46,7 @@ slides:
   - צמח אחד
   - מטבח שאפשר לבשל בו
   - שתי כוסות יין טובות
-approved_hash: null
+approved_hash: sha256:95f0078c7fee5f6af0ae1c1c694b0ea3cff9e7b0bcf8b591644343dd37a7afe0
 status: rendered
 ig_media_id: null
 permalink: null

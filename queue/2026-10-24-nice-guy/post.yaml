@@ -1,6 +1,6 @@
 id: 2026-10-24-nice-guy
 publish_at: 2026-10-24 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה צריך להיות הסיבה – לא האפקט.
@@ -51,7 +51,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:b0fce066fd24b5948b274f5f0133323962e5efb2eb71ce768e0076763576465d
 status: rendered
 ig_media_id: null
 permalink: null

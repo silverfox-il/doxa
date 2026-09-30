@@ -1,6 +1,6 @@
 id: 2026-10-06-iron-not-running
 publish_at: 2026-10-06 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   5 תרגילים. זה כל הסיפור.
@@ -56,7 +56,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:da6cac71c2b007cbfa8c35eb2ac0155a051e2e0096a67495f33f614f43d08d1f
 status: rendered
 ig_media_id: null
 permalink: null

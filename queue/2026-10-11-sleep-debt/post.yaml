@@ -1,6 +1,6 @@
 id: 2026-10-11-sleep-debt
 publish_at: 2026-10-11 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הלילה אתה נכנס למיטה חצי שעה מוקדם יותר. תתחיל משם.
@@ -47,7 +47,7 @@ slides:
     לא ניחושים מהאינטרנט.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:11e703926263a9280608bfec8a990954e6af972fd7c086dc46ca76de2a5697fd
 status: rendered
 ig_media_id: null
 permalink: null

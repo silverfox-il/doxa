@@ -1,6 +1,6 @@
 id: 2026-10-07-three-cards
 publish_at: 2026-10-07 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   אישה בת 38 או בת 48 מחפשת בדיוק את שלושת הקלפים האלה. הם כבר אצלך.
@@ -63,7 +63,7 @@ slides:
     תפסיק להתנצל. תתחיל להציג.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:25d9e36a8b1c2fdbcdfa8bb8d6fa5e5a37b4164f726e85b35dd48fb7b3a1b3f7
 status: rendered
 ig_media_id: null
 permalink: null
