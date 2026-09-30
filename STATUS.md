@@ -7,6 +7,18 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-30 | `2026-10-30-who-wants-me` | — | rendered | — | — |
+| 2026-10-29 | `2026-10-29-first-small-step` | — | queued | — | — |
+| 2026-10-28 | `2026-10-28-first-message` | — | queued | — | — |
+| 2026-10-27 | `2026-10-27-quiet-money` | — | queued | — | — |
+| 2026-10-26 | `2026-10-26-knees` | — | queued | — | — |
+| 2026-10-25 | `2026-10-25-moving-in` | — | queued | — | — |
+| 2026-10-24 | `2026-10-24-nice-guy` | — | queued | — | — |
+| 2026-10-23 | `2026-10-23-stop-apologizing` | — | queued | — | — |
+| 2026-10-22 | `2026-10-22-fear-rejection` | — | queued | — | — |
+| 2026-10-21 | `2026-10-21-grey-not-problem` | — | queued | — | — |
+| 2026-10-20 | `2026-10-20-kids-watching` | — | queued | — | — |
+| 2026-10-19 | `2026-10-19-your-friends` | — | queued | — | — |
 | 2026-10-18 | `2026-10-18-why-divorced` | — | rendered | — | — |
 | 2026-10-17 | `2026-10-17-friday-night` | — | queued | — | — |
 | 2026-10-16 | `2026-10-16-three-workouts` | — | queued | — | — |
