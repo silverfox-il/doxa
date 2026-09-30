@@ -1,0 +1,36 @@
+id: 2026-10-24-nice-guy
+publish_at: 2026-10-24 07:30
+approved: false
+mode: render
+caption: |-
+  אתה צריך להיות הסיבה – לא האפקט.
+  שלח לחבר שעוד אומר "מה שאת רוצה". 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: 20 שנה היית "בעל טוב".
+  accent: |-
+    מוותר, מסכים,
+    "מה שאת רוצה, מותק".
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: ואיפה זה הביא אותך?
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    נחמדות בלי גבולות היא לא מעלה.
+    היא חולשה שנראית כמו נדיבות.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: לגבר עם ערך יש דעה ויש תוכנית.
+  body: |-
+    הוא יודע להגיד "לא" בנחת,
+    בלי לריב ובלי להתנצל.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    והיא מכבדת את זה,
+    כי סוף סוף יש מישהו שמוביל.
+  layout: bottom
