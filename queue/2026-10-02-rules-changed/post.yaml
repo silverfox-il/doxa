@@ -12,27 +12,50 @@ slides:
   kicker: חזרה למשחק
   title: 20 שנה לא יצאת לדייט.
   accent: הכללים השתנו.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     פעם הכרת דרך חבר, בחתונה, בעבודה.
     היום רוב ההיכרויות מתחילות במסך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     וזה טוב לך.
     במסך לא רואים שאתה מתרגש.
     רואים רק מה שאתה בוחר להראות.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'רוב הגברים בגילך נכנסים לאפליקציה כמו לבנק:'
+  accent: ''
   body: |-
     תמונה מלפני עשור,
     "אדם פשוט שאוהב טיולים",
     ו"היי מה נשמע".
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     ואז מתפלאים שאין תגובות.
     מחר: 3 התמונות שהורגות לך את הפרופיל.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
