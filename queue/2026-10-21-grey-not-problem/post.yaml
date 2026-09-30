@@ -11,23 +11,41 @@ slides:
   kicker: הגוף
   title: הזקן האפור הוא לא בעיה.
   accent: ההזנחה כן.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: אפור זה סקסי.
+  accent: ''
   body: |-
     מה שלא: זקן לא מסודר, שיער באוזניים,
     וחולצה מלפני 15 שנה שנמתחה על הכרס.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: מספרה אחת לשבועיים
+  accent: ''
   body: |-
     זקן קצר ומסודר
     קרם לחות וקרם הגנה, כן גם לך
     בושם אחד טוב
     3 חולצות כהות שיושבות עליך טוב
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     זה לא עניין של יוהרה.
     זה עניין של כבוד עצמי.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

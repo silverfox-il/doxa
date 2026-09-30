@@ -11,21 +11,40 @@ slides:
   kicker: לא לחזור על הטעות
   title: אם היא שונאת את החברים שלך,
   accent: היא שונאת חלק ממך.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     החברים שלך איתך 30 שנה.
     הם ראו אותך מתחתן, מתגרש, נופל וקם.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: מי שמנתקת אותך מהם בהדרגה,
+  accent: ''
   body: |-
     "למה אתה צריך לראות אותם כל שבוע?",
     לא מגנה עליך. היא מבודדת אותך.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אישה טובה תרצה להכיר אותם.
     אולי לא תתלהב מכולם,
     אבל היא לא תבקש ממך לבחור.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

@@ -14,23 +14,46 @@ slides:
   accent: |-
     מוותר, מסכים,
     "מה שאת רוצה, מותק".
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: ואיפה זה הביא אותך?
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     נחמדות בלי גבולות היא לא מעלה.
     היא חולשה שנראית כמו נדיבות.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: לגבר עם ערך יש דעה ויש תוכנית.
+  accent: ''
   body: |-
     הוא יודע להגיד "לא" בנחת,
     בלי לריב ובלי להתנצל.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     והיא מכבדת את זה,
     כי סוף סוף יש מישהו שמוביל.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

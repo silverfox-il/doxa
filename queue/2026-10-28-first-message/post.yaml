@@ -12,26 +12,49 @@ slides:
   kicker: חזרה למשחק
   title: 'ההודעה הראשונה:'
   accent: 3 דברים שאסור.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     1. "היי מה נשמע".
     היא קיבלה 40 כאלה היום.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     2. מחמאה על הגוף.
     בגילנו זה נשמע מוזר, לא בטוח.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     3. קורות חיים.
     "גרוש פלוס 3, עובד ב..., אוהב טיולים."
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'מה כן: משהו ספציפי מהפרופיל שלה,'
+  accent: ''
   body: |-
     קצת הומור, ושאלה שקל לענות עליה.
     "רואה שהיית בליסבון.
     תגידי שלא נפלת במלכודת הפסטל דה נאטה."
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

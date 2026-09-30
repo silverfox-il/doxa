@@ -12,24 +12,47 @@ slides:
   kicker: חזרה למשחק
   title: פחד מדחייה בגיל שלך?
   accent: תחשוב על זה רגע.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     עברת גירושים.
     אולי פיטורים, עסק שנפל, הלוויות.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: ואתה פוחד שהיא לא תענה להודעה?
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     הדחייה הכי גרועה שהיא יכולה לתת לך
     היא שתיקה.
     זה הכל.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הנשק הכי חזק שלך הוא לא הכסף ולא הניסיון.
+  accent: ''
   body: |-
     הוא הידיעה שאתה שורד הכל.
     תשתמש בו.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

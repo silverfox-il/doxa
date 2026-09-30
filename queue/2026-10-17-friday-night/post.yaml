@@ -13,21 +13,33 @@ slides:
   accent: |-
     הילדים אצלה.
     הדירה שקטה.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'זה הרגע שבו הכי הרבה גברים נשברים:'
+  accent: ''
   body: |-
     טלוויזיה, בירה, גלילה,
     ו"זה מה שנשאר לי?".
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     זה קשה.
     אבל השקט הזה הוא גם הזמן היחיד בשבוע
     שכולו שלך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: תבנה לו טקס
+  accent: ''
+  body: ''
   layout: list
   items:
   - ארוחה שאתה מבשל כמו שצריך
@@ -35,7 +47,17 @@ slides:
   - חבר קבוע
   - הליכה ארוכה
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     גבר שיודע להיות טוב לבד
     הוא גבר שנעים להיות איתו.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

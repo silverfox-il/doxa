@@ -14,21 +14,40 @@ slides:
   accent: |-
     יותר מהראשונים.
     לא רק בכסף.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     בפעם הראשונה היית צעיר,
     והיה זמן לבנות מחדש.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     בפעם השנייה הזמן הוא
     הנכס הכי יקר שלך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'אז בפרק ב'' לא ממהרים:'
+  accent: ''
   body: |-
     לא עוברים לגור יחד אחרי 3 חודשים
     כי "מרגישים שזה זה".
     ולא מערבבים כסף לפני שמכירים באמת.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

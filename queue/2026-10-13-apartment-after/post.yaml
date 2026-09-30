@@ -12,21 +12,33 @@ slides:
   kicker: הפריים
   title: 'הדירה אחרי הגירושים:'
   accent: חדר של מסכן, או מבצר?
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: רוב הגברים גרים שנתיים עם ארגזים בסלון
+  accent: ''
   body: |-
     ומקרר עם שלוש בירות וקטשופ,
     כי "זה זמני".
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אבל הדירה היא אתה.
     ככה אתה מרגיש כשאתה חוזר הביתה.
     וככה היא תרגיש כשתבוא.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: סוף שבוע אחד ואתה בבית אחר
+  accent: ''
+  body: ''
   layout: list
   items:
   - מיטה אמיתית ומצעים טובים
@@ -34,3 +46,9 @@ slides:
   - צמח אחד
   - מטבח שאפשר לבשל בו
   - שתי כוסות יין טובות
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

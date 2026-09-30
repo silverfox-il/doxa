@@ -12,21 +12,33 @@ slides:
   kicker: הגוף
   title: אל תתחיל בריצה.
   accent: תתחיל בברזל.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'כל גבר שמחליט "להתחיל להתאמן":'
+  accent: ''
   body: |-
     קונה נעלי ריצה, רץ שבוע,
     הברכיים כואבות, מפסיק.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     ריצה שורפת קלוריות.
     משקולות בונות את מה שהגיל לוקח:
     שריר, עצם ויציבה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 5 תרגילים, הבסיס של כל גוף חזק
+  accent: ''
+  body: ''
   layout: list
   items:
   - סקוואט
@@ -35,8 +47,18 @@ slides:
   - לחיצת כתפיים
   - חתירה
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     לפני שמתחילים:
     בדיקה אצל רופא,
     ושיעור טכניקה אחד עם מאמן.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

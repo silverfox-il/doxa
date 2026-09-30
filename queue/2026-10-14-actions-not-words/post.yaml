@@ -12,25 +12,48 @@ slides:
   kicker: לא לחזור על הטעות
   title: תאמין למעשים,
   accent: לא למילים.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     היא אומרת שהיא לא אוהבת דרמה,
     אבל כל שבוע יש משבר.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     היא אומרת שהאקס מאחוריה,
     אבל הוא מופיע בכל שיחה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     מילים זה זול.
     התנהגות לאורך זמן היא המידע האמיתי.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'וזה עובד בשני הכיוונים:'
+  accent: ''
   body: |-
     גם היא בודקת אותך.
     תהיה גבר שהמעשים שלו מתאימים למילים.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

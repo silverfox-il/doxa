@@ -14,15 +14,24 @@ slides:
   accent: |-
     עולות לך יותר
     ממה שאתה חושב.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     שינה קצרה פוגעת באנרגיה,
     במצב הרוח ובחשק.
     זה לא "עייפות של גיל". זה חוב.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: לפני כדורים ותוספים
+  accent: ''
+  body: ''
   layout: list
   items:
   - 7 שעות
@@ -30,8 +39,17 @@ slides:
   - טלפון מחוץ לחדר
   - בלי אלכוהול 3 שעות לפני
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'ואם משהו ירד, אנרגיה, חשק, כוח:'
+  accent: ''
   body: |-
     בדיקת דם ושיחה עם רופא.
     לא ניחושים מהאינטרנט.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

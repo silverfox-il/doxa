@@ -14,29 +14,51 @@ slides:
   accent: |-
     זה כל מה שעומד בינך
     לבין הגוף שלא היה לך 20 שנה.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     שני, רביעי, שישי.
     לפני שהיום אוכל אותך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: אימון א'
+  accent: ''
+  body: ''
   layout: list
   items:
   - סקוואט
   - לחיצת חזה
   - חתירה
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: אימון ב'
+  accent: ''
+  body: ''
   layout: list
   items:
   - דדליפט
   - לחיצת כתפיים
   - מתח (או מתח בעזרה)
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     3 סטים של 5 חזרות.
     כל אימון מוסיפים קצת משקל.
     לפני שמתחילים: אישור רופא.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

@@ -12,23 +12,47 @@ slides:
   kicker: הפריים
   title: תפסיק להתנצל
   accent: על הגיל שלך.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: '"אני אמנם בן 52, אבל מרגיש בן 30."'
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     כל התנצלות כזאת אומרת לה:
     אני בעצמי חושב שזו בעיה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     גבר בטוח לא מסתיר את הגיל
     ולא מתלבש כמו הבן שלו.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     הוא אומר את הגיל שלו
     כמו שהוא אומר את השם שלו:
     עובדה, בלי פרשנות.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

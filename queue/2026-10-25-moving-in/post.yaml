@@ -14,22 +14,40 @@ slides:
   accent: |-
     והיא רוצה לעבור אליך?
     תקרא את זה קודם.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     בישראל, מגורים משותפים יכולים ליצור
     זכויות רכושיות גם בלי חתונה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: זה לא אומר שהיא מחפשת את הכסף שלך.
+  accent: ''
   body: |-
     זה אומר שאתה מבוגר אחראי
     שבנה משהו, ויש לו ילדים להגן עליהם.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הסכם חיים משותפים הוא לא חוסר אמון.
+  accent: ''
   body: |-
     הוא מגן על שניכם.
     שעה אצל עורך דין לענייני משפחה.
     לפני, לא אחרי.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

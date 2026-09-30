@@ -12,23 +12,46 @@ slides:
   kicker: הפריים
   title: הילדים שלך מסתכלים עליך.
   accent: מה הם רואים?
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     גבר שנשבר אחרי הגירושים
     ומחכה שהחיים יעברו?
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     או גבר שקם, בנה את עצמו מחדש,
     ונראה טוב יותר מאי פעם?
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הבן שלך לומד ממך איך גבר מתמודד עם משבר.
+  accent: ''
   body: הבת שלך לומדת ממך איזה גבר מגיע לה.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אתה לא חייב להיות מושלם.
     אתה חייב להיות בתנועה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
