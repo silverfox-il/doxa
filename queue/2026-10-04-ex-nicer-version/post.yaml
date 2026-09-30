@@ -1,0 +1,33 @@
+id: 2026-10-04-ex-nicer-version
+publish_at: 2026-10-04 07:30
+approved: false
+mode: render
+caption: |-
+  לא היא. אתה. זה החלק היחיד שבשליטה שלך.
+  תגיב "אני" אם הרגשת שזה עליך. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: לא לחזור על הטעות
+  title: 'הטעות הראשונה של גבר גרוש:'
+  accent: |-
+    הוא מחפש את האקסית.
+    רק בגרסה נחמדה יותר.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    אותו טיפוס. אותה דינמיקה.
+    ואז הוא מתפלא שהוא שוב באותו סרט.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'לפני שאתה מחפש אישה חדשה, תשאל:'
+  body: |-
+    מה אני עשיתי בקשר הקודם
+    שאני לא רוצה לחזור עליו?
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    זו לא האשמה. זה כוח.
+    את עצמך אתה יכול לשנות.
+  layout: bottom
