@@ -1,0 +1,35 @@
+id: 2026-10-30-who-wants-me
+publish_at: 2026-10-30 07:30
+approved: false
+mode: render
+caption: |-
+  תגיב "בפנים" אם אתה מתחיל היום. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: גרוש, עם ילדים,
+  accent: |-
+    עם כרס קטנה.
+    "מי תרצה אותי?"
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    הרבה מאוד נשים.
+    בנות 40, בנות 45, בנות 50,
+    שגם הן עברו גירושים.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: הן לא מחפשות דוגמן.
+  body: |-
+    הן מחפשות גבר שמטפל בעצמו,
+    יודע מה הוא רוצה,
+    ולא נמצא במלחמה עם האקסית.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: את כל שלושת הדברים האלה
+  body: |-
+    אתה יכול לשנות תוך חצי שנה.
+    העמוד הזה הוא בדיוק על זה.
+  layout: bottom
