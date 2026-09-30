@@ -1,0 +1,41 @@
+id: 2026-10-17-friday-night
+publish_at: 2026-10-17 07:30
+approved: false
+mode: render
+caption: |-
+  תגיב: מה הטקס שלך ביום שישי? 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הפריים
+  title: יום שישי בערב.
+  accent: |-
+    הילדים אצלה.
+    הדירה שקטה.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'זה הרגע שבו הכי הרבה גברים נשברים:'
+  body: |-
+    טלוויזיה, בירה, גלילה,
+    ו"זה מה שנשאר לי?".
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    זה קשה.
+    אבל השקט הזה הוא גם הזמן היחיד בשבוע
+    שכולו שלך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: תבנה לו טקס
+  layout: list
+  items:
+  - ארוחה שאתה מבשל כמו שצריך
+  - ספר
+  - חבר קבוע
+  - הליכה ארוכה
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    גבר שיודע להיות טוב לבד
+    הוא גבר שנעים להיות איתו.
+  layout: bottom
