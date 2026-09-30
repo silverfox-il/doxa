@@ -3,8 +3,8 @@
 
 - **Next scheduled:** none
 - **Token expiry:** unknown
-- **Today's quota:** 0/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-09-27 | `2026-09-27-manifesto` | ✅ | publishing | — | — |
+| 2026-09-27 | `2026-09-27-manifesto` | ✅ | published | [link](https://www.instagram.com/p/Dd69CCWIJ86/) | — |
