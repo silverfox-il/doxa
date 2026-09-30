@@ -1,0 +1,48 @@
+id: 2026-10-12-first-date-home
+publish_at: 2026-10-12 07:30
+approved: false
+mode: render
+caption: |-
+  אתה מארח, אתה מוביל, אתה בעולם שלך. ומסעדה? לא בפגישה ראשונה.
+  שלח לחבר שעוד מזמין לארוחות. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: הדייט הראשון שלך
+  accent: |-
+    לא צריך להיות
+    ארוחה של 400 שקל.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: ארוחת ערב בדייט ראשון היא
+  body: |-
+    ראיון עבודה של שעתיים מול צלחת.
+    וחשבון על אישה שאולי לא תראה שוב.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    מה אני עושה:
+    מזמין אותה אליי,
+    על כוס יין טוב.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: אישה שבאמת רוצה אותך, באה.
+  body: |-
+    מי שבאה בשביל ארוחה ותמונה לסטורי,
+    תמצא פתאום מאה סיבות למה לא.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'הכללים לא משתנים:'
+  body: |-
+    רק אחרי שיש לך את המספר שלה.
+    היא מגיעה לבד והולכת מתי שבא לה.
+    כוס יין היא לא הבטחה לכלום.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: היא מעדיפה בחוץ? לגמרי בסדר.
+  body: |-
+    בקיץ: חוף הים עם בקבוק ושתי כוסות,
+    מצפה שאתה מכיר, שחייה לילית במעיין.
+  layout: bottom
