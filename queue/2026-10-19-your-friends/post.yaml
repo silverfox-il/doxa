@@ -1,0 +1,31 @@
+id: 2026-10-19-your-friends
+publish_at: 2026-10-19 07:30
+approved: false
+mode: render
+caption: |-
+  החבר'ה נשארים. תתייג אחד מהם. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: לא לחזור על הטעות
+  title: אם היא שונאת את החברים שלך,
+  accent: היא שונאת חלק ממך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    החברים שלך איתך 30 שנה.
+    הם ראו אותך מתחתן, מתגרש, נופל וקם.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: מי שמנתקת אותך מהם בהדרגה,
+  body: |-
+    "למה אתה צריך לראות אותם כל שבוע?",
+    לא מגנה עליך. היא מבודדת אותך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    אישה טובה תרצה להכיר אותם.
+    אולי לא תתלהב מכולם,
+    אבל היא לא תבקש ממך לבחור.
+  layout: bottom
