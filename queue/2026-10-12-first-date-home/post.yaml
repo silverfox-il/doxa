@@ -1,6 +1,6 @@
 id: 2026-10-12-first-date-home
 publish_at: 2026-10-12 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה מארח, אתה מוביל, אתה בעולם שלך. ומסעדה? לא בפגישה ראשונה.
@@ -64,7 +64,7 @@ slides:
     מצפה שאתה מכיר, שחייה לילית במעיין.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:dd8849daec39d438251764e458d56a6ea72b51b038f5e35df36661c1efddba5b
 status: rendered
 ig_media_id: null
 permalink: null

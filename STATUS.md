@@ -25,7 +25,7 @@
 | 2026-10-15 | `2026-10-15-ill-see` | — | rendered | — | — |
 | 2026-10-14 | `2026-10-14-actions-not-words` | — | rendered | — | — |
 | 2026-10-13 | `2026-10-13-apartment-after` | — | rendered | — | — |
-| 2026-10-12 | `2026-10-12-first-date-home` | — | rendered | — | — |
+| 2026-10-12 | `2026-10-12-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-sleep-debt` | — | rendered | — | — |
 | 2026-10-10 | `2026-10-10-nobody-cares` | — | rendered | — | — |
 | 2026-10-09 | `2026-10-09-no-scrolls` | — | rendered | — | — |
