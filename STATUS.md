@@ -7,7 +7,7 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-10-30 | `2026-10-30-who-wants-me` | — | rendered | — | — |
+| 2026-10-30 | `2026-10-30-who-wants-me` | ✅ | rendered | — | — |
 | 2026-10-29 | `2026-10-29-first-small-step` | — | rendered | — | — |
 | 2026-10-28 | `2026-10-28-first-message` | — | rendered | — | — |
 | 2026-10-27 | `2026-10-27-quiet-money` | — | rendered | — | — |
