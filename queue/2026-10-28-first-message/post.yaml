@@ -1,0 +1,37 @@
+id: 2026-10-28-first-message
+publish_at: 2026-10-28 07:30
+approved: false
+mode: render
+caption: |-
+  ספציפי, קליל, שאלה אחת. וכמה הודעות אחר כך, מבקשים מספר.
+  שמור לפני שאתה כותב לה. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: 'ההודעה הראשונה:'
+  accent: 3 דברים שאסור.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    1. "היי מה נשמע".
+    היא קיבלה 40 כאלה היום.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    2. מחמאה על הגוף.
+    בגילנו זה נשמע מוזר, לא בטוח.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    3. קורות חיים.
+    "גרוש פלוס 3, עובד ב..., אוהב טיולים."
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'מה כן: משהו ספציפי מהפרופיל שלה,'
+  body: |-
+    קצת הומור, ושאלה שקל לענות עליה.
+    "רואה שהיית בליסבון.
+    תגידי שלא נפלת במלכודת הפסטל דה נאטה."
+  layout: bottom
