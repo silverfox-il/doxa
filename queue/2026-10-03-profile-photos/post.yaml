@@ -1,0 +1,38 @@
+id: 2026-10-03-profile-photos
+publish_at: 2026-10-03 07:30
+approved: false
+mode: render
+caption: |-
+  תבדוק עכשיו את התמונה הראשונה בפרופיל שלך. אם היא אחת מהשלוש, תחליף היום.
+  שמור את הפוסט לפני שאתה מצלם. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: 3 תמונות שהורגות
+  accent: לך את הפרופיל
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    1. סלפי מהאוטו עם משקפי שמש.
+    היא רואה: עצלן.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    2. תמונה חתוכה עם כתף של האקסית.
+    היא רואה: לא סגר.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    3. תמונה מלפני 10 שנים.
+    היא רואה: שקרן, ברגע שתיפגשו.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'מה כן:'
+  body: |-
+    פנים ברורות באור יום.
+    תמונה של כל הגוף.
+    אתה עושה משהו שאתה אוהב.
+    בלי פילטרים.
+  layout: bottom
