@@ -7,6 +7,12 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-18 | `2026-10-18-why-divorced` | — | rendered | — | — |
+| 2026-10-17 | `2026-10-17-friday-night` | — | queued | — | — |
+| 2026-10-16 | `2026-10-16-three-workouts` | — | queued | — | — |
+| 2026-10-15 | `2026-10-15-ill-see` | — | queued | — | — |
+| 2026-10-14 | `2026-10-14-actions-not-words` | — | queued | — | — |
+| 2026-10-13 | `2026-10-13-apartment-after` | — | queued | — | — |
 | 2026-10-12 | `2026-10-12-first-date-home` | — | rendered | — | — |
 | 2026-10-11 | `2026-10-11-sleep-debt` | — | queued | — | — |
 | 2026-10-10 | `2026-10-10-nobody-cares` | — | queued | — | — |
