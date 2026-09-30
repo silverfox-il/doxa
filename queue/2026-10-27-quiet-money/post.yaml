@@ -1,0 +1,33 @@
+id: 2026-10-27-quiet-money
+publish_at: 2026-10-27 07:30
+approved: false
+mode: render
+caption: |-
+  וגם: אתה לא כספומט של אף אחת. הערך שלך הוא אתה, לא הארנק.
+  עקוב. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הפריים
+  title: כסף שקט.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    גבר שמנפנף בשעון, ברכב ובחשבון
+    נראה כמו מי שצריך להוכיח משהו.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: הכסף שלך לא צריך לדבר.
+  body: |-
+    הוא צריך להרגיש:
+    בזה שאתה לא מתלונן על המזונות בדייט,
+    ובזה שיש לך זמן.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: ואם אתה עוד לא שם?
+  body: |-
+    אל תעמיד פנים.
+    אין דבר מביך יותר מגבר שמשחק עשיר.
+    תבנה את זה, בשקט.
+  layout: bottom
