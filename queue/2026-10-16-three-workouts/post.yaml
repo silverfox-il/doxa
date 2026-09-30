@@ -1,0 +1,42 @@
+id: 2026-10-16-three-workouts
+publish_at: 2026-10-16 07:30
+approved: false
+mode: render
+caption: |-
+  בגיל שלך לא מתאמנים יותר. מתאמנים חכם יותר.
+  שמור את הפוסט ותתחיל ביום שני. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הגוף
+  title: 3 אימונים בשבוע, 45 דקות.
+  accent: |-
+    זה כל מה שעומד בינך
+    לבין הגוף שלא היה לך 20 שנה.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    שני, רביעי, שישי.
+    לפני שהיום אוכל אותך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: אימון א'
+  layout: list
+  items:
+  - סקוואט
+  - לחיצת חזה
+  - חתירה
+- background: assets/backgrounds/dark.jpg
+  title: אימון ב'
+  layout: list
+  items:
+  - דדליפט
+  - לחיצת כתפיים
+  - מתח (או מתח בעזרה)
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    3 סטים של 5 חזרות.
+    כל אימון מוסיפים קצת משקל.
+    לפני שמתחילים: אישור רופא.
+  layout: bottom
