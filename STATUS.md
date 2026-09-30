@@ -7,6 +7,10 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-07 | `2026-10-07-three-cards` | — | rendered | — | — |
+| 2026-10-06 | `2026-10-06-iron-not-running` | — | queued | — | — |
+| 2026-10-05 | `2026-10-05-belly-decision` | — | queued | — | — |
+| 2026-10-04 | `2026-10-04-ex-nicer-version` | — | queued | — | — |
 | 2026-10-03 | `2026-10-03-profile-photos` | — | rendered | — | — |
 | 2026-10-02 | `2026-10-02-rules-changed` | — | rendered | — | — |
 | 2026-09-27 | `2026-09-27-manifesto` | ✅ | published | [link](https://www.instagram.com/p/Dd69CCWIJ86/) | — |

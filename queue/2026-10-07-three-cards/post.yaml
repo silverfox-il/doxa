@@ -14,31 +14,58 @@ slides:
   accent: |-
     על אותן נשים?
     תנשום.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'יש לך 3 קלפים שאין לו:'
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     1. יציבות.
     היא לא צריכה לנחש אם תשלם
     שכירות בחודש הבא.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     2. שקט.
     אתה לא צריך להוכיח כלום לאף אחד.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     3. ניסיון.
     אתה יודע להקשיב, לקרוא סיטואציה
     ולא להיבהל מדרמה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: רוב הגברים מסתירים את הקלפים האלה
+  accent: ''
   body: |-
     מאחורי כרס, בגדים ישנים
     והתנצלות על הגיל.
     תפסיק להתנצל. תתחיל להציג.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
