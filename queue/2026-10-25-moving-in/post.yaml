@@ -1,0 +1,35 @@
+id: 2026-10-25-moving-in
+publish_at: 2026-10-25 07:30
+approved: false
+mode: render
+caption: |-
+  זה לא ייעוץ משפטי. זו המלצה ללכת לקבל אחד.
+  שמור את הפוסט לרגע שזה יגיע. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: לא לחזור על הטעות
+  title: 3 חודשים ביחד
+  accent: |-
+    והיא רוצה לעבור אליך?
+    תקרא את זה קודם.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    בישראל, מגורים משותפים יכולים ליצור
+    זכויות רכושיות גם בלי חתונה.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: זה לא אומר שהיא מחפשת את הכסף שלך.
+  body: |-
+    זה אומר שאתה מבוגר אחראי
+    שבנה משהו, ויש לו ילדים להגן עליהם.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: הסכם חיים משותפים הוא לא חוסר אמון.
+  body: |-
+    הוא מגן על שניכם.
+    שעה אצל עורך דין לענייני משפחה.
+    לפני, לא אחרי.
+  layout: bottom
