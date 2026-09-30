@@ -1,0 +1,37 @@
+id: 2026-10-09-no-scrolls
+publish_at: 2026-10-09 07:30
+approved: false
+mode: render
+caption: |-
+  פחות מילים, יותר נוכחות.
+  שלח לחבר שכותב לה פסקאות. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: אל תכתוב לה מגילה.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    אתה רגיל לכתוב מיילים מסודרים.
+    בהתכתבות היכרות זה הורג אותך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    היא שולחת שורה.
+    אתה עונה בשלוש פסקאות.
+    היא מרגישה לחץ ונעלמת.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    הכלל:
+    לא יותר ממה שהיא כתבה.
+    משפט קצר, קצת הומור, שאלה אחת.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: המטרה של ההתכתבות היא לא להכיר אותה.
+  body: |-
+    המטרה: המספר שלה, ואז פגישה.
+    את ההיכרות עושים על כוס יין.
+  layout: bottom
