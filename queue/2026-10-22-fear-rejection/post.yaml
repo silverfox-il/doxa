@@ -1,0 +1,35 @@
+id: 2026-10-22-fear-rejection
+publish_at: 2026-10-22 07:30
+approved: false
+mode: render
+caption: |-
+  שרדת דברים הרבה יותר קשים מהודעה שלא נענתה.
+  עקוב. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: פחד מדחייה בגיל שלך?
+  accent: תחשוב על זה רגע.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    עברת גירושים.
+    אולי פיטורים, עסק שנפל, הלוויות.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: ואתה פוחד שהיא לא תענה להודעה?
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    הדחייה הכי גרועה שהיא יכולה לתת לך
+    היא שתיקה.
+    זה הכל.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: הנשק הכי חזק שלך הוא לא הכסף ולא הניסיון.
+  body: |-
+    הוא הידיעה שאתה שורד הכל.
+    תשתמש בו.
+  layout: bottom
