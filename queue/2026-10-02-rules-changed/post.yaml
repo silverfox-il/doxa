@@ -1,0 +1,38 @@
+id: 2026-10-02-rules-changed
+publish_at: 2026-10-02 07:30
+approved: false
+mode: render
+caption: |-
+  בן 45 או בן 55, אם חזרת לשוק אחרי שנים, הכללים שהכרת כבר לא עובדים.
+  עקוב, כל בוקר פוסט אחד. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: חזרה למשחק
+  title: 20 שנה לא יצאת לדייט.
+  accent: הכללים השתנו.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    פעם הכרת דרך חבר, בחתונה, בעבודה.
+    היום רוב ההיכרויות מתחילות במסך.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    וזה טוב לך.
+    במסך לא רואים שאתה מתרגש.
+    רואים רק מה שאתה בוחר להראות.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'רוב הגברים בגילך נכנסים לאפליקציה כמו לבנק:'
+  body: |-
+    תמונה מלפני עשור,
+    "אדם פשוט שאוהב טיולים",
+    ו"היי מה נשמע".
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    ואז מתפלאים שאין תגובות.
+    מחר: 3 התמונות שהורגות לך את הפרופיל.
+  layout: bottom
