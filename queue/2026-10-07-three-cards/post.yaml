@@ -1,0 +1,44 @@
+id: 2026-10-07-three-cards
+publish_at: 2026-10-07 07:30
+approved: false
+mode: render
+caption: |-
+  אישה בת 38 או בת 48 מחפשת בדיוק את שלושת הקלפים האלה. הם כבר אצלך.
+  עקוב. 🦊
+  .
+  #גרושים #פרק_ב #היכרויות #גברים #סילברפוקס
+slides:
+- background: assets/backgrounds/dark.jpg
+  kicker: הפריים
+  title: הבחור בן ה-28 מתחרה
+  accent: |-
+    על אותן נשים?
+    תנשום.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: 'יש לך 3 קלפים שאין לו:'
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    1. יציבות.
+    היא לא צריכה לנחש אם תשלם
+    שכירות בחודש הבא.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    2. שקט.
+    אתה לא צריך להוכיח כלום לאף אחד.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: |-
+    3. ניסיון.
+    אתה יודע להקשיב, לקרוא סיטואציה
+    ולא להיבהל מדרמה.
+  layout: bottom
+- background: assets/backgrounds/dark.jpg
+  title: רוב הגברים מסתירים את הקלפים האלה
+  body: |-
+    מאחורי כרס, בגדים ישנים
+    והתנצלות על הגיל.
+    תפסיק להתנצל. תתחיל להציג.
+  layout: bottom
