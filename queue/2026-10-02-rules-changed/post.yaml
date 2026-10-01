@@ -1,6 +1,6 @@
 id: 2026-10-02-rules-changed
-publish_at: 2026-10-02 07:30
-approved: true
+publish_at: 2026-10-01 20:00
+approved: false
 mode: render
 caption: |-
   בן 45 או בן 55, אם חזרת לשוק אחרי שנים, הכללים שהכרת כבר לא עובדים.
@@ -12,50 +12,27 @@ slides:
   kicker: חזרה למשחק
   title: 20 שנה לא יצאת לדייט.
   accent: הכללים השתנו.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     פעם הכרת דרך חבר, בחתונה, בעבודה.
     היום רוב ההיכרויות מתחילות במסך.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     וזה טוב לך.
     במסך לא רואים שאתה מתרגש.
     רואים רק מה שאתה בוחר להראות.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: 'רוב הגברים בגילך נכנסים לאפליקציה כמו לבנק:'
-  accent: ''
   body: |-
     תמונה מלפני עשור,
     "אדם פשוט שאוהב טיולים",
     ו"היי מה נשמע".
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     ואז מתפלאים שאין תגובות.
     מחר: 3 התמונות שהורגות לך את הפרופיל.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
-approved_hash: sha256:d4bac607d2554ea45073c077af6edce95aec61df94adb2c8b9208164409fb85f
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
