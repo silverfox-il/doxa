@@ -1,6 +1,6 @@
 id: 2026-10-03-profile-photos
-publish_at: 2026-10-03 07:30
-approved: true
+publish_at: 2026-10-01 20:00
+approved: false
 mode: render
 caption: |-
   תבדוק עכשיו את התמונה הראשונה בפרופיל שלך. אם היא אחת מהשלוש, תחליף היום.
@@ -12,50 +12,27 @@ slides:
   kicker: חזרה למשחק
   title: 3 תמונות שהורגות
   accent: לך את הפרופיל
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     1. סלפי מהאוטו עם משקפי שמש.
     היא רואה: עצלן.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     2. תמונה חתוכה עם כתף של האקסית.
     היא רואה: לא סגר.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     3. תמונה מלפני 10 שנים.
     היא רואה: שקרן, ברגע שתיפגשו.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: 'מה כן:'
-  accent: ''
   body: |-
     פנים ברורות באור יום.
     תמונה של כל הגוף.
     אתה עושה משהו שאתה אוהב.
     בלי פילטרים.
   layout: bottom
-  items: []
-approved_hash: sha256:496f3584005d0fc1d8100c3ae115cfb1444c8f8ae3be56a394043c4b073e7989
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
