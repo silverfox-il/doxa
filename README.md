@@ -5,7 +5,7 @@
 מפרסם קרוסלות אינסטגרם בעברית עבור ‎@the_silver_fox_men. תור מבוסס git, רץ על GitHub Actions, בלי שרת.
 המפרט המלא: [`DOXA_SPEC.md`](DOXA_SPEC.md).
 
-> **מצב נוכחי:** אבני דרך 1–4 מוכנות: תור, רינדור, Issue לאישור, ומפרסם.
+> **מצב נוכחי:** אבני דרך 1–4 מוכנות, ובנוסף מנוע התוכן האוטומטי: רילס, חוקי תוכן, אישור אוטומטי ורוטינה שבועית.
 > הפרסום האוטומטי כבוי עד שמדליקים את המתג `DOXA_LIVE` (פירוט למטה). רענון טוקן והתראות (אבן דרך 5) עוד לא קיימים.
 
 ## איך מוסיפים פוסט
@@ -86,6 +86,35 @@ pytest -q && ruff check .
 
 **בדיקת טוקן:** Actions ← healthcheck ← Run workflow. הבדיקה מדפיסה רק את שם המשתמש, את ה־user_id ואת המכסה, ונכשלת אם החשבון הוא לא ‎@the_silver_fox_men.
 
+## מנוע התוכן האוטומטי
+
+**מה יוצא:** כל יום קרוסלה ב־07:30 ורילס ב־18:00. כל הטקסט מועתק מהספר מילה במילה.
+
+**רילס:** פוסט מסוג `mode: reel` עם שדה `reel.lines`. השורות מופיעות אחת אחרי השנייה על רקע כהה, עם מוזיקה. אורך הסרטון בין 10 ל־15 שניות, בגודל 1080×1920.
+
+**חוקי תוכן אוטומטיים:** `doxa rules` בודק כל פוסט:
+- שהטקסט מופיע בספר מילה במילה;
+- שאין מילים אסורות (ספר, מכירה, בוס, זרג ועוד);
+- שאין מקפים;
+- שאין גילאים מתחת לטווח;
+- שאין פרטים מזהים;
+- שאין ציטוט שכבר הופיע בפוסט אחר.
+
+הרשימה המלאה ב־`config/rules.yaml`. ממצא מסוג "חסימה" מכשיל את `doxa validate`. ממצא מסוג "לבדיקה" רק עוצר את האישור האוטומטי.
+
+**אישור אוטומטי:** מגדירים את משתנה ה־repo ‏`DOXA_AUTO_APPROVE=true`.
+- מה מאושר: פוסט בלי שום ממצא. פוסט מסוג `prebuilt` אף פעם לא מאושר אוטומטית.
+- המתנה: פוסט שאושר אוטומטית מחכה 24 שעות לפני שהוא יכול לצאת.
+- וטו: מוסיפים ל־Issue שלו את התווית `hold`, והוא לא יפורסם לעולם.
+- אישור ידני: התווית `approved` מבטלת את ההמתנה.
+
+**חומר פרטי:** הספר, המוזיקה ורשימת הפרטים המזהים נמצאים בריפו הפרטי `silverfox-il/doxa-private`, ולא כאן. ל־`GH_PAT` צריכה להיות הרשאת קריאה אליו.
+
+**רוטינה שבועית:** בכל יום חמישי ב־09:00 רץ סוכן Claude בענן. הוא:
+- ממלא את התור לשבוע הבא לפי [`content/ROUTINE.md`](content/ROUTINE.md);
+- לוקח תמונות מהמאגר `assets/pool/`;
+- מעדכן את `content/used.yaml`.
+
 ## בקרוב
 
 - **החלפת טוקן:** תגיע באבן דרך 5. ‏`refresh-token.yml` ירוץ פעם בשבוע.
@@ -150,3 +179,21 @@ doxa check [--expect-username U]                   # prints only username, user_
   errors. `media_publish` is never retried automatically. If its outcome is unclear, the post stays
   `publishing` and the next run checks Instagram before it tries again.
 - The token is sent only in the `Authorization: Bearer` header. It never appears in a URL or a log.
+
+### Content engine
+
+- **Reels:** `mode: reel` posts carry `reel.lines`, `reel.music`, `per_line`, `hold` (10–15 s,
+  1080x1920). `doxa render` builds `reel.mp4` with Chromium + ffmpeg; the publisher creates a
+  `media_type=REELS` container from the commit-pinned raw URL (`video/mp4` HEAD check).
+- **Rules:** `doxa rules [--strict] [ID...]` checks verbatim book quotes, banned words, dashes,
+  ages, identity terms and repeated quotes. `block` findings fail `doxa validate`; `review`
+  findings only stop auto-approve. Public rules: `config/rules.yaml`; identity terms:
+  `rules_private.yaml` in `silverfox-il/doxa-private`.
+- **Auto-approve:** with the repo variable `DOXA_AUTO_APPROVE=true`, `render.yml` runs
+  `doxa auto-approve` on posts with zero findings. They wait 24 h before publishing; the `hold`
+  label on the issue vetoes any post (the check fails closed). Prebuilt posts always need the owner.
+- **Private material:** book, music and identity rules live in `silverfox-il/doxa-private`, checked
+  out into `private/` with `GH_PAT`.
+- **Weekly routine:** a Claude cloud routine (Thursdays 09:00 Israel time) follows
+  `content/ROUTINE.md`: 7 carousels + 7 reels per week, photos from `assets/pool/` via
+  `doxa pool-take`, used quotes in `content/used.yaml` (`doxa used`).
