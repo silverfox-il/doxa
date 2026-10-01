@@ -45,7 +45,9 @@ jobs:
           cache-dependency-path: pyproject.toml
 
       - name: Install
-        run: pip install -e .
+        run: |
+          pip install -e .
+          command -v ffprobe || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
 
       - name: Publish
         env:

@@ -38,10 +38,22 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
+      # Book (verbatim checks), music (reels) and identity rules. Needs GH_PAT
+      # with read access to silverfox-il/doxa-private. If it is missing,
+      # carousels still render, but reels fail and nothing is auto-approved.
+      - name: Check out private material
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: silverfox-il/doxa-private
+          token: ${{ secrets.GH_PAT }}
+          path: private
+
       - name: Install
         run: |
           pip install -e .
           python -m playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
 
       - name: Pick posts
         id: pick
@@ -89,10 +101,31 @@ jobs:
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      # Owner switch: repo variable DOXA_AUTO_APPROVE=true. Only posts with zero
+      # rule findings qualify; they still wait 24 h and obey the `hold` label.
+      - name: Auto-approve
+        id: auto
+        if: steps.pick.outputs.ids != '' && vars.DOXA_AUTO_APPROVE == 'true'
+        env:
+          IDS: ${{ steps.pick.outputs.ids }}
+        run: |
+          if [ ! -d private/book ]; then
+            echo "private repo not checked out: skipping auto-approve"
+            exit 0
+          fi
+          doxa auto-approve $IDS
+          doxa status
+          if [ -d queue ]; then git add -A queue; fi
+          git add STATUS.md
+          if ! git diff --cached --quiet; then
+            git commit -m "auto-approve: $IDS"
+            git pull --rebase --quiet origin main
+            git push origin HEAD:main
+          fi
+
       - name: Open or refresh approval issues
         if: steps.pick.outputs.ids != ''
         env:
           GH_TOKEN: ${{ github.token }}
           IDS: ${{ steps.pick.outputs.ids }}
-          DOXA_SHA: ${{ steps.commit.outputs.sha }}
-        run: doxa open-issues $IDS
+        run: DOXA_SHA="$(git rev-parse HEAD)" doxa open-issues $IDS

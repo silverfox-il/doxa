@@ -30,3 +30,9 @@ Thumbs.db
 # Owner-only material: never committed
 _secrets/
 _incoming/
+
+# Licensed music lives in the private repo (no redistribution of audio files)
+assets/music/
+
+# Private repo checkout inside workflows
+private/
