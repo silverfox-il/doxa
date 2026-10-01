@@ -1,6 +1,6 @@
 id: 2026-10-22-fear-rejection
-publish_at: 2026-10-22 07:30
-approved: true
+publish_at: 2026-10-07 20:00
+approved: false
 mode: render
 caption: |-
   שרדת דברים הרבה יותר קשים מהודעה שלא נענתה.
@@ -12,47 +12,24 @@ slides:
   kicker: חזרה למשחק
   title: פחד מדחייה בגיל שלך?
   accent: תחשוב על זה רגע.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     עברת גירושים.
     אולי פיטורים, עסק שנפל, הלוויות.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: ואתה פוחד שהיא לא תענה להודעה?
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     הדחייה הכי גרועה שהיא יכולה לתת לך
     היא שתיקה.
     זה הכל.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: הנשק הכי חזק שלך הוא לא הכסף ולא הניסיון.
-  accent: ''
   body: |-
     הוא הידיעה שאתה שורד הכל.
     תשתמש בו.
   layout: bottom
-  items: []
-approved_hash: sha256:966c65a9d75d588a4039d2a83dc924fc63d04d2ed4aa42d7196f3b3e0cd1bf63
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
