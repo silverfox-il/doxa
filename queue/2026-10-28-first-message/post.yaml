@@ -1,6 +1,6 @@
 id: 2026-10-28-first-message
-publish_at: 2026-10-28 07:30
-approved: true
+publish_at: 2026-10-10 20:00
+approved: false
 mode: render
 caption: |-
   ספציפי, קליל, שאלה אחת. וכמה הודעות אחר כך, מבקשים מספר.
@@ -12,49 +12,26 @@ slides:
   kicker: חזרה למשחק
   title: 'ההודעה הראשונה:'
   accent: 3 דברים שאסור.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     1. "היי מה נשמע".
     היא קיבלה 40 כאלה היום.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     2. מחמאה על הגוף.
     בגילנו זה נשמע מוזר, לא בטוח.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     3. קורות חיים.
     "גרוש פלוס 3, עובד ב..., אוהב טיולים."
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: 'מה כן: משהו ספציפי מהפרופיל שלה,'
-  accent: ''
   body: |-
     קצת הומור, ושאלה שקל לענות עליה.
     "רואה שהיית בליסבון.
     תגידי שלא נפלת במלכודת הפסטל דה נאטה."
   layout: bottom
-  items: []
-approved_hash: sha256:31dbc5c0bf1a82a44f03e629be2334e7d0bc8a0f97d2e9e449c5f057cd01b3cb
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
