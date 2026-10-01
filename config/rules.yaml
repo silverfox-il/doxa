@@ -5,8 +5,8 @@
 # block: the post can never publish while one of these appears.
 block_words:
   # No hint of a book, an edition, or a sale before 500 followers.
-  - ספר
-  - ספרים
+  # "book(s)" with the prefixes ה ב ו ש; "מספר"/"לספר" (number, to tell) stay legal.
+  - "re:(?<![א-ת])[והבש]{0,3}ספר(?:ים)?(?![א-ת])"
   - מהדורה
   - מהדורת
   - הגרסה הישנה

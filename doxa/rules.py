@@ -72,7 +72,13 @@ class RulesConfig:
 
 
 def _word_re(word: str) -> re.Pattern[str]:
-    """Match ``word`` as a whole Hebrew/Latin word, allowing Hebrew prefixes."""
+    """Match ``word`` as a whole Hebrew/Latin word, allowing Hebrew prefixes.
+
+    An entry starting with ``re:`` is used as a raw regular expression, for
+    words whose prefixed forms are innocent ("מספר" = number/tells, not "book").
+    """
+    if word.startswith("re:"):
+        return re.compile(word[3:])
     w = re.escape(word)
     if re.match(f"[{HEB}]", word):
         return re.compile(f"(?<![{HEB}]){PREFIX}{w}(?![{HEB}])")
@@ -132,7 +138,7 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
             add(BLOCK, "no-dashes", where, f"dash in {text[:60]!r}")
         for word in cfg.block_words:
             if _word_re(word).search(text):
-                add(BLOCK, "banned-word", where, f"{word!r}")
+                add(BLOCK, "banned-word", where, f"{word.removeprefix('re:')!r}")
         for word in cfg.identity_words:
             if _word_re(word).search(text):
                 add(BLOCK, "identity", where, "identifying detail about the owner")
@@ -166,3 +172,37 @@ def load_context(root: Path) -> tuple[RulesConfig, Book | None]:
         public = Path(__file__).resolve().parent.parent / "config" / "rules.yaml"
     cfg = RulesConfig.load(public, private)
     return cfg, (Book.load(book_dir) if book_dir else None)
+
+
+# Short connective lines ("תזכור:") may repeat; real quotes may not.
+MIN_REPEAT_CHARS = 15
+
+
+def quotes(post: Post) -> list[str]:
+    """Normalized book quotes a post shows (slides, reel lines, caption hook)."""
+    from .book import normalize
+
+    out = []
+    for _, text in post_texts(post):
+        q = normalize(text)
+        if len(q) >= MIN_REPEAT_CHARS and q not in out:
+            out.append(q)
+    return out
+
+
+def repeated_quotes(posts: list[Post]) -> list[Finding]:
+    """A quote may appear in one post only, so nothing from the book repeats.
+
+    The caption hook repeats a line of its own post by design, so duplicates
+    are counted per post, not per occurrence.
+    """
+    first: dict[str, str] = {}
+    findings = []
+    for post in sorted(posts, key=lambda p: (p.publish_at, p.id)):
+        for q in quotes(post):
+            if q in first and first[q] != post.id:
+                findings.append(
+                    Finding(BLOCK, "repeat", post.id, f"already used in {first[q]}: {q[:50]!r}")
+                )
+            first.setdefault(q, post.id)
+    return findings

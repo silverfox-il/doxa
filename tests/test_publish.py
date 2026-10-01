@@ -174,7 +174,7 @@ def test_dry_run_reads_everything_sends_nothing(repo, gh_calls):
     assert f'{{"image_url": "{url1}", "is_carousel_item": true}}' in text
     assert (
         '{"media_type": "CAROUSEL", "children": "<child-1-id>,<child-2-id>,<child-3-id>", '
-        '"caption": "שורה ראשונה\\nשורה שנייה #סילברפוקס"}'
+        '"caption": "שורה ראשונה של 2026 09 25 post\\n#סילברפוקס"}'
     ) in text
     assert f"would POST {base}/media_publish" in text
     assert '{"creation_id": "<carousel-id>"}' in text

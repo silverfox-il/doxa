@@ -133,8 +133,11 @@ def test_word_match_respects_hebrew_word_boundaries():
     # "בוס" inside another word is fine; with prefixes it is caught.
     assert not rules._word_re("בוס").search("אוטובוס")
     assert rules._word_re("בוס").search("והבוס שלך")
-    assert rules._word_re("ספר").search("שבספר")
-    assert not rules._word_re("ספר").search("מספרים")
+    book_re = rules._word_re(next(w for w in CFG.block_words if "ספר" in w))
+    for blocked in ("הספר הזה", "בספר", "שבספר", "ספרים", "והספרים"):
+        assert book_re.search(blocked), blocked
+    for legal in ("מספרים", "לספר לך", "מספר עליך", "סיפור"):
+        assert not book_re.search(legal), legal
 
 
 def test_blocked_hashtag(book):
@@ -181,7 +184,7 @@ def test_rules_cli_and_validate_block_bad_posts(repo, tmp_path, monkeypatch, boo
     )
     bad = render_post_data(
         "2026-10-04-bad",
-        caption="הוא פשוט לא מדליק.",
+        caption="תפטר את הבוס שלך.",
         slides=[{"background": "assets/backgrounds/bg.jpg", "title": "תפטר את הבוס שלך."}] * 2,
     )
     write_post(repo, good)
@@ -193,3 +196,31 @@ def test_rules_cli_and_validate_block_bad_posts(repo, tmp_path, monkeypatch, boo
     val = runner.invoke(main, ["--root", str(repo), "validate"])
     assert val.exit_code == 1 and "banned-word" in val.output
     assert "2026-10-03-good" not in val.output
+
+
+def test_a_quote_may_be_used_once(repo):
+    line = "הוא לא עושה שום דבר לא בסדר."
+    a = render_post_data(
+        "2026-10-03-a",
+        caption=line,
+        slides=[{"background": "assets/backgrounds/bg.jpg", "title": line}] * 2,
+    )
+    b = render_post_data(
+        "2026-10-04-b",
+        publish_at="2026-10-04 07:30",
+        caption="תזכור:",
+        slides=[
+            {"background": "assets/backgrounds/bg.jpg", "title": "תזכור:"},
+            {"background": "assets/backgrounds/bg.jpg", "title": line},
+        ],
+    )
+    write_post(repo, a)
+    write_post(repo, b)
+    result = CliRunner().invoke(main, ["--root", str(repo), "validate"])
+    assert result.exit_code == 1
+    assert "repeat @ 2026-10-04-b: already used in 2026-10-03-a" in result.output
+    assert "2026-10-03-a: already" not in result.output  # same post twice is fine
+    used = CliRunner().invoke(main, ["--root", str(repo), "used"])
+    assert used.exit_code == 0
+    text = (repo / "content" / "used.yaml").read_text(encoding="utf-8")
+    assert "2026-10-03-a" in text and line in text and "תזכור:" not in text

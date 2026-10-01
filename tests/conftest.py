@@ -21,10 +21,11 @@ def render_post_data(post_id: str = "2026-09-25-test", **overrides) -> dict:
         "publish_at": "2026-09-25 07:00",
         "approved": False,
         "mode": "render",
-        "caption": "שורה ראשונה\nשורה שנייה #סילברפוקס",
+        # Unique per post: the same quote may not appear in two posts.
+        "caption": f"שורה ראשונה של {post_id.replace('-', ' ')}\n#סילברפוקס",
         "slides": [
             {"background": "assets/backgrounds/bg.jpg", "title": "בגיל 50.", "accent": "אתה בשיא"},
-            {"background": "assets/backgrounds/bg.jpg", "title": "25:", "body": "רק שכחו להגיד לך"},
+            {"background": "assets/backgrounds/bg.jpg", "title": "25:", "body": "רק שכחו"},
         ],
     }
     data.update(overrides)
