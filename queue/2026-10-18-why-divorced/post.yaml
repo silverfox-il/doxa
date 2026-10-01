@@ -1,6 +1,6 @@
 id: 2026-10-18-why-divorced
-publish_at: 2026-10-18 07:30
-approved: true
+publish_at: 2026-10-05 20:00
+approved: false
 mode: render
 caption: |-
   שני משפטים. לא יותר. תתאמן עליהם מול המראה.
@@ -12,46 +12,23 @@ slides:
   kicker: חזרה למשחק
   title: 'היא שואלת:'
   accent: '"למה התגרשת?"'
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: זה הרגע שבו רוב הגברים מפילים את הדייט.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     40 דקות על האקסית, על עורך הדין, על המזונות.
     היא שומעת: הוא עדיין שם.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     תשובה טובה היא קצרה, בלי האשמות,
     ומסתכלת קדימה:
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: '"התחתנו צעירים וגדלנו לכיוונים שונים.'
-  accent: ''
   body: |-
     היום אני יודע יותר טוב מה אני רוצה."
     שני משפטים, וממשיכים.
   layout: bottom
-  items: []
-approved_hash: sha256:be11fd0cf93bf7cf769f2da169d388fef47299e73228be63ad3c10879e63ab7e
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
