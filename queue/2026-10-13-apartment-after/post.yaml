@@ -1,6 +1,6 @@
 id: 2026-10-13-apartment-after
-publish_at: 2026-10-13 07:30
-approved: true
+publish_at: 2026-10-03 07:30
+approved: false
 mode: render
 caption: |-
   דני, בן 47, גר שנה וחצי עם ארגזים. סוף שבוע אחד של סדר, והדירה הפכה למקום שהוא גאה להזמין אליו. תתחיל השבוע.
@@ -12,33 +12,21 @@ slides:
   kicker: הפריים
   title: 'הדירה אחרי הגירושים:'
   accent: חדר של מסכן, או מבצר?
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: רוב הגברים גרים שנתיים עם ארגזים בסלון
-  accent: ''
   body: |-
     ומקרר עם שלוש בירות וקטשופ,
     כי "זה זמני".
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     אבל הדירה היא אתה.
     ככה אתה מרגיש כשאתה חוזר הביתה.
     וככה היא תרגיש כשתבוא.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: סוף שבוע אחד ואתה בבית אחר
-  accent: ''
-  body: ''
   layout: list
   items:
   - מיטה אמיתית ומצעים טובים
@@ -46,9 +34,3 @@ slides:
   - צמח אחד
   - מטבח שאפשר לבשל בו
   - שתי כוסות יין טובות
-approved_hash: sha256:95f0078c7fee5f6af0ae1c1c694b0ea3cff9e7b0bcf8b591644343dd37a7afe0
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
