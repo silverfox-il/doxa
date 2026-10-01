@@ -14,21 +14,40 @@ slides:
   accent: |-
     היא החלטה שאתה מקבל
     כל ערב מחדש.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אחרי 40 הגוף מאבד שריר כל עשור
     אם אתה לא עושה כלום.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     החדשות הטובות:
     שריר נבנה בכל גיל.
     ב-45, ב-50, גם ב-60.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 3 אימונים בשבוע, 45 דקות, משקולות.
+  accent: ''
   body: |-
     גבר עם כתפיים וגב ישר נכנס לחדר אחרת.
     היא מרגישה את זה לפני שהוא פותח את הפה.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
