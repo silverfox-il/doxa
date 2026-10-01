@@ -1,6 +1,6 @@
 id: 2026-10-24-nice-guy
-publish_at: 2026-10-24 07:30
-approved: true
+publish_at: 2026-10-08 20:00
+approved: false
 mode: render
 caption: |-
   אתה צריך להיות הסיבה – לא האפקט.
@@ -14,46 +14,23 @@ slides:
   accent: |-
     מוותר, מסכים,
     "מה שאת רוצה, מותק".
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: ואיפה זה הביא אותך?
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     נחמדות בלי גבולות היא לא מעלה.
     היא חולשה שנראית כמו נדיבות.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: לגבר עם ערך יש דעה ויש תוכנית.
-  accent: ''
   body: |-
     הוא יודע להגיד "לא" בנחת,
     בלי לריב ובלי להתנצל.
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     והיא מכבדת את זה,
     כי סוף סוף יש מישהו שמוביל.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
-approved_hash: sha256:b0fce066fd24b5948b274f5f0133323962e5efb2eb71ce768e0076763576465d
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
