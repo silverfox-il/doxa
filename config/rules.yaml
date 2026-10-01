@@ -1,0 +1,72 @@
+# Content rules checked by doxa/rules.py before any post is approved or published.
+# Identity terms (the owner's real name, city, job) are NOT here: they live in
+# rules_private.yaml in the private repo, so this public file reveals nothing.
+
+# block: the post can never publish while one of these appears.
+block_words:
+  # No hint of a book, an edition, or a sale before 500 followers.
+  - ספר
+  - ספרים
+  - מהדורה
+  - מהדורת
+  - הגרסה הישנה
+  - גרסה ישנה
+  - מכירה
+  - למכור
+  - השקה
+  - הנחה
+  - קופון
+  - קורס
+  - לינק בביו
+  - link in bio
+  - ₪
+  # Never "fire your boss".
+  - בוס
+  - תפטר
+  - להתפטר
+  - לפטר
+  # Word list from the owner: use "בילבל" or "החבר שם למטה" instead.
+  - זרג
+
+# review: allowed in the book, but a human must look before it goes out
+# (auto-approve skips posts that hit any of these).
+review_words:
+  # Positions the account must not contradict (no restaurant first date, etc.).
+  - מסעדה
+  - מסעדות
+  - ויברטור
+  - ירידה
+  # Explicit sex: risky under Instagram's rules.
+  - סקס
+  - זיון
+  - אורגזמה
+  - חדירה
+  # Consent is a red line.
+  - שיכורה
+  - בכוח
+  # Women as a group, slurs.
+  - כל הנשים
+  - זונה
+  - זונות
+  - שרמוטה
+  - כלבה
+  - פרחה
+  # Ethnic stereotypes.
+  - ערבייה
+  - ערביה
+  - רוסייה
+  - רוסיות
+  - אתיופית
+  - מרוקאית
+  - פרסייה
+  - ערס
+
+blocked_hashtags:
+  - ספר
+  - הספר
+
+# The only line allowed to contain a dash.
+signature: "אתה צריך להיות הסיבה – לא האפקט"
+
+# Audience is 45+: a 45 year old dates women from 37, a 50 year old from 42.
+min_woman_age: 37
