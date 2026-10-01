@@ -12,27 +12,50 @@ slides:
   kicker: חזרה למשחק
   title: 3 תמונות שהורגות
   accent: לך את הפרופיל
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     1. סלפי מהאוטו עם משקפי שמש.
     היא רואה: עצלן.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     2. תמונה חתוכה עם כתף של האקסית.
     היא רואה: לא סגר.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     3. תמונה מלפני 10 שנים.
     היא רואה: שקרן, ברגע שתיפגשו.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'מה כן:'
+  accent: ''
   body: |-
     פנים ברורות באור יום.
     תמונה של כל הגוף.
     אתה עושה משהו שאתה אוהב.
     בלי פילטרים.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

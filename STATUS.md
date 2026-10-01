@@ -28,7 +28,7 @@
 | 2026-10-02 | `2026-10-12-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-02 | `2026-10-11-sleep-debt` | ✅ | rendered | — | — |
 | 2026-10-01 | `2026-10-02-rules-changed` | ✅ | published | [link](https://www.instagram.com/p/Dd9hpPSoy_F/) | — |
-| 2026-10-01 | `2026-10-03-profile-photos` | ✅ | rendered | — | — |
+| 2026-10-01 | `2026-10-03-profile-photos` | — | rendered | — | — |
 | 2026-10-01 | `2026-10-04-ex-nicer-version` | ✅ | rendered | — | — |
 | 2026-10-01 | `2026-10-05-belly-decision` | ✅ | rendered | — | — |
 | 2026-10-01 | `2026-10-06-iron-not-running` | ✅ | rendered | — | — |
