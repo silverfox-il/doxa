@@ -7,19 +7,19 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-10-10 | `2026-10-10-reel-the-reason` | — | queued | — | — |
+| 2026-10-10 | `2026-10-10-reel-the-reason` | — | rendered | — | — |
 | 2026-10-10 | `2026-10-10-one-is-info` | — | rendered | — | — |
-| 2026-10-09 | `2026-10-09-reel-garden` | — | queued | — | — |
+| 2026-10-09 | `2026-10-09-reel-garden` | — | rendered | — | — |
 | 2026-10-09 | `2026-10-09-second-round` | — | rendered | — | — |
-| 2026-10-08 | `2026-10-08-reel-discomfort` | — | queued | — | — |
+| 2026-10-08 | `2026-10-08-reel-discomfort` | — | rendered | — | — |
 | 2026-10-08 | `2026-10-08-phone-bed` | — | rendered | — | — |
-| 2026-10-07 | `2026-10-07-reel-not-your-project` | — | queued | — | — |
+| 2026-10-07 | `2026-10-07-reel-not-your-project` | — | rendered | — | — |
 | 2026-10-07 | `2026-10-07-numbers` | — | rendered | — | — |
-| 2026-10-06 | `2026-10-06-reel-ring` | — | queued | — | — |
+| 2026-10-06 | `2026-10-06-reel-ring` | — | rendered | — | — |
 | 2026-10-06 | `2026-10-06-two-men` | — | rendered | — | — |
-| 2026-10-05 | `2026-10-05-reel-turned-on` | — | queued | — | — |
+| 2026-10-05 | `2026-10-05-reel-turned-on` | — | rendered | — | — |
 | 2026-10-05 | `2026-10-05-nobody-watching` | — | rendered | — | — |
-| 2026-10-04 | `2026-10-04-reel-feed` | — | queued | — | — |
+| 2026-10-04 | `2026-10-04-reel-feed` | — | rendered | — | — |
 | 2026-10-04 | `2026-10-04-fear-stays` | — | rendered | — | — |
 | 2026-10-03 | `2026-10-03-two-breaths` | — | rendered | — | — |
 | 2026-10-03 | `2026-10-03-obsessed` | — | rendered | — | — |
