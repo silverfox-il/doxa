@@ -1,6 +1,6 @@
 id: 2026-10-09-no-scrolls
-publish_at: 2026-10-09 07:30
-approved: true
+publish_at: 2026-10-01 20:00
+approved: false
 mode: render
 caption: |-
   פחות מילים, יותר נוכחות.
@@ -11,51 +11,27 @@ slides:
 - background: assets/backgrounds/dark.jpg
   kicker: חזרה למשחק
   title: אל תכתוב לה מגילה.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     אתה רגיל לכתוב מיילים מסודרים.
     בהתכתבות היכרות זה הורג אותך.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     היא שולחת שורה.
     אתה עונה בשלוש פסקאות.
     היא מרגישה לחץ ונעלמת.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     הכלל:
     לא יותר ממה שהיא כתבה.
     משפט קצר, קצת הומור, שאלה אחת.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: המטרה של ההתכתבות היא לא להכיר אותה.
-  accent: ''
   body: |-
     המטרה: המספר שלה, ואז פגישה.
     את ההיכרות עושים על כוס יין.
   layout: bottom
-  items: []
-approved_hash: sha256:ae5b2151d46a88db905d8678576a71c6ec8af0c9b2a0e31bf80a80061eacfdef
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
