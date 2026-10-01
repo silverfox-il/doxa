@@ -1,6 +1,6 @@
 id: 2026-10-03-poison
 publish_at: 2026-10-03 09:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר ממורמר נראה כמו פיצה קרה שנשארה על השולחן מאתמול
@@ -46,9 +46,9 @@ reel: null
 source:
   file: 02.md
   section: תוריד את הרעל
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:546e5fbc4bdb801c66d8aced0e01c484414593f7d749b49ee0c7ff014a67a9d7
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

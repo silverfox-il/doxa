@@ -1,6 +1,6 @@
 id: 2026-10-04-fear-stays
 publish_at: 2026-10-04 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הפחד לא נעלם לגמרי אף פעם.
@@ -46,9 +46,9 @@ reel: null
 source:
   file: 06.md
   section: הפחד לא הולך, אתה פשוט גדל ממנו
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:26dc370b857a02b1ee5963ccb07fca6e56b40e1d48cda484442afc17fc5579c6
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

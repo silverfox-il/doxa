@@ -1,6 +1,6 @@
 id: 2026-10-03-forgive
 publish_at: 2026-10-03 18:00
-approved: false
+approved: true
 mode: render
 caption: |-
   סליחה זה לא פראייריות, סליחה זה שחרור, והזיכרון הוא השריון שלך.
@@ -46,9 +46,9 @@ reel: null
 source:
   file: 02.md
   section: סולח לכולם, לא שוכח כלום
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a3863f6e533123fe6f372501d39aa044de500c5bcaf6a4ad55d5a396e3fffcaa
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-03-two-breaths
 publish_at: 2026-10-03 21:00
-approved: false
+approved: true
 mode: render
 caption: |-
   קיבלת אות, אתה לוקח נשימה אחת, נשימה שנייה, וקם.
@@ -46,9 +46,9 @@ reel: null
 source:
   file: 06.md
   section: חוק שתי הנשימות
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:79a1f47220384069bc7811e7cb91dd0ba45032921a021ba7fc2f1b4934a5a8bd
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

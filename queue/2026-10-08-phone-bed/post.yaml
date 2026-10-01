@@ -1,6 +1,6 @@
 id: 2026-10-08-phone-bed
 publish_at: 2026-10-08 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   תעזוב את הפאקינג טלפון
@@ -39,9 +39,9 @@ reel: null
 source:
   file: 08.md
   section: הטלפון, הכוס והאספרסו
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6aa2acc5a0a349455330f98c30ec1b66e966497ee8f6908cb30916b09e728609
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-turned-on
 publish_at: 2026-10-05 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אף אישה לא נדלקה מגבר כי הוא היה נחמד.
@@ -18,9 +18,9 @@ reel:
 source:
   file: 02.md
   section: הנחמד מפסיד, תמיד
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4100cfed5fb1776bbd9dac992b5d27528b19655ba7e47c1561ea383d741b78cd
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

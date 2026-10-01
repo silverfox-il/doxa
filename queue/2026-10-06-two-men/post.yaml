@@ -1,6 +1,6 @@
 id: 2026-10-06-two-men
 publish_at: 2026-10-06 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הגוף שלך מספר עליך סיפור שאתה לא צריך לספר בקול.
@@ -53,9 +53,9 @@ reel: null
 source:
   file: 08.md
   section: מה היא רואה לפני שאתה פותח את הפה
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:de12d1ff2e7cc29f5c5d537eee73ee1c305f210d07e0bea7d40ada3e2d41090f
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

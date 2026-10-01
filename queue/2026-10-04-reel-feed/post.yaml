@@ -1,6 +1,6 @@
 id: 2026-10-04-reel-feed
 publish_at: 2026-10-04 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה מתחרה עם כל הגברים שהיא רואה בפיד שלה
@@ -19,9 +19,9 @@ reel:
 source:
   file: 02.md
   section: גינה, לא כספומט
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0b62233ba2905895cf606fea03ff81a6b02355595c9f45c4e456672a92ff9e05
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

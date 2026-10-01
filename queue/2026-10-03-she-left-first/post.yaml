@@ -1,6 +1,6 @@
 id: 2026-10-03-she-left-first
 publish_at: 2026-10-03 13:30
-approved: false
+approved: true
 mode: render
 caption: |-
   היא לא עברה מהר, היא פשוט התחילה לפניך.
@@ -53,9 +53,9 @@ reel: null
 source:
   file: 02.md
   section: היא עזבה הרבה לפני שהיא הלכה
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:96d0e700e321f5ff84a2efbb0778cb691a093be756f17739d5d7ca917bd96976
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-03-nice-guy
 publish_at: 2026-10-03 10:30
-approved: false
+approved: true
 mode: render
 caption: |-
   נחמד זה לא תכונה, זה הדבר המינימלי שמצפים ממך
@@ -46,9 +46,9 @@ reel: null
 source:
   file: 02.md
   section: הנחמד מפסיד, תמיד
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:08b50f81d4f8d918776eecd9996e93b41784745f6a3135d9ea1d39b3f4a18806
+approved_by: auto
+approved_at: '2026-10-02T00:38:48+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
