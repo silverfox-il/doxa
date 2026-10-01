@@ -1,6 +1,6 @@
 id: 2026-10-29-first-small-step
-publish_at: 2026-10-29 07:30
-approved: true
+publish_at: 2026-10-11 07:30
+approved: false
 mode: render
 caption: |-
   מה הצעד הקטן שלך היום? תגיב אותו, ותעשה אותו עוד לפני הצהריים. 🦊
@@ -13,50 +13,27 @@ slides:
   accent: |-
     לא צריך להיות גדול.
     הוא צריך להיות היום.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: דני, בן 49. שלושה חודשים אחרי שיצא מהבית,
-  accent: ''
   body: |-
     הוא שם לב שהוא לא יצא מהדירה
     בסוף שבוע שלם.
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     באותו ערב הוא לא התחיל דיאטה,
     לא נרשם לאפליקציה
     ולא החליט לשנות את החיים.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     הוא ירד להליכה של 20 דקות.
     למחרת שוב.
     אחרי חודש הוא נרשם לחדר כושר.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     צעד אחד קטן, כל יום.
     ככה בונים גבר מחדש.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
-approved_hash: sha256:033b0ed6804486f017e9f07d3c946df148b4b672d358ec2d7a4c7bc5b9c2cffd
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
