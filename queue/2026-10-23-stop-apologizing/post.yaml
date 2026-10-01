@@ -1,6 +1,6 @@
 id: 2026-10-23-stop-apologizing
-publish_at: 2026-10-23 07:30
-approved: true
+publish_at: 2026-10-08 07:30
+approved: false
 mode: render
 caption: |-
   בן 46, בן 53, בן 58. זה מספר. לא התנצלות.
@@ -12,47 +12,23 @@ slides:
   kicker: הפריים
   title: תפסיק להתנצל
   accent: על הגיל שלך.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: '"אני אמנם בן 52, אבל מרגיש בן 30."'
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     כל התנצלות כזאת אומרת לה:
     אני בעצמי חושב שזו בעיה.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     גבר בטוח לא מסתיר את הגיל
     ולא מתלבש כמו הבן שלו.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     הוא אומר את הגיל שלו
     כמו שהוא אומר את השם שלו:
     עובדה, בלי פרשנות.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
-approved_hash: sha256:7c3fe777468dbeaaa0b358f9b475aca1e9bf7a1c917977f2ffa54fee7dbd9d8c
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
