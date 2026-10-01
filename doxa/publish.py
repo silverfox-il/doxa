@@ -34,7 +34,7 @@ from typing import Protocol
 
 import requests
 
-from . import approval, github, slides, status
+from . import approval, github, reel, slides, status
 from .instagram import (
     API_VERSION,
     Client,
@@ -46,14 +46,17 @@ from .instagram import (
 from .queue import (
     PUBLISHABLE_STATUSES,
     TZ,
+    Mode,
     Post,
     Status,
     approval_is_current,
     dump_post,
     load_all,
-    select_publishable,
     slide_files,
 )
+
+# Video containers take longer to process than images.
+REEL_PROCESS_TIMEOUT_S = 600.0
 
 Log = Callable[[str], None]
 
@@ -128,6 +131,8 @@ class Publisher:
     def blockers(self, path: Path, post: Post) -> list[str]:
         """Reasons this post may not be published right now (empty = eligible)."""
         out = []
+        if post.mode == Mode.reel and post.reel is None:
+            out.append("reel post without a reel: block")
         if not post.approved:
             out.append("not approved")
         elif not approval_is_current(post, path.parent):
@@ -136,18 +141,53 @@ class Publisher:
             out.append(f"status is {post.status.value}")
         if not post.is_due(self.now):
             out.append(f"not due until {post.publish_at} Asia/Jerusalem")
+        until = approval.auto_veto_until(post)
+        if until is not None and self.now < until:
+            out.append(f"auto-approved: owner veto window open until {until:%Y-%m-%d %H:%M}")
+        out += self.hold_blockers(post)
         return out
 
+    def hold_blockers(self, post: Post) -> list[str]:
+        """The owner's `hold` label on the approval issue vetoes publishing.
+
+        Fails closed: if the label cannot be checked, the post does not publish.
+        """
+        try:
+            number = github.find_open_issue(approval.issue_title(post.id))
+            if number is not None and approval.HOLD_LABEL in github.issue_labels(number):
+                return [f"on hold (label `{approval.HOLD_LABEL}` on issue #{number})"]
+        except Exception as e:  # noqa: BLE001 — any gh failure must block, not publish
+            return [f"cannot check the hold label: {type(e).__name__}"]
+        return []
+
+    def pick(self, posts: list[tuple[Path, Post]]) -> tuple[Path, Post] | None:
+        """Oldest due, approved post that nothing blocks; logs every one skipped."""
+        due = [
+            (p, post)
+            for p, post in posts
+            if post.approved and post.status in PUBLISHABLE_STATUSES and post.is_due(self.now)
+        ]
+        due.sort(key=lambda pp: pp[1].publish_at_dt)
+        for path, post in due:
+            blockers = self.blockers(path, post)
+            if not blockers:
+                return path, post
+            self.log(f"skip {post.id}: {'; '.join(blockers)}")
+        return None
+
     def image_urls(self, post: Post, path: Path) -> list[str]:
+        if post.mode == Mode.reel:
+            return [github.raw_file_url(self.slug, self.sha, post.id, reel.VIDEO_NAME)]
         n = len(slide_files(path.parent / "slides"))
         return [github.raw_url(self.slug, self.sha, post.id, i) for i in range(1, n + 1)]
 
     def check_urls(self, urls: list[str]) -> None:
-        """Every URL must answer 200 image/jpeg; raw.githubusercontent can lag a push."""
+        """Every URL must answer 200 with the right type; raw.githubusercontent can lag."""
         for url in urls:
+            want = "video/mp4" if url.endswith(".mp4") else "image/jpeg"
             for attempt in range(3):
                 code, ctype = self.head(url)
-                if code == 200 and ctype.split(";")[0].strip() == "image/jpeg":
+                if code == 200 and ctype.split(";")[0].strip() == want:
                     break
                 if attempt < 2:
                     self.sleep(10 * (attempt + 1))
@@ -207,7 +247,7 @@ class Publisher:
                 self.log(f"✗ no post with id {post_id}")
                 return 1
         else:
-            chosen = select_publishable(posts, self.now)
+            chosen = self.pick(posts)
             if chosen is None:
                 self.log("nothing due and approved — done")
                 return 0
@@ -223,7 +263,10 @@ class Publisher:
                 return 1
             self.log("  (dry run continues so you can preview the request)")
 
-        problems = slides.validate_slides(path.parent / "slides")
+        if post.mode == Mode.reel:
+            problems = reel.validate_video(path.parent / reel.VIDEO_NAME)
+        else:
+            problems = slides.validate_slides(path.parent / "slides")
         if problems:
             for p in problems:
                 self.log(f"✗ {p}")
@@ -253,20 +296,31 @@ class Publisher:
         def body(b: dict) -> str:
             return json.dumps(b, ensure_ascii=False)
 
+        if post.mode == Mode.reel:
+            self.log(f"  would POST {base}/media  (reel, {post.reel.duration:.1f}s)")
+            self.log(f"    {body(Client.reel_body(urls[0], post.caption))}")
+            self._log_tail(post, base, blockers, "<reel-id>")
+            return
         for i, url in enumerate(urls, start=1):
             self.log(f"  would POST {base}/media  (child {i}/{len(urls)})")
             self.log(f"    {body(Client.carousel_item_body(url))}")
         children = [f"<child-{i}-id>" for i in range(1, len(urls) + 1)]
         self.log(f"  would POST {base}/media  (carousel)")
         self.log(f"    {body(Client.carousel_body(children, post.caption))}")
+        self._log_tail(post, base, blockers, "<carousel-id>")
+
+    def _log_tail(self, post: Post, base: str, blockers: list[str], container: str) -> None:
+        def body(b: dict) -> str:
+            return json.dumps(b, ensure_ascii=False)
+
         lines = post.caption.rstrip("\n").splitlines()
         self.log(f"  caption: {len(post.caption)} chars, {len(lines)} lines:")
         for line in lines:
             self.log(f"    | {line}")
-        self.log(f"  would poll GET /<carousel-id>?fields=status_code every {self.poll_s:.0f}s")
+        self.log(f"  would poll GET /{container}?fields=status_code every {self.poll_s:.0f}s")
         self.log("  would commit status: publishing, then:")
         self.log(f"  would POST {base}/media_publish")
-        self.log(f"    {body(Client.publish_body('<carousel-id>'))}")
+        self.log(f"    {body(Client.publish_body(container))}")
         if blockers:
             self.log(
                 f"✓ dry run complete — nothing was sent (a live run is BLOCKED: "
@@ -278,16 +332,22 @@ class Publisher:
     def _publish(self, post: Post, path: Path, urls: list[str], quota: str) -> int:
         c = self.client
         try:
-            children = []
-            for i, url in enumerate(urls, start=1):
-                cid = self._retry(f"child {i}", lambda u=url: c.create_carousel_item(u))
-                self.log(f"  child container {i}/{len(urls)}: {cid}")
-                children.append(cid)
-            parent = self._retry(
-                "carousel", lambda: c.create_carousel_container(children, post.caption)
-            )
-            self.log(f"  carousel container: {parent}")
-            c.wait_finished(parent, poll_s=self.poll_s, sleep=self.sleep)
+            if post.mode == Mode.reel:
+                parent = self._retry("reel", lambda: c.create_reel_container(urls[0], post.caption))
+                self.log(f"  reel container: {parent}")
+                timeout = REEL_PROCESS_TIMEOUT_S
+            else:
+                children = []
+                for i, url in enumerate(urls, start=1):
+                    cid = self._retry(f"child {i}", lambda u=url: c.create_carousel_item(u))
+                    self.log(f"  child container {i}/{len(urls)}: {cid}")
+                    children.append(cid)
+                parent = self._retry(
+                    "carousel", lambda: c.create_carousel_container(children, post.caption)
+                )
+                self.log(f"  carousel container: {parent}")
+                timeout = 300.0
+            c.wait_finished(parent, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
             self.log("  container FINISHED")
         except InstagramError as e:
             retryable = isinstance(e, InstagramRetryableError | QuotaExceededError)

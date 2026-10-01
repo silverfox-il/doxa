@@ -39,6 +39,11 @@ def raw_url(slug: str, sha: str, post_id: str, n: int) -> str:
     return f"https://raw.githubusercontent.com/{slug}/{sha}/queue/{post_id}/slides/{n}.jpg"
 
 
+def raw_file_url(slug: str, sha: str, post_id: str, name: str) -> str:
+    """Commit-pinned raw URL for any file in ``queue/<id>/`` (e.g. ``reel.mp4``)."""
+    return f"https://raw.githubusercontent.com/{slug}/{sha}/queue/{post_id}/{name}"
+
+
 def _gh(args: list[str]) -> str:
     proc = subprocess.run(["gh", *args], capture_output=True, text=True, encoding="utf-8")
     if proc.returncode != 0:
@@ -88,6 +93,10 @@ def issue_labels(number: int) -> set[str]:
 
 def remove_label(number: int, label: str) -> None:
     _gh(["issue", "edit", str(number), "--remove-label", label])
+
+
+def add_label(number: int, label: str) -> None:
+    _gh(["issue", "edit", str(number), "--add-label", label])
 
 
 def ensure_label(name: str, color: str, description: str) -> None:

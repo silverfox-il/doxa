@@ -164,6 +164,15 @@ class Client:
         return {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption}
 
     @staticmethod
+    def reel_body(video_url: str, caption: str) -> dict[str, Any]:
+        return {
+            "media_type": "REELS",
+            "video_url": video_url,
+            "caption": caption,
+            "share_to_feed": True,
+        }
+
+    @staticmethod
     def publish_body(creation_id: str) -> dict[str, Any]:
         return {"creation_id": creation_id}
 
@@ -175,6 +184,11 @@ class Client:
     def create_carousel_container(self, children: list[str], caption: str) -> str:
         """Parent CAROUSEL container. Returns container id."""
         out = self._post(f"/{self.ig_user_id}/media", self.carousel_body(children, caption))
+        return str(out["id"])
+
+    def create_reel_container(self, video_url: str, caption: str) -> str:
+        """REELS container from a public MP4 URL. Returns container id."""
+        out = self._post(f"/{self.ig_user_id}/media", self.reel_body(video_url, caption))
         return str(out["id"])
 
     def container_status(self, container_id: str) -> str:

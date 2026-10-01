@@ -94,10 +94,19 @@ class FakeCommitter:
 
 @pytest.fixture
 def gh_calls(monkeypatch):
-    calls = []
+    calls = GhCalls()
     monkeypatch.setattr(github, "find_open_issue", lambda title: 7)
     monkeypatch.setattr(github, "close_issue", lambda n, c: calls.append((n, c)))
+    monkeypatch.setattr(github, "issue_labels", lambda n: calls.labels)
     return calls
+
+
+class GhCalls(list):
+    """Closed issues (as a list) plus the labels the fake issue carries."""
+
+    def __init__(self):
+        super().__init__()
+        self.labels: set[str] = set()
 
 
 def approved_post(repo, post_id="2026-09-25-post", n=3, approved=True, **kw):
@@ -458,3 +467,114 @@ def test_publish_cli_defaults_to_dry_run(repo, ig_env, monkeypatch):
 def test_publish_cli_rejects_bad_post_id(repo, ig_env):
     result = CliRunner().invoke(main, ["--root", str(repo), "publish", "--post-id", "../x"])
     assert result.exit_code == 1 and "not a post id" in result.output
+
+
+# --- owner veto: hold label and the auto-approve waiting period -------------------
+
+
+def test_hold_label_blocks_and_cron_moves_to_next_post(repo, gh_calls):
+    held = approved_post(repo, "2026-09-25-post")
+    other = approved_post(repo, "2026-09-25-later", publish_at="2026-09-25 08:00")
+    gh_calls.labels = {"approved", "hold"}
+    p, client, _, logs = publisher(repo)
+    assert p.run(dry_run=False) == 0  # every candidate held -> nothing published
+    assert posts_sent(client) == []
+    assert any("skip 2026-09-25-post: on hold" in line for line in logs)
+    assert load_post(held).status == Status.rendered
+    assert load_post(other).status == Status.rendered
+
+
+def test_hold_check_fails_closed(repo, monkeypatch, gh_calls):
+    approved_post(repo)
+
+    def boom(n):
+        raise github.GitHubError("gh issue view failed")
+
+    monkeypatch.setattr(github, "issue_labels", boom)
+    p, client, _, logs = publisher(repo)
+    assert p.run(dry_run=False) == 0
+    assert posts_sent(client) == []
+    assert any("cannot check the hold label" in line for line in logs)
+
+
+def test_auto_approved_post_waits_24_hours(repo, gh_calls):
+    from doxa import approval
+    from doxa.queue import ApprovedBy
+
+    path = approved_post(repo)
+    post = load_post(path)
+    approval.stamp(post, path.parent, ApprovedBy.auto, NOW - dt.timedelta(hours=23))
+    dump_post(post, path)
+    p, client, _, logs = publisher(repo)
+    assert p.run(dry_run=False) == 0
+    assert posts_sent(client) == []
+    assert any("veto window open until 2026-09-25 10:00" in line for line in logs)
+
+    approval.stamp(post, path.parent, ApprovedBy.auto, NOW - dt.timedelta(hours=25))
+    dump_post(post, path)
+    p2, client2, _, _ = publisher(repo)
+    assert p2.run(dry_run=False) == 0
+    assert "publish" in client2.calls
+
+
+# --- reels ----------------------------------------------------------------------------
+
+
+def reel_post(repo, monkeypatch):
+    from doxa import reel
+
+    data = render_post_data(
+        "2026-09-25-post",
+        mode="reel",
+        slides=[],
+        caption="תזכור:",
+        status="rendered",
+        reel={"lines": ["א", "ב", "ג"], "music": "t.mp3", "per_line": 3, "hold": 5},
+    )
+    path = write_post(repo, data)
+    (path.parent / "reel.mp4").write_bytes(b"fake")
+    monkeypatch.setattr(reel, "validate_video", lambda video: [])
+    post = load_post(path)
+    post.approved = True
+    post.approved_hash = content_hash(post, path.parent)
+    dump_post(post, path)
+    return path
+
+
+def test_reel_live_publish(repo, gh_calls, monkeypatch):
+    path = reel_post(repo, monkeypatch)
+    heads = []
+    p, client, _, _ = publisher(repo, head=lambda u: heads.append(u) or (200, "video/mp4"))
+    seen = {}
+
+    def create_reel_container(url, caption):
+        client.calls.append("create_reel_container")
+        seen.update(url=url, caption=caption)
+        return "reel-parent"
+
+    client.create_reel_container = create_reel_container
+    waited = {}
+    client.wait_finished = lambda cid, **kw: waited.update(cid=cid, **kw)
+    assert p.run(dry_run=False) == 0
+    url = f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-post/reel.mp4"
+    assert heads == [url] and seen == {"url": url, "caption": "תזכור:"}
+    assert waited["cid"] == "reel-parent" and waited["timeout_s"] == 600.0
+    assert "create_carousel_item" not in client.calls
+    assert load_post(path).status == Status.published
+
+
+def test_reel_head_must_be_video_mp4(repo, gh_calls, monkeypatch):
+    path = reel_post(repo, monkeypatch)
+    p, client, _, _ = publisher(repo, head=lambda u: (200, "application/octet-stream"))
+    assert p.run(dry_run=False) == 1
+    assert "application/octet-stream" in load_post(path).error
+
+
+def test_reel_dry_run_logs_reels_body(repo, gh_calls, monkeypatch):
+    reel_post(repo, monkeypatch)
+    p, client, committer, logs = publisher(repo, head=lambda u: (200, "video/mp4"))
+    assert p.run(dry_run=True) == 0
+    text = "\n".join(logs)
+    assert '"media_type": "REELS"' in text and '"share_to_feed": true' in text
+    assert "reel.mp4" in text and '{"creation_id": "<reel-id>"}' in text
+    assert posts_sent(client) == [] and committer.commits == []
