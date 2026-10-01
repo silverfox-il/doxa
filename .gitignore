@@ -26,3 +26,7 @@ tests/_out/
 Thumbs.db
 .idea/
 .vscode/
+
+# Owner-only material: never committed
+_secrets/
+_incoming/
