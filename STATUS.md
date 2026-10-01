@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-11-sleep-debt` at 2026-10-02 07:30 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -27,7 +27,7 @@
 | 2026-10-03 | `2026-10-13-apartment-after` | ✅ | rendered | — | — |
 | 2026-10-02 | `2026-10-12-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-02 | `2026-10-11-sleep-debt` | ✅ | rendered | — | — |
-| 2026-10-01 | `2026-10-02-rules-changed` | ✅ | publishing | — | — |
+| 2026-10-01 | `2026-10-02-rules-changed` | ✅ | published | [link](https://www.instagram.com/p/Dd9hpPSoy_F/) | — |
 | 2026-10-01 | `2026-10-03-profile-photos` | ✅ | rendered | — | — |
 | 2026-10-01 | `2026-10-04-ex-nicer-version` | ✅ | rendered | — | — |
 | 2026-10-01 | `2026-10-05-belly-decision` | ✅ | rendered | — | — |
