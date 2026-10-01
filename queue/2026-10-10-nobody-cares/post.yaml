@@ -1,6 +1,6 @@
 id: 2026-10-10-nobody-cares
-publish_at: 2026-10-10 07:30
-approved: true
+publish_at: 2026-10-01 20:00
+approved: false
 mode: render
 caption: |-
   תגיב: מה הדבר שאתה דוחה בגלל "מה יגידו"? 🦊
@@ -13,40 +13,21 @@ slides:
   accent: |-
     וזה הדבר הכי משחרר
     שתשמע השנה.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: אתה חושב שכולם יסתכלו עליך בחדר הכושר.
-  accent: ''
   body: |-
     שהיא תצחק אם תכתוב לה.
     שהחברים יגידו "בגילו?".
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     האמת: כל אחד עסוק בעצמו.
     בחשבונות שלו, בילדים שלו, בכרס שלו.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     אז תעשה.
     תתאמן. תכתוב לה. תלבש את החולצה הזאת.
     הזרקור דולק רק בראש שלך.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
-approved_hash: sha256:dde768df500aff7b74269c5accb09f014eaf2d5ee6fce05a000da5698c459927
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
