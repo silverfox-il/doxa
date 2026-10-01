@@ -1,6 +1,6 @@
 id: 2026-10-30-who-wants-me
-publish_at: 2026-10-30 07:30
-approved: true
+publish_at: 2026-10-11 20:00
+approved: false
 mode: render
 caption: |-
   תגיב "בפנים" אם אתה מתחיל היום. 🦊
@@ -13,41 +13,23 @@ slides:
   accent: |-
     עם כרס קטנה.
     "מי תרצה אותי?"
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     הרבה מאוד נשים.
     בנות 40, בנות 45, בנות 50,
     שגם הן עברו גירושים.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: הן לא מחפשות דוגמן.
-  accent: ''
   body: |-
     הן מחפשות גבר שמטפל בעצמו,
     יודע מה הוא רוצה,
     ולא נמצא במלחמה עם האקסית.
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: את כל שלושת הדברים האלה
-  accent: ''
   body: |-
     אתה יכול לשנות תוך חצי שנה.
     העמוד הזה הוא בדיוק על זה.
   layout: bottom
-  items: []
-approved_hash: sha256:289360f49d12e1c7881ce66b3d8e2d9e5b37a99fef4e751b5c79828ae2060e93
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
