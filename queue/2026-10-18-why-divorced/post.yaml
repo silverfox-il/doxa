@@ -12,23 +12,46 @@ slides:
   kicker: חזרה למשחק
   title: 'היא שואלת:'
   accent: '"למה התגרשת?"'
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: זה הרגע שבו רוב הגברים מפילים את הדייט.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     40 דקות על האקסית, על עורך הדין, על המזונות.
     היא שומעת: הוא עדיין שם.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     תשובה טובה היא קצרה, בלי האשמות,
     ומסתכלת קדימה:
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: '"התחתנו צעירים וגדלנו לכיוונים שונים.'
+  accent: ''
   body: |-
     היום אני יודע יותר טוב מה אני רוצה."
     שני משפטים, וממשיכים.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
