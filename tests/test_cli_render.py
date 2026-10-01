@@ -99,3 +99,13 @@ def test_render_rejects_path_like_ids(repo):
     result = run(repo, "render", "../../etc")
     assert result.exit_code == 1
     assert "not a post id" in result.output
+
+
+def test_one_bad_post_does_not_block_the_others(repo):
+    bad = prebuilt(repo, "2026-09-25-bad", n=1)
+    good = prebuilt(repo, "2026-09-26-good", publish_at="2026-09-26 07:00")
+    result = run(repo, "render")
+    assert result.exit_code == 1
+    assert "2026-09-25-bad: 1 slides, need 2-10" in result.output
+    assert load_post(good).status == Status.rendered
+    assert load_post(bad).status == Status.queued

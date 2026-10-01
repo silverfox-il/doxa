@@ -49,6 +49,10 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: private
 
+      - name: Warn if private material is missing
+        if: hashFiles('private/book/*.md') == ''
+        run: echo "::warning::silverfox-il/doxa-private not checked out. GH_PAT needs Contents read access to it. Reels cannot render and nothing is auto-approved."
+
       - name: Install
         run: |
           pip install -e .
@@ -81,9 +85,10 @@ jobs:
         # $IDS is intentionally unquoted: one argument per post id.
         run: doxa render $IDS
 
+      # Runs even when Render failed for some posts: the others are kept.
       - name: Commit slides and STATUS.md
         id: commit
-        if: steps.pick.outputs.ids != ''
+        if: always() && steps.pick.outputs.ids != ''
         env:
           IDS: ${{ steps.pick.outputs.ids }}
         run: |
@@ -105,7 +110,7 @@ jobs:
       # rule findings qualify; they still wait 24 h and obey the `hold` label.
       - name: Auto-approve
         id: auto
-        if: steps.pick.outputs.ids != '' && vars.DOXA_AUTO_APPROVE == 'true'
+        if: always() && steps.pick.outputs.ids != '' && vars.DOXA_AUTO_APPROVE == 'true'
         env:
           IDS: ${{ steps.pick.outputs.ids }}
         run: |
@@ -124,7 +129,7 @@ jobs:
           fi
 
       - name: Open or refresh approval issues
-        if: steps.pick.outputs.ids != ''
+        if: always() && steps.pick.outputs.ids != ''
         env:
           GH_TOKEN: ${{ github.token }}
           IDS: ${{ steps.pick.outputs.ids }}

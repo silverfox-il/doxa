@@ -152,13 +152,15 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
     """Render POST_IDS (default: every queued/rendered post).
 
     Carousels become slides/*.jpg, reels become reel.mp4. Prebuilt posts are
-    only validated. Posts already publishing, published or
+    only validated. A post that fails is reported and skipped; the others
+    still render, and the command exits 1 at the end. Posts already publishing, published or
     failed are never touched, so a re-render can never make them publishable.
     """
     from . import approval, render
 
     root: Path = ctx.obj["root"]
     done: list[str] = []
+    failed: list[str] = []
     for path, post in _select(root, post_ids):
         if post.status not in RENDERABLE_STATUSES:
             click.echo(f"- {post.id}: status {post.status.value}, not re-rendering")
@@ -169,18 +171,21 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
             try:
                 render.render_post(post, post_dir, root=root)
             except render.RenderError as e:
-                _fail([f"{post.id}: {e}"])
+                failed.append(f"{post.id}: {e}")
+                continue
         if post.mode == Mode.reel:
             click.echo(f"rendering reel {post.id} ({post.reel.duration:.1f}s)…")
             try:
                 reel.render_reel(post, post_dir, root=root)
             except reel.ReelError as e:
-                _fail([f"{post.id}: {e}"])
+                failed.append(f"{post.id}: {e}")
+                continue
             problems = reel.validate_video(post_dir / reel.VIDEO_NAME)
         else:
             problems = slides.validate_slides(post_dir / "slides")
         if problems:
-            _fail([f"{post.id}: {p}" for p in problems])
+            failed += [f"{post.id}: {p}" for p in problems]
+            continue
         before = post.model_copy()
         post.status = Status.rendered
         outcome = approval.reconcile(post, post_dir, _now())
@@ -193,8 +198,12 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
         done.append(post.id)
         click.echo(f"✓ {post.id} ready ({post.mode.value})")
 
+    # One broken post must not hold back the rest: render everything we can,
+    # then fail so the workflow still reports the problem.
     status.write_status(root, _now())
     click.echo(f"{len(done)} post(s) rendered/validated")
+    if failed:
+        _fail(failed)
 
 
 @main.command()
