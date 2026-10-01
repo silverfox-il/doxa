@@ -128,11 +128,24 @@ def build_issue_body(post: Post, post_dir: Path, slug: str, sha: str, n_slides: 
         f"- **Publish at:** {post.publish_at} ({TIMEZONE})",
         f"- **Mode:** {post.mode.value} · **Slides:** {n_slides} · **Status:** "
         f"{post.status.value}",
+        f"- **Content rules:** see `doxa rules {post.id}`",
         f"- **Rendered from:** `{sha[:7]}`",
         "",
-        "### Slides",
-        "",
     ]
+    if post.source is not None:
+        lines[-1:-1] = [f"- **Source:** {post.source.file}, {post.source.section}"]
+    if post.reel is not None:
+        url = github.raw_file_url(slug, sha, post.id, "reel.mp4")
+        lines += [
+            f"### Reel ({post.reel.duration:.1f}s, music: {post.reel.music})",
+            "",
+            f"▶️ [Watch the video]({url})",
+            "",
+            *[f"> {line}" for line in post.reel.lines],
+            "",
+        ]
+    else:
+        lines += ["### Slides", ""]
     for i in range(1, n_slides + 1):
         lines.append(f"**{i}/{n_slides}**  ")
         lines.append(f'<img src="{github.raw_url(slug, sha, post.id, i)}" width="360">')

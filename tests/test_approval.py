@@ -46,6 +46,9 @@ class FakeGh:
                     "state": "open",
                 }
                 return f"https://github.com/{SLUG}/issues/{number}\n"
+            case ["issue", "edit"] if args[3] == "--add-label":
+                self.issues[int(args[2])]["labels"].add(args[4])
+                return ""
             case ["issue", "edit"] if args[3] == "--remove-label":
                 self.issues[int(args[2])]["labels"].discard(args[4])
                 return ""
@@ -134,7 +137,7 @@ def test_open_issues_creates_once_then_updates(repo, gh):
     first = run(repo, "open-issues", "--sha", SHA, "2026-09-25-test")
     assert first.exit_code == 0, first.output
     assert "opened issue #1" in first.output
-    assert gh.labels == {"approved"}
+    assert gh.labels == {"approved", "auto-approved", "hold"}
     issue = gh.issues[1]
     assert issue["title"] == "Approve: 2026-09-25-test"
     assert issue["body"].count("<img ") == 3
@@ -309,3 +312,77 @@ def test_reconcile_outcomes(tmp_path, outcome, kw):
     post = Post.model_validate(render_post_data(**kw))
     assert approval.reconcile(post, tmp_path) == outcome
     assert (post.approved_hash is not None) == post.approved
+
+
+# --- auto-approve ---------------------------------------------------------------
+
+QUOTE = "הוא פשוט לא מדליק."
+
+
+@pytest.fixture
+def book_dir(tmp_path, monkeypatch):
+    d = tmp_path / "book"
+    d.mkdir()
+    (d / "02.md").write_text(f"{QUOTE} הדייט במסעדה יקרה.", encoding="utf-8")
+    monkeypatch.setenv("DOXA_BOOK_DIR", str(d))
+    return d
+
+
+def quoted_post(root, post_id="2026-09-25-test", text=QUOTE):
+    slides = [{"background": "assets/backgrounds/bg.jpg", "title": text}] * 2
+    path = write_post(
+        root, render_post_data(post_id, slides=slides, status="rendered", caption=text)
+    )
+    for i in (1, 2):
+        make_jpeg(path.parent / "slides" / f"{i}.jpg")
+    return path
+
+
+def test_auto_approve_clean_post_and_label_issue(repo, gh, book_dir):
+    path = quoted_post(repo)
+    result = run(repo, "auto-approve")
+    assert result.exit_code == 0, result.output
+    post = load_post(path)
+    assert post.approved and post.approved_by.value == "auto"
+    assert approval_is_current(post, path.parent)
+    run(repo, "open-issues", "--sha", SHA)
+    issue = gh.issues[1]
+    assert "auto-approved" in issue["labels"]
+    assert "Approved automatically" in issue["body"] and "`hold`" in issue["body"]
+
+
+def test_auto_approve_skips_anything_with_a_finding(repo, gh, book_dir):
+    review = quoted_post(repo, "2026-09-25-review", "הדייט במסעדה יקרה.")
+    reworded = quoted_post(repo, "2026-09-25-reworded", "הוא פשוט לא מגניב.")
+    result = run(repo, "auto-approve")
+    assert "2026-09-25-review: needs the owner" in result.output
+    assert "2026-09-25-reworded: needs the owner" in result.output
+    assert not load_post(review).approved and not load_post(reworded).approved
+
+
+def test_auto_approve_refuses_without_the_book(repo, gh, monkeypatch):
+    monkeypatch.setenv("DOXA_BOOK_DIR", str(repo / "nowhere"))
+    quoted_post(repo)
+    result = run(repo, "auto-approve")
+    assert result.exit_code == 1 and "book not found" in result.output
+
+
+def test_owner_label_upgrades_auto_approval(repo, gh, book_dir):
+    path = quoted_post(repo)
+    run(repo, "auto-approve")
+    run(repo, "open-issues", "--sha", SHA)
+    gh.issues[1]["labels"].add("approved")
+    assert "approved via label" in run(repo, "approve-sync").output
+    assert load_post(path).approved_by.value == "owner"
+
+
+def test_prebuilt_posts_always_need_the_owner(repo, gh, book_dir):
+    path = write_post(
+        repo,
+        render_post_data(mode="prebuilt", slides=[], status="rendered", caption=QUOTE),
+    )
+    for i in (1, 2):
+        make_jpeg(path.parent / "slides" / f"{i}.jpg")
+    result = run(repo, "auto-approve")
+    assert "needs the owner" in result.output and "prebuilt" in result.output
+    assert not load_post(path).approved

@@ -25,10 +25,12 @@ from .queue import (
     POST_ID_RE,
     RENDERABLE_STATUSES,
     TZ,
+    ApprovedBy,
     Mode,
     Post,
     QueueError,
     Status,
+    approval_is_current,
     dump_post,
     iter_post_files,
     load_post,
@@ -259,7 +261,7 @@ def open_issues(ctx: click.Context, post_ids: tuple[str, ...], sha: str) -> None
     from . import approval, github
 
     slug = github.repo_slug()
-    approval.ensure_approved_label()
+    approval.ensure_labels()
     for path, post in _select(ctx.obj["root"], post_ids):
         if post.status != Status.rendered:
             click.echo(f"- {post.id}: status {post.status.value}, no approval issue")
@@ -267,6 +269,46 @@ def open_issues(ctx: click.Context, post_ids: tuple[str, ...], sha: str) -> None
         n = len(slides.slide_files(path.parent / "slides"))
         number, created = approval.upsert_approval_issue(post, path.parent, slug, sha, n)
         click.echo(f"✓ {post.id}: {'opened' if created else 'updated'} issue #{number}")
+        if post.approved_by == ApprovedBy.auto and approval_is_current(post, path.parent):
+            github.add_label(number, approval.AUTO_LABEL)
+
+
+@main.command("auto-approve")
+@click.argument("post_ids", nargs=-1)
+@click.pass_context
+def auto_approve(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
+    """Approve rendered POST_IDS that pass every automatic check.
+
+    A post qualifies only if its media is valid, the book is available and
+    every content rule passes with no finding at all (block or review). The
+    owner keeps a veto: auto-approved posts wait 24 hours and never publish
+    while the issue has the `hold` label. Run only when DOXA_AUTO_APPROVE=true.
+    """
+    from . import approval
+
+    root: Path = ctx.obj["root"]
+    cfg, book = rules.load_context(root)
+    if book is None:
+        _fail(["book not found: auto-approve needs it to verify verbatim quotes"])
+    approved = 0
+    for path, post in _select(root, post_ids):
+        if post.status != Status.rendered or approval_is_current(post, path.parent):
+            continue
+        if post.mode == Mode.reel:
+            problems = reel.validate_video(path.parent / reel.VIDEO_NAME)
+        else:
+            problems = slides.validate_slides(path.parent / "slides")
+        problems += [str(f) for f in rules.check_post(post, cfg, book)]
+        if problems:
+            click.echo(f"- {post.id}: needs the owner")
+            for p in problems:
+                click.echo(f"    {p}")
+            continue
+        approval.stamp(post, path.parent, ApprovedBy.auto, _now())
+        dump_post(post, path)
+        approved += 1
+        click.echo(f"✓ {post.id}: auto-approved")
+    click.echo(f"{approved} post(s) auto-approved")
 
 
 @main.command("approve-sync")

@@ -121,7 +121,7 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
 
     for where, text in texts:
         # Verbatim: every visible text must be cut from the book, word for word.
-        if post.mode != Mode.prebuilt:
+        if post.mode != Mode.prebuilt or where.startswith("caption"):
             if book is None:
                 add(REVIEW, "verbatim", where, "book not available, cannot verify")
             elif not book.contains(text):
@@ -143,6 +143,8 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
             if int(m.group(1)) < cfg.min_woman_age:
                 add(BLOCK, "ages", where, f"{m.group(0)!r} is below {cfg.min_woman_age}")
 
+    if post.mode == Mode.prebuilt:
+        add(REVIEW, "prebuilt", "slides", "text inside prebuilt images cannot be checked")
     for tag in hashtags(post.caption):
         if tag.lstrip("#") in cfg.blocked_hashtags:
             add(BLOCK, "hashtag", "caption", f"{tag} is not allowed")
