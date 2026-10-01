@@ -268,6 +268,43 @@ def rules_cmd(ctx: click.Context, post_ids: tuple[str, ...], strict: bool) -> No
         _fail([f"{failed} post(s) break the content rules"])
 
 
+@main.command("pool-take")
+@click.argument("post_id")
+@click.option("--tag", default=None, help="Prefer a photo with this tag (whiskey, gym, city...).")
+@click.pass_context
+def pool_take(ctx: click.Context, post_id: str, tag: str | None) -> None:
+    """Copy an unused pool photo to assets/backgrounds/POST_ID.jpg and mark it used."""
+    import shutil
+
+    import yaml
+
+    if not POST_ID_RE.match(post_id):
+        _fail([f"not a post id: {post_id!r}"])
+    root: Path = ctx.obj["root"]
+    pool_dir = root / "assets" / "pool"
+    index = pool_dir / "pool.yaml"
+    text = index.read_text(encoding="utf-8")
+    header = "".join(line + "\n" for line in text.splitlines() if line.startswith("#"))
+    entries = yaml.safe_load(text) or []
+    free = [e for e in entries if not e.get("used_by")]
+    if tag:
+        tagged = [e for e in free if tag in e.get("tags", [])]
+        free = tagged or free
+    if not free:
+        _fail(["photo pool is empty: add photos to assets/pool/pool.yaml"])
+    pick = free[0]
+    dest = root / "assets" / "backgrounds" / f"{post_id}.jpg"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(pool_dir / pick["file"], dest)
+    pick["used_by"] = post_id
+    index.write_text(
+        header + yaml.safe_dump(entries, allow_unicode=True, sort_keys=False, width=200),
+        encoding="utf-8",
+    )
+    left = sum(1 for e in entries if not e.get("used_by"))
+    click.echo(f"✓ {pick['file']} -> {dest.relative_to(root).as_posix()} ({left} left)")
+
+
 @main.command()
 @click.pass_context
 def used(ctx: click.Context) -> None:

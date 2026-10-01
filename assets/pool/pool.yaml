@@ -1,0 +1,451 @@
+# Licensed background photos for carousels (Unsplash License: free for commercial
+# use). Dark, cinematic, no faces. The weekly routine copies an unused photo to
+# assets/backgrounds/<post-id>.jpg and sets used_by to that post id.
+- file: whiskey-1671713682331.jpg
+  tags:
+  - whiskey
+  photographer: Ambitious Studio* | Rick Barrett
+  source: https://unsplash.com/photos/a-glass-of-whiskey-sitting-on-top-of-a-table-Fo8UGw1XaPo
+  license: Unsplash License
+  used_by: null
+- file: whiskey-1695057672316.jpg
+  tags:
+  - whiskey
+  photographer: Donna White
+  source: https://unsplash.com/photos/a-glass-of-whiskey-on-a-wooden-table-suW4j56yfhE
+  license: Unsplash License
+  used_by: null
+- file: wine-1437418747212.jpg
+  tags:
+  - wine
+  photographer: Sérgio Alves Santos
+  source: https://unsplash.com/photos/half-filled-wine-glass-beside-half-empty-clear-pint-glass-OxKFC5u0980
+  license: Unsplash License
+  used_by: null
+- file: wine-1678791812875.jpg
+  tags:
+  - wine
+  photographer: Milada Vigerova
+  source: https://unsplash.com/photos/a-glass-of-wine-and-a-cell-phone-on-a-table-6PCJAiCjcR0
+  license: Unsplash License
+  used_by: null
+- file: wine-1743584886209.jpg
+  tags:
+  - wine
+  photographer: Matthias Oberholzer
+  source: https://unsplash.com/photos/two-glasses-of-wine-sit-on-a-table-zmH_rmAxOgE
+  license: Unsplash License
+  used_by: null
+- file: watch-1663426752652.jpg
+  tags:
+  - watch
+  photographer: James Gibson
+  source: https://unsplash.com/photos/a-watch-on-a-persons-wrist-3YVez_1l6Ao
+  license: Unsplash License
+  used_by: null
+- file: watch-1722627462546.jpg
+  tags:
+  - watch
+  photographer: Harbaksh Singh
+  source: https://unsplash.com/photos/a-close-up-of-a-person-wearing-a-suit-and-a-watch-DxS5JSnKyiA
+  license: Unsplash License
+  used_by: null
+- file: watch-1782110569431.jpg
+  tags:
+  - watch
+  photographer: Mohamed Benziane
+  source: https://unsplash.com/photos/a-black-and-white-wristwatch-on-an-arm-in-shadow-62UgQlC-ixU
+  license: Unsplash License
+  used_by: null
+- file: watch-1551081717.jpg
+  tags:
+  - watch
+  photographer: BENCE BOROS
+  source: https://unsplash.com/photos/black-leather-wallet-near-space-black-aluminum-case-apple-watch-with-gray-nike-fuel-band-6TZTg967gSk
+  license: Unsplash License
+  used_by: null
+- file: gym-1576678927484.jpg
+  tags:
+  - gym
+  photographer: Samuel Girven
+  source: https://unsplash.com/photos/gym-dumbbells-on-rack-VJ2s0c20qCo
+  license: Unsplash License
+  used_by: null
+- file: gym-1722925541321.jpg
+  tags:
+  - gym
+  photographer: Tyler Raye
+  source: https://unsplash.com/photos/a-black-and-white-photo-of-a-row-of-gym-equipment-gnJqUTCPzzg
+  license: Unsplash License
+  used_by: null
+- file: gym-1547919307.jpg
+  tags:
+  - gym
+  photographer: Evan Wise
+  source: https://unsplash.com/photos/black-ab-wheel-wTcD3MwL_VY
+  license: Unsplash License
+  used_by: null
+- file: gym-1612099197070.jpg
+  tags:
+  - gym
+  photographer: Tejj
+  source: https://unsplash.com/photos/silver-dumbbells-on-brown-wooden-table--1GI_FL-8Uw
+  license: Unsplash License
+  used_by: null
+- file: city-1601042879364.jpg
+  tags:
+  - city
+  photographer: Valentin BEAUVAIS
+  source: https://unsplash.com/photos/wet-street-at-night-in-tokyo-yVUQlyRlJSw
+  license: Unsplash License
+  used_by: null
+- file: city-1495430288918.jpg
+  tags:
+  - city
+  photographer: Andre Benz
+  source: https://unsplash.com/photos/cars-on-gray-asphalt-road-during-nighttime-PpsgIw3iWZ4
+  license: Unsplash License
+  used_by: null
+- file: city-1516900557549.jpg
+  tags:
+  - city
+  photographer: Filip Mroz
+  source: https://unsplash.com/photos/photo-of-tram-beside-waiting-station-during-nighttime-023T4jyCRqA
+  license: Unsplash License
+  used_by: null
+- file: city-1586165877141.jpg
+  tags:
+  - city
+  photographer: Reynier Carl
+  source: https://unsplash.com/photos/empty-street-with-lighted-lamps-during-night-time-IzXTR79nph0
+  license: Unsplash License
+  used_by: null
+- file: city-1453413453658.jpg
+  tags:
+  - city
+  photographer: Patrick Tomasso
+  source: https://unsplash.com/photos/empty-road-in-city-during-night-D6Bk1A3-gMA
+  license: Unsplash License
+  used_by: null
+- file: sea-1786384209963.jpg
+  tags:
+  - sea
+  photographer: Hard Rock
+  source: https://unsplash.com/photos/fishing-boat-on-dark-water-tNicMf9DWUE
+  license: Unsplash License
+  used_by: null
+- file: sea-1646127817951.jpg
+  tags:
+  - sea
+  photographer: José Carrillo
+  source: https://unsplash.com/photos/a-black-and-white-photo-of-a-bridge-at-night-3E4PIyFkU1Q
+  license: Unsplash License
+  used_by: null
+- file: car-1610374634235.jpg
+  tags:
+  - car
+  photographer: Patrik Storm (Alstra Pictures)
+  source: https://unsplash.com/photos/black-car-on-road-during-night-time-wVTPr2HDXUQ
+  license: Unsplash License
+  used_by: null
+- file: car-1672783521773.jpg
+  tags:
+  - car
+  photographer: Caras Creative Studio
+  source: https://unsplash.com/photos/a-white-car-parked-on-the-side-of-a-road-at-night-JRXzD_sQzh8
+  license: Unsplash License
+  used_by: null
+- file: car-1611493761903.jpg
+  tags:
+  - car
+  photographer: Patrik Storm (Alstra Pictures)
+  source: https://unsplash.com/photos/black-sedan-on-road-during-night-time-RAtvdEBX2E8
+  license: Unsplash License
+  used_by: null
+- file: car-1666032956671.jpg
+  tags:
+  - car
+  photographer: Beres Ioan
+  source: https://unsplash.com/photos/a-car-on-a-road-at-night-ERKZtnIqPkE
+  license: Unsplash License
+  used_by: null
+- file: car-1656420731611.jpg
+  tags:
+  - car
+  photographer: Rohan Krishnan
+  source: https://unsplash.com/photos/a-motorcycle-parked-in-a-dark-room-NS8DVMxBnE8
+  license: Unsplash License
+  used_by: null
+- file: car-1788352430941.jpg
+  tags:
+  - car
+  photographer: Martin Galko
+  source: https://unsplash.com/photos/motorcyclist-riding-on-dark-highway-c8UiDwPif6U
+  license: Unsplash License
+  used_by: null
+- file: home-1599696848652.jpg
+  tags:
+  - home
+  photographer: aranprime
+  source: https://unsplash.com/photos/brown-and-white-couch-beside-window-KbytCpI1i5I
+  license: Unsplash License
+  used_by: null
+- file: home-1698864551603.jpg
+  tags:
+  - home
+  photographer: Anton Sobotyak
+  source: https://unsplash.com/photos/two-chairs-and-a-table-in-a-dark-room-8og8EDtnc9w
+  license: Unsplash License
+  used_by: null
+- file: home-1549436304.jpg
+  tags:
+  - home
+  photographer: Annie Spratt
+  source: https://unsplash.com/photos/empty-gray-fabric-sofas-with-turned-on-floor-lamp-HwsRkHfSU60
+  license: Unsplash License
+  used_by: null
+- file: city-1571182092747.jpg
+  tags:
+  - city
+  photographer: Donny Jiang
+  source: https://unsplash.com/photos/aerial-view-of-buildings-during-nighttime-1Skfylrlxko
+  license: Unsplash License
+  used_by: null
+- file: city-1612677558337.jpg
+  tags:
+  - city
+  photographer: Kevin Nalty
+  source: https://unsplash.com/photos/city-buildings-during-night-time-C3FWqB4GIKg
+  license: Unsplash License
+  used_by: null
+- file: city-1577447593305.jpg
+  tags:
+  - city
+  photographer: dominik hofbauer
+  source: https://unsplash.com/photos/aerial-photography-of-city-with-high-rise-buildings-during-night-time-LMbcav9SEYk
+  license: Unsplash License
+  used_by: null
+- file: coffee-1593412323862.jpg
+  tags:
+  - coffee
+  photographer: Nathan Dumlao
+  source: https://unsplash.com/photos/clear-drinking-glass-with-brown-liquid-on-black-table-QxL6R8_bQ_4
+  license: Unsplash License
+  used_by: null
+- file: watch-1785339672674.jpg
+  tags:
+  - watch
+  photographer: HACA Wedding Film
+  source: https://unsplash.com/photos/mans-wrist-wearing-a-luxury-watch-suit-and-cufflinks-3wAX3Rr2Gg0
+  license: Unsplash License
+  used_by: null
+- file: style-1727515546577.jpg
+  tags:
+  - style
+  photographer: Anna Evans
+  source: https://unsplash.com/photos/a-black-leather-jacket-laying-on-top-of-a-bed-YehJ089r0uY
+  license: Unsplash License
+  used_by: null
+- file: whiskey-1615887625746.jpg
+  tags:
+  - whiskey
+  photographer: Ambitious Studio* | Rick Barrett
+  source: https://unsplash.com/photos/clear-drinking-glass-with-yellow-liquid-UyF3Tal_KXw
+  license: Unsplash License
+  used_by: null
+- file: whiskey-1638884904408.jpg
+  tags:
+  - whiskey
+  photographer: Ambitious Studio* | Rick Barrett
+  source: https://unsplash.com/photos/a-glass-of-whiskey-sitting-on-top-of-a-counter-IBOTLVhgLEI
+  license: Unsplash License
+  used_by: null
+- file: home-1670488799864.jpg
+  tags:
+  - home
+  photographer: Marlon Aust
+  source: https://unsplash.com/photos/a-lamp-on-a-table--738Jurn5oU
+  license: Unsplash License
+  used_by: null
+- file: home-1784675582465.jpg
+  tags:
+  - home
+  photographer: Aliaksei Liohenki
+  source: https://unsplash.com/photos/modern-tan-leather-sofa-in-a-minimalist-room-gsZ5nKQI0EE
+  license: Unsplash License
+  used_by: null
+- file: wine-1605701249915.jpg
+  tags:
+  - wine
+  photographer: Edge2Edge Media
+  source: https://unsplash.com/photos/red-light-in-the-dark-aaSmG4bj25I
+  license: Unsplash License
+  used_by: null
+- file: wine-1700455350486.jpg
+  tags:
+  - wine
+  photographer: Lily Combs
+  source: https://unsplash.com/photos/a-black-and-white-photo-of-a-wine-glass-RhnFYV7sPy8
+  license: Unsplash License
+  used_by: null
+- file: balcony-1691908682016.jpg
+  tags:
+  - balcony
+  photographer: Dmitry Grachyov
+  source: https://unsplash.com/photos/a-full-moon-seen-through-a-window-of-a-building-SVn2_psCobA
+  license: Unsplash License
+  used_by: null
+- file: balcony-1762704452342.jpg
+  tags:
+  - balcony
+  photographer: Tan Tony
+  source: https://unsplash.com/photos/balcony-filled-with-potted-plants-at-night-lbJ86mTlYOo
+  license: Unsplash License
+  used_by: null
+- file: city-1601994738073.jpg
+  tags:
+  - city
+  photographer: Seiji Seiji
+  source: https://unsplash.com/photos/white-and-red-concrete-building-during-night-time-ZyQEy5aWxeU
+  license: Unsplash License
+  used_by: null
+- file: work-1594202304180.jpg
+  tags:
+  - work
+  photographer: Jiawei Zhao
+  source: https://unsplash.com/photos/macbook-pro-on-brown-wooden-table-zPdBxFAidzY
+  license: Unsplash License
+  used_by: null
+- file: work-1606229365485.jpg
+  tags:
+  - work
+  photographer: Martin Katler
+  source: https://unsplash.com/photos/black-laptop-computer-turned-on-in-dim-light-o9XN28KdyN8
+  license: Unsplash License
+  used_by: null
+- file: work-1578950435899.jpg
+  tags:
+  - work
+  photographer: Paolo Conversano
+  source: https://unsplash.com/photos/turned-on-laptop-computer-bqZw8GEppBM
+  license: Unsplash License
+  used_by: null
+- file: bar-1633734604903.jpg
+  tags:
+  - bar
+  photographer: Marcus Urbenz
+  source: https://unsplash.com/photos/a-bench-sitting-on-top-of-a-wooden-floor-7p_B_s2Q_iY
+  license: Unsplash License
+  used_by: null
+- file: bar-1642280431947.jpg
+  tags:
+  - bar
+  photographer: Eugene Chystiakov
+  source: https://unsplash.com/photos/a-row-of-chairs-sitting-next-to-a-bar-5svGvrj9uHg
+  license: Unsplash License
+  used_by: null
+- file: gym-1766287453186.jpg
+  tags:
+  - gym
+  photographer: Rodrigo Rodrigues | WOLF Λ R T
+  source: https://unsplash.com/photos/a-close-up-of-a-barbell-weight-on-a-gym-floor-feR_xwPVfmI
+  license: Unsplash License
+  used_by: null
+- file: gym-1709315957145.jpg
+  tags:
+  - gym
+  photographer: Redd Francisco
+  source: https://unsplash.com/photos/a-man-lifting-a-barbell-in-a-dark-gym-t9DxAo7VOCg
+  license: Unsplash License
+  used_by: null
+- file: gym-1720784713799.jpg
+  tags:
+  - gym
+  photographer: Sebastian Wagner
+  source: https://unsplash.com/photos/a-row-of-black-and-yellow-gym-equipment-CQ69FueHecY
+  license: Unsplash License
+  used_by: null
+- file: gym-1685633225198.jpg
+  tags:
+  - gym
+  photographer: Ambitious Studio* | Rick Barrett
+  source: https://unsplash.com/photos/a-black-wall-with-metal-pipes-and-a-tire-DOVJdNMsok8
+  license: Unsplash License
+  used_by: null
+- file: rain-1501297875943.jpg
+  tags:
+  - rain
+  photographer: Priscilla Du Preez
+  source: https://unsplash.com/photos/macro-photography-of-water-droplets-on-clear-glass-MU93ZoQPNB8
+  license: Unsplash License
+  used_by: null
+- file: rain-1508204175610.jpg
+  tags:
+  - rain
+  photographer: Alexandre Guimont
+  source: https://unsplash.com/photos/tilt-shift-view-of-rain-drops-TQpBE7XdRyU
+  license: Unsplash License
+  used_by: null
+- file: city-1641834090472.jpg
+  tags:
+  - city
+  photographer: Jules Marvin Eguilos
+  source: https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-building-zhD0ndWYd9o
+  license: Unsplash License
+  used_by: null
+- file: city-1701888992217.jpg
+  tags:
+  - city
+  photographer: avechenri
+  source: https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-water-1woy08sNpr4
+  license: Unsplash License
+  used_by: null
+- file: city-1618487593906.jpg
+  tags:
+  - city
+  photographer: Lukas Zischke
+  source: https://unsplash.com/photos/man-sitting-on-the-edge-of-a-building-looking-at-the-city-lights-during-night-time-jyhez-QQ7X0
+  license: Unsplash License
+  used_by: null
+- file: city-1664484841666.jpg
+  tags:
+  - city
+  photographer: T Fang
+  source: https://unsplash.com/photos/a-city-skyline-at-night-uimvrrIHgF8
+  license: Unsplash License
+  used_by: null
+- file: watch-1582150264904.jpg
+  tags:
+  - watch
+  photographer: Alex Azabache
+  source: https://unsplash.com/photos/silver-and-black-analog-watch-fgCnYUwK_E8
+  license: Unsplash License
+  used_by: null
+- file: watch-1723629159965.jpg
+  tags:
+  - watch
+  photographer: Aashish Chandra
+  source: https://unsplash.com/photos/a-close-up-of-a-watch-on-a-black-surface-COh1pAQ79zA
+  license: Unsplash License
+  used_by: null
+- file: sea-1647941953226.jpg
+  tags:
+  - sea
+  photographer: Mks Mkss
+  source: https://unsplash.com/photos/a-full-moon-shines-over-the-ocean-at-night-GM4GVKaBGJc
+  license: Unsplash License
+  used_by: null
+- file: whiskey-1776175224702.jpg
+  tags:
+  - whiskey
+  photographer: Dylan Zhuang
+  source: https://unsplash.com/photos/glass-of-whiskey-and-lit-candle-with-projection-O_G5yTWAR_U
+  license: Unsplash License
+  used_by: null
+- file: gym-1603665409265.jpg
+  tags:
+  - gym
+  photographer: Eduardo Cano Photo Co.
+  source: https://unsplash.com/photos/red-and-black-dumbbell-on-black-floor-9xL_8KCEQqE
+  license: Unsplash License
+  used_by: null

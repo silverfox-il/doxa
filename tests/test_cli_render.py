@@ -109,3 +109,29 @@ def test_one_bad_post_does_not_block_the_others(repo):
     assert "2026-09-25-bad: 1 slides, need 2-10" in result.output
     assert load_post(good).status == Status.rendered
     assert load_post(bad).status == Status.queued
+
+
+def test_pool_take_copies_unused_photo_and_marks_it(repo):
+    import yaml
+
+    pool = repo / "assets" / "pool"
+    make_jpeg(pool / "gym-1.jpg")
+    make_jpeg(pool / "city-2.jpg")
+    (pool / "pool.yaml").write_text(
+        "# header kept\n"
+        + yaml.safe_dump(
+            [
+                {"file": "gym-1.jpg", "tags": ["gym"], "used_by": None},
+                {"file": "city-2.jpg", "tags": ["city"], "used_by": None},
+            ]
+        ),
+        encoding="utf-8",
+    )
+    out = run(repo, "pool-take", "2026-10-11-a", "--tag", "city")
+    assert out.exit_code == 0, out.output
+    assert (repo / "assets" / "backgrounds" / "2026-10-11-a.jpg").is_file()
+    text = (pool / "pool.yaml").read_text(encoding="utf-8")
+    assert text.startswith("# header kept") and "used_by: 2026-10-11-a" in text
+    assert "1 left" in out.output
+    assert "gym-1.jpg" in run(repo, "pool-take", "2026-10-12-b", "--tag", "city").output
+    assert run(repo, "pool-take", "2026-10-13-c").exit_code == 1  # empty
