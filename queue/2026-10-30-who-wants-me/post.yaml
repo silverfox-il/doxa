@@ -13,23 +13,41 @@ slides:
   accent: |-
     עם כרס קטנה.
     "מי תרצה אותי?"
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     הרבה מאוד נשים.
     בנות 40, בנות 45, בנות 50,
     שגם הן עברו גירושים.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הן לא מחפשות דוגמן.
+  accent: ''
   body: |-
     הן מחפשות גבר שמטפל בעצמו,
     יודע מה הוא רוצה,
     ולא נמצא במלחמה עם האקסית.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: את כל שלושת הדברים האלה
+  accent: ''
   body: |-
     אתה יכול לשנות תוך חצי שנה.
     העמוד הזה הוא בדיוק על זה.
   layout: bottom
+  items: []
+approved_hash: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
