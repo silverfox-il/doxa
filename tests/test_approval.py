@@ -192,7 +192,9 @@ def test_label_sync_preserves_everything_else(repo, gh):
     after = load_post(path)
     assert after.approved_hash == content_hash(after, path.parent)
     assert approval_is_current(after, path.parent)
-    assert after.model_copy(update={"approved": False, "approved_hash": None}) == before
+    reset = {"approved": False, "approved_hash": None, "approved_by": None, "approved_at": None}
+    assert after.model_copy(update=reset) == before
+    assert after.approved_by.value == "owner"
 
 
 def test_other_labels_do_not_approve(repo, gh):

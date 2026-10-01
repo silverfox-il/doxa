@@ -54,6 +54,19 @@ MAX_SLIDES = 10
 class Mode(str, Enum):
     render = "render"
     prebuilt = "prebuilt"
+    reel = "reel"
+
+
+class ApprovedBy(str, Enum):
+    owner = "owner"
+    auto = "auto"
+
+
+# Reels: 1080x1920 video, 10-15 s (owner's format), lines revealed one by one.
+REEL_MIN_SECONDS = 10.0
+REEL_MAX_SECONDS = 15.0
+REEL_MIN_LINES = 2
+REEL_MAX_LINES = 6
 
 
 class Layout(str, Enum):
@@ -128,6 +141,51 @@ class Slide(BaseModel):
         return self
 
 
+class Reel(BaseModel):
+    """A text reel: ``lines`` appear one after another over a dark background."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    lines: list[str]
+    music: str  # file name of a track in the private music folder
+    per_line: float = 2.4  # seconds each line is shown before the next appears
+    hold: float = 4.0  # seconds the full text stays on screen at the end
+
+    @property
+    def duration(self) -> float:
+        return self.per_line * (len(self.lines) - 1) + self.hold
+
+    @model_validator(mode="after")
+    def _shape(self) -> Reel:
+        n = len(self.lines)
+        if not (REEL_MIN_LINES <= n <= REEL_MAX_LINES):
+            raise ValueError(f"reel needs {REEL_MIN_LINES}-{REEL_MAX_LINES} lines, got {n}")
+        if any(not line.strip() for line in self.lines):
+            raise ValueError("reel lines must not be empty")
+        if not (REEL_MIN_SECONDS <= self.duration <= REEL_MAX_SECONDS):
+            raise ValueError(
+                f"reel lasts {self.duration:.1f}s, need {REEL_MIN_SECONDS:.0f}-"
+                f"{REEL_MAX_SECONDS:.0f}s (per_line x (lines-1) + hold)"
+            )
+        p = Path(self.music)
+        if p.name != self.music or p.suffix.lower() != ".mp3":
+            raise ValueError(f"music must be a bare .mp3 file name, got {self.music!r}")
+        return self
+
+
+class Source(BaseModel):
+    """Where in the book a post's text comes from (for the no-repeat list)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    file: str  # e.g. "02.md"
+    section: str  # heading the passage sits under
+
+    @property
+    def key(self) -> str:
+        return f"{self.file}#{self.section}"
+
+
 class Post(BaseModel):
     """A single ``post.yaml``."""
 
@@ -140,9 +198,13 @@ class Post(BaseModel):
     mode: Mode = Mode.render
     caption: str
     slides: list[Slide] = Field(default_factory=list)
+    reel: Reel | None = None
+    source: Source | None = None
 
     # --- system-written ---
     approved_hash: str | None = None
+    approved_by: ApprovedBy | None = None
+    approved_at: str | None = None  # ISO timestamp, Asia/Jerusalem
     status: Status = Status.queued
     ig_media_id: str | None = None
     permalink: str | None = None
@@ -189,6 +251,13 @@ class Post(BaseModel):
             raise ValueError(f"render mode needs {MIN_SLIDES}-{MAX_SLIDES} slides, got {n}")
         if self.mode == Mode.prebuilt and n:
             raise ValueError("prebuilt mode takes JPEGs from slides/; remove the slides: list")
+        if self.mode == Mode.reel:
+            if n:
+                raise ValueError("reel mode has no slides; put the text in reel.lines")
+            if self.reel is None:
+                raise ValueError("reel mode needs a reel: block (lines, music)")
+        elif self.reel is not None:
+            raise ValueError(f"reel: block is only for mode: reel (got {self.mode.value})")
         return self
 
     @property
@@ -211,7 +280,7 @@ def slide_files(slides_dir: Path) -> list[Path]:
 
 # Owner-authored fields that define what gets published. ``approved`` itself is
 # excluded (flipping it is not an edit), as are all system-written fields.
-_CONTENT_FIELDS = {"id", "publish_at", "mode", "caption", "slides"}
+_CONTENT_FIELDS = {"id", "publish_at", "mode", "caption", "slides", "reel", "source"}
 
 
 def content_hash(post: Post, post_dir: Path) -> str:
@@ -221,7 +290,8 @@ def content_hash(post: Post, post_dir: Path) -> str:
     don't matter) and the bytes of every slide JPEG in ``slides/``.
     """
     h = hashlib.sha256()
-    fields = post.model_dump(mode="json", include=_CONTENT_FIELDS)
+    # exclude_none keeps hashes of posts written before reel/source existed unchanged.
+    fields = post.model_dump(mode="json", include=_CONTENT_FIELDS, exclude_none=True)
     h.update(json.dumps(fields, sort_keys=True, ensure_ascii=False).encode("utf-8"))
     for f in slide_files(post_dir / "slides"):
         h.update(f"|{f.name}|".encode())
