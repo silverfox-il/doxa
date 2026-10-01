@@ -565,9 +565,22 @@ def test_reel_live_publish(repo, gh_calls, monkeypatch):
 
 def test_reel_head_must_be_video_mp4(repo, gh_calls, monkeypatch):
     path = reel_post(repo, monkeypatch)
-    p, client, _, _ = publisher(repo, head=lambda u: (200, "application/octet-stream"))
+    p, client, _, _ = publisher(repo, head=lambda u: (200, "text/html"))
     assert p.run(dry_run=False) == 1
-    assert "application/octet-stream" in load_post(path).error
+    assert "text/html" in load_post(path).error
+
+
+def test_reel_octet_stream_accepted_only_if_bytes_are_mp4(repo, gh_calls, monkeypatch):
+    # raw.githubusercontent.com serves .mp4 as application/octet-stream.
+    path = reel_post(repo, monkeypatch)
+    p, client, _, _ = publisher(repo, head=lambda u: (200, "application/octet-stream"))
+    p.sniff_mp4 = lambda u: False
+    assert p.run(dry_run=True) == 1
+    p2, client2, _, logs = publisher(repo, head=lambda u: (200, "application/octet-stream"))
+    p2.sniff_mp4 = lambda u: True
+    assert p2.run(dry_run=True) == 0
+    assert any("HEAD ok" in line and "reel.mp4" in line for line in logs)
+    assert load_post(path).status == Status.rendered
 
 
 def test_reel_dry_run_logs_reels_body(repo, gh_calls, monkeypatch):

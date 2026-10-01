@@ -85,6 +85,15 @@ class GitCommitter:
         self._git("push", "origin", "HEAD:main")
 
 
+def is_mp4(url: str) -> bool:
+    """True when the first bytes at ``url`` are an MP4 header (``ftyp`` box)."""
+    try:
+        resp = requests.get(url, headers={"Range": "bytes=0-15"}, timeout=30)
+    except requests.RequestException:
+        return False
+    return resp.status_code in (200, 206) and resp.content[4:8] == b"ftyp"
+
+
 def head_check(url: str) -> tuple[int, str]:
     """HEAD a public image URL; return (status_code, content_type)."""
     try:
@@ -108,6 +117,7 @@ class Publisher:
     log: Log
     now: dt.datetime = field(default_factory=lambda: dt.datetime.now(TZ))
     head: Callable[[str], tuple[int, str]] = head_check
+    sniff_mp4: Callable[[str], bool] = is_mp4
     sleep: Callable[[float], None] = time.sleep
     poll_s: float = 15.0
 
@@ -182,13 +192,22 @@ class Publisher:
         return [github.raw_url(self.slug, self.sha, post.id, i) for i in range(1, n + 1)]
 
     def check_urls(self, urls: list[str]) -> None:
-        """Every URL must answer 200 with the right type; raw.githubusercontent can lag."""
+        """Every URL must answer 200 with the right type; raw.githubusercontent can lag.
+
+        raw.githubusercontent.com serves .mp4 as application/octet-stream, so for
+        videos that type is accepted once the first bytes prove it is an MP4.
+        """
         for url in urls:
-            want = "video/mp4" if url.endswith(".mp4") else "image/jpeg"
+            video = url.endswith(".mp4")
+            want = "video/mp4" if video else "image/jpeg"
             for attempt in range(3):
                 code, ctype = self.head(url)
-                if code == 200 and ctype.split(";")[0].strip() == want:
+                kind = ctype.split(";")[0].strip()
+                if code == 200 and kind == want:
                     break
+                if code == 200 and video and kind == "application/octet-stream":
+                    if self.sniff_mp4(url):
+                        break
                 if attempt < 2:
                     self.sleep(10 * (attempt + 1))
             else:
