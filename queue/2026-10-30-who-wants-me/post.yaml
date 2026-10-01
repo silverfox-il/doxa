@@ -1,6 +1,6 @@
 id: 2026-10-30-who-wants-me
 publish_at: 2026-10-11 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תגיב "בפנים" אם אתה מתחיל היום. 🦊
@@ -45,7 +45,7 @@ slides:
     העמוד הזה הוא בדיוק על זה.
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:986ef658333c98aff00ef597d8e138ebfcf8123f3fc64e6bda23894375a9bd7d
 status: rendered
 ig_media_id: null
 permalink: null

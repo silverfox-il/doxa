@@ -1,6 +1,6 @@
 id: 2026-10-26-knees
 publish_at: 2026-10-09 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תייג חבר שהברכיים שלו הפכו לתירוץ. 🦊
@@ -13,21 +13,39 @@ slides:
   accent: |-
     להפסיק להתאמן.
     הן סיבה להתחזק נכון.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     הרבה פעמים הכאב קשור
     לשרירים חלשים סביב הברך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הפתרון הוא לא הספה.
+  accent: ''
   body: |-
     רגליים חזקות, בהדרגה:
     טווח תנועה נוח, משקל קל, התקדמות איטית.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: קודם אבחון אצל רופא או פיזיותרפיסט.
+  accent: ''
   body: |-
     כאב חד לא עוברים בכוח.
     אבל אל תיתן לו להפוך לעשור של ספה.
   layout: bottom
+  items: []
+approved_hash: sha256:a7cb0b77a83ec6f2eded42a7bcfda8c2d7d9c1dd52b9c354cf68ad7f510d12d1
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

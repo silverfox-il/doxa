@@ -1,6 +1,6 @@
 id: 2026-10-12-first-date-home
 publish_at: 2026-10-02 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה מארח, אתה מוביל, אתה בעולם שלך. ומסעדה? לא בפגישה ראשונה.
@@ -14,35 +14,59 @@ slides:
   accent: |-
     לא צריך להיות
     ארוחה של 400 שקל.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: ארוחת ערב בדייט ראשון היא
+  accent: ''
   body: |-
     ראיון עבודה של שעתיים מול צלחת.
     וחשבון על אישה שאולי לא תראה שוב.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     מה אני עושה:
     מזמין אותה אליי,
     על כוס יין טוב.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: אישה שבאמת רוצה אותך, באה.
+  accent: ''
   body: |-
     מי שבאה בשביל ארוחה ותמונה לסטורי,
     תמצא פתאום מאה סיבות למה לא.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'הכללים לא משתנים:'
+  accent: ''
   body: |-
     רק אחרי שיש לך את המספר שלה.
     היא מגיעה לבד והולכת מתי שבא לה.
     כוס יין היא לא הבטחה לכלום.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: היא מעדיפה בחוץ? לגמרי בסדר.
+  accent: ''
   body: |-
     בקיץ: חוף הים עם בקבוק ושתי כוסות,
     מצפה שאתה מכיר, שחייה לילית במעיין.
   layout: bottom
+  items: []
+approved_hash: sha256:9a53fcf1b335a36a9a2b01e33f91a85bf951ae1310e53a81c287146c81e9a818
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

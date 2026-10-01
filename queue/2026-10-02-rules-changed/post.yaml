@@ -1,6 +1,6 @@
 id: 2026-10-02-rules-changed
 publish_at: 2026-10-01 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   בן 45 או בן 55, אם חזרת לשוק אחרי שנים, הכללים שהכרת כבר לא עובדים.
@@ -53,7 +53,7 @@ slides:
   body: ''
   layout: bottom
   items: []
-approved_hash: null
+approved_hash: sha256:7133ab280a81c13be8f50f23f834dd5b532aeb02a114575b330352a6fd933c70
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-14-actions-not-words
 publish_at: 2026-10-03 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תסתכל מה היא עושה, לא מה היא אומרת. וגם על עצמך.
@@ -12,25 +12,48 @@ slides:
   kicker: לא לחזור על הטעות
   title: תאמין למעשים,
   accent: לא למילים.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     היא אומרת שהיא לא אוהבת דרמה,
     אבל כל שבוע יש משבר.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     היא אומרת שהאקס מאחוריה,
     אבל הוא מופיע בכל שיחה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     מילים זה זול.
     התנהגות לאורך זמן היא המידע האמיתי.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'וזה עובד בשני הכיוונים:'
+  accent: ''
   body: |-
     גם היא בודקת אותך.
     תהיה גבר שהמעשים שלו מתאימים למילים.
   layout: bottom
+  items: []
+approved_hash: sha256:82e5933aab977b30fc21dec3cd642928a6b0f9b5240cbcfde086cf260ed06df3
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

@@ -1,6 +1,6 @@
 id: 2026-10-27-quiet-money
 publish_at: 2026-10-10 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   וגם: אתה לא כספומט של אף אחת. הערך שלך הוא אתה, לא הארנק.
@@ -11,23 +11,42 @@ slides:
 - background: assets/backgrounds/dark.jpg
   kicker: הפריים
   title: כסף שקט.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     גבר שמנפנף בשעון, ברכב ובחשבון
     נראה כמו מי שצריך להוכיח משהו.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: הכסף שלך לא צריך לדבר.
+  accent: ''
   body: |-
     הוא צריך להרגיש:
     בזה שאתה לא מתלונן על המזונות בדייט,
     ובזה שיש לך זמן.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: ואם אתה עוד לא שם?
+  accent: ''
   body: |-
     אל תעמיד פנים.
     אין דבר מביך יותר מגבר שמשחק עשיר.
     תבנה את זה, בשקט.
   layout: bottom
+  items: []
+approved_hash: sha256:0501910f2a2713e7ab60ca3c587a19d2ef91bbaf100b0add598dae446d82a3ca
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

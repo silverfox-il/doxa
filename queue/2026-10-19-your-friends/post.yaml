@@ -1,6 +1,6 @@
 id: 2026-10-19-your-friends
 publish_at: 2026-10-06 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   החבר'ה נשארים. תתייג אחד מהם. 🦊
@@ -11,21 +11,40 @@ slides:
   kicker: לא לחזור על הטעות
   title: אם היא שונאת את החברים שלך,
   accent: היא שונאת חלק ממך.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     החברים שלך איתך 30 שנה.
     הם ראו אותך מתחתן, מתגרש, נופל וקם.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: מי שמנתקת אותך מהם בהדרגה,
+  accent: ''
   body: |-
     "למה אתה צריך לראות אותם כל שבוע?",
     לא מגנה עליך. היא מבודדת אותך.
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אישה טובה תרצה להכיר אותם.
     אולי לא תתלהב מכולם,
     אבל היא לא תבקש ממך לבחור.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: sha256:a9462d006b84daf455cb98ab0bcc0d44fd075227172f9462c9af37e6c07516cf
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

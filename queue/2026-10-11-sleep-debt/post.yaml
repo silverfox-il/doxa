@@ -1,6 +1,6 @@
 id: 2026-10-11-sleep-debt
 publish_at: 2026-10-02 07:30
-approved: false
+approved: true
 mode: render
 caption: |-
   הלילה אתה נכנס למיטה חצי שעה מוקדם יותר. תתחיל משם.
@@ -14,15 +14,24 @@ slides:
   accent: |-
     עולות לך יותר
     ממה שאתה חושב.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     שינה קצרה פוגעת באנרגיה,
     במצב הרוח ובחשק.
     זה לא "עייפות של גיל". זה חוב.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: לפני כדורים ותוספים
+  accent: ''
+  body: ''
   layout: list
   items:
   - 7 שעות
@@ -30,8 +39,17 @@ slides:
   - טלפון מחוץ לחדר
   - בלי אלכוהול 3 שעות לפני
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'ואם משהו ירד, אנרגיה, חשק, כוח:'
+  accent: ''
   body: |-
     בדיקת דם ושיחה עם רופא.
     לא ניחושים מהאינטרנט.
   layout: bottom
+  items: []
+approved_hash: sha256:1007d61f1ca8100b703daaa6afb2eb5ca3ec5e391a69cfd35e600b89af1efc5a
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

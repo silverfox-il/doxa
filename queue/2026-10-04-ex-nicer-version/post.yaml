@@ -1,6 +1,6 @@
 id: 2026-10-04-ex-nicer-version
 publish_at: 2026-10-01 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   לא היא. אתה. זה החלק היחיד שבשליטה שלך.
@@ -14,20 +14,39 @@ slides:
   accent: |-
     הוא מחפש את האקסית.
     רק בגרסה נחמדה יותר.
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     אותו טיפוס. אותה דינמיקה.
     ואז הוא מתפלא שהוא שוב באותו סרט.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: 'לפני שאתה מחפש אישה חדשה, תשאל:'
+  accent: ''
   body: |-
     מה אני עשיתי בקשר הקודם
     שאני לא רוצה לחזור עליו?
   layout: bottom
+  items: []
 - background: assets/backgrounds/dark.jpg
+  kicker: ''
   title: |-
     זו לא האשמה. זה כוח.
     את עצמך אתה יכול לשנות.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+approved_hash: sha256:c806d4e6583477e28718a707589576453cd045c241a1ccfe61e1b9e3ba10595c
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
