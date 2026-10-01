@@ -1,6 +1,6 @@
 id: 2026-10-15-ill-see
-publish_at: 2026-10-15 07:30
-approved: true
+publish_at: 2026-10-04 07:30
+approved: false
 mode: render
 caption: |-
   הגבר הוא הפרס. הוא לא רודף.
@@ -12,49 +12,27 @@ slides:
   kicker: חזרה למשחק
   title: '"אני אראה"'
   accent: זה לא "כן".
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: קבעת איתה, והיא אמרה
-  accent: ''
   body: |-
     "אני אראה איך יהיה לי השבוע".
     ואתה בודק וואטסאפ וכותב "נו, מה החלטת?"
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     עצור.
     "אני אראה" אומר שאתה לא בעדיפות עכשיו.
     זה בסדר. זה מידע.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     תענה בקלילות: "סבבה, תעדכני".
     ותמשיך בחיים שלך.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: אם היא חוזרת, מצוין.
-  accent: ''
   body: |-
     אם לא, חסכת שבועיים של המתנה.
     גבר עם חיים מלאים לא מחכה ליד הטלפון.
   layout: bottom
-  items: []
-approved_hash: sha256:a7fa74a5ea038a397855ec72816fa9e2eb55d56cc456fcd3e167ed07b4a0801f
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
