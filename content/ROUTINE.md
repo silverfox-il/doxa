@@ -101,7 +101,7 @@ publish_at: "2026-10-11 18:00"
 approved: false
 mode: reel
 caption: |-
-  <first reel line, verbatim>
+  <the strongest reel line, verbatim (not a connector like "תזכור:")>
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 reel:

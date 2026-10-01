@@ -22,7 +22,7 @@
   - עקוב, כל בוקר פוסט אחד. 🦊
 - id: 2026-10-03-poison
   publish_at: 2026-10-03 09:00
-  status: queued
+  status: rendered
   source: 02.md#תוריד את הרעל
   quotes:
   - איך לעזאזל הגעתי לכאן?
@@ -33,7 +33,7 @@
   - גבר ממורמר נראה כמו פיצה קרה שנשארה על השולחן מאתמול
 - id: 2026-10-03-nice-guy
   publish_at: 2026-10-03 10:30
-  status: queued
+  status: rendered
   source: 02.md#הנחמד מפסיד, תמיד
   quotes:
   - הנחמד מפסיד, תמיד
@@ -44,7 +44,7 @@
   - נחמד זה לא תכונה, זה הדבר המינימלי שמצפים ממך
 - id: 2026-10-03-gym-membership
   publish_at: 2026-10-03 12:00
-  status: queued
+  status: rendered
   source: 02.md#ברזל, לא מנוי
   quotes:
   - מנוי זה לא אימון.
@@ -55,7 +55,7 @@
   - ולאט לאט אתה מתחיל להרגיש גבר בגוף שלך ולא רק בתעודת הזהות.
 - id: 2026-10-03-she-left-first
   publish_at: 2026-10-03 13:30
-  status: queued
+  status: rendered
   source: 02.md#היא עזבה הרבה לפני שהיא הלכה
   quotes:
   - היא עזבה הרבה לפני שהיא הלכה
@@ -66,7 +66,7 @@
   - אתה לא יושב על ספסל של אף אחת, ובטח שאתה לא נהיה אחד השחקנים שעליו.
 - id: 2026-10-03-worth-loving
   publish_at: 2026-10-03 15:00
-  status: queued
+  status: rendered
   source: 02.md#האהבה שלה באה עם תנאים
   quotes:
   - אתה דואג כל יום להיות גבר ששווה לאהוב.
@@ -75,7 +75,7 @@
   - ביום שאתה מפסיק להתאמן, הוא מתחיל לרדת.
 - id: 2026-10-03-no-arguing
   publish_at: 2026-10-03 16:30
-  status: queued
+  status: rendered
   source: 02.md#תדבר לרגש, לא לוויכוח
   quotes:
   - אי אפשר לנצח בוויכוח על משיכה.
@@ -86,7 +86,7 @@
   - גבר רגוע מול אישה סוערת הוא אחד המחזות הכי מושכים שיש, ואין בו שום היגיון, רק תחושה.
 - id: 2026-10-03-forgive
   publish_at: 2026-10-03 18:00
-  status: queued
+  status: rendered
   source: 02.md#סולח לכולם, לא שוכח כלום
   quotes:
   - אתה סולח, אבל לא שוכח.
@@ -96,7 +96,7 @@
   - סליחה זה לא פראייריות, סליחה זה שחרור, והזיכרון הוא השריון שלך.
 - id: 2026-10-03-obsessed
   publish_at: 2026-10-03 19:30
-  status: queued
+  status: rendered
   source: 02.md#תהיה אובססיבי
   quotes:
   - אתה חייב להיות חולה על כסף, אובססיבי ממש.
@@ -106,7 +106,7 @@
   - אתה תישאר עם ידיים ריקות. בלי המטרה, ובסוף גם בלעדיה.
 - id: 2026-10-03-two-breaths
   publish_at: 2026-10-03 21:00
-  status: queued
+  status: rendered
   source: 06.md#חוק שתי הנשימות
   quotes:
   - חוק שתי הנשימות
@@ -115,7 +115,7 @@
   - כשהיא כבר פתחה לך את הדלת, אל תעמוד בחוץ חצי שעה ותחשוב אם להיכנס.
 - id: 2026-10-04-fear-stays
   publish_at: 2026-10-04 07:30
-  status: queued
+  status: rendered
   source: 06.md#הפחד לא הולך, אתה פשוט גדל ממנו
   quotes:
   - הפחד לא נעלם לגמרי אף פעם.
@@ -125,7 +125,7 @@
   - אז תפסיק להילחם בפחד. תקבל אותו.
 - id: 2026-10-04-reel-feed
   publish_at: 2026-10-04 18:00
-  status: queued
+  status: rendered
   source: 02.md#גינה, לא כספומט
   quotes:
   - אתה לא מתחרה עם השכן מהקומה השנייה,
@@ -133,7 +133,7 @@
   - כל ערב לפני שהיא נרדמת.
 - id: 2026-10-05-nobody-watching
   publish_at: 2026-10-05 07:30
-  status: queued
+  status: rendered
   source: 06.md#לאף אחד לא באמת אכפת, וזה משחרר
   quotes:
   - אף אחד לא מסתכל עליך כמו שאתה חושב.
@@ -142,7 +142,7 @@
   - אין קהל. אין שופטים. יש רק אתה, והיא, ורגע אחד שיכול להיות נחמד או לא.
 - id: 2026-10-05-reel-turned-on
   publish_at: 2026-10-05 18:00
-  status: queued
+  status: rendered
   source: 02.md#הנחמד מפסיד, תמיד
   quotes:
   - אף אישה לא נדלקה מגבר כי הוא היה נחמד.
@@ -150,7 +150,7 @@
   - ואחר כך, אם הוא גם נחמד, זה בונוס.
 - id: 2026-10-06-two-men
   publish_at: 2026-10-06 07:30
-  status: queued
+  status: rendered
   source: 08.md#מה היא רואה לפני שאתה פותח את הפה
   quotes:
   - שני גברים בני 55, אותו גובה, אותו שיער אפור, אותו טלפון.
@@ -161,7 +161,7 @@
   - הגוף שלך מספר עליך סיפור שאתה לא צריך לספר בקול.
 - id: 2026-10-06-reel-ring
   publish_at: 2026-10-06 18:00
-  status: queued
+  status: rendered
   source: 11.md#אני לא נגד אהבה, אני נגד חתימה בעיניים עצומות
   quotes:
   - הטבעת לא שומרת על אהבה.
@@ -169,7 +169,7 @@
   - שבוחרים אחד בשני כל בוקר מחדש
 - id: 2026-10-07-numbers
   publish_at: 2026-10-07 07:30
-  status: queued
+  status: rendered
   source: 08.md#להתאמן, לא "לעשות אימון"
   quotes:
   - רוב האנשים במכון, תסתכל עליהם, נראים היום בדיוק כמו שנראו לפני שנה.
@@ -179,7 +179,7 @@
   - לך אחרי המספרים, לא אחרי התחושה.
 - id: 2026-10-07-reel-not-your-project
   publish_at: 2026-10-07 18:00
-  status: queued
+  status: rendered
   source: 02.md#ארבעים וחמש, והמשחק מתחיל מחדש
   quotes:
   - אתה לא מתאים את עצמך לשלב שהיא נמצאת בו.
@@ -187,7 +187,7 @@
   - והיא בטח לא ההחלטה שלך לתקן.
 - id: 2026-10-08-phone-bed
   publish_at: 2026-10-08 07:30
-  status: queued
+  status: rendered
   source: 08.md#הטלפון, הכוס והאספרסו
   quotes:
   - ואתה עדיין גולל באינסטגרם במיטה עד חצות.
@@ -197,7 +197,7 @@
   - תעזוב את הפאקינג טלפון
 - id: 2026-10-08-reel-discomfort
   publish_at: 2026-10-08 18:00
-  status: queued
+  status: rendered
   source: 06.md#איך האגו מנהל לך את הפחד
   quotes:
   - בהתחלה אתה תהיה לא משהו.
@@ -205,7 +205,7 @@
   - בדיוק שם, במקום הלא נוח, אתה גדל.
 - id: 2026-10-09-second-round
   publish_at: 2026-10-09 07:30
-  status: queued
+  status: rendered
   source: 11.md#סבב שני, והפעם עם עיניים פקוחות
   quotes:
   - מה קורה אם אני רוצה משהו רציני?
@@ -215,7 +215,7 @@
   - כשהחיים שלך מלאים, אישה היא תוספת טובה, לא אוויר לנשימה.
 - id: 2026-10-09-reel-garden
   publish_at: 2026-10-09 18:00
-  status: queued
+  status: rendered
   source: 02.md#גינה, לא כספומט
   quotes:
   - הכסף שלך לא נועד לקנות תשומת לב,
@@ -223,7 +223,7 @@
   - שכל הפרפרים ירצו לבוא לבקר בה
 - id: 2026-10-10-one-is-info
   publish_at: 2026-10-10 07:30
-  status: queued
+  status: rendered
   source: 11.md#אחד זה מידע, שלושה זו החלטה
   quotes:
   - נורה אחת, פעם אחת, היא מידע.
@@ -233,7 +233,7 @@
   - אתה לא זה שעובר מבחן. אתה זה שעורך אותו.
 - id: 2026-10-10-reel-the-reason
   publish_at: 2026-10-10 18:00
-  status: queued
+  status: rendered
   source: 01.md#1. הפרק השני שלך
   quotes:
   - אתה הולך לבנות את עצמך,
