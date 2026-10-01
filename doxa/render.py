@@ -78,12 +78,27 @@ def _bg_data_uri(background: str, root: Path) -> str:
     return f"data:image/jpeg;base64,{b64}"
 
 
+# Long verbatim passages get a smaller title so a full sentence fits the slide.
+TITLE_LONG_CHARS = 45
+TITLE_XLONG_CHARS = 110
+
+
+def _title_size(title: str) -> str:
+    n = len(title)
+    if n > TITLE_XLONG_CHARS:
+        return "xlong"
+    if n > TITLE_LONG_CHARS:
+        return "long"
+    return "short"
+
+
 def _content_html(slide: Slide) -> str:
     parts: list[str] = []
     if slide.kicker:
         parts.append(f'<div class="kicker">{html.escape(slide.kicker)}</div>')
     if slide.title:
-        parts.append(f'<div class="title">{html.escape(slide.title)}</div>')
+        size = _title_size(slide.title)
+        parts.append(f'<div class="title {size}">{html.escape(slide.title)}</div>')
     if slide.accent:
         parts.append(f'<div class="accent">{html.escape(slide.accent)}</div>')
     if slide.layout == Layout.list:

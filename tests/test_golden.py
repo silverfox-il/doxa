@@ -195,3 +195,14 @@ def test_golden_matches(renderer, name: str) -> None:
         rendered.save(OUT / f"{name}.actual.png")
         diff_img.save(OUT / f"{name}.diff.png")
     assert hot <= MAX_HOT_PIXELS, f"{name}: {hot} pixels differ by > {PIXEL_THRESHOLD}"
+
+
+@pytest.mark.parametrize(
+    "title,size",
+    [("קצר.", "short"), ("א" * 46, "long"), ("א" * 111, "xlong")],
+)
+def test_long_titles_get_smaller_font_class(title, size):
+    assert render._title_size(title) == size
+    gen.ensure_background()
+    doc = render.build_html(Slide(background=gen.BG, title=title), 1, 2, root=gen.ROOT)
+    assert f'class="title {size}"' in doc

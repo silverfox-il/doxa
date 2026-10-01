@@ -49,7 +49,9 @@ body {
 .scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 20%),
+    linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 0%,
     rgba(0, 0, 0, 0.5) 35%,
@@ -120,6 +122,16 @@ body {
   font-size: 34px;
   font-weight: 500;
   color: var(--muted);
+}
+
+.title.long {
+  font-size: 70px;
+  line-height: 1.12;
+}
+
+.title.xlong {
+  font-size: 56px;
+  line-height: 1.2;
 }
 
 .title {
