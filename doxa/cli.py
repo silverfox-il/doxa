@@ -20,7 +20,7 @@ from typing import NoReturn
 
 import click
 
-from . import slides, status
+from . import reel, rules, slides, status
 from .queue import (
     POST_ID_RE,
     RENDERABLE_STATUSES,
@@ -56,6 +56,7 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
     """Validate every post under ``root/queue``. Returns (post count, problems)."""
     files = iter_post_files(_queue_dir(root))
     errors: list[str] = []
+    cfg, book = rules.load_context(root)
     for path in files:
         rel = path.relative_to(root).as_posix()
         try:
@@ -69,9 +70,17 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
             for i, slide in enumerate(post.slides, start=1):
                 if not (root / slide.background).is_file():
                     errors.append(f"{rel}: slide {i} background not found: {slide.background}")
+        if post.mode == Mode.reel:
+            if post.status != Status.queued:
+                video = path.parent / reel.VIDEO_NAME
+                errors.extend(f"{rel}: {p}" for p in reel.validate_video(video))
         # Prebuilt posts must always ship JPEGs; rendered posts must have kept them.
-        if post.mode == Mode.prebuilt or post.status != Status.queued:
+        elif post.mode == Mode.prebuilt or post.status != Status.queued:
             errors.extend(f"{rel}: {p}" for p in slides.validate_slides(path.parent / "slides"))
+        # Content rules apply to everything that has not gone out yet.
+        if post.status not in (Status.published, Status.publishing):
+            for f in rules.blocking(rules.check_post(post, cfg, book)):
+                errors.append(f"{rel}: {f}")
     return len(files), errors
 
 
@@ -131,9 +140,10 @@ def _select(root: Path, post_ids: tuple[str, ...]) -> list[tuple[Path, Post]]:
 @click.argument("post_ids", nargs=-1)
 @click.pass_context
 def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
-    """Render POST_IDS (default: every queued/rendered post) to slides/*.jpg.
+    """Render POST_IDS (default: every queued/rendered post).
 
-    Prebuilt posts are only validated. Posts already publishing, published or
+    Carousels become slides/*.jpg, reels become reel.mp4. Prebuilt posts are
+    only validated. Posts already publishing, published or
     failed are never touched, so a re-render can never make them publishable.
     """
     from . import approval, render
@@ -151,12 +161,20 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
                 render.render_post(post, post_dir, root=root)
             except render.RenderError as e:
                 _fail([f"{post.id}: {e}"])
-        problems = slides.validate_slides(post_dir / "slides")
+        if post.mode == Mode.reel:
+            click.echo(f"rendering reel {post.id} ({post.reel.duration:.1f}s)…")
+            try:
+                reel.render_reel(post, post_dir, root=root)
+            except reel.ReelError as e:
+                _fail([f"{post.id}: {e}"])
+            problems = reel.validate_video(post_dir / reel.VIDEO_NAME)
+        else:
+            problems = slides.validate_slides(post_dir / "slides")
         if problems:
             _fail([f"{post.id}: {p}" for p in problems])
         before = post.model_copy()
         post.status = Status.rendered
-        outcome = approval.reconcile(post, post_dir)
+        outcome = approval.reconcile(post, post_dir, _now())
         if outcome == "reset":
             click.echo(f"! {post.id}: changed after approval, approval reset")
         elif outcome == "stamped":
@@ -205,6 +223,31 @@ def status_cmd(ctx: click.Context) -> None:
     """Regenerate STATUS.md."""
     out = status.write_status(ctx.obj["root"], _now())
     click.echo(f"✓ wrote {out.name}")
+
+
+@main.command("rules")
+@click.argument("post_ids", nargs=-1)
+@click.option("--strict", is_flag=True, help="Fail on review findings too, not only blocks.")
+@click.pass_context
+def rules_cmd(ctx: click.Context, post_ids: tuple[str, ...], strict: bool) -> None:
+    """Check content rules (verbatim, banned words, dashes, ages, identity...)."""
+    root: Path = ctx.obj["root"]
+    cfg, book = rules.load_context(root)
+    if book is None:
+        click.echo("! book not found: verbatim check cannot run", err=True)
+    failed = 0
+    for _, post in _select(root, post_ids):
+        if post.status in (Status.published, Status.publishing):
+            continue
+        findings = rules.check_post(post, cfg, book)
+        bad = findings if strict else rules.blocking(findings)
+        mark = "✗" if bad else ("!" if findings else "✓")
+        click.echo(f"{mark} {post.id}")
+        for f in findings:
+            click.echo(f"    {f}")
+        failed += bool(bad)
+    if failed:
+        _fail([f"{failed} post(s) break the content rules"])
 
 
 @main.command("open-issues")

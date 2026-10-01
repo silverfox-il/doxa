@@ -16,14 +16,31 @@ with ``approved: false`` or a stale hash is ever published.
 
 from __future__ import annotations
 
+import datetime as dt
 import re
 from pathlib import Path
 
 from . import TIMEZONE, github
-from .queue import Post, approval_is_current, content_hash, dump_post, load_post
+from .queue import (
+    TZ,
+    ApprovedBy,
+    Post,
+    approval_is_current,
+    content_hash,
+    dump_post,
+    load_post,
+)
 
 APPROVED_LABEL = "approved"
 APPROVED_LABEL_COLOR = "2ea44f"
+AUTO_LABEL = "auto-approved"
+AUTO_LABEL_COLOR = "1d76db"
+# Owner veto: an issue with this label never publishes, approved or not.
+HOLD_LABEL = "hold"
+HOLD_LABEL_COLOR = "d93f0b"
+# An auto-approved post waits this long before it may publish, so the owner
+# always has a day to look at the issue and add `hold`.
+AUTO_VETO_HOURS = 24
 TITLE_PREFIX = "Approve: "
 APPROVED_MARK = "✅ **Approved**"
 RESET_COMMENT = (
@@ -44,7 +61,22 @@ def post_id_from_title(title: str) -> str | None:
     return m.group(1) if m else None
 
 
-def reconcile(post: Post, post_dir: Path) -> str | None:
+def stamp(post: Post, post_dir: Path, by: ApprovedBy, now: dt.datetime) -> None:
+    """Approve ``post`` for its current content."""
+    post.approved = True
+    post.approved_hash = content_hash(post, post_dir)
+    post.approved_by = by
+    post.approved_at = now.astimezone(TZ).isoformat(timespec="seconds")
+
+
+def clear(post: Post) -> None:
+    post.approved = False
+    post.approved_hash = None
+    post.approved_by = None
+    post.approved_at = None
+
+
+def reconcile(post: Post, post_dir: Path, now: dt.datetime | None = None) -> str | None:
     """Bring ``approved``/``approved_hash`` in line with the current content.
 
     Mutates ``post`` and returns what happened, or ``None`` if nothing did:
@@ -53,24 +85,38 @@ def reconcile(post: Post, post_dir: Path) -> str | None:
     * ``"reset"``   — content changed since approval; un-approve.
     * ``"cleared"`` — not approved but a hash lingered; drop it.
     """
+    now = now or dt.datetime.now(TZ)
     current = content_hash(post, post_dir)
     if post.approved and post.approved_hash is None:
-        post.approved_hash = current
+        stamp(post, post_dir, ApprovedBy.owner, now)
         return "stamped"
     if post.approved and post.approved_hash != current:
-        post.approved = False
-        post.approved_hash = None
+        clear(post)
         return "reset"
-    if not post.approved and post.approved_hash is not None:
-        post.approved_hash = None
+    if not post.approved and (post.approved_hash or post.approved_by or post.approved_at):
+        clear(post)
         return "cleared"
     return None
+
+
+def auto_veto_until(post: Post) -> dt.datetime | None:
+    """When an auto-approved post becomes publishable (None if not auto-approved)."""
+    if post.approved_by != ApprovedBy.auto or not post.approved_at:
+        return None
+    return dt.datetime.fromisoformat(post.approved_at) + dt.timedelta(hours=AUTO_VETO_HOURS)
 
 
 def build_issue_body(post: Post, post_dir: Path, slug: str, sha: str, n_slides: int) -> str:
     """Markdown body: state, schedule, slide previews, caption, how to approve."""
     if approval_is_current(post, post_dir):
         state = f"{APPROVED_MARK} — will publish at the time below."
+        until = auto_veto_until(post)
+        if until is not None:
+            state += (
+                f"\n\n🤖 Approved automatically (all checks passed). To stop it, add the "
+                f"`{HOLD_LABEL}` label. It cannot publish before "
+                f"{until:%Y-%m-%d %H:%M} ({TIMEZONE})."
+            )
     elif post.approved:
         state = "⚠️ **Approval is stale** — the post changed after approval and will not publish."
     else:
@@ -152,9 +198,15 @@ def sync_label_to_yaml(post_id: str, yaml_path: Path) -> bool:
     if number is None or APPROVED_LABEL not in github.issue_labels(number):
         return False
     post = load_post(yaml_path)
-    if approval_is_current(post, yaml_path.parent):
+    if approval_is_current(post, yaml_path.parent) and post.approved_by == ApprovedBy.owner:
         return False
-    post.approved = True
-    post.approved_hash = content_hash(post, yaml_path.parent)
+    # An owner label also upgrades an auto-approval: no 24-hour wait.
+    stamp(post, yaml_path.parent, ApprovedBy.owner, dt.datetime.now(TZ))
     dump_post(post, yaml_path)
     return True
+
+
+def ensure_labels() -> None:
+    ensure_approved_label()
+    github.ensure_label(AUTO_LABEL, AUTO_LABEL_COLOR, "DOXA: approved automatically")
+    github.ensure_label(HOLD_LABEL, HOLD_LABEL_COLOR, "DOXA: owner veto, never publish")
