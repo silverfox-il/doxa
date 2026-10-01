@@ -57,7 +57,7 @@ slides:
   layout: bottom
   items: []
 approved_hash: sha256:91b862ae75e190e85117ae314e929127540f2a942e24a44c3b30e8657cf59bd0
-status: queued
+status: rendered
 ig_media_id: null
 permalink: null
 published_at: null
