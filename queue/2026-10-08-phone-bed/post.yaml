@@ -1,0 +1,49 @@
+id: 2026-10-08-phone-bed
+publish_at: 2026-10-08 07:30
+approved: false
+mode: render
+caption: |-
+  תעזוב את הפאקינג טלפון
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: ואתה עדיין גולל באינסטגרם במיטה עד חצות.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: תעזוב את הפאקינג טלפון, תטעין אותו בסלון ותקנה שעון מעורר של עשרים שקל.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: אתה נרדם כמו תינוק ומתעורר כמו סמרטוט
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: הקפה האחרון שלך עד שתיים בצהריים.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 08.md
+  section: הטלפון, הכוס והאספרסו
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

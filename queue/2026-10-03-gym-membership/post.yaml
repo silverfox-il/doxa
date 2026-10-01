@@ -1,0 +1,63 @@
+id: 2026-10-03-gym-membership
+publish_at: 2026-10-03 12:00
+approved: false
+mode: render
+caption: |-
+  וזה לא אימון, זה בילוי עם מגבת.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: מנוי זה לא אימון.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: אני מכיר יותר מדי גברים שמגיעים שלוש פעמים בשבוע, מסתובבים בין המכשירים, מרימים בדיוק את אותו משקל שהרימו לפני שנתיים
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: וזה לא אימון, זה בילוי עם מגבת.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: מה שאתה צריך זה אימוני כוח אמיתיים שקורעים לך את התחת.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: סטים שבסוף שלהם אתה נלחם על החזרה האחרונה כאילו מישהו מחזיק לך את הילדים בערבון.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-gym-membership.jpg
+  kicker: ''
+  title: ולאט לאט אתה מתחיל להרגיש גבר בגוף שלך ולא רק בתעודת הזהות.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 02.md
+  section: ברזל, לא מנוי
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

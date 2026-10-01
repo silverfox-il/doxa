@@ -1,0 +1,28 @@
+id: 2026-10-09-reel-garden
+publish_at: 2026-10-09 18:00
+approved: false
+mode: reel
+caption: |-
+  הכסף שלך לא נועד לקנות תשומת לב,
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides: []
+reel:
+  lines:
+  - הכסף שלך לא נועד לקנות תשומת לב,
+  - הוא נועד לבנות גינה יפה
+  - שכל הפרפרים ירצו לבוא לבקר בה
+  music: prettyjohn1-motivation-526516.mp3
+  per_line: 3.0
+  hold: 5.0
+source:
+  file: 02.md
+  section: גינה, לא כספומט
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

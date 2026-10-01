@@ -1,0 +1,56 @@
+id: 2026-10-07-numbers
+publish_at: 2026-10-07 07:30
+approved: false
+mode: render
+caption: |-
+  לך אחרי המספרים, לא אחרי התחושה.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: רוב האנשים במכון, תסתכל עליהם, נראים היום בדיוק כמו שנראו לפני שנה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: כי הם "עושים אימון" ולא מתאמנים.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: אתה יכול להזיע ולהתעייף מאוד ולא להתקדם אפילו גרם אחד.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: והמדד הוא לא איך אתה מרגיש. המדד הוא מספרים.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: לך אחרי המספרים, לא אחרי התחושה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 08.md
+  section: להתאמן, לא "לעשות אימון"
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

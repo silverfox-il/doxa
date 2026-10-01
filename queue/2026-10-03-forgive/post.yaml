@@ -1,0 +1,56 @@
+id: 2026-10-03-forgive
+publish_at: 2026-10-03 18:00
+approved: false
+mode: render
+caption: |-
+  סליחה זה לא פראייריות, סליחה זה שחרור, והזיכרון הוא השריון שלך.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-03-forgive.jpg
+  kicker: ''
+  title: אתה סולח, אבל לא שוכח.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-forgive.jpg
+  kicker: ''
+  title: אתה משחרר את הכעס, אתה לא הולך לישון איתו, לא מנהל איתה מלחמות בראש בשלוש בלילה ולא מספר לכל מי שמוכן לשמוע מה היא עשתה לך.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-forgive.jpg
+  kicker: ''
+  title: אבל אתה זוכר בדיוק מה קרה ואתה לא נותן לזה לקרות שוב
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-forgive.jpg
+  kicker: ''
+  title: כל עוד הכעס הזה יושב לך בבטן כל אישה חדשה יכולה ללחוץ עליו.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-forgive.jpg
+  kicker: ''
+  title: סליחה זה לא פראייריות, סליחה זה שחרור, והזיכרון הוא השריון שלך.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 02.md
+  section: סולח לכולם, לא שוכח כלום
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

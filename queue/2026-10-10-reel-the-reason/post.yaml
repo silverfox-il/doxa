@@ -1,0 +1,28 @@
+id: 2026-10-10-reel-the-reason
+publish_at: 2026-10-10 18:00
+approved: false
+mode: reel
+caption: |-
+  אתה הולך לבנות את עצמך,
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides: []
+reel:
+  lines:
+  - אתה הולך לבנות את עצמך,
+  - ככה שהן יבואו אליך.
+  - אתה צריך להיות הסיבה – לא האפקט.
+  music: atlasaudio-motivation-518088.mp3
+  per_line: 3.0
+  hold: 5.0
+source:
+  file: 01.md
+  section: 1. הפרק השני שלך
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

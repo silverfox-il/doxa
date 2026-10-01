@@ -1,0 +1,56 @@
+id: 2026-10-03-two-breaths
+publish_at: 2026-10-03 21:00
+approved: false
+mode: render
+caption: |-
+  קיבלת אות, אתה לוקח נשימה אחת, נשימה שנייה, וקם.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: חוק שתי הנשימות
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: הראש שלך הוא מכונה לייצור תירוצים, וככל שאתה נותן לה יותר זמן היא מייצרת יותר.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: קיבלת אות, אתה לוקח נשימה אחת, נשימה שנייה, וקם.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: לא שלישית.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: כשהיא כבר פתחה לך את הדלת, אל תעמוד בחוץ חצי שעה ותחשוב אם להיכנס.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 06.md
+  section: חוק שתי הנשימות
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

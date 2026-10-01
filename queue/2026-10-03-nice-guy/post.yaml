@@ -1,0 +1,56 @@
+id: 2026-10-03-nice-guy
+publish_at: 2026-10-03 10:30
+approved: false
+mode: render
+caption: |-
+  נחמד זה לא תכונה, זה הדבר המינימלי שמצפים ממך
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-03-nice-guy.jpg
+  kicker: ''
+  title: הנחמד מפסיד, תמיד
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-nice-guy.jpg
+  kicker: ''
+  title: הגבר הנחמד, המנומס, שעושה הכל נכון, שולח בוקר טוב כל יום ומזמין לארוחות, יושב לבד בשבת בערב ולא מבין מה הוא עושה לא בסדר.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-nice-guy.jpg
+  kicker: ''
+  title: הוא לא עושה שום דבר לא בסדר. הוא פשוט לא מדליק.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-nice-guy.jpg
+  kicker: ''
+  title: נחמד זה לא תכונה, זה הדבר המינימלי שמצפים ממך, כמו לא לאחר ולא להריח רע.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-nice-guy.jpg
+  kicker: ''
+  title: ומה אמרנו? אתה הפרס.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 02.md
+  section: הנחמד מפסיד, תמיד
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null

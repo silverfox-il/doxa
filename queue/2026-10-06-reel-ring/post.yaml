@@ -1,0 +1,28 @@
+id: 2026-10-06-reel-ring
+publish_at: 2026-10-06 18:00
+approved: false
+mode: reel
+caption: |-
+  הטבעת לא שומרת על אהבה.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides: []
+reel:
+  lines:
+  - הטבעת לא שומרת על אהבה.
+  - מה ששומר על אהבה זה שני אנשים
+  - שבוחרים אחד בשני כל בוקר מחדש
+  music: leberch-motivation-piano-580533.mp3
+  per_line: 3.0
+  hold: 5.0
+source:
+  file: 11.md
+  section: אני לא נגד אהבה, אני נגד חתימה בעיניים עצומות
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
