@@ -1,6 +1,6 @@
 id: 2026-10-07-three-cards
-publish_at: 2026-10-07 07:30
-approved: true
+publish_at: 2026-10-01 20:00
+approved: false
 mode: render
 caption: |-
   אישה בת 38 או בת 48 מחפשת בדיוק את שלושת הקלפים האלה. הם כבר אצלך.
@@ -14,58 +14,31 @@ slides:
   accent: |-
     על אותן נשים?
     תנשום.
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: 'יש לך 3 קלפים שאין לו:'
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     1. יציבות.
     היא לא צריכה לנחש אם תשלם
     שכירות בחודש הבא.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     2. שקט.
     אתה לא צריך להוכיח כלום לאף אחד.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: |-
     3. ניסיון.
     אתה יודע להקשיב, לקרוא סיטואציה
     ולא להיבהל מדרמה.
-  accent: ''
-  body: ''
   layout: bottom
-  items: []
 - background: assets/backgrounds/dark.jpg
-  kicker: ''
   title: רוב הגברים מסתירים את הקלפים האלה
-  accent: ''
   body: |-
     מאחורי כרס, בגדים ישנים
     והתנצלות על הגיל.
     תפסיק להתנצל. תתחיל להציג.
   layout: bottom
-  items: []
-approved_hash: sha256:25d9e36a8b1c2fdbcdfa8bb8d6fa5e5a37b4164f726e85b35dd48fb7b3a1b3f7
-status: rendered
-ig_media_id: null
-permalink: null
-published_at: null
-error: null
