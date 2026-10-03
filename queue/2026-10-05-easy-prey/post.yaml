@@ -1,0 +1,29 @@
+id: 2026-10-05-easy-prey
+publish_at: "2026-10-05 17:00"
+approved: false
+status: queued
+mode: render
+pillar: status
+format: tweet
+caption: |-
+  גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק היום
+
+  מסכים או לא? תכתוב בתגובות.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- title: "גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק היום"
+  layout: bottom
+- title: "כסף זה אנרגיה."
+  layout: bottom
+- title: "כלומר כסף זה החיים שלך שהפכו לנייר."
+  layout: bottom
+- title: "יש גבר עם כסף ויש כספומט, וזה ממש לא אותו דבר."
+  layout: bottom
+- title: "גבר שלוקח לאוכל יוקרתי בדייט ראשון, קונה צמיד אחרי שבועיים ומשלם לה על הטיפולים כדי שתישאר הוא לא אלפא, הוא סניף בנק"
+  layout: bottom
+- title: "הפרפרים באים לגינה, אתה לא רץ אחריהם עם רשת ביד כמו דביל."
+  layout: bottom
+source:
+  file: 02.md
+  section: "כסף (Money)"

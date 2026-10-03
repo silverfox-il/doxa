@@ -1,9 +1,11 @@
 id: 2026-10-05-nobody-watching
-publish_at: 2026-10-05 07:30
+publish_at: 2026-10-05 20:00
 approved: true
 mode: render
 caption: |-
   אף אחד לא מסתכל עליך כמו שאתה חושב.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
@@ -39,6 +41,8 @@ reel: null
 source:
   file: 06.md
   section: לאף אחד לא באמת אכפת, וזה משחרר
+format: null
+pillar: mind
 approved_hash: sha256:d518deb5d21a0fe63b91cf307fe29be7a62dd48bb7f580224ab06013d1a2f10a
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
@@ -47,3 +51,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

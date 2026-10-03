@@ -1,9 +1,11 @@
 id: 2026-10-05-reel-turned-on
-publish_at: 2026-10-05 18:00
+publish_at: 2026-10-05 13:00
 approved: true
 mode: reel
 caption: |-
   אף אישה לא נדלקה מגבר כי הוא היה נחמד.
+
+  מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
@@ -18,6 +20,8 @@ reel:
 source:
   file: 02.md
   section: הנחמד מפסיד, תמיד
+format: null
+pillar: dating
 approved_hash: sha256:4100cfed5fb1776bbd9dac992b5d27528b19655ba7e47c1561ea383d741b78cd
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
@@ -26,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

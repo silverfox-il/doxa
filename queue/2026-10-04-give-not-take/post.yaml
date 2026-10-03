@@ -1,0 +1,29 @@
+id: 2026-10-04-give-not-take
+publish_at: "2026-10-04 09:00"
+approved: false
+status: queued
+mode: render
+pillar: dating
+format: tweet
+caption: |-
+  אנשים בורחים ממי שמשדר מחסור, ונמשכים למי שמשדר שפע.
+
+  תייג חבר שצריך לשמוע את זה.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- title: "אנשים בורחים ממי שמשדר מחסור, ונמשכים למי שמשדר שפע."
+  layout: bottom
+- title: "רוב האנשים נכנסים לשיחה כמו מי שבא לגבות חוב."
+  layout: bottom
+- title: "הצד השני מרגיש את זה מקילומטר, ונסגר."
+  layout: bottom
+- title: "לתת, לא לגבות."
+  layout: bottom
+- title: "כשאתה באמת ובתמים בא לתת רגע טוב, הפחד מאבד את האחיזה שלו."
+  layout: bottom
+- title: "ובכלל, מי אמר שאחרי חמש דקות איתה אתה עוד תרצה אותה?"
+  layout: bottom
+source:
+  file: 06.md
+  section: "אתה בא לתת, לא לקחת"

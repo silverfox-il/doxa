@@ -1,9 +1,11 @@
 id: 2026-10-06-reel-ring
-publish_at: 2026-10-06 18:00
+publish_at: 2026-10-06 13:00
 approved: true
 mode: reel
 caption: |-
   הטבעת לא שומרת על אהבה.
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
@@ -18,6 +20,8 @@ reel:
 source:
   file: 11.md
   section: אני לא נגד אהבה, אני נגד חתימה בעיניים עצומות
+format: null
+pillar: second-round
 approved_hash: sha256:7b37b828988ddb567835742ed8f4f168abdc7d9fa8f90968289816a099ee0341
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
@@ -26,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

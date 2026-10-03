@@ -1,0 +1,25 @@
+id: 2026-10-05-status
+publish_at: "2026-10-05 09:00"
+approved: false
+status: queued
+mode: render
+pillar: status
+format: bold
+caption: |-
+  מה לעזאזל היא עושה איתו?
+
+  תייג חבר שצריך לשמוע את זה.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- title: "מה לעזאזל היא עושה איתו?"
+  layout: bottom
+- title: "בתשע מתוך עשר פעמים התשובה היא סטטוס."
+  layout: bottom
+- title: "בגיל 22 סטטוס זה כמה לייקים יש לך, ובגיל 45 או 55 זה משחק אחר לגמרי."
+  layout: bottom
+- title: "זה השם שעשית לעצמך בתחום, זה העסק שלך, זה הטלפונים שאתה מקבל מאנשים שצריכים ממך עצה"
+  layout: bottom
+source:
+  file: 02.md
+  section: "סטטוס"

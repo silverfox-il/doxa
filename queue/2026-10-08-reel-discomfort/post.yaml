@@ -1,9 +1,11 @@
 id: 2026-10-08-reel-discomfort
-publish_at: 2026-10-08 18:00
+publish_at: 2026-10-08 13:00
 approved: true
 mode: reel
 caption: |-
   בהתחלה אתה תהיה לא משהו.
+
+  תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
@@ -18,6 +20,8 @@ reel:
 source:
   file: 06.md
   section: איך האגו מנהל לך את הפחד
+format: null
+pillar: mind
 approved_hash: sha256:39499c6c776794664f02b1d15970bf195a6ee619d07bd95de2df536c03a00e36
 approved_by: auto
 approved_at: '2026-10-02T00:38:49+03:00'
@@ -26,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

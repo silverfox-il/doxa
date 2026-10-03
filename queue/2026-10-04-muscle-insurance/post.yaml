@@ -1,0 +1,35 @@
+id: 2026-10-04-muscle-insurance
+publish_at: "2026-10-04 11:00"
+approved: false
+status: queued
+mode: render
+pillar: body
+format: photo
+caption: |-
+  אני קורא לזה לאט לאט להפוך לסבא לפני הזמן.
+
+  שמור את הפוסט. תחזור אליו כשתצטרך.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "אני קורא לזה לאט לאט להפוך לסבא לפני הזמן."
+  layout: bottom
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "אחרי גיל 40 הגוף מתחיל לאבד שריר בשקט, קצת כל שנה"
+  layout: bottom
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "ואם אתה לא עושה כלום אתה מגיע לגיל 60 חלש, רך ועם הרבה פחות כוח ממה שהיה לך."
+  layout: bottom
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "אימון כוח זה הדבר היחיד שבאמת עוצר את התהליך הזה"
+  layout: bottom
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "ככל שיש לך יותר ממנו, ככה אתה נראה טוב יותר, בבגדים ובלי בגדים."
+  layout: bottom
+- background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
+  title: "אז השריר הוא לא רק קישוט בשבילך, הוא ביטוח."
+  layout: bottom
+source:
+  file: 08.md
+  section: "השריר, הקלף שאתה מחזיק"

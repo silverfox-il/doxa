@@ -1,0 +1,35 @@
+id: 2026-10-06-looks-matter
+publish_at: "2026-10-06 09:00"
+approved: false
+status: queued
+mode: render
+pillar: body
+format: photo
+caption: |-
+  המראה שלך קובע, ועוד איך קובע.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "המראה שלך קובע, ועוד איך קובע."
+  layout: bottom
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "במשך עשורים כל גורו הפיתוי מכר לגברים את השקר שמראה לא משנה ושאפשר להצליח עם כל פרצוף אם רק יודעים מה להגיד."
+  layout: bottom
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "זה חרטא."
+  layout: bottom
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "ממבט ראשון היא צריכה להימשך אליך ולו טיפה."
+  layout: bottom
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "על הגובה ועל מה שאמא טבע חילקה לך אין לך הרבה מה לעשות, אבל על כל השאר? יש לך המון מה לעשות"
+  layout: bottom
+- background: assets/backgrounds/2026-10-06-looks-matter.jpg
+  title: "ובגיל שלך זה ההבדל בין גבר שנראה כמו ג'ורג' קלוני לגבר שנראה כמו הדוד שנרדם בחתונות."
+  layout: bottom
+source:
+  file: 02.md
+  section: "כן, איך שאתה נראה משנה"

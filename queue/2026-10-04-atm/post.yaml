@@ -1,0 +1,29 @@
+id: 2026-10-04-atm
+publish_at: "2026-10-04 15:00"
+approved: false
+status: queued
+mode: render
+pillar: second-round
+format: bold
+caption: |-
+  אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
+
+  מסכים או לא? תכתוב בתגובות.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- title: "אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה."
+  layout: bottom
+- title: "אחרי עשרים שנה של תפקיד \"המפרנס\", הנתינה הכלכלית מרגישה לך טבעית."
+  layout: bottom
+- title: "היא מרגישה כמו אהבה."
+  layout: bottom
+- title: "והנשים שמחפשות בדיוק את זה מריחות אותך מקילומטר."
+  layout: bottom
+- title: "שים לב אם החיבה משתנה לפי הארנק."
+  layout: bottom
+- title: "תהיה נדיב, תזמין, תפנק כשאתה רוצה, אבל בתנאים שלך."
+  layout: bottom
+source:
+  file: 11.md
+  section: "נורה 14: הכספומט"

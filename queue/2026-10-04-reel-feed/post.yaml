@@ -1,24 +1,27 @@
 id: 2026-10-04-reel-feed
-publish_at: 2026-10-04 18:00
+publish_at: 2026-10-04 13:00
 approved: true
 mode: reel
 caption: |-
-  אתה מתחרה עם כל הגברים שהיא רואה בפיד שלה
+  אתה לא מתחרה עם השכן מהקומה השנייה,
+
+  מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
 reel:
   lines:
-  - 'תזכור:'
   - אתה לא מתחרה עם השכן מהקומה השנייה,
   - אתה מתחרה עם כל הגברים שהיא רואה בפיד שלה
   - כל ערב לפני שהיא נרדמת.
   music: audiocopper-dark-571483.mp3
-  per_line: 2.4
-  hold: 4.0
+  per_line: 3.0
+  hold: 5.0
 source:
   file: 02.md
   section: גינה, לא כספומט
+format: null
+pillar: status
 approved_hash: sha256:0b62233ba2905895cf606fea03ff81a6b02355595c9f45c4e456672a92ff9e05
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
@@ -27,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

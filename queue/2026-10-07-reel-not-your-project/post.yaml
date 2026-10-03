@@ -1,9 +1,11 @@
 id: 2026-10-07-reel-not-your-project
-publish_at: 2026-10-07 18:00
+publish_at: 2026-10-07 13:00
 approved: true
 mode: reel
 caption: |-
   אתה לא מתאים את עצמך לשלב שהיא נמצאת בו.
+
+  תייג חבר שצריך לשמוע את זה.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
@@ -18,6 +20,8 @@ reel:
 source:
   file: 02.md
   section: ארבעים וחמש, והמשחק מתחיל מחדש
+format: null
+pillar: dating
 approved_hash: sha256:7419a63a007dd99a190dfd56e408b5b324716a6960979db2905861b21b02ac0b
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
@@ -26,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

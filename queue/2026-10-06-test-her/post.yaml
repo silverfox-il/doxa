@@ -1,0 +1,27 @@
+id: 2026-10-06-test-her
+publish_at: "2026-10-06 15:00"
+approved: false
+status: queued
+mode: render
+pillar: dating
+format: bold
+caption: |-
+  אתה לא עובר מבחן, אתה עורך מבחן.
+
+  תגיב "בפנים" אם אתה מתחיל היום.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides:
+- title: "אתה לא עובר מבחן, אתה עורך מבחן."
+  layout: bottom
+- title: "והנחמד מדי בגיל 50 נוחת ישר בחבר הטוב שמזמינים לארוחת שישי."
+  layout: bottom
+- title: "אתה הגבר שבודק אם היא מתאימה לו, לא ההפך."
+  layout: bottom
+- title: "אם אתה מגיש לה את עצמך על מגש, עם כל המחמאות וכל ההתלהבות, אין לה על מה לעבוד."
+  layout: bottom
+- title: "קצת חום, קצת אתגר, עוד קצת חום."
+  layout: bottom
+source:
+  file: 06.md
+  section: "היא צריכה לשאול את עצמה \"למה דווקא אני?\""

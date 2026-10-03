@@ -1,9 +1,11 @@
 id: 2026-10-09-reel-garden
-publish_at: 2026-10-09 18:00
+publish_at: 2026-10-09 13:00
 approved: true
 mode: reel
 caption: |-
   הכסף שלך לא נועד לקנות תשומת לב,
+
+  מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides: []
@@ -18,6 +20,8 @@ reel:
 source:
   file: 02.md
   section: גינה, לא כספומט
+format: null
+pillar: status
 approved_hash: sha256:925bf78a4405d4b729d782a4b7306f4c48e65554ea33ef15598da85644b4e789
 approved_by: auto
 approved_at: '2026-10-02T00:38:49+03:00'
@@ -26,3 +30,5 @@ ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null
