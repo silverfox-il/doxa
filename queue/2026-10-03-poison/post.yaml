@@ -49,8 +49,8 @@ source:
 approved_hash: sha256:546e5fbc4bdb801c66d8aced0e01c484414593f7d749b49ee0c7ff014a67a9d7
 approved_by: auto
 approved_at: '2026-10-02T00:38:48+03:00'
-status: failed-retryable
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
-error: 'GET /17841416570144057/content_publishing_limit -> HTTP 401 code=190 subcode=0: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.'
+error: null
