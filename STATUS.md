@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-03-no-arguing` at 2026-10-03 16:30 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 4/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -41,7 +41,7 @@
 | 2026-10-03 | `2026-10-03-forgive` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-no-arguing` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-worth-loving` | ✅ | rendered | — | — |
-| 2026-10-03 | `2026-10-03-she-left-first` | ✅ | rendered | — | — |
+| 2026-10-03 | `2026-10-03-she-left-first` | ✅ | publishing | — | — |
 | 2026-10-03 | `2026-10-03-gym-membership` | ✅ | published | [link](https://www.instagram.com/p/DeCGx0GlgGn/) | — |
 | 2026-10-03 | `2026-10-03-nice-guy` | ✅ | published | [link](https://www.instagram.com/p/DeB_-v2G999/) | — |
 | 2026-10-03 | `2026-10-03-poison` | ✅ | published | [link](https://www.instagram.com/p/DeB9h0jm_rr/) | — |
