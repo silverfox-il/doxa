@@ -31,9 +31,60 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
 3. For D1 through D7 create:
    - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
+   - one **teaser series** at `18:00`, id `YYYY-MM-DD-tease-<slug>` (see below)
    - one **carousel** at `20:00`, id `YYYY-MM-DD-<slug>`
 
-That makes 14 posts. The slug is 1 to 4 lowercase English words joined by `-`.
+That makes 21 posts. The slug is 1 to 4 lowercase English words joined by `-`.
+
+Regular posts get no automatic story: the owner shares them to his story himself
+(only the app can attach a link to the post).
+
+## Teaser series (daily, 18:00)
+
+A reel that provokes, plus 2 follow-up stories. The reel goes to the feed and
+brings the traffic; the system then posts the reel video and the 2 follow-ups to
+stories, in order. It is a `mode: reel` post with `reel.stories`:
+
+- **Story 1 = the reel** (2 to 4 short lines): a provocation that stings. It calls
+  the reader out on something he does, says the uncomfortable thing everyone
+  thinks, or picks a fight with an excuse. In the book's voice, talking to him.
+- **Story 2** (up to ~120 characters): the twist that makes it worse, or proves
+  the point. Short, punchy, it should make him want to answer.
+- **Story 3** (up to ~120 characters): the payoff or a cliffhanger that sends him
+  to the profile ("זה בדיוק מה שנפרק בפוסט של הערב"), or asks him to answer the
+  story. The image gets a banner pointing to the profile automatically.
+
+Trolling means provoking the READER (his excuses, habits, ego), never mocking women
+as a group, never fake urgency or fake numbers. Every hard rule applies to all
+three parts. Pillar and call to action rotate like any post (`doxa validate`
+checks both).
+
+```yaml
+id: 2026-10-11-tease-good-morning
+publish_at: "2026-10-11 18:00"
+approved: false
+mode: reel
+pillar: dating
+caption: |-
+  <the hook: reel line 1>
+
+  <one line from config/cta.yaml, verbatim>
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+reel:
+  lines:
+  - <the hook, 3 to 12 words>
+  - <next line>
+  stories:
+  - <story 2>
+  - <story 3>
+  music: <a file name from doxa-private/music/>
+  per_line: 3.0
+  hold: 5.0
+source:
+  file: 02.md
+  section: <heading the idea comes from>
+```
 
 ## Pillars (rotate, never two in a row)
 
@@ -196,7 +247,7 @@ doxa rules --strict <all new ids>   # must print ✓ for every post, no findings
 doxa validate                       # must pass
 doxa used                           # refresh content/used.yaml
 pytest -q                           # must pass
-git add queue assets content && git commit -m "content: week of <D1> (7 reels, 7 carousels)"
+git add queue assets content && git commit -m "content: week of <D1> (7 reels, 7 teaser series, 7 carousels)"
 git push origin HEAD:main
 ```
 
