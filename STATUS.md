@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-03-worth-loving` at 2026-10-03 15:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -28,7 +28,7 @@
 | 2026-10-03 | `2026-10-03-worth-loving` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-she-left-first` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-gym-membership` | ✅ | rendered | — | — |
-| 2026-10-03 | `2026-10-03-nice-guy` | ✅ | publishing | — | — |
+| 2026-10-03 | `2026-10-03-nice-guy` | ✅ | published | [link](https://www.instagram.com/p/DeB_-v2G999/) | — |
 | 2026-10-03 | `2026-10-03-poison` | ✅ | published | [link](https://www.instagram.com/p/DeB9h0jm_rr/) | — |
 | 2026-10-01 | `2026-10-02-rules-changed` | ✅ | published | [link](https://www.instagram.com/p/Dd9hpPSoy_F/) | — |
 | 2026-09-27 | `2026-09-27-manifesto` | ✅ | published | [link](https://www.instagram.com/p/Dd69CCWIJ86/) | — |
