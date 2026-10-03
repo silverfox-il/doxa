@@ -44,8 +44,8 @@ source:
 format: null
 pillar: body
 approved_hash: sha256:2e030409a9004309f5ce50a86dbca06fdabf28a7d400e0c18fee578cb19e3d33
-approved_by: auto
-approved_at: '2026-10-03T15:10:54+03:00'
+approved_by: owner
+approved_at: '2026-10-03T15:28:32+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
