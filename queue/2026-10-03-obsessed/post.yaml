@@ -1,6 +1,6 @@
 id: 2026-10-03-obsessed
 publish_at: 2026-10-03 19:30
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה חייב להיות חולה על כסף, אובססיבי ממש.
@@ -48,9 +48,9 @@ source:
   section: תהיה אובססיבי
 format: null
 pillar: null
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:99dddf3811937fe3a0a4128e0f736adbf1ebd1877793fcb19052e3ceeff6d466
+approved_by: auto
+approved_at: '2026-10-03T15:33:22+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

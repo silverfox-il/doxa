@@ -37,7 +37,7 @@
 | 2026-10-04 | `2026-10-04-muscle-insurance` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-give-not-take` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-two-breaths` | ✅ | rendered | — | — |
-| 2026-10-03 | `2026-10-03-obsessed` | — | rendered | — | — |
+| 2026-10-03 | `2026-10-03-obsessed` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-forgive` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-no-arguing` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-worth-loving` | ✅ | rendered | — | — |
