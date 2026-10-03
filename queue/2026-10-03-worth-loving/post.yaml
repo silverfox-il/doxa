@@ -60,10 +60,10 @@ pillar: null
 approved_hash: sha256:e1ffb777ab59fefa517e476e7f5507caa8b6d5ec4d87f578695de4a8ccbe8c7e
 approved_by: owner
 approved_at: '2026-10-03T16:53:01+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18486748885111694'
+permalink: https://www.instagram.com/p/DeCQ_SaG-Qn/
+published_at: 2026-10-03T14:23:47+0000
 error: null
 story_id: null
 story_error: null
