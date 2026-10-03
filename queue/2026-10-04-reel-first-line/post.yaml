@@ -1,6 +1,6 @@
 id: 2026-10-04-reel-first-line
 publish_at: 2026-10-04 17:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אף אישה לא עזבה גבר בגלל המשפט הראשון.
@@ -24,9 +24,9 @@ source:
   section: מה אומרים לה? כמעט כל דבר
 format: null
 pillar: dating
-approved_hash: sha256:cbbaefdbc7a2fae312a897a7c8bfa4504e3939102ebb4b6ae5dfcf88bff766f2
-approved_by: owner
-approved_at: '2026-10-03T15:28:16+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

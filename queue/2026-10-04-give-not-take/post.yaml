@@ -1,6 +1,6 @@
 id: 2026-10-04-give-not-take
 publish_at: 2026-10-04 09:00
-approved: true
+approved: false
 mode: render
 caption: |-
   אתה ניגש אליה כמו מי שבא לגבות חוב.
@@ -64,9 +64,9 @@ source:
   section: אתה בא לתת, לא לקחת
 format: tweet
 pillar: dating
-approved_hash: sha256:ca088ba911b8cdf8f78e82620b7038c8f5c3a8d15d4c3c6a81307812f522b69d
-approved_by: owner
-approved_at: '2026-10-03T15:28:14+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

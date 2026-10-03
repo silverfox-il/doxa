@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-body-fat
 publish_at: 2026-10-05 15:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   הכרס שלך אומרת לה שאתה לא שולט בעצמך.
@@ -24,9 +24,9 @@ source:
   section: אחוז שומן
 format: null
 pillar: body
-approved_hash: sha256:bd0c5fd562e2e0cedf2c5b4f6c212670bbfcf50cd2c1077d546acc76450ec836
-approved_by: owner
-approved_at: '2026-10-03T15:28:21+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

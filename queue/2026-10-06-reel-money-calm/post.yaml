@@ -1,6 +1,6 @@
 id: 2026-10-06-reel-money-calm
 publish_at: 2026-10-06 17:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   בגיל שלך בלי כסף אתה לא חופשי. אתה לחוץ.
@@ -24,9 +24,9 @@ source:
   section: אפשר גם בלי, אבל לא בגיל שלך
 format: null
 pillar: status
-approved_hash: sha256:a28a13ecb03f2da36c8a48211a71a94dbd313573c8b88b927318b15468bf9450
-approved_by: owner
-approved_at: '2026-10-03T15:28:27+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

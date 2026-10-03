@@ -1,6 +1,6 @@
 id: 2026-10-04-sleep-builds
 publish_at: 2026-10-04 22:00
-approved: true
+approved: false
 mode: render
 caption: |-
   השריר שלך לא נבנה בחדר הכושר. הוא נבנה במיטה.
@@ -57,9 +57,9 @@ source:
   section: מה קורה לגוף שלך כשאתה סוגר עיניים
 format: tweet
 pillar: body
-approved_hash: sha256:64d7a913b3b6ef5d6495afaa3a5c564df7e5086938e2d7d4789242f57598a9d0
-approved_by: owner
-approved_at: '2026-10-03T15:28:17+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
