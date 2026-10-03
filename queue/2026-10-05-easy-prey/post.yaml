@@ -3,7 +3,7 @@ publish_at: 2026-10-05 17:00
 approved: true
 mode: render
 caption: |-
-  גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק היום
+  גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק.
 
   מסכים או לא? תכתוב בתגובות.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק היום
+  title: גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: כסף זה אנרגיה.
+  title: כל שקל בחשבון שלך הוא משמרת לילה או נסיעה בשש בבוקר. הכסף הזה הוא החיים שלך, מקופלים לנייר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: כלומר כסף זה החיים שלך שהפכו לנייר.
+  title: נשים נמשכות לכסף, וזה לא סוד ולא בושה. אישה שעברה גירושים יודעת בדיוק איך זה לחיות בלי ביטחון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: יש גבר עם כסף ויש כספומט, וזה ממש לא אותו דבר.
+  title: אבל יש גבר עם כסף, ויש כספומט.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: גבר שלוקח לאוכל יוקרתי בדייט ראשון, קונה צמיד אחרי שבועיים ומשלם לה על הטיפולים כדי שתישאר הוא לא אלפא, הוא סניף בנק
+  title: צמיד אחרי שבועיים? תשלום על הטיפולים כדי שתישאר? אתה לא אלפא, אתה סניף בנק. והיא תספר לחברות שאין ניצוץ.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: הפרפרים באים לגינה, אתה לא רץ אחריהם עם רשת ביד כמו דביל.
+  title: הכסף שלך בונה את העולם שלך. הוא לא מחלק כרטיסי כניסה אליו.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: הפרפרים באים לגינה. אתה לא רץ אחריהם עם רשת כמו דביל.
   accent: ''
   body: ''
   layout: bottom

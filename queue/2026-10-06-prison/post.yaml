@@ -3,7 +3,7 @@ publish_at: 2026-10-06 22:00
 approved: true
 mode: render
 caption: |-
-  תפסיק לחיות כמו אסיר.
+  אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,42 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: תפסיק לחיות כמו אסיר.
+  title: אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: בשורש של כמעט כל טראומה יושבת אשמה
+  title: 'מתחת לכמעט כל טראומה יושבת אשמה: שאתה בנאדם רע, ושלא מגיע לך כלום. לא כסף, לא אישה, לא שקט.'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: זו באמת רק אשמתי שהנישואים התפרקו?
+  title: זו באמת רק אשמתך שהנישואים התפרקו? היה לך חלק, בטח שהיה. אבל כל החטא עליך?
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אולי היה לי חלק, בטח שהיה, אבל כל החטא עליי?
+  title: הרבה פעמים האשמה שאתה סוחב שייכת למישהו אחר. אתה משלם חשבון על טעויות שלא עשית.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: הרבה פעמים תגלה שהאשמה שאתה סוחב שייכת בכלל למישהו אחר
+  title: 'אז תשאל: אתה רוצה לפגוע בה? לא? ערב טוב, קרבה, חוויה משותפת. מה לעזאזל רע בזה?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: בבסיס אתה רוצה טוב, לך, לילדים שלך, לנשים שתפגוש ולאנשים סביבך
+  title: בבסיס אתה רוצה טוב. תצא לעולם עם האמונה הזו, והיא תשנה לך הכול.
   accent: ''
   body: ''
   layout: bottom

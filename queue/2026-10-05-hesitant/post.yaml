@@ -3,7 +3,7 @@ publish_at: 2026-10-05 22:00
 approved: true
 mode: render
 caption: |-
-  גבר מהוסס מהוסס בכל מקום.
+  היא שומעת את ההיסוס שלך כבר ב"היי" הראשון.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,35 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: גבר מהוסס מהוסס בכל מקום.
+  title: היא שומעת את ההיסוס שלך כבר ב"היי" הראשון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: כשאתה פונה אליה, זה צריך להיות מתוך החלטה, לא מתוך "נו, אולי, בוא נראה".
+  title: חצי ממך רוצה לגשת. החצי השני לוחש שהיא בטח לא בעניין.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: גברים שחדשים בזה עושים הכל בחצי.
+  title: 'והקונפליקט הזה נראה החוצה: לחיצת יד רכה, חיבוק שבורח באמצע.'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם אתה פונה אליה בהתנצלות, זה עקיף, כי אתה בעצם קונה זמן ומחכה שהיא תאשר לך שאתה בסדר.
+  title: גבר מהוסס מהוסס בכל מקום, לא רק מולה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם היא בעניין, מעולה. אם לא, החיים שלך נשארים בדיוק אותו דבר.
+  title: מבט רגוע ויציב. קול כמו שאתה מדבר עם חבר על כדורגל.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: באת לדבר עם אישה שמוצאת חן בעיניך, לא לבקש ממנה טובה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: היא בעניין? מעולה. לא? החיים שלך נשארים אותו דבר.
   accent: ''
   body: ''
   layout: bottom

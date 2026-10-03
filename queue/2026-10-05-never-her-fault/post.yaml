@@ -3,7 +3,7 @@ publish_at: 2026-10-05 11:00
 approved: true
 mode: render
 caption: |-
-  היא אף פעם לא עשתה שום טעות.
+  בכל הסיפורים שלה, היא אף פעם לא טעתה.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: היא אף פעם לא עשתה שום טעות.
+  title: בכל הסיפורים שלה, היא אף פעם לא טעתה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: תקשיב לא למה שהיא אומרת על האקס, אלא למה שהיא אומרת על עצמה.
+  title: האקס הרס לה. אמא שלה העדיפה את האחות. החברה בגדה. העולם אכזרי.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: אישה שבשעה של סיפור לא מצאה שום דבר אחד שהיא הייתה עושה אחרת, זו אישה שתעשה לך בדיוק את אותו דבר.
+  title: תבקש ממנה לספר את סיפור הגירושים. לא בפגישה הראשונה. ותקשיב למה שהיא אומרת על עצמה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: כי מבחינתה, אם משהו השתבש, זה בגלל הגבר.
+  title: שעה של סיפור ואף דבר אחד שהיא הייתה עושה אחרת? היא תעשה לך בדיוק את אותו דבר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: מי שחזקה באמת לוקחת אחריות, גם על הדברים הלא נעימים.
+  title: היא שכחה, אתה חיכית חצי שעה, ובסוף הערב איכשהו אתה זה שמתנצל.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: ובסוף הערב, איכשהו, אתה זה שמתנצל.
+  title: אבל קודם תבדוק את עצמך. אם האקסית שלך היא המכשפה ואתה הקדוש המעונה, אתה עושה אותו דבר.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-05-never-her-fault.jpg
+  kicker: ''
+  title: תבין איפה אתה טעית, ותזהה מיד מי לא מסוגלת.
   accent: ''
   body: ''
   layout: bottom

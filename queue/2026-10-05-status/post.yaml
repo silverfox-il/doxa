@@ -3,7 +3,7 @@ publish_at: 2026-10-05 09:00
 approved: true
 mode: render
 caption: |-
-  מה לעזאזל היא עושה איתו?
+  ראית זוג ושאלת את עצמך מה היא עושה איתו?
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,28 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: מה לעזאזל היא עושה איתו?
+  title: ראית זוג ושאלת את עצמך מה היא עושה איתו?
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: בתשע מתוך עשר פעמים התשובה היא סטטוס.
+  title: בתשע מתוך עשר פעמים, התשובה היא סטטוס.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: בגיל 22 סטטוס זה כמה לייקים יש לך, ובגיל 45 או 55 זה משחק אחר לגמרי.
+  title: בגיל 22 סטטוס זה לייקים. בגיל 50 זה השם שעשית לעצמך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: זה השם שעשית לעצמך בתחום, זה העסק שלך, זה הטלפונים שאתה מקבל מאנשים שצריכים ממך עצה
+  title: זה הטלפונים שאתה מקבל מאנשים שצריכים ממך עצה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: 'וזה התחביב שגורם להם לשאול: רגע, מה? אתה עושה את זה?'
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: אופנוע בגולן, צלילה בסיני, מרתון בגיל 56. כל אלה זה סטטוס.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: 'סטטוס מדבר ישר עם החלק הכי עתיק במוח שלה: לידו בטוח, לידו מעניין.'
   accent: ''
   body: ''
   layout: bottom

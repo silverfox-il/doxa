@@ -3,7 +3,7 @@ publish_at: 2026-10-06 15:00
 approved: true
 mode: render
 caption: |-
-  אתה לא עובר מבחן, אתה עורך מבחן.
+  הנחמד מדי נגמר כחבר הטוב של ארוחות שישי.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
@@ -11,28 +11,42 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: אתה לא עובר מבחן, אתה עורך מבחן.
+  title: הנחמד מדי נגמר כחבר הטוב של ארוחות שישי.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: והנחמד מדי בגיל 50 נוחת ישר בחבר הטוב שמזמינים לארוחת שישי.
+  title: חום וקרבה זה טוב. אבל רק זה? אתה מאבד את כל המתח.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אתה הגבר שבודק אם היא מתאימה לו, לא ההפך.
+  title: אם בנית את עצמך נכון, אתה זה שבודק אם היא מתאימה לך. לא ההפך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם אתה מגיש לה את עצמך על מגש, עם כל המחמאות וכל ההתלהבות, אין לה על מה לעבוד.
+  title: 'היא צריכה לתהות בשקט: למה דווקא אני? מה יש בי שמעניין אותו?'
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: תגיש לה את עצמך על מגש, ואין לה על מה לעבוד.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: ורק לעקוץ? זה מתיש ומרגיש כמו שיפוט.
   accent: ''
   body: ''
   layout: bottom

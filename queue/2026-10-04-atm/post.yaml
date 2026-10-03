@@ -3,7 +3,7 @@ publish_at: 2026-10-04 15:00
 approved: true
 mode: render
 caption: |-
-  אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
+  החום שלה עולה ויורד לפי מה שנתת השבוע?
 
   מסכים או לא? תכתוב בתגובות.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
+  title: החום שלה עולה ויורד לפי מה שנתת השבוע?
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אחרי עשרים שנה של תפקיד "המפרנס", הנתינה הכלכלית מרגישה לך טבעית.
+  title: עשרים שנה היית המפרנס. אז לשלם מרגיש לך כמו אהבה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: היא מרגישה כמו אהבה.
+  title: זה מתחיל בקטן. הארנק שנשכח, הרכב בטיפול, התיק שהיא מתה עליו.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: והנשים שמחפשות בדיוק את זה מריחות אותך מקילומטר.
+  title: פעם אחת זה קושי אמיתי, ויש בזה כבוד. כל שבוע זה דפוס.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: שים לב אם החיבה משתנה לפי הארנק.
+  title: שבוע בלי מתנות הוא שבוע קר? אתה לא בזוגיות, אתה בעסקה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: תהיה נדיב, תזמין, תפנק כשאתה רוצה, אבל בתנאים שלך.
+  title: תהיה נדיב, אבל בתנאים שלך. כוס יין בהתחלה, לא ארוחת שף.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: היא לא נשארת בלי הפינוקים? חסכת לעצמך שנה של אכזבה.
   accent: ''
   body: ''
   layout: bottom

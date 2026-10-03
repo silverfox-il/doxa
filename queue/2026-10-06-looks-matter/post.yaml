@@ -3,7 +3,7 @@ publish_at: 2026-10-06 09:00
 approved: true
 mode: render
 caption: |-
-  המראה שלך קובע, ועוד איך קובע.
+  מי שאמר לך שמראה לא משנה, שיקר לך.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,42 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: המראה שלך קובע, ועוד איך קובע.
+  title: מי שאמר לך שמראה לא משנה, שיקר לך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: במשך עשורים כל גורו הפיתוי מכר לגברים את השקר שמראה לא משנה ושאפשר להצליח עם כל פרצוף אם רק יודעים מה להגיד.
+  title: גורו הפיתוי מכרו לך שעם המשפט הנכון מצליחים עם כל פרצוף. זה חרטא.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: זה חרטא.
+  title: אצלה המראה משנה בדיוק כמו אצלך. אפילו יותר, רק שהיא לא תודה בזה אף פעם.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: ממבט ראשון היא צריכה להימשך אליך ולו טיפה.
+  title: לפני שהיא עונה להודעה שלך, היא צריכה להימשך אליך ממבט ראשון. ולו טיפה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: על הגובה ועל מה שאמא טבע חילקה לך אין לך הרבה מה לעשות, אבל על כל השאר? יש לך המון מה לעשות
+  title: על הגובה ועל מה שאמא טבע חילקה לך אין לך שליטה. על כל השאר? המון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: ובגיל שלך זה ההבדל בין גבר שנראה כמו ג'ורג' קלוני לגבר שנראה כמו הדוד שנרדם בחתונות.
+  title: זה ההבדל בין ג'ורג' קלוני לבין הדוד שנרדם בחתונות.
   accent: ''
   body: ''
   layout: bottom

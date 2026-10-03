@@ -3,7 +3,7 @@ publish_at: 2026-10-06 11:00
 approved: true
 mode: render
 caption: |-
-  אין דבר פחות מושך בעולם מגבר שמבקש אישור.
+  כל משפט שלך בדייט הוא בעצם שאלה: אני בסדר?
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: אין דבר פחות מושך בעולם מגבר שמבקש אישור.
+  title: 'כל משפט שלך בדייט הוא בעצם שאלה: אני בסדר?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: כל הערב חיפשת את האישור שלה, כל משפט שלך היה בעצם שאלה של "אני בסדר? את מרוצה? אני מספיק טוב?", כמו ילד קטן שמראה לאמא ציור ומחכה שתגיד לו כמה הוא יפה.
+  title: את מרוצה? אני מספיק טוב? כמו ילד שמראה לאמא ציור ומחכה למחמאה. והיא מרגישה את זה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ובגיל 45 אחרי גירושים, כשפתאום הבית שקט בערבים שהילדים אצלה, החור הזה צורח.
+  title: 'ואז מגיעה ההודעה: "אתה ממש מקסים, אבל אני לא מרגישה שזה זה".'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: והמחיר הכי כבד הוא שגבר עם חרדת נטישה הוא גבר בלי סטנדרטים.
+  title: 'השורש: אתה לא מסוגל להיות לבד. ערב שקט בבית מרגיש לך כמו עונש, כי ריק מרגיש לך כמו נטישה.'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אתה מכיר את הגבר הזה? אולי ראית אותו במראה אחרי הגירושים.
+  title: ובערבים שהילדים אצלה והבית פתאום שקט, החור הזה צורח.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אל תיכנס לדיכאון, תיכנס לעבודה
+  title: 'והמחיר הכי כבד: גבר עם חרדת נטישה הוא גבר בלי סטנדרטים. לוקח מה שיש, וזוחל אחריה כשהיא הולכת.'
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: זיהית את עצמך? אל תיכנס לדיכאון. תיכנס לעבודה.
   accent: ''
   body: ''
   layout: bottom
