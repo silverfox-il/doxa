@@ -9,7 +9,9 @@ name: publish
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    # Twice an hour at off-peak minutes: GitHub delays or skips top-of-hour
+    # cron runs under load, and one skipped run must not stall a post.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
