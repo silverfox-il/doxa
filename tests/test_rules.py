@@ -224,3 +224,111 @@ def test_a_quote_may_be_used_once(repo):
     assert used.exit_code == 0
     text = (repo / "content" / "used.yaml").read_text(encoding="utf-8")
     assert "2026-10-03-a" in text and line in text and "תזכור:" not in text
+
+
+# --- content engine: hook, call to action, pillar ----------------------------------
+
+CTA = CFG.cta[0]
+ENGINE_AT = "2026-10-05 13:00"
+
+
+def engine_post(*titles: str, caption: str | None = None, **kw) -> Post:
+    hook = titles[0]
+    caption = caption if caption is not None else f"{hook}\n\n{CTA}\n.\n#גרושים"
+    slides = [{"title": t} for t in titles]
+    data = render_post_data(caption=caption, slides=slides, publish_at=ENGINE_AT, format="bold")
+    data.setdefault("pillar", "dating")
+    data.update(kw)
+    return Post.model_validate(data)
+
+
+def engine_found(post: Post, book: Book) -> list[tuple[str, str]]:
+    return [(s, r) for s, r in found(post, book) if r in {"hook", "cta", "pillar"}]
+
+
+def test_cta_list_is_loaded_and_clean():
+    assert 5 <= len(CFG.cta) <= 10
+    for line in CFG.cta:
+        assert not rules.DASHES.search(line), line
+
+
+def test_engine_post_with_hook_cta_pillar_passes(book):
+    post = engine_post("הוא פשוט לא מדליק.", "נחמד זה לא תכונה, זה הדבר")
+    assert found(post, book) == []
+
+
+def test_cta_line_is_exempt_from_verbatim_only_if_whitelisted(book):
+    post = engine_post(
+        "הוא פשוט לא מדליק.",
+        "נחמד זה לא תכונה, זה הדבר",
+        caption="הוא פשוט לא מדליק.\n\nתעקוב אחריי עכשיו.\n.\n#גרושים",
+    )
+    got = found(post, book)
+    assert ("block", "verbatim") in got and ("block", "cta") in got
+
+
+def test_two_ctas_block(book):
+    post = engine_post(
+        "הוא פשוט לא מדליק.",
+        "נחמד זה לא תכונה, זה הדבר",
+        caption=f"הוא פשוט לא מדליק.\n{CFG.cta[0]}\n{CFG.cta[1]}\n.\n#גרושים",
+    )
+    assert ("block", "cta") in engine_found(post, book)
+
+
+def test_long_hook_blocks(book):
+    long_hook = "הוא לא עושה שום דבר לא בסדר. הוא פשוט לא מדליק. נחמד זה לא תכונה"
+    post = engine_post(long_hook, "נחמד זה לא תכונה, זה הדבר")
+    assert ("block", "hook") in engine_found(post, book)
+
+
+def test_connector_hook_blocks(book):
+    post = engine_post("הוא פשוט", "נחמד זה לא תכונה, זה הדבר")
+    assert ("block", "hook") in engine_found(post, book)
+
+
+def test_caption_must_open_with_hook(book):
+    post = engine_post(
+        "הוא פשוט לא מדליק.",
+        "נחמד זה לא תכונה, זה הדבר",
+        caption=f"נחמד זה לא תכונה, זה הדבר\n\n{CTA}\n.\n#גרושים",
+    )
+    assert ("block", "hook") in engine_found(post, book)
+
+
+def test_reel_hook_is_line_one(book):
+    reel = {"lines": ["הוא", "פשוט לא מדליק."], "music": "a.mp3", "per_line": 4, "hold": 7}
+    post = engine_post("x", mode="reel", slides=[], reel=reel, format=None,
+                       caption=f"הוא\n\n{CTA}\n.\n#גרושים")
+    assert ("block", "hook") in engine_found(post, book)
+
+
+def test_missing_pillar_blocks(book):
+    post = engine_post("הוא פשוט לא מדליק.", "נחמד זה לא תכונה, זה הדבר", pillar=None)
+    assert ("block", "pillar") in engine_found(post, book)
+
+
+def test_old_posts_are_not_bound_by_engine_rules(book):
+    post = post_with("הוא פשוט לא מדליק.", "נחמד זה לא תכונה, זה הדבר")
+    assert post.publish_at < CFG.engine_from
+    assert found(post, book) == []
+
+
+def test_pillar_rotation_blocks_two_in_a_row():
+    def p(pid, at, pillar):
+        return engine_post("הוא פשוט לא מדליק.", "נחמד", id=pid, publish_at=at, pillar=pillar)
+
+    ok = [p("2026-10-05-a", "2026-10-05 13:00", "body"), p("2026-10-05-b", "2026-10-05 20:00", "mind")]
+    assert rules.pillar_rotation(ok, CFG) == []
+    bad = ok + [p("2026-10-06-c", "2026-10-06 13:00", "mind")]
+    got = rules.pillar_rotation(bad, CFG)
+    assert [f.where for f in got] == ["2026-10-06-c"]
+    # Order is by publish time, not by list order.
+    assert rules.pillar_rotation(list(reversed(ok)), CFG) == []
+
+
+def test_cta_lines_may_repeat_across_posts():
+    a = engine_post("הוא פשוט לא מדליק.", "נחמד", id="2026-10-05-a")
+    b = engine_post("נחמד זה לא תכונה, זה הדבר", "המינימלי", id="2026-10-05-b")
+    assert rules.repeated_quotes([a, b], CFG.cta) == []
+    assert rules.repeated_quotes([a, b]) != []

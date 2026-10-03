@@ -62,6 +62,12 @@ class FakeClient:
         assert children == ["child-1.jpg", "child-2.jpg", "child-3.jpg"]
         return "parent"
 
+    def create_story_container(self, url):
+        self.calls.append("create_story_container")
+        self.story_url = url
+        self._maybe_fail("create_story_container")
+        return "story"
+
     def wait_finished(self, container_id, **kw):
         self.calls.append("wait_finished")
         self._maybe_fail("wait_finished")
@@ -557,10 +563,13 @@ def test_reel_live_publish(repo, gh_calls, monkeypatch):
     client.wait_finished = lambda cid, **kw: waited.update(cid=cid, **kw)
     assert p.run(dry_run=False) == 0
     url = f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-post/reel.mp4"
-    assert heads == [url] and seen == {"url": url, "caption": "תזכור:"}
-    assert waited["cid"] == "reel-parent" and waited["timeout_s"] == 600.0
+    # The reel is checked twice: once for the feed post, once for its story.
+    assert heads == [url, url] and seen == {"url": url, "caption": "תזכור:"}
+    assert waited["cid"] == "story" and waited["timeout_s"] == 600.0
     assert "create_carousel_item" not in client.calls
-    assert load_post(path).status == Status.published
+    assert client.story_url == url
+    post = load_post(path)
+    assert post.status == Status.published and post.story_id == "media-1"
 
 
 def test_reel_head_must_be_video_mp4(repo, gh_calls, monkeypatch):

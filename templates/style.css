@@ -1,6 +1,10 @@
 /* DOXA slide styles — Hebrew RTL carousel, 1080x1350 (4:5).
  * Filled into slide.html by doxa/render.py. Heebo is injected as an @font-face
- * data URI so there is never a network fetch. Colours: near-black canvas, white text, silver accent.
+ * data URI so there is never a network fetch.
+ *
+ * Three formats (post.format): photo (text over a photo), tweet (quote as a post
+ * card), bold (flat colour, huge type). One accent everywhere: fox orange.
+ * Slide 1 is the hook (.hook): bigger type and a swipe arrow.
  */
 
 :root {
@@ -11,6 +15,9 @@
   --silver-1: #e9e9ee;
   --silver-2: #a9adb8;
   --pad: 88px;
+  --accent: #ff6a13;
+  --ink: #141414;
+  --paper: #f4f1ea;
 }
 
 * {
@@ -86,7 +93,7 @@ body {
 /* Counter is a number pair (n/N) — force LTR so "1/5" never flips. */
 .frame .counter {
   direction: ltr;
-  color: var(--muted);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
 
@@ -96,7 +103,7 @@ body {
   left: var(--pad);
   right: var(--pad);
   height: 2px;
-  background: linear-gradient(to left, var(--silver-2), rgba(169, 173, 184, 0));
+  background: linear-gradient(to left, var(--accent), rgba(255, 106, 19, 0));
 }
 
 .content {
@@ -196,4 +203,181 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: var(--silver-1);
+}
+
+/* ---------- hook slide (all formats) ---------- */
+
+.hook .title.short {
+  font-size: 112px;
+  line-height: 1.02;
+}
+.hook .title.long {
+  font-size: 84px;
+  line-height: 1.08;
+}
+
+/* Accent bar above the hook title. */
+.fmt-photo.hook .content::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--accent);
+}
+
+.swipe {
+  position: absolute;
+  bottom: 52px;
+  left: var(--pad);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--ink);
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 80px;
+  text-align: center;
+  direction: ltr;
+}
+
+.handle {
+  color: var(--accent);
+}
+
+/* ---------- bold: flat colour, huge type ---------- */
+
+.fmt-bold {
+  background: var(--ink);
+}
+.fmt-bold .scrim {
+  display: none;
+}
+.fmt-bold .content.bottom,
+.fmt-bold .content.list {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.fmt-bold .title.short {
+  font-size: 104px;
+}
+.fmt-bold .title.long {
+  font-size: 80px;
+}
+.fmt-bold .title.xlong {
+  font-size: 62px;
+}
+.fmt-bold .title {
+  font-weight: 900;
+}
+/* The hook slide flips to the accent colour with dark type. */
+.fmt-bold.hook {
+  background: var(--accent);
+  color: var(--ink);
+}
+.fmt-bold.hook .title.short {
+  font-size: 128px;
+}
+.fmt-bold.hook .frame .brand,
+.fmt-bold.hook .frame .counter {
+  color: var(--ink);
+}
+.fmt-bold.hook .rule {
+  background: var(--ink);
+}
+.fmt-bold.hook .swipe {
+  background: var(--ink);
+  color: var(--accent);
+}
+
+/* ---------- tweet: the quote as a post card ---------- */
+
+.fmt-tweet {
+  background: var(--paper);
+  color: var(--ink);
+}
+.fmt-tweet .scrim {
+  display: none;
+}
+/* The card already names the account. */
+.fmt-tweet .frame .brand {
+  visibility: hidden;
+}
+.fmt-tweet .rule {
+  display: none;
+}
+.fmt-tweet .card {
+  position: absolute;
+  left: 64px;
+  right: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 36px;
+  padding: 64px 64px 72px;
+  box-shadow: 0 18px 50px rgba(20, 20, 20, 0.12);
+  border-top: 12px solid var(--accent);
+}
+.fmt-tweet .who {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.fmt-tweet .avatar svg {
+  display: block;
+  width: 104px;
+  height: 104px;
+}
+.fmt-tweet .names {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.fmt-tweet .name {
+  font-size: 42px;
+  font-weight: 800;
+}
+.fmt-tweet .at {
+  font-size: 32px;
+  color: #6b6b70;
+  direction: ltr;
+  text-align: right;
+}
+.fmt-tweet .content {
+  position: static;
+}
+.fmt-tweet .title.short {
+  font-size: 84px;
+  line-height: 1.12;
+}
+.fmt-tweet .title.long {
+  font-size: 66px;
+  line-height: 1.22;
+}
+.fmt-tweet .title.xlong {
+  font-size: 50px;
+  line-height: 1.32;
+}
+.fmt-tweet .title {
+  font-weight: 700;
+}
+.fmt-tweet.hook .title.short {
+  font-size: 100px;
+  font-weight: 900;
+}
+.fmt-tweet .handle {
+  color: var(--ink);
+}
+
+/* Keep the hook text clear of the swipe arrow. */
+.fmt-photo.hook .content.bottom {
+  bottom: 170px;
+}
+
+/* Longer hooks on the flat colour still need to dominate the slide. */
+.fmt-bold.hook .title.long {
+  font-size: 92px;
 }

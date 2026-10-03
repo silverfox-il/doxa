@@ -280,3 +280,42 @@ def test_approved_without_hash_or_with_stale_hash_is_not_publishable(repo):
     assert select_publishable([(path, no_hash)], NOW) is None
     stale = p.model_copy(update={"caption": "שונה אחרי אישור"})
     assert select_publishable([(path, stale)], NOW) is None
+
+
+# --- formats ---------------------------------------------------------------------
+
+def test_photo_format_needs_backgrounds():
+    from doxa.queue import Post
+
+    data = render_post_data(slides=[{"title": "א"}, {"title": "ב"}])
+    with pytest.raises(ValueError, match="needs a background"):
+        Post.model_validate(data)
+    data["format"] = "tweet"
+    assert Post.model_validate(data).look.value == "tweet"
+
+
+def test_text_formats_take_no_background():
+    from doxa.queue import Post
+
+    data = render_post_data(format="bold")
+    with pytest.raises(ValueError, match="no background photos"):
+        Post.model_validate(data)
+
+
+def test_format_only_for_carousels():
+    from doxa.queue import Post
+
+    reel = {"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7}
+    data = render_post_data(mode="reel", slides=[], reel=reel, format="tweet")
+    with pytest.raises(ValueError, match="format is only for mode: render"):
+        Post.model_validate(data)
+
+
+def test_new_optional_fields_keep_old_hashes(tmp_path):
+    from doxa.queue import Post, content_hash
+
+    post = Post.model_validate(render_post_data())
+    before = content_hash(post, tmp_path)
+    assert content_hash(post.model_copy(update={"story_id": "1"}), tmp_path) == before
+    assert content_hash(post.model_copy(update={"format": None, "pillar": None}), tmp_path) == before
+    assert content_hash(post.model_copy(update={"pillar": "body"}), tmp_path) != before

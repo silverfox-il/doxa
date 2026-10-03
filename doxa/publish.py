@@ -35,6 +35,7 @@ from typing import Protocol
 import requests
 
 from . import approval, github, reel, slides, status
+from .render import STORY_NAME
 from .instagram import (
     API_VERSION,
     Client,
@@ -191,6 +192,14 @@ class Publisher:
         n = len(slide_files(path.parent / "slides"))
         return [github.raw_url(self.slug, self.sha, post.id, i) for i in range(1, n + 1)]
 
+    def story_url(self, post: Post, path: Path) -> str | None:
+        """What to share as a story: the reel itself, or the carousel's story.jpg."""
+        if post.mode == Mode.reel:
+            return github.raw_file_url(self.slug, self.sha, post.id, reel.VIDEO_NAME)
+        if (path.parent / STORY_NAME).is_file():
+            return github.raw_file_url(self.slug, self.sha, post.id, STORY_NAME)
+        return None
+
     def check_urls(self, urls: list[str]) -> None:
         """Every URL must answer 200 with the right type; raw.githubusercontent can lag.
 
@@ -303,11 +312,13 @@ class Publisher:
             return 1
 
         if dry_run:
-            self._log_plan(post, urls, blockers)
+            self._log_plan(post, urls, blockers, path)
             return 0
         return self._publish(post, path, urls, str(quota))
 
-    def _log_plan(self, post: Post, urls: list[str], blockers: list[str]) -> None:
+    def _log_plan(
+        self, post: Post, urls: list[str], blockers: list[str], path: Path | None = None
+    ) -> None:
         """Log the exact JSON bodies a live run would POST (ids are placeholders)."""
         user = self.client.ig_user_id
         base = f"https://graph.instagram.com/{API_VERSION}/{user}"
@@ -318,7 +329,7 @@ class Publisher:
         if post.mode == Mode.reel:
             self.log(f"  would POST {base}/media  (reel, {post.reel.duration:.1f}s)")
             self.log(f"    {body(Client.reel_body(urls[0], post.caption))}")
-            self._log_tail(post, base, blockers, "<reel-id>")
+            self._log_tail(post, base, blockers, "<reel-id>", path)
             return
         for i, url in enumerate(urls, start=1):
             self.log(f"  would POST {base}/media  (child {i}/{len(urls)})")
@@ -326,9 +337,16 @@ class Publisher:
         children = [f"<child-{i}-id>" for i in range(1, len(urls) + 1)]
         self.log(f"  would POST {base}/media  (carousel)")
         self.log(f"    {body(Client.carousel_body(children, post.caption))}")
-        self._log_tail(post, base, blockers, "<carousel-id>")
+        self._log_tail(post, base, blockers, "<carousel-id>", path)
 
-    def _log_tail(self, post: Post, base: str, blockers: list[str], container: str) -> None:
+    def _log_tail(
+        self,
+        post: Post,
+        base: str,
+        blockers: list[str],
+        container: str,
+        path: Path | None = None,
+    ) -> None:
         def body(b: dict) -> str:
             return json.dumps(b, ensure_ascii=False)
 
@@ -340,6 +358,12 @@ class Publisher:
         self.log("  would commit status: publishing, then:")
         self.log(f"  would POST {base}/media_publish")
         self.log(f"    {body(Client.publish_body(container))}")
+        story = self.story_url(post, path) if path is not None else None
+        if story:
+            self.log(f"  then story: would POST {base}/media")
+            self.log(f"    {body(Client.story_body(story))}")
+        else:
+            self.log("  then story: skipped (no story.jpg)")
         if blockers:
             self.log(
                 f"✓ dry run complete — nothing was sent (a live run is BLOCKED: "
@@ -399,7 +423,37 @@ class Publisher:
             media = {}
         self._mark_published(post, path, media_id, media)
         self.log(f"✓ published {post.id}: {post.permalink}")
+        self._story(post, path)
         return 0
+
+    def _story(self, post: Post, path: Path) -> None:
+        """Share a just-published post as a story: once, best effort.
+
+        A story failure never fails the run or touches the post's status: the
+        feed post is already live. The outcome is recorded (story_id or
+        story_error) so no later run tries again.
+        """
+        if post.story_id or post.story_error:
+            return
+        url = self.story_url(post, path)
+        if url is None:
+            self.log("  story: skipped (no story.jpg)")
+            return
+        c = self.client
+        timeout = REEL_PROCESS_TIMEOUT_S if url.endswith(".mp4") else 300.0
+        try:
+            self.check_urls([url])
+            container = self._retry("story", lambda: c.create_story_container(url))
+            self.log(f"  story container: {container}")
+            c.wait_finished(container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
+            post.story_id = c.publish(container)
+            self.log(f"✓ story published: {post.story_id}")
+            message = f"publish: {post.id} story"
+        except InstagramError as e:
+            post.story_error = str(e)[:300]
+            self.log(f"  story failed (feed post is fine): {post.story_error}")
+            message = f"publish: {post.id} story failed"
+        self._save(post, path, message)
 
     def _fail(self, post: Post, path: Path, error: str, dry_run: bool, *, retryable: bool) -> int:
         state = Status.failed_retryable if retryable else Status.failed

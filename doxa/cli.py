@@ -70,7 +70,7 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
             errors.append(f"{rel}: id '{post.id}' != directory '{path.parent.name}'")
         if post.mode == Mode.render:
             for i, slide in enumerate(post.slides, start=1):
-                if not (root / slide.background).is_file():
+                if slide.background and not (root / slide.background).is_file():
                     errors.append(f"{rel}: slide {i} background not found: {slide.background}")
         if post.mode == Mode.reel:
             if post.status != Status.queued:
@@ -89,7 +89,8 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
             loaded.append(load_post(path))
         except QueueError:
             pass  # already reported above
-    errors += [f"queue: {f}" for f in rules.repeated_quotes(loaded)]
+    errors += [f"queue: {f}" for f in rules.repeated_quotes(loaded, cfg.cta)]
+    errors += [f"queue: {f}" for f in rules.pillar_rotation(loaded, cfg)]
     return len(files), errors
 
 
@@ -170,6 +171,7 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
             click.echo(f"rendering {post.id} ({len(post.slides)} slides)…")
             try:
                 render.render_post(post, post_dir, root=root)
+                render.render_story(post_dir)
             except render.RenderError as e:
                 failed.append(f"{post.id}: {e}")
                 continue
@@ -333,6 +335,7 @@ def used(ctx: click.Context) -> None:
     import yaml
 
     root: Path = ctx.obj["root"]
+    cfg, _ = rules.load_context(root)
     entries = []
     for _, post in sorted(_select(root, ()), key=lambda pp: pp[1].publish_at):
         entries.append(
@@ -341,7 +344,7 @@ def used(ctx: click.Context) -> None:
                 "publish_at": post.publish_at,
                 "status": post.status.value,
                 "source": post.source.key if post.source else None,
-                "quotes": rules.quotes(post),
+                "quotes": rules.quotes(post, cfg.cta),
             }
         )
     out = root / "content" / "used.yaml"

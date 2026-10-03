@@ -1,0 +1,11 @@
+# Call to action lines: the ONLY caption text allowed that is not cut from the book.
+# Every post from 2026-10-04 on ends its caption with exactly one of these, word for
+# word (doxa/rules.py checks it). The owner approves this list; edit it here.
+# No dashes, no book or sale hints, no fake urgency.
+lines:
+  - שמור את הפוסט. תחזור אליו כשתצטרך.
+  - תייג חבר שצריך לשמוע את זה.
+  - שלח את זה לחבר שחוזר עכשיו למשחק.
+  - תגיב "בפנים" אם אתה מתחיל היום.
+  - מסכים או לא? תכתוב בתגובות.
+  - איזה משפט פה תפס אותך? תכתוב בתגובות.

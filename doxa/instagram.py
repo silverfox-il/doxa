@@ -173,6 +173,11 @@ class Client:
         }
 
     @staticmethod
+    def story_body(media_url: str) -> dict[str, Any]:
+        key = "video_url" if media_url.endswith(".mp4") else "image_url"
+        return {"media_type": "STORIES", key: media_url}
+
+    @staticmethod
     def publish_body(creation_id: str) -> dict[str, Any]:
         return {"creation_id": creation_id}
 
@@ -189,6 +194,11 @@ class Client:
     def create_reel_container(self, video_url: str, caption: str) -> str:
         """REELS container from a public MP4 URL. Returns container id."""
         out = self._post(f"/{self.ig_user_id}/media", self.reel_body(video_url, caption))
+        return str(out["id"])
+
+    def create_story_container(self, media_url: str) -> str:
+        """STORIES container from a public JPEG or MP4 URL. Returns container id."""
+        out = self._post(f"/{self.ig_user_id}/media", self.story_body(media_url))
         return str(out["id"])
 
     def container_status(self, container_id: str) -> str:

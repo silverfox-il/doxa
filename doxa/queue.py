@@ -69,6 +69,25 @@ REEL_MIN_LINES = 2
 REEL_MAX_LINES = 6
 
 
+class Format(str, Enum):
+    """Carousel look. ``photo`` (the default) puts text over a background photo;
+    ``tweet`` shows each quote as a post card; ``bold`` is big text on flat colour."""
+
+    photo = "photo"
+    tweet = "tweet"
+    bold = "bold"
+
+
+class Pillar(str, Enum):
+    """Content pillar. The queue rotates them so two in a row never share one."""
+
+    dating = "dating"
+    body = "body"
+    status = "status"
+    mind = "mind"
+    second_round = "second-round"
+
+
 class Layout(str, Enum):
     bottom = "bottom"
     top = "top"
@@ -114,7 +133,7 @@ class Slide(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 
-    background: str
+    background: str | None = None  # required for format photo, unused otherwise
     kicker: str = ""
     title: str = ""
     accent: str = ""
@@ -124,7 +143,9 @@ class Slide(BaseModel):
 
     @field_validator("background")
     @classmethod
-    def _background_path(cls, v: str) -> str:
+    def _background_path(cls, v: str | None) -> str | None:
+        if v is None:
+            return v
         p = Path(v)
         if p.is_absolute() or ".." in p.parts or not v.startswith("assets/"):
             raise ValueError(f"background must be a relative path under assets/, got {v!r}")
@@ -200,6 +221,8 @@ class Post(BaseModel):
     slides: list[Slide] = Field(default_factory=list)
     reel: Reel | None = None
     source: Source | None = None
+    format: Format | None = None  # carousels only; None means photo
+    pillar: Pillar | None = None
 
     # --- system-written ---
     approved_hash: str | None = None
@@ -210,6 +233,9 @@ class Post(BaseModel):
     permalink: str | None = None
     published_at: str | None = None
     error: str | None = None
+    # Story repost of a published post: done once, best effort.
+    story_id: str | None = None
+    story_error: str | None = None
 
     @field_validator("id")
     @classmethod
@@ -258,7 +284,21 @@ class Post(BaseModel):
                 raise ValueError("reel mode needs a reel: block (lines, music)")
         elif self.reel is not None:
             raise ValueError(f"reel: block is only for mode: reel (got {self.mode.value})")
+        if self.format is not None and self.mode != Mode.render:
+            raise ValueError(f"format is only for mode: render (got {self.mode.value})")
+        if self.mode == Mode.render:
+            if self.look == Format.photo:
+                missing = [i for i, s in enumerate(self.slides, 1) if s.background is None]
+                if missing:
+                    raise ValueError(f"format photo needs a background on slides {missing}")
+            elif any(s.background is not None for s in self.slides):
+                raise ValueError(f"format {self.look.value} has no background photos")
         return self
+
+    @property
+    def look(self) -> Format:
+        """The carousel format, with the ``photo`` default filled in."""
+        return self.format or Format.photo
 
     @property
     def publish_at_dt(self) -> dt.datetime:
@@ -280,7 +320,9 @@ def slide_files(slides_dir: Path) -> list[Path]:
 
 # Owner-authored fields that define what gets published. ``approved`` itself is
 # excluded (flipping it is not an edit), as are all system-written fields.
-_CONTENT_FIELDS = {"id", "publish_at", "mode", "caption", "slides", "reel", "source"}
+_CONTENT_FIELDS = {
+    "id", "publish_at", "mode", "caption", "slides", "reel", "source", "format", "pillar"
+}
 
 
 def content_hash(post: Post, post_dir: Path) -> str:

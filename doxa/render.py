@@ -19,7 +19,7 @@ from pathlib import Path
 from string import Template
 
 from . import IG_HANDLE
-from .queue import Layout, Mode, Post, Slide
+from .queue import Format, Layout, Mode, Post, Slide
 from .slides import SLIDE_H, SLIDE_W
 
 JPEG_QUALITY = 90
@@ -37,6 +37,37 @@ FONT_FILE = "Heebo[wght].ttf"
 
 class RenderError(Exception):
     pass
+
+
+# Story repost of a carousel (spec: item 6): slide 1 as a 9:16 story, the slide
+# centred on a blurred, darkened copy of itself. Pure Pillow, no browser.
+STORY_NAME = "story.jpg"
+STORY_W, STORY_H = 1080, 1920
+STORY_CARD_W = 960
+
+
+def render_story(post_dir: Path) -> Path:
+    """Write ``story.jpg`` (1080x1920) from ``slides/1.jpg``. Returns its path."""
+    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
+
+    src = post_dir / "slides" / "1.jpg"
+    if not src.is_file():
+        raise RenderError(f"no slide 1 to build a story from: {src}")
+    with Image.open(src) as im:
+        slide = im.convert("RGB")
+    scale = STORY_H / slide.height
+    bg = slide.resize((round(slide.width * scale), STORY_H), Image.LANCZOS)
+    left = (bg.width - STORY_W) // 2
+    bg = bg.crop((left, 0, left + STORY_W, STORY_H)).filter(ImageFilter.GaussianBlur(40))
+    bg = ImageEnhance.Brightness(bg).enhance(0.45)
+    card_h = round(slide.height * STORY_CARD_W / slide.width)
+    card = slide.resize((STORY_CARD_W, card_h), Image.LANCZOS)
+    mask = Image.new("L", card.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, *card.size), radius=36, fill=255)
+    bg.paste(card, ((STORY_W - STORY_CARD_W) // 2, (STORY_H - card_h) // 2), mask)
+    out = post_dir / STORY_NAME
+    bg.save(out, "JPEG", quality=JPEG_QUALITY)
+    return out
 
 
 @lru_cache(maxsize=1)
@@ -109,21 +140,78 @@ def _content_html(slide: Slide) -> str:
     return "\n".join(f"    {p}" for p in parts)
 
 
-def build_html(slide: Slide, index: int, total: int, *, root: Path = REPO_ROOT) -> str:
-    """Full HTML document for one slide. ``index`` is 1-based."""
+# Tweet-card avatar: a geometric fox head on the accent colour (no emoji font
+# needed, so the render stays identical on every machine).
+FOX_SVG = (
+    '<svg viewBox="0 0 100 100" aria-hidden="true">'
+    '<circle cx="50" cy="50" r="50" fill="var(--accent)"/>'
+    '<path d="M20 22 L42 40 L50 34 L58 40 L80 22 L78 52 L50 82 L22 52 Z" fill="#141414"/>'
+    '<path d="M22 52 L50 60 L78 52 L50 82 Z" fill="#f4f1ea"/>'
+    '<circle cx="39" cy="50" r="3.6" fill="var(--accent)"/>'
+    '<circle cx="61" cy="50" r="3.6" fill="var(--accent)"/>'
+    '<path d="M46 74 L54 74 L50 80 Z" fill="#141414"/>'
+    "</svg>"
+)
+
+
+def _content_block(slide: Slide, indent: str) -> str:
+    return (
+        f'{indent}<div class="content {slide.layout.value}">\n'
+        f"{_content_html(slide)}\n{indent}</div>"
+    )
+
+
+def _tweet_card(slide: Slide) -> str:
+    return "\n".join(
+        [
+            '  <div class="card">',
+            '    <div class="who">',
+            f'      <div class="avatar">{FOX_SVG}</div>',
+            f'      <div class="names"><span class="name">{html.escape(BRAND)}</span>'
+            f'<span class="at">{html.escape(IG_HANDLE)}</span></div>',
+            "    </div>",
+            _content_block(slide, "    "),
+            "  </div>",
+        ]
+    )
+
+
+def build_html(
+    slide: Slide,
+    index: int,
+    total: int,
+    *,
+    root: Path = REPO_ROOT,
+    look: Format = Format.photo,
+) -> str:
+    """Full HTML document for one slide. ``index`` is 1-based.
+
+    Slide 1 is the hook (bigger type, swipe arrow); the last slide carries the handle.
+    """
     is_last = index == total
+    classes = [f"fmt-{look.value}"]
+    if index == 1:
+        classes.append("hook")
+    if is_last:
+        classes.append("last")
     handle = f'  <div class="handle">{html.escape(IG_HANDLE)}</div>' if is_last else ""
+    swipe = '  <div class="swipe">&#8592;</div>' if index == 1 and total > 1 else ""
+    bg = ""
+    if look == Format.photo:
+        bg = f'  <img class="bg" src="{_bg_data_uri(slide.background or "", root)}" alt="">'
+    body = _tweet_card(slide) if look == Format.tweet else _content_block(slide, "  ")
     # $-placeholders are filled once; values are never re-scanned, so a "$" in
     # user text cannot inject another placeholder.
     return _template().substitute(
         font_faces=_font_faces(),
         css=_css(),
-        background=_bg_data_uri(slide.background, root),
+        classes=" ".join(classes),
+        background=bg,
         brand=html.escape(BRAND),
         counter=f"{index}/{total}",
-        layout=slide.layout.value,
-        content=_content_html(slide),
+        body=body,
         handle=handle,
+        swipe=swipe,
     )
 
 
@@ -181,7 +269,10 @@ def render_post(
         if not (old.stem.isdigit() and 1 <= int(old.stem) <= total):
             old.unlink()
 
-    docs = [build_html(s, i, total, root=root) for i, s in enumerate(post.slides, start=1)]
+    docs = [
+        build_html(s, i, total, root=root, look=post.look)
+        for i, s in enumerate(post.slides, start=1)
+    ]
     if renderer is None:
         with Renderer() as r:
             return render_post(post, post_dir, root=root, renderer=r)
