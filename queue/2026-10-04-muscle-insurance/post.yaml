@@ -1,6 +1,6 @@
 id: 2026-10-04-muscle-insurance
 publish_at: 2026-10-04 11:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אחרי 40 הגוף שלך גונב לך שריר בשקט.
@@ -57,9 +57,9 @@ source:
   section: השריר, הקלף שאתה מחזיק
 format: photo
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:598d870bbc8078156b92e820d0d1aa5cc851b341a878ffb9798e77ca67e7dba1
+approved_by: auto
+approved_at: '2026-10-03T16:07:42+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

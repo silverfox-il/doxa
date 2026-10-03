@@ -1,6 +1,6 @@
 id: 2026-10-05-easy-prey
 publish_at: 2026-10-05 17:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר גרוש עם כסף וחור בלב הוא הטרף הכי קל בשוק.
@@ -64,9 +64,9 @@ source:
   section: כסף (Money)
 format: tweet
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b1e0bd5a74bd0700bca2f2a506b5a93be376984d8f84d14a3c247b867988ff48
+approved_by: auto
+approved_at: '2026-10-03T16:07:42+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

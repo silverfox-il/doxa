@@ -1,6 +1,6 @@
 id: 2026-10-04-atm
 publish_at: 2026-10-04 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   החום שלה עולה ויורד לפי מה שנתת השבוע?
@@ -64,9 +64,9 @@ source:
   section: 'נורה 14: הכספומט'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:82df98bdfa7ab1b30018f3d9ea64ddbd38adfbd2675181c082d80c5841f93288
+approved_by: auto
+approved_at: '2026-10-03T16:07:42+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
