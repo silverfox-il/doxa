@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-03-obsessed` at 2026-10-03 19:30 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 8/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -45,7 +45,7 @@
 | 2026-10-04 | `2026-10-04-give-not-take` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-two-breaths` | ✅ | rendered | — | — |
 | 2026-10-03 | `2026-10-03-obsessed` | ✅ | rendered | — | — |
-| 2026-10-03 | `2026-10-03-forgive` | ✅ | publishing | — | — |
+| 2026-10-03 | `2026-10-03-forgive` | ✅ | published | [link](https://www.instagram.com/p/DeCX2w5HFcw/) | — |
 | 2026-10-03 | `2026-10-03-no-arguing` | ✅ | published | [link](https://www.instagram.com/p/DeCUCy9m-MB/) | — |
 | 2026-10-03 | `2026-10-03-worth-loving` | ✅ | published | [link](https://www.instagram.com/p/DeCQ_SaG-Qn/) | — |
 | 2026-10-03 | `2026-10-03-she-left-first` | ✅ | published | [link](https://www.instagram.com/p/DeCKJJ-m3t1/) | — |
