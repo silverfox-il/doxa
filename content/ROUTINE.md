@@ -29,10 +29,45 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 1. Find the last `publish_at` date in `queue/*/post.yaml`. Call the next day D1.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
 3. For D1 through D7 create:
-   - one **carousel** at `07:30`, id `YYYY-MM-DD-<slug>`
-   - one **reel** at `18:00`, id `YYYY-MM-DD-reel-<slug>`
+   - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
+   - one **carousel** at `20:00`, id `YYYY-MM-DD-<slug>`
 
 That makes 14 posts. The slug is 1 to 4 lowercase English words joined by `-`.
+
+## Pillars (rotate, never two in a row)
+
+Every post has `pillar:`. Ordered by `publish_at` across the whole queue (including
+the last posts already queued before D1), two consecutive posts may never share a
+pillar; `doxa validate` blocks it. Over a week use each pillar 2 or 3 times.
+
+| pillar | what | where in the book |
+|---|---|---|
+| `dating` | dating at 45+, approaching, the man is the prize | `06.md`, `02.md` |
+| `body` | body, gym, sleep, looks | `08.md`, `02.md` |
+| `status` | money, status, image, the market | `02.md`, `01.md` |
+| `mind` | the head after the divorce, fear, ego | `06.md`, `02.md` |
+| `second-round` | a second relationship, red flags | `11.md` |
+
+## The hook (mandatory)
+
+Slide 1 of a carousel and line 1 of a reel are the hook: the single most
+provocative, scroll-stopping line of the post, 3 to 12 words, verbatim. Never a
+connector ("תזכור:", "אז"). You may reorder whole slides so the hook comes first;
+every line must still be an exact substring of the book. The caption opens with the
+same hook line.
+
+## Formats (rotate)
+
+Carousels set `format:` and rotate it through the week: `photo` (text over a pool
+photo, needs `background:` on every slide), `tweet` (the quote as a post card; no
+`background:`; up to ~200 characters per slide) and `bold` (huge type on flat colour;
+no `background:`; up to ~90 characters per slide). Use each at least twice a week.
+Reels have no `format`.
+
+## Call to action (mandatory, the only non-book text)
+
+Every caption has exactly one line copied word for word from `config/cta.yaml`.
+Never write your own. Do not use the same line on two consecutive posts.
 
 ## Choosing passages
 
@@ -73,16 +108,20 @@ Carousel (4 to 7 slides, one quote per slide, `title` only):
 
 ```yaml
 id: 2026-10-11-example
-publish_at: "2026-10-11 07:30"
+publish_at: "2026-10-11 20:00"
 approved: false
 mode: render
+format: photo            # or tweet / bold (then no background: lines)
+pillar: dating
 caption: |-
-  <one line from the slides, verbatim>
+  <the hook: slide 1, verbatim>
+
+  <one line from config/cta.yaml, verbatim>
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
 - background: assets/backgrounds/2026-10-11-example.jpg
-  title: <verbatim quote>
+  title: <the hook, verbatim, 3 to 12 words>
   layout: bottom
 # ...one block per slide, same background
 source:
@@ -90,23 +129,26 @@ source:
   section: <the ### heading the passage sits under>
 ```
 
-Get the background with `doxa pool-take <post-id> --tag <whiskey|wine|watch|gym|city|sea|car|home|bar|balcony|work|rain|coffee|style>`.
+For `format: photo`, get the background with `doxa pool-take <post-id> --tag <whiskey|wine|watch|gym|city|sea|car|home|bar|balcony|work|rain|coffee|style>`.
 Pick a tag that fits the passage. It copies a free pool photo and marks it used.
 
 Reel (2 to 6 short lines that appear one by one, 10 to 15 seconds):
 
 ```yaml
 id: 2026-10-11-reel-example
-publish_at: "2026-10-11 18:00"
+publish_at: "2026-10-11 13:00"
 approved: false
 mode: reel
+pillar: status
 caption: |-
-  <the strongest reel line, verbatim (not a connector like "תזכור:")>
+  <the hook: reel line 1, verbatim>
+
+  <one line from config/cta.yaml, verbatim>
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 reel:
   lines:
-  - <verbatim>
+  - <the hook, verbatim, 3 to 12 words>
   - <verbatim>
   music: <a file name from doxa-private/music/>
   per_line: 3.0
@@ -127,7 +169,7 @@ doxa rules --strict <all new ids>   # must print ✓ for every post, no findings
 doxa validate                       # must pass
 doxa used                           # refresh content/used.yaml
 pytest -q                           # must pass
-git add queue assets content && git commit -m "content: week of <D1> (7 carousels, 7 reels)"
+git add queue assets content && git commit -m "content: week of <D1> (7 reels, 7 carousels)"
 git push origin HEAD:main
 ```
 
@@ -140,7 +182,10 @@ GitHub then renders everything. If the owner has set `DOXA_AUTO_APPROVE=true`,
 posts with zero findings are approved and wait 24 hours. The owner can veto any
 post with the `hold` label on its issue.
 
+Every published post is also shared once as a story automatically (the reel
+itself, or slide 1 of a carousel framed 9:16). Nothing to do for that.
+
 ## Summary to print at the end
 
-A table: date, time, id, type, source section, first line. Then the number of free
+A table: date, time, id, type, format, pillar, source section, hook. Then the number of free
 photos left in the pool (`doxa pool-take` prints it); warn below 20.
