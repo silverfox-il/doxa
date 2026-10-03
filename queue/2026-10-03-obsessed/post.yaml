@@ -67,10 +67,10 @@ pillar: null
 approved_hash: sha256:6db262a1727e871ec8a73064d66b80c526a271e77424877b10584bf075b5869e
 approved_by: owner
 approved_at: '2026-10-03T16:52:59+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18026181017864371'
+permalink: https://www.instagram.com/p/DeCiSZ3EaHT/
+published_at: 2026-10-03T16:54:58+0000
 error: null
 story_id: null
 story_error: null
