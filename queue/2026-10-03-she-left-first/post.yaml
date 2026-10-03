@@ -58,10 +58,10 @@ pillar: null
 approved_hash: sha256:5284a718cc70424748ac765e281c9eab5356e7bfa5e150103d056ef46877b890
 approved_by: owner
 approved_at: '2026-10-03T15:44:03+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18109754804056713'
+permalink: https://www.instagram.com/p/DeCKJJ-m3t1/
+published_at: 2026-10-03T13:23:42+0000
 error: null
 story_id: null
 story_error: null
