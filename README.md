@@ -88,7 +88,7 @@ pytest -q && ruff check .
 
 ## מנוע התוכן האוטומטי
 
-**מה יוצא:** כל יום רילס ב־13:00 וקרוסלה ב־20:00, ואחרי כל פוסט סטורי אוטומטי. כל הטקסט מועתק מהספר מילה במילה, חוץ משורת קריאה לפעולה אחת מתוך `config/cta.yaml`. שקופית 1 / שורה 1 היא ה־hook (3 עד 12 מילים), ו־5 עמודי תוכן מתחלפים (pillar).
+**מה יוצא:** כל יום רילס ב־13:00 וקרוסלה ב־20:00, ואחרי כל פוסט סטורי אוטומטי. הטקסט נכתב בקול של הספר: תובנות ומסקנות בטון, בסלנג ובבוטות שלו, בלי להמציא עמדות. מילים גסות נכתבות ממוסכות (Zונות, לעשות את המעשה). בכל כיתוב שורת קריאה לפעולה אחת מתוך `config/cta.yaml`. שקופית 1 / שורה 1 היא ה־hook (3 עד 12 מילים), ו־5 עמודי תוכן מתחלפים (pillar).
 
 **רילס:** פוסט מסוג `mode: reel` עם שדה `reel.lines`. השורות מופיעות אחת אחרי השנייה על רקע כהה, עם מוזיקה. אורך הסרטון בין 10 ל־15 שניות, בגודל 1080×1920.
 
@@ -185,7 +185,7 @@ doxa check [--expect-username U]                   # prints only username, user_
 - **Reels:** `mode: reel` posts carry `reel.lines`, `reel.music`, `per_line`, `hold` (10–15 s,
   1080x1920). `doxa render` builds `reel.mp4` with Chromium + ffmpeg; the publisher creates a
   `media_type=REELS` container from the commit-pinned raw URL (`video/mp4` HEAD check).
-- **Rules:** `doxa rules [--strict] [ID...]` checks verbatim book quotes, banned words, dashes,
+- **Rules:** `doxa rules [--strict] [ID...]` checks masked crude words, banned words, dashes,
   ages, identity terms and repeated quotes. `block` findings fail `doxa validate`; `review`
   findings only stop auto-approve. Public rules: `config/rules.yaml`; identity terms:
   `rules_private.yaml` in `silverfox-il/doxa-private`.

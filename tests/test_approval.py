@@ -353,18 +353,20 @@ def test_auto_approve_clean_post_and_label_issue(repo, gh, book_dir):
 
 def test_auto_approve_skips_anything_with_a_finding(repo, gh, book_dir):
     review = quoted_post(repo, "2026-09-25-review", "הדייט במסעדה יקרה.")
-    reworded = quoted_post(repo, "2026-09-25-reworded", "הוא פשוט לא מגניב.")
+    raw = quoted_post(repo, "2026-09-25-raw", "הוא מחפש רק זונות.")
     result = run(repo, "auto-approve")
     assert "2026-09-25-review: needs the owner" in result.output
-    assert "2026-09-25-reworded: needs the owner" in result.output
-    assert not load_post(review).approved and not load_post(reworded).approved
+    assert "2026-09-25-raw: needs the owner" in result.output
+    assert not load_post(review).approved and not load_post(raw).approved
 
 
-def test_auto_approve_refuses_without_the_book(repo, gh, monkeypatch):
+def test_auto_approve_works_without_the_book_in_voice_mode(repo, gh, monkeypatch):
+    # Posts are written in the book's voice, so no word-for-word check needs it.
     monkeypatch.setenv("DOXA_BOOK_DIR", str(repo / "nowhere"))
-    quoted_post(repo)
+    path = quoted_post(repo, "2026-09-25-own", "גבר שמחכה לאישור כבר הפסיד.")
     result = run(repo, "auto-approve")
-    assert result.exit_code == 1 and "book not found" in result.output
+    assert result.exit_code == 0, result.output
+    assert load_post(path).approved
 
 
 def test_owner_label_upgrades_auto_approval(repo, gh, book_dir):

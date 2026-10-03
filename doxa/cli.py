@@ -253,7 +253,7 @@ def rules_cmd(ctx: click.Context, post_ids: tuple[str, ...], strict: bool) -> No
     """Check content rules (verbatim, banned words, dashes, ages, identity...)."""
     root: Path = ctx.obj["root"]
     cfg, book = rules.load_context(root)
-    if book is None:
+    if book is None and cfg.require_verbatim:
         click.echo("! book not found: verbatim check cannot run", err=True)
     failed = 0
     for _, post in _select(root, post_ids):
@@ -393,7 +393,7 @@ def auto_approve(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
 
     root: Path = ctx.obj["root"]
     cfg, book = rules.load_context(root)
-    if book is None:
+    if book is None and cfg.require_verbatim:
         _fail(["book not found: auto-approve needs it to verify verbatim quotes"])
     approved = 0
     for path, post in _select(root, post_ids):

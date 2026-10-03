@@ -10,15 +10,15 @@ Rule sources:
 * ``config/rules.yaml`` (public): banned words, review words, dashes, ages,
   hashtags. Generic, no personal data.
 * ``config/cta.yaml`` (public, owner-approved): the closed list of call to action
-  lines. A caption line that matches one exactly is the only text allowed that
-  is not from the book.
+  lines; every caption carries exactly one.
 * ``rules_private.yaml`` next to the book (private repo): identity terms (the
   owner's real name, city, job) that must never appear. Kept out of this public
   repo on purpose.
 
-The verbatim rule needs the book text (:mod:`doxa.book`). Without it the check
-cannot run, which is itself a ``review`` finding, so nothing is auto-approved
-blind.
+Posts are written in the book's voice (its insights, slang and bluntness), not
+copied from it, so the verbatim check is off by default (``require_verbatim``).
+Crude words keep the voice but must be masked (``masked_words``, e.g. "Zונות"),
+so Instagram does not restrict the account.
 """
 
 from __future__ import annotations
@@ -69,6 +69,11 @@ class RulesConfig:
     hook_min_words: int = 3
     hook_max_words: int = 12
     cta: list[str] = field(default_factory=list)
+    # Owner's rule (2026-10-03): the book's voice, not its exact words.
+    require_verbatim: bool = False
+    # Crude words that must be written masked: [{match, write}]. ``match`` uses
+    # the same syntax as block_words (plain word, or "re:" regex).
+    masked_words: list[dict[str, str]] = field(default_factory=list)
 
     @classmethod
     def load(cls, public: Path, private: Path | None = None) -> RulesConfig:
@@ -159,9 +164,9 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
 
     for where, text in texts:
         is_cta = where.startswith("caption") and text in cta
-        # Verbatim: every visible text must be cut from the book, word for word.
-        # The one exception is a whitelisted call to action in the caption.
-        if is_cta:
+        # Optional verbatim mode: every visible text cut from the book word for
+        # word, except a whitelisted call to action in the caption.
+        if is_cta or not cfg.require_verbatim:
             pass
         elif post.mode != Mode.prebuilt or where.startswith("caption"):
             if book is None:
@@ -175,6 +180,15 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
         for word in cfg.block_words:
             if _word_re(word).search(text):
                 add(BLOCK, "banned-word", where, f"{word.removeprefix('re:')!r}")
+        for rule in cfg.masked_words:
+            m = _word_re(rule["match"]).search(text)
+            if m:
+                add(
+                    BLOCK,
+                    "masked-word",
+                    where,
+                    f"{m.group(0).strip()!r} must be masked: write {rule['write']!r}",
+                )
         for word in cfg.identity_words:
             if _word_re(word).search(text):
                 add(BLOCK, "identity", where, "identifying detail about the owner")

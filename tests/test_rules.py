@@ -32,6 +32,9 @@ BOOK_TEXT = """# 2. פרק
 
 CFG = rules.RulesConfig.load(Path(__file__).resolve().parent.parent / "config" / "rules.yaml")
 CFG.identity_words = ["אפי"]
+# The verbatim tests below run in word-for-word mode; VOICE is the live config.
+VOICE = rules.RulesConfig.load(Path(__file__).resolve().parent.parent / "config" / "rules.yaml")
+CFG.require_verbatim = True
 
 
 @pytest.fixture
@@ -332,3 +335,51 @@ def test_cta_lines_may_repeat_across_posts():
     b = engine_post("נחמד זה לא תכונה, זה הדבר", "המינימלי", id="2026-10-05-b")
     assert rules.repeated_quotes([a, b], CFG.cta) == []
     assert rules.repeated_quotes([a, b]) != []
+
+
+# --- book voice (live config): own words allowed, crude words masked --------------
+
+
+def voice(*titles: str) -> list[tuple[str, str]]:
+    post = post_with(*titles, caption=f"{titles[0]}\n.\n#גרושים")
+    return [(f.severity, f.rule) for f in rules.check_post(post, VOICE, None)]
+
+
+def test_live_config_is_book_voice_not_verbatim():
+    assert VOICE.require_verbatim is False
+    assert voice("גבר שמחכה לאישור כבר הפסיד.", "תפסיק לבקש, תתחיל להחליט.") == []
+
+
+@pytest.mark.parametrize(
+    "raw",
+    ["היא לא זונה.", "כל הזונות האלה", "הוא רק רוצה לזיין", "הוא מזדיין איתה",
+     "זיון אחד", "תחשוב עם הזין", "סקס טוב", "בלי אורגזמה", "שרמוטה", "כוסית"],
+)
+def test_raw_crude_words_block(raw):
+    assert ("block", "masked-word") in voice(raw, "תפסיק לבקש, תתחיל להחליט.")
+
+
+@pytest.mark.parametrize(
+    "masked",
+    ["היא לא Zונה.", "הוא רק רוצה לעשות את המעשה", "תחשוב עם הZין", "Sקס טוב",
+     "בלי אורגZמה", "שרמו*ה", "Kוסית"],
+)
+def test_masked_forms_pass(masked):
+    assert voice(masked, "תפסיק לבקש, תתחיל להחליט.") == []
+
+
+@pytest.mark.parametrize(
+    "innocent", ["הוא משלם מזונות כל חודש.", "אוכל מזין ושינה", "אישה זיינה"]
+)
+def test_innocent_lookalikes_pass(innocent):
+    found_rules = [r for _, r in voice(innocent, "תפסיק לבקש, תתחיל להחליט.")]
+    if innocent == "אישה זיינה":  # crude past tense: must be masked too
+        assert "masked-word" in found_rules
+    else:
+        assert "masked-word" not in found_rules
+
+
+def test_masked_word_finding_says_what_to_write():
+    post = post_with("כל הזונות האלה", "תפסיק לבקש, תתחיל להחליט.")
+    detail = next(f.detail for f in rules.check_post(post, VOICE, None) if f.rule == "masked-word")
+    assert "Zונה" in detail

@@ -1,7 +1,7 @@
 # Weekly content routine
 
 A scheduled agent runs this every Thursday. It fills the queue for the next 7 days
-using only text from the book. Nobody reviews the output before it is queued, so
+with posts written in the book's voice. Nobody reviews the output before it is queued, so
 follow every rule below exactly. The automatic checks (`doxa rules`, `doxa validate`)
 are a safety net; they do not replace them.
 
@@ -9,10 +9,11 @@ are a safety net; they do not replace them.
 
 - This repo, `silverfox-il/doxa` (public).
 - The private repo `silverfox-il/doxa-private`, checked out next to this one:
-  - `book/*.md`: the book, new edition. **This is the only text you may use.**
+  - `book/*.md`: the book, new edition. **The only source of ideas, tone and positions.**
   - `book/old/*.txt`: old edition, PDF extract with broken line order. Do **not** use it.
   - `rules_private.yaml`: identity terms. Read it, never copy it anywhere.
-- `content/used.yaml`: every quote already in the queue. Never reuse a quote.
+- `content/used.yaml`: every line and book section already in the queue. Never repeat a line,
+  and prefer sections no post has used yet.
 - `assets/pool/pool.yaml`: licensed background photos (`used_by: null` = free).
 
 Set up:
@@ -51,10 +52,8 @@ pillar; `doxa validate` blocks it. Over a week use each pillar 2 or 3 times.
 ## The hook (mandatory)
 
 Slide 1 of a carousel and line 1 of a reel are the hook: the single most
-provocative, scroll-stopping line of the post, 3 to 12 words, verbatim. Never a
-connector ("תזכור:", "אז"). You may reorder whole slides so the hook comes first;
-every line must still be an exact substring of the book. The caption opens with the
-same hook line.
+provocative, scroll-stopping line of the post, 3 to 12 words. Never a connector
+("תזכור:", "אז"). The caption opens with the same hook line.
 
 ## Formats (rotate)
 
@@ -64,24 +63,47 @@ photo, needs `background:` on every slide), `tweet` (the quote as a post card; n
 no `background:`; up to ~90 characters per slide). Use each at least twice a week.
 Reels have no `format`.
 
-## Call to action (mandatory, the only non-book text)
+## Call to action (mandatory)
 
 Every caption has exactly one line copied word for word from `config/cta.yaml`.
 Never write your own. Do not use the same line on two consecutive posts.
 
-## Choosing passages
+## Writing: the book's voice (the owner's rule)
 
-- One strong passage per post: the punchiest, most quotable lines of a section. It
-  should hit like a punch to the gut. Prefer sections no post has used yet (see the
-  `source:` keys in `content/used.yaml`), and spread across the chapters: `02.md`
-  (the market, the magnet, money, looks), `06.md` (approaching, fear),
-  `08.md` (body, gym, sleep), `11.md` (second round, red flags).
+The goal is an audience that is hooked on the content and learns from it, and
+that feels it is real. So the posts are **not** copied word for word. Each post
+takes one idea from one book section and turns it into insights and conclusions,
+written exactly the way the book talks:
+
+- **The book's voice.** Its tone, slang, bluntness, attitude and rhythm: short
+  sentences, direct "you", spoken Hebrew, a punch in every line, no corporate or
+  coaching language, no softening. Read the section first and write like its author.
+  Strong book lines may be quoted as they are.
+- **The book's positions only.** Never invent advice the book does not give, and
+  never contradict it. Every post keeps `source:` with the section its idea comes from.
+- **One idea per post.** Spread across the chapters: `02.md` (the market, the magnet,
+  money, looks), `06.md` (approaching, fear), `08.md` (body, gym, sleep), `11.md`
+  (second round, red flags), `01.md`.
 - Skip `07.md` (explicit sex): Instagram would restrict the account.
-- **Word for word.** You may only cut: drop whole sentences, or cut a sentence at a
-  comma or a full stop. Never rephrase, reorder words, merge sentences, fix spelling,
-  add words, or write "in the style of" the book. Every slide line, reel line and
-  caption hook must be an exact substring of the book.
-- Keep the profanity and the edge. Do not soften anything.
+
+### Crude words: keep the edge, mask the word
+
+Instagram restricts accounts that are too explicit. Keep the attitude, but write
+crude words masked, as `config/rules.yaml` (`masked_words`) lists them. The raw word
+blocks the post. Examples:
+
+| never write | write |
+|---|---|
+| זונה, זונות | Zונה, Zונות |
+| לזיין, מזדיין, זיון | לעשות את המעשה, עושה את המעשה, המעשה |
+| זין | Zין |
+| סקס | Sקס |
+| אורגזמה | אורגZמה |
+| שרמוטה | שרמו*ה |
+| כוסית | Kוסית |
+
+An idiom that is crude only by its word ("לזיין את השכל") is rephrased in the
+same spirit ("לבלבל את השכל").
 
 ## Hard rules (the owner's, all mandatory)
 
@@ -97,8 +119,7 @@ Never write your own. Do not use the same line on two consecutive posts.
   down on her or vibrators.
 - Consent is a red line. No humiliating women as a group. No ethnic stereotypes.
 - No dashes of any kind (`-`, `–`, `—`, the Hebrew maqaf `־`), except in the
-  signature line "אתה צריך להיות הסיבה – לא האפקט". If a passage has a dash,
-  cut around it or pick another passage.
+  signature line "אתה צריך להיות הסיבה – לא האפקט".
 - Never the word "זרג".
 - No calls to buy followers, follow/unfollow, fake reviews or fake urgency.
 
@@ -114,14 +135,14 @@ mode: render
 format: photo            # or tweet / bold (then no background: lines)
 pillar: dating
 caption: |-
-  <the hook: slide 1, verbatim>
+  <the hook: slide 1>
 
   <one line from config/cta.yaml, verbatim>
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
 - background: assets/backgrounds/2026-10-11-example.jpg
-  title: <the hook, verbatim, 3 to 12 words>
+  title: <the hook, 3 to 12 words>
   layout: bottom
 # ...one block per slide, same background
 source:
@@ -141,15 +162,15 @@ approved: false
 mode: reel
 pillar: status
 caption: |-
-  <the hook: reel line 1, verbatim>
+  <the hook: reel line 1>
 
   <one line from config/cta.yaml, verbatim>
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 reel:
   lines:
-  - <the hook, verbatim, 3 to 12 words>
-  - <verbatim>
+  - <the hook, 3 to 12 words>
+  - <next line>
   music: <a file name from doxa-private/music/>
   per_line: 3.0
   hold: 5.0
@@ -173,7 +194,7 @@ git add queue assets content && git commit -m "content: week of <D1> (7 reels, 7
 git push origin HEAD:main
 ```
 
-If any post has a finding, fix it by choosing different lines. Never edit the rules
+If any post has a finding, fix it by rewriting the line in the book's voice. Never edit the rules
 to make a post pass. If you cannot fill all 14 slots cleanly, queue fewer and say
 so in the summary. If the push to `main` is refused, push a branch and open a pull
 request instead.

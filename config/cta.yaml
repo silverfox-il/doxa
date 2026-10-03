@@ -1,6 +1,5 @@
-# Call to action lines: the ONLY caption text allowed that is not cut from the book.
-# Every post from 2026-10-04 on ends its caption with exactly one of these, word for
-# word (doxa/rules.py checks it). The owner approves this list; edit it here.
+# Call to action lines. Every post from 2026-10-04 on carries exactly one of
+# these in its caption, word for word (doxa/rules.py checks it). The owner approves this list; edit it here.
 # No dashes, no book or sale hints, no fake urgency.
 lines:
   - שמור את הפוסט. תחזור אליו כשתצטרך.
