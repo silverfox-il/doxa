@@ -8,15 +8,20 @@
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
 | 2026-10-10 | `2026-10-10-one-is-info` | ✅ | rendered | — | — |
+| 2026-10-10 | `2026-10-10-tease-nothing-to-post` | — | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-the-reason` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-second-round` | ✅ | rendered | — | — |
+| 2026-10-09 | `2026-10-09-tease-remote` | — | rendered | — | — |
 | 2026-10-09 | `2026-10-09-reel-garden` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-phone-bed` | ✅ | rendered | — | — |
+| 2026-10-08 | `2026-10-08-tease-swipe` | — | rendered | — | — |
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-numbers` | ✅ | rendered | — | — |
+| 2026-10-07 | `2026-10-07-tease-big-bill` | — | rendered | — | — |
 | 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-prison` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-two-men` | ✅ | rendered | — | — |
+| 2026-10-06 | `2026-10-06-tease-elephant` | — | rendered | — | — |
 | 2026-10-06 | `2026-10-06-reel-money-calm` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-test-her` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-reel-ring` | ✅ | rendered | — | — |
@@ -24,6 +29,7 @@
 | 2026-10-06 | `2026-10-06-looks-matter` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-hesitant` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-nobody-watching` | ✅ | rendered | — | — |
+| 2026-10-05 | `2026-10-05-tease-her-clock` | — | rendered | — | — |
 | 2026-10-05 | `2026-10-05-easy-prey` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-turned-on` | ✅ | rendered | — | — |
@@ -31,6 +37,7 @@
 | 2026-10-05 | `2026-10-05-status` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-sleep-builds` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-fear-stays` | ✅ | rendered | — | — |
+| 2026-10-04 | `2026-10-04-tease-beer` | — | rendered | — | — |
 | 2026-10-04 | `2026-10-04-reel-first-line` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-atm` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-reel-feed` | ✅ | rendered | — | — |
