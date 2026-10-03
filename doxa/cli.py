@@ -268,6 +268,27 @@ def rules_cmd(ctx: click.Context, post_ids: tuple[str, ...], strict: bool) -> No
         _fail([f"{failed} post(s) break the content rules"])
 
 
+@main.command()
+@click.option("--step", required=True, help="Which workflow step failed.")
+@click.option(
+    "--log-file",
+    type=click.Path(dir_okay=False, path_type=Path),
+    default=None,
+    help="Output of the failed step; its error lines go into the alert.",
+)
+def alert(step: str, log_file: Path | None) -> None:
+    """Report a failed step on the rolling `🚨 DOXA failure` issue (emails the owner)."""
+    from . import alerts
+
+    log = (
+        log_file.read_text(encoding="utf-8", errors="replace")
+        if log_file and log_file.exists()
+        else ""
+    )
+    what = alerts.report_failure(step, alerts.summarize(log))
+    click.echo(f"✓ failure alert {what}")
+
+
 @main.command("pool-take")
 @click.argument("post_id")
 @click.option("--tag", default=None, help="Prefer a photo with this tag (whiskey, gym, city...).")

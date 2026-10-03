@@ -83,7 +83,9 @@ jobs:
         env:
           IDS: ${{ steps.pick.outputs.ids }}
         # $IDS is intentionally unquoted: one argument per post id.
-        run: doxa render $IDS
+        run: |
+          set -o pipefail
+          doxa render $IDS 2>&1 | tee render.log
 
       # Runs even when Render failed for some posts: the others are kept.
       - name: Commit slides and STATUS.md
@@ -134,3 +136,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           IDS: ${{ steps.pick.outputs.ids }}
         run: DOXA_SHA="$(git rev-parse HEAD)" doxa open-issues $IDS
+
+      - name: Alert the owner
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: doxa alert --step render --log-file render.log

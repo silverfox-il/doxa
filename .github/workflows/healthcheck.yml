@@ -6,9 +6,14 @@ name: healthcheck
 
 on:
   workflow_dispatch:
+  # Daily at 06:30 UTC (08:30/09:30 Israel), before the morning posts: a dead
+  # token is caught and reported before anything is due.
+  schedule:
+    - cron: "30 6 * * *"
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   check:
@@ -30,4 +35,12 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: doxa check --expect-username the_silver_fox_men
+        run: |
+          set -o pipefail
+          doxa check --expect-username the_silver_fox_men 2>&1 | tee check.log
+
+      - name: Alert the owner
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: doxa alert --step healthcheck --log-file check.log

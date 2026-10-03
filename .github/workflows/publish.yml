@@ -67,4 +67,13 @@ jobs:
           if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_DRY_RUN" = "false" ]; then mode="--live"; fi
           args=("$mode")
           if [ -n "$INPUT_POST_ID" ]; then args+=(--post-id "$INPUT_POST_ID"); fi
-          doxa publish "${args[@]}"
+          set -o pipefail
+          doxa publish "${args[@]}" 2>&1 | tee publish.log
+
+      # Any failure (bad token, Meta error, ...) opens or updates the
+      # "🚨 DOXA failure" issue, which emails the owner.
+      - name: Alert the owner
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: doxa alert --step publish --log-file publish.log
