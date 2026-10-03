@@ -1,6 +1,6 @@
 id: 2026-10-05-tease-her-clock
 publish_at: 2026-10-05 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא ענתה אחרי ארבע שעות, ואתה ענית אחרי ארבע שניות.
@@ -25,9 +25,9 @@ source:
   section: השעון שלך, לא שלה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bbe157cd06d3a544e5e1e7bb9c882432763b05140e65d6378cb3bffac91f22a2
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

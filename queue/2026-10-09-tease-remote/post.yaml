@@ -1,6 +1,6 @@
 id: 2026-10-09-tease-remote
 publish_at: 2026-10-09 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   החבר הכי טוב שלך מאז הגירושים הוא השלט.
@@ -25,9 +25,9 @@ source:
   section: לצאת מהמערה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d2c6e16f7d37dcd735a8d23c8148c7cc26d2be28d434c3cd1b377fa0e24dfe77
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-07-tease-big-bill
 publish_at: 2026-10-07 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תפריט טעימות בפגישה ראשונה? אתה לא מרשים, אתה מתחנן.
@@ -25,9 +25,9 @@ source:
   section: אבל אתה משלם על מעט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4a8eb7904baf4aa1f5e0e81cb87aa1d2328b936e386ea762bc6b351cd11e8509
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

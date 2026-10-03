@@ -1,6 +1,6 @@
 id: 2026-10-08-tease-swipe
 publish_at: 2026-10-08 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה מחליק ימינה על כל מה שזז.
@@ -26,9 +26,9 @@ source:
   section: אפליקציות ההיכרויות, בלי להיות עוד פרצוף בערימה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cfcbe68a1388ebde7714608dec27f8157c6f1f59135aac125aac4ecafb2c5dfd
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

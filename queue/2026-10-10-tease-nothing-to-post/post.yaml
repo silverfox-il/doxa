@@ -1,6 +1,6 @@
 id: 2026-10-10-tease-nothing-to-post
 publish_at: 2026-10-10 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אין לך מה להעלות? אז יש לך בעיה. והיא לא האינסטגרם.
@@ -25,9 +25,9 @@ source:
   section: התירוצים שלך, אחד אחד
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d438be6a7f12b2774e93cae0db894a329a75293bece7f829796cfdc674199a40
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

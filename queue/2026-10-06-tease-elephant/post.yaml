@@ -1,6 +1,6 @@
 id: 2026-10-06-tease-elephant
 publish_at: 2026-10-06 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה עושה לייקים לנשים שלא תפגוש בחיים.
@@ -25,9 +25,9 @@ source:
   section: הפיל בסלון
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:3583aec3f3009a5e5d795e9fb0109933f23501bc7933b8106f30749718efde31
+approved_by: auto
+approved_at: '2026-10-03T17:11:11+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
