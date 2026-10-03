@@ -1,6 +1,6 @@
 id: 2026-10-05-easy-prey
 publish_at: 2026-10-05 17:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה גרוש עם כסף וחור בלב? אתה הטרף הכי קל בשוק.
@@ -64,9 +64,9 @@ source:
   section: כסף (Money)
 format: tweet
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bc1568f9e747e5979985a929219e5eee42ca41f74a3ade809177e556f1ad7eb9
+approved_by: auto
+approved_at: '2026-10-03T16:36:42+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

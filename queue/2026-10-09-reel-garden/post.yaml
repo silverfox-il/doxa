@@ -1,6 +1,6 @@
 id: 2026-10-09-reel-garden
 publish_at: 2026-10-09 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה לא הכספומט של אף אחת.
@@ -24,9 +24,9 @@ source:
   section: גינה, לא כספומט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f613d6ed7b8566e5845599de7198a8e6f315e4d43d3c8107e17b45e2b8d2e917
+approved_by: auto
+approved_at: '2026-10-03T16:36:43+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

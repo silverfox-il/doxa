@@ -1,6 +1,6 @@
 id: 2026-10-06-test-her
 publish_at: 2026-10-06 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   נחמד מדי? אתה נוחת ישר בחבר הטוב של ארוחות שישי.
@@ -64,9 +64,9 @@ source:
   section: היא צריכה לשאול את עצמה "למה דווקא אני?"
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5424f433acbad82ae3c253df31bf09f0128dff59ed54624fd0569f9aa36df6e6
+approved_by: auto
+approved_at: '2026-10-03T16:36:43+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

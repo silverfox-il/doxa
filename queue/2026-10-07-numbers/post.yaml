@@ -1,6 +1,6 @@
 id: 2026-10-07-numbers
 publish_at: 2026-10-07 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה מזיע במכון כבר שנה, ונראה בדיוק אותו דבר.
@@ -64,9 +64,9 @@ source:
   section: להתאמן, לא "לעשות אימון"
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f0fc0d5a5b7d8fe61d4991e0f23cc74045740077244ec3379e9b9891947e1696
+approved_by: auto
+approved_at: '2026-10-03T16:36:43+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

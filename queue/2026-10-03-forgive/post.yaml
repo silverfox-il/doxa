@@ -1,6 +1,6 @@
 id: 2026-10-03-forgive
 publish_at: 2026-10-03 18:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה סולח לאקסית. אבל אתה לא שוכח כלום.
@@ -64,9 +64,9 @@ source:
   section: סולח לכולם, לא שוכח כלום
 format: null
 pillar: null
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:605b197405b88af7fe15056110103552d8b83502fd842d92b841847ab0e0fd5b
+approved_by: auto
+approved_at: '2026-10-03T16:36:42+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
