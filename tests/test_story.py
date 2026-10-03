@@ -4,14 +4,22 @@ from __future__ import annotations
 
 from PIL import Image
 
-from doxa import render
+from doxa import story
 from doxa.instagram import Client, InstagramError
-from doxa.queue import Status, load_post
+from doxa.queue import Status, content_hash, dump_post, load_post
 
-from .test_publish import SHA, SLUG, approved_post, gh_calls, publisher  # noqa: F401
+from .test_publish import (  # noqa: F401
+    SHA,
+    SLUG,
+    approved_post,
+    gh_calls,
+    publisher,
+    reel_post,
+)
 
 
 def _story_jpg(path):
+    path.parent.mkdir(parents=True, exist_ok=True)
     Image.new("RGB", (1080, 1920), "black").save(path.parent / "story.jpg", "JPEG")
 
 
@@ -23,24 +31,23 @@ def test_story_body_picks_image_or_video():
     assert Client.story_body("https://x/reel.mp4")["video_url"] == "https://x/reel.mp4"
 
 
-def test_carousel_story_published_after_feed_post(repo, gh_calls):  # noqa: F811
+def test_regular_posts_get_no_automatic_story(repo, gh_calls):  # noqa: F811
+    # Even with a story.jpg left over from before, regular posts are shared by the owner.
     path = approved_post(repo)
     _story_jpg(path)
     p, client, committer, logs = publisher(repo)
     assert p.run(dry_run=False) == 0
-    assert client.calls[-4:] == ["get_media", "create_story_container", "wait_finished", "publish"]
-    assert client.story_url == (
-        f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-post/story.jpg"
+    assert "create_story_container" not in client.calls
+    assert any("story: none" in line for line in logs)
+    assert load_post(path).story_id is None
+
+
+def test_series_failure_keeps_post_published(repo, gh_calls, monkeypatch):  # noqa: F811
+    path = _series_post(repo, monkeypatch)
+    p, client, committer, logs = publisher(
+        repo, head=lambda u: (200, "video/mp4" if u.endswith(".mp4") else "image/jpeg")
     )
-    assert committer.commits[-1] == "publish: 2026-09-25-post story"
-    post = load_post(path)
-    assert post.status == Status.published and post.story_id == "media-1"
-
-
-def test_story_failure_keeps_post_published(repo, gh_calls):  # noqa: F811
-    path = approved_post(repo)
-    _story_jpg(path)
-    p, client, committer, logs = publisher(repo)
+    client.create_reel_container = lambda url, caption: "reel-parent"
     client.fail["create_story_container"] = [InstagramError("story boom")] * 5
     assert p.run(dry_run=False) == 0
     post = load_post(path)
@@ -49,31 +56,106 @@ def test_story_failure_keeps_post_published(repo, gh_calls):  # noqa: F811
     assert committer.commits[-1] == "publish: 2026-09-25-post story failed"
 
 
-def test_no_story_jpg_skips_story(repo, gh_calls):  # noqa: F811
-    path = approved_post(repo)
-    p, client, _, logs = publisher(repo)
-    assert p.run(dry_run=False) == 0
-    assert "create_story_container" not in client.calls
-    assert any("story: skipped" in line for line in logs)
-    assert load_post(path).story_id is None
-
-
-def test_dry_run_previews_story(repo, gh_calls):  # noqa: F811
-    path = approved_post(repo)
-    _story_jpg(path)
-    p, client, committer, logs = publisher(repo)
+def test_dry_run_previews_series(repo, gh_calls, monkeypatch):  # noqa: F811
+    _series_post(repo, monkeypatch)
+    p, client, committer, logs = publisher(
+        repo, head=lambda u: (200, "video/mp4" if u.endswith(".mp4") else "image/jpeg")
+    )
     assert p.run(dry_run=True) == 0
     text = "\n".join(logs)
-    assert '"media_type": "STORIES"' in text and "story.jpg" in text
+    assert text.count('"media_type": "STORIES"') == 3 and "series/2.jpg" in text
     assert committer.commits == []
 
 
-def test_render_story_is_9_16(tmp_path):
-    slides = tmp_path / "slides"
-    slides.mkdir()
-    Image.new("RGB", (1080, 1350), (200, 80, 20)).save(slides / "1.jpg", "JPEG")
-    out = render.render_story(tmp_path)
-    with Image.open(out) as im:
+def _series_post(repo, monkeypatch, stories=("שני", "שלישי")):
+    path = reel_post(repo, monkeypatch)
+    post = load_post(path)
+    post.reel.stories = list(stories)
+    post.approved_hash = content_hash(post, path.parent)
+    dump_post(post, path)
+    (path.parent / "series").mkdir()
+    for i in range(1, len(stories) + 1):
+        _story_jpg(path.parent / "series" / "x")  # writes series/story.jpg
+        (path.parent / "series" / "story.jpg").rename(path.parent / "series" / f"{i}.jpg")
+    return path
+
+
+def test_series_files_start_with_the_reel(repo, monkeypatch):
+    path = _series_post(repo, monkeypatch)
+    post = load_post(path)
+    assert story.story_files(post, path.parent) == ["reel.mp4", "series/1.jpg", "series/2.jpg"]
+
+
+def test_series_publishes_reel_then_each_story_in_order(repo, gh_calls, monkeypatch):  # noqa: F811
+    path = _series_post(repo, monkeypatch)
+    urls = []
+
+    def head(u):
+        return 200, "video/mp4" if u.endswith(".mp4") else "image/jpeg"
+
+    p, client, committer, logs = publisher(repo, head=head)
+    real = client.create_story_container
+
+    def create(u):
+        urls.append(u.rsplit("/queue/2026-09-25-post/", 1)[1])
+        return real(u)
+
+    client.create_story_container = create
+    client.create_reel_container = lambda url, caption: "reel-parent"
+    assert p.run(dry_run=False) == 0
+    assert urls == ["reel.mp4", "series/1.jpg", "series/2.jpg"]
+    post = load_post(path)
+    assert post.story_id == "media-1,media-1,media-1" and post.story_error is None
+
+
+def test_series_stories_are_checked_by_the_rules():
+    from doxa import rules
+    from doxa.queue import Post
+
+    from .conftest import render_post_data
+
+    reel = {"lines": ["א ב ג", "ד"], "music": "a.mp3", "per_line": 4, "hold": 7,
+            "stories": ["גבר שמחכה", "Zונות - כן"]}
+    post = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
+    where = [w for w, _ in rules.post_texts(post)]
+    assert "story 2" in where and "story 3" in where
+
+
+def test_story_count_and_length_are_limited():
+    import pytest
+
+    from doxa.queue import Reel
+
+    base = {"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7}
+    with pytest.raises(ValueError, match="1-3 follow-up"):
+        Reel.model_validate({**base, "stories": ["א", "ב", "ג", "ד"]})
+    with pytest.raises(ValueError, match="characters"):
+        Reel.model_validate({**base, "stories": ["א" * 161]})
+
+
+def test_story_html_has_banner_and_counter():
+    last = story.series_html("ההמשך", 3, 3)
+    assert story.BANNER_MORE in last and "3/3" in last
+    assert story.BANNER_MORE not in story.series_html("אמצע", 2, 3)
+    assert story.BANNER_REEL in story.reel_story_html("הוק")
+    assert story.BANNER_POST in story.post_story_html(b"x")
+
+
+def test_render_stories_series_only(tmp_path):
+    import pytest
+
+    pytest.importorskip("playwright.sync_api")
+    from doxa.queue import Post
+
+    from .conftest import render_post_data
+
+    (tmp_path / "story.jpg").write_bytes(b"old")
+    assert story.render_stories(Post.model_validate(render_post_data()), tmp_path) == []
+    assert not (tmp_path / "story.jpg").exists()  # stale file removed
+    reel = {"lines": ["א ב ג", "ד"], "music": "a.mp3", "per_line": 4, "hold": 7,
+            "stories": ["שני", "שלישי"]}
+    post = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
+    outs = story.render_stories(post, tmp_path)
+    assert [o.relative_to(tmp_path).as_posix() for o in outs] == ["series/1.jpg", "series/2.jpg"]
+    with Image.open(outs[0]) as im:
         assert im.size == (1080, 1920) and im.format == "JPEG"
-        # The slide sits in the middle, the blurred backdrop is darker.
-        assert sum(im.getpixel((540, 960))) > sum(im.getpixel((540, 40)))

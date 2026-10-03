@@ -39,37 +39,6 @@ class RenderError(Exception):
     pass
 
 
-# Story repost of a carousel (spec: item 6): slide 1 as a 9:16 story, the slide
-# centred on a blurred, darkened copy of itself. Pure Pillow, no browser.
-STORY_NAME = "story.jpg"
-STORY_W, STORY_H = 1080, 1920
-STORY_CARD_W = 960
-
-
-def render_story(post_dir: Path) -> Path:
-    """Write ``story.jpg`` (1080x1920) from ``slides/1.jpg``. Returns its path."""
-    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
-
-    src = post_dir / "slides" / "1.jpg"
-    if not src.is_file():
-        raise RenderError(f"no slide 1 to build a story from: {src}")
-    with Image.open(src) as im:
-        slide = im.convert("RGB")
-    scale = STORY_H / slide.height
-    bg = slide.resize((round(slide.width * scale), STORY_H), Image.LANCZOS)
-    left = (bg.width - STORY_W) // 2
-    bg = bg.crop((left, 0, left + STORY_W, STORY_H)).filter(ImageFilter.GaussianBlur(40))
-    bg = ImageEnhance.Brightness(bg).enhance(0.45)
-    card_h = round(slide.height * STORY_CARD_W / slide.width)
-    card = slide.resize((STORY_CARD_W, card_h), Image.LANCZOS)
-    mask = Image.new("L", card.size, 0)
-    ImageDraw.Draw(mask).rounded_rectangle((0, 0, *card.size), radius=36, fill=255)
-    bg.paste(card, ((STORY_W - STORY_CARD_W) // 2, (STORY_H - card_h) // 2), mask)
-    out = post_dir / STORY_NAME
-    bg.save(out, "JPEG", quality=JPEG_QUALITY)
-    return out
-
-
 @lru_cache(maxsize=1)
 def _font_faces() -> str:
     """@font-face embedding the Heebo variable font as a data URI."""

@@ -67,6 +67,9 @@ REEL_MIN_SECONDS = 10.0
 REEL_MAX_SECONDS = 15.0
 REEL_MIN_LINES = 2
 REEL_MAX_LINES = 6
+# Teaser series: the reel plus up to 3 follow-up story images.
+MAX_SERIES_STORIES = 3
+MAX_STORY_CHARS = 160
 
 
 class Format(str, Enum):
@@ -171,6 +174,8 @@ class Reel(BaseModel):
     music: str  # file name of a track in the private music folder
     per_line: float = 2.4  # seconds each line is shown before the next appears
     hold: float = 4.0  # seconds the full text stays on screen at the end
+    # Teaser series: follow-up story texts. Story 1 is this reel; these come next.
+    stories: list[str] | None = None
 
     @property
     def duration(self) -> float:
@@ -183,6 +188,14 @@ class Reel(BaseModel):
             raise ValueError(f"reel needs {REEL_MIN_LINES}-{REEL_MAX_LINES} lines, got {n}")
         if any(not line.strip() for line in self.lines):
             raise ValueError("reel lines must not be empty")
+        if self.stories is not None:
+            if not (1 <= len(self.stories) <= MAX_SERIES_STORIES):
+                raise ValueError(f"reel.stories needs 1-{MAX_SERIES_STORIES} follow-up stories")
+            for text in self.stories:
+                if not text.strip() or len(text) > MAX_STORY_CHARS:
+                    raise ValueError(
+                        f"each story needs 1-{MAX_STORY_CHARS} characters, got {len(text)}"
+                    )
         if not (REEL_MIN_SECONDS <= self.duration <= REEL_MAX_SECONDS):
             raise ValueError(
                 f"reel lasts {self.duration:.1f}s, need {REEL_MIN_SECONDS:.0f}-"

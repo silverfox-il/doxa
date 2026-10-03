@@ -158,7 +158,7 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
     still render, and the command exits 1 at the end. Posts already publishing, published or
     failed are never touched, so a re-render can never make them publishable.
     """
-    from . import approval, render
+    from . import approval, render, story
 
     root: Path = ctx.obj["root"]
     done: list[str] = []
@@ -172,7 +172,7 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
             click.echo(f"rendering {post.id} ({len(post.slides)} slides)…")
             try:
                 render.render_post(post, post_dir, root=root)
-                render.render_story(post_dir)
+                story.render_stories(post, post_dir)
             except render.RenderError as e:
                 failed.append(f"{post.id}: {e}")
                 continue
@@ -180,7 +180,8 @@ def render_cmd(ctx: click.Context, post_ids: tuple[str, ...]) -> None:
             click.echo(f"rendering reel {post.id} ({post.reel.duration:.1f}s)…")
             try:
                 reel.render_reel(post, post_dir, root=root)
-            except reel.ReelError as e:
+                story.render_stories(post, post_dir)
+            except (reel.ReelError, render.RenderError) as e:
                 failed.append(f"{post.id}: {e}")
                 continue
             problems = reel.validate_video(post_dir / reel.VIDEO_NAME)

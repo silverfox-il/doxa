@@ -121,6 +121,8 @@ def post_texts(post: Post) -> list[tuple[str, str]]:
     if post.reel is not None:
         for i, line in enumerate(post.reel.lines, start=1):
             out.append((f"reel line {i}", line))
+        for i, text in enumerate(post.reel.stories or [], start=2):
+            out.append((f"story {i}", text))
     for i, text in enumerate(caption_lines(post.caption), start=1):
         out.append((f"caption line {i}", text))
     return out

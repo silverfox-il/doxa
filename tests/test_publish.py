@@ -539,6 +539,7 @@ def reel_post(repo, monkeypatch):
     )
     path = write_post(repo, data)
     (path.parent / "reel.mp4").write_bytes(b"fake")
+    (path.parent / "story.jpg").write_bytes(b"fake")
     monkeypatch.setattr(reel, "validate_video", lambda video: [])
     post = load_post(path)
     post.approved = True
@@ -550,7 +551,11 @@ def reel_post(repo, monkeypatch):
 def test_reel_live_publish(repo, gh_calls, monkeypatch):
     path = reel_post(repo, monkeypatch)
     heads = []
-    p, client, _, _ = publisher(repo, head=lambda u: heads.append(u) or (200, "video/mp4"))
+    def head(u):
+        heads.append(u)
+        return 200, "video/mp4" if u.endswith(".mp4") else "image/jpeg"
+
+    p, client, _, _ = publisher(repo, head=head)
     seen = {}
 
     def create_reel_container(url, caption):
@@ -563,13 +568,13 @@ def test_reel_live_publish(repo, gh_calls, monkeypatch):
     client.wait_finished = lambda cid, **kw: waited.update(cid=cid, **kw)
     assert p.run(dry_run=False) == 0
     url = f"https://raw.githubusercontent.com/{SLUG}/{SHA}/queue/2026-09-25-post/reel.mp4"
-    # The reel is checked twice: once for the feed post, once for its story.
-    assert heads == [url, url] and seen == {"url": url, "caption": "תזכור:"}
-    assert waited["cid"] == "story" and waited["timeout_s"] == 600.0
+    # A plain reel gets no automatic story (the owner shares posts himself).
+    assert heads == [url] and seen == {"url": url, "caption": "תזכור:"}
+    assert waited["cid"] == "reel-parent" and waited["timeout_s"] == 600.0
     assert "create_carousel_item" not in client.calls
-    assert client.story_url == url
+    assert "create_story_container" not in client.calls
     post = load_post(path)
-    assert post.status == Status.published and post.story_id == "media-1"
+    assert post.status == Status.published and post.story_id is None
 
 
 def test_reel_head_must_be_video_mp4(repo, gh_calls, monkeypatch):

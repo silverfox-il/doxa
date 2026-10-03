@@ -36,7 +36,7 @@ from typing import Protocol
 import requests
 
 from . import approval, github, reel, slides, status
-from .render import STORY_NAME
+from .story import story_files
 from .instagram import (
     API_VERSION,
     Client,
@@ -214,13 +214,12 @@ class Publisher:
         n = len(slide_files(path.parent / "slides"))
         return [github.raw_url(self.slug, self.sha, post.id, i) for i in range(1, n + 1)]
 
-    def story_url(self, post: Post, path: Path) -> str | None:
-        """What to share as a story: the reel itself, or the carousel's story.jpg."""
-        if post.mode == Mode.reel:
-            return github.raw_file_url(self.slug, self.sha, post.id, reel.VIDEO_NAME)
-        if (path.parent / STORY_NAME).is_file():
-            return github.raw_file_url(self.slug, self.sha, post.id, STORY_NAME)
-        return None
+    def story_urls(self, post: Post, path: Path) -> list[str]:
+        """What to share as stories, in order (see :mod:`doxa.story`)."""
+        return [
+            github.raw_file_url(self.slug, self.sha, post.id, name)
+            for name in story_files(post, path.parent)
+        ]
 
     def check_urls(self, urls: list[str]) -> None:
         """Every URL must answer 200 with the right type; raw.githubusercontent can lag.
@@ -380,12 +379,12 @@ class Publisher:
         self.log("  would commit status: publishing, then:")
         self.log(f"  would POST {base}/media_publish")
         self.log(f"    {body(Client.publish_body(container))}")
-        story = self.story_url(post, path) if path is not None else None
-        if story:
-            self.log(f"  then story: would POST {base}/media")
+        stories = self.story_urls(post, path) if path is not None else []
+        for i, story in enumerate(stories, start=1):
+            self.log(f"  then story {i}/{len(stories)}: would POST {base}/media")
             self.log(f"    {body(Client.story_body(story))}")
-        else:
-            self.log("  then story: skipped (no story.jpg)")
+        if not stories:
+            self.log("  then story: none (regular posts are shared by the owner)")
         if blockers:
             self.log(
                 f"✓ dry run complete — nothing was sent (a live run is BLOCKED: "
@@ -459,24 +458,30 @@ class Publisher:
         """
         if post.story_id or post.story_error:
             return
-        url = self.story_url(post, path)
-        if url is None:
-            self.log("  story: skipped (no story.jpg)")
+        urls = self.story_urls(post, path)
+        if not urls:
+            self.log("  story: none (regular posts are shared by the owner)")
             return
         c = self.client
-        timeout = REEL_PROCESS_TIMEOUT_S if url.endswith(".mp4") else 300.0
+        ids: list[str] = []
         try:
-            self.check_urls([url])
-            container = self._retry("story", lambda: c.create_story_container(url))
-            self.log(f"  story container: {container}")
-            c.wait_finished(container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
-            post.story_id = c.publish(container)
-            self.log(f"✓ story published: {post.story_id}")
+            for i, url in enumerate(urls, start=1):
+                timeout = REEL_PROCESS_TIMEOUT_S if url.endswith(".mp4") else 300.0
+                self.check_urls([url])
+                container = self._retry("story", lambda u=url: c.create_story_container(u))
+                self.log(f"  story {i}/{len(urls)} container: {container}")
+                c.wait_finished(
+                    container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep
+                )
+                ids.append(c.publish(container))
+                self.log(f"✓ story {i}/{len(urls)} published: {ids[-1]}")
             message = f"publish: {post.id} story"
         except InstagramError as e:
-            post.story_error = str(e)[:300]
+            post.story_error = f"after {len(ids)}/{len(urls)} stories: {e}"[:300]
             self.log(f"  story failed (feed post is fine): {post.story_error}")
             message = f"publish: {post.id} story failed"
+        # Comma-separated when a teaser series published several stories.
+        post.story_id = ",".join(ids) or None
         self._save(post, path, message)
 
     def _fail(self, post: Post, path: Path, error: str, dry_run: bool, *, retryable: bool) -> int:
