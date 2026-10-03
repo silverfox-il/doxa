@@ -79,6 +79,12 @@ written exactly the way the book talks:
   sentences, direct "you", spoken Hebrew, a punch in every line, no corporate or
   coaching language, no softening. Read the section first and write like its author.
   Strong book lines may be quoted as they are.
+- **Talk to him, not about him.** Always second person, like the book: "אם אתה ...
+  אז ...", "אם אתה עד כדי כך דפוק ש...", "אתה ...". Never preach in the third
+  person ("גבר ש...", "גבר מהוסס ...", "וגבר שלא ..."); `style_rules` blocks it.
+- **Correct, natural Hebrew.** Read every line aloud the way an Israeli guy talks.
+  Right verb forms ("היא צריכה להידלק ממך", never "להיות נדלקת"), no sentences that
+  sound translated, no stiff written register.
 - **The book's positions only.** Never invent advice the book does not give, and
   never contradict it. Every post keeps `source:` with the section its idea comes from.
 - **One idea per post.** Spread across the chapters: `02.md` (the market, the magnet,

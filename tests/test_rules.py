@@ -10,7 +10,7 @@ from click.testing import CliRunner
 from doxa import rules
 from doxa.book import Book, find_book_dir, normalize
 from doxa.cli import main
-from doxa.queue import Post
+from doxa.queue import Post, Status
 
 from .conftest import render_post_data, write_post
 
@@ -35,6 +35,7 @@ CFG.identity_words = ["אפי"]
 # The verbatim tests below run in word-for-word mode; VOICE is the live config.
 VOICE = rules.RulesConfig.load(Path(__file__).resolve().parent.parent / "config" / "rules.yaml")
 CFG.require_verbatim = True
+CFG.style_rules = []  # style has its own tests below, on VOICE
 
 
 @pytest.fixture
@@ -347,7 +348,7 @@ def voice(*titles: str) -> list[tuple[str, str]]:
 
 def test_live_config_is_book_voice_not_verbatim():
     assert VOICE.require_verbatim is False
-    assert voice("גבר שמחכה לאישור כבר הפסיד.", "תפסיק לבקש, תתחיל להחליט.") == []
+    assert voice("אם אתה מחכה לאישור, כבר הפסדת.", "תפסיק לבקש, תתחיל להחליט.") == []
 
 
 @pytest.mark.parametrize(
@@ -383,3 +384,38 @@ def test_masked_word_finding_says_what_to_write():
     post = post_with("כל הזונות האלה", "תפסיק לבקש, תתחיל להחליט.")
     detail = next(f.detail for f in rules.check_post(post, VOICE, None) if f.rule == "masked-word")
     assert "Zונה" in detail
+
+
+# --- style: talk to him, correct Hebrew ---------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "bad",
+    [
+        "גבר שמחכה לאישור כבר הפסיד.",
+        "וגבר שלא שולט בעצמו לא ישלוט בכלום.",
+        "גבר מהוסס מהוסס בכל מקום.",
+        "היא צריכה להיות נדלקת ממך.",
+    ],
+)
+def test_style_rules_block_preaching_and_known_mistakes(bad):
+    assert ("block", "style") in voice(bad, "תפסיק לבקש, תתחיל להחליט.")
+
+
+@pytest.mark.parametrize(
+    "good",
+    [
+        "אם אתה מחכה לאישור, כבר הפסדת.",
+        "אם אתה עד כדי כך דפוק שאתה עונה תוך שנייה, היא כבר יודעת.",
+        "היא צריכה להידלק ממך.",
+        "הוא ישב מול גבר זר בבר.",
+    ],
+)
+def test_style_rules_allow_second_person(good):
+    assert voice(good, "תפסיק לבקש, תתחיל להחליט.") == []
+
+
+def test_style_rules_skip_published_posts():
+    post = post_with("גבר שמחכה לאישור כבר הפסיד.", "תפסיק לבקש, תתחיל להחליט.")
+    post = post.model_copy(update={"status": Status.published})
+    assert "style" not in [f.rule for f in rules.check_post(post, VOICE, None)]

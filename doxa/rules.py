@@ -74,6 +74,10 @@ class RulesConfig:
     # Crude words that must be written masked: [{match, write}]. ``match`` uses
     # the same syntax as block_words (plain word, or "re:" regex).
     masked_words: list[dict[str, str]] = field(default_factory=list)
+    # The book's voice talks TO the reader ("אם אתה ..."), never ABOUT "a man
+    # who ..."; plus known Hebrew mistakes. [{match, write}], checked on posts
+    # not yet published.
+    style_rules: list[dict[str, str]] = field(default_factory=list)
 
     @classmethod
     def load(cls, public: Path, private: Path | None = None) -> RulesConfig:
@@ -189,6 +193,11 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
                     where,
                     f"{m.group(0).strip()!r} must be masked: write {rule['write']!r}",
                 )
+        if post.status.value not in ("published", "publishing"):
+            for rule in cfg.style_rules:
+                m = _word_re(rule["match"]).search(text)
+                if m:
+                    add(BLOCK, "style", where, f"{m.group(0).strip()!r}: {rule['write']}")
         for word in cfg.identity_words:
             if _word_re(word).search(text):
                 add(BLOCK, "identity", where, "identifying detail about the owner")

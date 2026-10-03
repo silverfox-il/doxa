@@ -363,7 +363,7 @@ def test_auto_approve_skips_anything_with_a_finding(repo, gh, book_dir):
 def test_auto_approve_works_without_the_book_in_voice_mode(repo, gh, monkeypatch):
     # Posts are written in the book's voice, so no word-for-word check needs it.
     monkeypatch.setenv("DOXA_BOOK_DIR", str(repo / "nowhere"))
-    path = quoted_post(repo, "2026-09-25-own", "גבר שמחכה לאישור כבר הפסיד.")
+    path = quoted_post(repo, "2026-09-25-own", "אם אתה מחכה לאישור, כבר הפסדת.")
     result = run(repo, "auto-approve")
     assert result.exit_code == 0, result.output
     assert load_post(path).approved

@@ -98,3 +98,14 @@ masked_words:
     write: "שרמו*ה"
   - match: "re:(?<![א-ת])[והבלש]{0,2}כוסי(?:ת|ות)(?![א-ת])"
     write: "Kוסית"
+
+# The book's voice (owner, 2026-10-03): talk TO the reader in second person,
+# "אם אתה ... אז ...", "אם אתה עד כדי כך דפוק ש...", never preach ABOUT "a man who".
+# Plus Hebrew mistakes the owner caught. Checked on posts not yet published.
+style_rules:
+  - match: "re:(?<![א-ת])ו?גבר ש"
+    write: "talk to him: 'אם אתה ...', not 'גבר ש...'"
+  - match: "re:^ו?גבר "
+    write: "talk to him: open with 'אתה' / 'אם אתה', not 'גבר ...'"
+  - match: "re:להיות נדלק"
+    write: "write 'להידלק' (היא צריכה להידלק ממך)"
