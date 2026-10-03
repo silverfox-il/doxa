@@ -12,6 +12,11 @@ on:
     # Twice an hour at off-peak minutes: GitHub delays or skips top-of-hour
     # cron runs under load, and one skipped run must not stall a post.
     - cron: "7,37 * * * *"
+  # Backup clock: GitHub sometimes skips scheduled runs for hours. An outside
+  # ticker can POST /repos/<repo>/dispatches {"event_type": "publish-tick"};
+  # that run behaves exactly like a scheduled one (live only if DOXA_LIVE).
+  repository_dispatch:
+    types: [publish-tick]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -65,7 +70,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mode="--dry-run"
-          if [ "$EVENT" = "schedule" ] && [ "$DOXA_LIVE" = "true" ]; then mode="--live"; fi
+          if { [ "$EVENT" = "schedule" ] || [ "$EVENT" = "repository_dispatch" ]; } && [ "$DOXA_LIVE" = "true" ]; then mode="--live"; fi
           if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_DRY_RUN" = "false" ]; then mode="--live"; fi
           args=("$mode")
           if [ -n "$INPUT_POST_ID" ]; then args+=(--post-id "$INPUT_POST_ID"); fi
