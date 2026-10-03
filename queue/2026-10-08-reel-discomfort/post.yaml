@@ -1,6 +1,6 @@
 id: 2026-10-08-reel-discomfort
 publish_at: 2026-10-08 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בהתחלה אתה תהיה לא משהו.
@@ -22,9 +22,9 @@ source:
   section: איך האגו מנהל לך את הפחד
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:794e8a398ee8efada296b890e4605b919cbb77e8eaa3ab9ec88b2ded266a5099
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

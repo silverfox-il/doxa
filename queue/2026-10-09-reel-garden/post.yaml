@@ -1,6 +1,6 @@
 id: 2026-10-09-reel-garden
 publish_at: 2026-10-09 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הכסף שלך לא נועד לקנות תשומת לב,
@@ -22,9 +22,9 @@ source:
   section: גינה, לא כספומט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:169cb3ec00efc9fe987ffa688f78479698bc36ef4e4e571ebefdb2c7742e40ed
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

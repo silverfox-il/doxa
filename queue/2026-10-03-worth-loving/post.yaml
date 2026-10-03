@@ -1,6 +1,6 @@
 id: 2026-10-03-worth-loving
 publish_at: 2026-10-03 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה דואג כל יום להיות גבר ששווה לאהוב.
@@ -41,9 +41,9 @@ source:
   section: האהבה שלה באה עם תנאים
 format: null
 pillar: null
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:30fcf22944554c5315211526dd55f66ff150de9c071bcd01dd0c9aacacf76050
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

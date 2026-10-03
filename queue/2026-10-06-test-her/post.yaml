@@ -1,6 +1,6 @@
 id: 2026-10-06-test-her
 publish_at: 2026-10-06 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה לא עובר מבחן, אתה עורך מבחן.
@@ -50,9 +50,9 @@ source:
   section: היא צריכה לשאול את עצמה "למה דווקא אני?"
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4ea84071f79aae7299a524a6fc767b646211e3c235b1dea28e95e094dad935bc
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

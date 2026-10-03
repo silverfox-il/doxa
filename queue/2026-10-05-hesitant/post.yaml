@@ -1,6 +1,6 @@
 id: 2026-10-05-hesitant
 publish_at: 2026-10-05 22:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר מהוסס מהוסס בכל מקום.
@@ -50,9 +50,9 @@ source:
   section: לדעת בדיוק למה באת
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d549e51fad57918bc6d7441322d6d8ddbb6813a3ed16dcc9dacfcbf682d08d4f
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

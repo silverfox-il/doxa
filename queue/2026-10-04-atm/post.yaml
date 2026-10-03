@@ -1,6 +1,6 @@
 id: 2026-10-04-atm
 publish_at: 2026-10-04 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
@@ -57,9 +57,9 @@ source:
   section: 'נורה 14: הכספומט'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d977a007af41bd3e0e1b403506edebce20c509d9879e5e0ab61d27f3f0cca799
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

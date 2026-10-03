@@ -1,6 +1,6 @@
 id: 2026-10-08-phone-bed
 publish_at: 2026-10-08 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   ואתה עדיין גולל באינסטגרם במיטה עד חצות.
@@ -43,9 +43,9 @@ source:
   section: הטלפון, הכוס והאספרסו
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2e030409a9004309f5ce50a86dbca06fdabf28a7d400e0c18fee578cb19e3d33
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

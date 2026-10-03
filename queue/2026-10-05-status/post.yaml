@@ -1,6 +1,6 @@
 id: 2026-10-05-status
 publish_at: 2026-10-05 09:00
-approved: false
+approved: true
 mode: render
 caption: |-
   מה לעזאזל היא עושה איתו?
@@ -43,9 +43,9 @@ source:
   section: סטטוס
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:1ed298db931564dbc8faabff6f9c318822cdb041a4f44e9227b0ed464efe1159
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

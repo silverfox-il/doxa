@@ -1,6 +1,6 @@
 id: 2026-10-04-reel-first-line
 publish_at: 2026-10-04 17:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אל תתנצל על זה שבאת.
@@ -23,9 +23,9 @@ source:
   section: מה אומרים לה? כמעט כל דבר
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cbbaefdbc7a2fae312a897a7c8bfa4504e3939102ebb4b6ae5dfcf88bff766f2
+approved_by: auto
+approved_at: '2026-10-03T15:10:54+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
