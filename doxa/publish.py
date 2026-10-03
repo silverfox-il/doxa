@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import subprocess
 import time
 from collections.abc import Callable
@@ -104,8 +105,29 @@ def head_check(url: str) -> tuple[int, str]:
     return resp.status_code, resp.headers.get("Content-Type", "")
 
 
+RLM = "\u200f"  # invisible right-to-left mark
+_HEB = re.compile("[\u05d0-\u05ea]")
+_LATIN = re.compile("[A-Za-z]")
+
+
+def rtl_caption(text: str) -> str:
+    """The caption as sent to Instagram: every Hebrew line reads right to left.
+
+    Instagram picks each line's direction from its first strong letter, so a line
+    that opens with a masked word ("Zונות ...") would flip to left-to-right and
+    look reversed. An invisible RLM at the start of such a line keeps it RTL.
+    """
+    out = []
+    for line in text.split("\n"):
+        first = next((ch for ch in line if _HEB.match(ch) or _LATIN.match(ch)), "")
+        if first and _LATIN.match(first) and _HEB.search(line):
+            line = RLM + line
+        out.append(line)
+    return "\n".join(out)
+
+
 def normalize_caption(text: str) -> str:
-    return text.replace("\r\n", "\n").strip()
+    return text.replace("\r\n", "\n").replace(RLM, "").strip()
 
 
 @dataclass
@@ -328,7 +350,7 @@ class Publisher:
 
         if post.mode == Mode.reel:
             self.log(f"  would POST {base}/media  (reel, {post.reel.duration:.1f}s)")
-            self.log(f"    {body(Client.reel_body(urls[0], post.caption))}")
+            self.log(f"    {body(Client.reel_body(urls[0], rtl_caption(post.caption)))}")
             self._log_tail(post, base, blockers, "<reel-id>", path)
             return
         for i, url in enumerate(urls, start=1):
@@ -336,7 +358,7 @@ class Publisher:
             self.log(f"    {body(Client.carousel_item_body(url))}")
         children = [f"<child-{i}-id>" for i in range(1, len(urls) + 1)]
         self.log(f"  would POST {base}/media  (carousel)")
-        self.log(f"    {body(Client.carousel_body(children, post.caption))}")
+        self.log(f"    {body(Client.carousel_body(children, rtl_caption(post.caption)))}")
         self._log_tail(post, base, blockers, "<carousel-id>", path)
 
     def _log_tail(
@@ -376,7 +398,8 @@ class Publisher:
         c = self.client
         try:
             if post.mode == Mode.reel:
-                parent = self._retry("reel", lambda: c.create_reel_container(urls[0], post.caption))
+                caption = rtl_caption(post.caption)
+                parent = self._retry("reel", lambda: c.create_reel_container(urls[0], caption))
                 self.log(f"  reel container: {parent}")
                 timeout = REEL_PROCESS_TIMEOUT_S
             else:
@@ -386,7 +409,8 @@ class Publisher:
                     self.log(f"  child container {i}/{len(urls)}: {cid}")
                     children.append(cid)
                 parent = self._retry(
-                    "carousel", lambda: c.create_carousel_container(children, post.caption)
+                    "carousel",
+                    lambda: c.create_carousel_container(children, rtl_caption(post.caption)),
                 )
                 self.log(f"  carousel container: {parent}")
                 timeout = 300.0
