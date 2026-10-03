@@ -3,7 +3,7 @@ publish_at: 2026-10-06 15:00
 approved: true
 mode: render
 caption: |-
-  הנחמד מדי נגמר כחבר הטוב של ארוחות שישי.
+  נחמד מדי? אתה נוחת ישר בחבר הטוב של ארוחות שישי.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
@@ -11,21 +11,21 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: הנחמד מדי נגמר כחבר הטוב של ארוחות שישי.
+  title: נחמד מדי? אתה נוחת ישר בחבר הטוב של ארוחות שישי.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: חום וקרבה זה טוב. אבל רק זה? אתה מאבד את כל המתח.
+  title: חום וקרבה זה טוב. אבל אם זה כל מה שיש לך, הלך המתח.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם בנית את עצמך נכון, אתה זה שבודק אם היא מתאימה לך. לא ההפך.
+  title: אם בנית את עצמך כמו שצריך, אתה זה שבודק אם היא מתאימה לך. לא ההפך.
   accent: ''
   body: ''
   layout: bottom
@@ -39,21 +39,21 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: תגיש לה את עצמך על מגש, ואין לה על מה לעבוד.
+  title: אתה מגיש לה את עצמך על מגש? אין לה על מה לעבוד.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ורק לעקוץ? זה מתיש ומרגיש כמו שיפוט.
+  title: ואם אתה רק עוקץ? זה מתיש, וזה מרגיש לה כמו שיפוט.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: קצת חום, קצת אתגר, עוד קצת חום.
+  title: 'המינון הוא העניין: קצת חום, קצת אתגר, עוד קצת חום.'
   accent: ''
   body: ''
   layout: bottom

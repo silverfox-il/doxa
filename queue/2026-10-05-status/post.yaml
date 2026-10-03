@@ -3,7 +3,7 @@ publish_at: 2026-10-05 09:00
 approved: true
 mode: render
 caption: |-
-  ראית זוג ושאלת את עצמך מה היא עושה איתו?
+  ראית זוג וחשבת: מה לעזאזל היא עושה איתו?
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,7 +11,7 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: ראית זוג ושאלת את עצמך מה היא עושה איתו?
+  title: 'ראית זוג וחשבת: מה לעזאזל היא עושה איתו?'
   accent: ''
   body: ''
   layout: bottom
@@ -25,7 +25,7 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: בגיל 22 סטטוס זה לייקים. בגיל 50 זה השם שעשית לעצמך.
+  title: בגיל 22 סטטוס זה כמה לייקים יש לך. בגיל שלך זה השם שעשית לעצמך.
   accent: ''
   body: ''
   layout: bottom
@@ -39,7 +39,7 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: 'וזה התחביב שגורם להם לשאול: רגע, מה? אתה עושה את זה?'
+  title: 'וזה התחביב שגורם לאנשים להגיד: "רגע, מה? אתה עושה את זה?"'
   accent: ''
   body: ''
   layout: bottom
@@ -53,7 +53,7 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: 'סטטוס מדבר ישר עם החלק הכי עתיק במוח שלה: לידו בטוח, לידו מעניין.'
+  title: 'הסטטוס שלך מדבר ישר עם החלק הכי עתיק במוח שלה: לידך בטוח, לידך מעניין.'
   accent: ''
   body: ''
   layout: bottom

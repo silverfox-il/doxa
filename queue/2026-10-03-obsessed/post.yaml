@@ -3,41 +3,57 @@ publish_at: 2026-10-03 19:30
 approved: true
 mode: render
 caption: |-
-  אתה חייב להיות חולה על כסף, אובססיבי ממש.
+  אתה חייב להיות חולה על כסף. אובססיבי ממש.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
 - background: assets/backgrounds/2026-10-03-obsessed.jpg
   kicker: ''
-  title: אתה חייב להיות חולה על כסף, אובססיבי ממש.
+  title: אתה חייב להיות חולה על כסף. אובססיבי ממש.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-obsessed.jpg
   kicker: ''
-  title: בגיל שלך אין לך עוד עשר שנים לבלבל את השכל.
+  title: העולם היום תחרותי יותר מכל מה שהכרת, ובגיל שלך אין לך עוד עשר שנים לבלבל את השכל.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-obsessed.jpg
   kicker: ''
-  title: לא תמות אם כמה חודשים אף אחת לא תישן במיטה שלך.
+  title: יהיו תקופות שתשים נשים בצד ותקרע את התחת על העסק, או על היציאה מהבור של הגירושים.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-obsessed.jpg
   kicker: ''
-  title: גבר שעסוק בלבנות את העתיד שלו פשוט לא זמין כל הזמן, הוא לא עונה לה תוך חצי דקה, הוא לא מבטל את האימון בגלל הודעה ממנה
+  title: אישה זה פרויקט. היא אוכלת זמן, קשב ואנרגיה, ובתקופה כזאת אין לך מאיפה לתת. וזה בסדר גמור.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-obsessed.jpg
   kicker: ''
-  title: אתה תישאר עם ידיים ריקות. בלי המטרה, ובסוף גם בלעדיה.
+  title: לא תמות אם כמה חודשים אף אחת לא תישן אצלך במיטה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-obsessed.jpg
+  kicker: ''
+  title: תסתכל על החבר'ה בני 55 ששרפו עשור על אפליקציות, פאבים וקשרים של שלושה חודשים.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-obsessed.jpg
+  kicker: ''
+  title: מה נשאר להם? כלום. לא עסק, לא חיסכון ולא טיפת כבוד עצמי.
   accent: ''
   body: ''
   layout: bottom

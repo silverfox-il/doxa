@@ -3,7 +3,7 @@ publish_at: 2026-10-06 09:00
 approved: true
 mode: render
 caption: |-
-  מי שאמר לך שמראה לא משנה, שיקר לך.
+  מי שאמר לך שהמראה לא משנה, שיקר לך.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,14 +11,14 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: מי שאמר לך שמראה לא משנה, שיקר לך.
+  title: מי שאמר לך שהמראה לא משנה, שיקר לך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: גורו הפיתוי מכרו לך שעם המשפט הנכון מצליחים עם כל פרצוף. זה חרטא.
+  title: כל גורו פיתוי מכר לך שעם המשפט הנכון אפשר להצליח עם כל פרצוף. זה חרטא.
   accent: ''
   body: ''
   layout: bottom
@@ -32,21 +32,21 @@ slides:
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: לפני שהיא עונה להודעה שלך, היא צריכה להימשך אליך ממבט ראשון. ולו טיפה.
+  title: לפני שהיא בכלל עונה להודעה שלך, היא צריכה להימשך אליך ממבט ראשון. אפילו טיפה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: על הגובה ועל מה שאמא טבע חילקה לך אין לך שליטה. על כל השאר? המון.
+  title: על הגובה ועל מה שאמא טבע חילקה לך אין לך הרבה מה לעשות. על כל השאר? המון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: זה ההבדל בין ג'ורג' קלוני לבין הדוד שנרדם בחתונות.
+  title: ובגיל שלך, זה ההבדל בין ג'ורג' קלוני לדוד שנרדם בחתונות.
   accent: ''
   body: ''
   layout: bottom

@@ -265,6 +265,24 @@ def pillar_rotation(posts: list[Post], cfg: RulesConfig) -> list[Finding]:
     ]
 
 
+def cta_rotation(posts: list[Post], cfg: RulesConfig) -> list[Finding]:
+    """Two posts in a row (by publish time) may never use the same call to action."""
+    cta = set(cfg.cta)
+
+    def line(post: Post) -> str | None:
+        return next((t for t in caption_lines(post.caption) if t in cta), None)
+
+    seq = sorted(
+        (p for p in posts if line(p) is not None and p.status.value != "published"),
+        key=lambda p: (p.publish_at_dt, p.id),
+    )
+    return [
+        Finding(BLOCK, "cta", cur.id, f"same call to action as {prev.id}: {line(cur)!r}")
+        for prev, cur in zip(seq, seq[1:], strict=False)
+        if line(prev) == line(cur)
+    ]
+
+
 def blocking(findings: list[Finding]) -> list[Finding]:
     return [f for f in findings if f.severity == BLOCK]
 

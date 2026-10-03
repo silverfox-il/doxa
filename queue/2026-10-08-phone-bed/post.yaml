@@ -3,7 +3,7 @@ publish_at: 2026-10-08 20:00
 approved: true
 mode: render
 caption: |-
-  ואתה עדיין גולל באינסטגרם במיטה עד חצות.
+  השעה חצות, ואתה עדיין גולל במיטה.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,28 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: ואתה עדיין גולל באינסטגרם במיטה עד חצות.
+  title: השעה חצות, ואתה עדיין גולל במיטה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: תעזוב את הפאקינג טלפון, תטעין אותו בסלון ותקנה שעון מעורר של עשרים שקל.
+  title: המסך מבלבל לך את השעון הפנימי. אבל הבעיה האמיתית היא הראש שנשאר דלוק.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: אתה נרדם כמו תינוק ומתעורר כמו סמרטוט
+  title: ההודעה שעוד לא ענו עליה, הפוסט בקבוצה של השכונה, המייל מהעבודה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: הקפה האחרון שלך עד שתיים בצהריים.
+  title: תעזוב את הפאקינג טלפון. תטעין אותו בסלון ותקנה שעון מעורר של עשרים שקל.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: והוויסקי לפני השינה? אתה נרדם כמו תינוק ומתעורר כמו סמרטוט.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: הקפה האחרון שלך עד שתיים בצהריים. כולל משקה האנרגיה לפני האימון והקולה עם הפיצה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-08-phone-bed.jpg
+  kicker: ''
+  title: ואני יודע שאתה קורא את זה עכשיו בטלפון. במיטה.
   accent: ''
   body: ''
   layout: bottom

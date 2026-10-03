@@ -3,7 +3,7 @@ publish_at: 2026-10-10 20:00
 approved: true
 mode: render
 caption: |-
-  נורה אחת, פעם אחת, היא מידע.
+  נורה אדומה אחת? זו עוד לא סיבה לברוח.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,35 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-10-one-is-info.jpg
   kicker: ''
-  title: נורה אחת, פעם אחת, היא מידע.
+  title: נורה אדומה אחת? זו עוד לא סיבה לברוח.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-10-one-is-info.jpg
   kicker: ''
-  title: אותה נורה חוזרת שוב ושוב, או שלוש נורות שונות מדליקות ביחד, זה כבר לא מידע, זו החלטה
+  title: אין אישה בלי אף נורה, בדיוק כמו שאין גבר כזה. גם אתה היית מוצא את עצמך בשתיים שלוש.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-10-one-is-info.jpg
   kicker: ''
-  title: גבר שנכווה פעם אחת לא מחכה שהבית ישרף כדי להאמין שיש עשן.
+  title: נורה אחת, פעם אחת, היא מידע. אתה רושם בצד, בראש, וממשיך לחיות.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-10-one-is-info.jpg
   kicker: ''
-  title: בפעם הראשונה בחרת בעיניים עצומות. הפעם אתה בוחר עם העיניים פתוחות
+  title: אותה נורה חוזרת שוב ושוב, או שלוש נורות ביחד? זה כבר לא מידע. זו החלטה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-10-one-is-info.jpg
   kicker: ''
-  title: אתה לא זה שעובר מבחן. אתה זה שעורך אותו.
+  title: ואתה לא מחכה שנה. כבר נכווית פעם אחת, אתה לא צריך שהבית יישרף כדי להאמין שיש עשן.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-10-one-is-info.jpg
+  kicker: ''
+  title: תמדוד התנהגות לאורך זמן. לא מה שהיא אומרת בדייט השלישי, לא פוסטים ולא הבטחות.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-10-one-is-info.jpg
+  kicker: ''
+  title: אתה לא זה שעובר את המבחן. אתה זה שעורך אותו.
   accent: ''
   body: ''
   layout: bottom

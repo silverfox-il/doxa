@@ -3,7 +3,7 @@ publish_at: 2026-10-07 20:00
 approved: true
 mode: render
 caption: |-
-  אתה יכול להזיע ולהתעייף מאוד ולא להתקדם אפילו גרם אחד.
+  אתה מזיע במכון כבר שנה, ונראה בדיוק אותו דבר.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,21 +11,28 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: אתה יכול להזיע ולהתעייף מאוד ולא להתקדם אפילו גרם אחד.
+  title: אתה מזיע במכון כבר שנה, ונראה בדיוק אותו דבר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: רוב האנשים במכון, תסתכל עליהם, נראים היום בדיוק כמו שנראו לפני שנה.
+  title: אתה בא, מזיע, עושה קצת פה וקצת שם, והולך הביתה מרוצה כי "שרף".
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: כי הם "עושים אימון" ולא מתאמנים.
+  title: ובשנה הבאה אתה שם שוב, עם אותה כרס ואותן זרועות.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: 'זה לעשות אימון. להתאמן זה משהו אחר לגמרי: מטרה ברורה, וכל אימון בנוי על הקודם.'
   accent: ''
   body: ''
   layout: bottom
@@ -39,7 +46,14 @@ slides:
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: לך אחרי המספרים, לא אחרי התחושה.
+  title: בשבוע שעבר 5 חזרות עם 50 קילו, והיום 5 עם 52.5? התקדמת. גם אם זה הרגיש קליל.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-07-numbers.jpg
+  kicker: ''
+  title: תפתח פתק בטלפון, תרשום כל משקל וכל חזרה, ותלך אחרי המספרים. לא אחרי התחושה.
   accent: ''
   body: ''
   layout: bottom

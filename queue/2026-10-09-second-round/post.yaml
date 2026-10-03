@@ -3,7 +3,7 @@ publish_at: 2026-10-09 20:00
 approved: true
 mode: render
 caption: |-
-  גבר בודד לא בוחר, הוא נאחז.
+  כשאתה בודד, אתה לא בוחר. אתה נאחז.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,28 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: גבר בודד לא בוחר, הוא נאחז.
+  title: כשאתה בודד, אתה לא בוחר. אתה נאחז.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: והוא יקבל כל תנאי, יבלע כל צפרדע, ויתעלם מכל נורה אדומה, רק כדי שלא יחזור לספה הריקה.
+  title: הבית ריק, השקט של הערב מפחיד, ואתה רץ לזרועות של הראשונה שמחייכת אליך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: מערכת יחסים בסבב השני היא בחירה, לא הצלה.
+  title: ואז אתה מקבל כל תנאי, בולע כל צפרדע ומתעלם מכל נורה אדומה. רק לא לחזור לספה הריקה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: כשהחיים שלך מלאים, אישה היא תוספת טובה, לא אוויר לנשימה.
+  title: כבר שילמת על גירושים אחד. בכסף, בדירה, ובסופי שבוע עם הילדים לפי לוח של בית משפט.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-09-second-round.jpg
+  kicker: ''
+  title: בסבב השני, מערכת יחסים היא בחירה. לא הצלה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-09-second-round.jpg
+  kicker: ''
+  title: 'אז קודם תמלא את החיים שלך: חברים, ספורט, עבודה שאתה גאה בה, והבית שלך, גם אם הוא קטן.'
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-09-second-round.jpg
+  kicker: ''
+  title: כשהחיים שלך מלאים, היא תוספת טובה. לא אוויר לנשימה.
   accent: ''
   body: ''
   layout: bottom

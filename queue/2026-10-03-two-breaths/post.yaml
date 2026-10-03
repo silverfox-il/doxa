@@ -3,41 +3,57 @@ publish_at: 2026-10-03 21:00
 approved: true
 mode: render
 caption: |-
-  קיבלת אות, אתה לוקח נשימה אחת, נשימה שנייה, וקם.
+  היא חייכה אליך, ואתה עדיין יושב.
+
+  תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
 - background: assets/backgrounds/2026-10-03-two-breaths.jpg
   kicker: ''
-  title: חוק שתי הנשימות
+  title: היא חייכה אליך, ואתה עדיין יושב.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-two-breaths.jpg
   kicker: ''
-  title: הראש שלך הוא מכונה לייצור תירוצים, וככל שאתה נותן לה יותר זמן היא מייצרת יותר.
+  title: אתה מסדר את המפית, בודק את הטלפון שאין בו כלום, ובראש מתחיל פסטיבל של תירוצים.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-two-breaths.jpg
   kicker: ''
-  title: קיבלת אות, אתה לוקח נשימה אחת, נשימה שנייה, וקם.
+  title: היא בטח נשואה. היא בטח עם מישהו. ומה אני בכלל אגיד. אולי בפעם הבאה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-two-breaths.jpg
   kicker: ''
-  title: לא שלישית.
+  title: הראש שלך הוא מכונה לייצור תירוצים. כל שנייה שאתה נותן לו, הוא מייצר עוד אחד.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-two-breaths.jpg
   kicker: ''
-  title: כשהיא כבר פתחה לך את הדלת, אל תעמוד בחוץ חצי שעה ותחשוב אם להיכנס.
+  title: אז ככה. קיבלת אות? נשימה אחת, נשימה שנייה, וקם. לא שלישית.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: הרגליים כבר בדרך לפני שהראש הספיק להתווכח. מה שיקרה יקרה, אבל הפחד לא מנהל לך את הערב.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-two-breaths.jpg
+  kicker: ''
+  title: היא כבר פתחה לך את הדלת. אל תעמוד בחוץ חצי שעה ותחשוב אם להיכנס.
   accent: ''
   body: ''
   layout: bottom

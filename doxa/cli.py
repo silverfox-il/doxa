@@ -91,6 +91,7 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
             pass  # already reported above
     errors += [f"queue: {f}" for f in rules.repeated_quotes(loaded, cfg.cta)]
     errors += [f"queue: {f}" for f in rules.pillar_rotation(loaded, cfg)]
+    errors += [f"queue: {f}" for f in rules.cta_rotation(loaded, cfg)]
     return len(files), errors
 
 

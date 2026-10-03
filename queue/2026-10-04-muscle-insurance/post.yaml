@@ -3,7 +3,7 @@ publish_at: 2026-10-04 11:00
 approved: true
 mode: render
 caption: |-
-  אחרי 40 הגוף שלך גונב לך שריר בשקט.
+  אחרי גיל 40 הגוף שלך גונב לך שריר בשקט.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,7 +11,7 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
   kicker: ''
-  title: אחרי 40 הגוף שלך גונב לך שריר בשקט.
+  title: אחרי גיל 40 הגוף שלך גונב לך שריר בשקט.
   accent: ''
   body: ''
   layout: bottom
@@ -25,28 +25,28 @@ slides:
   items: []
 - background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
   kicker: ''
-  title: הרופאים קוראים לזה סרקופניה. אני קורא לזה להפוך לסבא לפני הזמן.
+  title: הרופאים קוראים לזה סרקופניה. אני קורא לזה לאט לאט להפוך לסבא לפני הזמן.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
   kicker: ''
-  title: אימון כוח זה הדבר היחיד שעוצר את זה, ובמידה רבה גם מחזיר את השעון אחורה.
+  title: רק אימון כוח באמת עוצר את זה. והרבה פעמים גם מחזיר לך את השעון אחורה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
   kicker: ''
-  title: כתפיים, גב רחב, רגליים שמחזיקות אותך יציב. פה, אחי, השליטה כולה אצלך.
+  title: כתפיים, גב רחב, רגליים שמחזיקות אותך יציב. פה, אחי, יש לך שליטה מלאה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-muscle-insurance.jpg
   kicker: ''
-  title: השריר הוא לא קישוט. הוא ביטוח.
+  title: אז השריר הוא לא קישוט בשבילך. הוא ביטוח.
   accent: ''
   body: ''
   layout: bottom

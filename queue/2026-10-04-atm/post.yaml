@@ -5,7 +5,7 @@ mode: render
 caption: |-
   החום שלה עולה ויורד לפי מה שנתת השבוע?
 
-  מסכים או לא? תכתוב בתגובות.
+  תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
@@ -18,21 +18,21 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: עשרים שנה היית המפרנס. אז לשלם מרגיש לך כמו אהבה.
+  title: עשרים שנה היית המפרנס. אז כשאתה משלם, זה מרגיש לך כמו אהבה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: זה מתחיל בקטן. הארנק שנשכח, הרכב בטיפול, התיק שהיא מתה עליו.
+  title: זה מתחיל בקטן. היא שכחה את הארנק, הרכב שלה בטיפול, יש תיק שהיא מתה עליו.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: פעם אחת זה קושי אמיתי, ויש בזה כבוד. כל שבוע זה דפוס.
+  title: פעם אחת? זה קושי, זה אנושי. כל שבוע? זה דפוס.
   accent: ''
   body: ''
   layout: bottom
@@ -46,14 +46,14 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: תהיה נדיב, אבל בתנאים שלך. כוס יין בהתחלה, לא ארוחת שף.
+  title: תפנק כשבא לך, אבל בתנאים שלך. בהתחלה כוס יין, לא ארוחת שף.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: היא לא נשארת בלי הפינוקים? חסכת לעצמך שנה של אכזבה.
+  title: היא הולכת כשנגמרים הפינוקים? חסכת לעצמך שנה של אכזבה.
   accent: ''
   body: ''
   layout: bottom

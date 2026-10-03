@@ -3,7 +3,7 @@ publish_at: 2026-10-04 20:00
 approved: true
 mode: render
 caption: |-
-  הפחד לא נעלם לגמרי אף פעם.
+  הפחד לא נעלם אף פעם. אתה פשוט גדל ממנו.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,35 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-04-fear-stays.jpg
   kicker: ''
-  title: הפחד לא נעלם לגמרי אף פעם.
+  title: הפחד לא נעלם אף פעם. אתה פשוט גדל ממנו.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-fear-stays.jpg
   kicker: ''
-  title: רוב הגברים בגיל שלך יושבים בצד כל הערב, מדברים עם אשתו של החבר על הילדים, וחוזרים הביתה עם אותה בדידות.
+  title: גם אחרי עשרות פעמים, בכל ערב חדש הגרון קצת יבש והמשפט הראשון קצת תקוע.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-fear-stays.jpg
   kicker: ''
-  title: מעטים קמים ומדברים עם האישה שחייכה אליהם.
+  title: זה טבעי. אתה בן אדם, ומה שאתה עושה הוא לא טריוויאלי.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-fear-stays.jpg
   kicker: ''
-  title: זה בדיוק מה שמבדל אותך.
+  title: רוב החבר'ה בגילך יושבים בצד כל הערב, מדברים עם אשתו של החבר על הילדים וחוזרים הביתה לבד.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-04-fear-stays.jpg
   kicker: ''
-  title: אז תפסיק להילחם בפחד. תקבל אותו.
+  title: אז תפסיק להילחם בפחד. הוא נבנה כדי לשמור עליך, והיום אתה כבר לא צריך את השמירה הזאת.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-04-fear-stays.jpg
+  kicker: ''
+  title: שום דבר רע לא יקרה לך אם תגיד "ערב טוב" לאישה שעומדת לידך בבר.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-04-fear-stays.jpg
+  kicker: ''
+  title: 'ואחרי, תשאל את עצמך בשקט: כמה גברים בגילך בחדר הזה היו עושים מה שעשית עכשיו? בכנות, לא הרבה.'
   accent: ''
   body: ''
   layout: bottom

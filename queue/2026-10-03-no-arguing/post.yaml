@@ -3,48 +3,57 @@ publish_at: 2026-10-03 16:30
 approved: true
 mode: render
 caption: |-
-  אי אפשר לנצח בוויכוח על משיכה.
+  אתה לא תשכנע אותה להימשך אליך. אף פעם.
+
+  מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: אי אפשר לנצח בוויכוח על משיכה.
+  title: אתה לא תשכנע אותה להימשך אליך. אף פעם.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: אתה לא יכול להוכיח לה שהיא צריכה להיות נדלקת ממך.
+  title: אתה מסביר לה בהיגיון למה אתה מתאים לה, מה משותף לכם וכמה אתה יציב. וזה לא עובד.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: מה שאתה כן יכול לעשות הוא לשנות את מה שהיא מרגישה לידך.
+  title: היא קודם מרגישה, ורק אחר כך מוצאת סיבות למה שהיא כבר מרגישה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: המשחק כולו מתנהל בדמיון שלה, לא בהיגיון שלה.
+  title: אתה לא יכול להוכיח לה שהיא צריכה להידלק ממך. אתה יכול לשנות את מה שהיא מרגישה לידך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: כשהיא כועסת, או נעלבת, או מבולבלת, אל תנסה להסביר לה למה היא טועה.
+  title: תגרום לה לצחוק. קצת סקרנות, קצת מתח, קצת הרפתקה. הכול קורה בדמיון שלה, לא בהיגיון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-03-no-arguing.jpg
   kicker: ''
-  title: גבר רגוע מול אישה סוערת הוא אחד המחזות הכי מושכים שיש, ואין בו שום היגיון, רק תחושה.
+  title: כשהיא כועסת, אל תסביר לה למה היא טועה. תשמור על שקט ותחזור לדבר כשהיא נרגעה.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-03-no-arguing.jpg
+  kicker: ''
+  title: אתה נשאר רגוע מול הסערה שלה, וזה מושך אותה יותר מכל הסבר שבעולם.
   accent: ''
   body: ''
   layout: bottom

@@ -3,7 +3,7 @@ publish_at: 2026-10-06 20:00
 approved: true
 mode: render
 caption: |-
-  שני גברים בני 55, אותו גובה, אותו שיער אפור, אותו טלפון.
+  שני גברים בני 55, ורק אחד מהם נראה בן 45.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: שני גברים בני 55, אותו גובה, אותו שיער אפור, אותו טלפון.
+  title: שני גברים בני 55, ורק אחד מהם נראה בן 45.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: אחד עם כרס שנשפכת מעל החגורה, כתפיים שמוטות קדימה מעשרים שנה מול מסך, וסימן שאלה בגב.
+  title: אותו גובה, אותו שיער אפור. לאחד כרס שנשפכת מעל החגורה וכתפיים שמוטות מעשרים שנה מול מסך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: השני עם כתפיים פתוחות, חזה שממלא את החולצה, זרועות שיש בהן משהו כשהוא מפשיל שרוול.
+  title: לשני כתפיים פתוחות, חזה שממלא את החולצה וזרועות שיש בהן משהו כשהוא מפשיל שרוול.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: מי מהם נראה בן 45?
+  title: את הגובה, הפנים וקו השיער קיבלת ככה. אבל כמה שריר יש עליך, זה לגמרי אצלך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: אתה יודע את התשובה, והיא יודעת אותה עוד יותר טוב ממך.
+  title: היא סורקת אותך בשתי שניות, עוד לפני שפתחת את הפה, ומחליטה אם בכלל שווה לה להמשיך להסתכל.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: הגוף שלך מספר עליך סיפור שאתה לא צריך לספר בקול.
+  title: הגוף שלך אומר לה שיש לך משמעת, שיש לך כוח, ושבמיטה אתה לא מתנשף אחרי חמש דקות.
+  accent: ''
+  body: ''
+  layout: bottom
+  items: []
+- background: assets/backgrounds/2026-10-06-two-men.jpg
+  kicker: ''
+  title: אתה יודע איזה מהשניים אתה. והיא יודעת את זה עוד יותר טוב ממך.
   accent: ''
   body: ''
   layout: bottom

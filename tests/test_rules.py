@@ -419,3 +419,15 @@ def test_style_rules_skip_published_posts():
     post = post_with("גבר שמחכה לאישור כבר הפסיד.", "תפסיק לבקש, תתחיל להחליט.")
     post = post.model_copy(update={"status": Status.published})
     assert "style" not in [f.rule for f in rules.check_post(post, VOICE, None)]
+
+
+def test_cta_rotation_blocks_same_cta_twice_in_a_row():
+    def p(pid, at, cta):
+        caption = f"הוא פשוט לא מדליק.\n\n{cta}\n.\n#גרושים"
+        return engine_post("הוא פשוט לא מדליק.", "נחמד", id=pid, publish_at=at, caption=caption)
+
+    a = p("2026-10-05-a", "2026-10-05 13:00", CFG.cta[0])
+    b = p("2026-10-05-b", "2026-10-05 20:00", CFG.cta[1])
+    c = p("2026-10-06-c", "2026-10-06 13:00", CFG.cta[1])
+    assert rules.cta_rotation([a, b], CFG) == []
+    assert [f.where for f in rules.cta_rotation([c, a, b], CFG)] == ["2026-10-06-c"]
