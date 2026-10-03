@@ -64,7 +64,25 @@ jobs:
             exit 0
           fi
           git commit -m "approve: $IDS via issue label"
-          git pull --rebase --quiet origin main
-          git push origin HEAD:main
+          # Bulk labeling: another run may have pushed the same files first. On a
+          # conflict, start again from the new main and re-sync (labels are the
+          # source of truth), instead of failing and losing the approvals.
+          pushed=0
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --quiet origin main && git push origin HEAD:main; then
+              pushed=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git fetch --quiet origin main
+            git reset --hard --quiet origin/main
+            doxa approve-sync > /dev/null
+            doxa status
+            git add -A queue STATUS.md
+            if git diff --cached --quiet; then echo "already approved"; exit 0; fi
+            git commit -m "approve: $IDS via issue label"
+            sleep $((attempt * 5))
+          done
+          if [ "$pushed" != 1 ]; then echo "✗ could not push approvals"; exit 1; fi
           # $IDS is intentionally unquoted: one argument per post id.
           doxa open-issues --sha "$(git rev-parse HEAD)" $IDS
