@@ -51,8 +51,8 @@ source:
 format: null
 pillar: mind
 approved_hash: sha256:0023e55d7bfe3b6c55bdd0551f2dc72e329430747e015eddb85055ae7923c4f4
-approved_by: auto
-approved_at: '2026-10-03T15:10:54+03:00'
+approved_by: owner
+approved_at: '2026-10-03T15:44:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
