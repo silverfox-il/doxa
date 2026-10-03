@@ -1,6 +1,6 @@
 id: 2026-10-04-reel-feed
 publish_at: 2026-10-04 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אתה לא מתחרה עם השכן מהקומה השנייה.
@@ -24,9 +24,9 @@ source:
   section: גינה, לא כספומט
 format: null
 pillar: status
-approved_hash: sha256:dc9735749861fa5c319907ee9e60ae52eafd1f20f741f99b2cf68df6fe4817e6
-approved_by: owner
-approved_at: '2026-10-03T15:28:15+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-03-no-arguing
 publish_at: 2026-10-03 16:30
-approved: true
+approved: false
 mode: render
 caption: |-
   אתה לא תשכנע אותה להימשך אליך. אף פעם.
@@ -64,9 +64,9 @@ source:
   section: תדבר לרגש, לא לוויכוח
 format: null
 pillar: null
-approved_hash: sha256:cbe943e218bc6b3066d66f0fc04fb5f65669eb429ea6c7fbd84b3beb10a44731
-approved_by: owner
-approved_at: '2026-10-03T15:44:01+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

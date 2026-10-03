@@ -1,6 +1,6 @@
 id: 2026-10-05-status
 publish_at: 2026-10-05 09:00
-approved: true
+approved: false
 mode: render
 caption: |-
   ראית זוג וחשבת: מה לעזאזל היא עושה איתו?
@@ -64,9 +64,9 @@ source:
   section: סטטוס
 format: bold
 pillar: status
-approved_hash: sha256:816c2ff48107968d19d35efb4fafec2b7bd48dcb06c7461e9e96d28b020ad7ce
-approved_by: auto
-approved_at: '2026-10-03T16:07:42+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

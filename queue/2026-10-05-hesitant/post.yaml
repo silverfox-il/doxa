@@ -1,6 +1,6 @@
 id: 2026-10-05-hesitant
 publish_at: 2026-10-05 22:00
-approved: true
+approved: false
 mode: render
 caption: |-
   היא שומעת את ההיסוס שלך כבר ב"היי" הראשון.
@@ -64,9 +64,9 @@ source:
   section: לדעת בדיוק למה באת
 format: bold
 pillar: dating
-approved_hash: sha256:c76ed197155d582fbcdbda106a89b515ed1b814b23ef3535a206c0751559848b
-approved_by: auto
-approved_at: '2026-10-03T16:07:42+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

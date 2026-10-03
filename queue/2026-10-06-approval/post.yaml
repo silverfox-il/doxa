@@ -1,6 +1,6 @@
 id: 2026-10-06-approval
 publish_at: 2026-10-06 11:00
-approved: true
+approved: false
 mode: render
 caption: |-
   כל משפט שלך בדייט הוא בעצם שאלה: אני בסדר?
@@ -64,9 +64,9 @@ source:
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
 format: tweet
 pillar: mind
-approved_hash: sha256:e2cb1b42d996029832b6e1d3cf7f5bf0c3f8187feeb0c1aad94cf43dbb22d1a0
-approved_by: auto
-approved_at: '2026-10-03T16:07:42+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

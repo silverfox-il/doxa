@@ -1,6 +1,6 @@
 id: 2026-10-10-one-is-info
 publish_at: 2026-10-10 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   נורה אדומה אחת? זו עוד לא סיבה לברוח.
@@ -64,9 +64,9 @@ source:
   section: אחד זה מידע, שלושה זו החלטה
 format: null
 pillar: second-round
-approved_hash: sha256:ae62e2e5900c8a26974cf7a99ccecc41ca8b912a4331c139b953789b980b19e0
-approved_by: owner
-approved_at: '2026-10-03T15:28:36+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-03-worth-loving
 publish_at: 2026-10-03 15:00
-approved: true
+approved: false
 mode: render
 caption: |-
   אל תסמוך על זה שהיא תאהב אותך בכל מצב.
@@ -57,9 +57,9 @@ source:
   section: האהבה שלה באה עם תנאים
 format: null
 pillar: null
-approved_hash: sha256:30fcf22944554c5315211526dd55f66ff150de9c071bcd01dd0c9aacacf76050
-approved_by: owner
-approved_at: '2026-10-03T15:44:04+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
