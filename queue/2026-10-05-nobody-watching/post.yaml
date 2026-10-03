@@ -1,6 +1,6 @@
 id: 2026-10-05-nobody-watching
 publish_at: 2026-10-05 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   אף אחד לא מסתכל עליך כמו שאתה חושב.
@@ -43,9 +43,9 @@ source:
   section: לאף אחד לא באמת אכפת, וזה משחרר
 format: null
 pillar: mind
-approved_hash: sha256:d518deb5d21a0fe63b91cf307fe29be7a62dd48bb7f580224ab06013d1a2f10a
-approved_by: auto
-approved_at: '2026-10-02T00:38:48+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

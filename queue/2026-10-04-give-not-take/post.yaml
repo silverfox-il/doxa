@@ -1,10 +1,7 @@
 id: 2026-10-04-give-not-take
-publish_at: "2026-10-04 09:00"
+publish_at: 2026-10-04 09:00
 approved: false
-status: queued
 mode: render
-pillar: dating
-format: tweet
 caption: |-
   אנשים בורחים ממי שמשדר מחסור, ונמשכים למי שמשדר שפע.
 
@@ -12,18 +9,61 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "אנשים בורחים ממי שמשדר מחסור, ונמשכים למי שמשדר שפע."
+- background: null
+  kicker: ''
+  title: אנשים בורחים ממי שמשדר מחסור, ונמשכים למי שמשדר שפע.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "רוב האנשים נכנסים לשיחה כמו מי שבא לגבות חוב."
+  items: []
+- background: null
+  kicker: ''
+  title: רוב האנשים נכנסים לשיחה כמו מי שבא לגבות חוב.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "הצד השני מרגיש את זה מקילומטר, ונסגר."
+  items: []
+- background: null
+  kicker: ''
+  title: הצד השני מרגיש את זה מקילומטר, ונסגר.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "לתת, לא לגבות."
+  items: []
+- background: null
+  kicker: ''
+  title: לתת, לא לגבות.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "כשאתה באמת ובתמים בא לתת רגע טוב, הפחד מאבד את האחיזה שלו."
+  items: []
+- background: null
+  kicker: ''
+  title: כשאתה באמת ובתמים בא לתת רגע טוב, הפחד מאבד את האחיזה שלו.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "ובכלל, מי אמר שאחרי חמש דקות איתה אתה עוד תרצה אותה?"
+  items: []
+- background: null
+  kicker: ''
+  title: ובכלל, מי אמר שאחרי חמש דקות איתה אתה עוד תרצה אותה?
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 06.md
-  section: "אתה בא לתת, לא לקחת"
+  section: אתה בא לתת, לא לקחת
+format: tweet
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

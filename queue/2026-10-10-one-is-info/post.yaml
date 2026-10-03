@@ -1,6 +1,6 @@
 id: 2026-10-10-one-is-info
 publish_at: 2026-10-10 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   נורה אחת, פעם אחת, היא מידע.
@@ -50,9 +50,9 @@ source:
   section: אחד זה מידע, שלושה זו החלטה
 format: null
 pillar: second-round
-approved_hash: sha256:4a8aeeab97d43abecc01237cb4584e13de868b8c5396b2bdcc119ba26b60f205
-approved_by: auto
-approved_at: '2026-10-02T00:38:49+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

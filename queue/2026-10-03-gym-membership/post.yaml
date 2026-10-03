@@ -1,6 +1,6 @@
 id: 2026-10-03-gym-membership
 publish_at: 2026-10-03 12:00
-approved: true
+approved: false
 mode: render
 caption: |-
   וזה לא אימון, זה בילוי עם מגבת.
@@ -53,11 +53,15 @@ reel: null
 source:
   file: 02.md
   section: ברזל, לא מנוי
-approved_hash: sha256:24f8f5324f77c56aa32606855683ad19d88a324ef3f821eb834d84de2b482e13
-approved_by: auto
-approved_at: '2026-10-02T00:38:48+03:00'
+format: null
+pillar: null
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

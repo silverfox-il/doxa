@@ -1,6 +1,6 @@
 id: 2026-10-10-reel-the-reason
 publish_at: 2026-10-10 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אתה הולך לבנות את עצמך,
@@ -22,9 +22,9 @@ source:
   section: 1. הפרק השני שלך
 format: null
 pillar: mind
-approved_hash: sha256:bb2d42bc8c2c719e0251e460f85d437099bd48dd2b7f13906b480be03933da3a
-approved_by: auto
-approved_at: '2026-10-02T00:38:49+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

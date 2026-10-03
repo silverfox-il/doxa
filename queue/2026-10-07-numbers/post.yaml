@@ -1,6 +1,6 @@
 id: 2026-10-07-numbers
 publish_at: 2026-10-07 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   אתה יכול להזיע ולהתעייף מאוד ולא להתקדם אפילו גרם אחד.
@@ -50,9 +50,9 @@ source:
   section: להתאמן, לא "לעשות אימון"
 format: null
 pillar: body
-approved_hash: sha256:bcc846ba59c8e13259d225b8026553488b7587ac85652e70bd69619359c5aa99
-approved_by: auto
-approved_at: '2026-10-02T00:38:48+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

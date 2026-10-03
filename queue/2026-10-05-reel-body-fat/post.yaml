@@ -1,24 +1,35 @@
 id: 2026-10-05-reel-body-fat
-publish_at: "2026-10-05 15:00"
+publish_at: 2026-10-05 15:00
 approved: false
-status: queued
 mode: reel
-pillar: body
 caption: |-
   גבר שמן הוא לא מושך, נקודה.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides: []
 reel:
   lines:
-  - "גבר שמן הוא לא מושך, נקודה."
-  - "הכרס אומרת עליך שאתה מוזנח, ובעיקר שאתה לא שולט בעצמך"
-  - "וגבר שלא שולט בעצמו לא ישלוט בשום דבר אחר."
-  - "וכל חמישה אחוזים שאתה מוריד ירגישו כמו גוף חדש."
+  - גבר שמן הוא לא מושך, נקודה.
+  - הכרס אומרת עליך שאתה מוזנח, ובעיקר שאתה לא שולט בעצמך
+  - וגבר שלא שולט בעצמו לא ישלוט בשום דבר אחר.
+  - וכל חמישה אחוזים שאתה מוריד ירגישו כמו גוף חדש.
   music: leberch-motivation-610726.mp3
   per_line: 2.4
   hold: 4.0
 source:
   file: 02.md
-  section: "אחוז שומן"
+  section: אחוז שומן
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

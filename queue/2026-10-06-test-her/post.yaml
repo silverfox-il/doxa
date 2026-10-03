@@ -1,10 +1,7 @@
 id: 2026-10-06-test-her
-publish_at: "2026-10-06 15:00"
+publish_at: 2026-10-06 15:00
 approved: false
-status: queued
 mode: render
-pillar: dating
-format: bold
 caption: |-
   אתה לא עובר מבחן, אתה עורך מבחן.
 
@@ -12,16 +9,54 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "אתה לא עובר מבחן, אתה עורך מבחן."
+- background: null
+  kicker: ''
+  title: אתה לא עובר מבחן, אתה עורך מבחן.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "והנחמד מדי בגיל 50 נוחת ישר בחבר הטוב שמזמינים לארוחת שישי."
+  items: []
+- background: null
+  kicker: ''
+  title: והנחמד מדי בגיל 50 נוחת ישר בחבר הטוב שמזמינים לארוחת שישי.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אתה הגבר שבודק אם היא מתאימה לו, לא ההפך."
+  items: []
+- background: null
+  kicker: ''
+  title: אתה הגבר שבודק אם היא מתאימה לו, לא ההפך.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אם אתה מגיש לה את עצמך על מגש, עם כל המחמאות וכל ההתלהבות, אין לה על מה לעבוד."
+  items: []
+- background: null
+  kicker: ''
+  title: אם אתה מגיש לה את עצמך על מגש, עם כל המחמאות וכל ההתלהבות, אין לה על מה לעבוד.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "קצת חום, קצת אתגר, עוד קצת חום."
+  items: []
+- background: null
+  kicker: ''
+  title: קצת חום, קצת אתגר, עוד קצת חום.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 06.md
-  section: "היא צריכה לשאול את עצמה \"למה דווקא אני?\""
+  section: היא צריכה לשאול את עצמה "למה דווקא אני?"
+format: bold
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

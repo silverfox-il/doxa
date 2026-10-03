@@ -1,10 +1,7 @@
 id: 2026-10-04-atm
-publish_at: "2026-10-04 15:00"
+publish_at: 2026-10-04 15:00
 approved: false
-status: queued
 mode: render
-pillar: second-round
-format: bold
 caption: |-
   אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
 
@@ -12,18 +9,61 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה."
+- background: null
+  kicker: ''
+  title: אם שבוע בלי מתנות הוא שבוע קר, אתה לא בזוגיות, אתה בעסקה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אחרי עשרים שנה של תפקיד \"המפרנס\", הנתינה הכלכלית מרגישה לך טבעית."
+  items: []
+- background: null
+  kicker: ''
+  title: אחרי עשרים שנה של תפקיד "המפרנס", הנתינה הכלכלית מרגישה לך טבעית.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "היא מרגישה כמו אהבה."
+  items: []
+- background: null
+  kicker: ''
+  title: היא מרגישה כמו אהבה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "והנשים שמחפשות בדיוק את זה מריחות אותך מקילומטר."
+  items: []
+- background: null
+  kicker: ''
+  title: והנשים שמחפשות בדיוק את זה מריחות אותך מקילומטר.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "שים לב אם החיבה משתנה לפי הארנק."
+  items: []
+- background: null
+  kicker: ''
+  title: שים לב אם החיבה משתנה לפי הארנק.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "תהיה נדיב, תזמין, תפנק כשאתה רוצה, אבל בתנאים שלך."
+  items: []
+- background: null
+  kicker: ''
+  title: תהיה נדיב, תזמין, תפנק כשאתה רוצה, אבל בתנאים שלך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 11.md
-  section: "נורה 14: הכספומט"
+  section: 'נורה 14: הכספומט'
+format: bold
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

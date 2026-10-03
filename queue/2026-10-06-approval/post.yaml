@@ -1,10 +1,7 @@
 id: 2026-10-06-approval
-publish_at: "2026-10-06 11:00"
+publish_at: 2026-10-06 11:00
 approved: false
-status: queued
 mode: render
-pillar: mind
-format: tweet
 caption: |-
   אין דבר פחות מושך בעולם מגבר שמבקש אישור.
 
@@ -12,18 +9,61 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "אין דבר פחות מושך בעולם מגבר שמבקש אישור."
+- background: null
+  kicker: ''
+  title: אין דבר פחות מושך בעולם מגבר שמבקש אישור.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "כל הערב חיפשת את האישור שלה, כל משפט שלך היה בעצם שאלה של \"אני בסדר? את מרוצה? אני מספיק טוב?\", כמו ילד קטן שמראה לאמא ציור ומחכה שתגיד לו כמה הוא יפה."
+  items: []
+- background: null
+  kicker: ''
+  title: כל הערב חיפשת את האישור שלה, כל משפט שלך היה בעצם שאלה של "אני בסדר? את מרוצה? אני מספיק טוב?", כמו ילד קטן שמראה לאמא ציור ומחכה שתגיד לו כמה הוא יפה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "ובגיל 45 אחרי גירושים, כשפתאום הבית שקט בערבים שהילדים אצלה, החור הזה צורח."
+  items: []
+- background: null
+  kicker: ''
+  title: ובגיל 45 אחרי גירושים, כשפתאום הבית שקט בערבים שהילדים אצלה, החור הזה צורח.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "והמחיר הכי כבד הוא שגבר עם חרדת נטישה הוא גבר בלי סטנדרטים."
+  items: []
+- background: null
+  kicker: ''
+  title: והמחיר הכי כבד הוא שגבר עם חרדת נטישה הוא גבר בלי סטנדרטים.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אתה מכיר את הגבר הזה? אולי ראית אותו במראה אחרי הגירושים."
+  items: []
+- background: null
+  kicker: ''
+  title: אתה מכיר את הגבר הזה? אולי ראית אותו במראה אחרי הגירושים.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אל תיכנס לדיכאון, תיכנס לעבודה"
+  items: []
+- background: null
+  kicker: ''
+  title: אל תיכנס לדיכאון, תיכנס לעבודה
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 02.md
-  section: "סימן 4: אתה לא מסוגל להיות לבד"
+  section: 'סימן 4: אתה לא מסוגל להיות לבד'
+format: tweet
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

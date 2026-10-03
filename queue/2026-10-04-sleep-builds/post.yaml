@@ -1,10 +1,7 @@
 id: 2026-10-04-sleep-builds
-publish_at: "2026-10-04 22:00"
+publish_at: 2026-10-04 22:00
 approved: false
-status: queued
 mode: render
-pillar: body
-format: tweet
 caption: |-
   גבר עצבני ועייף, תאמין לי, זה לא מגנט.
 
@@ -12,18 +9,61 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "גבר עצבני ועייף, תאמין לי, זה לא מגנט."
+- background: null
+  kicker: ''
+  title: גבר עצבני ועייף, תאמין לי, זה לא מגנט.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "האימון עצמו לא בונה שום שריר."
+  items: []
+- background: null
+  kicker: ''
+  title: האימון עצמו לא בונה שום שריר.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "הוא בסך הכל שובר, יוצר נזק קטן ומבוקר, ומי שמתקן את הנזק הזה ומוסיף עליו שכבה חדשה זה הגוף שלך, בעיקר כשאתה ישן."
+  items: []
+- background: null
+  kicker: ''
+  title: הוא בסך הכל שובר, יוצר נזק קטן ומבוקר, ומי שמתקן את הנזק הזה ומוסיף עליו שכבה חדשה זה הגוף שלך, בעיקר כשאתה ישן.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "הטסטוסטרון, למשל, מתחיל לטפס כשאתה נרדם וממשיך לעלות כל הלילה עד שאתה מתעורר."
+  items: []
+- background: null
+  kicker: ''
+  title: הטסטוסטרון, למשל, מתחיל לטפס כשאתה נרדם וממשיך לעלות כל הלילה עד שאתה מתעורר.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "תחתוך את הלילה באמצע, ותחתוך גם את העלייה הזו."
+  items: []
+- background: null
+  kicker: ''
+  title: תחתוך את הלילה באמצע, ותחתוך גם את העלייה הזו.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "זה גבר שהיא מדמיינת איך הוא יתנהג בשבת בבוקר, ומחליטה שלא."
+  items: []
+- background: null
+  kicker: ''
+  title: זה גבר שהיא מדמיינת איך הוא יתנהג בשבת בבוקר, ומחליטה שלא.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 08.md
-  section: "מה קורה לגוף שלך כשאתה סוגר עיניים"
+  section: מה קורה לגוף שלך כשאתה סוגר עיניים
+format: tweet
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

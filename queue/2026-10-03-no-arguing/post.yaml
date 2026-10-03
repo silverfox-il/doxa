@@ -1,6 +1,6 @@
 id: 2026-10-03-no-arguing
 publish_at: 2026-10-03 16:30
-approved: true
+approved: false
 mode: render
 caption: |-
   אי אפשר לנצח בוויכוח על משיכה.
@@ -53,11 +53,15 @@ reel: null
 source:
   file: 02.md
   section: תדבר לרגש, לא לוויכוח
-approved_hash: sha256:148463194635641e734fefb7964f1807c2bad9709c687f977dee6311f2d661c1
-approved_by: auto
-approved_at: '2026-10-02T00:38:48+03:00'
+format: null
+pillar: null
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
+story_id: null
+story_error: null

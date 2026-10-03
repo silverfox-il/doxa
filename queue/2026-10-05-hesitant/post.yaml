@@ -1,10 +1,7 @@
 id: 2026-10-05-hesitant
-publish_at: "2026-10-05 22:00"
+publish_at: 2026-10-05 22:00
 approved: false
-status: queued
 mode: render
-pillar: dating
-format: bold
 caption: |-
   גבר מהוסס מהוסס בכל מקום.
 
@@ -12,16 +9,54 @@ caption: |-
   .
   #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
 slides:
-- title: "גבר מהוסס מהוסס בכל מקום."
+- background: null
+  kicker: ''
+  title: גבר מהוסס מהוסס בכל מקום.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "כשאתה פונה אליה, זה צריך להיות מתוך החלטה, לא מתוך \"נו, אולי, בוא נראה\"."
+  items: []
+- background: null
+  kicker: ''
+  title: כשאתה פונה אליה, זה צריך להיות מתוך החלטה, לא מתוך "נו, אולי, בוא נראה".
+  accent: ''
+  body: ''
   layout: bottom
-- title: "גברים שחדשים בזה עושים הכל בחצי."
+  items: []
+- background: null
+  kicker: ''
+  title: גברים שחדשים בזה עושים הכל בחצי.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אם אתה פונה אליה בהתנצלות, זה עקיף, כי אתה בעצם קונה זמן ומחכה שהיא תאשר לך שאתה בסדר."
+  items: []
+- background: null
+  kicker: ''
+  title: אם אתה פונה אליה בהתנצלות, זה עקיף, כי אתה בעצם קונה זמן ומחכה שהיא תאשר לך שאתה בסדר.
+  accent: ''
+  body: ''
   layout: bottom
-- title: "אם היא בעניין, מעולה. אם לא, החיים שלך נשארים בדיוק אותו דבר."
+  items: []
+- background: null
+  kicker: ''
+  title: אם היא בעניין, מעולה. אם לא, החיים שלך נשארים בדיוק אותו דבר.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 06.md
-  section: "לדעת בדיוק למה באת"
+  section: לדעת בדיוק למה באת
+format: bold
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
