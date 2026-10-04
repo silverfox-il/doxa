@@ -60,10 +60,10 @@ pillar: body
 approved_hash: sha256:f22178a84458bb68de23dd26d45fa4bb5f74a4b475dd5674bb696c74f41358d9
 approved_by: owner
 approved_at: '2026-10-03T16:53:05+03:00'
-status: publishing
+status: failed
 ig_media_id: null
 permalink: null
 published_at: null
-error: null
+error: 'POST /17841416570144057/media_publish -> HTTP 403 code=4 subcode=2207051: We restrict certain activity to protect our community. Tell us if you think we made a mistake.'
 story_id: null
 story_error: null
