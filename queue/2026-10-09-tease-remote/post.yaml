@@ -1,6 +1,6 @@
 id: 2026-10-09-tease-remote
 publish_at: 2026-10-09 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   רוב הגרושים בגילך התחתנו בשנית. עם השלט
@@ -30,9 +30,9 @@ source:
   section: לצאת מהמערה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5541a67fe98c446842082063f03106395b499b0e10cc2bad2c7ed85d14ee6326
+approved_by: auto
+approved_at: '2026-10-04T23:33:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-10-tease-nothing-to-post
 publish_at: 2026-10-10 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אנחנו בעידן הפיד הריק של הגרוש הממוצע
@@ -29,9 +29,9 @@ source:
   section: התירוצים שלך, אחד אחד
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c4dad72c14474b5c2879f324150ff947310d1450648d2c63e9c5c3ac62ce1f60
+approved_by: auto
+approved_at: '2026-10-04T23:33:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

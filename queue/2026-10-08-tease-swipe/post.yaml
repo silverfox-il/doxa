@@ -1,6 +1,6 @@
 id: 2026-10-08-tease-swipe
 publish_at: 2026-10-08 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אנחנו בעידן ההחלקה ימינה על כל מה שזז
@@ -29,9 +29,9 @@ source:
   section: אפליקציות ההיכרויות, בלי להיות עוד פרצוף בערימה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:18c6afbfc8cfe01449814dd8f04dda629f6cb23d146cb0e7c4c8fe88ccb3f29d
+approved_by: auto
+approved_at: '2026-10-04T23:33:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-07-tease-big-bill
 publish_at: 2026-10-07 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אנחנו בעידן הדייט הראשון בתפריט טעימות
@@ -29,9 +29,9 @@ source:
   section: אבל אתה משלם על מעט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7cffb9c987b2b7f30fd709afc11939d32bb59c6c6c6e95840b1f3d62891165bd
+approved_by: auto
+approved_at: '2026-10-04T23:33:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

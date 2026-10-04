@@ -1,6 +1,6 @@
 id: 2026-10-06-tease-elephant
 publish_at: 2026-10-06 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אנחנו בעידן האומץ של המקלדת
@@ -29,9 +29,9 @@ source:
   section: הפיל בסלון
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:639fcac9b6a61f49a45f8280be986258d98cfd84e9dbd0d99f948e7b7c11a8f5
+approved_by: auto
+approved_at: '2026-10-04T23:33:05+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
