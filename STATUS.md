@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-04-muscle-insurance` at 2026-10-04 11:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 11/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -42,7 +42,7 @@
 | 2026-10-04 | `2026-10-04-atm` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-reel-feed` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-muscle-insurance` | ✅ | rendered | — | — |
-| 2026-10-04 | `2026-10-04-give-not-take` | ✅ | publishing | — | — |
+| 2026-10-04 | `2026-10-04-give-not-take` | ✅ | published | [link](https://www.instagram.com/p/DeD-3Ajm9yF/) | — |
 | 2026-10-03 | `2026-10-03-two-breaths` | ✅ | published | [link](https://www.instagram.com/p/DeCsgfxGRbR/) | — |
 | 2026-10-03 | `2026-10-03-obsessed` | ✅ | published | [link](https://www.instagram.com/p/DeCiSZ3EaHT/) | — |
 | 2026-10-03 | `2026-10-03-forgive` | ✅ | published | [link](https://www.instagram.com/p/DeCX2w5HFcw/) | — |
