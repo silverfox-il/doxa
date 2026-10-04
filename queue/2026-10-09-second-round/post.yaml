@@ -1,6 +1,6 @@
 id: 2026-10-09-second-round
 publish_at: 2026-10-09 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   כשאתה בודד, אתה לא בוחר. אתה נאחז.
@@ -64,9 +64,9 @@ source:
   section: סבב שני, והפעם עם עיניים פקוחות
 format: null
 pillar: second-round
-approved_hash: sha256:3270e233e04298c43ee7d2cc07c1198497ecb0cd8d3c3ff723f3c08053ccdd58
-approved_by: owner
-approved_at: '2026-10-03T16:53:16+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

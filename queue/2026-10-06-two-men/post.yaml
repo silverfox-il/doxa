@@ -1,6 +1,6 @@
 id: 2026-10-06-two-men
 publish_at: 2026-10-06 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   שני גברים בני 55. רק אחד נראה בן 45.
@@ -64,9 +64,9 @@ source:
   section: מה היא רואה לפני שאתה פותח את הפה
 format: null
 pillar: body
-approved_hash: sha256:b09c9b70aa52efce288803d92595174981ffa9a2c73abdcae8ec0623b332ff3f
-approved_by: owner
-approved_at: '2026-10-03T16:53:13+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

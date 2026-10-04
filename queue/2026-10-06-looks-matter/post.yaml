@@ -1,6 +1,6 @@
 id: 2026-10-06-looks-matter
 publish_at: 2026-10-06 09:00
-approved: true
+approved: false
 mode: render
 caption: |-
   מי שאמר לך שמראה לא חשוב, שיקר.
@@ -57,9 +57,9 @@ source:
   section: כן, איך שאתה נראה משנה
 format: photo
 pillar: body
-approved_hash: sha256:ec5ad1f5276047d9c54437aef94be41ae1daa94b8512c8557087caf7951c4780
-approved_by: owner
-approved_at: '2026-10-03T16:53:10+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

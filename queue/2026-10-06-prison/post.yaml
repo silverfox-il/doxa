@@ -1,6 +1,6 @@
 id: 2026-10-06-prison
 publish_at: 2026-10-06 22:00
-approved: true
+approved: false
 mode: render
 caption: |-
   אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
@@ -64,9 +64,9 @@ source:
   section: תצא מהכלא
 format: photo
 pillar: mind
-approved_hash: sha256:4b41de146f84f68cea88ca315e398f2e7ed131f22f7c08615b11e6190d3da587
-approved_by: owner
-approved_at: '2026-10-03T16:53:11+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

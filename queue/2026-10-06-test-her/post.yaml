@@ -1,6 +1,6 @@
 id: 2026-10-06-test-her
 publish_at: 2026-10-06 15:00
-approved: true
+approved: false
 mode: render
 caption: |-
   נחמד מדי? מזל טוב, אתה החבר הטוב.
@@ -57,9 +57,9 @@ source:
   section: היא צריכה לשאול את עצמה "למה דווקא אני?"
 format: bold
 pillar: dating
-approved_hash: sha256:5424f433acbad82ae3c253df31bf09f0128dff59ed54624fd0569f9aa36df6e6
-approved_by: owner
-approved_at: '2026-10-03T16:53:12+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

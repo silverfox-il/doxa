@@ -1,6 +1,6 @@
 id: 2026-10-06-reel-ring
 publish_at: 2026-10-06 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   הטבעת לא שומרת על אהבה.
@@ -25,9 +25,9 @@ source:
   section: אני לא נגד אהבה, אני נגד חתימה בעיניים עצומות
 format: null
 pillar: second-round
-approved_hash: sha256:955d388f77768b0b22e4d4d52695dcde90acab3688ff42dabd624ed609641cef
-approved_by: owner
-approved_at: '2026-10-03T16:53:12+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

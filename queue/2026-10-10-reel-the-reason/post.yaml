@@ -1,6 +1,6 @@
 id: 2026-10-10-reel-the-reason
 publish_at: 2026-10-10 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אתה לא רודף אחרי אף אחת.
@@ -25,9 +25,9 @@ source:
   section: 1. הפרק השני שלך
 format: null
 pillar: mind
-approved_hash: sha256:f79c761d89bdb4d1457c01764976c8d94aafebe0cb9b3c1743271cbe60e07bd9
-approved_by: owner
-approved_at: '2026-10-03T16:53:17+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
