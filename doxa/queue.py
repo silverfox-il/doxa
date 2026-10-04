@@ -96,6 +96,7 @@ class Pillar(str, Enum):
 class Layout(str, Enum):
     bottom = "bottom"
     top = "top"
+    center = "center"
     list = "list"
 
 

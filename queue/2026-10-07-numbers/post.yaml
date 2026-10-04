@@ -3,7 +3,7 @@ publish_at: 2026-10-07 20:00
 approved: true
 mode: render
 caption: |-
-  אתה מזיע במכון כבר שנה, ונראה בדיוק אותו דבר.
+  אתה לא מתאמן. אתה מבקר במכון.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,52 +11,52 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: אתה מזיע במכון כבר שנה, ונראה בדיוק אותו דבר.
+  title: אתה לא מתאמן. אתה מבקר במכון.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: אתה בא, מזיע, עושה קצת פה וקצת שם, והולך הביתה מרוצה כי "שרף".
+  title: שנה שלמה אתה בא, מזיע, עושה "קצת חזה קצת יד", והולך הביתה מרוצה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: ובשנה הבאה אתה שם שוב, עם אותה כרס ואותן זרועות.
+  title: 'ותסתכל במראה: אותה כרס. אותן זרועות. אותו בן אדם מלפני שנה.'
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: 'זה לעשות אימון. להתאמן זה משהו אחר לגמרי: מטרה ברורה, וכל אימון בנוי על הקודם.'
+  title: זיעה זה לא התקדמות. עייפות זה לא התקדמות. התקדמות זה מספר שעולה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: והמדד הוא לא איך אתה מרגיש. המדד הוא מספרים.
+  title: בשבוע שעבר 50 קילו? היום 52.5. ככה בונים גוף. לא לפי תחושה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: בשבוע שעבר 5 חזרות עם 50 קילו, והיום 5 עם 52.5? התקדמת. גם אם זה הרגיש קליל.
+  title: פתק בטלפון. כל משקל, כל חזרה. בלי זה אתה סתם עושה ספורט.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: תפתח פתק בטלפון, תרשום כל משקל וכל חזרה, ותלך אחרי המספרים. לא אחרי התחושה.
+  title: המכון מלא בגברים שמרגישים שהם מתאמנים. תהיה זה שרואים עליו.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

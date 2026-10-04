@@ -14,49 +14,49 @@ slides:
   title: כשאתה בודד, אתה לא בוחר. אתה נאחז.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: הבית ריק, השקט של הערב מפחיד, ואתה רץ לזרועות של הראשונה שמחייכת אליך.
+  title: הבית ריק, הערב שקט מדי, ואתה רץ לראשונה שמחייכת אליך.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: ואז אתה מקבל כל תנאי, בולע כל צפרדע ומתעלם מכל נורה אדומה. רק לא לחזור לספה הריקה.
+  title: ואז אתה בולע כל צפרדע ומתעלם מכל נורה אדומה. רק לא לחזור לספה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: כבר שילמת על גירושים אחד. בכסף, בדירה, ובסופי שבוע עם הילדים לפי לוח של בית משפט.
+  title: כבר שילמת על גירושים אחד. בכסף, בדירה, בילדים כל סוף שבוע שני.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: בסבב השני, מערכת יחסים היא בחירה. לא הצלה.
+  title: בסבב השני, זוגיות היא בחירה. לא חבל הצלה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: 'אז קודם תמלא את החיים שלך: חברים, ספורט, עבודה שאתה גאה בה, והבית שלך, גם אם הוא קטן.'
+  title: 'קודם תמלא את החיים: חברים, ספורט, עבודה, בית משלך.'
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
   title: כשהחיים שלך מלאים, היא תוספת טובה. לא אוויר לנשימה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

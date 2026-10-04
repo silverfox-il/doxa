@@ -3,7 +3,7 @@ publish_at: 2026-10-05 20:00
 approved: true
 mode: render
 caption: |-
-  אף אחד לא מסתכל עליך כמו שאתה חושב.
+  אף אחד לא מסתכל עליך. תירגע.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,45 +11,45 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אף אחד לא מסתכל עליך כמו שאתה חושב.
+  title: אף אחד לא מסתכל עליך. תירגע.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: החברים בשולחן עסוקים בעצמם. הם בכלל לא סופרים אותך.
+  title: אתה בטוח שכל הבר יראה אותך נכשל. בפועל? כל אחד עסוק בעצמו.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: האישה שדיברת איתה? אם השיחה לא הייתה מעניינת, היא תשכח אותה עד מחר.
+  title: החברים שלך? חושבים על הקרחת שלהם, לא על הפדיחה שלך.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אף אחד לא מנהל רשימה של הפדיחות שלך. חוץ ממך.
+  title: והיא? אם זה לא היה מעניין, עד מחר בבוקר היא שכחה שדיברתם.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: ברגע שאתה קולט את זה, כל הבמה שבנית לעצמך בראש מתפרקת.
+  title: אף אחד לא מנהל רשימה של הפדיחות שלך. רק אתה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אין קהל. אין שופטים. יש רק אתה, היא, ורגע אחד שיכול להיות נחמד או לא.
+  title: אין קהל. אין שופטים. יש רק אתה, היא, ורגע אחד. תשתמש בו.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

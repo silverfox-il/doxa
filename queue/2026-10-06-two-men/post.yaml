@@ -3,7 +3,7 @@ publish_at: 2026-10-06 20:00
 approved: true
 mode: render
 caption: |-
-  שני גברים בני 55, ורק אחד מהם נראה בן 45.
+  שני גברים בני 55. רק אחד נראה בן 45.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,52 +11,52 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: שני גברים בני 55, ורק אחד מהם נראה בן 45.
+  title: שני גברים בני 55. רק אחד נראה בן 45.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: אותו גובה, אותו שיער אפור. לאחד כרס שנשפכת מעל החגורה וכתפיים שמוטות מעשרים שנה מול מסך.
+  title: אותו גובה, אותו שיער אפור, אותו טלפון ביד.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: לשני כתפיים פתוחות, חזה שממלא את החולצה וזרועות שיש בהן משהו כשהוא מפשיל שרוול.
+  title: לאחד כרס מעל החגורה וגב עקום מעשרים שנה מול מסך.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: את הגובה, הפנים וקו השיער קיבלת ככה. אבל כמה שריר יש עליך, זה לגמרי אצלך.
+  title: לשני כתפיים פתוחות וחולצה שמתמלאת כשהוא נכנס.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: היא סורקת אותך בשתי שניות, עוד לפני שפתחת את הפה, ומחליטה אם בכלל שווה לה להמשיך להסתכל.
+  title: את הפנים קיבלת. את הגוף אתה בונה. כל בוקר מחדש.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: הגוף שלך אומר לה שיש לך משמעת, שיש לך כוח, ושבמיטה אתה לא מתנשף אחרי חמש דקות.
+  title: היא מחליטה עליך בשתי שניות. עוד לפני שאמרת מילה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-two-men.jpg
   kicker: ''
-  title: אתה יודע איזה מהשניים אתה. והיא יודעת את זה עוד יותר טוב ממך.
+  title: אתה יודע איזה מהשניים אתה. והיא יודעת יותר טוב ממך.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

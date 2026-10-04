@@ -3,7 +3,7 @@ publish_at: 2026-10-06 11:00
 approved: true
 mode: render
 caption: |-
-  כל משפט שלך בדייט הוא בעצם שאלה: אני בסדר?
+  אתה לא יוצא לדייט. אתה ניגש למבחן.
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,49 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: 'כל משפט שלך בדייט הוא בעצם שאלה: אני בסדר?'
+  title: אתה לא יוצא לדייט. אתה ניגש למבחן.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: את מרוצה? אני מספיק טוב? כמו ילד קטן שמראה לאמא ציור ומחכה שתגיד לו כמה הוא יפה. והיא מרגישה את זה.
+  title: 'כל משפט שלך הוא בעצם שאלה: אני בסדר? את מרוצה? אני מספיק טוב?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'ואז מגיעה ההודעה: "אתה ממש מקסים, אבל אני לא מרגישה שזה זה".'
+  title: והיא מריחה את זה בשנייה. כמו זיעה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ולמה? כי אתה לא מסוגל להיות לבד. ערב שקט בבית מרגיש לך כמו עונש, כי שקט מרגיש לך כמו נטישה.
+  title: אין דבר פחות מושך מאחד שמחכה לציון.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ובערבים שהילדים אצלה והבית פתאום שקט, החור הזה צורח.
+  title: ולמה אתה מחכה לציון? כי ערב לבד בבית מפחיד אותך יותר מכל דייט גרוע.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: והמחיר הכי כבד? אם אתה מת מפחד שהיא תעזוב, אין לך סטנדרטים. אתה לוקח מה שיש, וזוחל אחריה כשהיא הולכת.
+  title: וכשאתה מפחד להיות לבד, אתה לוקח מה שיש. ואז זוחל אחרי מה שהולך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: זיהית את עצמך? אל תיכנס לדיכאון. תיכנס לעבודה.
+  title: תלמד להיות לבד וליהנות מזה. רק אז אתה בוחר, ולא מתחנן.
   accent: ''
   body: ''
   layout: bottom

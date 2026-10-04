@@ -3,7 +3,7 @@ publish_at: 2026-10-06 09:00
 approved: true
 mode: render
 caption: |-
-  מי שאמר לך שהמראה לא משנה, שיקר לך.
+  מי שאמר לך שמראה לא חשוב, שיקר.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,45 +11,45 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: מי שאמר לך שהמראה לא משנה, שיקר לך.
+  title: מי שאמר לך שמראה לא חשוב, שיקר.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: כל גורו פיתוי מכר לך שעם המשפט הנכון אפשר להצליח עם כל פרצוף. זה חרטא.
+  title: '"תהיה עצמך, תגיד את המשפט הנכון"? זה עובד רק בסרטים.'
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: אצלה המראה משנה בדיוק כמו אצלך. אפילו יותר, רק שהיא לא תודה בזה אף פעם.
+  title: היא מסתכלת בדיוק כמו שאתה מסתכל. רק לא תודה בזה לעולם.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: לפני שהיא בכלל עונה להודעה שלך, היא צריכה להימשך אליך ממבט ראשון. אפילו טיפה.
+  title: לפני שהיא קוראת מילה אחת שלך, היא כבר החליטה לפי התמונה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: על הגובה ועל מה שאמא טבע חילקה לך אין לך הרבה מה לעשות. על כל השאר? המון.
+  title: גובה ופנים קיבלת. כרס, כתפיים, בגדים ושיער? הכול אצלך.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-looks-matter.jpg
   kicker: ''
-  title: ובגיל שלך, זה ההבדל בין ג'ורג' קלוני לדוד שנרדם בחתונות.
+  title: ההבדל בין ג'ורג' קלוני לדוד שנרדם בחתונות זה לא גנטיקה. זה עבודה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

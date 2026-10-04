@@ -30,3 +30,11 @@ def test_bold_has_no_photo():
 def test_user_text_is_escaped():
     doc = render.build_html(Slide(title="<b>$x</b>"), 1, 2, root=ROOT, look=Format.bold)
     assert "&lt;b&gt;$x&lt;/b&gt;" in doc
+
+
+def test_center_layout_is_available_for_photo():
+    from doxa.queue import Layout
+
+    doc = render.build_html(Slide(background=BG, title="א ב ג", layout=Layout.center), 2, 3,
+                            root=ROOT)
+    assert 'class="content center"' in doc

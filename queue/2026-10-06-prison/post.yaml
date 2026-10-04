@@ -14,42 +14,49 @@ slides:
   title: אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: בשורש של כמעט כל טראומה יושבת אשמה. שאתה בנאדם רע, שלא מגיע לך כלום. לא כסף, לא אישה, לא שקט.
+  title: אתה סוחב אשמה כאילו הגירושים היו פשע שלך בלבד.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: זו באמת רק אשמתך שהנישואים התפרקו? היה לך חלק, בטח שהיה. אבל כל החטא עליך?
+  title: היה לך חלק? בטח. אבל כל החטא עליך? ממש לא.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: הרבה פעמים האשמה שאתה סוחב שייכת למישהו אחר. אתה משלם חשבון על טעויות שלא עשית.
+  title: והאשמה הזאת לוחשת לך שלא מגיע לך. לא כסף, לא אישה, לא שקט.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אתה רוצה לפגוע בה? לא? אז מה אתה רוצה? ערב טוב, קרבה, חוויה משותפת. מה לעזאזל רע בזה?
+  title: אז אתה מתנצל על כל דבר. ומי שמתנצל על הכול, לא מושך אף אחת.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: בבסיס אתה רוצה טוב. תצא לעולם עם האמונה הזו, והיא תשנה לך הכול.
+  title: אתה רוצה ערב טוב, קרבה, חיים. מה לעזאזל רע בזה?
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
+  items: []
+- background: assets/backgrounds/2026-10-06-prison.jpg
+  kicker: ''
+  title: תצא מהכלא. המפתח אף פעם לא היה אצל מישהו אחר.
+  accent: ''
+  body: ''
+  layout: center
   items: []
 reel: null
 source:

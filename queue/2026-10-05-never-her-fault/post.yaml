@@ -3,7 +3,7 @@ publish_at: 2026-10-05 11:00
 approved: true
 mode: render
 caption: |-
-  בכל הסיפורים שלה, היא אף פעם לא טעתה.
+  היא אף פעם לא אשמה. בשום דבר.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
@@ -11,52 +11,45 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: בכל הסיפורים שלה, היא אף פעם לא טעתה.
+  title: היא אף פעם לא אשמה. בשום דבר.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: האקס הרס לה את החיים. אמא שלה תמיד העדיפה את האחות. החברה הכי טובה בגדה בה.
+  title: האקס הרס לה. החברה בגדה. המנהלת התעללה בה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: תבקש ממנה לספר את סיפור הגירושים שלה, לא בפגישה הראשונה. ותקשיב למה שהיא אומרת על עצמה, לא על האקס.
+  title: שעה שלמה של סיפורים, ואין שם משפט אחד של "פה אני טעיתי".
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: שעה של סיפור ואף דבר אחד שהיא הייתה עושה אחרת? היא תעשה לך בדיוק את אותו דבר.
+  title: היא תאחר, תשכח, תיעלב. ובסוף הערב אתה זה שמתנצל.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: היא שכחה שקבעתם, חיכית לה חצי שעה בבית קפה, ובסוף הערב איכשהו אתה זה שמתנצל.
+  title: 'ולפני שאתה מצביע: אצלך האקסית היא המכשפה ואתה הקדוש? אותה מחלה.'
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-never-her-fault.jpg
   kicker: ''
-  title: אבל קודם תבדוק את עצמך. אם בסיפור שלך האקסית היא המכשפה ואתה הקדוש המעונה, אתה עושה בדיוק אותו דבר.
+  title: מי שאף פעם לא טועה, תמיד ימצא את מי להאשים. בסיפור הבא, זה אתה.
   accent: ''
   body: ''
-  layout: bottom
-  items: []
-- background: assets/backgrounds/2026-10-05-never-her-fault.jpg
-  kicker: ''
-  title: תעשה את העבודה שלך, תבין איפה אתה טעית, ותזהה מי לא עשתה את שלה.
-  accent: ''
-  body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

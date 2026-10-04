@@ -3,7 +3,7 @@ publish_at: 2026-10-05 22:00
 approved: true
 mode: render
 caption: |-
-  היא שומעת את ההיסוס שלך כבר ב"היי" הראשון.
+  היא שומעת את ההיסוס שלך כבר ב"היי".
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,49 +11,42 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: היא שומעת את ההיסוס שלך כבר ב"היי" הראשון.
+  title: היא שומעת את ההיסוס שלך כבר ב"היי".
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: חצי ממך רוצה לגשת. החצי השני לוחש שהיא בטח לא בעניין.
+  title: חצי ממך רוצה לגשת. חצי ממך מחפש תירוץ.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'וזה רואים מבחוץ: לחיצת יד רכה, חיבוק שבורח באמצע.'
+  title: 'וזה נראה מבחוץ: יד רכה, חצי חיבוק, מבט שבורח.'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ואם אתה מהסס, אתה מהסס בכל מקום. לא רק מולה.
+  title: אם אתה מהסס מולה, אתה מהסס בכל מקום.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: תחזיק מבט רגוע ויציב. תדבר איתה כמו שאתה מדבר עם חבר על כדורגל.
+  title: אתה לא בא לבקש. אתה בא להכיר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: באת לדבר עם אישה שמוצאת חן בעיניך, לא לבקש ממנה טובה.
-  accent: ''
-  body: ''
-  layout: bottom
-  items: []
-- background: null
-  kicker: ''
-  title: היא בעניין? מעולה. לא? החיים שלך נשארים בדיוק אותו דבר.
+  title: היא בעניין? מעולה. לא? החיים שלך לא השתנו בכלום.
   accent: ''
   body: ''
   layout: bottom

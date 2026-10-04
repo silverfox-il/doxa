@@ -3,7 +3,7 @@ publish_at: 2026-10-06 15:00
 approved: true
 mode: render
 caption: |-
-  נחמד מדי? אתה נוחת ישר בחבר הטוב של ארוחות שישי.
+  נחמד מדי? מזל טוב, אתה החבר הטוב.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
@@ -11,49 +11,42 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: נחמד מדי? אתה נוחת ישר בחבר הטוב של ארוחות שישי.
+  title: נחמד מדי? מזל טוב, אתה החבר הטוב.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: חום וקרבה זה טוב. אבל אם זה כל מה שיש לך, הלך המתח.
+  title: חום וקרבה זה נהדר. אבל בלי מתח, אין משיכה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם בנית את עצמך כמו שצריך, אתה זה שבודק אם היא מתאימה לך. לא ההפך.
+  title: אתה לא מחכה שהיא תבחר בך. אתה בודק אם היא מתאימה לך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'היא צריכה לתהות בשקט: למה דווקא אני? מה יש בי שמעניין אותו?'
+  title: 'היא צריכה לתהות: למה דווקא אני? מה הוא רואה בי?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אתה מגיש לה את עצמך על מגש? אין לה על מה לעבוד.
+  title: תגיש לה את עצמך על מגש, ואין לה על מה להתאמץ.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ואם אתה רק עוקץ? זה מתיש, וזה מרגיש לה כמו שיפוט.
-  accent: ''
-  body: ''
-  layout: bottom
-  items: []
-- background: null
-  kicker: ''
-  title: 'המינון הוא העניין: קצת חום, קצת אתגר, עוד קצת חום.'
+  title: קצת חום. קצת אתגר. עוד קצת חום. זה כל הסוד.
   accent: ''
   body: ''
   layout: bottom

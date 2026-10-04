@@ -3,7 +3,7 @@ publish_at: 2026-10-08 20:00
 approved: true
 mode: render
 caption: |-
-  השעה חצות, ואתה עדיין גולל במיטה.
+  חצות, ואתה עדיין גולל במיטה. אלוף.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,52 +11,52 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: השעה חצות, ואתה עדיין גולל במיטה.
+  title: חצות, ואתה עדיין גולל במיטה. אלוף.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: המסך מבלבל לך את השעון הפנימי. אבל הבעיה האמיתית היא הראש שנשאר דלוק.
+  title: המסך דופק לך את השעון הביולוגי. הראש נשאר דלוק עד אחת.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: ההודעה שעוד לא ענו עליה, הפוסט בקבוצה של השכונה, המייל מהעבודה.
+  title: ובבוקר? קם הרוס, ומתפלא שאין לך כוח לאימון.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: תעזוב את הפאקינג טלפון. תטעין אותו בסלון ותקנה שעון מעורר של עשרים שקל.
+  title: תטעין את הטלפון בסלון. תקנה שעון מעורר בעשרים שקל.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: והוויסקי לפני השינה? אתה נרדם כמו תינוק ומתעורר כמו סמרטוט.
+  title: והוויסקי לפני השינה? נרדם כמו תינוק, מתעורר כמו סמרטוט.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: הקפה האחרון שלך עד שתיים בצהריים. כולל משקה האנרגיה לפני האימון והקולה עם הפיצה.
+  title: קפה אחרון עד שתיים בצהריים. כולל הקולה עם הפיצה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 - background: assets/backgrounds/2026-10-08-phone-bed.jpg
   kicker: ''
-  title: ואני יודע שאתה קורא את זה עכשיו בטלפון. במיטה.
+  title: ואני יודע שאתה קורא את זה עכשיו. בטלפון. במיטה.
   accent: ''
   body: ''
-  layout: bottom
+  layout: center
   items: []
 reel: null
 source:

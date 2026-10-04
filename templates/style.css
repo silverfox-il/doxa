@@ -381,3 +381,32 @@ body {
 .fmt-bold.hook .title.long {
   font-size: 92px;
 }
+
+
+/* ---------- center layout: text in the middle of the photo ---------- */
+
+.content.center {
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  align-items: center;
+}
+/* Even shade instead of the bottom gradient, darker behind the text. */
+.slide:has(.content.center) .scrim {
+  background: radial-gradient(
+    ellipse 75% 45% at 50% 50%,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.42) 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+/* Pool photos are dark and moody; lift them so the subject reads. */
+.fmt-photo:has(.content.center) .bg {
+  filter: brightness(1.25) saturate(1.1);
+}
+.fmt-photo.hook .content.center {
+  bottom: auto;
+}
+.fmt-photo.hook .content.center::before {
+  margin: 0 auto;
+}

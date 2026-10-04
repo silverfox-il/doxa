@@ -148,6 +148,17 @@ written exactly the way the book talks:
 - **Correct, natural Hebrew.** Read every line aloud the way an Israeli guy talks.
   Right verb forms ("היא צריכה להידלק ממך", never "להיות נדלקת"), no sentences that
   sound translated, no stiff written register.
+- **One sharp thesis per post, a clear punchline.** Short, blunt sentences that
+  kick and open his eyes. No padding, no vague lines, no line whose point he has
+  to guess. The last slide lands like a punch. The owner approved this level
+  (2026-10-04); match it:
+  - "אתה לא מתאמן. אתה מבקר במכון." / "זיעה זה לא התקדמות. התקדמות זה מספר שעולה."
+  - "אתה לא יוצא לדייט. אתה ניגש למבחן." / "תלמד להיות לבד וליהנות מזה. רק אז אתה
+    בוחר, ולא מתחנן."
+  - "ראית זוג ושאלת: מה היא עושה איתו?" / "אתה לא צריך להיות יפה. אתה צריך להיות
+    מישהו."
+  Before queuing, reread every line and ask: is the point obvious in one read? Does
+  it sting? Would an Israeli guy actually say it like that? If not, rewrite it.
 - **The book's positions only.** Never invent advice the book does not give, and
   never contradict it. Every post keeps `source:` with the section its idea comes from.
 - **One idea per post.** Spread across the chapters: `02.md` (the market, the magnet,
@@ -212,7 +223,7 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-11-example.jpg
   title: <the hook, 3 to 12 words>
-  layout: bottom
+  layout: center         # photo format: text centered; tweet/bold: bottom
 # ...one block per slide, same background
 source:
   file: 02.md

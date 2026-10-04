@@ -3,7 +3,7 @@ publish_at: 2026-10-05 09:00
 approved: true
 mode: render
 caption: |-
-  ראית זוג וחשבת: מה לעזאזל היא עושה איתו?
+  ראית זוג ושאלת: מה היא עושה איתו?
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,49 +11,49 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: 'ראית זוג וחשבת: מה לעזאזל היא עושה איתו?'
+  title: 'ראית זוג ושאלת: מה היא עושה איתו?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: בתשע מתוך עשר פעמים, התשובה היא סטטוס.
+  title: הוא לא יפה. לא גבוה. לא צעיר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: בגיל 22 סטטוס זה כמה לייקים יש לך. בגיל שלך זה השם שעשית לעצמך.
+  title: אבל כשהוא נכנס לחדר, אנשים מסתובבים.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: זה הטלפונים שאתה מקבל מאנשים שצריכים ממך עצה.
+  title: זה סטטוס. ולא, זה לא כמה יש לך בבנק.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'וזה התחביב שגורם לאנשים להגיד: "רגע, מה? אתה עושה את זה?"'
+  title: זה מי מתקשר אליך כשיש לו בעיה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אופנוע בגולן, צלילה בסיני, מרתון בגיל 56. כל אלה זה סטטוס.
+  title: זה המרתון בגיל 56, האופנוע בגולן, העסק שבנית מאפס.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'הסטטוס שלך מדבר ישר עם החלק הכי עתיק במוח שלה: לידך בטוח, לידך מעניין.'
+  title: אתה לא צריך להיות יפה. אתה צריך להיות מישהו.
   accent: ''
   body: ''
   layout: bottom
