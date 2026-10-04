@@ -69,6 +69,9 @@ class RulesConfig:
     hook_min_words: int = 3
     hook_max_words: int = 12
     cta: list[str] = field(default_factory=list)
+    # Owner's decision (2026-10-04): teaser series may generalize about women
+    # ("רוב הנשים ..."); these review words do not stop their auto-approval.
+    tease_allowed_review: list[str] = field(default_factory=list)
     # Owner's rule (2026-10-03): the book's voice, not its exact words.
     require_verbatim: bool = False
     # Crude words that must be written masked: [{match, write}]. ``match`` uses
@@ -203,7 +206,10 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
         for word in cfg.identity_words:
             if _word_re(word).search(text):
                 add(BLOCK, "identity", where, "identifying detail about the owner")
+        tease = post.reel is not None and bool(post.reel.stories)
         for word in cfg.review_words:
+            if tease and word in cfg.tease_allowed_review:
+                continue
             if _word_re(word).search(text):
                 add(REVIEW, "sensitive", where, f"{word!r} needs a human look")
         for m in AGE_RE.finditer(text):

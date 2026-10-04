@@ -62,10 +62,15 @@ def _css() -> str:
         ".h{opacity:0}"
         ".tag{position:absolute;bottom:170px;left:0;right:0;text-align:center;"
         "font-size:34px;color:#8a8a8a;direction:ltr}"
+        # Teaser series (owner's example): black, right aligned, more and smaller
+        # lines, like a cynical narrator's notes.
+        "body.tease{background:#000;padding:0 80px}"
+        ".tease .w{text-align:right}"
+        ".tease p{font-size:58px;font-weight:500;line-height:1.3;margin:0 0 46px}"
     )
 
 
-def frame_html(lines: list[str], shown: int) -> str:
+def frame_html(lines: list[str], shown: int, tease: bool = False) -> str:
     """Frame with the first ``shown`` lines visible. Hidden lines keep their space,
     so text never jumps as new lines appear."""
     ps = "".join(
@@ -73,7 +78,8 @@ def frame_html(lines: list[str], shown: int) -> str:
     )
     return (
         f"<!DOCTYPE html><html dir='rtl' lang='he'><head><meta charset='utf-8'>"
-        f"<style>{_css()}</style></head><body><div class='w'>{ps}</div>"
+        f"<style>{_css()}</style></head><body class='{'tease' if tease else ''}'>"
+        f"<div class='w'>{ps}</div>"
         f"<div class='tag'>{html.escape(IG_HANDLE)}</div></body></html>"
     )
 
@@ -88,7 +94,8 @@ def render_frames(reel: Reel, out_dir: Path) -> list[Path]:
         try:
             page = browser.new_page(viewport={"width": REEL_W, "height": REEL_H})
             for k in range(1, len(reel.lines) + 1):
-                page.set_content(frame_html(reel.lines, k), wait_until="load")
+                doc = frame_html(reel.lines, k, tease=bool(reel.stories))
+                page.set_content(doc, wait_until="load")
                 page.evaluate("document.fonts.ready")
                 out = out_dir / f"{k}.png"
                 page.screenshot(path=str(out), type="png")

@@ -45,17 +45,29 @@ A reel that provokes, plus 2 follow-up stories. The reel goes to the feed and
 brings the traffic; the system then posts the reel video and the 2 follow-ups to
 stories, in order. It is a `mode: reel` post with `reel.stories`:
 
-- **Story 1 = the reel** (2 to 4 short lines): a provocation that stings. It calls
-  the reader out on something he does, says the uncomfortable thing everyone
-  thinks, or picks a fight with an excuse. In the book's voice, talking to him.
+- **Story 1 = the reel** (5 to 8 short lines; per_line 1.4 to 1.8 so it stays
+  10 to 15 seconds): the owner's trolling style. A detached, cynical narrator,
+  not a coach:
+  - open with a sweeping "state of the world" claim ("אנחנו בעידן ...",
+    "רוב הנשים היום ...", "רוב הגברים בגילך ...");
+  - every line escalates one short step, dry, no explanations, no advice;
+  - third person narration is fine here ("הוא", "הן");
+  - end on a sarcastic sting ("פלקס אדיר.", "בונוס.", "כל הכבוד, אלוף.").
+  The owner's example: "אנחנו בעידן הפראייר-מקס של נשים בדייטים / רוב הנשים כיום
+  מחפשות גברים חלשים לניצול / אחד שיסבול את כל חוסר הכבוד ולא יעזוב לעולם /
+  מוכן להיות מנוצל שוב למחרת / אם הוא נראה טוב וגם עשיר? אז בכלל / פלקס אדיר".
+  The rendered reel is black, right aligned, like that example.
 - **Story 2** (up to ~120 characters): the twist that makes it worse, or proves
   the point. Short, punchy, it should make him want to answer.
 - **Story 3** (up to ~120 characters): the payoff or a cliffhanger that sends him
   to the profile ("זה בדיוק מה שנפרק בפוסט של הערב"), or asks him to answer the
   story. The image gets a banner pointing to the profile automatically.
 
-Trolling means provoking the READER (his excuses, habits, ego), never mocking women
-as a group, never fake urgency or fake numbers. Every hard rule applies to all
+The owner decided (2026-10-04) that teaser series MAY generalize about women
+("רוב הנשים ...") like his example. Still never slurs (כלבה, Zונה as an insult,
+and the like), never contempt for their worth as people, nothing about consent,
+never fake urgency or fake numbers. Regular posts keep the rule: no generalizing
+about women as a group. Every hard rule applies to all
 three parts. Pillar and call to action rotate like any post (`doxa validate`
 checks both).
 

@@ -67,6 +67,8 @@ REEL_MIN_SECONDS = 10.0
 REEL_MAX_SECONDS = 15.0
 REEL_MIN_LINES = 2
 REEL_MAX_LINES = 6
+# A teaser series reel may run longer lists (owner's example has 7 lines).
+TEASE_MAX_LINES = 8
 # Teaser series: the reel plus up to 3 follow-up story images.
 MAX_SERIES_STORIES = 3
 MAX_STORY_CHARS = 160
@@ -184,8 +186,9 @@ class Reel(BaseModel):
     @model_validator(mode="after")
     def _shape(self) -> Reel:
         n = len(self.lines)
-        if not (REEL_MIN_LINES <= n <= REEL_MAX_LINES):
-            raise ValueError(f"reel needs {REEL_MIN_LINES}-{REEL_MAX_LINES} lines, got {n}")
+        top = TEASE_MAX_LINES if self.stories else REEL_MAX_LINES
+        if not (REEL_MIN_LINES <= n <= top):
+            raise ValueError(f"reel needs {REEL_MIN_LINES}-{top} lines, got {n}")
         if any(not line.strip() for line in self.lines):
             raise ValueError("reel lines must not be empty")
         if self.stories is not None:

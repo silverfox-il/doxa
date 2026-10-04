@@ -159,3 +159,22 @@ def test_render_stories_series_only(tmp_path):
     assert [o.relative_to(tmp_path).as_posix() for o in outs] == ["series/1.jpg", "series/2.jpg"]
     with Image.open(outs[0]) as im:
         assert im.size == (1080, 1920) and im.format == "JPEG"
+
+
+def test_tease_reels_allow_up_to_8_lines_plain_reels_6():
+    import pytest
+
+    from doxa.queue import Reel
+
+    lines = ["שורה"] * 8
+    Reel.model_validate({"lines": lines, "music": "a.mp3", "per_line": 1.4, "hold": 4,
+                         "stories": ["שני"]})
+    with pytest.raises(ValueError, match="2-6 lines"):
+        Reel.model_validate({"lines": lines, "music": "a.mp3", "per_line": 1.4, "hold": 4})
+
+
+def test_tease_frame_is_right_aligned_style():
+    from doxa import reel
+
+    assert "class='tease'" in reel.frame_html(["א", "ב"], 1, tease=True)
+    assert "class='tease'" not in reel.frame_html(["א", "ב"], 1)

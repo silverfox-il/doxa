@@ -109,3 +109,9 @@ style_rules:
     write: "talk to him: open with 'אתה' / 'אם אתה', not 'גבר ...'"
   - match: "re:להיות נדלק"
     write: "write 'להידלק' (היא צריכה להידלק ממך)"
+
+# Owner's decision (2026-10-04): the daily teaser series (a reel with stories)
+# may make cynical generalizations about women, like the owner's example reel.
+# Only these review words are lifted there; slurs and everything else still apply.
+tease_allowed_review:
+  - כל הנשים

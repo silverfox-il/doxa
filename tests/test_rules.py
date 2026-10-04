@@ -431,3 +431,23 @@ def test_cta_rotation_blocks_same_cta_twice_in_a_row():
     c = p("2026-10-06-c", "2026-10-06 13:00", CFG.cta[1])
     assert rules.cta_rotation([a, b], CFG) == []
     assert [f.where for f in rules.cta_rotation([c, a, b], CFG)] == ["2026-10-06-c"]
+
+
+def test_tease_series_may_generalize_about_women_regular_posts_may_not():
+    from doxa.queue import Post
+
+    from .conftest import render_post_data
+
+    line = "כל הנשים בדייטים מחפשות את אותו דבר."
+    reel = {"lines": [line, "פלקס אדיר."], "music": "a.mp3", "per_line": 4, "hold": 7}
+    plain = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
+    tease = Post.model_validate(
+        render_post_data(mode="reel", slides=[], reel={**reel, "stories": ["שני"]})
+    )
+    assert "sensitive" in [f.rule for f in rules.check_post(plain, VOICE, None)]
+    assert "sensitive" not in [f.rule for f in rules.check_post(tease, VOICE, None)]
+    slur = Post.model_validate(
+        render_post_data(mode="reel", slides=[], reel={**reel, "lines": ["היא כלבה.", "ב"],
+                                                         "stories": ["שני"]})
+    )
+    assert "sensitive" in [f.rule for f in rules.check_post(slur, VOICE, None)]
