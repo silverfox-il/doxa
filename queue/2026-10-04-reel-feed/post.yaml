@@ -28,10 +28,10 @@ pillar: status
 approved_hash: sha256:fe2aa5e75fa2b4c9c3c93dcaadeea8e602229b01e0854de1245da90c2e6715ed
 approved_by: owner
 approved_at: '2026-10-03T16:53:04+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18074681525462000'
+permalink: https://www.instagram.com/reel/DeEaRHIiLFb/
+published_at: 2026-10-04T10:23:31+0000
 error: null
 story_id: null
 story_error: null
