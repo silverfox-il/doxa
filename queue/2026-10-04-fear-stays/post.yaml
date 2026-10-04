@@ -67,10 +67,10 @@ pillar: mind
 approved_hash: sha256:fc545d698c4aba572ca8d8dc5fad4ea4b5e421541fd73f545482b4b9e073fa5e
 approved_by: owner
 approved_at: '2026-10-03T16:53:02+03:00'
-status: publishing
+status: failed
 ig_media_id: null
 permalink: null
 published_at: null
-error: null
+error: 'POST /17841416570144057/media_publish -> HTTP 403 code=4 subcode=2207051: We restrict certain activity to protect our community. Tell us if you think we made a mistake.'
 story_id: null
 story_error: null
