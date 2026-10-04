@@ -28,10 +28,10 @@ pillar: body
 approved_hash: sha256:c98f595f066059b05d059df3eaef367f1eeb1b91b8c75ed4cdf22f1fcd38fe50
 approved_by: auto
 approved_at: '2026-10-03T17:11:11+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18119438870287325'
+permalink: https://www.instagram.com/reel/DeE8mxpjkl8/
+published_at: 2026-10-04T15:23:36+0000
 error: null
 story_id: null
 story_error: null
