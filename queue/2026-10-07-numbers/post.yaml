@@ -1,6 +1,6 @@
 id: 2026-10-07-numbers
 publish_at: 2026-10-07 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה לא מתאמן. אתה מבקר במכון.
@@ -64,9 +64,9 @@ source:
   section: להתאמן, לא "לעשות אימון"
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:41379b3129c9353b0fb67b77a0f42ea3342b1ff1559a6209527d17c66337ab53
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

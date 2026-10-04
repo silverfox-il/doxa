@@ -1,6 +1,6 @@
 id: 2026-10-05-easy-prey
 publish_at: 2026-10-05 17:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה גרוש, יש לך כסף, ויש לך חור בלב? אתה טרף.
@@ -64,9 +64,9 @@ source:
   section: כסף (Money)
 format: tweet
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ee4981dc53f8b48c061236f77f2da138cedbb3c81fc8c2d32b352aeeb6860919
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

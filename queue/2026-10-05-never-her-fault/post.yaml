@@ -1,6 +1,6 @@
 id: 2026-10-05-never-her-fault
 publish_at: 2026-10-05 11:00
-approved: false
+approved: true
 mode: render
 caption: |-
   היא אף פעם לא אשמה. בשום דבר.
@@ -57,9 +57,9 @@ source:
   section: 'נורה 3: אף פעם לא אשמה בכלום'
 format: photo
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d326683beaf1f563615005946c25968290bf554a3dfb4763820af44614aa6c92
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

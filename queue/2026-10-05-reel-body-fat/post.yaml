@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-body-fat
 publish_at: 2026-10-05 15:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הכרס שלך מדברת לפניך.
@@ -25,9 +25,9 @@ source:
   section: אחוז שומן
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:352d29f48271fce1f9af77900824f293541594ea445e228a9a9bcb830e81fd9f
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

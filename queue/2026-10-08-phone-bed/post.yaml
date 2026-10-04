@@ -1,6 +1,6 @@
 id: 2026-10-08-phone-bed
 publish_at: 2026-10-08 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   חצות, ואתה עדיין גולל במיטה. אלוף.
@@ -64,9 +64,9 @@ source:
   section: הטלפון, הכוס והאספרסו
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9f1b42e90a4bea4cc66b1d7b640e071478c57a2d9a970dbddf04d802a40ee691
+approved_by: auto
+approved_at: '2026-10-04T23:41:21+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

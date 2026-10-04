@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-turned-on
 publish_at: 2026-10-05 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   נחמד זה לא תכונה. זה המינימום.
@@ -25,9 +25,9 @@ source:
   section: הנחמד מפסיד, תמיד
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:23e538cd9555ff60543298342f48e73060510fd7e5b312a95a316d883caba411
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

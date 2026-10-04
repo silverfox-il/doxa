@@ -1,6 +1,6 @@
 id: 2026-10-07-reel-not-your-project
 publish_at: 2026-10-07 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אחרי גירושים, הרבה נשים חוזרות לשחק.
@@ -25,9 +25,9 @@ source:
   section: ארבעים וחמש, והמשחק מתחיל מחדש
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2abfb66bbb232e466cbd5c32791b7ad103f6300e2288b798d189bb46004c85cd
+approved_by: auto
+approved_at: '2026-10-04T23:41:21+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

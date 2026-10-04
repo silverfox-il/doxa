@@ -1,6 +1,6 @@
 id: 2026-10-05-status
 publish_at: 2026-10-05 09:00
-approved: false
+approved: true
 mode: render
 caption: |-
   ראית זוג ושאלת: מה היא עושה איתו?
@@ -64,9 +64,9 @@ source:
   section: סטטוס
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:92c6b29958e2a334f8408ff9229535fd7e7b1068eb9b421060cd0ff249fb53a5
+approved_by: auto
+approved_at: '2026-10-04T23:41:20+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
