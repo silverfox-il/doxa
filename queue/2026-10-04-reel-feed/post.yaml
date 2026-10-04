@@ -19,6 +19,7 @@ reel:
   music: audiocopper-dark-571483.mp3
   per_line: 2.2
   hold: 4.0
+  stories: null
 source:
   file: 02.md
   section: גינה, לא כספומט
@@ -27,7 +28,7 @@ pillar: status
 approved_hash: sha256:fe2aa5e75fa2b4c9c3c93dcaadeea8e602229b01e0854de1245da90c2e6715ed
 approved_by: owner
 approved_at: '2026-10-03T16:53:04+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
