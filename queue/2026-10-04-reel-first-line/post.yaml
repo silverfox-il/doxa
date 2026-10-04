@@ -19,6 +19,7 @@ reel:
   music: atlasaudio-sports-motivation-606276.mp3
   per_line: 2.2
   hold: 4.0
+  stories: null
 source:
   file: 06.md
   section: מה אומרים לה? כמעט כל דבר
@@ -27,7 +28,7 @@ pillar: dating
 approved_hash: sha256:9248e1e71e0cce94e4f9b5156e87c2f520ec821f86e9161fc3686da5ddaba1e7
 approved_by: owner
 approved_at: '2026-10-03T16:53:04+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
