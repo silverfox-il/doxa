@@ -30,6 +30,13 @@ HINTS = [
         "secret IG_ACCESS_TOKEN, then run the healthcheck workflow.",
     ),
     (
+        "2207051",
+        "Instagram restricted the account's activity (spam protection, usually after "
+        "posting too fast). The publisher paused itself for 24 hours (state/pause.yaml) "
+        "and keeps the post for later. Avoid bulk activity on the account meanwhile; if the "
+        "app offers 'Tell us', report it as a mistake.",
+    ),
+    (
         "QuotaExceeded",
         "Instagram's 24-hour publishing limit is used up. Nothing to do: it resumes by itself.",
     ),
