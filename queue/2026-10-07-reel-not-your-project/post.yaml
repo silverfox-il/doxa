@@ -26,8 +26,8 @@ source:
 format: null
 pillar: dating
 approved_hash: sha256:2abfb66bbb232e466cbd5c32791b7ad103f6300e2288b798d189bb46004c85cd
-approved_by: auto
-approved_at: '2026-10-04T23:41:21+03:00'
+approved_by: owner
+approved_at: '2026-10-05T09:31:35+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

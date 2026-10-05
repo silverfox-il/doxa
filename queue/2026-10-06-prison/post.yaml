@@ -65,8 +65,8 @@ source:
 format: photo
 pillar: mind
 approved_hash: sha256:6360cd2f09a39e55b971b10339165f80a428af3a1aaebc436fcb387ad4f190f7
-approved_by: auto
-approved_at: '2026-10-04T23:41:20+03:00'
+approved_by: owner
+approved_at: '2026-10-05T09:31:30+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
