@@ -178,3 +178,13 @@ def test_tease_frame_is_right_aligned_style():
 
     assert "class='tease'" in reel.frame_html(["א", "ב"], 1, tease=True)
     assert "class='tease'" not in reel.frame_html(["א", "ב"], 1)
+
+
+def test_boxes_reel_style():
+    from doxa import reel
+    from doxa.queue import Reel
+
+    r = Reel.model_validate({"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7,
+                             "style": "boxes"})
+    assert r.style == "boxes"
+    assert "class='boxes'" in reel.frame_html(r.lines, 1, look="boxes")

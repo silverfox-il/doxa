@@ -24,6 +24,7 @@ import hashlib
 import json
 import re
 from enum import Enum
+from typing import Literal
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -179,6 +180,8 @@ class Reel(BaseModel):
     hold: float = 4.0  # seconds the full text stays on screen at the end
     # Teaser series: follow-up story texts. Story 1 is this reel; these come next.
     stories: list[str] | None = None
+    # Look of the frames: None = default; "boxes" = text in black boxes on dark red.
+    style: Literal["boxes"] | None = None
 
     @property
     def duration(self) -> float:

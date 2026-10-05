@@ -67,10 +67,18 @@ def _css() -> str:
         "body.tease{background:#000;padding:0 80px}"
         ".tease .w{text-align:right}"
         ".tease p{font-size:58px;font-weight:500;line-height:1.3;margin:0 0 46px}"
+        # Boxes (owner's example): text in black rounded boxes on a dark red gradient.
+        "body.boxes{background:linear-gradient(180deg,#3a0808 0%,#1c0404 55%,#0d0202 100%);"
+        "padding:0 70px}"
+        ".boxes .w{display:flex;flex-direction:column;align-items:center;gap:48px;"
+        "margin-top:-60px}"
+        ".boxes p{background:#000;border-radius:40px;padding:26px 46px;margin:0;"
+        "font-size:62px;font-weight:500;line-height:1.28;max-width:940px}"
+        ".boxes .tag{bottom:90px;color:#c9a3a3}"
     )
 
 
-def frame_html(lines: list[str], shown: int, tease: bool = False) -> str:
+def frame_html(lines: list[str], shown: int, tease: bool = False, look: str = "") -> str:
     """Frame with the first ``shown`` lines visible. Hidden lines keep their space,
     so text never jumps as new lines appear."""
     ps = "".join(
@@ -78,7 +86,7 @@ def frame_html(lines: list[str], shown: int, tease: bool = False) -> str:
     )
     return (
         f"<!DOCTYPE html><html dir='rtl' lang='he'><head><meta charset='utf-8'>"
-        f"<style>{_css()}</style></head><body class='{'tease' if tease else ''}'>"
+        f"<style>{_css()}</style></head><body class='{look or ('tease' if tease else '')}'>"
         f"<div class='w'>{ps}</div>"
         f"<div class='tag'>{html.escape(IG_HANDLE)}</div></body></html>"
     )
@@ -94,7 +102,7 @@ def render_frames(reel: Reel, out_dir: Path) -> list[Path]:
         try:
             page = browser.new_page(viewport={"width": REEL_W, "height": REEL_H})
             for k in range(1, len(reel.lines) + 1):
-                doc = frame_html(reel.lines, k, tease=bool(reel.stories))
+                doc = frame_html(reel.lines, k, tease=bool(reel.stories), look=reel.style or "")
                 page.set_content(doc, wait_until="load")
                 page.evaluate("document.fonts.ready")
                 out = out_dir / f"{k}.png"
