@@ -15,6 +15,7 @@ from doxa.instagram import (
     Quota,
     QuotaExceededError,
 )
+from doxa.pacing import Pacing
 from doxa.publish import Publisher
 from doxa.queue import TZ, Status, content_hash, dump_post, load_post
 
@@ -143,6 +144,8 @@ def publisher(repo, head=None):
         now=NOW,
         head=head or (lambda url: (200, "image/jpeg")),
         sleep=lambda s: None,
+        # Pacing has its own tests (test_pacing.py); here it never holds a post back.
+        pacing=Pacing(min_gap_minutes=0, max_per_24h=1000, quiet_start="00:00", quiet_end="00:00"),
     )
     return p, client, committer, logs
 

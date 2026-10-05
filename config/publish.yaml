@@ -1,0 +1,8 @@
+# Account safety (doxa/pacing.py). Instagram restricted the account on
+# 2026-10-04 after 13 posts in ~28 hours. Posts held back by these limits go out
+# later, oldest first; their approval does not change.
+min_gap_minutes: 120   # at least 2 hours between feed posts (18:00 series, 20:00 carousel)
+max_per_24h: 4         # feed posts in any rolling 24 hours
+quiet_start: "00:00"   # no posting at night, local time
+quiet_end: "08:00"
+block_pause_hours: 24  # after an Instagram block, nothing publishes for this long

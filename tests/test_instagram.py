@@ -7,6 +7,7 @@ import requests
 
 from doxa import instagram
 from doxa.instagram import (
+    ActionBlockedError,
     Client,
     InstagramError,
     InstagramRetryableError,
@@ -129,7 +130,7 @@ def test_quota_bad_shape_is_an_error():
         (err(400, code=-1, subcode=2207001), InstagramRetryableError),  # server error
         (err(400, code=-2, subcode=2207003), InstagramRetryableError),  # slow download
         (err(400, code=100, transient=True), InstagramRetryableError),
-        (err(400, code=4, subcode=2207051), InstagramError),  # spam restriction
+        (err(400, code=4, subcode=2207051), ActionBlockedError),  # spam restriction
         (err(400, code=25, subcode=2207050), InstagramError),  # restricted account
         (err(400, code=9004, subcode=2207052), InstagramError),  # URL not fetchable
         (err(400, code=190), InstagramError),  # bad token

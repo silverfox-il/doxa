@@ -56,6 +56,15 @@ class InstagramRetryableError(InstagramError):
     """Transient error (5xx, throttling, network) — safe to retry later."""
 
 
+class ActionBlockedError(InstagramError):
+    """Instagram restricted the account's activity (spam protection). Never retry
+    right away: the publisher pauses itself (see :mod:`doxa.pacing`)."""
+
+
+# code=4 subcode=2207051: "We restrict certain activity to protect our community".
+BLOCK_SUBCODES = {2207051}
+
+
 class QuotaExceededError(InstagramError):
     """The 24-hour publishing quota is used up."""
 
@@ -83,6 +92,8 @@ def _error_from(resp: requests.Response, what: str) -> InstagramError:
     sub = err.get("error_subcode")
     msg = err.get("error_user_msg") or err.get("message") or resp.text[:300]
     text = f"{what} -> HTTP {resp.status_code} code={code} subcode={sub}: {msg}"
+    if sub in BLOCK_SUBCODES:
+        return ActionBlockedError(text)
     if code == QUOTA_CODE or sub == QUOTA_SUBCODE:
         return QuotaExceededError(text)
     if sub in FATAL_SUBCODES:

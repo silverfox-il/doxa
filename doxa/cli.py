@@ -20,7 +20,7 @@ from typing import NoReturn
 
 import click
 
-from . import reel, rules, slides, status
+from . import pacing, reel, rules, slides, status
 from .queue import (
     POST_ID_RE,
     RENDERABLE_STATUSES,
@@ -488,6 +488,7 @@ def publish(ctx: click.Context, dry_run: bool, post_id: str | None, sha: str | N
         sha=sha or _head_sha(root),
         committer=GitCommitter(root),
         log=click.echo,
+        pacing=pacing.Pacing.load(root),
     )
     sys.exit(publisher.run(dry_run=dry_run, post_id=post_id))
 

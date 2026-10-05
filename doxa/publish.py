@@ -37,8 +37,10 @@ import requests
 
 from . import approval, github, reel, slides, status
 from .story import story_files
+from . import pacing
 from .instagram import (
     API_VERSION,
+    ActionBlockedError,
     Client,
     InstagramError,
     InstagramRetryableError,
@@ -141,6 +143,7 @@ class Publisher:
     now: dt.datetime = field(default_factory=lambda: dt.datetime.now(TZ))
     head: Callable[[str], tuple[int, str]] = head_check
     sniff_mp4: Callable[[str], bool] = is_mp4
+    pacing: pacing.Pacing = field(default_factory=pacing.Pacing)
     sleep: Callable[[float], None] = time.sleep
     poll_s: float = 15.0
 
@@ -290,6 +293,15 @@ class Publisher:
         self.recover(dry_run)
 
         posts = load_all(self.queue_dir)
+        # Account safety (see doxa/pacing.py): pause after a block, gaps, daily cap.
+        held = pacing.gate(self.root, [p for _, p in posts], self.now, self.pacing)
+        if held:
+            for h in held:
+                self.log(f"  PACING: {h}")
+            if not dry_run:
+                self.log("nothing published this run (pacing) — done")
+                return 0
+            self.log("  (dry run continues so you can preview the request)")
         if post_id:
             chosen = next(((p, post) for p, post in posts if post.id == post_id), None)
             if chosen is None:
@@ -415,6 +427,8 @@ class Publisher:
                 timeout = 300.0
             c.wait_finished(parent, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
             self.log("  container FINISHED")
+        except ActionBlockedError as e:
+            return self._blocked(post, path, str(e))
         except InstagramError as e:
             retryable = isinstance(e, InstagramRetryableError | QuotaExceededError)
             return self._fail(post, path, str(e), False, retryable=retryable)
@@ -427,6 +441,8 @@ class Publisher:
 
         try:
             media_id = c.publish(parent)
+        except ActionBlockedError as e:
+            return self._blocked(post, path, str(e))
         except InstagramRetryableError as e:
             # Ambiguous: it may have gone through. Leave `publishing` for recovery.
             post.error = f"media_publish uncertain: {e}"
@@ -483,6 +499,14 @@ class Publisher:
         # Comma-separated when a teaser series published several stories.
         post.story_id = ",".join(ids) or None
         self._save(post, path, message)
+
+    def _blocked(self, post: Post, path: Path, error: str) -> int:
+        """Instagram restricted the account: keep the post for later, pause everything."""
+        until = self.now + dt.timedelta(hours=self.pacing.block_pause_hours)
+        pause = pacing.write_pause(self.root, until, "Instagram restricted activity")
+        self.committer.commit([pause], f"publish: pause until {until:%Y-%m-%d %H:%M}")
+        self.log(f"✗ Instagram block, publisher paused until {until:%Y-%m-%d %H:%M}")
+        return self._fail(post, path, error, False, retryable=True)
 
     def _fail(self, post: Post, path: Path, error: str, dry_run: bool, *, retryable: bool) -> int:
         state = Status.failed_retryable if retryable else Status.failed
