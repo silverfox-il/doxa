@@ -31,10 +31,10 @@ pillar: dating
 approved_hash: sha256:5e55b461f0803fdd35525a19f1a2b0deb54cc5db5b02f681e5ee23f19d0f9e0e
 approved_by: owner
 approved_at: '2026-10-07T21:47:31+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18112894682605114'
+permalink: https://www.instagram.com/reel/DeNJ6jJCbbw/
+published_at: 2026-10-07T19:53:51+0000
 error: null
 story_id: null
 story_error: null
