@@ -1,6 +1,6 @@
 id: 2026-10-10-reel-abyss
 publish_at: 2026-10-10 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גברים, אתם לא יכולים לתאר לעצמכם לאיזה שפל אפשר להידרדר
@@ -25,9 +25,9 @@ source:
   section: אחד זה מידע, שלושה זו החלטה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f01dc72a3db7d98c77140af42987ccf4f5cdafe93bd9947c66c2799d0fcf9861
+approved_by: auto
+approved_at: '2026-10-07T18:06:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -9,7 +9,7 @@
 |------|----|----------|--------|-----------|-------|
 | 2026-10-10 | `2026-10-10-one-is-info` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
-| 2026-10-10 | `2026-10-10-reel-abyss` | — | rendered | — | — |
+| 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-second-round` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-reel-garden` | ✅ | rendered | — | — |
