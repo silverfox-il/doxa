@@ -41,6 +41,16 @@ That makes 21 posts. The slug is 1 to 4 lowercase English words joined by `-`.
 Regular posts get no automatic story: the owner shares them to his story himself
 (only the app can attach a link to the post).
 
+## Hashtags (rotate by pillar)
+
+Replace the hashtag line with the set that fits the post's pillar (researched
+2026-10-07). Never use #dating, #single, #singlelife, #date or #sexy (banned-list
+risk), and avoid #silverfox / #menover50 (they pull an unrelated audience).
+
+- dating, second-round: #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+- body: #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+- mind, status: #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+
 ## Teaser series (daily, 18:00)
 
 A reel that provokes, plus 2 follow-up stories. The reel goes to the feed and
