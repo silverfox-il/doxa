@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-08-reel-discomfort` at 2026-10-08 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 0/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-05 | `2026-10-05-approval-chase` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-turned-on` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-old-flame` | ✅ | rendered | — | — |
+| 2026-10-05 | `2026-10-05-old-flame` | ✅ | publishing | — | — |
 | 2026-10-05 | `2026-10-05-status` | ✅ | published | [link](https://www.instagram.com/p/DeMrDn8FVIg/) | — |
 | 2026-10-04 | `2026-10-04-sleep-builds` | ✅ | published | [link](https://www.instagram.com/p/DeFYHAWj84c/) | — |
 | 2026-10-04 | `2026-10-04-fear-stays` | ✅ | published | [link](https://www.instagram.com/p/DeFKbs-oJJG/) | — |
