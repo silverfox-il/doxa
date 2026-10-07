@@ -1,6 +1,6 @@
 id: 2026-10-09-reel-garden
 publish_at: 2026-10-09 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה לא צריך לרדוף אחרי אף אחת עם הכסף שלך.
@@ -26,9 +26,9 @@ source:
   section: גינה, לא כספומט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7becec308e8a4cd01667be64e62cc048a3800c9b3da5b3d2b35a7306e8fb2f06
+approved_by: auto
+approved_at: '2026-10-07T19:44:28+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

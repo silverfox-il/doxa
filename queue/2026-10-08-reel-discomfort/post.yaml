@@ -1,6 +1,6 @@
 id: 2026-10-08-reel-discomfort
 publish_at: 2026-10-08 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אחרי עשרים שנה בחוץ, הדייט הראשון מרגיש כמו בחינת בגרות.
@@ -26,9 +26,9 @@ source:
   section: איך האגו מנהל לך את הפחד
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7e50d42de500d36636b01bec642be6d19dd2923e78918dfa24c9492d87febe7e
+approved_by: auto
+approved_at: '2026-10-07T19:44:27+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
