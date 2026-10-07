@@ -43,18 +43,26 @@ class Pacing:
         return cls(**data)
 
 
+def parse_meta_time(value: str) -> dt.datetime | None:
+    """Parse Meta's "2026-10-04T06:23:36+0000" (or ISO) into an aware datetime."""
+    stamp = value.replace("Z", "+00:00")
+    if len(stamp) > 5 and stamp[-5] in "+-" and stamp[-3] != ":":
+        stamp = stamp[:-2] + ":" + stamp[-2:]  # +0000 -> +00:00
+    try:
+        out = dt.datetime.fromisoformat(stamp)
+    except ValueError:
+        return None
+    return out if out.tzinfo else None
+
+
 def published_times(posts: list[Post]) -> list[dt.datetime]:
     """When each published post went out (aware datetimes)."""
     out = []
     for post in posts:
         if post.status == Status.published and post.published_at:
-            stamp = post.published_at.replace("Z", "+00:00")
-            if len(stamp) > 5 and stamp[-5] in "+-" and stamp[-3] != ":":
-                stamp = stamp[:-2] + ":" + stamp[-2:]  # Meta's +0000 -> +00:00
-            try:
-                out.append(dt.datetime.fromisoformat(stamp))
-            except ValueError:
-                continue
+            t = parse_meta_time(post.published_at)
+            if t is not None:
+                out.append(t)
     return out
 
 

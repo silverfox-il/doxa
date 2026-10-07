@@ -442,7 +442,16 @@ class Publisher:
         try:
             media_id = c.publish(parent)
         except ActionBlockedError as e:
-            return self._blocked(post, path, str(e))
+            # Seen 2026-10-04..07: Instagram answered "restricted" but the post WAS
+            # published, so retries made duplicates. Look before deciding.
+            live = self._live_on_instagram(post)
+            if live is None:
+                return self._blocked(post, path, str(e))
+            self.log(f"  Instagram said {e}, but the post is live: {live.get('permalink')}")
+            self._mark_published(post, path, str(live["id"]), live)
+            self.log(f"✓ published {post.id}: {post.permalink}")
+            self._story(post, path)
+            return 0
         except InstagramRetryableError as e:
             # Ambiguous: it may have gone through. Leave `publishing` for recovery.
             post.error = f"media_publish uncertain: {e}"
@@ -499,6 +508,27 @@ class Publisher:
         # Comma-separated when a teaser series published several stories.
         post.story_id = ",".join(ids) or None
         self._save(post, path, message)
+
+    def _live_on_instagram(self, post: Post) -> dict | None:
+        """The media this run just created for ``post``, if Instagram has it.
+
+        Matches the caption among the newest posts, and only media created in
+        the last 15 minutes, so an older copy of the same caption never counts.
+        """
+        want = normalize_caption(post.caption)
+        since = self.now - dt.timedelta(minutes=15)
+        for attempt in range(3):
+            self.sleep(10 * (attempt + 1))
+            try:
+                recent = self.client.recent_media()
+            except InstagramError as e:
+                self.log(f"  could not list recent media: {e}")
+                continue
+            for m in recent:
+                stamp = pacing.parse_meta_time(m.get("timestamp") or "")
+                if normalize_caption(m.get("caption") or "") == want and stamp and stamp >= since:
+                    return m
+        return None
 
     def _blocked(self, post: Post, path: Path, error: str) -> int:
         """Instagram restricted the account: keep the post for later, pause everything."""

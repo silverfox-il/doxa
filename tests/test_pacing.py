@@ -82,3 +82,32 @@ def test_pacing_holds_live_runs_but_dry_run_still_previews(repo, gh_calls):  # n
     assert any("a live run would publish" in line or "dry run complete" in line for line in logs)
     p2, client2, _, logs2 = publisher(repo)
     assert p2.run(dry_run=False) == 0 and "publish" not in client2.calls
+
+
+def test_restricted_error_but_post_is_live_counts_as_published(repo, gh_calls):  # noqa: F811
+    path = approved_post(repo)
+    p, client, committer, logs = publisher(repo)
+    client.fail["publish"] = [ActionBlockedError("code=4 subcode=2207051: restricted")]
+    caption = load_post(path).caption
+    client.recent = [
+        # An older copy of the same caption must not count...
+        {"id": "old", "caption": caption, "timestamp": "2026-09-20T06:00:00+0000"},
+        # ...the one created just now does.
+        {"id": "new-1", "caption": caption, "permalink": "https://www.instagram.com/p/NEW/",
+         "timestamp": p.now.astimezone(dt.UTC).strftime("%Y-%m-%dT%H:%M:%S+0000")},
+    ]
+    assert p.run(dry_run=False) == 0
+    post = load_post(path)
+    assert post.status == Status.published and post.ig_media_id == "new-1"
+    assert pacing.read_pause(repo) is None
+
+
+def test_restricted_error_and_not_live_pauses(repo, gh_calls):  # noqa: F811
+    path = approved_post(repo)
+    p, client, committer, logs = publisher(repo)
+    client.fail["publish"] = [ActionBlockedError("code=4 subcode=2207051: restricted")]
+    client.recent = [{"id": "old", "caption": load_post(path).caption,
+                      "timestamp": "2026-09-20T06:00:00+0000"}]
+    assert p.run(dry_run=False) == 1
+    assert load_post(path).status == Status.failed_retryable
+    assert pacing.read_pause(repo) is not None

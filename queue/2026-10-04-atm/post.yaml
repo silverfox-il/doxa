@@ -67,10 +67,10 @@ pillar: second-round
 approved_hash: sha256:c62475ffd35d9d4f5dd4fb2fcbd19d50b67708910011776f566da64b1cc012bc
 approved_by: owner
 approved_at: '2026-10-03T16:53:02+03:00'
-status: failed-retryable
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
-error: 'POST /17841416570144057/media_publish -> HTTP 403 code=4 subcode=2207051: We restrict certain activity to protect our community. Tell us if you think we made a mistake.'
+error: Instagram returned 403 2207051 but the post is live; next run matches it by caption
 story_id: null
 story_error: null
