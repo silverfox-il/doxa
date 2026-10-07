@@ -1,6 +1,6 @@
 id: 2026-10-08-silver-hair
 publish_at: 2026-10-08 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   השיער האפור שלך הוא לא בעיה. הוא נשק.
@@ -57,9 +57,9 @@ source:
   section: הטלפון, הכוס והאספרסו
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a63c97abf6a09f6d5b76d0eae72bedf81d461efd1e6ef068eaf444e2b2221e0d
+approved_by: auto
+approved_at: '2026-10-07T19:42:03+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
