@@ -135,3 +135,18 @@ def test_pool_take_copies_unused_photo_and_marks_it(repo):
     assert "1 left" in out.output
     assert "gym-1.jpg" in run(repo, "pool-take", "2026-10-12-b", "--tag", "city").output
     assert run(repo, "pool-take", "2026-10-13-c").exit_code == 1  # empty
+
+
+def test_changed_always_includes_pending_posts(repo):
+    # A superseded render run may have skipped these: still queued, or changed
+    # since approval. They must render on the next push even if untouched.
+    import subprocess
+
+    subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+    prebuilt(repo, "2026-09-25-queued")
+    prebuilt(repo, "2026-09-26-done", publish_at="2026-09-26 07:00", status="published")
+    subprocess.run(["git", "add", "-A"], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "x"],
+                   cwd=repo, check=True)
+    result = run(repo, "changed", "HEAD", "HEAD")  # empty diff
+    assert result.output.split() == ["2026-09-25-queued"]

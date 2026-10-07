@@ -31,6 +31,7 @@ from .queue import (
     QueueError,
     Status,
     approval_is_current,
+    load_all,
     dump_post,
     iter_post_files,
     load_post,
@@ -235,7 +236,15 @@ def changed(ctx: click.Context, base: str, head: str) -> None:
             ids = all_ids
         else:
             ids = post_ids_from_paths(proc.stdout.splitlines())
-    for pid in ids:
+    # GitHub drops superseded pending runs of the render workflow, so a post
+    # changed by an earlier push may never have been rendered. Always include
+    # posts that are still queued or whose content changed since approval.
+    pending = []
+    for path, post in load_all(_queue_dir(root)):
+        stale = post.status == Status.rendered and not approval_is_current(post, path.parent)
+        if post.status == Status.queued or stale:
+            pending.append(post.id)
+    for pid in sorted(set(ids) | set(pending)):
         click.echo(pid)
 
 
