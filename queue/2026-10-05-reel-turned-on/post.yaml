@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-turned-on
 publish_at: 2026-10-05 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אמרו לגברים: "תהיה נחמד, זה מה שנשים רוצות".
@@ -27,9 +27,9 @@ source:
   section: הנחמד מפסיד, תמיד
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5e55b461f0803fdd35525a19f1a2b0deb54cc5db5b02f681e5ee23f19d0f9e0e
+approved_by: auto
+approved_at: '2026-10-07T21:34:08+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

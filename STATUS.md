@@ -7,13 +7,13 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
-| 2026-10-11 | `2026-10-11-reel-second-round` | — | rendered | — | — |
+| 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-first-smile` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
-| 2026-10-09 | `2026-10-09-reel-garden` | — | rendered | — | — |
+| 2026-10-09 | `2026-10-09-reel-garden` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | rendered | — | — |
@@ -32,7 +32,7 @@
 | 2026-10-05 | `2026-10-05-tease-her-clock` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-approval-chase` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-reel-turned-on` | — | rendered | — | — |
+| 2026-10-05 | `2026-10-05-reel-turned-on` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-old-flame` | ✅ | published | [link](https://www.instagram.com/p/DeM5S_-Fsd6/) | — |
 | 2026-10-05 | `2026-10-05-status` | ✅ | published | [link](https://www.instagram.com/p/DeMrDn8FVIg/) | — |
 | 2026-10-04 | `2026-10-04-sleep-builds` | ✅ | published | [link](https://www.instagram.com/p/DeFYHAWj84c/) | — |
