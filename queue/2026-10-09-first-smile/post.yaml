@@ -1,9 +1,9 @@
-id: 2026-10-09-second-round
+id: 2026-10-09-first-smile
 publish_at: 2026-10-09 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
-  כשאתה בודד, אתה לא בוחר. אתה נאחז.
+  זה הדייט הרביעי שלכם, ואתה כבר מדמיין חופשה ביוון.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,49 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: כשאתה בודד, אתה לא בוחר. אתה נאחז.
+  title: זה הדייט הרביעי שלכם, ואתה כבר מדמיין חופשה ביוון.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: הבית ריק, הערב שקט מדי, ואתה רץ לראשונה שמחייכת אליך.
+  title: זה קורה לכולנו. אחרי שנים של בית שקט, כל חיוך מרגיש כמו נס.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: ואז אתה בולע כל צפרדע ומתעלם מכל נורה אדומה. רק לא לחזור לספה.
+  title: והרעב הזה מסוכן. הוא גורם לך לפספס דברים.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: כבר שילמת על גירושים אחד. בכסף, בדירה, בילדים כל סוף שבוע שני.
+  title: את זה שהיא מאחרת כל פעם. את זה שכל השיחות הן עליה. את האקס שעוד מתקשר.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: בסבב השני, זוגיות היא בחירה. לא חבל הצלה.
+  title: בפעם הראשונה בחרת מהר. הפעם יש לך זמן.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-09-second-round.jpg
   kicker: ''
-  title: 'קודם תמלא את החיים: חברים, ספורט, עבודה, בית משלך.'
-  accent: ''
-  body: ''
-  layout: center
-  items: []
-- background: assets/backgrounds/2026-10-09-second-round.jpg
-  kicker: ''
-  title: כשהחיים שלך מלאים, היא תוספת טובה. לא אוויר לנשימה.
+  title: ברוך הבא לסבב השני.
   accent: ''
   body: ''
   layout: center
@@ -64,10 +57,10 @@ source:
   section: סבב שני, והפעם עם עיניים פקוחות
 format: null
 pillar: second-round
-approved_hash: sha256:2368939cc9b54f364012f3242c813a28443b58530c041d7e05f7a222f8513fa1
-approved_by: owner
-approved_at: '2026-10-05T09:31:38+03:00'
-status: rendered
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
 ig_media_id: null
 permalink: null
 published_at: null

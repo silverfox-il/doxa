@@ -159,6 +159,12 @@ What the owner asked for, round by round:
   in a row: "תלמד לשחק את המשחק." / "ככה זה עובד. תתרגל." / "ברוך הבא לסבב השני." /
   "תתחיל להתנהג כמו הפרס." / "אל תהיה עוד אחד בתור." / "תן לה סיבה לרדוף." / "זה לא
   אכזרי. זה המשחק." / "אתה צריך להיות הסיבה – לא האפקט." The rest end on their own punch.
+- **Tell, don't lecture or judge.** Describe a scene he recognizes and land an
+  insight with a wink. Few imperatives, no "do this, do that" lists, no looking down
+  on him ("זה קורה לכולנו" beats "אתה מגוחך"). Rejected round 3 (2026-10-07) read as
+  instructions and judgment; approved rewrites read as a story.
+- **"אחי" sparingly:** at most once in a post, and not in most posts.
+- **The audience is 45 and up, not "50".** Say "אחרי 45", "בגיל שלך", or nothing.
 - **Avoid the copywriter tic.** "אתה לא X. אתה Y" at most once per post.
 - **45+ only in the technical details:** ages (women 37+), divorce, kids, alimony, the
   ex, the second round, the body after 50, "נשים"/"היא" instead of "בחורות". Never

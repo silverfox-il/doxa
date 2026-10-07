@@ -1,9 +1,9 @@
-id: 2026-10-07-numbers
+id: 2026-10-07-first-date-home
 publish_at: 2026-10-07 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
-  אתה לא מתאמן. אתה מבקר במכון.
+  דייט ראשון במסעדה יקרה? שלוש שעות של ראיון עבודה מול מלצר.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
@@ -11,49 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: אתה לא מתאמן. אתה מבקר במכון.
+  title: דייט ראשון במסעדה יקרה? שלוש שעות של ראיון עבודה מול מלצר.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: שנה שלמה אתה בא, מזיע, עושה "קצת חזה קצת יד", והולך הביתה מרוצה.
+  title: היא מנומסת, אתה מנומס, החשבון מגיע, וכל אחד חוזר לבית שלו.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: 'ותסתכל במראה: אותה כרס. אותן זרועות. אותו בן אדם מלפני שנה.'
+  title: 'עכשיו תדמיין: בקבוק יין טוב, מוזיקה שקטה, המרפסת שלך.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: זיעה זה לא התקדמות. עייפות זה לא התקדמות. התקדמות זה מספר שעולה.
+  title: אין מלצר שקוטע אתכם. אין שולחן ביניכם. אין לחץ להזמין קינוח.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: בשבוע שעבר 50 קילו? היום 52.5. ככה בונים גוף. לא לפי תחושה.
+  title: רק שניכם, והאווירה שאתה בנית.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-07-numbers.jpg
   kicker: ''
-  title: פתק בטלפון. כל משקל, כל חזרה. בלי זה אתה סתם עושה ספורט.
-  accent: ''
-  body: ''
-  layout: center
-  items: []
-- background: assets/backgrounds/2026-10-07-numbers.jpg
-  kicker: ''
-  title: המכון מלא בגברים שמרגישים שהם מתאמנים. תהיה זה שרואים עליו.
+  title: ובקיץ? חוף בערב, עם אותו בקבוק יין.
   accent: ''
   body: ''
   layout: center
@@ -63,11 +56,11 @@ source:
   file: 08.md
   section: להתאמן, לא "לעשות אימון"
 format: null
-pillar: body
-approved_hash: sha256:41379b3129c9353b0fb67b77a0f42ea3342b1ff1559a6209527d17c66337ab53
-approved_by: owner
-approved_at: '2026-10-05T09:31:34+03:00'
-status: rendered
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
 ig_media_id: null
 permalink: null
 published_at: null
