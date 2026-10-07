@@ -1,9 +1,9 @@
-id: 2026-10-05-nobody-watching
+id: 2026-10-05-bar-fear
 publish_at: 2026-10-05 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
-  אף אחד לא מסתכל עליך. תירגע.
+  אתה עומד בבר עשר דקות ומתכנן משפט פתיחה. בינתיים היא כבר בדרך הביתה.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,42 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אף אחד לא מסתכל עליך. תירגע.
+  title: אתה עומד בבר עשר דקות ומתכנן משפט פתיחה. בינתיים היא כבר בדרך הביתה.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אתה בטוח שכל הבר יראה אותך נכשל. בפועל? כל אחד עסוק בעצמו.
+  title: בראש שלך כל הבר מסתכל עליך. בפועל? אף אחד לא סופר אותך. כל אחד עסוק בקרחת שלו.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: החברים שלך? חושבים על הקרחת שלהם, לא על הפדיחה שלך.
+  title: '"ואם היא תגיד לא?" אז היא תגיד לא. מה יקרה, תמות?'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: והיא? אם זה לא היה מעניין, עד מחר בבוקר היא שכחה שדיברתם.
+  title: אתה לא ילד בן 16 בבר מצווה. עברת גירושים, מזונות ובית משפט. אישה אחת שלא בעניין לא תשבור אותך.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אף אחד לא מנהל רשימה של הפדיחות שלך. רק אתה.
+  title: ניגשת ונפלת? יש לך סיפור. לא ניגשת? יש לך עוד ערב מול נטפליקס.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-05-nobody-watching.jpg
   kicker: ''
-  title: אין קהל. אין שופטים. יש רק אתה, היא, ורגע אחד. תשתמש בו.
+  title: אז תפסיק לתכנן. תגיד "ערב טוב" ותראה מה קורה.
+  accent: ''
+  body: ''
+  layout: center
+  items: []
+- background: assets/backgrounds/2026-10-05-nobody-watching.jpg
+  kicker: ''
+  title: ככה זה עובד. תתרגל.
   accent: ''
   body: ''
   layout: center
@@ -57,10 +64,10 @@ source:
   section: לאף אחד לא באמת אכפת, וזה משחרר
 format: null
 pillar: mind
-approved_hash: sha256:afb44db3ae47fccfb9d480ffe1ef613cd4e66a83da35d99ee0f5b7f595006408
-approved_by: owner
-approved_at: '2026-10-05T09:31:25+03:00'
-status: rendered
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
 ig_media_id: null
 permalink: null
 published_at: null

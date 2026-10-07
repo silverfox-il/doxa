@@ -1,9 +1,9 @@
-id: 2026-10-06-prison
+id: 2026-10-06-last-seen
 publish_at: 2026-10-06 22:00
-approved: true
+approved: false
 mode: render
 caption: |-
-  אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
+  שלוש בלילה, ואתה שוב בוהה ב"נראתה לאחרונה" שלה. אחי, מספיק.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,49 +11,49 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אם לא רצחת ולא גנבת, תפסיק לחיות כמו אסיר.
+  title: שלוש בלילה, ואתה שוב בוהה ב"נראתה לאחרונה" שלה. אחי, מספיק.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אתה סוחב אשמה כאילו הגירושים היו פשע שלך בלבד.
+  title: היא לא ענתה יומיים, ואתה כבר כתבת שלוש טיוטות של הודעה "קלילה".
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: היה לך חלק? בטח. אבל כל החטא עליך? ממש לא.
+  title: 'כל הודעה כזאת צועקת דבר אחד: אין לי חיים חוץ ממך.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: והאשמה הזאת לוחשת לך שלא מגיע לך. לא כסף, לא אישה, לא שקט.
+  title: ושום דבר לא מכבה אישה מהר יותר מגבר שכל העולם שלו מסתובב סביבה.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אז אתה מתנצל על כל דבר. ומי שמתנצל על הכול, לא מושך אף אחת.
+  title: תסגור את הטלפון. תלך לחדר כושר. תצא עם החברים. תחיה.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: אתה רוצה ערב טוב, קרבה, חיים. מה לעזאזל רע בזה?
+  title: אם היא בעניין, היא תמצא אותך. אם לא, חסכת לעצמך חודש של בכי.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-06-prison.jpg
   kicker: ''
-  title: תצא מהכלא. המפתח אף פעם לא היה אצל מישהו אחר.
+  title: תתחיל להתנהג כמו הפרס.
   accent: ''
   body: ''
   layout: center
@@ -64,10 +64,10 @@ source:
   section: תצא מהכלא
 format: photo
 pillar: mind
-approved_hash: sha256:6360cd2f09a39e55b971b10339165f80a428af3a1aaebc436fcb387ad4f190f7
-approved_by: owner
-approved_at: '2026-10-05T09:31:30+03:00'
-status: rendered
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
 ig_media_id: null
 permalink: null
 published_at: null
