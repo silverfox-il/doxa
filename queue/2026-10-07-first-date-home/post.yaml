@@ -1,6 +1,6 @@
 id: 2026-10-07-first-date-home
 publish_at: 2026-10-07 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   דייט ראשון במסעדה יקרה? שלוש שעות של ראיון עבודה מול מלצר.
@@ -57,9 +57,9 @@ source:
   section: להתאמן, לא "לעשות אימון"
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fd1eda85142c5c15ede15704080e2fd14e1c7c3fb337f9849553ff48ea05db04
+approved_by: owner
+approved_at: '2026-10-07T20:25:16+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -65,8 +65,8 @@ source:
 format: bold
 pillar: dating
 approved_hash: sha256:8bf1651ac6881e6e18f2de5edc585746394333e4d60a84e49ada5b79dfb5d850
-approved_by: auto
-approved_at: '2026-10-07T19:11:01+03:00'
+approved_by: owner
+approved_at: '2026-10-07T20:25:09+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -16,7 +16,7 @@
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | rendered | — | — |
-| 2026-10-07 | `2026-10-07-first-date-home` | — | rendered | — | — |
+| 2026-10-07 | `2026-10-07-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-tease-big-bill` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-last-seen` | ✅ | rendered | — | — |
