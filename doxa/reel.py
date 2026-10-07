@@ -75,17 +75,24 @@ def _css() -> str:
         ".boxes p{background:#000;border-radius:40px;padding:26px 46px;margin:0;"
         "font-size:62px;font-weight:500;line-height:1.28;max-width:940px}"
         ".boxes .tag{bottom:90px;color:#c9a3a3}"
+        # Over a background video: transparent page, text with a soft shadow.
+        "html.video,html.video body{background:transparent}"
+        ".video p{text-shadow:0 2px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9)}"
+        ".video .tag{color:#e6e6e6;text-shadow:0 1px 8px rgba(0,0,0,.9)}"
     )
 
 
-def frame_html(lines: list[str], shown: int, tease: bool = False, look: str = "") -> str:
+def frame_html(
+    lines: list[str], shown: int, tease: bool = False, look: str = "", video: bool = False
+) -> str:
     """Frame with the first ``shown`` lines visible. Hidden lines keep their space,
     so text never jumps as new lines appear."""
     ps = "".join(
         f"<p class='{'' if i < shown else 'h'}'>{html.escape(t)}</p>" for i, t in enumerate(lines)
     )
     return (
-        f"<!DOCTYPE html><html dir='rtl' lang='he'><head><meta charset='utf-8'>"
+        f"<!DOCTYPE html><html dir='rtl' lang='he' class='{'video' if video else ''}'>"
+        "<head><meta charset='utf-8'>"
         f"<style>{_css()}</style></head><body class='{look or ('tease' if tease else '')}'>"
         f"<div class='w'>{ps}</div>"
         f"<div class='tag'>{html.escape(IG_HANDLE)}</div></body></html>"
@@ -102,18 +109,48 @@ def render_frames(reel: Reel, out_dir: Path) -> list[Path]:
         try:
             page = browser.new_page(viewport={"width": REEL_W, "height": REEL_H})
             for k in range(1, len(reel.lines) + 1):
-                doc = frame_html(reel.lines, k, tease=bool(reel.stories), look=reel.style or "")
+                doc = frame_html(
+                    reel.lines,
+                    k,
+                    tease=bool(reel.stories),
+                    look=reel.style or "",
+                    video=bool(reel.video),
+                )
                 page.set_content(doc, wait_until="load")
                 page.evaluate("document.fonts.ready")
                 out = out_dir / f"{k}.png"
-                page.screenshot(path=str(out), type="png")
+                page.screenshot(path=str(out), type="png", omit_background=bool(reel.video))
                 paths.append(out)
         finally:
             browser.close()
     return paths
 
 
-def ffmpeg_cmd(frames: list[Path], reel: Reel, music: Path, out: Path, concat: Path) -> list[str]:
+def find_video_dir(root: Path) -> Path | None:
+    """Folder with licensed background clips (private repo, like the music)."""
+    env = os.environ.get("DOXA_VIDEO_DIR")
+    candidates = [Path(env)] if env else []
+    candidates += [root / "private" / "video", root / "assets" / "video"]
+    if os.environ.get("DOXA_MUSIC_DIR"):
+        candidates.append(Path(os.environ["DOXA_MUSIC_DIR"]).parent / "video")
+    for c in candidates:
+        if c.is_dir() and any(c.glob("*.mp4")):
+            return c
+    return None
+
+
+# How much to darken the clip so white text stays readable (0 = none, 1 = black).
+VIDEO_SHADE = 0.5
+
+
+def ffmpeg_cmd(
+    frames: list[Path],
+    reel: Reel,
+    music: Path,
+    out: Path,
+    concat: Path,
+    video: Path | None = None,
+) -> list[str]:
     durations = [reel.per_line] * (len(frames) - 1) + [reel.hold]
     body = "".join(
         f"file '{f.resolve().as_posix()}'\nduration {d}\n"
@@ -122,6 +159,26 @@ def ffmpeg_cmd(frames: list[Path], reel: Reel, music: Path, out: Path, concat: P
     # The concat demuxer needs the last frame listed twice to honour its duration.
     concat.write_text(body + f"file '{frames[-1].resolve().as_posix()}'\n", encoding="utf-8")
     total = reel.duration
+    if video is not None:
+        # Text frames (with alpha) over the looped clip, cropped to 9:16 and shaded.
+        graph = (
+            f"[1:v]scale={REEL_W}:{REEL_H}:force_original_aspect_ratio=increase,"
+            f"crop={REEL_W}:{REEL_H},fps={FPS},setsar=1,"
+            f"drawbox=x=0:y=0:w=iw:h=ih:color=black@{VIDEO_SHADE}:t=fill[bg];"
+            f"[0:v]fps={FPS},format=rgba[txt];"
+            "[bg][txt]overlay=0:0:shortest=0,format=yuv420p[v]"
+        )
+        return [
+            "ffmpeg", "-y", "-loglevel", "error",
+            "-f", "concat", "-safe", "0", "-i", str(concat),
+            "-stream_loop", "-1", "-i", str(video),
+            "-stream_loop", "-1", "-i", str(music),
+            "-filter_complex", graph, "-map", "[v]", "-map", "2:a",
+            "-c:v", "libx264", "-profile:v", "high", "-crf", "21",
+            "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
+            "-af", f"afade=t=in:d=0.8,afade=t=out:st={total - 1.2:.2f}:d=1.2",
+            "-t", f"{total:.2f}", "-movflags", "+faststart", str(out),
+        ]  # fmt: skip
     return [
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "concat", "-safe", "0", "-i", str(concat),
@@ -146,10 +203,16 @@ def render_reel(post: Post, post_dir: Path, *, root: Path = REPO_ROOT) -> Path:
     music = music_dir / post.reel.music
     if not music.is_file():
         raise ReelError(f"music track not found: {post.reel.music}")
+    clip = None
+    if post.reel.video:
+        video_dir = find_video_dir(root)
+        if video_dir is None or not (video_dir / post.reel.video).is_file():
+            raise ReelError(f"background video not found: {post.reel.video}")
+        clip = video_dir / post.reel.video
     out = post_dir / VIDEO_NAME
     with tempfile.TemporaryDirectory() as tmp:
         frames = render_frames(post.reel, Path(tmp))
-        cmd = ffmpeg_cmd(frames, post.reel, music, out, Path(tmp) / "list.txt")
+        cmd = ffmpeg_cmd(frames, post.reel, music, out, Path(tmp) / "list.txt", clip)
         proc = subprocess.run(cmd, capture_output=True, text=True)
         if proc.returncode != 0:
             raise ReelError(f"ffmpeg failed: {proc.stderr.strip()[-500:]}")

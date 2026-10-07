@@ -182,6 +182,8 @@ class Reel(BaseModel):
     stories: list[str] | None = None
     # Look of the frames: None = default; "boxes" = text in black boxes on dark red.
     style: Literal["boxes"] | None = None
+    # Background clip (file name in the private video folder); None = flat colour.
+    video: str | None = None
 
     @property
     def duration(self) -> float:
@@ -211,6 +213,10 @@ class Reel(BaseModel):
         p = Path(self.music)
         if p.name != self.music or p.suffix.lower() != ".mp3":
             raise ValueError(f"music must be a bare .mp3 file name, got {self.music!r}")
+        if self.video is not None:
+            v = Path(self.video)
+            if v.name != self.video or v.suffix.lower() != ".mp4":
+                raise ValueError(f"video must be a bare .mp4 file name, got {self.video!r}")
         return self
 
 

@@ -188,3 +188,22 @@ def test_boxes_reel_style():
                              "style": "boxes"})
     assert r.style == "boxes"
     assert "class='boxes'" in reel.frame_html(r.lines, 1, look="boxes")
+
+
+def test_background_video_reel():
+    import pytest
+
+    from doxa import reel
+    from doxa.queue import Reel
+
+    base = {"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7}
+    r = Reel.model_validate({**base, "video": "gym-1.mp4"})
+    with pytest.raises(ValueError, match="bare .mp4"):
+        Reel.model_validate({**base, "video": "../x.mp4"})
+    from pathlib import Path
+
+    cmd = reel.ffmpeg_cmd([Path("1.png"), Path("2.png")], r, Path("m.mp3"), Path("o.mp4"),
+                          Path("l.txt"), Path("gym-1.mp4"))
+    graph = cmd[cmd.index("-filter_complex") + 1]
+    assert "overlay" in graph and "crop=1080:1920" in graph
+    assert "class='video'" in reel.frame_html(["א"], 1, video=True)
