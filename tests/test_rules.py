@@ -281,7 +281,7 @@ def test_two_ctas_block(book):
 
 
 def test_long_hook_blocks(book):
-    long_hook = "הוא לא עושה שום דבר לא בסדר. הוא פשוט לא מדליק. נחמד זה לא תכונה"
+    long_hook = "הוא לא עושה שום דבר לא בסדר. הוא פשוט לא מדליק. נחמד זה לא תכונה, זה הדבר"
     post = engine_post(long_hook, "נחמד זה לא תכונה, זה הדבר")
     assert ("block", "hook") in engine_found(post, book)
 

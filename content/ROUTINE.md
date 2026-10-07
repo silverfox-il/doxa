@@ -10,7 +10,9 @@ are a safety net; they do not replace them.
 - This repo, `silverfox-il/doxa` (public).
 - The private repo `silverfox-il/doxa-private`, checked out next to this one:
   - `book/*.md`: the book, new edition. **The only source of ideas, tone and positions.**
-  - `book/old/*.txt`: old edition, PDF extract with broken line order. Do **not** use it.
+  - `book/old/*.txt`: the OLD edition (PDF extract, broken line order). It sold 4,000
+    copies; its ideas and voice are the gold standard. Take IDEAS from it, never copy it.
+  - `voice/VOICE.md`: the voice bible built from the old edition. Read it fully first.
   - `rules_private.yaml`: identity terms. Read it, never copy it anywhere.
 - `content/used.yaml`: every line and book section already in the queue. Never repeat a line,
   and prefer sections no post has used yet.
@@ -131,40 +133,41 @@ Reels have no `format`.
 Every caption has exactly one line copied word for word from `config/cta.yaml`.
 Never write your own. Do not use the same line on two consecutive posts.
 
-## Writing: the book's voice (the owner's rule)
+## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
 
-The goal is an audience that is hooked on the content and learns from it, and
-that feels it is real. So the posts are **not** copied word for word. Each post
-takes one idea from one book section and turns it into insights and conclusions,
-written exactly the way the book talks:
+Thousands already read the old book, so posts must NOT repeat its wording: they'd
+be bored. Take ONE idea from the old edition (or the new one), keep the idea, and
+retell it fresh, in smart, human words, the way an experienced man who has been
+through it explains it to a friend over a beer. The owner approved this through
+review rounds; these posts are the reference, match them:
 
-- **The book's voice.** Its tone, slang, bluntness, attitude and rhythm: short
-  sentences, direct "you", spoken Hebrew, a punch in every line, no corporate or
-  coaching language, no softening. Read the section first and write like its author.
-  Strong book lines may be quoted as they are.
-- **Talk to him, not about him.** Always second person, like the book: "אם אתה ...
-  אז ...", "אם אתה עד כדי כך דפוק ש...", "אתה ...". Never preach in the third
-  person ("גבר ש...", "גבר מהוסס ...", "וגבר שלא ..."); `style_rules` blocks it.
-- **Correct, natural Hebrew.** Read every line aloud the way an Israeli guy talks.
-  Right verb forms ("היא צריכה להידלק ממך", never "להיות נדלקת"), no sentences that
-  sound translated, no stiff written register.
-- **One sharp thesis per post, a clear punchline.** Short, blunt sentences that
-  kick and open his eyes. No padding, no vague lines, no line whose point he has
-  to guess. The last slide lands like a punch. The owner approved this level
-  (2026-10-04); match it:
-  - "אתה לא מתאמן. אתה מבקר במכון." / "זיעה זה לא התקדמות. התקדמות זה מספר שעולה."
-  - "אתה לא יוצא לדייט. אתה ניגש למבחן." / "תלמד להיות לבד וליהנות מזה. רק אז אתה
-    בוחר, ולא מתחנן."
-  - "ראית זוג ושאלת: מה היא עושה איתו?" / "אתה לא צריך להיות יפה. אתה צריך להיות
-    מישהו."
-  Before queuing, reread every line and ask: is the point obvious in one read? Does
-  it sting? Would an Israeli guy actually say it like that? If not, rewrite it.
-- **The book's positions only.** Never invent advice the book does not give, and
-  never contradict it. Every post keeps `source:` with the section its idea comes from.
-- **One idea per post.** Spread across the chapters: `02.md` (the market, the magnet,
-  money, looks), `06.md` (approaching, fear), `08.md` (body, gym, sleep), `11.md`
-  (second round, red flags), `01.md`.
-- Skip `07.md` (explicit sex): Instagram would restrict the account.
+- `2026-10-05-what-looking-for` ("מה אתה מחפש?" היא שואלת. ופה רוב הגברים נופלים.)
+- `2026-10-06-first-message` (אם כבר החלטת לשלוח לה הודעה, אז לפחות תעשה את זה נכון:)
+- `2026-10-05-approval-chase` (אתה בודק כל חמש דקות אם היא מרוצה ממך? אחי, אתה לא מלצר.)
+- `2026-10-05-old-flame` (יש אקס אחד שהיא עוד לא שחררה...)
+
+What the owner asked for, round by round:
+
+- **Spice.** Be a bit cheeky, a bit cynical, a bit chauvinist in a charming way: a
+  real man's man, a charmer. Tease her, never humiliate women as a group.
+- **Bluntness that lands.** Short lines, real situations ("תראי, אני אחרי גירושים, אני
+  עוד לא יודע, תלוי..."), dialogue in quotes, a concrete image, one street word.
+- **Open straight into the situation.** "אם כבר החלטת ..., אז לפחות תעשה את זה נכון:"
+- **Clear in one read.** If a line needs a second read, rewrite it. Natural spoken
+  Hebrew, right verb forms ("להידלק", "וזה מייבש אותה ממש מהר").
+- **Closers rotate, and only about one post in three gets one.** Never the same twice
+  in a row: "תלמד לשחק את המשחק." / "ככה זה עובד. תתרגל." / "ברוך הבא לסבב השני." /
+  "תתחיל להתנהג כמו הפרס." / "אל תהיה עוד אחד בתור." / "תן לה סיבה לרדוף." / "זה לא
+  אכזרי. זה המשחק." / "אתה צריך להיות הסיבה – לא האפקט." The rest end on their own punch.
+- **Avoid the copywriter tic.** "אתה לא X. אתה Y" at most once per post.
+- **45+ only in the technical details:** ages (women 37+), divorce, kids, alimony, the
+  ex, the second round, the body after 50, "נשים"/"היא" instead of "בחורות". Never
+  soften the expressions, humor, rhythm or attitude.
+- **Talk to him.** Second person; never a line that starts with "גבר".
+- **The book's positions only.** Never invent advice the book does not give. Keep
+  `source:` with the section the idea comes from (internal only, never in the post).
+- **Spread across topics:** dating, approaching, texting, red flags, body, the head
+  after divorce, money and status. Skip anything explicitly sexual.
 
 ### Crude words: keep the edge, mask the word
 

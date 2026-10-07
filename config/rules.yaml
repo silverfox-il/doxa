@@ -69,7 +69,7 @@ min_woman_age: 37
 engine_from: "2026-10-04 00:00"
 # Slide 1 / reel line 1 is the hook: one punchy line the viewer reads first.
 hook_min_words: 3
-hook_max_words: 12
+hook_max_words: 15  # owner-approved hooks run to 14 words
 
 # Owner's rule (2026-10-03): posts are written in the book's voice (its insights,
 # conclusions, slang, bluntness and attitude), not copied word for word.
@@ -103,8 +103,6 @@ masked_words:
 # "אם אתה ... אז ...", "אם אתה עד כדי כך דפוק ש...", never preach ABOUT "a man who".
 # Plus Hebrew mistakes the owner caught. Checked on posts not yet published.
 style_rules:
-  - match: "re:(?<![א-ת])ו?גבר ש"
-    write: "talk to him: 'אם אתה ...', not 'גבר ש...'"
   - match: "re:^ו?גבר "
     write: "talk to him: open with 'אתה' / 'אם אתה', not 'גבר ...'"
   - match: "re:להיות נדלק"
