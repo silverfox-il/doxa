@@ -60,7 +60,7 @@ pillar: dating
 approved_hash: null
 approved_by: null
 approved_at: null
-status: queued
+status: rendered
 ig_media_id: null
 permalink: null
 published_at: null

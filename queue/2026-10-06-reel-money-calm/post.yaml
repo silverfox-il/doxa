@@ -1,6 +1,6 @@
 id: 2026-10-06-reel-money-calm
 publish_at: 2026-10-06 17:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אישה מרגישה מתי אתה לחוץ מכסף. עוד לפני שאתה פותח את הפה.
@@ -26,9 +26,9 @@ source:
   section: אפשר גם בלי, אבל לא בגיל שלך
 format: null
 pillar: status
-approved_hash: sha256:f1a35247210735da703ec2a9b8dbdff8ed877dadfb37dcdbde83285f2d7f56a5
-approved_by: owner
-approved_at: '2026-10-05T09:31:31+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
