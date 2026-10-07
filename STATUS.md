@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-07-reel-not-your-project` at 2026-10-07 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 0/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -39,7 +39,7 @@
 | 2026-10-04 | `2026-10-04-fear-stays` | ✅ | failed-retryable | — | POST /17841416570144057/media_publish -> HTTP 403 code=4 subcode=2207051: We … |
 | 2026-10-04 | `2026-10-04-tease-beer` | ✅ | published | [link](https://www.instagram.com/reel/DeE8mxpjkl8/) | — |
 | 2026-10-04 | `2026-10-04-reel-first-line` | ✅ | published | [link](https://www.instagram.com/reel/DeE1vRsEhDW/) | — |
-| 2026-10-04 | `2026-10-04-atm` | ✅ | publishing | — | — |
+| 2026-10-04 | `2026-10-04-atm` | ✅ | failed-retryable | — | POST /17841416570144057/media_publish -> HTTP 403 code=4 subcode=2207051: We … |
 | 2026-10-04 | `2026-10-04-reel-feed` | ✅ | published | [link](https://www.instagram.com/reel/DeEaRHIiLFb/) | — |
 | 2026-10-04 | `2026-10-04-muscle-insurance` | ✅ | published | [link](https://www.instagram.com/p/DeEMm-gm4tI/) | — |
 | 2026-10-04 | `2026-10-04-give-not-take` | ✅ | published | [link](https://www.instagram.com/p/DeD-3Ajm9yF/) | — |
