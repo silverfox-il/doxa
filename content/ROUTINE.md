@@ -156,6 +156,14 @@ talk to him); describe, never instruct; short lines; one line that stays in the 
 often a verbatim new-book line. Approved examples: `2026-10-05-reel-turned-on`,
 `2026-10-09-reel-garden`, `2026-10-11-reel-second-round`.
 
+Every 13:00 reel sets `reel.video` to a background clip from `doxa-private/video/`
+(licensed Pexels clips, see its CREDITS.md) that fits the text: `gray-hair`,
+`gym-tattoo`, `gym-workout`, `gym-treadmill`, `phone-texting`, `phone-bed`,
+`wine-pour`, `wine-sea`, `bar-cheers`, `dinner-candles`, `coffee-garden`,
+`coffee-window`, `city-night-walk`, `city-crossing`, `drive-tunnel`, `beach-walk`,
+`beach-sunset`, `suit-watch`, `window-silhouette` (file name + `.mp4`). Don't use the
+same clip two days in a row.
+
 ## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
 
 Thousands already read the old book, so posts must NOT repeat its wording: they'd
