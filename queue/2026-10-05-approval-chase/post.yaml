@@ -1,6 +1,6 @@
 id: 2026-10-05-approval-chase
 publish_at: 2026-10-05 17:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה בודק כל חמש דקות אם היא מרוצה ממך? אחי, אתה לא מלצר.
@@ -64,9 +64,9 @@ source:
   section: כסף (Money)
 format: tweet
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6d36d8b9694329a64443784c87f15ff4359b993a0d5e875d58ad8cfed6617998
+approved_by: auto
+approved_at: '2026-10-07T19:11:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

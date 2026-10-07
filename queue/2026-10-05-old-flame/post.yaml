@@ -1,6 +1,6 @@
 id: 2026-10-05-old-flame
 publish_at: 2026-10-05 11:00
-approved: false
+approved: true
 mode: render
 caption: |-
   יש אקס אחד שהיא עוד לא שחררה. ואתה לא תמחק אותו עם זר פרחים.
@@ -64,9 +64,9 @@ source:
   section: 'נורה 3: אף פעם לא אשמה בכלום'
 format: photo
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e0a65ab597935adf26c9f846f63aa98146d8d6d30506b68b674ebcdbd1dfdd0f
+approved_by: auto
+approved_at: '2026-10-07T19:11:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

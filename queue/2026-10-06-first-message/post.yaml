@@ -1,6 +1,6 @@
 id: 2026-10-06-first-message
 publish_at: 2026-10-06 15:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אם כבר החלטת לשלוח לה הודעה, אז לפחות תעשה את זה נכון:
@@ -64,9 +64,9 @@ source:
   section: היא צריכה לשאול את עצמה "למה דווקא אני?"
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6fc5adfc6e438e9c939394f7c78a86bcde131198f7d39440ff2395af0777da5d
+approved_by: auto
+approved_at: '2026-10-07T19:11:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

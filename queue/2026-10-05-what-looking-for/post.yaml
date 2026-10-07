@@ -1,6 +1,6 @@
 id: 2026-10-05-what-looking-for
 publish_at: 2026-10-05 22:00
-approved: false
+approved: true
 mode: render
 caption: |-
   "מה אתה מחפש?" היא שואלת. ופה רוב הגברים נופלים.
@@ -64,9 +64,9 @@ source:
   section: לדעת בדיוק למה באת
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8bf1651ac6881e6e18f2de5edc585746394333e4d60a84e49ada5b79dfb5d850
+approved_by: auto
+approved_at: '2026-10-07T19:11:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
