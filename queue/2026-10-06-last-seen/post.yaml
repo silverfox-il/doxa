@@ -1,6 +1,6 @@
 id: 2026-10-06-last-seen
 publish_at: 2026-10-06 22:00
-approved: false
+approved: true
 mode: render
 caption: |-
   שלוש בלילה, ואתה שוב בוהה ב"נראתה לאחרונה" שלה. אחי, מספיק.
@@ -64,9 +64,9 @@ source:
   section: תצא מהכלא
 format: photo
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:eba5e1925ce6c35924114e775ad9f189b1df7839236a4b65dd245fb15aa71628
+approved_by: auto
+approved_at: '2026-10-07T20:03:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-turned-on
 publish_at: 2026-10-05 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   נחמד זה לא תכונה. זה כמו להתקלח.
@@ -26,9 +26,9 @@ source:
   section: הנחמד מפסיד, תמיד
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e1c852a7419b043c36b2c3138796ca6a847009c5a4fb84afd8ec3f9356b961c0
+approved_by: auto
+approved_at: '2026-10-07T20:03:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

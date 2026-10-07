@@ -1,6 +1,6 @@
 id: 2026-10-06-gym-world
 publish_at: 2026-10-06 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   חדר כושר אחרי 45 זה עולם מוזר. מוזיקה רועשת, ילדים בגופיות, ואתה עם המגבת.
@@ -50,9 +50,9 @@ source:
   section: מה היא רואה לפני שאתה פותח את הפה
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e0a019ebe0ed5cfb35572d31e69550774cac56d83c2f367db856bbc64f993f8c
+approved_by: auto
+approved_at: '2026-10-07T20:03:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

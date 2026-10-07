@@ -1,6 +1,6 @@
 id: 2026-10-10-red-light
 publish_at: 2026-10-10 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   כל אחת מגיעה עם משהו. גם אתה, אגב.
@@ -57,9 +57,9 @@ source:
   section: אחד זה מידע, שלושה זו החלטה
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ee772e56ab2e51d6d21ea5319d11f5dde1a78ebf5b7e32f49057d838a87f0cb2
+approved_by: auto
+approved_at: '2026-10-07T20:03:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
