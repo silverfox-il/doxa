@@ -67,10 +67,10 @@ pillar: second-round
 approved_hash: sha256:c62475ffd35d9d4f5dd4fb2fcbd19d50b67708910011776f566da64b1cc012bc
 approved_by: owner
 approved_at: '2026-10-03T16:53:02+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
-error: Instagram returned 403 2207051 but the post is live; next run matches it by caption
+status: published
+ig_media_id: '18075291623767649'
+permalink: https://www.instagram.com/p/DeEoDVYFoEJ/
+published_at: 2026-10-04T12:23:48+0000
+error: null
 story_id: null
 story_error: null
