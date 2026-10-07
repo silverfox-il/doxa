@@ -67,10 +67,10 @@ pillar: second-round
 approved_hash: sha256:e0a65ab597935adf26c9f846f63aa98146d8d6d30506b68b674ebcdbd1dfdd0f
 approved_by: owner
 approved_at: '2026-10-07T20:25:04+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18039448856848242'
+permalink: https://www.instagram.com/p/DeM5S_-Fsd6/
+published_at: 2026-10-07T17:28:26+0000
 error: null
 story_id: null
 story_error: null
