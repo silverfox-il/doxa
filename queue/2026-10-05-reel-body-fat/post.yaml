@@ -1,6 +1,6 @@
 id: 2026-10-05-reel-body-fat
 publish_at: 2026-10-05 15:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   הכרס מדברת לפניך. עוד לפני שאמרת שלום.
@@ -26,9 +26,9 @@ source:
   section: אחוז שומן
 format: null
 pillar: body
-approved_hash: sha256:352d29f48271fce1f9af77900824f293541594ea445e228a9a9bcb830e81fd9f
-approved_by: owner
-approved_at: '2026-10-05T09:31:26+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

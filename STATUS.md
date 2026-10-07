@@ -12,13 +12,13 @@
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-first-smile` | — | queued | — | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
-| 2026-10-09 | `2026-10-09-reel-garden` | ✅ | rendered | — | — |
+| 2026-10-09 | `2026-10-09-reel-garden` | — | rendered | — | — |
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | rendered | — | — |
-| 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | rendered | — | — |
+| 2026-10-08 | `2026-10-08-reel-discomfort` | — | rendered | — | — |
 | 2026-10-07 | `2026-10-07-first-date-home` | — | queued | — | — |
 | 2026-10-07 | `2026-10-07-tease-big-bill` | ✅ | rendered | — | — |
-| 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | rendered | — | — |
+| 2026-10-07 | `2026-10-07-reel-not-your-project` | — | rendered | — | — |
 | 2026-10-06 | `2026-10-06-last-seen` | — | queued | — | — |
 | 2026-10-06 | `2026-10-06-gym-world` | — | queued | — | — |
 | 2026-10-06 | `2026-10-06-tease-elephant` | ✅ | rendered | — | — |
@@ -31,7 +31,7 @@
 | 2026-10-05 | `2026-10-05-bar-fear` | — | queued | — | — |
 | 2026-10-05 | `2026-10-05-tease-her-clock` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-approval-chase` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | rendered | — | — |
+| 2026-10-05 | `2026-10-05-reel-body-fat` | — | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-turned-on` | ⚠️ stale | rendered | — | — |
 | 2026-10-05 | `2026-10-05-old-flame` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-status` | ✅ | published | [link](https://www.instagram.com/p/DeMrDn8FVIg/) | — |
