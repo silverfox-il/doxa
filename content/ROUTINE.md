@@ -163,6 +163,11 @@ What the owner asked for, round by round:
   insight with a wink. Few imperatives, no "do this, do that" lists, no looking down
   on him ("זה קורה לכולנו" beats "אתה מגוחך"). Rejected round 3 (2026-10-07) read as
   instructions and judgment; approved rewrites read as a story.
+- **No clever metaphors that need decoding.** The owner rejected every line he had
+  to stop and think about: "תמדוד אותך כמו דירה", "ככה רק קונים מקום בתור", "החולצה
+  המהוהה" (literary word). Fixed versions say it plainly: "תעשה לך ראיון עבודה לתפקיד
+  'בעל' כבר בדייט הראשון", "ככה קונים תשומת לב. לא משיכה.", "החולצה הדהויה". Use only
+  words a 45+ Israeli says out loud; if an image needs explaining, drop it.
 - **"אחי" sparingly:** at most once in a post, and not in most posts.
 - **The audience is 45 and up, not "50".** Say "אחרי 45", "בגיל שלך", or nothing.
 - **Avoid the copywriter tic.** "אתה לא X. אתה Y" at most once per post.
