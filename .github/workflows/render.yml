@@ -58,6 +58,8 @@ jobs:
           pip install -e .
           python -m playwright install --with-deps chromium
           command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+          # Reels may carry an emoji (e.g. "👏"); Heebo has none, so install a color emoji font.
+          sudo apt-get install -y -q fonts-noto-color-emoji
 
       - name: Pick posts
         id: pick

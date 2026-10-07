@@ -105,6 +105,7 @@ masked_words:
 style_rules:
   - match: "re:^ו?גבר "
     write: "talk to him: open with 'אתה' / 'אם אתה', not 'גבר ...'"
+    carousels_only: true   # reels may state truths about men in third person
   - match: "re:להיות נדלק"
     write: "write 'להידלק' (היא צריכה להידלק ממך)"
 

@@ -451,3 +451,15 @@ def test_tease_series_may_generalize_about_women_regular_posts_may_not():
                                                          "stories": ["שני"]})
     )
     assert "sensitive" in [f.rule for f in rules.check_post(slur, VOICE, None)]
+
+
+def test_third_person_men_allowed_in_reels_not_carousels():
+    from doxa.queue import Post
+
+    from .conftest import render_post_data
+
+    line = "גבר לא עוזב אישה רק בגלל שהיא הפסיקה להיות מושלמת."
+    reel = {"lines": [line, "הוא עוזב בגלל חוסר כבוד."], "music": "a.mp3", "per_line": 4, "hold": 7}
+    as_reel = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
+    assert "style" not in [f.rule for f in rules.check_post(as_reel, VOICE, None)]
+    assert ("block", "style") in voice(line, "תפסיק לבקש, תתחיל להחליט.")

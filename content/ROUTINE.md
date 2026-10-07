@@ -29,7 +29,9 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 
 ## What to produce
 
-1. Find the last `publish_at` date in `queue/*/post.yaml`. Call the next day D1.
+1. D1 is the first day from tomorrow on that does not yet have all three daily slots
+   (13:00, 18:00, 20:00) in `queue/`. Fill only the empty slots; never move or replace
+   an existing post.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
 3. For D1 through D7 create:
    - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
@@ -142,6 +144,17 @@ Reels have no `format`.
 
 Every caption has exactly one line copied word for word from `config/cta.yaml`.
 Never write your own. Do not use the same line on two consecutive posts.
+
+## Reels: truths about men and women (the owner's rule, 2026-10-07)
+
+Reels (13:00) follow the approach of @shiraz_mizrahi777, whose text reels reach 5K to
+37K views on 9K followers, combined with the NEW book (quote it freely):
+plain everyday Hebrew, no slang to decode; a claim, a contrast, an ironic sting
+("אמרו לגברים: ... אז הם ... והיא? ... תודה על העצה 👏"); truths about men and women
+in the third person ("רוב הגברים...", "גבר לא...") are welcome HERE (carousels still
+talk to him); describe, never instruct; short lines; one line that stays in the head,
+often a verbatim new-book line. Approved examples: `2026-10-05-reel-turned-on`,
+`2026-10-09-reel-garden`, `2026-10-11-reel-second-round`.
 
 ## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
 

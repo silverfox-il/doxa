@@ -80,7 +80,7 @@ class RulesConfig:
     # The book's voice talks TO the reader ("אם אתה ..."), never ABOUT "a man
     # who ..."; plus known Hebrew mistakes. [{match, write}], checked on posts
     # not yet published.
-    style_rules: list[dict[str, str]] = field(default_factory=list)
+    style_rules: list[dict] = field(default_factory=list)
 
     @classmethod
     def load(cls, public: Path, private: Path | None = None) -> RulesConfig:
@@ -200,6 +200,8 @@ def check_post(post: Post, cfg: RulesConfig, book: Book | None) -> list[Finding]
                 )
         if post.status.value not in ("published", "publishing"):
             for rule in cfg.style_rules:
+                if rule.get("carousels_only") and post.mode == Mode.reel:
+                    continue
                 m = _word_re(rule["match"]).search(text)
                 if m:
                     add(BLOCK, "style", where, f"{m.group(0).strip()!r}: {rule['write']}")
