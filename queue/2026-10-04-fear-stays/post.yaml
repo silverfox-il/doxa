@@ -67,10 +67,10 @@ pillar: mind
 approved_hash: sha256:fc545d698c4aba572ca8d8dc5fad4ea4b5e421541fd73f545482b4b9e073fa5e
 approved_by: owner
 approved_at: '2026-10-03T16:53:02+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
-error: Instagram returned 403 2207051 but the post is live; next run matches it by caption
+status: published
+ig_media_id: '18109353212177060'
+permalink: https://www.instagram.com/p/DeFKbs-oJJG/
+published_at: 2026-10-04T17:24:15+0000
+error: null
 story_id: null
 story_error: null

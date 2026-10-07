@@ -36,7 +36,7 @@
 | 2026-10-05 | `2026-10-05-never-her-fault` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-status` | ✅ | rendered | — | — |
 | 2026-10-04 | `2026-10-04-sleep-builds` | ✅ | publishing | — | Instagram returned 403 2207051 but the post is live; next run matches it by c… |
-| 2026-10-04 | `2026-10-04-fear-stays` | ✅ | publishing | — | Instagram returned 403 2207051 but the post is live; next run matches it by c… |
+| 2026-10-04 | `2026-10-04-fear-stays` | ✅ | published | [link](https://www.instagram.com/p/DeFKbs-oJJG/) | — |
 | 2026-10-04 | `2026-10-04-tease-beer` | ✅ | published | [link](https://www.instagram.com/reel/DeE8mxpjkl8/) | — |
 | 2026-10-04 | `2026-10-04-reel-first-line` | ✅ | published | [link](https://www.instagram.com/reel/DeE1vRsEhDW/) | — |
 | 2026-10-04 | `2026-10-04-atm` | ✅ | published | [link](https://www.instagram.com/p/DeEoDVYFoEJ/) | — |
