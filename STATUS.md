@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-07-numbers` at 2026-10-07 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 0/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -34,7 +34,7 @@
 | 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-reel-turned-on` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-never-her-fault` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-status` | ✅ | publishing | — | — |
+| 2026-10-05 | `2026-10-05-status` | ✅ | published | [link](https://www.instagram.com/p/DeMrDn8FVIg/) | — |
 | 2026-10-04 | `2026-10-04-sleep-builds` | ✅ | published | [link](https://www.instagram.com/p/DeFYHAWj84c/) | — |
 | 2026-10-04 | `2026-10-04-fear-stays` | ✅ | published | [link](https://www.instagram.com/p/DeFKbs-oJJG/) | — |
 | 2026-10-04 | `2026-10-04-tease-beer` | ✅ | published | [link](https://www.instagram.com/reel/DeE8mxpjkl8/) | — |
