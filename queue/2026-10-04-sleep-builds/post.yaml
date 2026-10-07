@@ -60,10 +60,10 @@ pillar: body
 approved_hash: sha256:f22178a84458bb68de23dd26d45fa4bb5f74a4b475dd5674bb696c74f41358d9
 approved_by: owner
 approved_at: '2026-10-03T16:53:05+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
-error: Instagram returned 403 2207051 but the post is live; next run matches it by caption
+status: published
+ig_media_id: '18058272368551108'
+permalink: https://www.instagram.com/p/DeFYHAWj84c/
+published_at: 2026-10-04T19:23:44+0000
+error: null
 story_id: null
 story_error: null
