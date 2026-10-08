@@ -2,13 +2,13 @@ id: 2026-10-15-reel-just-sleep
 publish_at: 2026-10-15 13:00
 approved: false
 mode: reel
-pillar: body
 caption: |-
   כל אימון מרגיש כמו לסחוב מקרר במדרגות.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+slides: []
 reel:
   lines:
   - כל אימון מרגיש כמו לסחוב מקרר במדרגות.
@@ -18,9 +18,23 @@ reel:
   - אחרי שלושה שבועות המשקלים התחילו לזוז
   - הוא לא חזר מחופשה. הוא פשוט התחיל לישון.
   music: bombinsound-summer-motivation-554578.mp3
-  video: window-silhouette.mp4
   per_line: 1.9
   hold: 4.0
+  stories: null
+  style: null
+  video: window-silhouette.mp4
 source:
   file: 08.md
   section: שגרה של גבר שישן טוב
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

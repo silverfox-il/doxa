@@ -2,13 +2,13 @@ id: 2026-10-13-reel-snoring
 publish_at: 2026-10-13 13:00
 approved: false
 mode: reel
-pillar: body
 caption: |-
   אם האקסית עברה לישון בסלון "בגלל הרעש"
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+slides: []
 reel:
   lines:
   - אם האקסית עברה לישון בסלון "בגלל הרעש"
@@ -17,9 +17,23 @@ reel:
   - והבטן, אגב, מחמירה את זה.
   - גברים שהתחילו לטפל בזה מספרים שהם קיבלו את החיים שלהם בחזרה.
   music: fassounds-escape-your-love-upbeat-fashion-pop-dance-412230.mp3
-  video: phone-bed.mp4
   per_line: 2.2
   hold: 4.0
+  stories: null
+  style: null
+  video: phone-bed.mp4
 source:
   file: 08.md
   section: הנחירות שהאקסית התלוננה עליהן
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

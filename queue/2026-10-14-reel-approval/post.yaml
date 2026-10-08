@@ -2,13 +2,13 @@ id: 2026-10-14-reel-approval
 publish_at: 2026-10-14 13:00
 approved: false
 mode: reel
-pillar: mind
 caption: |-
   "אתה ממש מקסים, אבל אני לא מרגישה שזה זה"
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - '"אתה ממש מקסים, אבל אני לא מרגישה שזה זה"'
@@ -17,9 +17,23 @@ reel:
   - והיא מרגישה את זה, כי היא מרגישה מה שאתה מרגיש
   - ואין דבר פחות מושך בעולם מגבר שמבקש אישור.
   music: leberch-motivation-517463.mp3
-  video: phone-texting.mp4
   per_line: 2.2
   hold: 4.0
+  stories: null
+  style: null
+  video: phone-texting.mp4
 source:
   file: 02.md
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

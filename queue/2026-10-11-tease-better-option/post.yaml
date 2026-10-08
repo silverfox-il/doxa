@@ -2,13 +2,13 @@ id: 2026-10-11-tease-better-option
 publish_at: 2026-10-11 18:00
 approved: false
 mode: reel
-pillar: dating
 caption: |-
   אישה, ברוב המקרים, מחפשת את הגבר הכי טוב שהיא יכולה להשיג.
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - אישה, ברוב המקרים, מחפשת את הגבר הכי טוב שהיא יכולה להשיג.
@@ -17,12 +17,26 @@ reel:
   - ובאותו ערב לענות לשלושה גברים אחרים בווטסאפ.
   - היא לא משקרת לך בהכרח, היא פשוט עדיין בודקת את הסחורה
   - ואתה עוד פריט על המדף.
-  stories:
-  - אחרי פוסט אחד בקבוצת "גרושים וגרושות 45 פלוס" עם תמונה טובה, יש לה יותר אופציות ממה שהייתה לה בגיל 22 בשיא שלה.
-  - אתה עובד כל יום להיות הגבר ששואלת את עצמה עליו "האם זה הכי טוב שיש לי?", ועונה "כן".
   music: leberch-motivation-piano-580533.mp3
   per_line: 1.8
   hold: 4.0
+  stories:
+  - אחרי פוסט אחד בקבוצת "גרושים וגרושות 45 פלוס" עם תמונה טובה, יש לה יותר אופציות ממה שהייתה לה בגיל 22 בשיא שלה.
+  - אתה עובד כל יום להיות הגבר ששואלת את עצמה עליו "האם זה הכי טוב שיש לי?", ועונה "כן".
+  style: null
+  video: null
 source:
   file: 02.md
   section: היא תמיד בודקת אם יש יותר טוב
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

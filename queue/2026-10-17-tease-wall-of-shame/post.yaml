@@ -2,13 +2,13 @@ id: 2026-10-17-tease-wall-of-shame
 publish_at: 2026-10-17 18:00
 approved: false
 mode: reel
-pillar: status
 caption: |-
   הוא בטוח שהוא נחמד וחם, והיא רואה סבא.
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - הוא בטוח שהוא נחמד וחם, והיא רואה סבא.
@@ -17,12 +17,26 @@ reel:
   - כל התמונות שלו מאותה זווית, מהמושב של הנהג
   - והיא רואה גבר שאין לו חיים מחוץ לרכב ואין לו אף אחד שיצלם אותו.
   - והוא עוד מתפלא למה אף אחת לא עונה לו.
-  stories:
-  - אישה שנכנסת לפרופיל ריק לא חושבת "הוא מסתורי", היא חושבת "הוא או נשוי, או משעמם, או מסתיר משהו".
-  - מה היא רואה בשלוש השניות הראשונות?
   music: solarflex-motivation-569543.mp3
   per_line: 1.8
   hold: 4.0
+  stories:
+  - אישה שנכנסת לפרופיל ריק לא חושבת "הוא מסתורי", היא חושבת "הוא או נשוי, או משעמם, או מסתיר משהו".
+  - מה היא רואה בשלוש השניות הראשונות?
+  style: null
+  video: null
 source:
   file: 02.md
   section: 'הקיר של הבושה: מה גברים בגילך עושים ברשת'
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

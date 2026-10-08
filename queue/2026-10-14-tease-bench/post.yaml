@@ -2,13 +2,13 @@ id: 2026-10-14-tease-bench
 publish_at: 2026-10-14 18:00
 approved: false
 mode: reel
-pillar: second-round
 caption: |-
   יש נשים שאף פעם לא באמת נמצאות רק איתך.
 
   מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - יש נשים שאף פעם לא באמת נמצאות רק איתך.
@@ -18,12 +18,26 @@ reel:
   - הבחור מקבוצת הריצה שהיא "סתם מדברת איתו".
   - כל אחד לבד נראה תמים, וביחד זה ספסל מחליפים מסודר
   - מוכן לשחקן הבא אם השחקן הנוכחי יפצע.
-  stories:
-  - אישה שמחזיקה ספסל תהיה מעורפלת, תתגונן, תגיד שאתה "קנאי".
-  - ואם האינסטינקט שלה הוא להשאיר דלת פתוחה, שום שיחה רצינית לא תסגור אותה.
   music: atlasaudio-motivation-motivation-music-576647.mp3
   per_line: 1.6
   hold: 4.0
+  stories:
+  - אישה שמחזיקה ספסל תהיה מעורפלת, תתגונן, תגיד שאתה "קנאי".
+  - ואם האינסטינקט שלה הוא להשאיר דלת פתוחה, שום שיחה רצינית לא תסגור אותה.
+  style: null
+  video: null
 source:
   file: 11.md
   section: 'נורה 17: הספסל של המחליפים'
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

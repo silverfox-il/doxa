@@ -7,6 +7,26 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-17 | `2026-10-17-light-jab` | — | rendered | — | — |
+| 2026-10-17 | `2026-10-17-tease-wall-of-shame` | — | rendered | — | — |
+| 2026-10-17 | `2026-10-17-reel-finish-line` | — | rendered | — | — |
+| 2026-10-16 | `2026-10-16-dealt-cards` | — | rendered | — | — |
+| 2026-10-16 | `2026-10-16-tease-men-play-too` | — | rendered | — | — |
+| 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | — | rendered | — | — |
+| 2026-10-15 | `2026-10-15-always-available` | — | rendered | — | — |
+| 2026-10-15 | `2026-10-15-tease-came-to-eat` | — | rendered | — | — |
+| 2026-10-15 | `2026-10-15-reel-just-sleep` | — | rendered | — | — |
+| 2026-10-14 | `2026-10-14-price-tag` | — | rendered | — | — |
+| 2026-10-14 | `2026-10-14-tease-bench` | — | rendered | — | — |
+| 2026-10-14 | `2026-10-14-reel-approval` | — | rendered | — | — |
+| 2026-10-13 | `2026-10-13-she-vanished` | — | rendered | — | — |
+| 2026-10-13 | `2026-10-13-tease-easy-auction` | — | rendered | — | — |
+| 2026-10-13 | `2026-10-13-reel-snoring` | — | rendered | — | — |
+| 2026-10-12 | `2026-10-12-choose-or-hide` | — | rendered | — | — |
+| 2026-10-12 | `2026-10-12-tease-shop-window` | — | rendered | — | — |
+| 2026-10-12 | `2026-10-12-reel-what-money-buys` | — | rendered | — | — |
+| 2026-10-11 | `2026-10-11-belly-card` | — | rendered | — | — |
+| 2026-10-11 | `2026-10-11-tease-better-option` | — | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |

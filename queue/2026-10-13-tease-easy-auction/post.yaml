@@ -2,13 +2,13 @@ id: 2026-10-13-tease-easy-auction
 publish_at: 2026-10-13 18:00
 approved: false
 mode: reel
-pillar: status
 caption: |-
   בגיל 45, 50 או 55 המכרז נפתח מחדש
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - בגיל 45, 50 או 55 המכרז נפתח מחדש
@@ -18,12 +18,26 @@ reel:
   - בולעים כדור ללחץ דם עם הקפה של הבוקר
   - והשיחה הכי עמוקה שלהם בשבוע היא על המחיר של הדלק.
   - אלה המציעים שעומדים מולך, ותאמין לי שזה לא מכרז קשה.
-  stories:
-  - וגבר באותו גיל שלא בנה כלום? הוא רהיט.
-  - הטבע לא מחלק תעודות השתתפות, מי שבונה את עצמו לוקח את המכרזים ומי שמחכה שיבחרו בו יכול לחכות הרבה זמן.
   music: audiocopper-dark-571483.mp3
   per_line: 1.6
   hold: 4.0
+  stories:
+  - וגבר באותו גיל שלא בנה כלום? הוא רהיט.
+  - הטבע לא מחלק תעודות השתתפות, מי שבונה את עצמו לוקח את המכרזים ומי שמחכה שיבחרו בו יכול לחכות הרבה זמן.
+  style: null
+  video: null
 source:
   file: 02.md
   section: המכרז הגדול
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

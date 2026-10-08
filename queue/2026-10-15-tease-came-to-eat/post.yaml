@@ -2,13 +2,13 @@ id: 2026-10-15-tease-came-to-eat
 publish_at: 2026-10-15 18:00
 approved: false
 mode: reel
-pillar: dating
 caption: |-
   תפגוש נשים שרוצות לצאת, אבל לא איתך.
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - תפגוש נשים שרוצות לצאת, אבל לא איתך.
@@ -16,12 +16,26 @@ reel:
   - ואולי גם לטפוח לעצמן על האגו אחרי שמישהו אחר נעלם להן.
   - ובגיל שלך זה בא לפעמים עם תחכום של שנים
   - היא תדע בדיוק איך לגרום לך להרגיש מיוחד כל עוד המלצר מביא עוד מנה.
-  stories:
-  - '"רביעי, שמונה וחצי, אצלי. אני פותח את הבקבוק מהגולן".'
-  - '"סושי תאכלי עם החברות, אצלי יש יין טוב ונוף"'
   music: leberch-motivation-piano-580533.mp3
   per_line: 1.8
   hold: 4.0
+  stories:
+  - '"רביעי, שמונה וחצי, אצלי. אני פותח את הבקבוק מהגולן".'
+  - '"סושי תאכלי עם החברות, אצלי יש יין טוב ונוף"'
+  style: null
+  video: null
 source:
   file: 02.md
   section: איך מזהים את זו שבאה לאכול
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

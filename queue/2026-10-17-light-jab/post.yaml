@@ -2,8 +2,6 @@ id: 2026-10-17-light-jab
 publish_at: 2026-10-17 20:00
 approved: false
 mode: render
-format: photo
-pillar: dating
 caption: |-
   הקנטה טובה היא כמו דגדוג קטן.
 
@@ -12,26 +10,67 @@ caption: |-
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: הקנטה טובה היא כמו דגדוג קטן.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: היא לוקחת משהו שהיא אמרה או עשתה, ומסובבת אותו בחיוך
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: היא אמרה שהיא מאחרת תמיד? "טוב שאמרת. אני אגיד לך שהפגישה בשמונה, ואחכה לך בשמונה וחצי עם חיוך".
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: והקנטות הכי טובות בגיל שלכם הן על הגיל עצמו, מהצד של שניכם.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: משקפי קריאה, ברכיים שמודיעות על גשם, שירים שרק אתם זוכרים
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: מה לא מקניטים? את הגוף שלה, את הילדים שלה, את הכסף שלה.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-17-light-jab.jpg
+  kicker: ''
   title: ואם היא עושה מזה סיפור של יומיים, קיבלת מידע חשוב עליה, בחינם.
+  accent: ''
+  body: ''
   layout: center
+  items: []
+reel: null
 source:
   file: 02.md
   section: הקנטה בגובה העיניים
+format: photo
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

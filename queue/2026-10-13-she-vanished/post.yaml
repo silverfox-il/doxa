@@ -2,8 +2,6 @@ id: 2026-10-13-she-vanished
 publish_at: 2026-10-13 20:00
 approved: false
 mode: render
-format: bold
-pillar: dating
 caption: |-
   היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
 
@@ -11,20 +9,68 @@ caption: |-
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
-- title: היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
+- background: null
+  kicker: ''
+  title: היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: יום. יומיים. שלושה.
+  items: []
+- background: null
+  kicker: ''
+  title: יום. יומיים. שלושה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: ואתה מתחיל לבדוק מתי היא הייתה מחוברת לאחרונה
+  items: []
+- background: null
+  kicker: ''
+  title: ואתה מתחיל לבדוק מתי היא הייתה מחוברת לאחרונה
+  accent: ''
+  body: ''
   layout: bottom
-- title: ואולי היא מתכתבת עם עוד שלושה גברים ובודקת מי מתפרק ראשון.
+  items: []
+- background: null
+  kicker: ''
+  title: ואולי היא מתכתבת עם עוד שלושה גברים ובודקת מי מתפרק ראשון.
+  accent: ''
+  body: ''
   layout: bottom
-- title: הכלל שלי הוא הודעה אחת, לא יותר, ואחרי כמה ימים של שקט.
+  items: []
+- background: null
+  kicker: ''
+  title: הכלל שלי הוא הודעה אחת, לא יותר, ואחרי כמה ימים של שקט.
+  accent: ''
+  body: ''
   layout: bottom
-- title: ואם גם אחרי זה יש שקט? אז יש שקט.
+  items: []
+- background: null
+  kicker: ''
+  title: ואם גם אחרי זה יש שקט? אז יש שקט.
+  accent: ''
+  body: ''
   layout: bottom
-- title: חלק לא יחזרו לעולם, ולא הפסדת כלום.
+  items: []
+- background: null
+  kicker: ''
+  title: חלק לא יחזרו לעולם, ולא הפסדת כלום.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 02.md
   section: כשהיא נעלמת
+format: bold
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

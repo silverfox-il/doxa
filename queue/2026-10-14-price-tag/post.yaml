@@ -2,8 +2,6 @@ id: 2026-10-14-price-tag
 publish_at: 2026-10-14 20:00
 approved: false
 mode: render
-format: photo
-pillar: status
 caption: |-
   הפרופיל שלך הוא תג המחיר שלך.
 
@@ -12,23 +10,60 @@ caption: |-
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides:
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: הפרופיל שלך הוא תג המחיר שלך.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: כל פרט בו או מעלה את הערך שלך או מוריד אותו
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: תמונות מושלמות מדי, מקצוע מפוצץ, אפס חברים, אפס היסטוריה. זה לא נראה עשיר, זה נראה כמו עוקץ
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: הפרופיל שלך מראה התחלה חדשה, לא פצע פתוח.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: זה לא מעורר בה חמלה, זה מעורר בה רחמים, ואף אחת לא נכנסת למיטה של מישהו שהיא מרחמת עליו.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
+  kicker: ''
   title: אתה לא עובר מבחן, אתה עורך מבחן.
+  accent: ''
+  body: ''
   layout: center
+  items: []
+reel: null
 source:
   file: 02.md
   section: מה מוריד את המחיר שלך
+format: photo
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

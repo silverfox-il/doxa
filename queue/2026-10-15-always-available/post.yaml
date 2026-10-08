@@ -2,8 +2,6 @@ id: 2026-10-15-always-available
 publish_at: 2026-10-15 20:00
 approved: false
 mode: render
-format: tweet
-pillar: second-round
 caption: |-
   מה שיש תמיד, מפסיקים לראות.
 
@@ -11,18 +9,61 @@ caption: |-
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
-- title: מה שיש תמיד, מפסיקים לראות.
+- background: null
+  kicker: ''
+  title: מה שיש תמיד, מפסיקים לראות.
+  accent: ''
+  body: ''
   layout: bottom
-- title: תמיד עונה בשנייה, תמיד פנוי לכל רעיון שלה, הופך מהר מאוד למובן מאליו.
+  items: []
+- background: null
+  kicker: ''
+  title: תמיד עונה בשנייה, תמיד פנוי לכל רעיון שלה, הופך מהר מאוד למובן מאליו.
+  accent: ''
+  body: ''
   layout: bottom
-- title: לא בגלל שהיא רעה, אלא בגלל שככה בני אדם עובדים
+  items: []
+- background: null
+  kicker: ''
+  title: לא בגלל שהיא רעה, אלא בגלל שככה בני אדם עובדים
+  accent: ''
+  body: ''
   layout: bottom
-- title: אתה יוצא כי יש לך חיים.
+  items: []
+- background: null
+  kicker: ''
+  title: אתה יוצא כי יש לך חיים.
+  accent: ''
+  body: ''
   layout: bottom
-- title: נסיעת עבודה, סוף שבוע עם החבר'ה בגליל, ערב פוקר, רכיבה על אופניים ביום שישי בבוקר
+  items: []
+- background: null
+  kicker: ''
+  title: נסיעת עבודה, סוף שבוע עם החבר'ה בגליל, ערב פוקר, רכיבה על אופניים ביום שישי בבוקר
+  accent: ''
+  body: ''
   layout: bottom
-- title: אתה חוזר הביתה עם סיפורים, עם אנרגיה, עם משהו חדש. והיא מחכה לך, לא כי אתה משחק איתה, אלא כי היא התגעגעה.
+  items: []
+- background: null
+  kicker: ''
+  title: אתה חוזר הביתה עם סיפורים, עם אנרגיה, עם משהו חדש. והיא מחכה לך, לא כי אתה משחק איתה, אלא כי היא התגעגעה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 11.md
   section: אל תהיה זמין כל הזמן
+format: tweet
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

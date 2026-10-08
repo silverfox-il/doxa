@@ -2,13 +2,13 @@ id: 2026-10-17-reel-finish-line
 publish_at: 2026-10-17 13:00
 approved: false
 mode: reel
-pillar: second-round
 caption: |-
   הרבה גברים חושבים שהמחויבות היא קו הסיום.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - הרבה גברים חושבים שהמחויבות היא קו הסיום.
@@ -17,9 +17,23 @@ reel:
   - ומה שיש לה עכשיו זה שותף לדירה שמתלונן על הגב ושואל אותה מה לעשות בשבת.
   - תכל'ס, היא לא השתנתה. הוא השתנה.
   music: atlasaudio-piano-motivation-512261.mp3
-  video: coffee-window.mp4
   per_line: 2.2
   hold: 4.0
+  stories: null
+  style: null
+  video: coffee-window.mp4
 source:
   file: 11.md
   section: המשחק לא נגמר, הוא רק עולה שלב
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

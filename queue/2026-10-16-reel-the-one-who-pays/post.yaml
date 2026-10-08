@@ -2,13 +2,13 @@ id: 2026-10-16-reel-the-one-who-pays
 publish_at: 2026-10-16 13:00
 approved: false
 mode: reel
-pillar: dating
 caption: |-
   רוב הגברים שמדליקים לא נשארים, ורוב הגברים שנשארים לא מדליקים.
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - רוב הגברים שמדליקים לא נשארים, ורוב הגברים שנשארים לא מדליקים.
@@ -17,9 +17,23 @@ reel:
   - תיקנת, פרנסת, הקשבת, ויתרת, ובסוף קיבלת מכתב מעורך דין.
   - לא כי היית גבר רע, אלא כי שכחת להיות גם הגבר שמדליק.
   music: bombinsound-motivation-motivation-music-version-6-feel-good-566560.mp3
-  video: bar-cheers.mp4
   per_line: 2.2
   hold: 4.0
+  stories: null
+  style: null
+  video: bar-cheers.mp4
 source:
   file: 02.md
   section: זה שמדליק, וזה שמשלם
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

@@ -2,13 +2,13 @@ id: 2026-10-12-reel-what-money-buys
 publish_at: 2026-10-12 13:00
 approved: false
 mode: reel
-pillar: status
 caption: |-
   כן, נשים נמשכות לגברים עם כסף
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - כן, נשים נמשכות לגברים עם כסף
@@ -17,9 +17,23 @@ reel:
   - היא צריכה לדעת שיש לך, היא לא צריכה לקבל את זה ממך.
   - אתה לא כספומט.
   music: atlasaudio-motivation-518088.mp3
-  video: suit-watch.mp4
   per_line: 2.2
   hold: 4.0
+  stories: null
+  style: null
+  video: suit-watch.mp4
 source:
   file: 02.md
   section: נשים אוהבות כסף, תתמודד
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null

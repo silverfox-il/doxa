@@ -2,8 +2,6 @@ id: 2026-10-16-dealt-cards
 publish_at: 2026-10-16 20:00
 approved: false
 mode: render
-format: bold
-pillar: body
 caption: |-
   יש דברים שנקבעו אצלך לפני שידעת ללכת.
 
@@ -11,18 +9,61 @@ caption: |-
   .
   #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
 slides:
-- title: יש דברים שנקבעו אצלך לפני שידעת ללכת.
+- background: null
+  kicker: ''
+  title: יש דברים שנקבעו אצלך לפני שידעת ללכת.
+  accent: ''
+  body: ''
   layout: bottom
-- title: 'ובגיל 45 פלוס נוסף עוד שכבה שלא בחרת: מה עשית עם הגוף בעשרים השנים האחרונות.'
+  items: []
+- background: null
+  kicker: ''
+  title: 'ובגיל 45 פלוס נוסף עוד שכבה שלא בחרת: מה עשית עם הגוף בעשרים השנים האחרונות.'
+  accent: ''
+  body: ''
   layout: bottom
-- title: עשרים שנה של ישיבה, שלושה הריונות של האקסית שבהם אכלת בשביל שניים, ארוחות שישי
+  items: []
+- background: null
+  kicker: ''
+  title: עשרים שנה של ישיבה, שלושה הריונות של האקסית שבהם אכלת בשביל שניים, ארוחות שישי
+  accent: ''
+  body: ''
   layout: bottom
-- title: זה לא גנטיקה, אבל זה הקלף שאיתו אתה מתחיל עכשיו.
+  items: []
+- background: null
+  kicker: ''
+  title: זה לא גנטיקה, אבל זה הקלף שאיתו אתה מתחיל עכשיו.
+  accent: ''
+  body: ''
   layout: bottom
-- title: אתה לא יכול להחליף את ההורים שלך ואתה לא יכול להחזיר את הזמן.
+  items: []
+- background: null
+  kicker: ''
+  title: אתה לא יכול להחליף את ההורים שלך ואתה לא יכול להחזיר את הזמן.
+  accent: ''
+  body: ''
   layout: bottom
-- title: אלה הקלפים שבידיים שלך, והשאלה היחידה היא איך אתה משחק אותם מכאן והלאה.
+  items: []
+- background: null
+  kicker: ''
+  title: אלה הקלפים שבידיים שלך, והשאלה היחידה היא איך אתה משחק אותם מכאן והלאה.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 08.md
   section: מה שחילקו לך בלידה
+format: bold
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
