@@ -56,25 +56,24 @@ def _css() -> str:
         "*{margin:0;padding:0;box-sizing:border-box}"
         f"html,body{{width:{REEL_W}px;height:{REEL_H}px;background:#141414}}"
         "body{font-family:H;direction:rtl;color:#fff;display:flex;align-items:center;"
-        "justify-content:center;padding:0 110px}"
+        "justify-content:center;padding:220px 200px 420px 110px}"
         ".w{width:100%;text-align:center}"
         "p{font-size:74px;font-weight:500;line-height:1.28;margin:0 0 74px;white-space:pre-line}"
         ".h{opacity:0}"
-        ".tag{position:absolute;bottom:170px;left:0;right:0;text-align:center;"
+        ".tag{position:absolute;bottom:430px;left:110px;right:200px;text-align:center;"
         "font-size:34px;color:#8a8a8a;direction:ltr}"
         # Teaser series (owner's example): black, right aligned, more and smaller
         # lines, like a cynical narrator's notes.
-        "body.tease{background:#000;padding:0 80px}"
+        "body.tease{background:#000;padding:220px 200px 420px 90px}"
         ".tease .w{text-align:right}"
         ".tease p{font-size:58px;font-weight:500;line-height:1.3;margin:0 0 46px}"
         # Boxes (owner's example): text in black rounded boxes on a dark red gradient.
         "body.boxes{background:linear-gradient(180deg,#3a0808 0%,#1c0404 55%,#0d0202 100%);"
-        "padding:0 70px}"
-        ".boxes .w{display:flex;flex-direction:column;align-items:center;gap:48px;"
-        "margin-top:-60px}"
+        "padding:220px 200px 420px 80px}"
+        ".boxes .w{display:flex;flex-direction:column;align-items:center;gap:48px}"
         ".boxes p{background:#000;border-radius:40px;padding:26px 46px;margin:0;"
         "font-size:62px;font-weight:500;line-height:1.28;max-width:940px}"
-        ".boxes .tag{bottom:90px;color:#c9a3a3}"
+        ".boxes .tag{color:#c9a3a3}"
         # Over a background video: transparent page, text with a soft shadow.
         "html.video,html.video body{background:transparent}"
         ".video p{text-shadow:0 2px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9)}"
@@ -99,11 +98,14 @@ def frame_html(
     )
 
 
-# Same idea as the slides: shrink every line together until the whole block (all
-# lines, hidden ones keep their space) fits between the top and the handle.
+# Instagram draws its own UI over a reel: the header at the top, the like /
+# comment / share column on the right, the caption and audio at the bottom. Text
+# stays inside the safe area (padding above), and this shrinks every line together
+# until the whole block (hidden lines keep their space) fits between y=220 and the
+# handle tag.
 REEL_FIT_JS = """
 () => {
-  const H = window.innerHeight, TOP = 140, BOTTOM = H - 260;
+  const H = window.innerHeight, TOP = 220, BOTTOM = H - 480;
   const box = document.querySelector('.w');
   const ps = [...document.querySelectorAll('.w p')];
   const base = ps.map(p => parseFloat(getComputedStyle(p).fontSize));
