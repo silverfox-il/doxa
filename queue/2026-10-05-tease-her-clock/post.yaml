@@ -34,10 +34,10 @@ pillar: dating
 approved_hash: sha256:e2a74fc914275929f0efcf975654b5cd27352bcc9e8294a7b5c927118b1fddcd
 approved_by: owner
 approved_at: '2026-10-05T09:31:28+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '17892946824681263'
+permalink: https://www.instagram.com/reel/DePg-xyj5jC/
+published_at: 2026-10-08T17:53:51+0000
 error: null
 story_id: null
 story_error: null
