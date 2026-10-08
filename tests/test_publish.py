@@ -554,6 +554,7 @@ def reel_post(repo, monkeypatch):
 def test_reel_live_publish(repo, gh_calls, monkeypatch):
     path = reel_post(repo, monkeypatch)
     heads = []
+
     def head(u):
         heads.append(u)
         return 200, "video/mp4" if u.endswith(".mp4") else "image/jpeg"

@@ -35,9 +35,7 @@ from typing import Protocol
 
 import requests
 
-from . import approval, github, reel, slides, status
-from .story import story_files
-from . import pacing
+from . import approval, github, pacing, reel, slides, status
 from .instagram import (
     API_VERSION,
     ActionBlockedError,
@@ -58,6 +56,7 @@ from .queue import (
     load_all,
     slide_files,
 )
+from .story import story_files
 
 # Video containers take longer to process than images.
 REEL_PROCESS_TIMEOUT_S = 600.0
@@ -498,9 +497,7 @@ class Publisher:
                 self.check_urls([url])
                 container = self._retry("story", lambda u=url: c.create_story_container(u))
                 self.log(f"  story {i}/{len(urls)} container: {container}")
-                c.wait_finished(
-                    container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep
-                )
+                c.wait_finished(container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
                 ids.append(c.publish(container))
                 self.log(f"✓ story {i}/{len(urls)} published: {ids[-1]}")
             message = f"publish: {post.id} story"

@@ -284,6 +284,7 @@ def test_approved_without_hash_or_with_stale_hash_is_not_publishable(repo):
 
 # --- formats ---------------------------------------------------------------------
 
+
 def test_photo_format_needs_backgrounds():
     from doxa.queue import Post
 
@@ -317,5 +318,7 @@ def test_new_optional_fields_keep_old_hashes(tmp_path):
     post = Post.model_validate(render_post_data())
     before = content_hash(post, tmp_path)
     assert content_hash(post.model_copy(update={"story_id": "1"}), tmp_path) == before
-    assert content_hash(post.model_copy(update={"format": None, "pillar": None}), tmp_path) == before
+    assert (
+        content_hash(post.model_copy(update={"format": None, "pillar": None}), tmp_path) == before
+    )
     assert content_hash(post.model_copy(update={"pillar": "body"}), tmp_path) != before

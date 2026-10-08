@@ -20,8 +20,11 @@ def at(h, m=0, day=5):
 
 
 def published(pid, when):
-    data = render_post_data(pid, status="published",
-                            published_at=when.astimezone(dt.UTC).strftime("%Y-%m-%dT%H:%M:%S+0000"))
+    data = render_post_data(
+        pid,
+        status="published",
+        published_at=when.astimezone(dt.UTC).strftime("%Y-%m-%dT%H:%M:%S+0000"),
+    )
     return Post.model_validate(data)
 
 
@@ -57,8 +60,13 @@ def test_pause_file_holds_everything_until_it_expires(tmp_path):
 def test_block_pauses_publisher_and_keeps_post_retryable(repo, gh_calls):  # noqa: F811
     path = approved_post(repo)
     p, client, committer, logs = publisher(repo)
-    p.pacing = Pacing(min_gap_minutes=0, max_per_24h=100, quiet_start="00:00",
-                      quiet_end="00:00", block_pause_hours=24)
+    p.pacing = Pacing(
+        min_gap_minutes=0,
+        max_per_24h=100,
+        quiet_start="00:00",
+        quiet_end="00:00",
+        block_pause_hours=24,
+    )
     client.fail["publish"] = [ActionBlockedError("code=4 subcode=2207051: restricted")]
     assert p.run(dry_run=False) == 1
     post = load_post(path)
@@ -93,8 +101,12 @@ def test_restricted_error_but_post_is_live_counts_as_published(repo, gh_calls): 
         # An older copy of the same caption must not count...
         {"id": "old", "caption": caption, "timestamp": "2026-09-20T06:00:00+0000"},
         # ...the one created just now does.
-        {"id": "new-1", "caption": caption, "permalink": "https://www.instagram.com/p/NEW/",
-         "timestamp": p.now.astimezone(dt.UTC).strftime("%Y-%m-%dT%H:%M:%S+0000")},
+        {
+            "id": "new-1",
+            "caption": caption,
+            "permalink": "https://www.instagram.com/p/NEW/",
+            "timestamp": p.now.astimezone(dt.UTC).strftime("%Y-%m-%dT%H:%M:%S+0000"),
+        },
     ]
     assert p.run(dry_run=False) == 0
     post = load_post(path)
@@ -106,8 +118,9 @@ def test_restricted_error_and_not_live_pauses(repo, gh_calls):  # noqa: F811
     path = approved_post(repo)
     p, client, committer, logs = publisher(repo)
     client.fail["publish"] = [ActionBlockedError("code=4 subcode=2207051: restricted")]
-    client.recent = [{"id": "old", "caption": load_post(path).caption,
-                      "timestamp": "2026-09-20T06:00:00+0000"}]
+    client.recent = [
+        {"id": "old", "caption": load_post(path).caption, "timestamp": "2026-09-20T06:00:00+0000"}
+    ]
     assert p.run(dry_run=False) == 1
     assert load_post(path).status == Status.failed_retryable
     assert pacing.read_pause(repo) is not None
@@ -118,7 +131,9 @@ def test_overdue_reels_go_before_overdue_carousels(repo, gh_calls, monkeypatch):
 
     carousel = approved_post(repo, "2026-09-25-older", publish_at="2026-09-25 06:00")
     reel_path = reel_post(repo, monkeypatch)  # 2026-09-25-post at 07:00, a reel
-    p, client, _, _ = publisher(repo, head=lambda u: (200, "video/mp4" if u.endswith(".mp4") else "image/jpeg"))
+    p, client, _, _ = publisher(
+        repo, head=lambda u: (200, "video/mp4" if u.endswith(".mp4") else "image/jpeg")
+    )
     client.create_reel_container = lambda url, caption: "reel-parent"
     assert p.run(dry_run=False) == 0
     assert load_post(reel_path).status == Status.published

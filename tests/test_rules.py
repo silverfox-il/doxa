@@ -302,8 +302,9 @@ def test_caption_must_open_with_hook(book):
 
 def test_reel_hook_is_line_one(book):
     reel = {"lines": ["הוא", "פשוט לא מדליק."], "music": "a.mp3", "per_line": 4, "hold": 7}
-    post = engine_post("x", mode="reel", slides=[], reel=reel, format=None,
-                       caption=f"הוא\n\n{CTA}\n.\n#גרושים")
+    post = engine_post(
+        "x", mode="reel", slides=[], reel=reel, format=None, caption=f"הוא\n\n{CTA}\n.\n#גרושים"
+    )
     assert ("block", "hook") in engine_found(post, book)
 
 
@@ -322,7 +323,10 @@ def test_pillar_rotation_blocks_two_in_a_row():
     def p(pid, at, pillar):
         return engine_post("הוא פשוט לא מדליק.", "נחמד", id=pid, publish_at=at, pillar=pillar)
 
-    ok = [p("2026-10-05-a", "2026-10-05 13:00", "body"), p("2026-10-05-b", "2026-10-05 20:00", "mind")]
+    ok = [
+        p("2026-10-05-a", "2026-10-05 13:00", "body"),
+        p("2026-10-05-b", "2026-10-05 20:00", "mind"),
+    ]
     assert rules.pillar_rotation(ok, CFG) == []
     bad = ok + [p("2026-10-06-c", "2026-10-06 13:00", "mind")]
     got = rules.pillar_rotation(bad, CFG)
@@ -353,8 +357,18 @@ def test_live_config_is_book_voice_not_verbatim():
 
 @pytest.mark.parametrize(
     "raw",
-    ["היא לא זונה.", "כל הזונות האלה", "הוא רק רוצה לזיין", "הוא מזדיין איתה",
-     "זיון אחד", "תחשוב עם הזין", "סקס טוב", "בלי אורגזמה", "שרמוטה", "כוסית"],
+    [
+        "היא לא זונה.",
+        "כל הזונות האלה",
+        "הוא רק רוצה לזיין",
+        "הוא מזדיין איתה",
+        "זיון אחד",
+        "תחשוב עם הזין",
+        "סקס טוב",
+        "בלי אורגזמה",
+        "שרמוטה",
+        "כוסית",
+    ],
 )
 def test_raw_crude_words_block(raw):
     assert ("block", "masked-word") in voice(raw, "תפסיק לבקש, תתחיל להחליט.")
@@ -362,16 +376,21 @@ def test_raw_crude_words_block(raw):
 
 @pytest.mark.parametrize(
     "masked",
-    ["היא לא Zונה.", "הוא רק רוצה לעשות את המעשה", "תחשוב עם הZין", "Sקס טוב",
-     "בלי אורגZמה", "שרמו*ה", "Kוסית"],
+    [
+        "היא לא Zונה.",
+        "הוא רק רוצה לעשות את המעשה",
+        "תחשוב עם הZין",
+        "Sקס טוב",
+        "בלי אורגZמה",
+        "שרמו*ה",
+        "Kוסית",
+    ],
 )
 def test_masked_forms_pass(masked):
     assert voice(masked, "תפסיק לבקש, תתחיל להחליט.") == []
 
 
-@pytest.mark.parametrize(
-    "innocent", ["הוא משלם מזונות כל חודש.", "אוכל מזין ושינה", "אישה זיינה"]
-)
+@pytest.mark.parametrize("innocent", ["הוא משלם מזונות כל חודש.", "אוכל מזין ושינה", "אישה זיינה"])
 def test_innocent_lookalikes_pass(innocent):
     found_rules = [r for _, r in voice(innocent, "תפסיק לבקש, תתחיל להחליט.")]
     if innocent == "אישה זיינה":  # crude past tense: must be masked too
@@ -447,8 +466,9 @@ def test_tease_series_may_generalize_about_women_regular_posts_may_not():
     assert "sensitive" in [f.rule for f in rules.check_post(plain, VOICE, None)]
     assert "sensitive" not in [f.rule for f in rules.check_post(tease, VOICE, None)]
     slur = Post.model_validate(
-        render_post_data(mode="reel", slides=[], reel={**reel, "lines": ["היא כלבה.", "ב"],
-                                                         "stories": ["שני"]})
+        render_post_data(
+            mode="reel", slides=[], reel={**reel, "lines": ["היא כלבה.", "ב"], "stories": ["שני"]}
+        )
     )
     assert "sensitive" in [f.rule for f in rules.check_post(slur, VOICE, None)]
 

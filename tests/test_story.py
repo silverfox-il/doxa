@@ -114,8 +114,13 @@ def test_series_stories_are_checked_by_the_rules():
 
     from .conftest import render_post_data
 
-    reel = {"lines": ["א ב ג", "ד"], "music": "a.mp3", "per_line": 4, "hold": 7,
-            "stories": ["גבר שמחכה", "Zונות - כן"]}
+    reel = {
+        "lines": ["א ב ג", "ד"],
+        "music": "a.mp3",
+        "per_line": 4,
+        "hold": 7,
+        "stories": ["גבר שמחכה", "Zונות - כן"],
+    }
     post = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
     where = [w for w, _ in rules.post_texts(post)]
     assert "story 2" in where and "story 3" in where
@@ -152,8 +157,13 @@ def test_render_stories_series_only(tmp_path):
     (tmp_path / "story.jpg").write_bytes(b"old")
     assert story.render_stories(Post.model_validate(render_post_data()), tmp_path) == []
     assert not (tmp_path / "story.jpg").exists()  # stale file removed
-    reel = {"lines": ["א ב ג", "ד"], "music": "a.mp3", "per_line": 4, "hold": 7,
-            "stories": ["שני", "שלישי"]}
+    reel = {
+        "lines": ["א ב ג", "ד"],
+        "music": "a.mp3",
+        "per_line": 4,
+        "hold": 7,
+        "stories": ["שני", "שלישי"],
+    }
     post = Post.model_validate(render_post_data(mode="reel", slides=[], reel=reel))
     outs = story.render_stories(post, tmp_path)
     assert [o.relative_to(tmp_path).as_posix() for o in outs] == ["series/1.jpg", "series/2.jpg"]
@@ -167,8 +177,9 @@ def test_tease_reels_allow_up_to_8_lines_plain_reels_6():
     from doxa.queue import Reel
 
     lines = ["שורה"] * 8
-    Reel.model_validate({"lines": lines, "music": "a.mp3", "per_line": 1.4, "hold": 4,
-                         "stories": ["שני"]})
+    Reel.model_validate(
+        {"lines": lines, "music": "a.mp3", "per_line": 1.4, "hold": 4, "stories": ["שני"]}
+    )
     with pytest.raises(ValueError, match="2-6 lines"):
         Reel.model_validate({"lines": lines, "music": "a.mp3", "per_line": 1.4, "hold": 4})
 
@@ -184,8 +195,9 @@ def test_boxes_reel_style():
     from doxa import reel
     from doxa.queue import Reel
 
-    r = Reel.model_validate({"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7,
-                             "style": "boxes"})
+    r = Reel.model_validate(
+        {"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7, "style": "boxes"}
+    )
     assert r.style == "boxes"
     assert "class='boxes'" in reel.frame_html(r.lines, 1, look="boxes")
 
@@ -202,8 +214,14 @@ def test_background_video_reel():
         Reel.model_validate({**base, "video": "../x.mp4"})
     from pathlib import Path
 
-    cmd = reel.ffmpeg_cmd([Path("1.png"), Path("2.png")], r, Path("m.mp3"), Path("o.mp4"),
-                          Path("l.txt"), Path("gym-1.mp4"))
+    cmd = reel.ffmpeg_cmd(
+        [Path("1.png"), Path("2.png")],
+        r,
+        Path("m.mp3"),
+        Path("o.mp4"),
+        Path("l.txt"),
+        Path("gym-1.mp4"),
+    )
     graph = cmd[cmd.index("-filter_complex") + 1]
     assert "overlay" in graph and "crop=1080:1920" in graph
     assert "class='video'" in reel.frame_html(["א"], 1, video=True)

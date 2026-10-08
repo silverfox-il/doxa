@@ -24,8 +24,8 @@ import hashlib
 import json
 import re
 from enum import Enum
-from typing import Literal
 from pathlib import Path
+from typing import Literal
 from zoneinfo import ZoneInfo
 
 import yaml
@@ -347,7 +347,15 @@ def slide_files(slides_dir: Path) -> list[Path]:
 # Owner-authored fields that define what gets published. ``approved`` itself is
 # excluded (flipping it is not an edit), as are all system-written fields.
 _CONTENT_FIELDS = {
-    "id", "publish_at", "mode", "caption", "slides", "reel", "source", "format", "pillar"
+    "id",
+    "publish_at",
+    "mode",
+    "caption",
+    "slides",
+    "reel",
+    "source",
+    "format",
+    "pillar",
 }
 
 

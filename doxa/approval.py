@@ -126,8 +126,7 @@ def build_issue_body(post: Post, post_dir: Path, slug: str, sha: str, n_slides: 
         "",
         f"- **Post:** `{post.id}`",
         f"- **Publish at:** {post.publish_at} ({TIMEZONE})",
-        f"- **Mode:** {post.mode.value} · **Slides:** {n_slides} · **Status:** "
-        f"{post.status.value}",
+        f"- **Mode:** {post.mode.value} · **Slides:** {n_slides} · **Status:** {post.status.value}",
         f"- **Content rules:** see `doxa rules {post.id}`",
         f"- **Rendered from:** `{sha[:7]}`",
         "",

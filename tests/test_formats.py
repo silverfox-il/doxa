@@ -35,6 +35,7 @@ def test_user_text_is_escaped():
 def test_center_layout_is_available_for_photo():
     from doxa.queue import Layout
 
-    doc = render.build_html(Slide(background=BG, title="א ב ג", layout=Layout.center), 2, 3,
-                            root=ROOT)
+    doc = render.build_html(
+        Slide(background=BG, title="א ב ג", layout=Layout.center), 2, 3, root=ROOT
+    )
     assert 'class="content center"' in doc

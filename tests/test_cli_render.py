@@ -146,7 +146,10 @@ def test_changed_always_includes_pending_posts(repo):
     prebuilt(repo, "2026-09-25-queued")
     prebuilt(repo, "2026-09-26-done", publish_at="2026-09-26 07:00", status="published")
     subprocess.run(["git", "add", "-A"], cwd=repo, check=True)
-    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "x"],
-                   cwd=repo, check=True)
+    subprocess.run(
+        ["git", "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "x"],
+        cwd=repo,
+        check=True,
+    )
     result = run(repo, "changed", "HEAD", "HEAD")  # empty diff
     assert result.output.split() == ["2026-09-25-queued"]
