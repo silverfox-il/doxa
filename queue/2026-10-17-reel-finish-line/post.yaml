@@ -29,8 +29,8 @@ source:
 format: null
 pillar: second-round
 approved_hash: sha256:1f4a7bcf2ba51091abf49b9d5b74753fcb0eb0a7eac36112f0ed25ae9dc06165
-approved_by: auto
-approved_at: '2026-10-08T21:17:30+03:00'
+approved_by: owner
+approved_at: '2026-10-08T21:38:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

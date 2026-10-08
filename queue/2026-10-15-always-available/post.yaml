@@ -51,8 +51,8 @@ source:
 format: tweet
 pillar: second-round
 approved_hash: sha256:6a00340ebab488d832f3cc5090e88db72df6b727de83872c49c7514bcd7c4a25
-approved_by: auto
-approved_at: '2026-10-08T21:17:30+03:00'
+approved_by: owner
+approved_at: '2026-10-08T21:37:53+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-15-tease-came-to-eat
 publish_at: 2026-10-15 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תפגוש נשים שרוצות לצאת, אבל לא איתך.
@@ -28,9 +28,9 @@ source:
   section: איך מזהים את זו שבאה לאכול
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b595e1f3885dedde6b41c3ae4d0dc2415b3a69bb236a60a29d7a5733ecacd761
+approved_by: owner
+approved_at: '2026-10-08T21:37:55+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
