@@ -1,6 +1,6 @@
 id: 2026-10-12-tease-shop-window
 publish_at: 2026-10-12 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אתם יחד כבר חודשיים, והיא עדיין מתנהלת ברשת כמו רווקה בחלון ראווה.
@@ -29,9 +29,9 @@ source:
   section: 'נורה 13: חלון ראווה שנשאר פתוח'
 format: null
 pillar: second-round
-approved_hash: sha256:f0ec65995440b0ee158fa7a41faa316ce4818b5d6fa68227b608c5ea060e29e3
-approved_by: owner
-approved_at: '2026-10-08T20:29:55+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
