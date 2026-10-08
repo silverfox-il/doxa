@@ -28,8 +28,8 @@ source:
 format: null
 pillar: mind
 approved_hash: sha256:9b868f0da46466e0373f842c27403c741b8fdb4510fe74972f8ddc7311dfc194
-approved_by: auto
-approved_at: '2026-10-08T09:28:06+03:00'
+approved_by: owner
+approved_at: '2026-10-08T20:29:58+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

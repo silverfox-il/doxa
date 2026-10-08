@@ -58,8 +58,8 @@ source:
 format: tweet
 pillar: mind
 approved_hash: sha256:89133c87df878e49c1b5c86e93b973830eeff2b45f1eb07f92ba1ff3fd732b1f
-approved_by: auto
-approved_at: '2026-10-08T09:28:06+03:00'
+approved_by: owner
+approved_at: '2026-10-08T20:29:53+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
