@@ -166,7 +166,7 @@ Reels (13:00) follow the approach of @shiraz_mizrahi777, whose text reels reach 
 37K views on 9K followers, combined with the NEW book (quote it freely):
 plain everyday Hebrew, no slang to decode; a claim, a contrast, an ironic sting
 ("אמרו לגברים: ... אז הם ... והיא? ... תודה על העצה 👏"); truths about men and women
-in the third person ("רוב הגברים...", "גבר לא...") are welcome HERE (carousels still
+in the third person ("רוב הגברים...", "גבר לא...") are welcome (as the book has them;
 talk to him); describe, never instruct; short lines; one line that stays in the head,
 often a verbatim new-book line. Approved examples: `2026-10-05-reel-turned-on`,
 `2026-10-09-reel-garden`, `2026-10-11-reel-second-round`.
@@ -233,7 +233,7 @@ What the owner asked for, round by round:
 - **45+ only in the technical details:** ages (women 37+), divorce, kids, alimony, the
   ex, the second round, the body after 50, "נשים"/"היא" instead of "בחורות". Never
   soften the expressions, humor, rhythm or attitude.
-- **Talk to him.** Second person; never a line that starts with "גבר".
+- **Voice follows the book.** Second person or third person, exactly as the quoted passage has it.
 - **The book's positions only.** Never invent advice the book does not give. Keep
   `source:` with the section the idea comes from (internal only, never in the post).
 - **Spread across topics:** dating, approaching, texting, red flags, body, the head
