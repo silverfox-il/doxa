@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-08-silver-hair` at 2026-10-08 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -50,7 +50,7 @@
 | 2026-10-05 | `2026-10-05-what-looking-for` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-bar-fear` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-tease-her-clock` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-approval-chase` | ✅ | publishing | — | — |
+| 2026-10-05 | `2026-10-05-approval-chase` | ✅ | published | [link](https://www.instagram.com/p/DePQd0mFNTY/) | — |
 | 2026-10-05 | `2026-10-05-reel-body-fat` | ✅ | published | [link](https://www.instagram.com/reel/DeOLHpJE8Ww/) | — |
 | 2026-10-05 | `2026-10-05-reel-turned-on` | ✅ | published | [link](https://www.instagram.com/reel/DeNJ6jJCbbw/) | — |
 | 2026-10-05 | `2026-10-05-old-flame` | ✅ | published | [link](https://www.instagram.com/p/DeM5S_-Fsd6/) | — |
