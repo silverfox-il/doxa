@@ -18,10 +18,10 @@
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | rendered | — | — |
-| 2026-10-14 | `2026-10-14-reel-approval` | — | rendered | — | — |
-| 2026-10-13 | `2026-10-13-she-vanished` | — | rendered | — | — |
-| 2026-10-13 | `2026-10-13-tease-easy-auction` | — | rendered | — | — |
-| 2026-10-13 | `2026-10-13-reel-snoring` | — | rendered | — | — |
+| 2026-10-14 | `2026-10-14-reel-approval` | ✅ | rendered | — | — |
+| 2026-10-13 | `2026-10-13-she-vanished` | ✅ | rendered | — | — |
+| 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | rendered | — | — |
+| 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | rendered | — | — |

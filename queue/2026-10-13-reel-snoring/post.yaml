@@ -1,6 +1,6 @@
 id: 2026-10-13-reel-snoring
 publish_at: 2026-10-13 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אמרו לגברים אחרי 45: "תאט. תשמור על הגב. בגילך כבר לא צריך."
@@ -28,9 +28,9 @@ source:
   section: הנחירות שהאקסית התלוננה עליהן
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f4089b01898aeb08ecfba97b469b5d4429b8ea57a169e28940e099f72bb4c2ca
+approved_by: auto
+approved_at: '2026-10-08T20:50:18+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-13-tease-easy-auction
 publish_at: 2026-10-13 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בגיל 45 המכרז נפתח מחדש. ותתפלא כמה הוא קל.
@@ -30,9 +30,9 @@ source:
   section: המכרז הגדול
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8e2edcb8dde4a46577ded4368a313e4f28c589347320c30ca55fa19774d4c5d5
+approved_by: auto
+approved_at: '2026-10-08T20:50:18+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
