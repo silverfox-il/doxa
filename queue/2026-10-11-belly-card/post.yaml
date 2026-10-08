@@ -3,7 +3,7 @@ publish_at: 2026-10-11 20:00
 approved: true
 mode: render
 caption: |-
-  ובגיל שלך הבעיה המרכזית היא לא השומן ברגליים, היא הכרס.
+  בגיל שלך הבעיה היא לא הרגליים. זו הכרס.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,49 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: ובגיל שלך הבעיה המרכזית היא לא השומן ברגליים, היא הכרס.
+  title: בגיל שלך הבעיה היא לא הרגליים. זו הכרס.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: השומן הזה שיושב עמוק בבטן, מסביב לאיברים, הוא לא רק מכוער.
+  title: השומן הזה יושב עמוק בבטן, סביב האיברים. הוא לא רק לא יפה.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: הוא קשור ללחץ דם, לסוכר, ללב, והוא מוריד טסטוסטרון.
+  title: הוא מעלה לחץ דם וסוכר, מעמיס על הלב, ומוריד טסטוסטרון.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: כלומר הוא פוגע בדיוק בדברים שאתה צריך בשביל להיות גבר שנשים רוצות.
+  title: כלומר הוא פוגע בדיוק במה שעושה אותך גבר שנשים רוצות.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: אתה לא צריך להוסיף עוד עשרה קילו לכרס כדי לבנות כתפיים.
+  title: והחדשות הטובות? זה שומן שמגיב מהר כשמתחילים לזוז ולאכול נכון.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-11-belly-card.jpg
   kicker: ''
-  title: רק תבין שזה דורש סבלנות. אין כאן ניסים של שלושה שבועות.
-  accent: ''
-  body: ''
-  layout: center
-  items: []
-- background: assets/backgrounds/2026-10-11-belly-card.jpg
-  kicker: ''
-  title: אתה בונה משהו לאורך זמן.
+  title: לא בשלושה שבועות. אבל בעוד שלושה חודשים, החגורה כבר תספר לך.
   accent: ''
   body: ''
   layout: center
