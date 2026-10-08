@@ -79,6 +79,15 @@ class GitCommitter:
             ["git", *args], cwd=self.root, capture_output=True, text=True, check=True
         ).stdout
 
+    def sync(self) -> None:
+        """Pull the newest main before deciding what to publish.
+
+        Another workflow (render, approve, a previous publish run) may have pushed
+        since this checkout; acting on a stale queue could pick a post that was
+        already published, and the later push would conflict.
+        """
+        self._git("pull", "--rebase", "--quiet", "origin", "main")
+
     def commit(self, paths: list[Path], message: str) -> None:
         self._git("add", "--", *(str(p) for p in paths))
         if not self._git("diff", "--cached", "--name-only").strip():
@@ -292,6 +301,9 @@ class Publisher:
         """Returns a process exit code (0 = ok or nothing to do)."""
         mode = "DRY RUN — no POST to Meta, no commits" if dry_run else "LIVE"
         self.log(f"doxa publish [{mode}] at {self.now:%Y-%m-%d %H:%M %Z} commit {self.sha[:7]}")
+        sync = getattr(self.committer, "sync", None)
+        if not dry_run and sync is not None:
+            sync()
         self.recover(dry_run)
 
         posts = load_all(self.queue_dir)
