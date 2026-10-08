@@ -24,9 +24,9 @@
 | 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | rendered | — | — |
-| 2026-10-12 | `2026-10-12-reel-what-money-buys` | — | rendered | — | — |
-| 2026-10-11 | `2026-10-11-belly-card` | — | rendered | — | — |
-| 2026-10-11 | `2026-10-11-tease-better-option` | — | rendered | — | — |
+| 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | rendered | — | — |
+| 2026-10-11 | `2026-10-11-belly-card` | ✅ | rendered | — | — |
+| 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |

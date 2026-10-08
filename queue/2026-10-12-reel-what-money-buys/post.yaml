@@ -1,6 +1,6 @@
 id: 2026-10-12-reel-what-money-buys
 publish_at: 2026-10-12 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כן, נשים נמשכות לגברים עם כסף. אף אחת לא תגיד לך את זה בפנים.
@@ -27,9 +27,9 @@ source:
   section: נשים אוהבות כסף, תתמודד
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4eb0f61e9dc567e50ab2ab25a7ddfeb1ef0a158beb770127c3c2498e30640d12
+approved_by: auto
+approved_at: '2026-10-08T20:41:13+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
