@@ -1,6 +1,6 @@
 id: 2026-10-14-reel-approval
 publish_at: 2026-10-14 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אתה ממש מקסים, אבל אני לא מרגישה שזה זה"
@@ -27,9 +27,9 @@ source:
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9b868f0da46466e0373f842c27403c741b8fdb4510fe74972f8ddc7311dfc194
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

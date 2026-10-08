@@ -1,6 +1,6 @@
 id: 2026-10-16-reel-the-one-who-pays
 publish_at: 2026-10-16 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   רוב הגברים שמדליקים לא נשארים, ורוב הגברים שנשארים לא מדליקים.
@@ -27,9 +27,9 @@ source:
   section: זה שמדליק, וזה שמשלם
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:67e57dc5a1dc01410e1e31aaee5d931de3b0e2ec721799b7681c293e957132a1
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-13-she-vanished
 publish_at: 2026-10-13 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
@@ -64,9 +64,9 @@ source:
   section: כשהיא נעלמת
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:3b261733abdba5fa33b721e67e2062c99a922a3cd9902239ca7b523ab6aa46b7
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

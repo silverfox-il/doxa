@@ -1,6 +1,6 @@
 id: 2026-10-13-reel-snoring
 publish_at: 2026-10-13 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אם האקסית עברה לישון בסלון "בגלל הרעש"
@@ -27,9 +27,9 @@ source:
   section: הנחירות שהאקסית התלוננה עליהן
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bc504d5225c0d2d5ec12b8dd8611d3d041a7262abe366e4bd527691865f1e4c4
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

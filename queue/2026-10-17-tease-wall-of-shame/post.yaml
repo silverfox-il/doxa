@@ -1,6 +1,6 @@
 id: 2026-10-17-tease-wall-of-shame
 publish_at: 2026-10-17 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הוא בטוח שהוא נחמד וחם, והיא רואה סבא.
@@ -30,9 +30,9 @@ source:
   section: 'הקיר של הבושה: מה גברים בגילך עושים ברשת'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:67f4c1b4294ae66a10de5a60a415f7a2240060dff3f0b4496201270932aac3e7
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

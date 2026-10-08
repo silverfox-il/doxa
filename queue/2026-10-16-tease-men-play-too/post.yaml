@@ -1,6 +1,6 @@
 id: 2026-10-16-tease-men-play-too
 publish_at: 2026-10-16 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גם גברים משחקים, ועוד איך.
@@ -30,9 +30,9 @@ source:
   section: ומה עם הגברים?
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0052b54488badd7894ac1390f6772e932b234913dffe2649f83cbbe7124e2e6c
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-15-reel-just-sleep
 publish_at: 2026-10-15 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כל אימון מרגיש כמו לסחוב מקרר במדרגות.
@@ -28,9 +28,9 @@ source:
   section: שגרה של גבר שישן טוב
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:3a9644cd7939c875d9745dc9f40521e1af05e4c6edb9c996f6ac2a0023228052
+approved_by: auto
+approved_at: '2026-10-08T09:28:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
