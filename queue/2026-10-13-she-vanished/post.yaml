@@ -3,7 +3,7 @@ publish_at: 2026-10-13 20:00
 approved: true
 mode: render
 caption: |-
-  היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
+  היה כיף, היה חם, והיא פתאום נעלמה.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,7 +11,7 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: היא ענתה, היה כיף, היה חם, והיא פתאום נעלמה.
+  title: היה כיף, היה חם, והיא פתאום נעלמה.
   accent: ''
   body: ''
   layout: bottom
@@ -25,35 +25,28 @@ slides:
   items: []
 - background: null
   kicker: ''
-  title: ואתה מתחיל לבדוק מתי היא הייתה מחוברת לאחרונה
+  title: אתה לא שולח "הכל בסדר?". לא צופה לה בסטורי. לא עושה לייק.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ואולי היא מתכתבת עם עוד שלושה גברים ובודקת מי מתפרק ראשון.
+  title: אתה ממשיך את החיים שלך כאילו כלום. חדר כושר, חברים, עבודה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: הכלל שלי הוא הודעה אחת, לא יותר, ואחרי כמה ימים של שקט.
+  title: כי מי שנעלמת, בודקת אם תרדוף.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: ואם גם אחרי זה יש שקט? אז יש שקט.
-  accent: ''
-  body: ''
-  layout: bottom
-  items: []
-- background: null
-  kicker: ''
-  title: חלק לא יחזרו לעולם, ולא הפסדת כלום.
+  title: ואם היא חוזרת? היא חוזרת לגבר שלא חיכה לה.
   accent: ''
   body: ''
   layout: bottom
