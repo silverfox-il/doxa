@@ -3,7 +3,7 @@ publish_at: 2026-10-12 20:00
 approved: true
 mode: render
 caption: |-
-  אתה בוחר בה, או שאתה בורח מהבדידות?
+  אתה בוחר בה, או בורח מהבדידות?
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,42 +11,42 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: אתה בוחר בה, או שאתה בורח מהבדידות?
+  title: אתה בוחר בה, או בורח מהבדידות?
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אחרי גירושים, הדירה שקטה מדי. ימי שישי בלי ילדים ארוכים מדי. החג הראשון לבד שובר אותך.
+  title: אחרי גירושים הדירה שקטה מדי. שישי בלי הילדים ארוך מדי. החג הראשון לבד שובר אותך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: וכשהגוף והלב רעבים ככה, כל אישה סבירה נראית כמו הצלה.
+  title: וכשאתה רעב ככה, כל אישה סבירה נראית כמו הצלה.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: 'אז תשאל את עצמך, בכנות, ולא בשתיים בלילה: אם לא הייתי לבד עכשיו, הייתי בוחר בה?'
+  title: 'אז תשאל את עצמך בכנות, ולא בשתיים בלילה: אם לא הייתי לבד עכשיו, הייתי בוחר בה?'
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אם התשובה היא "לא ממש, אבל טוב לא להיות לבד", אז אתה לא בוחר, אתה מסתתר.
+  title: אם התשובה היא "לא ממש, אבל טוב לא להיות לבד", אתה לא בוחר. אתה מסתתר.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: וזה בדיוק המקום שממנו גברים חוזרים לבית המשפט לענייני משפחה.
+  title: וזו הדרך הכי מהירה לחזור לבית המשפט לענייני משפחה.
   accent: ''
   body: ''
   layout: bottom
