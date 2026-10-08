@@ -1,0 +1,37 @@
+id: 2026-10-11-belly-card
+publish_at: 2026-10-11 20:00
+approved: false
+mode: render
+format: photo
+pillar: body
+caption: |-
+  ובגיל שלך הבעיה המרכזית היא לא השומן ברגליים, היא הכרס.
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+  .
+  #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+slides:
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: ובגיל שלך הבעיה המרכזית היא לא השומן ברגליים, היא הכרס.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: השומן הזה שיושב עמוק בבטן, מסביב לאיברים, הוא לא רק מכוער.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: הוא קשור ללחץ דם, לסוכר, ללב, והוא מוריד טסטוסטרון.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: כלומר הוא פוגע בדיוק בדברים שאתה צריך בשביל להיות גבר שנשים רוצות.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: אתה לא צריך להוסיף עוד עשרה קילו לכרס כדי לבנות כתפיים.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: רק תבין שזה דורש סבלנות. אין כאן ניסים של שלושה שבועות.
+  layout: center
+- background: assets/backgrounds/2026-10-11-belly-card.jpg
+  title: אתה בונה משהו לאורך זמן.
+  layout: center
+source:
+  file: 08.md
+  section: הבטן, הקלף שאתה משחק

@@ -1,0 +1,34 @@
+id: 2026-10-14-price-tag
+publish_at: 2026-10-14 20:00
+approved: false
+mode: render
+format: photo
+pillar: status
+caption: |-
+  הפרופיל שלך הוא תג המחיר שלך.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides:
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: הפרופיל שלך הוא תג המחיר שלך.
+  layout: center
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: כל פרט בו או מעלה את הערך שלך או מוריד אותו
+  layout: center
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: תמונות מושלמות מדי, מקצוע מפוצץ, אפס חברים, אפס היסטוריה. זה לא נראה עשיר, זה נראה כמו עוקץ
+  layout: center
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: הפרופיל שלך מראה התחלה חדשה, לא פצע פתוח.
+  layout: center
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: זה לא מעורר בה חמלה, זה מעורר בה רחמים, ואף אחת לא נכנסת למיטה של מישהו שהיא מרחמת עליו.
+  layout: center
+- background: assets/backgrounds/2026-10-14-price-tag.jpg
+  title: אתה לא עובר מבחן, אתה עורך מבחן.
+  layout: center
+source:
+  file: 02.md
+  section: מה מוריד את המחיר שלך

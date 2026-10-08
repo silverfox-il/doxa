@@ -1,0 +1,37 @@
+id: 2026-10-17-light-jab
+publish_at: 2026-10-17 20:00
+approved: false
+mode: render
+format: photo
+pillar: dating
+caption: |-
+  הקנטה טובה היא כמו דגדוג קטן.
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides:
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: הקנטה טובה היא כמו דגדוג קטן.
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: היא לוקחת משהו שהיא אמרה או עשתה, ומסובבת אותו בחיוך
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: היא אמרה שהיא מאחרת תמיד? "טוב שאמרת. אני אגיד לך שהפגישה בשמונה, ואחכה לך בשמונה וחצי עם חיוך".
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: והקנטות הכי טובות בגיל שלכם הן על הגיל עצמו, מהצד של שניכם.
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: משקפי קריאה, ברכיים שמודיעות על גשם, שירים שרק אתם זוכרים
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: מה לא מקניטים? את הגוף שלה, את הילדים שלה, את הכסף שלה.
+  layout: center
+- background: assets/backgrounds/2026-10-17-light-jab.jpg
+  title: ואם היא עושה מזה סיפור של יומיים, קיבלת מידע חשוב עליה, בחינם.
+  layout: center
+source:
+  file: 02.md
+  section: הקנטה בגובה העיניים

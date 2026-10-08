@@ -1,0 +1,28 @@
+id: 2026-10-16-dealt-cards
+publish_at: 2026-10-16 20:00
+approved: false
+mode: render
+format: bold
+pillar: body
+caption: |-
+  יש דברים שנקבעו אצלך לפני שידעת ללכת.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+slides:
+- title: יש דברים שנקבעו אצלך לפני שידעת ללכת.
+  layout: bottom
+- title: 'ובגיל 45 פלוס נוסף עוד שכבה שלא בחרת: מה עשית עם הגוף בעשרים השנים האחרונות.'
+  layout: bottom
+- title: עשרים שנה של ישיבה, שלושה הריונות של האקסית שבהם אכלת בשביל שניים, ארוחות שישי
+  layout: bottom
+- title: זה לא גנטיקה, אבל זה הקלף שאיתו אתה מתחיל עכשיו.
+  layout: bottom
+- title: אתה לא יכול להחליף את ההורים שלך ואתה לא יכול להחזיר את הזמן.
+  layout: bottom
+- title: אלה הקלפים שבידיים שלך, והשאלה היחידה היא איך אתה משחק אותם מכאן והלאה.
+  layout: bottom
+source:
+  file: 08.md
+  section: מה שחילקו לך בלידה

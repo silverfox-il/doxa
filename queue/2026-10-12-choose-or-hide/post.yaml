@@ -1,0 +1,28 @@
+id: 2026-10-12-choose-or-hide
+publish_at: 2026-10-12 20:00
+approved: false
+mode: render
+format: tweet
+pillar: mind
+caption: |-
+  אתה בוחר בה, או שאתה בורח מהבדידות?
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides:
+- title: אתה בוחר בה, או שאתה בורח מהבדידות?
+  layout: bottom
+- title: אחרי גירושים, הדירה שקטה מדי. ימי שישי בלי ילדים ארוכים מדי. החג הראשון לבד שובר אותך.
+  layout: bottom
+- title: וכשהגוף והלב רעבים ככה, כל אישה סבירה נראית כמו הצלה.
+  layout: bottom
+- title: 'אז תשאל את עצמך, בכנות, ולא בשתיים בלילה: אם לא הייתי לבד עכשיו, הייתי בוחר בה?'
+  layout: bottom
+- title: אם התשובה היא "לא ממש, אבל טוב לא להיות לבד", אז אתה לא בוחר, אתה מסתתר.
+  layout: bottom
+- title: וזה בדיוק המקום שממנו גברים חוזרים לבית המשפט לענייני משפחה.
+  layout: bottom
+source:
+  file: 11.md
+  section: 'תבדוק את עצמך: אתה בוחר, או בודד?'

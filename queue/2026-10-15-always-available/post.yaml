@@ -1,0 +1,28 @@
+id: 2026-10-15-always-available
+publish_at: 2026-10-15 20:00
+approved: false
+mode: render
+format: tweet
+pillar: second-round
+caption: |-
+  מה שיש תמיד, מפסיקים לראות.
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides:
+- title: מה שיש תמיד, מפסיקים לראות.
+  layout: bottom
+- title: תמיד עונה בשנייה, תמיד פנוי לכל רעיון שלה, הופך מהר מאוד למובן מאליו.
+  layout: bottom
+- title: לא בגלל שהיא רעה, אלא בגלל שככה בני אדם עובדים
+  layout: bottom
+- title: אתה יוצא כי יש לך חיים.
+  layout: bottom
+- title: נסיעת עבודה, סוף שבוע עם החבר'ה בגליל, ערב פוקר, רכיבה על אופניים ביום שישי בבוקר
+  layout: bottom
+- title: אתה חוזר הביתה עם סיפורים, עם אנרגיה, עם משהו חדש. והיא מחכה לך, לא כי אתה משחק איתה, אלא כי היא התגעגעה.
+  layout: bottom
+source:
+  file: 11.md
+  section: אל תהיה זמין כל הזמן
