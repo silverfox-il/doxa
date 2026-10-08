@@ -203,7 +203,10 @@ class Publisher:
             for p, post in posts
             if post.approved and post.status in PUBLISHABLE_STATUSES and post.is_due(self.now)
         ]
-        due.sort(key=lambda pp: pp[1].publish_at_dt)
+        # Reels first: they reach non-followers, which is what grows the account.
+        # Pacing caps posts per day, so when a backlog builds up, overdue reels
+        # go out before overdue carousels; within each kind, oldest first.
+        due.sort(key=lambda pp: (pp[1].mode != Mode.reel, pp[1].publish_at_dt))
         for path, post in due:
             blockers = self.blockers(path, post)
             if not blockers:

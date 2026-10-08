@@ -111,3 +111,15 @@ def test_restricted_error_and_not_live_pauses(repo, gh_calls):  # noqa: F811
     assert p.run(dry_run=False) == 1
     assert load_post(path).status == Status.failed_retryable
     assert pacing.read_pause(repo) is not None
+
+
+def test_overdue_reels_go_before_overdue_carousels(repo, gh_calls, monkeypatch):  # noqa: F811
+    from .test_publish import reel_post
+
+    carousel = approved_post(repo, "2026-09-25-older", publish_at="2026-09-25 06:00")
+    reel_path = reel_post(repo, monkeypatch)  # 2026-09-25-post at 07:00, a reel
+    p, client, _, _ = publisher(repo, head=lambda u: (200, "video/mp4" if u.endswith(".mp4") else "image/jpeg"))
+    client.create_reel_container = lambda url, caption: "reel-parent"
+    assert p.run(dry_run=False) == 0
+    assert load_post(reel_path).status == Status.published
+    assert load_post(carousel).status != Status.published
