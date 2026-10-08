@@ -30,10 +30,10 @@ pillar: body
 approved_hash: sha256:61759621647425104bcfadaaafbe0de373fe70ae05aca942971ae8418be841cd
 approved_by: owner
 approved_at: '2026-10-07T20:25:05+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18125090206916790'
+permalink: https://www.instagram.com/reel/DeOLHpJE8Ww/
+published_at: 2026-10-08T05:23:19+0000
 error: null
 story_id: null
 story_error: null
