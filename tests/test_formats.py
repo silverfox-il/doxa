@@ -39,3 +39,21 @@ def test_center_layout_is_available_for_photo():
         Slide(background=BG, title="א ב ג", layout=Layout.center), 2, 3, root=ROOT
     )
     assert 'class="content center"' in doc
+
+
+def test_long_quote_is_shrunk_to_fit_the_slide():
+    import pytest
+
+    pytest.importorskip("playwright.sync_api")
+    long = " ".join(["עשרים שנה של ישיבה, שלושה הריונות של האקסית שבהם אכלת בשביל שניים,"] * 9)
+    with render.Renderer() as r:
+        for look in (Format.photo, Format.tweet, Format.bold):
+            bg = BG if look == Format.photo else None
+            r.load(render.build_html(Slide(background=bg, title=long), 2, 3, root=ROOT, look=look))
+            box = r.page.evaluate(
+                "() => { const b = document.querySelector('.card') || "
+                "document.querySelector('.content'); const x = b.getBoundingClientRect(); "
+                "return [x.top, x.bottom, window.innerHeight]; }"
+            )
+            assert box[0] >= 140 and box[1] <= box[2] - 115, (look, box)
+            assert r.last_scale < 1

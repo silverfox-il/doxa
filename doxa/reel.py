@@ -99,6 +99,28 @@ def frame_html(
     )
 
 
+# Same idea as the slides: shrink every line together until the whole block (all
+# lines, hidden ones keep their space) fits between the top and the handle.
+REEL_FIT_JS = """
+() => {
+  const H = window.innerHeight, TOP = 140, BOTTOM = H - 260;
+  const box = document.querySelector('.w');
+  const ps = [...document.querySelectorAll('.w p')];
+  const base = ps.map(p => parseFloat(getComputedStyle(p).fontSize));
+  const fits = () => {
+    const r = box.getBoundingClientRect();
+    return r.top >= TOP && r.bottom <= BOTTOM;
+  };
+  let scale = 1;
+  while (!fits() && scale > 0.45) {
+    scale -= 0.04;
+    ps.forEach((p, i) => { p.style.fontSize = (base[i] * scale) + 'px'; });
+  }
+  return scale;
+}
+"""
+
+
 def render_frames(reel: Reel, out_dir: Path) -> list[Path]:
     from playwright.sync_api import sync_playwright
 
@@ -118,6 +140,7 @@ def render_frames(reel: Reel, out_dir: Path) -> list[Path]:
                 )
                 page.set_content(doc, wait_until="load")
                 page.evaluate("document.fonts.ready")
+                page.evaluate(REEL_FIT_JS)
                 out = out_dir / f"{k}.png"
                 page.screenshot(path=str(out), type="png", omit_background=bool(reel.video))
                 paths.append(out)

@@ -184,6 +184,34 @@ def build_html(
     )
 
 
+# Long book quotes must never spill off the slide. After layout, shrink the text
+# (keeping its proportions) until the text block sits inside the safe area: below
+# the brand bar and above the handle / swipe arrow. Returns the final scale.
+FIT_JS = """
+() => {
+  const H = window.innerHeight, TOP = 140, BOTTOM = H - 115;
+  const box = document.querySelector('.card') || document.querySelector('.content');
+  if (!box) return 1;
+  const texts = [...document.querySelectorAll('.title, .kicker, .accent, .body, .items li')];
+  const base = texts.map(t => parseFloat(getComputedStyle(t).fontSize));
+  const fits = () => {
+    const r = box.getBoundingClientRect();
+    return r.top >= TOP && r.bottom <= BOTTOM;
+  };
+  let scale = 1;
+  while (!fits() && scale > 0.45) {
+    scale -= 0.04;
+    texts.forEach((t, i) => { t.style.fontSize = (base[i] * scale) + 'px'; });
+  }
+  return scale;
+}
+"""
+
+
+class TextOverflowError(RenderError):
+    pass
+
+
 class Renderer:
     """One headless Chromium reused for many slides. Use as a context manager."""
 
@@ -207,6 +235,7 @@ class Renderer:
         # Font is a data URI with font-display:block; wait so text never
         # renders in a fallback face.
         self.page.evaluate("document.fonts.ready")
+        self.last_scale = self.page.evaluate(FIT_JS)
 
     def screenshot(self, doc: str, *, fmt: str = "jpeg") -> bytes:
         self.load(doc)
