@@ -99,8 +99,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # queue/ can vanish when the last post is deleted; add it only if present.
+          # STATUS.md is left to the publisher: publish runs rewrite it every 30
+          # minutes, and committing it here only caused rebase conflicts.
           if [ -d queue ]; then git add -A queue; fi
-          git add STATUS.md
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else
@@ -123,9 +124,7 @@ jobs:
             exit 0
           fi
           doxa auto-approve $IDS
-          doxa status
           if [ -d queue ]; then git add -A queue; fi
-          git add STATUS.md
           if ! git diff --cached --quiet; then
             git commit -m "auto-approve: $IDS"
             git pull --rebase --quiet origin main
