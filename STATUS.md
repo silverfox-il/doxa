@@ -21,9 +21,9 @@
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-she-vanished` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | rendered | — | — |
-| 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
-| 2026-10-12 | `2026-10-12-choose-or-hide` | — | rendered | — | — |
-| 2026-10-12 | `2026-10-12-tease-shop-window` | — | rendered | — | — |
+| 2026-10-13 | `2026-10-13-reel-snoring` | ⚠️ stale | rendered | — | — |
+| 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | rendered | — | — |
+| 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-belly-card` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
