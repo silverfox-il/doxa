@@ -3,7 +3,7 @@ publish_at: 2026-10-14 20:00
 approved: true
 mode: render
 caption: |-
-  הפרופיל שלך הוא תג המחיר שלך.
+  הדייט הראשון אצלך בבית. אז בוא נדבר על הבית.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
@@ -11,42 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: הפרופיל שלך הוא תג המחיר שלך.
+  title: הדייט הראשון אצלך בבית. אז בוא נדבר על הבית.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: כל פרט בו או מעלה את הערך שלך או מוריד אותו
+  title: סדינים מלפני הגירושים. מקרר עם חלב וקטשופ. מגבת אחת בשירותים.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: תמונות מושלמות מדי, מקצוע מפוצץ, אפס חברים, אפס היסטוריה. זה לא נראה עשיר, זה נראה כמו עוקץ
+  title: היא נכנסת, ותוך עשר שניות יודעת איך אתה חי.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: הפרופיל שלך מראה התחלה חדשה, לא פצע פתוח.
+  title: לא צריך וילה. צריך בית של גבר שמסתדר לבד.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: זה לא מעורר בה חמלה, זה מעורר בה רחמים, ואף אחת לא נכנסת למיטה של מישהו שהיא מרחמת עליו.
+  title: מצעים נקיים, בקבוק יין טוב בארון, שתי כוסות יפות, ואור נעים בסלון.
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-14-price-tag.jpg
   kicker: ''
-  title: אתה לא עובר מבחן, אתה עורך מבחן.
+  title: 'בית מסודר אומר לה דבר אחד: הוא לא מחפש מישהי שתציל אותו.'
   accent: ''
   body: ''
   layout: center
