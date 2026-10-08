@@ -1,6 +1,6 @@
 id: 2026-10-09-reel-garden
 publish_at: 2026-10-09 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אמרו לגברים: "תפנק אותה, ככה זוכים בה".
@@ -26,9 +26,9 @@ source:
   section: גינה, לא כספומט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5052dba6085fc9ef0d52a5df07cd11d1fff1464cf5badc811b42293a73d22388
+approved_by: auto
+approved_at: '2026-10-08T20:28:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

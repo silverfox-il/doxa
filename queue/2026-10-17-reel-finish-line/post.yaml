@@ -1,6 +1,6 @@
 id: 2026-10-17-reel-finish-line
 publish_at: 2026-10-17 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הרבה גברים חושבים שהמחויבות היא קו הסיום.
@@ -27,9 +27,9 @@ source:
   section: המשחק לא נגמר, הוא רק עולה שלב
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d198642ae7db79b5b1ba27490c29cb33d8859e3a0ad4ce01b60df2bfd4ad3c4c
+approved_by: auto
+approved_at: '2026-10-08T20:28:41+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
