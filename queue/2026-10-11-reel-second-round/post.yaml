@@ -1,6 +1,6 @@
 id: 2026-10-11-reel-second-round
 publish_at: 2026-10-11 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אחרי גירושים, רוב הגברים לא בוחרים אישה. הם בוחרים לא להיות לבד.
@@ -27,9 +27,9 @@ source:
   section: סבב שני, והפעם עם עיניים פקוחות
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7d9caa29d93329f4497e1742d24b4a8c5df4a8b6ed38a9561f6f2291288c484d
+approved_by: auto
+approved_at: '2026-10-08T20:21:51+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

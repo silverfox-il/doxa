@@ -1,6 +1,6 @@
 id: 2026-10-07-reel-not-your-project
 publish_at: 2026-10-07 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   יש נשים שיוצאות מגירושים ורוצות רק לשחק. ויש שמחפשות בעל חדש. מהר.
@@ -27,9 +27,9 @@ source:
   section: ארבעים וחמש, והמשחק מתחיל מחדש
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f6b5e45beed499e8531ebab54a57d8945c3aa64a2420d6cf237ace57a99920a1
+approved_by: auto
+approved_at: '2026-10-08T20:21:51+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
