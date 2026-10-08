@@ -1,6 +1,6 @@
 id: 2026-10-15-always-available
 publish_at: 2026-10-15 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   היא צריכה לדעת שאתה לא מובן מאליו.
@@ -50,9 +50,9 @@ source:
   section: אל תהיה זמין כל הזמן
 format: tweet
 pillar: second-round
-approved_hash: sha256:5993449645a1f94f2cdea1641173a16096a2dc6db295d61e3bff40d68be50b1a
-approved_by: owner
-approved_at: '2026-10-08T20:29:59+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

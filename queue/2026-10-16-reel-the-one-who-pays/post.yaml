@@ -1,6 +1,6 @@
 id: 2026-10-16-reel-the-one-who-pays
 publish_at: 2026-10-16 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   "הוא חמוד, הוא יהיה אבא מדהים, אבל זה פשוט לא זה".
@@ -27,9 +27,9 @@ source:
   section: זה שמדליק, וזה שמשלם
 format: null
 pillar: dating
-approved_hash: sha256:93647124ff367e9d9a13f17c91c5c780fc5c9beb6d822190237d34a0359cfd8d
-approved_by: owner
-approved_at: '2026-10-08T20:30:02+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

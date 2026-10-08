@@ -1,6 +1,6 @@
 id: 2026-10-15-reel-just-sleep
 publish_at: 2026-10-15 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אמרו לגברים שגיל זה רק מספר.
@@ -27,9 +27,9 @@ source:
   section: שגרה של גבר שישן טוב
 format: null
 pillar: body
-approved_hash: sha256:563327552dd6b7ca57004426ad44db35fc3605f2133b4db55e2459038b851c2d
-approved_by: owner
-approved_at: '2026-10-08T20:30:00+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
