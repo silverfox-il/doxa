@@ -205,6 +205,13 @@ What the owner asked for, round by round:
   המהוהה" (literary word). Fixed versions say it plainly: "תעשה לך ראיון עבודה לתפקיד
   'בעל' כבר בדייט הראשון", "ככה קונים תשומת לב. לא משיכה.", "החולצה הדהויה". Use only
   words a 45+ Israeli says out loud; if an image needs explaining, drop it.
+- **When she disappears (owner's firm position, 2026-10-08):** he sends NO message at
+  all, doesn't watch her stories, doesn't like anything, shows no sign; he just keeps
+  living. Never advise "one short message after a few days".
+- **No repeated ideas.** Before writing, read `content/used.yaml` and the queue: a post
+  may not repeat an idea that already ran, even in new words (the owner caught a second
+  "seeking her approval" reel). Never recycle an image or line (e.g. "ילד שמראה לאמא
+  ציור" ran twice), and don't lean on fixed formulas; the owner calls that "AI-ish".
 - **"אחי" sparingly:** at most once in a post, and not in most posts.
 - **The audience is 45 and up, not "50".** Say "אחרי 45", "בגיל שלך", or nothing.
 - **Avoid the copywriter tic.** "אתה לא X. אתה Y" at most once per post.
