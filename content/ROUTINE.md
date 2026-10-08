@@ -145,6 +145,21 @@ Reels have no `format`.
 Every caption has exactly one line copied word for word from `config/cta.yaml`.
 Never write your own. Do not use the same line on two consecutive posts.
 
+## THE METHOD: curate the new book, don't write (the owner's rule, 2026-10-08)
+
+Everything written "in the style of" the book sounds artificial to the owner. What
+he loves is his own writing. So carousels and reels are built from the NEW book
+(`book/*.md`) almost word for word: pick the strongest passage, cut it into slides
+or reel lines at natural sentence breaks, keep his exact words, quotes, asides and
+punctuation. Allowed changes are only cuts (dropping sentences or clauses), removing
+dashes, masking crude words, and adapting nothing else. Never paraphrase, never
+"improve". The new book is unpublished, so quoting it is fine; never quote the OLD
+edition (4,000 readers know it). Owner-approved examples:
+`2026-10-15-always-available` (11.md, jealousy), `2026-10-16-reel-the-one-who-pays`
+(02.md, the one who lights her up vs the one who pays),
+`2026-10-15-tease-came-to-eat` (02.md, "זו שבאה לאכול"). Teaser series may
+add the owner's trolling frame around a quoted core. Keep `source:` exact.
+
 ## Reels: truths about men and women (the owner's rule, 2026-10-07)
 
 Reels (13:00) follow the approach of @shiraz_mizrahi777, whose text reels reach 5K to

@@ -3,7 +3,7 @@ publish_at: 2026-10-15 20:00
 approved: true
 mode: render
 caption: |-
-  מה שיש תמיד, מפסיקים לראות.
+  היא צריכה לדעת שאתה לא מובן מאליו.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
@@ -11,42 +11,35 @@ caption: |-
 slides:
 - background: null
   kicker: ''
-  title: מה שיש תמיד, מפסיקים לראות.
+  title: היא צריכה לדעת שאתה לא מובן מאליו.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: תמיד עונה בשנייה, תמיד פנוי לכל רעיון שלה, הופך מהר מאוד למובן מאליו.
+  title: קצת קנאה זה בסדר. אפילו טוב.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: לא בגלל שהיא רעה, אלא בגלל שככה בני אדם עובדים
+  title: אישה שרואה שמסתכלים עליך בחתונה של הבת של החבר שלך, ומתקרבת אליך, שמה לך יד על הגב, מסמנת טריטוריה, זה סימן שהיא רוצה אותך ויודעת שיש לך ערך.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: אתה יוצא כי יש לך חיים.
+  title: גבר שיש לו חיים, חברים, תחביבים, ושנשים אחרות רואות אותו, הוא גבר שאישה משקיעה בו.
   accent: ''
   body: ''
   layout: bottom
   items: []
 - background: null
   kicker: ''
-  title: נסיעת עבודה, סוף שבוע עם החבר'ה בגליל, ערב פוקר, רכיבה על אופניים ביום שישי בבוקר
-  accent: ''
-  body: ''
-  layout: bottom
-  items: []
-- background: null
-  kicker: ''
-  title: אתה חוזר הביתה עם סיפורים, עם אנרגיה, עם משהו חדש. והיא מחכה לך, לא כי אתה משחק איתה, אלא כי היא התגעגעה.
+  title: זה ככה אצלנו, וזה ככה גם אצלן.
   accent: ''
   body: ''
   layout: bottom
