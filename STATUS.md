@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-09-reel-garden` at 2026-10-09 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 5/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -45,7 +45,7 @@
 | 2026-10-06 | `2026-10-06-tease-elephant` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-reel-money-calm` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-first-message` | ✅ | rendered | — | — |
-| 2026-10-06 | `2026-10-06-reel-ring` | ✅ | rendered | — | — |
+| 2026-10-06 | `2026-10-06-reel-ring` | ✅ | publishing | — | — |
 | 2026-10-06 | `2026-10-06-shirt-belly` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-what-looking-for` | ✅ | rendered | — | — |
 | 2026-10-05 | `2026-10-05-bar-fear` | ✅ | rendered | — | — |
