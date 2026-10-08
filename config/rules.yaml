@@ -103,9 +103,8 @@ masked_words:
 # "אם אתה ... אז ...", "אם אתה עד כדי כך דפוק ש...", never preach ABOUT "a man who".
 # Plus Hebrew mistakes the owner caught. Checked on posts not yet published.
 style_rules:
-  - match: "re:^ו?גבר "
-    write: "talk to him: open with 'אתה' / 'אם אתה', not 'גבר ...'"
-    carousels_only: true   # reels may state truths about men in third person
+  # (2026-10-08) The '^גבר' rule was removed: posts now quote the owner's new book,
+  # which talks about men in the third person.
   - match: "re:להיות נדלק"
     write: "write 'להידלק' (היא צריכה להידלק ממך)"
 
