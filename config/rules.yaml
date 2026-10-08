@@ -69,7 +69,7 @@ min_woman_age: 37
 engine_from: "2026-10-04 00:00"
 # Slide 1 / reel line 1 is the hook: one punchy line the viewer reads first.
 hook_min_words: 3
-hook_max_words: 15  # owner-approved hooks run to 14 words
+hook_max_words: 18  # book-quote hooks the owner approved run to 16 words
 
 # Owner's rule (2026-10-03): posts are written in the book's voice (its insights,
 # conclusions, slang, bluntness and attitude), not copied word for word.
