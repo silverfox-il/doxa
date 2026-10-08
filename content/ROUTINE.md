@@ -163,6 +163,12 @@ Every 13:00 reel sets `reel.video` to a background clip from `doxa-private/video
 `coffee-window`, `city-night-walk`, `city-crossing`, `drive-tunnel`, `beach-walk`,
 `beach-sunset`, `suit-watch`, `window-silhouette` (file name + `.mp4`). Don't use the
 same clip two days in a row.
+Owner's emphasis (2026-10-08): show attractive, fit men around 45 to 50 (everyone
+wants to look younger). Prefer the `man45-*` clips: `man45-sweater`,
+`man45-pensive-beard`, `man45-gray-wine`, `man45-fit-boxing`, `man45-suit-city`,
+`man45-park-walk`, `man45-silver-fox`, `man45-coat-city`, `man45-smile-wine`,
+`man45-profile`, `man45-closeup`, `man45-suit-profile`; at least 4 of the week's 7
+reels use one.
 
 ## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
 
