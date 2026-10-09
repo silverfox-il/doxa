@@ -36,10 +36,10 @@ pillar: mind
 approved_hash: sha256:639fcac9b6a61f49a45f8280be986258d98cfd84e9dbd0d99f948e7b7c11a8f5
 approved_by: owner
 approved_at: '2026-10-05T09:31:32+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18493145362104799'
+permalink: https://www.instagram.com/reel/DeSW5UNDMRf/
+published_at: 2026-10-09T20:23:26+0000
 error: null
 story_id: null
 story_error: null
