@@ -526,5 +526,29 @@ def check(expect_username: str | None) -> None:
         _fail(problems)
 
 
+@main.command()
+@click.option("--limit", default=30, show_default=True, help="How many recent posts.")
+def stats(limit: int) -> None:
+    """Followers plus likes, comments and views of recent posts (read only)."""
+    from .instagram import InstagramError
+
+    client = _client()
+    try:
+        counts = client.account_counts()
+        media = client.media_stats(limit)
+    except InstagramError as e:
+        _fail([str(e)])
+    click.echo(f"followers: {counts.get('followers_count')}  posts: {counts.get('media_count')}")
+    click.echo("date        type      likes  comments  views  first line")
+    for m in media:
+        views = client.media_views(m["id"])
+        first = (m.get("caption") or "").strip().splitlines()[:1] or [""]
+        click.echo(
+            f"{m.get('timestamp', '')[:10]}  {m.get('media_type', ''):<8}  "
+            f"{m.get('like_count', 0):>5}  {m.get('comments_count', 0):>8}  "
+            f"{'?' if views is None else views:>5}  {first[0][:50]}"
+        )
+
+
 if __name__ == "__main__":
     main()

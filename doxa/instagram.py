@@ -255,6 +255,31 @@ class Client:
         )
         return list(out.get("data", []))
 
+    def account_counts(self) -> dict[str, Any]:
+        """Public counters of the account: followers and number of posts."""
+        return self._get(f"/{self.ig_user_id}", fields="followers_count,media_count")
+
+    def media_stats(self, limit: int = 30) -> list[dict[str, Any]]:
+        """Newest posts with their public likes and comments counts."""
+        out = self._get(
+            f"/{self.ig_user_id}/media",
+            fields="id,caption,media_type,timestamp,like_count,comments_count",
+            limit=str(limit),
+        )
+        return list(out.get("data", []))
+
+    def media_views(self, media_id: str) -> int | None:
+        """Views of one post, or None when the token may not read insights."""
+        try:
+            out = self._get(f"/{media_id}/insights", metric="views")
+        except InstagramError:
+            return None
+        for item in out.get("data", []):
+            values = item.get("values") or [{}]
+            if item.get("name") == "views":
+                return int(values[0].get("value", 0))
+        return None
+
 
 T = TypeVar("T")
 
