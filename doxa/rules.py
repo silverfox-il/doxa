@@ -23,6 +23,7 @@ so Instagram does not restrict the account.
 
 from __future__ import annotations
 
+import datetime as dt
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -275,8 +276,16 @@ def pillar_rotation(posts: list[Post], cfg: RulesConfig) -> list[Finding]:
     ]
 
 
-def cta_rotation(posts: list[Post], cfg: RulesConfig) -> list[Finding]:
-    """Two posts in a row (by publish time) may never use the same call to action."""
+def cta_rotation(
+    posts: list[Post], cfg: RulesConfig, now: dt.datetime | None = None
+) -> list[Finding]:
+    """Two posts in a row (by publish time) may never use the same call to action.
+
+    Pairs where both posts are already overdue are skipped: they were checked while
+    still in the future, and publishing a post between them only makes them look
+    adjacent (the publisher, not ``publish_at``, decides a backlog's order).
+    """
+    now = now or dt.datetime.now(dt.UTC)
     cta = set(cfg.cta)
 
     def line(post: Post) -> str | None:
@@ -289,7 +298,7 @@ def cta_rotation(posts: list[Post], cfg: RulesConfig) -> list[Finding]:
     return [
         Finding(BLOCK, "cta", cur.id, f"same call to action as {prev.id}: {line(cur)!r}")
         for prev, cur in zip(seq, seq[1:], strict=False)
-        if line(prev) == line(cur)
+        if line(prev) == line(cur) and not cur.is_due(now)
     ]
 
 

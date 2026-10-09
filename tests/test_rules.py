@@ -10,7 +10,7 @@ from click.testing import CliRunner
 from doxa import rules
 from doxa.book import Book, find_book_dir, normalize
 from doxa.cli import main
-from doxa.queue import Post, Status
+from doxa.queue import Post, Status, parse_local
 
 from .conftest import render_post_data, write_post
 
@@ -448,8 +448,11 @@ def test_cta_rotation_blocks_same_cta_twice_in_a_row():
     a = p("2026-10-05-a", "2026-10-05 13:00", CFG.cta[0])
     b = p("2026-10-05-b", "2026-10-05 20:00", CFG.cta[1])
     c = p("2026-10-06-c", "2026-10-06 13:00", CFG.cta[1])
-    assert rules.cta_rotation([a, b], CFG) == []
-    assert [f.where for f in rules.cta_rotation([c, a, b], CFG)] == ["2026-10-06-c"]
+    before = parse_local("2026-10-01 08:00")
+    assert rules.cta_rotation([a, b], CFG, before) == []
+    assert [f.where for f in rules.cta_rotation([c, a, b], CFG, before)] == ["2026-10-06-c"]
+    # Both overdue: a post published between them made them neighbours; not a finding.
+    assert rules.cta_rotation([c, a, b], CFG, parse_local("2026-10-07 08:00")) == []
 
 
 def test_tease_series_may_generalize_about_women_regular_posts_may_not():
