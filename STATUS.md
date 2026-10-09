@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-09-first-smile` at 2026-10-09 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-first-smile` | ✅ | rendered | — | — |
-| 2026-10-09 | `2026-10-09-reel-supplements` | ✅ | publishing | — | — |
+| 2026-10-09 | `2026-10-09-reel-supplements` | ✅ | published | [link](https://www.instagram.com/reel/DeR3_a-goPy/) | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-reel-garden` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
