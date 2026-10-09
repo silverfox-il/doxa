@@ -74,7 +74,7 @@ def validate_queue(root: Path) -> tuple[int, list[str]]:
                 if slide.background and not (root / slide.background).is_file():
                     errors.append(f"{rel}: slide {i} background not found: {slide.background}")
         if post.mode == Mode.reel:
-            if post.status != Status.queued:
+            if post.status != Status.queued or (post.reel and post.reel.prebuilt):
                 video = path.parent / reel.VIDEO_NAME
                 errors.extend(f"{rel}: {p}" for p in reel.validate_video(video))
         # Prebuilt posts must always ship JPEGs; rendered posts must have kept them.

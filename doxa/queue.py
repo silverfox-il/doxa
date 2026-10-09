@@ -184,6 +184,11 @@ class Reel(BaseModel):
     style: Literal["boxes"] | None = None
     # Background clip (file name in the private video folder); None = flat colour.
     video: str | None = None
+    # True: reel.mp4 is made by hand and committed with the post; render never
+    # overwrites it (``lines`` still hold its text, for the content rules).
+    prebuilt: bool | None = None
+    # True: share reel.mp4 as a story too (teasers do this on their own).
+    share_story: bool | None = None
 
     @property
     def duration(self) -> float:
@@ -262,6 +267,8 @@ class Post(BaseModel):
     # Story repost of a published post: done once, best effort.
     story_id: str | None = None
     story_error: str | None = None
+    # True: goes out before every other due post (owner's pick for today).
+    urgent: bool | None = None
 
     @field_validator("id")
     @classmethod

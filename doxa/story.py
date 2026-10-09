@@ -150,4 +150,6 @@ def story_files(post: Post, post_dir: Path) -> list[str]:
             if (post_dir / SERIES_DIR / f"{i}.jpg").is_file()
         ]
         return ["reel.mp4", *series]
+    if post.mode == Mode.reel and post.reel is not None and post.reel.share_story:
+        return ["reel.mp4"]
     return []

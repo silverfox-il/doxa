@@ -220,6 +220,11 @@ def render_reel(post: Post, post_dir: Path, *, root: Path = REPO_ROOT) -> Path:
     """Render ``reel.mp4`` for a ``mode: reel`` post."""
     if post.reel is None:
         raise ReelError(f"{post.id} has no reel: block")
+    if post.reel.prebuilt:
+        out = post_dir / VIDEO_NAME
+        if not out.is_file():
+            raise ReelError(f"{post.id}: prebuilt reel needs {VIDEO_NAME} in its folder")
+        return out
     if shutil.which("ffmpeg") is None:
         raise ReelError("ffmpeg not found on PATH")
     music_dir = find_music_dir(root)

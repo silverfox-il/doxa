@@ -616,8 +616,8 @@ def test_backlog_alternates_reels_and_carousels():
     from doxa.queue import Mode
 
     class P:
-        def __init__(self, mode, at):
-            self.mode, self.publish_at_dt = mode, at
+        def __init__(self, mode, at, urgent=None):
+            self.mode, self.publish_at_dt, self.urgent = mode, at, urgent
 
     c1, c2 = (None, P(Mode.render, 1)), (None, P(Mode.render, 2))
     r3 = (None, P(Mode.reel, 3))
@@ -625,3 +625,5 @@ def test_backlog_alternates_reels_and_carousels():
     assert backlog_order([c1, c2, r3], Mode.render)[0] is r3
     assert backlog_order([c2, r3, c1], Mode.reel)[0] is c1
     assert backlog_order([c1, c2], Mode.render)[0] is c1
+    u = (None, P(Mode.reel, 9, urgent=True))
+    assert backlog_order([c1, r3, u], Mode.reel)[0] is u

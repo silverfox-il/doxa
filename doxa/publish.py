@@ -75,11 +75,17 @@ def backlog_order(due: list[tuple[Path, Post]], last_mode: Mode | None) -> list[
 
     When a backlog builds up, the next post is of the other kind than the last one
     published; with nothing published yet, a reel goes first (reels reach
-    non-followers). Within each kind, oldest first.
+    non-followers). Within each kind, oldest first. A post marked ``urgent`` goes
+    before all of them.
     """
     prefer_reel = last_mode != Mode.reel
     return sorted(
-        due, key=lambda pp: ((pp[1].mode == Mode.reel) != prefer_reel, pp[1].publish_at_dt)
+        due,
+        key=lambda pp: (
+            not pp[1].urgent,
+            (pp[1].mode == Mode.reel) != prefer_reel,
+            pp[1].publish_at_dt,
+        ),
     )
 
 
