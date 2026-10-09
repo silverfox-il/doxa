@@ -30,10 +30,10 @@ pillar: status
 approved_hash: sha256:b06fac45d06a16ff281243197781cc71e24019deb19d912f0e2facd57220c465
 approved_by: owner
 approved_at: '2026-10-08T20:29:40+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18111550010015183'
+permalink: https://www.instagram.com/reel/DeQwVUBAJr_/
+published_at: 2026-10-09T05:27:14+0000
 error: null
 story_id: null
 story_error: null
