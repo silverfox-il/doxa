@@ -29,16 +29,21 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 
 ## What to produce
 
-1. D1 is the first day from tomorrow on that does not yet have all three daily slots
-   (13:00, 18:00, 20:00) in `queue/`. Fill only the empty slots; never move or replace
-   an existing post.
+Owner's mix (2026-10-09), until the account has a full, interesting grid: **2 reels and
+2 carousels a day** (the teaser counts as one of the reels). The publisher alternates
+reel and carousel when a backlog builds up, and pacing allows at most 4 posts in 24h.
+
+1. D1 is the first day from tomorrow on that does not yet have all four daily slots
+   (10:00, 13:00, 18:00, 20:00) in `queue/`. Fill only the empty slots; never move or
+   replace an existing post.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
 3. For D1 through D7 create:
+   - one **carousel** at `10:00`, id `YYYY-MM-DD-<slug>`
    - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
    - one **teaser series** at `18:00`, id `YYYY-MM-DD-tease-<slug>` (see below)
    - one **carousel** at `20:00`, id `YYYY-MM-DD-<slug>`
 
-That makes 21 posts. The slug is 1 to 4 lowercase English words joined by `-`.
+That makes 28 posts. The slug is 1 to 4 lowercase English words joined by `-`.
 
 Regular posts get no automatic story: the owner shares them to his story himself
 (only the app can attach a link to the post).

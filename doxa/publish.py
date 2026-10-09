@@ -64,6 +64,25 @@ REEL_PROCESS_TIMEOUT_S = 600.0
 Log = Callable[[str], None]
 
 
+def last_published_mode(posts: list[tuple[Path, Post]]) -> Mode | None:
+    """Kind (reel or carousel) of the post that went live most recently."""
+    live = [post for _, post in posts if post.published_at]
+    return max(live, key=lambda post: post.published_at).mode if live else None
+
+
+def backlog_order(due: list[tuple[Path, Post]], last_mode: Mode | None) -> list[tuple[Path, Post]]:
+    """Order due posts so reels and carousels alternate (owner: 2 of each a day).
+
+    When a backlog builds up, the next post is of the other kind than the last one
+    published; with nothing published yet, a reel goes first (reels reach
+    non-followers). Within each kind, oldest first.
+    """
+    prefer_reel = last_mode != Mode.reel
+    return sorted(
+        due, key=lambda pp: ((pp[1].mode == Mode.reel) != prefer_reel, pp[1].publish_at_dt)
+    )
+
+
 class Committer(Protocol):
     def commit(self, paths: list[Path], message: str) -> None: ...
 
@@ -211,10 +230,7 @@ class Publisher:
             for p, post in posts
             if post.approved and post.status in PUBLISHABLE_STATUSES and post.is_due(self.now)
         ]
-        # Reels first: they reach non-followers, which is what grows the account.
-        # Pacing caps posts per day, so when a backlog builds up, overdue reels
-        # go out before overdue carousels; within each kind, oldest first.
-        due.sort(key=lambda pp: (pp[1].mode != Mode.reel, pp[1].publish_at_dt))
+        due = backlog_order(due, last_published_mode(posts))
         for path, post in due:
             blockers = self.blockers(path, post)
             if not blockers:
