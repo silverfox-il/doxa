@@ -24,6 +24,10 @@ reel:
   stories:
   - 'הוא קורא לזה "אני פשוט לא טוב בזה". בתרגום חופשי: הוא פוחד לפתוח את הפה, והמסך נותן לו מחבוא נוח.'
   - ועכשיו אתה. מתי בפעם האחרונה אמרת משפט אחד לאישה שעומדת מולך, בלי מסך באמצע? תענה לסטורי.
+  style: null
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 06.md
   section: הפיל בסלון
@@ -32,10 +36,11 @@ pillar: mind
 approved_hash: sha256:639fcac9b6a61f49a45f8280be986258d98cfd84e9dbd0d99f948e7b7c11a8f5
 approved_by: owner
 approved_at: '2026-10-05T09:31:32+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

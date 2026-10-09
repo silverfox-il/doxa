@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-10-reel-abyss` at 2026-10-10 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 3/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -43,7 +43,7 @@
 | 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-last-seen` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-gym-world` | ✅ | rendered | — | — |
-| 2026-10-06 | `2026-10-06-tease-elephant` | ✅ | rendered | — | — |
+| 2026-10-06 | `2026-10-06-tease-elephant` | ✅ | publishing | — | — |
 | 2026-10-06 | `2026-10-06-reel-money-calm` | ✅ | published | [link](https://www.instagram.com/reel/DeQwVUBAJr_/) | — |
 | 2026-10-06 | `2026-10-06-first-message` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-reel-ring` | ✅ | published | [link](https://www.instagram.com/reel/DePuzv9En2F/) | — |
