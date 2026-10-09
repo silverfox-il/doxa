@@ -19,9 +19,22 @@ reel:
   music: atlasaudio-sports-motivation-606276.mp3
   per_line: 3.5
   hold: 4.5
+  stories: null
+  style: null
   video: man45-gym-fly.mp4
   prebuilt: true
   share_story: true
+source: null
+format: null
 pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
 urgent: true
-status: queued
