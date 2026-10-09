@@ -106,7 +106,7 @@ jobs:
             echo "nothing to commit"
           else
             git commit -m "render: $IDS"
-            git pull --rebase --quiet origin main
+            git pull --rebase --autostash --quiet origin main
             git push origin HEAD:main
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -127,7 +127,7 @@ jobs:
           if [ -d queue ]; then git add -A queue; fi
           if ! git diff --cached --quiet; then
             git commit -m "auto-approve: $IDS"
-            git pull --rebase --quiet origin main
+            git pull --rebase --autostash --quiet origin main
             git push origin HEAD:main
           fi
 
