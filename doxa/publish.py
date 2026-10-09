@@ -532,7 +532,7 @@ class Publisher:
                 container = self._retry("story", lambda u=url: c.create_story_container(u))
                 self.log(f"  story {i}/{len(urls)} container: {container}")
                 c.wait_finished(container, timeout_s=timeout, poll_s=self.poll_s, sleep=self.sleep)
-                ids.append(c.publish(container))
+                ids.append(self._publish_story(container))
                 self.log(f"✓ story {i}/{len(urls)} published: {ids[-1]}")
             message = f"publish: {post.id} story"
         except InstagramError as e:
@@ -542,6 +542,23 @@ class Publisher:
         # Comma-separated when a teaser series published several stories.
         post.story_id = ",".join(ids) or None
         self._save(post, path, message)
+
+    def _publish_story(self, container: str) -> str:
+        """Publish a finished story container.
+
+        Right after a story goes live, Instagram sometimes answers the next
+        media_publish with 2207006 ("media cannot be found") although that
+        container is FINISHED; a short wait and a retry gets it through.
+        """
+        for attempt in range(3):
+            try:
+                return self.client.publish(container)
+            except InstagramError as e:
+                if "2207006" not in str(e) or attempt == 2:
+                    raise
+                self.log(f"  story publish not ready yet (2207006), retry {attempt + 1}/2")
+                self.sleep(15 * (attempt + 1))
+        raise AssertionError("unreachable")
 
     def _live_on_instagram(self, post: Post) -> dict | None:
         """The media this run just created for ``post``, if Instagram has it.

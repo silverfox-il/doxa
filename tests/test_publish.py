@@ -627,3 +627,32 @@ def test_backlog_alternates_reels_and_carousels():
     assert backlog_order([c1, c2], Mode.render)[0] is c1
     u = (None, P(Mode.reel, 9, urgent=True))
     assert backlog_order([c1, r3, u], Mode.reel)[0] is u
+
+
+def test_story_publish_retries_2207006():
+    from doxa.instagram import InstagramError
+    from doxa.publish import Publisher
+
+    class C:
+        n = 0
+
+        def publish(self, container):
+            self.n += 1
+            if self.n < 2:
+                raise InstagramError("HTTP 400 code=24 subcode=2207006: media cannot be found")
+            return "ok"
+
+    class S:
+        client, log, sleep = C(), staticmethod(lambda m: None), staticmethod(lambda s: None)
+
+    assert Publisher._publish_story(S(), "c1") == "ok"
+
+    class Bad(C):
+        def publish(self, container):
+            raise InstagramError("HTTP 400 code=100 other")
+
+    S.client = Bad()
+    import pytest
+
+    with pytest.raises(InstagramError):
+        Publisher._publish_story(S(), "c1")
