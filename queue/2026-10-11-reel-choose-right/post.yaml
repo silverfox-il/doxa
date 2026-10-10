@@ -18,7 +18,22 @@ reel:
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
   video: date-couple-hands.mp4
+  prebuilt: null
+  share_story: null
+source: null
+format: null
 pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
 urgent: true
-status: queued
