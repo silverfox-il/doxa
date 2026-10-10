@@ -67,10 +67,10 @@ pillar: body
 approved_hash: sha256:a9074bbc9fdd34cb4c0eaa4b4214ce1cfbe623d412e1591b574e85d3c07db86e
 approved_by: owner
 approved_at: '2026-10-07T20:25:14+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18096238640450443'
+permalink: https://www.instagram.com/p/DeUuduYFe0a/
+published_at: 2026-10-10T18:27:40+0000
 error: null
 story_id: null
 story_error: null
