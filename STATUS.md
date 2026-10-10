@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-10-reel-abyss` at 2026-10-10 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 4/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -48,7 +48,7 @@
 | 2026-10-06 | `2026-10-06-first-message` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-reel-ring` | ✅ | published | [link](https://www.instagram.com/reel/DePuzv9En2F/) | — |
 | 2026-10-06 | `2026-10-06-shirt-belly` | ✅ | rendered | — | — |
-| 2026-10-05 | `2026-10-05-what-looking-for` | ✅ | rendered | — | — |
+| 2026-10-05 | `2026-10-05-what-looking-for` | ✅ | publishing | — | — |
 | 2026-10-05 | `2026-10-05-bar-fear` | ✅ | published | [link](https://www.instagram.com/p/DeSF5tbFVBS/) | — |
 | 2026-10-05 | `2026-10-05-tease-her-clock` | ✅ | published | [link](https://www.instagram.com/reel/DePg-xyj5jC/) | — |
 | 2026-10-05 | `2026-10-05-approval-chase` | ✅ | published | [link](https://www.instagram.com/p/DePQd0mFNTY/) | — |
