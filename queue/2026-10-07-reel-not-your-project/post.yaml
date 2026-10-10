@@ -22,6 +22,8 @@ reel:
   stories: null
   style: null
   video: city-night-walk.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: ארבעים וחמש, והמשחק מתחיל מחדש
@@ -30,10 +32,11 @@ pillar: dating
 approved_hash: sha256:f6b5e45beed499e8531ebab54a57d8945c3aa64a2420d6cf237ace57a99920a1
 approved_by: owner
 approved_at: '2026-10-08T20:29:44+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
