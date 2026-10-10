@@ -36,10 +36,10 @@ pillar: status
 approved_hash: sha256:7cffb9c987b2b7f30fd709afc11939d32bb59c6c6c6e95840b1f3d62891165bd
 approved_by: owner
 approved_at: '2026-10-05T09:31:35+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18217852057353506'
+permalink: https://www.instagram.com/reel/DeU-6PDEccN/
+published_at: 2026-10-10T20:51:33+0000
 error: null
 story_id: null
 story_error: null
