@@ -32,10 +32,10 @@ pillar: dating
 approved_hash: sha256:f6b5e45beed499e8531ebab54a57d8945c3aa64a2420d6cf237ace57a99920a1
 approved_by: owner
 approved_at: '2026-10-08T20:29:44+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18099143801420418'
+permalink: https://www.instagram.com/reel/DeUgOnWjGiv/
+published_at: 2026-10-10T16:23:27+0000
 error: null
 story_id: null
 story_error: null

@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-10-red-light` at 2026-10-10 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -40,7 +40,7 @@
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-tease-big-bill` | ✅ | rendered | — | — |
-| 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | publishing | — | — |
+| 2026-10-07 | `2026-10-07-reel-not-your-project` | ✅ | published | [link](https://www.instagram.com/reel/DeUgOnWjGiv/) | — |
 | 2026-10-06 | `2026-10-06-last-seen` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-gym-world` | ✅ | rendered | — | — |
 | 2026-10-06 | `2026-10-06-tease-elephant` | ✅ | published | [link](https://www.instagram.com/reel/DeSW5UNDMRf/) | — |
