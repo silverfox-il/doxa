@@ -1,0 +1,24 @@
+id: 2026-10-11-reel-choose-right
+publish_at: 2026-10-11 08:00
+approved: false
+mode: reel
+caption: |-
+  יש נשים שישאבו לך את הבילבל
+  ויש נשים שישאבו לך את הארנק. תבחר נכון!
+
+  תייג חבר שצריך לשמוע את זה.
+  .
+  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+slides: []
+reel:
+  lines:
+  - יש נשים שישאבו לך את הבילבל
+  - יש נשים שישאבו לך את הארנק
+  - תבחר נכון!
+  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  per_line: 3.0
+  hold: 5.0
+  video: date-couple-hands.mp4
+pillar: dating
+urgent: true
+status: queued
