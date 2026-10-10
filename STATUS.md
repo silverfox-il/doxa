@@ -28,6 +28,7 @@
 | 2026-10-11 | `2026-10-11-belly-card` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
+| 2026-10-11 | `2026-10-11-reel-choose-right` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
