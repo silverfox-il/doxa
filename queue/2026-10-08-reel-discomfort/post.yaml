@@ -22,6 +22,8 @@ reel:
   stories: null
   style: null
   video: bar-cheers.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 06.md
   section: איך האגו מנהל לך את הפחד
@@ -30,10 +32,11 @@ pillar: mind
 approved_hash: sha256:bb81f69dd363f7361022e4d768059212090ae9f27025cc85eab55ff00ec7f372
 approved_by: owner
 approved_at: '2026-10-08T20:29:45+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
