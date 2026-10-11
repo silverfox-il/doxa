@@ -1,6 +1,6 @@
 id: 2026-10-13-reel-snoring
 publish_at: 2026-10-13 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אמרו לגברים אחרי 45: "תאט. תשמור על הגב. בגילך כבר לא צריך."
@@ -23,14 +23,16 @@ reel:
   stories: null
   style: null
   video: man45-fit-boxing.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 08.md
   section: הנחירות שהאקסית התלוננה עליהן
 format: null
 pillar: body
-approved_hash: sha256:f4089b01898aeb08ecfba97b469b5d4429b8ea57a169e28940e099f72bb4c2ca
-approved_by: owner
-approved_at: '2026-10-08T21:37:47+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
@@ -38,3 +40,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

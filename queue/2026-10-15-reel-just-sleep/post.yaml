@@ -1,6 +1,6 @@
 id: 2026-10-15-reel-just-sleep
 publish_at: 2026-10-15 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אמרו לגברים שגיל זה רק מספר.
@@ -22,14 +22,16 @@ reel:
   stories: null
   style: null
   video: man45-pensive-beard.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 08.md
   section: שגרה של גבר שישן טוב
 format: null
 pillar: body
-approved_hash: sha256:952cb4705d5005625feb624ddfa7f999b6436c7401b93618bddda1b88de26333
-approved_by: owner
-approved_at: '2026-10-08T21:37:54+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
@@ -37,3 +39,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
