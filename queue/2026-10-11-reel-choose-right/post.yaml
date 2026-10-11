@@ -29,7 +29,7 @@ pillar: dating
 approved_hash: sha256:70642ebc0b22c83bf50f0d0e007bd790a49f8e579e24289b61952613a987af20
 approved_by: owner
 approved_at: '2026-10-10T19:50:21+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
