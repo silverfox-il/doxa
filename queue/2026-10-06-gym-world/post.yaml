@@ -53,10 +53,10 @@ pillar: body
 approved_hash: sha256:e0a019ebe0ed5cfb35572d31e69550774cac56d83c2f367db856bbc64f993f8c
 approved_by: owner
 approved_at: '2026-10-07T20:25:11+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18097227104535859'
+permalink: https://www.instagram.com/p/DeXj52Tj4x7/
+published_at: 2026-10-11T20:53:07+0000
 error: null
 story_id: null
 story_error: null
