@@ -1,6 +1,6 @@
 id: 2026-10-17-light-jab
 publish_at: 2026-10-17 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   הקנטה טובה היא כמו דגדוג קטן.
@@ -57,9 +57,9 @@ source:
   section: הקנטה בגובה העיניים
 format: photo
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f0dd525be10d24801d721cd289da54dc8c9fee78e75cf0c3f6a1c5c22219ef92
+approved_by: auto
+approved_at: '2026-10-11T18:40:10+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

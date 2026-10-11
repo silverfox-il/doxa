@@ -1,6 +1,6 @@
 id: 2026-10-16-dealt-cards
 publish_at: 2026-10-16 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   יש דברים שנקבעו אצלך לפני שידעת ללכת.
@@ -57,9 +57,9 @@ source:
   section: מה שחילקו לך בלידה
 format: bold
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:992db33504d984f1c915210f08e9fd346c439e8227c05590903a592bdc12d62b
+approved_by: auto
+approved_at: '2026-10-11T18:40:10+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
