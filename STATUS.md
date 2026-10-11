@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-11-reel-second-round` at 2026-10-11 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -28,7 +28,7 @@
 | 2026-10-11 | `2026-10-11-belly-card` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
-| 2026-10-11 | `2026-10-11-reel-choose-right` | ✅ | publishing | — | — |
+| 2026-10-11 | `2026-10-11-reel-choose-right` | ✅ | published | [link](https://www.instagram.com/reel/DeV9C_jFT3F/) | — |
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | rendered | — | — |
