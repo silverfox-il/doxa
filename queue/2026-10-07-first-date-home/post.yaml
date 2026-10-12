@@ -60,10 +60,11 @@ pillar: dating
 approved_hash: sha256:fd1eda85142c5c15ede15704080e2fd14e1c7c3fb337f9849553ff48ea05db04
 approved_by: owner
 approved_at: '2026-10-07T20:25:16+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
