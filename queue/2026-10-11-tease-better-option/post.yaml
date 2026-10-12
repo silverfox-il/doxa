@@ -1,6 +1,6 @@
 id: 2026-10-11-tease-better-option
 publish_at: 2026-10-11 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אישה מחפשת את הגבר הכי טוב שהיא יכולה להשיג.
@@ -32,9 +32,9 @@ source:
   section: היא תמיד בודקת אם יש יותר טוב
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:59703661303a66b554e72842a9808ddea8210dd4f72efc6b3fd3243c5cf09b36
+approved_by: auto
+approved_at: '2026-10-12T10:06:49+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

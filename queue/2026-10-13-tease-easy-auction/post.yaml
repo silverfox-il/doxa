@@ -1,6 +1,6 @@
 id: 2026-10-13-tease-easy-auction
 publish_at: 2026-10-13 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בשנות הארבעים המכרז נפתח מחדש, והמתחרים שלך במצב הרבה יותר גרוע ממה שאתה חושב.
@@ -32,9 +32,9 @@ source:
   section: המכרז הגדול
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fb4aa1fa73450d5441aafab2728cb068f7bce3f5380ec7261b2fcde239094668
+approved_by: auto
+approved_at: '2026-10-12T10:06:49+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
