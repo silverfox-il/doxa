@@ -1,6 +1,6 @@
 id: 2026-10-10-tease-nothing-to-post
 publish_at: 2026-10-10 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אין לי מה להעלות". שמעתי את זה מהמון גברים.
@@ -32,9 +32,9 @@ source:
   section: התירוצים שלך, אחד אחד
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8360294a2beb2cd959dcfa34b4cde62830ec69532b6dd64d5702545b222585c0
+approved_by: auto
+approved_at: '2026-10-12T13:07:32+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

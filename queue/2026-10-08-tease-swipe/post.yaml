@@ -1,6 +1,6 @@
 id: 2026-10-08-tease-swipe
 publish_at: 2026-10-08 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אני יודע שאתה מותקן על שלוש אפליקציות ומחליק בלילות כמו זומבי.
@@ -32,9 +32,9 @@ source:
   section: אפליקציות ההיכרויות, בלי להיות עוד פרצוף בערימה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:dd209ca1befe2a91e98c96e5fab923dd540561dde13660805e8ed589fe158807
+approved_by: auto
+approved_at: '2026-10-12T13:07:31+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
