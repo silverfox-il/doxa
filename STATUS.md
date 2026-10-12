@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-13-reel-snoring` at 2026-10-13 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -37,7 +37,7 @@
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-reel-garden` | ✅ | published | [link](https://www.instagram.com/reel/DeYiCPsks10/) | — |
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
-| 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | publishing | — | — |
+| 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | published | [link](https://www.instagram.com/reel/DeZ4Ya4lM8R/) | — |
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | published | [link](https://www.instagram.com/reel/DeXTZa9FKUV/) | — |
 | 2026-10-07 | `2026-10-07-first-date-home` | ✅ | rendered | — | — |
 | 2026-10-07 | `2026-10-07-tease-big-bill` | ✅ | published | [link](https://www.instagram.com/reel/DeU-6PDEccN/) | — |
