@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-12-reel-what-money-buys` at 2026-10-12 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -35,7 +35,7 @@
 | 2026-10-09 | `2026-10-09-first-smile` | ✅ | rendered | — | — |
 | 2026-10-09 | `2026-10-09-reel-supplements` | ✅ | published | [link](https://www.instagram.com/reel/DeR3_a-goPy/) | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | rendered | — | — |
-| 2026-10-09 | `2026-10-09-reel-garden` | ✅ | publishing | — | — |
+| 2026-10-09 | `2026-10-09-reel-garden` | ✅ | published | [link](https://www.instagram.com/reel/DeYiCPsks10/) | — |
 | 2026-10-08 | `2026-10-08-silver-hair` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-tease-swipe` | ✅ | rendered | — | — |
 | 2026-10-08 | `2026-10-08-reel-discomfort` | ✅ | published | [link](https://www.instagram.com/reel/DeXTZa9FKUV/) | — |
