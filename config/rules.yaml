@@ -107,6 +107,14 @@ style_rules:
   # which talks about men in the third person.
   - match: "re:להיות נדלק"
     write: "write 'להידלק' (היא צריכה להידלק ממך)"
+  # Owner (2026-10-11): never name an exact age; the audience is a wide range.
+  - match: "re:(?<![א-ת])[ובו]{0,2}(?:בן|בני|בת|בנות|גיל|בגיל) [1-9][0-9](?![0-9])"
+    write: "no exact ages: write 'בשנות הארבעים'"
+  - match: "re:[1-9][0-9] ?(?:פלוס|ומעלה)"
+    write: "no exact ages: write 'בשנות הארבעים'"
+  # Owner (2026-10-08): stories ask the reader to answer himself, not the account.
+  - match: "re:תענה לסטורי"
+    write: "write 'תענה לעצמך'"
 
 # Owner's decision (2026-10-04): the daily teaser series (a reel with stories)
 # may make cynical generalizations about women, like the owner's example reel.
