@@ -21,6 +21,8 @@ reel:
   stories: null
   style: null
   video: man45-suit-profile.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: גינה, לא כספומט
@@ -29,10 +31,11 @@ pillar: status
 approved_hash: sha256:5052dba6085fc9ef0d52a5df07cd11d1fff1464cf5badc811b42293a73d22388
 approved_by: owner
 approved_at: '2026-10-08T20:29:48+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
