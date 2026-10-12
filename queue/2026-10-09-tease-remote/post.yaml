@@ -1,6 +1,6 @@
 id: 2026-10-09-tease-remote
 publish_at: 2026-10-09 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אחרי גירושים, החבר הכי טוב שלך יכול להפוך לשלט של הטלוויזיה.
@@ -32,9 +32,9 @@ source:
   section: לצאת מהמערה
 format: null
 pillar: mind
-approved_hash: sha256:5541a67fe98c446842082063f03106395b499b0e10cc2bad2c7ed85d14ee6326
-approved_by: owner
-approved_at: '2026-10-05T09:31:39+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
