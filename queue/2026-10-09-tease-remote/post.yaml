@@ -35,10 +35,10 @@ pillar: mind
 approved_hash: sha256:a57cd993d746fb585bd3a6bb72e9eb5593066ddf729a8afdb6436ac3476a498d
 approved_by: owner
 approved_at: '2026-10-12T10:08:33+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18118600015948921'
+permalink: https://www.instagram.com/reel/DebKAV3AYfD/
+published_at: 2026-10-13T06:24:00+0000
 error: null
 story_id: null
 story_error: null
