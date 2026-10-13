@@ -263,10 +263,24 @@ class Client:
         """Newest posts with their public likes and comments counts."""
         out = self._get(
             f"/{self.ig_user_id}/media",
-            fields="id,caption,media_type,timestamp,like_count,comments_count",
+            fields="id,caption,media_type,timestamp,like_count,comments_count,permalink",
             limit=str(limit),
         )
         return list(out.get("data", []))
+
+    def media_insights(self, media_id: str, metrics: str) -> dict[str, float]:
+        """Insight values of one post (empty when the token may not read them)."""
+        try:
+            out = self._get(f"/{media_id}/insights", metric=metrics)
+        except InstagramError:
+            return {}
+        result: dict[str, float] = {}
+        for item in out.get("data", []):
+            values = item.get("values") or [{}]
+            value = values[0].get("value")
+            if isinstance(value, int | float):
+                result[str(item.get("name"))] = value
+        return result
 
     def media_views(self, media_id: str) -> int | None:
         """Views of one post, or None when the token may not read insights."""

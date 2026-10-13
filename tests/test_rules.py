@@ -480,3 +480,12 @@ def test_third_person_men_allowed_everywhere():
     # Posts quote the owner's book, which talks about men in the third person.
     line = "גבר שיש לו חיים, חברים, תחביבים, הוא גבר שאישה משקיעה בו."
     assert "style" not in [r for _, r in voice(line, "תפסיק לבקש, תתחיל להחליט.")]
+
+
+def test_reel_score_weighs_saves_and_shares():
+    from doxa.cli import reel_score
+
+    plain = reel_score({"views": 140})
+    shared = reel_score({"views": 100, "shares": 2, "saved": 1})
+    assert shared > plain
+    assert reel_score({}) == 0

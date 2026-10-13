@@ -550,5 +550,47 @@ def stats(limit: int) -> None:
         )
 
 
+REEL_METRICS = "views,reach,saved,shares,likes,comments,ig_reels_avg_watch_time"
+
+
+def reel_score(m: dict[str, float]) -> float:
+    """Boost candidate score: reach plus interactions, saves and shares weigh most."""
+    return (
+        m.get("views", 0)
+        + 10 * (m.get("likes", 0) + m.get("comments", 0))
+        + 20 * (m.get("saved", 0) + m.get("shares", 0))
+    )
+
+
+@main.command("best-reels")
+@click.option("--limit", default=40, show_default=True, help="How many recent posts to scan.")
+@click.option("--top", default=5, show_default=True, help="How many reels to list.")
+def best_reels(limit: int, top: int) -> None:
+    """Rank recent reels as candidates for a paid boost (read only)."""
+    from .instagram import InstagramError
+
+    client = _client()
+    try:
+        media = [m for m in client.media_stats(limit) if m.get("media_type") == "VIDEO"]
+    except InstagramError as e:
+        _fail([str(e)])
+    rows = []
+    for m in media:
+        ins = client.media_insights(m["id"], REEL_METRICS)
+        rows.append((reel_score(ins), ins, m))
+    rows.sort(key=lambda r: r[0], reverse=True)
+    click.echo("rank  score  views  reach  likes  saves  shares  watch_s  date        first line")
+    for i, (score, ins, m) in enumerate(rows[:top], start=1):
+        first = (m.get("caption") or "").strip().splitlines()[:1] or [""]
+        watch = ins.get("ig_reels_avg_watch_time", 0) / 1000
+        click.echo(
+            f"{i:>4}  {score:>5.0f}  {ins.get('views', 0):>5.0f}  {ins.get('reach', 0):>5.0f}  "
+            f"{ins.get('likes', 0):>5.0f}  {ins.get('saved', 0):>5.0f}  "
+            f"{ins.get('shares', 0):>6.0f}  "
+            f"{watch:>7.1f}  {m.get('timestamp', '')[:10]}  {first[0][:40]}"
+        )
+        click.echo(f"      {m.get('permalink', '')}")
+
+
 if __name__ == "__main__":
     main()
