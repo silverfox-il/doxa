@@ -60,10 +60,11 @@ pillar: second-round
 approved_hash: sha256:ee772e56ab2e51d6d21ea5319d11f5dde1a78ebf5b7e32f49057d838a87f0cb2
 approved_by: owner
 approved_at: '2026-10-07T20:25:24+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
