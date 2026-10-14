@@ -14,7 +14,7 @@
 | 2026-10-16 | `2026-10-16-tease-men-play-too` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | rendered | — | — |
-| 2026-10-15 | `2026-10-15-tease-came-to-eat` | — | rendered | — | — |
+| 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | rendered | — | — |
