@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-14-reel-approval` at 2026-10-14 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 5/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-10 | `2026-10-10-red-light` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ✅ | rendered | — | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | published | [link](https://www.instagram.com/reel/Decdj44Dnhf/) | — |
-| 2026-10-09 | `2026-10-09-first-smile` | ✅ | rendered | — | — |
+| 2026-10-09 | `2026-10-09-first-smile` | ✅ | publishing | — | — |
 | 2026-10-09 | `2026-10-09-reel-supplements` | ✅ | published | [link](https://www.instagram.com/reel/DeR3_a-goPy/) | — |
 | 2026-10-09 | `2026-10-09-tease-remote` | ✅ | published | [link](https://www.instagram.com/reel/DebKAV3AYfD/) | — |
 | 2026-10-09 | `2026-10-09-reel-garden` | ✅ | published | [link](https://www.instagram.com/reel/DeYiCPsks10/) | — |
