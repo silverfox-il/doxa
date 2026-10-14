@@ -1,6 +1,6 @@
 id: 2026-10-12-tease-shop-window
 publish_at: 2026-10-12 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אישה שמעלה תמונה מהים מקבלת עשרות לבבות ותגובות "מהממת".
@@ -32,9 +32,9 @@ source:
   section: 'נורה 13: חלון ראווה שנשאר פתוח'
 format: null
 pillar: second-round
-approved_hash: sha256:f823aa9b6a50f6e5f5f42f26c6442757e0d924deee93472c761c84aee1d8cc66
-approved_by: owner
-approved_at: '2026-10-12T13:09:32+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
