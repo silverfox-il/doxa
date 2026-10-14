@@ -32,10 +32,10 @@ pillar: mind
 approved_hash: sha256:ef9868603d88e5b673a5b27db85d60f689dc4ac359adff1f424de5157b1681e8
 approved_by: owner
 approved_at: '2026-10-14T12:06:55+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18201019066385538'
+permalink: https://www.instagram.com/reel/DefDucaD8wV/
+published_at: 2026-10-14T18:45:59+0000
 error: null
 story_id: null
 story_error: null
