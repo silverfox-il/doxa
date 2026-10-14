@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-14-price-tag` at 2026-10-14 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -29,7 +29,7 @@
 | 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-choose-right` | ✅ | published | [link](https://www.instagram.com/reel/DeV9C_jFT3F/) | — |
-| 2026-10-10 | `2026-10-10-red-light` | ✅ | publishing | — | — |
+| 2026-10-10 | `2026-10-10-red-light` | ✅ | published | [link](https://www.instagram.com/p/Dee1g-NoKM3/) | — |
 | 2026-10-10 | `2026-10-10-tease-nothing-to-post` | ⚠️ stale | published | [link](https://www.instagram.com/reel/Ded1otij4MT/) | — |
 | 2026-10-10 | `2026-10-10-reel-abyss` | ✅ | published | [link](https://www.instagram.com/reel/Decdj44Dnhf/) | — |
 | 2026-10-09 | `2026-10-09-first-smile` | ✅ | published | [link](https://www.instagram.com/p/DedmLgYlucZ/) | — |
