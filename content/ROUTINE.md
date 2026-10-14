@@ -176,7 +176,7 @@ talk to him); describe, never instruct; short lines; one line that stays in the 
 often a verbatim new-book line. Approved examples: `2026-10-05-reel-turned-on`,
 `2026-10-09-reel-garden`, `2026-10-11-reel-second-round`.
 
-Every 13:00 reel sets `reel.video` to a background clip from `doxa-private/video/`
+Every reel, the 18:00 teaser too, sets `reel.video` to a background clip from `doxa-private/video/`
 (licensed Pexels clips, see its CREDITS.md) that fits the text: `gray-hair`,
 `gym-tattoo`, `gym-workout`, `gym-treadmill`, `phone-texting`, `phone-bed`,
 `wine-pour`, `wine-sea`, `bar-cheers`, `dinner-candles`, `coffee-garden`,
@@ -185,10 +185,11 @@ Every 13:00 reel sets `reel.video` to a background clip from `doxa-private/video
 same clip two days in a row.
 Owner's emphasis (2026-10-08): show attractive, fit men around 45 to 50 (everyone
 wants to look younger). Prefer the `man45-*` clips: `man45-sweater`,
-`man45-pensive-beard`, `man45-gray-wine`, `man45-fit-boxing`, `man45-suit-city`,
+`man45-pensive-beard`, `man45-suit-city`, `man45-gym-fly`, `date-couple-hands`,
 `man45-park-walk`, `man45-silver-fox`, `man45-coat-city`, `man45-smile-wine`,
 `man45-profile`, `man45-closeup`, `man45-suit-profile`; at least 4 of the week's 7
-reels use one.
+reels use one. Owner (2026-10-10, 2026-10-14): `man45-fit-boxing`, `man45-gray-wine`
+and `gray-hair` look too old; don't use them. No black background without a clip.
 
 ## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
 
@@ -339,7 +340,14 @@ source:
 
 Timing by line count: 2 lines: `per_line 4.0, hold 7.0`. 3 lines: `3.0, 5.0`.
 4 lines: `2.4, 4.0`. 5 lines: `2.2, 4.0`. 6 lines: `1.9, 4.0`.
-Pick the music at random, without repeating the previous day's track.
+Music (owner, 2026-10-14): Black music, R&B and hip-hop, never motivation/piano tracks.
+Use only the royalty-free R&B/hip-hop tracks in `doxa-private/music/`
+(`music-for-videos-rnb-hip-hop-beat-150390`, `nveravetyanmusic-rnb-hip-hop-149310`,
+`gr0za-rnb-rnb-type-beat-561707`, `soulprodmusic-love-stylish-modern-hip-hop-music-127449`,
+`the_mountain-hip-hop-soul-317779`, `soulprodmusic-smoke-143172`,
+`keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134`; file name + `.mp3`).
+Commercial hits are copyrighted and can't be put in an API-published reel.
+Don't repeat the previous reel's track.
 
 ## Check, then publish to the queue
 
