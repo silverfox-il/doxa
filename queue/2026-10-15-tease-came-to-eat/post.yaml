@@ -15,14 +15,16 @@ reel:
   - הן רוצות ארוחה, ערב בחוץ, תמונה יפה לאינסטגרם,
   - ואולי גם לטפוח לעצמן על האגו אחרי שמישהו אחר נעלם להן.
   - היא תדע בדיוק איך לגרום לך להרגיש מיוחד כל עוד המלצר מביא עוד מנה.
-  music: leberch-motivation-piano-580533.mp3
+  music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
   per_line: 2.4
   hold: 4.0
   stories:
   - איך מסננים? "רביעי, שמונה וחצי, אצלי. אני פותח את הבקבוק מהגולן".
   - '"אולי במקום זה המסעדה החדשה?" באותו רגע קיבלת את כל המידע שאתה צריך. "סושי תאכלי עם החברות, אצלי יש יין טוב ונוף".'
   style: null
-  video: null
+  video: wine-pour.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: איך מזהים את זו שבאה לאכול
@@ -38,3 +40,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

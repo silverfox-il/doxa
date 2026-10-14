@@ -17,12 +17,14 @@ reel:
   - היא בטוחה שהוא עוד לא סגר את הסיפור.
   - והיא צודקת.
   - דייט ראשון זה לא חדר טיפולים. את האקסית משאירים בבית שלה.
-  music: leberch-motivation-517463.mp3
+  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 2.0
   hold: 4.5
   stories: null
   style: null
   video: phone-texting.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
@@ -38,3 +40,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

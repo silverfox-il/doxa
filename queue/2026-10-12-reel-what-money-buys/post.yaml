@@ -16,12 +16,14 @@ reel:
   - שאתה יודע מה אתה עושה עם החיים שלך.
   - היא צריכה לדעת שיש לך. היא לא צריכה לקבל את זה ממך.
   - ואם אתה משלם כדי שהיא תישאר? אתה כבר לא בן זוג. אתה כספומט.
-  music: atlasaudio-motivation-518088.mp3
+  music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
   per_line: 2.2
   hold: 4.0
   stories: null
   style: null
   video: man45-suit-city.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: נשים אוהבות כסף, תתמודד
@@ -37,3 +39,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

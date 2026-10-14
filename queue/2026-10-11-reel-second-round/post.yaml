@@ -16,12 +16,14 @@ reel:
   - מתעלמים מכל נורה אדומה.
   - ושנתיים אחרי, הם שוב בבית של ההורים עם שתי מזוודות.
   - כשהחיים שלך מלאים, אישה היא תוספת טובה, לא אוויר לנשימה.
-  music: bombinsound-motivation-motivation-music-version-6-feel-good-566560.mp3
+  music: nveravetyanmusic-rnb-hip-hop-149310.mp3
   per_line: 2.2
   hold: 4.0
   stories: null
   style: null
-  video: gray-hair.mp4
+  video: man45-suit-profile.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 11.md
   section: סבב שני, והפעם עם עיניים פקוחות
@@ -37,3 +39,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null

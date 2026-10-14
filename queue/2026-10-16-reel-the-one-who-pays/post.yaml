@@ -16,12 +16,14 @@ reel:
   - רוב הגברים שמדליקים לא נשארים, ורוב הגברים שנשארים לא מדליקים.
   - עשרים שנה היית הגבר שמשלם. תיקנת, פרנסת, הקשבת, ויתרת, ובסוף קיבלת מכתב מעורך דין.
   - לא כי היית גבר רע, אלא כי שכחת להיות גם הגבר שמדליק.
-  music: bombinsound-motivation-motivation-music-version-6-feel-good-566560.mp3
+  music: the_mountain-hip-hop-soul-317779.mp3
   per_line: 2.2
   hold: 4.0
   stories: null
   style: null
   video: man45-smile-wine.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: זה שמדליק, וזה שמשלם
@@ -37,3 +39,4 @@ published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
