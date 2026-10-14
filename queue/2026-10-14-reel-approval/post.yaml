@@ -1,6 +1,6 @@
 id: 2026-10-14-reel-approval
 publish_at: 2026-10-14 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הוא יוצא לדייט ראשון אחרי הגירושים, ומדבר שעה על האקסית.
@@ -30,9 +30,9 @@ source:
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:14f8d92405ffc237d540791bd64ea47920c99722957449ae097c336d106d1279
+approved_by: auto
+approved_at: '2026-10-14T12:04:35+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

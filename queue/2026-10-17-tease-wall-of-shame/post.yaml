@@ -1,6 +1,6 @@
 id: 2026-10-17-tease-wall-of-shame
 publish_at: 2026-10-17 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אני רואה אותם כל יום, גברים בשנות הארבעים שבטוחים שהם עושים עבודה טובה ברשת.
@@ -31,9 +31,9 @@ source:
   section: 'הקיר של הבושה: מה גברים בגילך עושים ברשת'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4d6861260c98acc9597d10f244e3917886515e4e3ac9d5aaed190399ce7029f5
+approved_by: auto
+approved_at: '2026-10-14T12:04:35+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
