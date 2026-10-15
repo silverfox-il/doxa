@@ -1,6 +1,6 @@
 id: 2026-10-17-tease-wall-of-shame
 publish_at: 2026-10-17 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   5 טעויות בפרופיל שמבריחות ממך נשים.
@@ -32,9 +32,9 @@ source:
   section: 'הקיר של הבושה: מה גברים בגילך עושים ברשת'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:60446261bd534d1879f571a81982c1a9d6b5c61db09c39688b49098c4b92b85b
+approved_by: auto
+approved_at: '2026-10-15T16:53:50+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

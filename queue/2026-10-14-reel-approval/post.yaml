@@ -1,6 +1,6 @@
 id: 2026-10-14-reel-approval
 publish_at: 2026-10-14 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   דייט ראשון אחרי הגירושים? אל תביא איתך את האקסית.
@@ -30,9 +30,9 @@ source:
   section: 'סימן 4: אתה לא מסוגל להיות לבד'
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:088b2b28ada23587e9ec5ae2bf033e9e55cc5c9f614e18d19b9df8891d770f26
+approved_by: auto
+approved_at: '2026-10-15T16:53:50+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

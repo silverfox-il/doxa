@@ -1,6 +1,6 @@
 id: 2026-10-13-reel-snoring
 publish_at: 2026-10-13 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   האקסית עברה לישון בסלון בגלל הנחירות? אל תצחק. תקשיב.
@@ -30,9 +30,9 @@ source:
   section: הנחירות שהאקסית התלוננה עליהן
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:42fc4f7ecf0248a65fe74c40c0abec01226350c15403006f4b30108b9c1abdd9
+approved_by: auto
+approved_at: '2026-10-15T16:53:50+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
