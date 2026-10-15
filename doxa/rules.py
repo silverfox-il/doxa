@@ -302,6 +302,50 @@ def cta_rotation(
     ]
 
 
+def reuse(posts: list[Post]) -> list[Finding]:
+    """Owner (2026-10-15): nothing is recycled without his approval.
+
+    A post that has not gone out may not reuse a reel background clip or a book
+    section that an earlier post (by publish time) already used. Repeating the
+    opening words of another reel is a review finding.
+    """
+    seq = sorted(posts, key=lambda p: (p.publish_at_dt, p.id))
+    clips: dict[str, str] = {}
+    sections: dict[tuple[str, str], str] = {}
+    openings: dict[str, str] = {}
+    out: list[Finding] = []
+    for post in seq:
+        fresh = post.status.value not in ("published", "publishing")
+        if post.reel is not None and post.reel.video:
+            if fresh and post.reel.video in clips:
+                out.append(
+                    Finding(
+                        BLOCK,
+                        "reuse",
+                        post.id,
+                        f"clip {post.reel.video} already used by {clips[post.reel.video]}",
+                    )
+                )
+            clips.setdefault(post.reel.video, post.id)
+        if post.source is not None and post.source.section:
+            key = (post.source.file, post.source.section)
+            if fresh and key in sections:
+                out.append(
+                    Finding(
+                        BLOCK, "reuse", post.id, f"book section already used by {sections[key]}"
+                    )
+                )
+            sections.setdefault(key, post.id)
+        if post.reel is not None and post.reel.lines:
+            head = " ".join(post.reel.lines[0].split()[:2])
+            if fresh and head in openings:
+                out.append(
+                    Finding(REVIEW, "reuse", post.id, f"opens like {openings[head]}: {head!r}")
+                )
+            openings.setdefault(head, post.id)
+    return out
+
+
 def blocking(findings: list[Finding]) -> list[Finding]:
     return [f for f in findings if f.severity == BLOCK]
 

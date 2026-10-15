@@ -183,6 +183,12 @@ Every reel, the 18:00 teaser too, sets `reel.video` to a background clip from `d
 `coffee-window`, `city-night-walk`, `city-crossing`, `drive-tunnel`, `beach-walk`,
 `beach-sunset`, `suit-watch`, `window-silhouette` (file name + `.mp4`). Don't use the
 same clip two days in a row.
+Owner (2026-10-15): NOTHING is recycled without his approval. Every reel gets a clip no
+other post has used (published or queued); every post uses a book section no other post
+has used; no reel opens with the same first words as another post ("אמרו לגברים",
+"רוב הגברים", "יש נשים", "אנחנו בעידן"... are used up). `doxa validate` blocks clip and
+section reuse. If the clip library runs short, download new Pexels clips (adult men in
+their 40s, couples) into doxa-private/video with a CREDITS.md line; never reuse one.
 Owner's emphasis (2026-10-08): show attractive, fit men around 45 to 50 (everyone
 wants to look younger). Prefer the `man45-*` clips: `man45-sweater`,
 `man45-pensive-beard`, `man45-suit-city`, `man45-gym-fly`, `date-couple-hands`,

@@ -489,3 +489,24 @@ def test_reel_score_weighs_saves_and_shares():
     shared = reel_score({"views": 100, "shares": 2, "saved": 1})
     assert shared > plain
     assert reel_score({}) == 0
+
+
+def test_reuse_blocks_repeated_clip_for_unpublished_post():
+    from types import SimpleNamespace as NS
+
+    from doxa.queue import parse_local
+
+    def post(pid, at, clip, status="rendered"):
+        return NS(
+            id=pid,
+            publish_at_dt=parse_local(at),
+            status=NS(value=status),
+            reel=NS(video=clip, lines=[f"{pid} start"]),
+            source=None,
+        )
+
+    old = post("a", "2026-10-01 13:00", "x.mp4", status="published")
+    new = post("b", "2026-10-02 13:00", "x.mp4")
+    found = rules.reuse([new, old])
+    assert [f.where for f in rules.blocking(found)] == ["b"]
+    assert rules.blocking(rules.reuse([old, post("c", "2026-10-02 13:00", "y.mp4")])) == []
