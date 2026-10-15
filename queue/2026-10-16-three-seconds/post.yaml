@@ -3,7 +3,7 @@ publish_at: 2026-10-16 10:00
 approved: true
 mode: render
 caption: |-
-  תוך שלוש שניות, בלי לגלול, היא עונה לעצמה על ארבע שאלות.
+  היא לחצה על השם שלך. יש לך שלוש שניות.
 
   תייג חבר שצריך לשמוע את זה.
   .
@@ -11,42 +11,42 @@ caption: |-
 slides:
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: תוך שלוש שניות, בלי לגלול, היא עונה לעצמה על ארבע שאלות.
+  title: 'היא לחצה על השם שלך. יש לך שלוש שניות.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: האם הוא אמיתי. תמונת פרופיל ברורה של פנים, עדכנית, בלי פילטר.
+  title: 'שאלה ראשונה: אתה אמיתי? שלוש תמונות מושלמות מאותו יום צילום, ומבחינתה אתה מתחזה.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: האם הוא פנוי. אין תמונה איתה, אין תמונת פרופיל מחתונה שחתכת ממנה מישהי ורואים עדיין את היד שלה על הכתף שלך.
+  title: 'שאלה שנייה: אתה פנוי? תמונת פרופיל מחתונה, חתכת ממנה את האקסית, ועדיין רואים את היד שלה על הכתף שלך. כל הכבוד.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: מה הוא עושה עם החיים שלו. לא איזה משכורת, אלא האם יש לו חיים.
+  title: 'שאלה שלישית: יש לך חיים? פרופיל של ציטוטים וברכות "חג שמח" אומר לה דבר אחד: הבנאדם הזה לא עושה כלום.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: האם הוא מדליק אותי. וכאן, כן, המראה חשוב. לא יופי של דוגמן, אלא גבר ששומר על עצמו.
+  title: 'שאלה רביעית: אתה מדליק אותה? לא צריך להיות דוגמן. צריך לא להיראות כמו מי שוויתר.'
   accent: ''
   body: ''
   layout: center
   items: []
 - background: assets/backgrounds/2026-10-16-three-seconds.jpg
   kicker: ''
-  title: אם לא, היא יוצאת, ואתה לא תדע אף פעם שהיא הייתה שם.
+  title: 'נכשלת באחת? היא כבר בפרופיל הבא, ואתה אפילו לא תדע שהיא הייתה אצלך.'
   accent: ''
   body: ''
   layout: center
