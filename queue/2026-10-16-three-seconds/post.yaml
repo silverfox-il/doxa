@@ -1,6 +1,6 @@
 id: 2026-10-16-three-seconds
 publish_at: 2026-10-16 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   היא לחצה על השם שלך. יש לך שלוש שניות.
@@ -57,9 +57,9 @@ source:
   section: שלוש השניות הראשונות
 format: photo
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8c9a3604752f30c410756f341f43bfa8c5e08f9fe968392176539cc7e07ba197
+approved_by: auto
+approved_at: '2026-10-15T15:18:50+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
