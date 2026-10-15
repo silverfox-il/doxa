@@ -55,7 +55,7 @@ Replace the hashtag line with the set that fits the post's pillar (researched
 risk), and avoid #silverfox / #menover50 (they pull an unrelated audience).
 
 - dating, second-round: #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
-- body: #כושר #אימוןכושר #כושרגופני #אחרי50 #גיל50 #גבריות #fitover40 #fitover50 #over50fitness #greyhair #mensstyle
+- body: #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
 - mind, status: #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 
 ## Teaser series (daily, 18:00)
