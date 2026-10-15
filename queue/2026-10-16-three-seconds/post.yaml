@@ -58,8 +58,8 @@ source:
 format: photo
 pillar: status
 approved_hash: sha256:8c9a3604752f30c410756f341f43bfa8c5e08f9fe968392176539cc7e07ba197
-approved_by: auto
-approved_at: '2026-10-15T15:18:50+03:00'
+approved_by: owner
+approved_at: '2026-10-15T15:25:29+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
