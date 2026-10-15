@@ -60,10 +60,10 @@ pillar: body
 approved_hash: sha256:272f5bf92cb8331cfda04db7d03889448b2f2ae5fd29b37f67d5c0ef653a42d6
 approved_by: owner
 approved_at: '2026-10-08T21:37:41+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18091883081690164'
+permalink: https://www.instagram.com/p/DegLHL5ANSQ/
+published_at: 2026-10-15T05:09:25+0000
 error: null
 story_id: null
 story_error: null

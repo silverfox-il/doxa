@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-15-reel-just-sleep` at 2026-10-15 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -25,7 +25,7 @@
 | 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | rendered | — | — |
-| 2026-10-11 | `2026-10-11-belly-card` | ✅ | publishing | — | — |
+| 2026-10-11 | `2026-10-11-belly-card` | ✅ | published | [link](https://www.instagram.com/p/DegLHL5ANSQ/) | — |
 | 2026-10-11 | `2026-10-11-tease-better-option` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-reel-second-round` | ✅ | published | [link](https://www.instagram.com/reel/DefDucaD8wV/) | — |
 | 2026-10-11 | `2026-10-11-reel-choose-right` | ✅ | published | [link](https://www.instagram.com/reel/DeV9C_jFT3F/) | — |
