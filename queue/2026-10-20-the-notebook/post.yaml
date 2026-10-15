@@ -1,6 +1,6 @@
 id: 2026-10-20-the-notebook
 publish_at: 2026-10-20 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   דני לא הפך לדוגמן.
@@ -64,9 +64,9 @@ source:
   section: דני והמחברת
 format: photo
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e2ade64ca127d31c3f5db47b4745191ec9ebc546355784476f37e9e79986c4c5
+approved_by: auto
+approved_at: '2026-10-15T15:13:31+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
