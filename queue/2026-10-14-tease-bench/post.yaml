@@ -1,6 +1,6 @@
 id: 2026-10-14-tease-bench
 publish_at: 2026-10-14 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   יש נשים שאף פעם לא באמת איתך לבד.
@@ -32,9 +32,9 @@ source:
   section: 'נורה 17: הספסל של המחליפים'
 format: null
 pillar: second-round
-approved_hash: sha256:32922d3380fa429efa8399589967625b7d5372fb15b0dbc4dde53c67b3e58772
-approved_by: owner
-approved_at: '2026-10-14T12:07:01+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-21-tease-worth-testing
 publish_at: 2026-10-21 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   רוב הגברים בגילך בורחים בדיוק כשהיא מתחילה להתעניין.
@@ -32,9 +32,9 @@ source:
   section: מבחן זה לא דחייה
 format: null
 pillar: dating
-approved_hash: sha256:b1cac4850dcb2f1bf6eae61bb5c0b2afbc1e26f57104809ccd5b7915df44fc1c
-approved_by: auto
-approved_at: '2026-10-15T09:25:25+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

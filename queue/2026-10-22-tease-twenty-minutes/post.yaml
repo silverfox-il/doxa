@@ -1,6 +1,6 @@
 id: 2026-10-22-tease-twenty-minutes
 publish_at: 2026-10-22 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   רוב הגברים בגילך לא מסוגלים לשבת עשרים דקות בשקט.
@@ -32,9 +32,9 @@ source:
   section: השקט שמנקה את הראש
 format: null
 pillar: mind
-approved_hash: sha256:e2d2ebc2069f5c0794050cb024055eab2742a0f7d564a4af45a0ea931c396bc1
-approved_by: auto
-approved_at: '2026-10-15T09:25:25+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
