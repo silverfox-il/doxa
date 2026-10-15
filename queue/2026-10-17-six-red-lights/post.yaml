@@ -1,6 +1,6 @@
 id: 2026-10-17-six-red-lights
 publish_at: 2026-10-17 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   6 נורות אדומות באישה גרושה
@@ -72,9 +72,9 @@ source:
   section: 'הנורות האדומות: תסתכל על מה שהיא עושה, לא על מה שהיא'
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:eb36902ec5475c25413ea00645fb62d751577617e974c9d18f9d94a9461437af
+approved_by: auto
+approved_at: '2026-10-15T16:26:46+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
