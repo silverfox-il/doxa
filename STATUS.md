@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-15-always-available` at 2026-10-15 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -43,7 +43,7 @@
 | 2026-10-13 | `2026-10-13-she-vanished` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
-| 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | publishing | — | — |
+| 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | published | [link](https://www.instagram.com/p/DehbsnwFeqS/) | — |
 | 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | rendered | — | — |
 | 2026-10-11 | `2026-10-11-belly-card` | ✅ | published | [link](https://www.instagram.com/p/DegLHL5ANSQ/) | — |
