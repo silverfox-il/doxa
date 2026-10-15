@@ -1,6 +1,6 @@
 id: 2026-10-13-she-vanished
 publish_at: 2026-10-13 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   היא נעלמה אחרי הדייט השני.
@@ -65,9 +65,9 @@ source:
   section: כשהיא נעלמת
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a986fd8d7ebf01da7d87b9be0b95bdf187bc999be12a179cc2e5bc9bb64c6e0d
+approved_by: auto
+approved_at: '2026-10-15T16:41:45+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

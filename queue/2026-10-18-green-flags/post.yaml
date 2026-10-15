@@ -1,6 +1,6 @@
 id: 2026-10-18-green-flags
 publish_at: 2026-10-18 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   8 דגלים ירוקים באישה טובה באמת
@@ -86,9 +86,9 @@ source:
   section: הסימנים שהיא בפנים
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fe62ee0c7dc77add4cdc6bfb5cb622613db860423efa74eddf7f6af5f46abe00
+approved_by: auto
+approved_at: '2026-10-15T16:41:45+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
