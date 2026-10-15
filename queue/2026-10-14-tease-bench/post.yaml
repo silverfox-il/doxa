@@ -33,8 +33,8 @@ source:
 format: null
 pillar: second-round
 approved_hash: sha256:929816e5f999f51f4994be6bf6b3ea30633055c9e7bd42cf61290bd7323ea29d
-approved_by: auto
-approved_at: '2026-10-15T10:26:46+03:00'
+approved_by: owner
+approved_at: '2026-10-15T12:12:33+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -33,8 +33,8 @@ source:
 format: null
 pillar: status
 approved_hash: sha256:d321536c70cced880b8c1d4ecfbb537fc72b664c078aff1ebec4c307ed5e961a
-approved_by: auto
-approved_at: '2026-10-15T10:26:46+03:00'
+approved_by: owner
+approved_at: '2026-10-15T12:12:47+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
