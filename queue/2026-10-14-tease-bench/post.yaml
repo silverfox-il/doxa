@@ -1,6 +1,6 @@
 id: 2026-10-14-tease-bench
 publish_at: 2026-10-14 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   תבדוק מי עוד יושב לה על הספסל.
@@ -32,9 +32,9 @@ source:
   section: 'נורה 17: הספסל של המחליפים'
 format: null
 pillar: second-round
-approved_hash: sha256:85c4c476ffeecda6643cca12334a21a19fc11a02fc0c169ed4cfddcb55dcbf39
-approved_by: owner
-approved_at: '2026-10-15T09:47:51+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
