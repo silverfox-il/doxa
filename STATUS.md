@@ -30,7 +30,7 @@
 | 2026-10-17 | `2026-10-17-light-jab` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-tease-wall-of-shame` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | rendered | — | — |
-| 2026-10-17 | `2026-10-17-five-minutes` | ✅ | rendered | — | — |
+| 2026-10-17 | `2026-10-17-six-red-lights` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-dealt-cards` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-tease-men-play-too` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | rendered | — | — |
