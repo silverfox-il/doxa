@@ -15,7 +15,7 @@
 | 2026-10-21 | `2026-10-21-tease-worth-testing` | ✅ | rendered | — | — |
 | 2026-10-21 | `2026-10-21-reel-ready-to-leave` | ✅ | rendered | — | — |
 | 2026-10-21 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |
-| 2026-10-20 | `2026-10-20-the-notebook` | ✅ | rendered | — | — |
+| 2026-10-20 | `2026-10-20-three-musts` | ✅ | rendered | — | — |
 | 2026-10-20 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
 | 2026-10-20 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
 | 2026-10-20 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
@@ -23,7 +23,7 @@
 | 2026-10-19 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-ice-not-excuses` | ✅ | rendered | — | — |
-| 2026-10-18 | `2026-10-18-boring-evening` | ✅ | rendered | — | — |
+| 2026-10-18 | `2026-10-18-green-flags` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-no-toning` | ✅ | rendered | — | — |
