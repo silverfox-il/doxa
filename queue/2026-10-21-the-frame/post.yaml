@@ -1,6 +1,6 @@
 id: 2026-10-21-the-frame
 publish_at: 2026-10-21 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אלפא זה קודם כל בראש.
@@ -57,9 +57,9 @@ source:
   section: '''פריים'' (Frame)'
 format: tweet
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ebf62b794726910e4c9a401ba50d2fdab65a8cf6063ed52e65c351685f6c96e9
+approved_by: auto
+approved_at: '2026-10-15T09:25:25+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

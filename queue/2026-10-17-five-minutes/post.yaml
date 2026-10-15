@@ -1,6 +1,6 @@
 id: 2026-10-17-five-minutes
 publish_at: 2026-10-17 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   נשים יגידו עליך הרבה דברים, וזה לא הולך לשנות מי אתה.
@@ -64,9 +64,9 @@ source:
   section: חמש דקות לא קובעות מי אתה
 format: tweet
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a321c129d9762806749eeb9be6cb02239553fc886382c831d91a26661f500a3a
+approved_by: auto
+approved_at: '2026-10-15T09:25:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

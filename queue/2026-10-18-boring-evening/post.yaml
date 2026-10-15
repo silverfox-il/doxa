@@ -1,6 +1,6 @@
 id: 2026-10-18-boring-evening
 publish_at: 2026-10-18 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   מה היא עושה כשאין אקשן?
@@ -64,9 +64,9 @@ source:
   section: ערב אחד משעמם
 format: tweet
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4598565cb0e85378331efd0b5640cffc843371a697a279f7679ff6a7443f7981
+approved_by: auto
+approved_at: '2026-10-15T09:25:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

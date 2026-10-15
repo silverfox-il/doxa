@@ -1,6 +1,6 @@
 id: 2026-10-19-ice-not-excuses
 publish_at: 2026-10-19 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   הכלל הכי חשוב לעבור מבחן: לא להגיב רגשית.
@@ -57,9 +57,9 @@ source:
   section: קרח, לא הסבר
 format: photo
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:74ce374e63add8d14f48b4de6d4d85e511578c9434f76474174b0dc9ef1ad333
+approved_by: auto
+approved_at: '2026-10-15T09:25:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

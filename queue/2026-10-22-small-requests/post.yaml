@@ -1,6 +1,6 @@
 id: 2026-10-22-small-requests
 publish_at: 2026-10-22 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תבקש ממנה דברים קטנים, בלי מבוכה ובלי התנצלות.
@@ -57,9 +57,9 @@ source:
   section: מה היא עושה כשאתה מבקש משהו
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0ab4770fa4f0b4289b53d5d37abefe9bc01035f6362edc2b211c83f6ed65cd80
+approved_by: auto
+approved_at: '2026-10-15T09:25:25+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

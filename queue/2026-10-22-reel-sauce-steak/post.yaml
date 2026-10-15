@@ -1,6 +1,6 @@
 id: 2026-10-22-reel-sauce-steak
 publish_at: 2026-10-22 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   פלרטוט אמור להיות הרוטב על הסטייק, לא הסטייק עצמו.
@@ -28,9 +28,9 @@ source:
   section: הרוטב והסטייק
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:dfaa36dc647eda4dc3385420e5694f9e4570c90bd7bf83afad772bc15f9fd9e4
+approved_by: auto
+approved_at: '2026-10-15T09:25:25+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

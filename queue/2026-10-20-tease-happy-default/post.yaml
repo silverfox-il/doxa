@@ -1,6 +1,6 @@
 id: 2026-10-20-tease-happy-default
 publish_at: 2026-10-20 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   קל מאוד להיות מדוכא וחרד כשהחיים שלך נראים עלובים.
@@ -32,9 +32,9 @@ source:
   section: תהיה יותר
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:76dec903105038ad1dcaa09389a5c0f5d54bc2a8638f2a3a9ea7aa0ddb0b236e
+approved_by: auto
+approved_at: '2026-10-15T09:25:25+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

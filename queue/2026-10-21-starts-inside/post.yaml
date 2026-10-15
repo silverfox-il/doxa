@@ -1,6 +1,6 @@
 id: 2026-10-21-starts-inside
 publish_at: 2026-10-21 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   היא קוראת אותך לפני שהיא שומעת אותך
@@ -64,9 +64,9 @@ source:
   section: זה מתחיל מבפנים
 format: bold
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:540efb54d9eed5c110789ac9a50569380d857073e454bba377242fe72cefefc0
+approved_by: auto
+approved_at: '2026-10-15T09:25:25+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

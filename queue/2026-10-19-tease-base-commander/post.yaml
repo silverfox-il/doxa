@@ -1,6 +1,6 @@
 id: 2026-10-19-tease-base-commander
 publish_at: 2026-10-19 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה נמשך שוב ושוב לאישה שלוקחת פיקוד?
@@ -32,9 +32,9 @@ source:
   section: 'סימן 1: אתה מחפש מישהי שתנהל אותך'
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:962f173928b63c7105e111f2b6ab5800594f86788c897a465481705cd92fb609
+approved_by: auto
+approved_at: '2026-10-15T09:25:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

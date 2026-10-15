@@ -1,6 +1,6 @@
 id: 2026-10-16-three-seconds
 publish_at: 2026-10-16 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תוך שלוש שניות, בלי לגלול, היא עונה לעצמה על ארבע שאלות.
@@ -57,9 +57,9 @@ source:
   section: שלוש השניות הראשונות
 format: photo
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bd5eab56ce32afdacdcf533cd2e4c55a0db3c7e5de24bca594e40a35413e5c5d
+approved_by: auto
+approved_at: '2026-10-15T09:25:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
