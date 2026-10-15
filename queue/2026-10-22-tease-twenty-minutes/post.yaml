@@ -1,6 +1,6 @@
 id: 2026-10-22-tease-twenty-minutes
 publish_at: 2026-10-22 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   עשרים דקות בשקט, בלי טלפון. נראה אותך.
@@ -32,9 +32,9 @@ source:
   section: השקט שמנקה את הראש
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:347e02e17450d77cc4ec9db2f045fccdb94f7056711b20553538d28450504055
+approved_by: auto
+approved_at: '2026-10-15T17:01:44+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
