@@ -7,12 +7,34 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-22 | `2026-10-22-small-requests` | ✅ | rendered | — | — |
+| 2026-10-22 | `2026-10-22-tease-twenty-minutes` | ✅ | rendered | — | — |
+| 2026-10-22 | `2026-10-22-reel-sauce-steak` | ✅ | rendered | — | — |
+| 2026-10-22 | `2026-10-22-the-beard` | ✅ | rendered | — | — |
+| 2026-10-21 | `2026-10-21-the-frame` | ✅ | rendered | — | — |
+| 2026-10-21 | `2026-10-21-tease-worth-testing` | ✅ | rendered | — | — |
+| 2026-10-21 | `2026-10-21-reel-ready-to-leave` | ✅ | rendered | — | — |
+| 2026-10-21 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |
+| 2026-10-20 | `2026-10-20-the-notebook` | ✅ | rendered | — | — |
+| 2026-10-20 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
+| 2026-10-20 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
+| 2026-10-20 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
+| 2026-10-19 | `2026-10-19-not-gray` | ✅ | rendered | — | — |
+| 2026-10-19 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
+| 2026-10-19 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
+| 2026-10-19 | `2026-10-19-ice-not-excuses` | ✅ | rendered | — | — |
+| 2026-10-18 | `2026-10-18-boring-evening` | ✅ | rendered | — | — |
+| 2026-10-18 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
+| 2026-10-18 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
+| 2026-10-18 | `2026-10-18-no-toning` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-light-jab` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-tease-wall-of-shame` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | rendered | — | — |
+| 2026-10-17 | `2026-10-17-five-minutes` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-dealt-cards` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-tease-men-play-too` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | rendered | — | — |
+| 2026-10-16 | `2026-10-16-three-seconds` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
