@@ -1,6 +1,6 @@
 id: 2026-10-21-tease-worth-testing
 publish_at: 2026-10-21 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה בורח בדיוק ברגע שהיא מתחילה להתעניין.
@@ -32,9 +32,9 @@ source:
   section: מבחן זה לא דחייה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2581322f1fffec5e10baa3ee4eaab7b238001b01d813b1b5cee530288a1c546c
+approved_by: auto
+approved_at: '2026-10-15T17:04:07+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
