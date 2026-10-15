@@ -32,10 +32,10 @@ pillar: status
 approved_hash: sha256:e0ac6aec0218f71e4a6608c5bcf212db37d17fbedefc2db5a9b9326c6c1b07b8
 approved_by: owner
 approved_at: '2026-10-14T12:06:57+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18127688911636451'
+permalink: https://www.instagram.com/reel/Dehs5n6iFGy/
+published_at: 2026-10-15T19:24:19+0000
 error: null
 story_id: null
 story_error: null
