@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-16-three-seconds` at 2026-10-16 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 6/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -40,7 +40,7 @@
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | rendered | — | — |
-| 2026-10-13 | `2026-10-13-she-vanished` | ✅ | rendered | — | — |
+| 2026-10-13 | `2026-10-13-she-vanished` | ✅ | publishing | — | — |
 | 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
 | 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | published | [link](https://www.instagram.com/p/DehbsnwFeqS/) | — |
