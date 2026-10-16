@@ -60,10 +60,11 @@ pillar: status
 approved_hash: sha256:2e38357204119dc1090424b1934399eff0d24bf8097cef8678339f97485b6eec
 approved_by: owner
 approved_at: '2026-10-08T21:37:50+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
 error: null
 story_id: null
 story_error: null
+urgent: null
