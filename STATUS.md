@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-17-six-red-lights` at 2026-10-17 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -37,7 +37,7 @@
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
-| 2026-10-14 | `2026-10-14-price-tag` | ✅ | publishing | — | — |
+| 2026-10-14 | `2026-10-14-price-tag` | ✅ | published | [link](https://www.instagram.com/p/DekCQRUFKOO/) | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-she-vanished` | ✅ | published | [link](https://www.instagram.com/p/DeiwM0QEScX/) | — |
