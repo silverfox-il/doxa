@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-17-six-red-lights` at 2026-10-17 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 6/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -42,7 +42,7 @@
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | rendered | — | — |
 | 2026-10-13 | `2026-10-13-she-vanished` | ✅ | published | [link](https://www.instagram.com/p/DeiwM0QEScX/) | — |
 | 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | rendered | — | — |
-| 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | rendered | — | — |
+| 2026-10-13 | `2026-10-13-reel-snoring` | ✅ | publishing | — | — |
 | 2026-10-12 | `2026-10-12-choose-or-hide` | ✅ | published | [link](https://www.instagram.com/p/DehbsnwFeqS/) | — |
 | 2026-10-12 | `2026-10-12-tease-shop-window` | ✅ | published | [link](https://www.instagram.com/reel/DejCp5_iFPQ/) | — |
 | 2026-10-12 | `2026-10-12-reel-what-money-buys` | ✅ | published | [link](https://www.instagram.com/reel/Dehs5n6iFGy/) | — |

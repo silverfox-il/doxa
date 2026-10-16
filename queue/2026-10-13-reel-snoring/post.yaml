@@ -33,7 +33,7 @@ pillar: body
 approved_hash: sha256:42fc4f7ecf0248a65fe74c40c0abec01226350c15403006f4b30108b9c1abdd9
 approved_by: owner
 approved_at: '2026-10-15T17:06:05+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
