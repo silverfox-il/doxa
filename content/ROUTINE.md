@@ -29,19 +29,24 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 
 ## What to produce
 
-Owner's mix (2026-10-09), until the account has a full, interesting grid: **2 reels and
-2 carousels a day** (the teaser counts as one of the reels). The publisher alternates
-reel and carousel when a backlog builds up, and pacing allows at most 4 posts in 24h.
+Owner's mix (2026-10-17, from the stats: reels reach ~110 non-followers each, carousels
+almost nobody): **3 reels and 1 carousel a day** (the teaser counts as one of the reels).
+Pacing allows at most 4 posts in 24h.
+
+Write every post with the `silverfox-voice` skill (user skill in ~/.claude/skills): the
+owner's mentor/bar-friend voice, short reels, list carousels, and his approved/rejected
+examples. Reels are now SHORT: 3 lines, 7 to 10 seconds, line 1 a hook of about 8 words.
 
 1. D1 is the first day from tomorrow on that does not yet have all four daily slots
    (10:00, 13:00, 18:00, 20:00) in `queue/`. Fill only the empty slots; never move or
    replace an existing post.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
 3. For D1 through D7 create:
-   - one **carousel** at `10:00`, id `YYYY-MM-DD-<slug>`
+   - one **reel** at `10:00`, id `YYYY-MM-DD-reel-<slug>`
    - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
    - one **teaser series** at `18:00`, id `YYYY-MM-DD-tease-<slug>` (see below)
-   - one **carousel** at `20:00`, id `YYYY-MM-DD-<slug>`
+   - one **list carousel** at `20:00`, id `YYYY-MM-DD-<slug>` (mentor format, e.g.
+     `2026-10-17-six-red-lights`)
 
 That makes 28 posts. The slug is 1 to 4 lowercase English words joined by `-`.
 
