@@ -60,10 +60,10 @@ pillar: status
 approved_hash: sha256:8c9a3604752f30c410756f341f43bfa8c5e08f9fe968392176539cc7e07ba197
 approved_by: owner
 approved_at: '2026-10-15T15:25:29+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18099891797553429'
+permalink: https://www.instagram.com/p/Demot0wG_-U/
+published_at: 2026-10-17T17:23:46+0000
 error: null
 story_id: null
 story_error: null

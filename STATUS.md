@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-18-no-toning` at 2026-10-18 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -33,7 +33,7 @@
 | 2026-10-17 | `2026-10-17-six-red-lights` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-dealt-cards` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | rendered | — | — |
-| 2026-10-16 | `2026-10-16-three-seconds` | ✅ | publishing | — | — |
+| 2026-10-16 | `2026-10-16-three-seconds` | ✅ | published | [link](https://www.instagram.com/p/Demot0wG_-U/) | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | published | [link](https://www.instagram.com/p/DelWTbfnA2C/) | — |
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
