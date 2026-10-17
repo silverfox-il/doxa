@@ -7,6 +7,7 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-23 | `2026-10-23-reel-split-bill` | ✅ | rendered | — | — |
 | 2026-10-22 | `2026-10-22-small-requests` | ✅ | rendered | — | — |
 | 2026-10-22 | `2026-10-22-tease-twenty-minutes` | ✅ | rendered | — | — |
 | 2026-10-22 | `2026-10-22-reel-sauce-steak` | ✅ | rendered | — | — |
