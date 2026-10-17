@@ -33,10 +33,10 @@ pillar: mind
 approved_hash: sha256:088b2b28ada23587e9ec5ae2bf033e9e55cc5c9f614e18d19b9df8891d770f26
 approved_by: owner
 approved_at: '2026-10-15T17:06:09+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18112055192130152'
+permalink: https://www.instagram.com/reel/Dem516OCZqk/
+published_at: 2026-10-17T19:53:37+0000
 error: null
 story_id: null
 story_error: null
