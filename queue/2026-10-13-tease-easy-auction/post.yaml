@@ -35,10 +35,10 @@ pillar: status
 approved_hash: sha256:d2496291eea081e6b33809d5b702ba4b9e67fe7028d16f35650b8c810d68c33a
 approved_by: owner
 approved_at: '2026-10-15T09:47:48+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18119656534957989'
+permalink: https://www.instagram.com/reel/DeloyZ4gsWh/
+published_at: 2026-10-17T08:05:18+0000
 error: null
 story_id: null
 story_error: null
