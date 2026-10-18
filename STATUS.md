@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-18-reel-her-mirror` at 2026-10-18 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 3/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -40,7 +40,7 @@
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | published | [link](https://www.instagram.com/p/DekCQRUFKOO/) | — |
-| 2026-10-14 | `2026-10-14-tease-bench` | ✅ | rendered | — | — |
+| 2026-10-14 | `2026-10-14-tease-bench` | ✅ | publishing | — | — |
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | published | [link](https://www.instagram.com/reel/Dem516OCZqk/) | — |
 | 2026-10-13 | `2026-10-13-she-vanished` | ✅ | published | [link](https://www.instagram.com/p/DeiwM0QEScX/) | — |
 | 2026-10-13 | `2026-10-13-tease-easy-auction` | ✅ | published | [link](https://www.instagram.com/reel/DeloyZ4gsWh/) | — |
