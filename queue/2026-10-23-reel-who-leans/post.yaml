@@ -1,6 +1,6 @@
 id: 2026-10-23-reel-who-leans
 publish_at: 2026-10-23 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תפתח את הגלריה ותסתכל על התמונות שלכם ביחד.
@@ -28,9 +28,9 @@ source:
   section: 'נורה 20: מי נשען על מי'
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8ff83c09f9cf981ae0602480b93f27e663f6a9c824a8cc6bdd0babfbf9720653
+approved_by: auto
+approved_at: '2026-10-18T13:47:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-24-reel-wait-moment
 publish_at: 2026-10-24 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא אומרת "רגע", בדיוק כשהחולצה מתחילה לרדת.
@@ -28,9 +28,9 @@ source:
   section: למה היא מהססת, בגיל שלה
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b08aec414dd931af49f1e5aa768939dc13e0c672ee43fddb6b094028618fb299
+approved_by: auto
+approved_at: '2026-10-18T13:47:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

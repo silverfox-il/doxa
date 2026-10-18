@@ -1,6 +1,6 @@
 id: 2026-10-24-reel-lets-wait
 publish_at: 2026-10-24 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "בוא נחכה קצת..."
@@ -28,9 +28,9 @@ source:
   section: חוק הפגישות
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:80093a49350a598ae7345981f8970739121e7cc91e73b42e71c784feaff8428b
+approved_by: auto
+approved_at: '2026-10-18T13:47:06+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
