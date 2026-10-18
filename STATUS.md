@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-19-ice-not-excuses` at 2026-10-19 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 6/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -43,7 +43,7 @@
 | 2026-10-16 | `2026-10-16-three-seconds` | ✅ | published | [link](https://www.instagram.com/p/Demot0wG_-U/) | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | published | [link](https://www.instagram.com/p/DelWTbfnA2C/) | — |
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | rendered | — | — |
-| 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | rendered | — | — |
+| 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | publishing | — | — |
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | published | [link](https://www.instagram.com/p/DekCQRUFKOO/) | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | published | [link](https://www.instagram.com/reel/DeoPqfWoAYb/) | — |
 | 2026-10-14 | `2026-10-14-reel-approval` | ✅ | published | [link](https://www.instagram.com/reel/Dem516OCZqk/) | — |
