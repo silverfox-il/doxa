@@ -32,10 +32,10 @@ pillar: body
 approved_hash: sha256:67e9c7c79f88ab570d83a745f40b22adca5d1ba168ffdf4b612c0b481e86fee4
 approved_by: owner
 approved_at: '2026-10-15T15:25:25+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18114245081143536'
+permalink: https://www.instagram.com/reel/DepfQpmiY9I/
+published_at: 2026-10-18T19:59:07+0000
 error: null
 story_id: null
 story_error: null
