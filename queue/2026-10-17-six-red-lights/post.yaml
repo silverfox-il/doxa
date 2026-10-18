@@ -75,10 +75,10 @@ pillar: dating
 approved_hash: sha256:eb36902ec5475c25413ea00645fb62d751577617e974c9d18f9d94a9461437af
 approved_by: owner
 approved_at: '2026-10-15T16:28:42+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18218927458354667'
+permalink: https://www.instagram.com/p/DepOmcomvNd/
+published_at: 2026-10-18T17:33:18+0000
 error: null
 story_id: null
 story_error: null
