@@ -7,6 +7,7 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-25 | `2026-10-25-reel-the-storm` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-second-place` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-last-time` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-the-beard-stays` | ✅ | rendered | — | — |
