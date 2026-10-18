@@ -1,0 +1,43 @@
+id: 2026-10-24-reel-last-time
+publish_at: 2026-10-24 18:00
+approved: false
+mode: reel
+caption: |-
+  אתה זוכר איך התגרשת בפעם שעברה?
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
+reel:
+  lines:
+  - אתה זוכר איך התגרשת בפעם שעברה?
+  - לא קיבלת כבוד, לא הרגשת תשוקה, ועל כנות כבר ויתרת מזמן...
+  - ואז נסגרת. העדפת שקט, לא התווכחת, לא התעקשת, פשוט שתקת.
+  - ועכשיו אתה לבד!
+  - אל תוותר על מה שמובן מאליו.
+  - מעטים יבינו באמת...
+  music: arpmedia-dark-trap-577842.mp3
+  per_line: 2.0
+  hold: 5.0
+  stories: null
+  style: null
+  video: man40-car-night.mp4
+  prebuilt: null
+  share_story: null
+source:
+  file: 11.md
+  section: אתה לא האפקט
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
