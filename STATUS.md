@@ -7,6 +7,7 @@
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
+| 2026-10-24 | `2026-10-24-reel-last-time` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-the-beard-stays` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-lets-wait` | ✅ | rendered | — | — |
 | 2026-10-23 | `2026-10-23-reel-who-leans` | ✅ | rendered | — | — |
