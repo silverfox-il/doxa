@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-19-ice-not-excuses` at 2026-10-19 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 6/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -35,7 +35,7 @@
 | 2026-10-18 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-no-toning` | ✅ | rendered | — | — |
-| 2026-10-17 | `2026-10-17-light-jab` | ✅ | rendered | — | — |
+| 2026-10-17 | `2026-10-17-light-jab` | ✅ | publishing | — | — |
 | 2026-10-17 | `2026-10-17-tease-wall-of-shame` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-six-red-lights` | ✅ | published | [link](https://www.instagram.com/p/DepOmcomvNd/) | — |
