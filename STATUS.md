@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-20-her-and-your-friends` at 2026-10-20 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -34,7 +34,7 @@
 | 2026-10-18 | `2026-10-18-green-flags` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
-| 2026-10-18 | `2026-10-18-no-toning` | ✅ | publishing | — | — |
+| 2026-10-18 | `2026-10-18-no-toning` | ✅ | published | [link](https://www.instagram.com/p/Der1zWZnSn4/) | — |
 | 2026-10-17 | `2026-10-17-light-jab` | ✅ | published | [link](https://www.instagram.com/p/DeqjYnRFJHT/) | — |
 | 2026-10-17 | `2026-10-17-tease-wall-of-shame` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | rendered | — | — |
