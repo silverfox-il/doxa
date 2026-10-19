@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-19-reel-two-men` at 2026-10-19 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -43,7 +43,7 @@
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | rendered | — | — |
 | 2026-10-16 | `2026-10-16-three-seconds` | ✅ | published | [link](https://www.instagram.com/p/Demot0wG_-U/) | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | published | [link](https://www.instagram.com/p/DelWTbfnA2C/) | — |
-| 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | publishing | — | — |
+| 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | published | [link](https://www.instagram.com/reel/Deq36yhDRHM/) | — |
 | 2026-10-15 | `2026-10-15-reel-just-sleep` | ✅ | published | [link](https://www.instagram.com/reel/DepfQpmiY9I/) | — |
 | 2026-10-14 | `2026-10-14-price-tag` | ✅ | published | [link](https://www.instagram.com/p/DekCQRUFKOO/) | — |
 | 2026-10-14 | `2026-10-14-tease-bench` | ✅ | published | [link](https://www.instagram.com/reel/DeoPqfWoAYb/) | — |
