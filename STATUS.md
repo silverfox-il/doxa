@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-20-her-and-your-friends` at 2026-10-20 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -41,7 +41,7 @@
 | 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | rendered | — | — |
 | 2026-10-17 | `2026-10-17-six-red-lights` | ✅ | published | [link](https://www.instagram.com/p/DepOmcomvNd/) | — |
 | 2026-10-16 | `2026-10-16-dealt-cards` | ✅ | published | [link](https://www.instagram.com/p/Den8jRvFXdC/) | — |
-| 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | publishing | — | — |
+| 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | published | [link](https://www.instagram.com/reel/DesG4wmiGv3/) | — |
 | 2026-10-16 | `2026-10-16-three-seconds` | ✅ | published | [link](https://www.instagram.com/p/Demot0wG_-U/) | — |
 | 2026-10-15 | `2026-10-15-always-available` | ✅ | published | [link](https://www.instagram.com/p/DelWTbfnA2C/) | — |
 | 2026-10-15 | `2026-10-15-tease-came-to-eat` | ✅ | published | [link](https://www.instagram.com/reel/Deq36yhDRHM/) | — |
