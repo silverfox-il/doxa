@@ -89,10 +89,10 @@ pillar: second-round
 approved_hash: sha256:fe62ee0c7dc77add4cdc6bfb5cb622613db860423efa74eddf7f6af5f46abe00
 approved_by: owner
 approved_at: '2026-10-15T16:43:41+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18152049490491199'
+permalink: https://www.instagram.com/p/DetJ76BFdqD/
+published_at: 2026-10-20T06:09:30+0000
 error: null
 story_id: null
 story_error: null

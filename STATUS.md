@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-20-her-and-your-friends` at 2026-10-20 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-19 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-ice-not-excuses` | ✅ | rendered | — | — |
-| 2026-10-18 | `2026-10-18-green-flags` | ✅ | publishing | — | — |
+| 2026-10-18 | `2026-10-18-green-flags` | ✅ | published | [link](https://www.instagram.com/p/DetJ76BFdqD/) | — |
 | 2026-10-18 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-18 | `2026-10-18-no-toning` | ✅ | published | [link](https://www.instagram.com/p/Der1zWZnSn4/) | — |
