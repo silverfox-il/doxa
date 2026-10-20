@@ -35,10 +35,10 @@ pillar: status
 approved_hash: sha256:60446261bd534d1879f571a81982c1a9d6b5c61db09c39688b49098c4b92b85b
 approved_by: owner
 approved_at: '2026-10-15T17:06:20+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18120355367046420'
+permalink: https://www.instagram.com/reel/DeutatskRBg/
+published_at: 2026-10-20T20:38:59+0000
 error: null
 story_id: null
 story_error: null
