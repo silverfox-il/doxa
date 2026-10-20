@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-20-reel-for-free` at 2026-10-20 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -38,7 +38,7 @@
 | 2026-10-18 | `2026-10-18-no-toning` | ✅ | published | [link](https://www.instagram.com/p/Der1zWZnSn4/) | — |
 | 2026-10-17 | `2026-10-17-light-jab` | ✅ | published | [link](https://www.instagram.com/p/DeqjYnRFJHT/) | — |
 | 2026-10-17 | `2026-10-17-tease-wall-of-shame` | ✅ | rendered | — | — |
-| 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | publishing | — | — |
+| 2026-10-17 | `2026-10-17-reel-finish-line` | ✅ | published | [link](https://www.instagram.com/reel/Dete82RgDt2/) | — |
 | 2026-10-17 | `2026-10-17-six-red-lights` | ✅ | published | [link](https://www.instagram.com/p/DepOmcomvNd/) | — |
 | 2026-10-16 | `2026-10-16-dealt-cards` | ✅ | published | [link](https://www.instagram.com/p/Den8jRvFXdC/) | — |
 | 2026-10-16 | `2026-10-16-reel-the-one-who-pays` | ✅ | published | [link](https://www.instagram.com/reel/DesG4wmiGv3/) | — |
