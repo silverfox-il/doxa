@@ -1,6 +1,6 @@
 id: 2026-10-20-her-and-your-friends
 publish_at: 2026-11-03 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   איך היא מתייחסת לחבר'ה שלך?
@@ -57,9 +57,9 @@ source:
   section: 'נורה 28: מה היא עושה עם החברים שלך'
 format: tweet
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ea905d391749183604d48ec36f097c95c59618018d30c480e6423dea3ff6e48e
+approved_by: auto
+approved_at: '2026-10-21T12:17:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

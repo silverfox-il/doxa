@@ -1,6 +1,6 @@
 id: 2026-10-20-reel-for-free
 publish_at: 2026-11-03 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אף אחד לא נדלק על משהו שהוא מקבל בחינם ובלי מאמץ.
@@ -29,9 +29,9 @@ source:
   section: משיכה וריחוק
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:38f91859a04a0178c79e418baede506937d5322abda6e0a1fc7f39b2dc96e57b
+approved_by: auto
+approved_at: '2026-10-21T12:17:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

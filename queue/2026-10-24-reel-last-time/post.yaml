@@ -1,6 +1,6 @@
 id: 2026-10-24-reel-last-time
 publish_at: 2026-10-23 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה זוכר איך התגרשת בפעם שעברה?
@@ -30,9 +30,9 @@ source:
   section: אתה לא האפקט
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ac87cd4504a22713582f783741ed2675446d7c05125c9143674cab6b9b11379d
+approved_by: auto
+approved_at: '2026-10-21T12:17:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

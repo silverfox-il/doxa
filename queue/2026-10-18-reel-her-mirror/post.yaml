@@ -1,6 +1,6 @@
 id: 2026-10-18-reel-her-mirror
 publish_at: 2026-11-01 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   האישה שאתה תקבל תהיה השתקפות של הגבר שאתה.
@@ -28,9 +28,9 @@ source:
   section: אתה המראה שלה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b40961323d3c2d975c69776ae6d4d5eff1ad4a34a31d917a050ffc02944ddab3
+approved_by: auto
+approved_at: '2026-10-21T12:17:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

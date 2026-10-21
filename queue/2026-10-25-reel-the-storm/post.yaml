@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-the-storm
 publish_at: 2026-10-23 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   שבוע שלם בלי ריב אחד.
@@ -30,9 +30,9 @@ source:
   section: 'נורה 24: היא לא יכולה בלי סערה'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:161ee8e0a008264b3e63da5ad4049fe46649639f80d82872ba520fbc51a275b6
+approved_by: auto
+approved_at: '2026-10-21T12:17:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

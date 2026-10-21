@@ -1,6 +1,6 @@
 id: 2026-10-24-reel-the-beard-stays
 publish_at: 2026-10-22 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתם יוצאים שבועיים, והיא כבר אומרת לך:
@@ -29,9 +29,9 @@ source:
   section: מבחנים שתקבל כמעט מכל אחת
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:521e8bfadf4c9a2ae37bf151305d6aa070303e470033883f02b483f98808e374
+approved_by: auto
+approved_at: '2026-10-21T12:17:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

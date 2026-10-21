@@ -1,6 +1,6 @@
 id: 2026-10-23-reel-need-time
 publish_at: 2026-10-21 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אני צריכה זמן לחשוב עם עצמי..."
@@ -28,9 +28,9 @@ source:
   section: ואיך אתה יודע שהיא לא
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2ff5bcf070d4438b8f653dd725591a109ef53f04d2ca685a1d420a7ea651ca51
+approved_by: auto
+approved_at: '2026-10-21T12:17:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-10-21-reel-ready-to-leave
 publish_at: 2026-11-04 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גבר שיודע שהוא יכול ללכת, לא צריך ללכת.
@@ -30,9 +30,9 @@ source:
   section: מוכן ללכת
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:50e3ded6fbbd4d014d035e0da8367d0a075dc98df575b9b6865768fc8d5f1297
+approved_by: auto
+approved_at: '2026-10-21T12:17:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

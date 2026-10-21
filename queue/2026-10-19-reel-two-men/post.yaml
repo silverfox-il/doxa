@@ -1,6 +1,6 @@
 id: 2026-10-19-reel-two-men
 publish_at: 2026-11-02 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תחשוב על הגבר שהיית ביום שיצאת מבית המשפט.
@@ -29,9 +29,9 @@ source:
   section: הגוף הוא חלק מהגינה
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2840788be6bef7b1409194cb7b1aa137d3fb6eb9461895de14f4c6c008cb9701
+approved_by: auto
+approved_at: '2026-10-21T12:17:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

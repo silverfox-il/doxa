@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-second-place
 publish_at: 2026-10-23 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   דייט שני, והיא מספרת לך על מישהו מלפני שנתיים. העיניים שלה מבריקות.
@@ -29,9 +29,9 @@ source:
   section: 'נורה 11: האקס שעדיין יושב איתכם בשולחן'
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:aeaebe428e6f828aa73de26548d44600148f4e121ab9d197dcbe92ab01ac2f25
+approved_by: auto
+approved_at: '2026-10-21T12:17:01+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
