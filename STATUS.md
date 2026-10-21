@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-21-starts-inside` at 2026-10-21 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 6/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -28,7 +28,7 @@
 | 2026-10-20 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
 | 2026-10-20 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
 | 2026-10-20 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
-| 2026-10-19 | `2026-10-19-not-gray` | ✅ | rendered | — | — |
+| 2026-10-19 | `2026-10-19-not-gray` | ✅ | publishing | — | — |
 | 2026-10-19 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-10-19 | `2026-10-19-ice-not-excuses` | ✅ | published | [link](https://www.instagram.com/p/DeucKpdlkJL/) | — |
