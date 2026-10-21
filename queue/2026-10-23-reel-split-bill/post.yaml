@@ -1,6 +1,6 @@
 id: 2026-10-23-reel-split-bill
 publish_at: 2026-10-21 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   בפגישה, אתה משלם. על הכל.
@@ -28,9 +28,9 @@ source:
   section: אתה משלם, ואתה לא עושה מזה סיפור
 format: null
 pillar: dating
-approved_hash: sha256:4cbd5ce61c72a115239887148771f72a3489d4df674d5f9163656746d3ffb609
-approved_by: owner
-approved_at: '2026-10-17T22:18:33+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

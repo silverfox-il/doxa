@@ -1,6 +1,6 @@
 id: 2026-10-20-three-musts
 publish_at: 2026-11-03 20:00
-approved: true
+approved: false
 mode: render
 caption: |-
   3 דברים שאסור לך לוותר עליהם באישה
@@ -51,9 +51,9 @@ source:
   section: ארבעה דברים שאתה מסתכל עליהם
 format: bold
 pillar: dating
-approved_hash: sha256:26d15effd3a41a370fdd4f360f260f0aed654becfbba1f1f11de032faccbd549
-approved_by: owner
-approved_at: '2026-10-15T16:43:51+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

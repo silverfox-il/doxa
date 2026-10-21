@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-third-time
 publish_at: 2026-10-24 10:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   בגדה בך פעם ראשונה? Zונה.
@@ -28,9 +28,9 @@ source:
   section: 'סימן 3: תמיד אותה אישה, רק עם שם אחר'
 format: null
 pillar: dating
-approved_hash: sha256:bb60dc27b14450f388d1f9186d177b7ee66ba4b721f5e99e3ebdaf6088b6b443
-approved_by: owner
-approved_at: '2026-10-19T21:44:20+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

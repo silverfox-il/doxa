@@ -1,6 +1,6 @@
 id: 2026-10-18-tease-hotel-lobby
 publish_at: 2026-11-01 18:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   השעון היקר ברקע לא עושה בשבילך את העבודה.
@@ -32,9 +32,9 @@ source:
   section: מה מושך אישה בת 40 פלוס היום
 format: null
 pillar: status
-approved_hash: sha256:d321536c70cced880b8c1d4ecfbb537fc72b664c078aff1ebec4c307ed5e961a
-approved_by: owner
-approved_at: '2026-10-15T12:12:47+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
