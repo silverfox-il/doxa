@@ -1,6 +1,6 @@
 id: 2026-10-24-reel-came-back
 publish_at: 2026-10-24 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא הלכה. אחרי חצי שנה מגיעה ממנה הודעה: "חשבתי עליך..."
@@ -29,9 +29,9 @@ source:
   section: כשהיא הולכת ואז מתדפקת בדלת
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c697b1031e98dd3608fcedc8780465c8e2984ebf8860bccd99914179ffa775ca
+approved_by: auto
+approved_at: '2026-10-21T13:10:31+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
