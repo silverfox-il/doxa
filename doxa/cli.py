@@ -503,6 +503,55 @@ def publish(ctx: click.Context, dry_run: bool, post_id: str | None, sha: str | N
     sys.exit(publisher.run(dry_run=dry_run, post_id=post_id))
 
 
+@main.command("story")
+@click.argument("files", nargs=-1, required=True)
+@click.option(
+    "--dry-run/--live",
+    default=True,
+    help="Dry run (default) only checks the URLs. --live publishes each file as a story.",
+)
+@click.option("--sha", envvar="DOXA_SHA", default=None, help="Commit to pin file URLs to.")
+@click.pass_context
+def story(ctx: click.Context, files: tuple[str, ...], dry_run: bool, sha: str | None) -> None:
+    """Publish FILES (queue/<id>/slides/N.jpg or queue/<id>/reel.mp4) as stories, in order.
+
+    For one-off stories the owner asks for, e.g. to build profile highlights.
+    """
+    from . import github
+    from .instagram import InstagramError
+    from .publish import head_check
+
+    root: Path = ctx.obj["root"]
+    problems = []
+    for f in files:
+        p = Path(f)
+        if p.parts[:1] != ("queue",) or p.suffix.lower() not in {".jpg", ".mp4"}:
+            problems.append(f"not a queue/ JPEG or MP4: {f}")
+        elif not (root / p).is_file():
+            problems.append(f"missing: {f}")
+    if problems:
+        _fail(problems)
+    slug, pin = github.repo_slug(), sha or _head_sha(root)
+    urls = [f"https://raw.githubusercontent.com/{slug}/{pin}/{Path(f).as_posix()}" for f in files]
+    for url in urls:
+        code, ctype = head_check(url)
+        click.echo(f"{code} {ctype.split(';')[0]}  {url}")
+        if code != 200:
+            _fail([f"URL not reachable: {url}"])
+    if dry_run:
+        click.echo("dry run: nothing sent")
+        return
+    client = _client()
+    for url in urls:
+        try:
+            container = client.create_story_container(url)
+            client.wait_finished(container)
+            media_id = client.publish(container)
+        except InstagramError as e:
+            _fail([f"story failed for {url}: {e}"])
+        click.echo(f"story published: {media_id}")
+
+
 @main.command()
 @click.option("--expect-username", default=None, help="Fail unless the token belongs to this.")
 def check(expect_username: str | None) -> None:

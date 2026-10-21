@@ -1,0 +1,52 @@
+name: story
+
+# One-off stories the owner asks for (e.g. to build profile highlights).
+# Manual only. Publishes for real only when started with dry_run unticked.
+
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Space-separated repo paths: queue/<id>/slides/N.jpg or queue/<id>/reel.mp4"
+        type: string
+        required: true
+      dry_run:
+        description: "Dry run: check the URLs, send nothing to Instagram"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: doxa-publish
+  cancel-in-progress: false
+
+jobs:
+  story:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Story
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          DOXA_SHA: ${{ github.sha }}
+          INPUT_FILES: ${{ inputs.files }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          mode="--dry-run"
+          if [ "$INPUT_DRY_RUN" = "false" ]; then mode="--live"; fi
+          read -r -a files <<< "$INPUT_FILES"
+          doxa story "$mode" "${files[@]}"
