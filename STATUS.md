@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-23-reel-split-bill` at 2026-10-21 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** unknown
+- **Today's quota:** 9/100 in the last 24h
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-22 | `2026-10-24-reel-lets-wait` | ✅ | rendered | — | — |
 | 2026-10-22 | `2026-10-23-reel-who-leans` | ✅ | rendered | — | — |
 | 2026-10-21 | `2026-10-23-reel-split-bill` | ✅ | rendered | — | — |
-| 2026-10-21 | `2026-10-23-reel-need-time` | ✅ | rendered | — | — |
+| 2026-10-21 | `2026-10-23-reel-need-time` | ✅ | publishing | — | — |
 | 2026-10-19 | `2026-10-19-not-gray` | ✅ | published | [link](https://www.instagram.com/p/DevwXVKlS8-/) | — |
 | 2026-10-19 | `2026-10-19-ice-not-excuses` | ✅ | published | [link](https://www.instagram.com/p/DeucKpdlkJL/) | — |
 | 2026-10-18 | `2026-10-18-green-flags` | ✅ | published | [link](https://www.instagram.com/p/DetJ76BFdqD/) | — |
