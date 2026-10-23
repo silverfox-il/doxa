@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-25-reel-second-place` at 2026-10-23 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -27,7 +27,7 @@
 | 2026-10-24 | `2026-10-25-reel-third-time` | ✅ | rendered | — | — |
 | 2026-10-23 | `2026-10-25-reel-the-storm` | ✅ | rendered | — | — |
 | 2026-10-23 | `2026-10-25-reel-second-place` | ✅ | rendered | — | — |
-| 2026-10-23 | `2026-10-24-reel-last-time` | ✅ | publishing | — | — |
+| 2026-10-23 | `2026-10-24-reel-last-time` | ✅ | published | [link](https://www.instagram.com/reel/De1AyD_Dc5U/) | — |
 | 2026-10-22 | `2026-10-24-reel-the-beard-stays` | ✅ | published | [link](https://www.instagram.com/reel/DezUQdDjg4u/) | — |
 | 2026-10-22 | `2026-10-24-reel-lets-wait` | ✅ | published | [link](https://www.instagram.com/reel/Deyv6nDgJ92/) | — |
 | 2026-10-22 | `2026-10-23-reel-who-leans` | ✅ | published | [link](https://www.instagram.com/reel/DeycBCgEaFx/) | — |
