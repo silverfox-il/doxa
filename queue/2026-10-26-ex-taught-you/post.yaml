@@ -1,6 +1,6 @@
 id: 2026-10-26-ex-taught-you
 publish_at: 2026-10-26 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   5 דברים שהאקסית לימדה אותך במיטה, ושאסור לך להביא לאישה חדשה
@@ -65,9 +65,9 @@ source:
   section: 'הטעות השלישית: להביא את השגרה של הנישואים למיטה חדשה'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e554f0f532241968cce0ff833c67f6f449aad35912d7dfd8f8c46315f3b6cdf7
+approved_by: auto
+approved_at: '2026-10-24T11:43:56+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
