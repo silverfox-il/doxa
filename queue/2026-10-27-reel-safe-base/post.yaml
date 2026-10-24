@@ -1,6 +1,6 @@
 id: 2026-10-27-reel-safe-base
 publish_at: 2026-10-27 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כל חמישי ושישי היא בחוץ עם החברות הגרושות.
@@ -29,9 +29,9 @@ source:
   section: 'נורה 10: חיי לילה של בת 25, בגיל 43'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fc08b0a333daf116191dba278a0af5c63403d9887c1c42f70fb7eed3748f659c
+approved_by: auto
+approved_at: '2026-10-24T13:21:23+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
