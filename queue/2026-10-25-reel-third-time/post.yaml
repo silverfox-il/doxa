@@ -31,10 +31,10 @@ pillar: dating
 approved_hash: sha256:89a8cbf73d8c3bd919c54becdb5d2999759fc6f98c1e70837a865eb69d92513f
 approved_by: owner
 approved_at: '2026-10-21T12:20:29+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18116201204006013'
+permalink: https://www.instagram.com/reel/De3lleVAvW-/
+published_at: 2026-10-24T07:23:41+0000
 error: null
 story_id: null
 story_error: null

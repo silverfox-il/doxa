@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-24-reel-came-back` at 2026-10-24 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -24,7 +24,7 @@
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-came-back` | ✅ | rendered | — | — |
-| 2026-10-24 | `2026-10-25-reel-third-time` | ✅ | publishing | — | — |
+| 2026-10-24 | `2026-10-25-reel-third-time` | ✅ | published | [link](https://www.instagram.com/reel/De3lleVAvW-/) | — |
 | 2026-10-23 | `2026-10-25-reel-the-storm` | ✅ | published | [link](https://www.instagram.com/reel/De11jI2jIsW/) | — |
 | 2026-10-23 | `2026-10-25-reel-second-place` | ✅ | published | [link](https://www.instagram.com/reel/De1UExrDcFU/) | — |
 | 2026-10-23 | `2026-10-24-reel-last-time` | ✅ | published | [link](https://www.instagram.com/reel/De1AyD_Dc5U/) | — |
