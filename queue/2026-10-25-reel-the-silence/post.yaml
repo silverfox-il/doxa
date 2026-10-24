@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-the-silence
 publish_at: 2026-10-25 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   יום שלם היא לא עונה. גם יומיים.
@@ -30,9 +30,9 @@ source:
   section: 'נורה 21: התקף זעם בגוף של בוגרת'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cb0230b2d9b71ebc196d89cec5da0e308bff626ce531a0bfd1219772aebb512f
+approved_by: auto
+approved_at: '2026-10-24T10:51:23+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

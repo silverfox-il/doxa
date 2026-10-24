@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-house-of-cards
 publish_at: 2026-10-25 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא אמרה שהיא עובדת עד מאוחר. ואז ראית אותה בבית קפה, צוחקת.
@@ -29,9 +29,9 @@ source:
   section: 'נורה 15: בית הקלפים'
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:942ecffa73076c83febbe149bebff7e81b20ec6e2d731673d13f7f69ce6aafc4
+approved_by: auto
+approved_at: '2026-10-24T10:51:23+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
