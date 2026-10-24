@@ -1,6 +1,6 @@
 id: 2026-10-25-seven-messages
 publish_at: 2026-10-25 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   7 הודעות שאסור לך לשלוח לה
@@ -79,9 +79,9 @@ source:
   section: ההודעות שלא שולחים לעולם
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fd9ce4275634098f5607c79f2c67f752273224880722918db1dcd0872a21c8da
+approved_by: owner
+approved_at: '2026-10-24T11:20:17+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
