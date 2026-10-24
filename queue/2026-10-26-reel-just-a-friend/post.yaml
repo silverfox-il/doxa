@@ -1,6 +1,6 @@
 id: 2026-10-26-reel-just-a-friend
 publish_at: 2026-10-26 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "הוא רק ידיד". ככה היא אמרה, ואתה הנהנת.
@@ -30,9 +30,9 @@ source:
   section: כשיש גברים בתמונה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:69f1e5620f382d91ef36cc18e3630fbdb2efcaa9175146116ed09bb03548298c
+approved_by: auto
+approved_at: '2026-10-24T12:23:00+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
