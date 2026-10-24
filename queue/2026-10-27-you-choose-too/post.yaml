@@ -112,8 +112,8 @@ source:
 format: bold
 pillar: mind
 approved_hash: sha256:7b00a941b9696690f1588736162946973705c915c469b4dd29bddbc697380d74
-approved_by: auto
-approved_at: '2026-10-24T15:11:34+03:00'
+approved_by: owner
+approved_at: '2026-10-24T15:13:21+03:00'
 status: rendered
 ig_media_id: null
 permalink: null

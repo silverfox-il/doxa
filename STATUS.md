@@ -24,6 +24,7 @@
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-three-flags` | ✅ | rendered | — | — |
+| 2026-10-27 | `2026-10-27-you-choose-too` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-reel-safe-base` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-reel-the-loan` | ✅ | rendered | — | — |
 | 2026-10-26 | `2026-10-26-ex-taught-you` | ✅ | rendered | — | — |
