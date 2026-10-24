@@ -1,6 +1,6 @@
 id: 2026-10-25-reel-the-savior
 publish_at: 2026-10-25 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היום אתה הגבר הכי מדהים שהיא פגשה. מחר אתה "בדיוק כמו האקס".
@@ -29,9 +29,9 @@ source:
   section: 'נורה 26: כשהסערה היא בפנים והיא מסרבת לגעת בה'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:eb6b77eb7bd4648d70e01f4b99b0fedb293a40c7dc4013875aef52fa1689d751
+approved_by: auto
+approved_at: '2026-10-24T11:16:31+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
