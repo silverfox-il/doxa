@@ -1,6 +1,6 @@
 id: 2026-10-27-you-choose-too
 publish_at: 2026-10-27 18:00
-approved: false
+approved: true
 mode: render
 caption: |-
   הטעות הכי גדולה שלך בדייטים?
@@ -111,9 +111,9 @@ source:
   section: מה אתה בודק אצלה, ומה היא מחפשת אצלך
 format: bold
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7b00a941b9696690f1588736162946973705c915c469b4dd29bddbc697380d74
+approved_by: auto
+approved_at: '2026-10-24T15:11:34+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
