@@ -66,8 +66,8 @@ source:
 format: bold
 pillar: second-round
 approved_hash: sha256:e554f0f532241968cce0ff833c67f6f449aad35912d7dfd8f8c46315f3b6cdf7
-approved_by: auto
-approved_at: '2026-10-24T11:43:56+03:00'
+approved_by: owner
+approved_at: '2026-10-24T11:45:35+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
