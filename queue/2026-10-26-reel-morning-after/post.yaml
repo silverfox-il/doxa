@@ -1,6 +1,6 @@
 id: 2026-10-26-reel-morning-after
 publish_at: 2026-10-26 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   08:00 "בוקר טוב יפה שלי".
@@ -30,9 +30,9 @@ source:
   section: המבחן של אחרי
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cf7b9604776fa29176f78f1202a1539d1b5184f81c5232acc0619a507b7b3379
+approved_by: auto
+approved_at: '2026-10-24T12:40:24+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
