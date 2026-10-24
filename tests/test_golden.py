@@ -145,7 +145,7 @@ def test_render_post_writes_valid_jpegs(renderer, tmp_path):
     slides_dir.mkdir()
     (slides_dir / "7.jpg").write_bytes(b"stale")  # left over from a longer post
     paths = render.render_post(post, tmp_path, root=gen.ROOT, renderer=renderer)
-    assert [p.name for p in paths] == ["1.jpg", "2.jpg"]
+    assert [p.name for p in paths] == ["1.jpg", "2.jpg", "3.jpg"]  # 2 slides + follow card
     assert validate_slides(slides_dir) == []
     with Image.open(paths[0]) as im:
         assert im.size == (SLIDE_W, SLIDE_H) and im.mode == "RGB"

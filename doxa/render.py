@@ -262,7 +262,9 @@ def render_post(
 
     slides_dir = post_dir / "slides"
     slides_dir.mkdir(parents=True, exist_ok=True)
-    total = len(post.slides)
+    # The owner's follow card (2026-10-24) closes every carousel that has room for it.
+    with_cta = len(post.slides) < MAX_CAROUSEL
+    total = len(post.slides) + (1 if with_cta else 0)
     for old in slides_dir.glob("*.jpg"):
         if not (old.stem.isdigit() and 1 <= int(old.stem) <= total):
             old.unlink()
@@ -271,6 +273,8 @@ def render_post(
         build_html(s, i, total, root=root, look=post.look)
         for i, s in enumerate(post.slides, start=1)
     ]
+    if with_cta:
+        docs.append(build_cta_html(root=root))
     if renderer is None:
         with Renderer() as r:
             return render_post(post, post_dir, root=root, renderer=r)
@@ -281,3 +285,53 @@ def render_post(
         out.write_bytes(renderer.screenshot(doc))
         out_paths.append(out)
     return out_paths
+
+
+MAX_CAROUSEL = 10  # Instagram carousel limit for API posts
+PROFILE_PHOTO = Path("assets/brand/profile.jpg")
+
+_HEART = (
+    '<svg viewBox="0 0 24 24" width="90" height="90"><path d="M12 21s-7.5-4.6-9.5-9.3'
+    "C1 7.9 3.6 4.5 7 4.5c2 0 3.6 1.1 5 2.8 1.4-1.7 3-2.8 5-2.8 3.4 0 6 3.4 4.5 7.2"
+    'C19.5 16.4 12 21 12 21z" fill="#ff6a13"/></svg>'
+)
+_SEND = (
+    '<svg viewBox="0 0 24 24" width="90" height="90"><path d="M2 21 23 12 2 3l3 9-3 9zm3-9h10"'
+    ' fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>'
+)
+_PLUS = (
+    '<svg viewBox="0 0 24 24" width="90" height="90"><circle cx="12" cy="12" r="10" fill="none"'
+    ' stroke="#fff" stroke-width="2.2"/><path d="M12 7v10M7 12h10" stroke="#fff"'
+    ' stroke-width="2.2"/></svg>'
+)
+
+
+def build_cta_html(*, root: Path = REPO_ROOT) -> str:
+    """The closing follow card: profile photo, then like / send / follow rows."""
+    photo = root / PROFILE_PHOTO
+    if not photo.exists():
+        photo = REPO_ROOT / PROFILE_PHOTO
+    if not photo.exists():
+        raise RenderError(f"missing profile photo {photo}")
+    pfp = "data:image/jpeg;base64," + base64.b64encode(photo.read_bytes()).decode("ascii")
+    handle = html.escape(IG_HANDLE)
+    return f"""<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><style>
+{_font_faces()}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:{SLIDE_W}px;height:{SLIDE_H}px;font-family:'Heebo';direction:rtl;overflow:hidden;
+background:#141414;color:#fff;display:flex;flex-direction:column;justify-content:center;
+padding:0 110px}}
+.f{{display:flex;align-items:center;gap:36px;margin-bottom:90px}}
+.av{{width:190px;height:190px;border-radius:50%;background:url('{pfp}') center/cover;
+border:6px solid #ff6a13;flex:none}}
+.n{{font-size:56px;font-weight:800}}.u{{font-size:34px;color:#aaa;direction:ltr;text-align:right}}
+.r{{display:flex;align-items:center;gap:44px;padding:44px 0;border-bottom:2px solid #333;
+font-size:56px;font-weight:700;line-height:1.2}}.r:last-child{{border:0}}
+.r b{{color:#ff6a13}}.r svg{{flex:none}}
+</style></head><body>
+<div class="f"><div class="av"></div><div><div class="n">{html.escape(BRAND)}</div>
+<div class="u">{handle}</div></div></div>
+<div class="r">{_HEART}<div>אהבת? <b>תן לייק</b></div></div>
+<div class="r">{_SEND}<div>תשלח לחבר שצריך לשמוע את זה</div></div>
+<div class="r">{_PLUS}<div>תעקוב ותלמד איך להפוך <b>לסילבר פוקס אמיתי</b></div></div>
+</body></html>"""

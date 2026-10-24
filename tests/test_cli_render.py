@@ -62,7 +62,9 @@ def test_render_mode_post_end_to_end(repo):
     path = write_post(repo, render_post_data())
     result = run(repo, "render", "2026-09-25-test")
     assert result.exit_code == 0, result.output
-    assert sorted(p.name for p in (path.parent / "slides").iterdir()) == ["1.jpg", "2.jpg"]
+    # 2 slides + the follow card
+    names = sorted(p.name for p in (path.parent / "slides").iterdir())
+    assert names == ["1.jpg", "2.jpg", "3.jpg"]
     assert load_post(path).status == Status.rendered
     assert run(repo, "validate").exit_code == 0
 
