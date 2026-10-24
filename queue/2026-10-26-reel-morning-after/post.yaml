@@ -1,6 +1,6 @@
 id: 2026-10-26-reel-morning-after
 publish_at: 2026-10-26 13:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   08:00 "בוקר טוב יפה שלי".
@@ -22,7 +22,7 @@ reel:
   hold: 5.0
   stories: null
   style: null
-  video: man45-mate-cafe.mp4
+  video: man45-bed-texting-smile.mp4
   prebuilt: null
   share_story: null
 source:
@@ -30,9 +30,9 @@ source:
   section: המבחן של אחרי
 format: null
 pillar: second-round
-approved_hash: sha256:cf7b9604776fa29176f78f1202a1539d1b5184f81c5232acc0619a507b7b3379
-approved_by: owner
-approved_at: '2026-10-24T12:42:18+03:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
