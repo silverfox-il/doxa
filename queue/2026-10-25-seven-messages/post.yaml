@@ -1,0 +1,92 @@
+id: 2026-10-25-seven-messages
+publish_at: 2026-10-25 20:00
+approved: false
+mode: render
+caption: |-
+  7 הודעות שאסור לך לשלוח לה
+  תמחק אותן מהמקלדת. לתמיד.
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides:
+- background: null
+  kicker: מדריך
+  title: 7 הודעות שאסור לך לשלוח לה
+  accent: תמחק אותן מהמקלדת. לתמיד.
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: '1'
+  title: '"למה את לא עונה?"'
+  accent: ''
+  body: וגם "נעלמת?" ו"הכל בסדר איתך?". כל גרסה כזאת אומרת לה שאתה יושב ומחכה.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '2'
+  title: '"את לא כמו כולן."'
+  accent: ''
+  body: היא יודעת שאמרת את זה גם לקודמת.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '3'
+  title: '"אני לא טיפוס של הודעות."'
+  accent: ''
+  body: ואחריה עשר הודעות.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '4'
+  title: '"האקסית שלי..."'
+  accent: ''
+  body: כל משפט שמתחיל ככה הורג את השיחה. היא לא באה לשמוע עליה.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '5'
+  title: '"תשלחי תמונה."'
+  accent: ''
+  body: לפני שנפגשתם, בשום ניסוח. זה לא מחמיא. זה קריפי.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '6'
+  title: '"בוקר טוב יפה"'
+  accent: ''
+  body: כל בוקר, עם פרח מהאינטרנט. היא רואה סבא.
+  layout: bottom
+  items: []
+- background: null
+  kicker: '7'
+  title: '"אז מה, אנחנו נפגשים או לא?"'
+  accent: ''
+  body: היא ביקשה עוד כמה ימים, ואתה לוחץ? הרגע נתת לה סיבה לא לבוא.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: כל אחת מהן הרגה שיחה שהייתה יכולה להיות מצוינת.
+  accent: ואת הטלפון אחרי הכוס השנייה? בצד השני של החדר.
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 02.md
+  section: ההודעות שלא שולחים לעולם
+format: bold
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
