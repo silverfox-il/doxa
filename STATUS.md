@@ -23,6 +23,9 @@
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
+| 2026-10-25 | `2026-10-25-reel-house-of-cards` | ✅ | rendered | — | — |
+| 2026-10-25 | `2026-10-25-reel-the-silence` | ✅ | rendered | — | — |
+| 2026-10-24 | `2026-10-24-reel-no-window` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-came-back` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-25-reel-third-time` | ✅ | published | [link](https://www.instagram.com/reel/De3lleVAvW-/) | — |
 | 2026-10-23 | `2026-10-25-reel-the-storm` | ✅ | published | [link](https://www.instagram.com/reel/De11jI2jIsW/) | — |
