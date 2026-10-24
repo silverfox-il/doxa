@@ -23,6 +23,8 @@
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
+| 2026-10-25 | `2026-10-25-seven-messages` | ✅ | rendered | — | — |
+| 2026-10-25 | `2026-10-25-reel-the-savior` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-house-of-cards` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-the-silence` | ✅ | rendered | — | — |
 | 2026-10-24 | `2026-10-24-reel-no-window` | ✅ | rendered | — | — |
