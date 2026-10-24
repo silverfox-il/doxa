@@ -65,9 +65,9 @@ source:
   section: 'הטעות השלישית: להביא את השגרה של הנישואים למיטה חדשה'
 format: bold
 pillar: second-round
-approved_hash: sha256:d7e7607252f8b649a33232499dc737e9fa343c9c170d9b57713b8d90744637a4
+approved_hash: sha256:5938c4c70be8c46f02b9a85032c0dfab8b2e74fc8513805a90925d2f740ff9c5
 approved_by: owner
-approved_at: '2026-10-24T11:34:22+03:00'
+approved_at: '2026-10-24T11:37:14+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
