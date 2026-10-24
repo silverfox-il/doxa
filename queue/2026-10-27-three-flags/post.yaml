@@ -1,6 +1,6 @@
 id: 2026-10-27-three-flags
 publish_at: 2026-10-27 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   3 דגלים בדייט הראשון שאומרים לך לקום וללכת
@@ -58,9 +58,9 @@ source:
   section: דגלים אדומים בפגישה עצמה
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0a69bcc70ea947c00522e5e3ca5c92e87362282caeec210500a9eb5494059b4a
+approved_by: auto
+approved_at: '2026-10-24T12:55:17+03:00'
 status: rendered
 ig_media_id: null
 permalink: null
