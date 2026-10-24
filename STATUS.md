@@ -24,6 +24,7 @@
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-26 | `2026-10-26-ex-taught-you` | ✅ | rendered | — | — |
+| 2026-10-26 | `2026-10-26-reel-just-a-friend` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-seven-messages` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-the-savior` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-house-of-cards` | ✅ | rendered | — | — |
