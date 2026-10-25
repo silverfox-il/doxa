@@ -82,10 +82,10 @@ pillar: dating
 approved_hash: sha256:383cd04ae7198d039571ed33c7c889b0fb9a1e04188e8abfc702308b02db4058
 approved_by: owner
 approved_at: '2026-10-24T11:45:34+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18116086409039063'
+permalink: https://www.instagram.com/p/De7ZcDYlVRV/
+published_at: 2026-10-25T18:54:06+0000
 error: null
 story_id: null
 story_error: null

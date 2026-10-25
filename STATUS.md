@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-26-reel-just-a-friend` at 2026-10-26 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -31,7 +31,7 @@
 | 2026-10-26 | `2026-10-26-reel-dog-at-door` | ✅ | rendered | — | — |
 | 2026-10-26 | `2026-10-26-reel-morning-after` | ✅ | rendered | — | — |
 | 2026-10-26 | `2026-10-26-reel-just-a-friend` | ✅ | rendered | — | — |
-| 2026-10-25 | `2026-10-25-seven-messages` | ✅ | publishing | — | — |
+| 2026-10-25 | `2026-10-25-seven-messages` | ✅ | published | [link](https://www.instagram.com/p/De7ZcDYlVRV/) | — |
 | 2026-10-25 | `2026-10-25-reel-the-savior` | ✅ | published | [link](https://www.instagram.com/reel/De7IQfejh7G/) | — |
 | 2026-10-25 | `2026-10-25-reel-house-of-cards` | ✅ | published | [link](https://www.instagram.com/reel/De6l0h6jUJW/) | — |
 | 2026-10-25 | `2026-10-25-reel-the-silence` | ✅ | published | [link](https://www.instagram.com/reel/De6RP2TkmzF/) | — |
