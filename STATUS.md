@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-25-reel-house-of-cards` at 2026-10-25 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -34,7 +34,7 @@
 | 2026-10-25 | `2026-10-25-seven-messages` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-the-savior` | ✅ | rendered | — | — |
 | 2026-10-25 | `2026-10-25-reel-house-of-cards` | ✅ | rendered | — | — |
-| 2026-10-25 | `2026-10-25-reel-the-silence` | ✅ | publishing | — | — |
+| 2026-10-25 | `2026-10-25-reel-the-silence` | ✅ | published | [link](https://www.instagram.com/reel/De6RP2TkmzF/) | — |
 | 2026-10-24 | `2026-10-24-reel-no-window` | ✅ | published | [link](https://www.instagram.com/reel/De4avHXAVEv/) | — |
 | 2026-10-24 | `2026-10-24-reel-came-back` | ✅ | published | [link](https://www.instagram.com/reel/De34HaqFEp_/) | — |
 | 2026-10-24 | `2026-10-25-reel-third-time` | ✅ | published | [link](https://www.instagram.com/reel/De3lleVAvW-/) | — |
