@@ -33,10 +33,10 @@ pillar: mind
 approved_hash: sha256:69f1e5620f382d91ef36cc18e3630fbdb2efcaa9175146116ed09bb03548298c
 approved_by: owner
 approved_at: '2026-10-24T12:24:33+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18138214846711095'
+permalink: https://www.instagram.com/reel/De9AVWnmNuC/
+published_at: 2026-10-26T09:53:37+0000
 error: null
 story_id: null
 story_error: null
