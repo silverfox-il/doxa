@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-26-ex-taught-you` at 2026-10-26 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -28,7 +28,7 @@
 | 2026-10-27 | `2026-10-27-reel-safe-base` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-reel-the-loan` | ✅ | rendered | — | — |
 | 2026-10-26 | `2026-10-26-ex-taught-you` | ✅ | rendered | — | — |
-| 2026-10-26 | `2026-10-26-reel-dog-at-door` | ✅ | publishing | — | — |
+| 2026-10-26 | `2026-10-26-reel-dog-at-door` | ✅ | published | [link](https://www.instagram.com/reel/De9wcayAHdU/) | — |
 | 2026-10-26 | `2026-10-26-reel-morning-after` | ✅ | published | [link](https://www.instagram.com/reel/De9U9Q8GBYj/) | — |
 | 2026-10-26 | `2026-10-26-reel-just-a-friend` | ✅ | published | [link](https://www.instagram.com/reel/De9AVWnmNuC/) | — |
 | 2026-10-25 | `2026-10-25-seven-messages` | ✅ | published | [link](https://www.instagram.com/p/De7ZcDYlVRV/) | — |
