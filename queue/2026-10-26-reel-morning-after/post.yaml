@@ -33,7 +33,7 @@ pillar: second-round
 approved_hash: sha256:bc32479d3fe1b0dda29e21b0ade9dd46a773177a45fce6eb2462e5add8e11f4e
 approved_by: owner
 approved_at: '2026-10-24T12:48:30+03:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
