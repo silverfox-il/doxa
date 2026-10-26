@@ -48,7 +48,7 @@ jobs:
         run: |
           doxa stats | tee -a "$GITHUB_STEP_SUMMARY"
           echo "--- best reels (boost candidates) ---"
-          doxa best-reels | tee -a "$GITHUB_STEP_SUMMARY"
+          doxa best-reels --top 25 | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Alert the owner
         if: failure()
