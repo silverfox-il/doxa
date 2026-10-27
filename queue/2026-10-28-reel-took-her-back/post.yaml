@@ -1,6 +1,6 @@
 id: 2026-10-28-reel-took-her-back
 publish_at: 2026-10-28 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "טעיתי. רק איתך היה לי טוב."
@@ -26,9 +26,9 @@ reel:
 source: null
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5dd1cdf4219ad1fcd3f7e6a23a897286c9eedf7957e6c77085c8558c3d9aec90
+approved_by: auto
+approved_at: '2026-10-27T11:40:16+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
