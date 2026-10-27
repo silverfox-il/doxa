@@ -1,6 +1,6 @@
 id: 2026-10-28-reel-tired-tonight
 publish_at: 2026-10-28 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אני עייפה הלילה."
@@ -27,9 +27,9 @@ source:
   section: סקס, גם אחרי שההתלהבות נרגעת
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:8679077c576f493efc586b5b6a7bbb43badd686cda42f98077cbb69c90a240eb
+approved_by: auto
+approved_at: '2026-10-27T11:25:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
