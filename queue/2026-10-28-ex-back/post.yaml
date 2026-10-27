@@ -1,6 +1,6 @@
 id: 2026-10-28-ex-back
 publish_at: 2026-10-28 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   למה האקסית באמת חוזרת אליך
@@ -77,9 +77,9 @@ reel: null
 source: null
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4789841992e391616ee85105ff349ff2f9a6fb2288ad0366c0829d208a7c6930
+approved_by: auto
+approved_at: '2026-10-27T13:51:06+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
