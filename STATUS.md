@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-27-you-choose-too` at 2026-10-27 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -29,7 +29,7 @@
 | 2026-10-28 | `2026-10-28-reel-tired-tonight` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-three-flags` | ✅ | rendered | — | — |
 | 2026-10-27 | `2026-10-27-you-choose-too` | ✅ | rendered | — | — |
-| 2026-10-27 | `2026-10-27-reel-safe-base` | ✅ | publishing | — | — |
+| 2026-10-27 | `2026-10-27-reel-safe-base` | ✅ | published | [link](https://www.instagram.com/reel/De_9K4qEs-K/) | — |
 | 2026-10-27 | `2026-10-27-reel-the-loan` | ✅ | published | [link](https://www.instagram.com/reel/De_opaYCi3S/) | — |
 | 2026-10-26 | `2026-10-26-ex-taught-you` | ✅ | published | [link](https://www.instagram.com/p/De-BnTklIMx/) | — |
 | 2026-10-26 | `2026-10-26-reel-dog-at-door` | ✅ | published | [link](https://www.instagram.com/reel/De9wcayAHdU/) | — |
