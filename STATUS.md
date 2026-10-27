@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-28-reel-tired-tonight` at 2026-10-28 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -27,7 +27,7 @@
 | 2026-10-28 | `2026-10-28-reel-not-you` | ✅ | rendered | — | — |
 | 2026-10-28 | `2026-10-28-reel-took-her-back` | ✅ | rendered | — | — |
 | 2026-10-28 | `2026-10-28-reel-tired-tonight` | ✅ | rendered | — | — |
-| 2026-10-27 | `2026-10-27-three-flags` | ✅ | publishing | — | — |
+| 2026-10-27 | `2026-10-27-three-flags` | ✅ | published | [link](https://www.instagram.com/p/DfAmr1sIPqu/) | — |
 | 2026-10-27 | `2026-10-27-you-choose-too` | ✅ | published | [link](https://www.instagram.com/p/DfAV-qKFOMq/) | — |
 | 2026-10-27 | `2026-10-27-reel-safe-base` | ✅ | published | [link](https://www.instagram.com/reel/De_9K4qEs-K/) | — |
 | 2026-10-27 | `2026-10-27-reel-the-loan` | ✅ | published | [link](https://www.instagram.com/reel/De_opaYCi3S/) | — |
