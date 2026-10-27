@@ -114,10 +114,10 @@ pillar: mind
 approved_hash: sha256:7b00a941b9696690f1588736162946973705c915c469b4dd29bddbc697380d74
 approved_by: owner
 approved_at: '2026-10-24T15:13:21+03:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18077038052762118'
+permalink: https://www.instagram.com/p/DfAV-qKFOMq/
+published_at: 2026-10-27T17:00:19+0000
 error: null
 story_id: null
 story_error: null
