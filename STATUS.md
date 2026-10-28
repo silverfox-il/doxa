@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-28-ex-back` at 2026-10-28 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -24,7 +24,7 @@
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-10-28 | `2026-10-28-ex-back` | ✅ | rendered | — | — |
-| 2026-10-28 | `2026-10-28-reel-not-you` | ✅ | publishing | — | — |
+| 2026-10-28 | `2026-10-28-reel-not-you` | ✅ | published | [link](https://www.instagram.com/reel/DfC9c2WCQHO/) | — |
 | 2026-10-28 | `2026-10-28-reel-took-her-back` | ✅ | published | [link](https://www.instagram.com/reel/DfCi7dgl0lA/) | — |
 | 2026-10-28 | `2026-10-28-reel-tired-tonight` | ✅ | published | [link](https://www.instagram.com/reel/DfCQzcJiAKw/) | — |
 | 2026-10-27 | `2026-10-27-three-flags` | ✅ | published | [link](https://www.instagram.com/p/DfAmr1sIPqu/) | — |
