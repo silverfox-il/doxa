@@ -1,6 +1,6 @@
 id: 2026-10-30-reel-toothbrush
 publish_at: 2026-10-30 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   לחץ לא תמיד מגיע במילים.
@@ -27,9 +27,9 @@ source:
   section: 'נורה 16: "נו, מתי אנחנו עוברים?"'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9d218280f2fc7a7a3e23e667ee1ff84d698a324c0ff43f3e589a209f86d03440
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

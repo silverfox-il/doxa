@@ -1,6 +1,6 @@
 id: 2026-10-30-azrieli-tower
 publish_at: 2026-10-30 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   עם ראש מבולגן לא רק שלא תצליח, אתה גם תסבול כל הדרך.
@@ -57,9 +57,9 @@ source:
   section: 'ראש נקי: היסוד של הפריים'
 format: photo
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f58ae065de07cf2d6dcead3ce024079b9c476183fc583806df525bc24abdccc1
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

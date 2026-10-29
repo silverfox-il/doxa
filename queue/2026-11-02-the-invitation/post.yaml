@@ -1,6 +1,6 @@
 id: 2026-11-02-the-invitation
 publish_at: 2026-11-02 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   רוב הגברים בגילך נופלים פה באחת משתי הדרכים.
@@ -64,9 +64,9 @@ source:
   section: ההזמנה
 format: photo
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ac9f03d264677186fc666455a1977dcf348c4fd7c79e0c1861f2f046593bc415
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

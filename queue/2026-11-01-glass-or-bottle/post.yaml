@@ -1,6 +1,6 @@
 id: 2026-11-01-glass-or-bottle
 publish_at: 2026-11-01 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   האם היא שותה כוס יין בערב, או בקבוק?
@@ -57,9 +57,9 @@ source:
   section: 'נורה 6: איך היא מתייחסת לעצמה'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2e898b53743a415d0624c5b6018077c46ca9d3205b0f7afbd249ec8f3a07a4ac
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-02-reel-say-it-aloud
 publish_at: 2026-11-02 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   משפט אחד לעצמך, לפני שאתה יוצא מהבית:
@@ -27,9 +27,9 @@ source:
   section: הראש, לפני שיוצאים
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ec6ad89cddbecfafaf5198f21fbf5c210e89c269249a73f814c9265978a986ee
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

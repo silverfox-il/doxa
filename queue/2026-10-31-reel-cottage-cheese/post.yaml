@@ -1,6 +1,6 @@
 id: 2026-10-31-reel-cottage-cheese
 publish_at: 2026-10-31 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אל תסתובב לבן כמו גבינה צפתית
@@ -27,9 +27,9 @@ source:
   section: עור ושמש
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:dd21ffbc313fe4043d4d532179a321f4864d101df99b7e7bbf4d3d55772ce598
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

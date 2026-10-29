@@ -1,6 +1,6 @@
 id: 2026-11-01-reel-no-filter
 publish_at: 2026-11-01 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אם אתה מוחק כל פגם, אתה נראה כמו פרסומת.
@@ -27,9 +27,9 @@ source:
   section: אמיתי זה הסקסי החדש
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:04c665e51c3ab122f175f97305661fe03b48a05fe6864b0201b276bc5563dfa1
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

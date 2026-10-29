@@ -1,6 +1,6 @@
 id: 2026-10-30-reel-your-smile
 publish_at: 2026-10-30 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   חיוך זה הדבר הראשון שהיא רואה בדייט
@@ -27,9 +27,9 @@ source:
   section: שיניים
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fae35a9b2611e2e1d737b1bfc0c685afc7ddd94ba285ad00db5a8ebecc9c0ea7
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

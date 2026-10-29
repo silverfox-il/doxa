@@ -1,6 +1,6 @@
 id: 2026-10-31-reel-empty-hands
 publish_at: 2026-10-31 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   ביום שהיא תהפוך למרכז החיים שלך
@@ -27,9 +27,9 @@ source:
   section: הפוקוס הוא המגנט
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d938438a065f6931001d65bbc527acac9179a15ed355ee4e5eb37a33dd93686f
+approved_by: auto
+approved_at: '2026-10-29T08:21:43+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
