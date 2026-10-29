@@ -2,8 +2,6 @@ id: 2026-11-01-glass-or-bottle
 publish_at: 2026-11-01 20:00
 approved: false
 mode: render
-format: bold
-pillar: second-round
 caption: |-
   האם היא שותה כוס יין בערב, או בקבוק?
 
@@ -11,18 +9,62 @@ caption: |-
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
-- title: האם היא שותה כוס יין בערב, או בקבוק?
+- background: null
+  kicker: ''
+  title: האם היא שותה כוס יין בערב, או בקבוק?
+  accent: ''
+  body: ''
   layout: bottom
-- title: הדרך שבה אישה מתייחסת לעצמה היא בדיוק הדרך שבה היא תתייחס לחיים שלכם ביחד.
+  items: []
+- background: null
+  kicker: ''
+  title: הדרך שבה אישה מתייחסת לעצמה היא בדיוק הדרך שבה היא תתייחס לחיים שלכם ביחד.
+  accent: ''
+  body: ''
   layout: bottom
-- title: האם יש לה איזושהי שגרה, הליכה, יוגה, בריכה, משהו, או שהחיים שלה זה עבודה, משבר, ועוד משבר?
+  items: []
+- background: null
+  kicker: ''
+  title: האם יש לה איזושהי שגרה, הליכה, יוגה, בריכה, משהו, או שהחיים שלה זה עבודה, משבר, ועוד משבר?
+  accent: ''
+  body: ''
   layout: bottom
-- title: '"אני מכוערת", "אני שמנה", "אני אף פעם לא מצליחה בכלום", שוב ושוב, זה לא צניעות.'
+  items: []
+- background: null
+  kicker: ''
+  title: '"אני מכוערת", "אני שמנה", "אני אף פעם לא מצליחה בכלום", שוב ושוב, זה לא צניעות.'
+  accent: ''
+  body: ''
   layout: bottom
-- title: זו אישה שתבקש ממך למלא בור שאין לו תחתית.
+  items: []
+- background: null
+  kicker: ''
+  title: זו אישה שתבקש ממך למלא בור שאין לו תחתית.
+  accent: ''
+  body: ''
   layout: bottom
-- title: אישה שמטפלת בעצמה, שיש לה שקט פנימי, היא יכולה לעמוד לידך.
+  items: []
+- background: null
+  kicker: ''
+  title: אישה שמטפלת בעצמה, שיש לה שקט פנימי, היא יכולה לעמוד לידך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 11.md
   section: 'נורה 6: איך היא מתייחסת לעצמה'
+format: bold
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

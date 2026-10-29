@@ -2,13 +2,13 @@ id: 2026-10-31-reel-empty-hands
 publish_at: 2026-10-31 13:00
 approved: false
 mode: reel
-pillar: status
 caption: |-
   ביום שהיא תהפוך למרכז החיים שלך
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - ביום שהיא תהפוך למרכז החיים שלך
@@ -17,7 +17,24 @@ reel:
   music: the_mountain-hip-hop-soul-317779.mp3
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
   video: man45-silverfox-suit-phone.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: הפוקוס הוא המגנט
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

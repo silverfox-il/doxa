@@ -2,8 +2,6 @@ id: 2026-11-02-the-invitation
 publish_at: 2026-11-02 20:00
 approved: false
 mode: render
-format: photo
-pillar: dating
 caption: |-
   רוב הגברים בגילך נופלים פה באחת משתי הדרכים.
 
@@ -12,26 +10,68 @@ caption: |-
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: רוב הגברים בגילך נופלים פה באחת משתי הדרכים.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: 'הראשונה היא ההזמנה העמומה: "נשמח להיפגש מתישהו", "אולי נשתה קפה יום אחד", "מה דעתך שנכיר פנים אל פנים?".'
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: זה נשמע מנומס, אבל זה מעביר אליה את כל העבודה.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: 'השנייה היא ההזמנה המופרזת: יין יקר, זר פרחים.'
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: זה מראה שאתה מנסה לקנות אותה, ומלחיץ אותה, כי עכשיו היא צריכה להרגיש מחויבת.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: ההזמנה הנכונה היא ספציפית, קלילה וקצרה. יום, שעה, מקום, ובלי מקום לפרשנויות.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-02-the-invitation.jpg
+  kicker: ''
   title: 'אתה נותן לה תוכנית ברורה, מראה שחשבת על זה, ומשאיר לה בדיוק החלטה אחת: כן או לא.'
+  accent: ''
+  body: ''
   layout: center
+  items: []
+reel: null
 source:
   file: 02.md
   section: ההזמנה
+format: photo
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

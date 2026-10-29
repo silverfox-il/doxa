@@ -2,13 +2,13 @@ id: 2026-10-31-reel-cottage-cheese
 publish_at: 2026-10-31 10:00
 approved: false
 mode: reel
-pillar: body
 caption: |-
   אל תסתובב לבן כמו גבינה צפתית
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
   #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+slides: []
 reel:
   lines:
   - אל תסתובב לבן כמו גבינה צפתית
@@ -17,7 +17,24 @@ reel:
   music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
   video: man45-park-walk.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: עור ושמש
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

@@ -2,13 +2,13 @@ id: 2026-10-30-tease-just-happen
 publish_at: 2026-10-30 18:00
 approved: false
 mode: reel
-pillar: dating
 caption: |-
   יש רעיון שסרטים רומנטיים דחפו לראש של גברים,
 
   תגיב "בפנים" אם אתה מתחיל היום.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - יש רעיון שסרטים רומנטיים דחפו לראש של גברים,
@@ -17,13 +17,29 @@ reel:
   - שאם זה נועד, זה יקרה.
   - שאם יש כימיה, הערב יתגלגל מעצמו למקום הנכון, והכוכבים יסתדרו.
   - זה בולשיט מוחלט.
-  stories:
-  - גבר מוביל. גבר עושה דברים בכוונה. הוא לא מחכה שהרוח תביא אותו למקום טוב, הוא בונה את המקום.
-  - אולי יש לך חבר אחד שנראה כאילו הכל קורה לו בלי מאמץ. תסתכל טוב. המתכנן הטוב נראה מבחוץ כמו מי שזורם.
   music: gr0za-rnb-rnb-type-beat-561707.mp3
   per_line: 1.8
   hold: 4.0
+  stories:
+  - גבר מוביל. גבר עושה דברים בכוונה. הוא לא מחכה שהרוח תביא אותו למקום טוב, הוא בונה את המקום.
+  - אולי יש לך חבר אחד שנראה כאילו הכל קורה לו בלי מאמץ. תסתכל טוב. המתכנן הטוב נראה מבחוץ כמו מי שזורם.
+  style: null
   video: man40-suit-office.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: גבר מתכנן
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

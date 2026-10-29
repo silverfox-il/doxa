@@ -2,13 +2,13 @@ id: 2026-11-02-reel-say-it-aloud
 publish_at: 2026-11-02 10:00
 approved: false
 mode: reel
-pillar: mind
 caption: |-
   משפט אחד לעצמך, לפני שאתה יוצא מהבית:
 
   מסכים או לא? תכתוב בתגובות.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - 'משפט אחד לעצמך, לפני שאתה יוצא מהבית:'
@@ -17,7 +17,24 @@ reel:
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
   video: city-crossing.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: הראש, לפני שיוצאים
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
