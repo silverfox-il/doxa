@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-30-reel-your-smile` at 2026-10-30 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 3/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -35,7 +35,7 @@
 | 2026-10-30 | `2026-10-30-tease-just-happen` | ✅ | rendered | — | — |
 | 2026-10-30 | `2026-10-30-reel-toothbrush` | ✅ | rendered | — | — |
 | 2026-10-30 | `2026-10-30-reel-your-smile` | ✅ | rendered | — | — |
-| 2026-10-28 | `2026-10-28-ex-back` | ✅ | publishing | — | — |
+| 2026-10-28 | `2026-10-28-ex-back` | ✅ | published | [link](https://www.instagram.com/p/DfEhgrOnB-j/) | — |
 | 2026-10-28 | `2026-10-28-reel-not-you` | ✅ | published | [link](https://www.instagram.com/reel/DfC9c2WCQHO/) | — |
 | 2026-10-28 | `2026-10-28-reel-took-her-back` | ✅ | published | [link](https://www.instagram.com/reel/DfCi7dgl0lA/) | — |
 | 2026-10-28 | `2026-10-28-reel-tired-tonight` | ✅ | published | [link](https://www.instagram.com/reel/DfCQzcJiAKw/) | — |
