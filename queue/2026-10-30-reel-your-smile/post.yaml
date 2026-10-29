@@ -1,0 +1,23 @@
+id: 2026-10-30-reel-your-smile
+publish_at: 2026-10-30 10:00
+approved: false
+mode: reel
+pillar: body
+caption: |-
+  חיוך זה הדבר הראשון שהיא רואה בדייט
+
+  תייג חבר שצריך לשמוע את זה.
+  .
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+reel:
+  lines:
+  - חיוך זה הדבר הראשון שהיא רואה בדייט
+  - אחרי שלושים שנה של קפה, סיגריות ויין אדום, יש מצב טוב שהשיניים שלך נראות כמו ביוב.
+  - ואם אתה מתבייש בו אתה פשוט מפסיק לחייך.
+  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  per_line: 3.0
+  hold: 5.0
+  video: man45-mate-cafe.mp4
+source:
+  file: 02.md
+  section: שיניים

@@ -1,0 +1,28 @@
+id: 2026-11-01-glass-or-bottle
+publish_at: 2026-11-01 20:00
+approved: false
+mode: render
+format: bold
+pillar: second-round
+caption: |-
+  האם היא שותה כוס יין בערב, או בקבוק?
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides:
+- title: האם היא שותה כוס יין בערב, או בקבוק?
+  layout: bottom
+- title: הדרך שבה אישה מתייחסת לעצמה היא בדיוק הדרך שבה היא תתייחס לחיים שלכם ביחד.
+  layout: bottom
+- title: האם יש לה איזושהי שגרה, הליכה, יוגה, בריכה, משהו, או שהחיים שלה זה עבודה, משבר, ועוד משבר?
+  layout: bottom
+- title: '"אני מכוערת", "אני שמנה", "אני אף פעם לא מצליחה בכלום", שוב ושוב, זה לא צניעות.'
+  layout: bottom
+- title: זו אישה שתבקש ממך למלא בור שאין לו תחתית.
+  layout: bottom
+- title: אישה שמטפלת בעצמה, שיש לה שקט פנימי, היא יכולה לעמוד לידך.
+  layout: bottom
+source:
+  file: 11.md
+  section: 'נורה 6: איך היא מתייחסת לעצמה'

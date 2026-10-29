@@ -1,0 +1,34 @@
+id: 2026-10-30-azrieli-tower
+publish_at: 2026-10-30 20:00
+approved: false
+mode: render
+format: photo
+pillar: mind
+caption: |-
+  עם ראש מבולגן לא רק שלא תצליח, אתה גם תסבול כל הדרך.
+
+  מסכים או לא? תכתוב בתגובות.
+  .
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides:
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: עם ראש מבולגן לא רק שלא תצליח, אתה גם תסבול כל הדרך.
+  layout: center
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: בפנים יושב גבר מושך, חד וקליל, ומה שחוסם אותו זו ערימה של חרא ולחץ שהצטברה אצלך במערכת במשך שנים.
+  layout: center
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: ואחרי גירושים? הערימה הזו בגובה של מגדל עזריאלי.
+  layout: center
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: עורכי דין, מזונות, החלוקה של הדירה, ילדים שאתה פוגש לפי לוח זמנים וחברים משותפים שפתאום לא עונים לטלפון
+  layout: center
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: וגבר שיוצא לדייט עם כל זה על הגב לא נמצא בזרימה, הוא נמצא במלחמת הישרדות.
+  layout: center
+- background: assets/backgrounds/2026-10-30-azrieli-tower.jpg
+  title: והיא קולטת את זה בתוך דקה, כי היא מרגישה מה שאתה מרגיש, וזה עובר אליה כמו חשמל דרך השולחן.
+  layout: center
+source:
+  file: 02.md
+  section: 'ראש נקי: היסוד של הפריים'

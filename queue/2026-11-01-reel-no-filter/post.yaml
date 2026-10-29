@@ -1,0 +1,23 @@
+id: 2026-11-01-reel-no-filter
+publish_at: 2026-11-01 10:00
+approved: false
+mode: reel
+pillar: status
+caption: |-
+  אם אתה מוחק כל פגם, אתה נראה כמו פרסומת.
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+reel:
+  lines:
+  - אם אתה מוחק כל פגם, אתה נראה כמו פרסומת.
+  - קמטים של צחוק, שיער כסוף, כרס קטנה בתמונה מהחוף מלפני שנתיים לפני שהתחלת להתאמן.
+  - אם הפגמים שם, והם מסופרים בחיוך, אתה נראה כמו גבר שלם עם עצמו.
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 3.0
+  hold: 5.0
+  video: man45-silver-fox.mp4
+source:
+  file: 02.md
+  section: אמיתי זה הסקסי החדש

@@ -1,0 +1,23 @@
+id: 2026-10-31-reel-cottage-cheese
+publish_at: 2026-10-31 10:00
+approved: false
+mode: reel
+pillar: body
+caption: |-
+  אל תסתובב לבן כמו גבינה צפתית
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+reel:
+  lines:
+  - אל תסתובב לבן כמו גבינה צפתית
+  - כמו מישהו שלא יצא מהבית מאז הגירושים ויושב כל היום מול מסך מתחת לניאון.
+  - שיזוף זה יפה אבל עור של ארנק ישן זה לא.
+  music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
+  per_line: 3.0
+  hold: 5.0
+  video: man45-park-walk.mp4
+source:
+  file: 02.md
+  section: עור ושמש
