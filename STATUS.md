@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-31-tease-two-units` at 2026-10-31 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-10-31 | `2026-10-31-reel-empty-hands` | ✅ | rendered | — | — |
 | 2026-10-31 | `2026-10-31-reel-cottage-cheese` | ✅ | rendered | — | — |
 | 2026-10-30 | `2026-10-30-azrieli-tower` | ✅ | published | [link](https://www.instagram.com/p/DfIZ6H4mAiP/) | — |
-| 2026-10-30 | `2026-10-30-tease-just-happen` | ✅ | publishing | — | — |
+| 2026-10-30 | `2026-10-30-tease-just-happen` | ✅ | published | [link](https://www.instagram.com/reel/DfKBemnCh4F/) | — |
 | 2026-10-30 | `2026-10-30-reel-toothbrush` | ✅ | published | [link](https://www.instagram.com/reel/DfH5CGZAIjo/) | — |
 | 2026-10-30 | `2026-10-30-reel-your-smile` | ✅ | published | [link](https://www.instagram.com/reel/DfHKea8l3Jt/) | — |
 | 2026-10-28 | `2026-10-28-ex-back` | ✅ | published | [link](https://www.instagram.com/p/DfEhgrOnB-j/) | — |
