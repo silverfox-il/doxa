@@ -1,6 +1,6 @@
 id: 2026-11-01-reel-she-cools
 publish_at: 2026-11-01 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בהתחלה היא שלחה לך "בוקר טוב מאמי" עם שלושה לבבות, וסיפרה לך כל שטות מהיום שלה.
@@ -28,9 +28,9 @@ reel:
 source: null
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ece735271f21d706bbdddb242e78a104426fdb055187f1ff99dbd68425715419
+approved_by: auto
+approved_at: '2026-10-31T20:23:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
