@@ -46,9 +46,22 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
-          doxa stats | tee -a "$GITHUB_STEP_SUMMARY"
+          doxa stats | tee -a "$GITHUB_STEP_SUMMARY" | tee stats.log
           echo "--- best reels (boost candidates) ---"
           doxa best-reels --top 25 | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Follower milestone
+        # Owner's next goal is 200 followers; at 200 the book may get soft caption
+        # mentions (config/rules.yaml still blocks the word until someone lifts it).
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          followers="$(sed -n 's/^followers: \([0-9]*\).*/\1/p' stats.log)"
+          title="🎯 200 followers reached"
+          if [ "${followers:-0}" -ge 200 ] && [ -z "$(gh issue list --state all --search "in:title \"$title\"" --json number -q '.[0].number')" ]; then
+            gh issue create --title "$title" --body "@the_silver_fox_men has ${followers} followers. Lift the book block in config/rules.yaml (soft caption mentions only, no sale link)."
+          fi
 
       - name: Alert the owner
         if: failure()
