@@ -20,3 +20,13 @@ def test_hebrew_first_lines_and_masks_inside_are_untouched():
 def test_recovery_matches_the_sent_caption():
     text = "Kוסית לא תציל אותך.\n#גרושים"
     assert normalize_caption(rtl_caption(text)) == normalize_caption(text)
+
+
+def test_caption_keeps_only_five_hashtags():
+    from doxa.publish import cap_hashtags
+
+    text = "שורה\n.\n#a #b #c #d #e #f #g"
+    assert rtl_caption(text).splitlines()[-1] == "#a #b #c #d #e"
+    assert cap_hashtags("אין תגיות פה") == "אין תגיות פה"
+    # Instagram's copy (already capped) still matches the stored caption.
+    assert normalize_caption(rtl_caption(text)) == normalize_caption(text)

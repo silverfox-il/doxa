@@ -145,15 +145,36 @@ _HEB = re.compile("[\u05d0-\u05ea]")
 _LATIN = re.compile("[A-Za-z]")
 
 
+# Instagram allows at most 5 hashtags per post since 2025-12-18.
+MAX_HASHTAGS = 5
+
+
+def cap_hashtags(text: str, limit: int = MAX_HASHTAGS) -> str:
+    """Keep the first ``limit`` hashtags of the hashtag-only lines, drop the rest."""
+    out = []
+    kept = 0
+    for line in text.split("\n"):
+        toks = line.split()
+        if toks and all(t.startswith("#") for t in toks):
+            toks = toks[: max(limit - kept, 0)]
+            kept += len(toks)
+            if not toks:
+                continue
+            line = " ".join(toks)
+        out.append(line)
+    return "\n".join(out)
+
+
 def rtl_caption(text: str) -> str:
     """The caption as sent to Instagram: every Hebrew line reads right to left.
 
     Instagram picks each line's direction from its first strong letter, so a line
     that opens with a masked word ("Zונות ...") would flip to left-to-right and
     look reversed. An invisible RLM at the start of such a line keeps it RTL.
+    Hashtags past the platform cap are dropped.
     """
     out = []
-    for line in text.split("\n"):
+    for line in cap_hashtags(text).split("\n"):
         first = next((ch for ch in line if _HEB.match(ch) or _LATIN.match(ch)), "")
         if first and _LATIN.match(first) and _HEB.search(line):
             line = RLM + line
@@ -162,7 +183,7 @@ def rtl_caption(text: str) -> str:
 
 
 def normalize_caption(text: str) -> str:
-    return text.replace("\r\n", "\n").replace(RLM, "").strip()
+    return cap_hashtags(text.replace("\r\n", "\n").replace(RLM, "")).strip()
 
 
 @dataclass
