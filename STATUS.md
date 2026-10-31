@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-01-reel-she-cools` at 2026-11-01 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -22,12 +22,12 @@
 | 2026-11-02 | `2026-11-02-the-invitation` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
-| 2026-11-02 | `2026-11-02-reel-eight-dates` | — | queued | — | — |
+| 2026-11-02 | `2026-11-02-reel-eight-dates` | — | rendered | — | — |
 | 2026-11-01 | `2026-11-01-glass-or-bottle` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
-| 2026-11-01 | `2026-11-01-reel-she-cools` | — | queued | — | — |
-| 2026-10-31 | `2026-10-31-peacock-feather` | ✅ | publishing | — | — |
+| 2026-11-01 | `2026-11-01-reel-she-cools` | ✅ | rendered | — | — |
+| 2026-10-31 | `2026-10-31-peacock-feather` | ✅ | published | [link](https://www.instagram.com/p/DfKytrQIKhy/) | — |
 | 2026-10-31 | `2026-10-31-tease-two-units` | ✅ | rendered | — | — |
 | 2026-10-31 | `2026-10-31-reel-empty-hands` | ✅ | rendered | — | — |
 | 2026-10-31 | `2026-10-31-reel-cottage-cheese` | ✅ | published | [link](https://www.instagram.com/reel/DfKkgYBFBIk/) | — |
