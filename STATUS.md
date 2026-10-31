@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-31-peacock-feather` at 2026-10-31 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -30,7 +30,7 @@
 | 2026-10-31 | `2026-10-31-peacock-feather` | ✅ | rendered | — | — |
 | 2026-10-31 | `2026-10-31-tease-two-units` | ✅ | rendered | — | — |
 | 2026-10-31 | `2026-10-31-reel-empty-hands` | ✅ | rendered | — | — |
-| 2026-10-31 | `2026-10-31-reel-cottage-cheese` | ✅ | publishing | — | — |
+| 2026-10-31 | `2026-10-31-reel-cottage-cheese` | ✅ | published | [link](https://www.instagram.com/reel/DfKkgYBFBIk/) | — |
 | 2026-10-30 | `2026-10-30-azrieli-tower` | ✅ | published | [link](https://www.instagram.com/p/DfIZ6H4mAiP/) | — |
 | 2026-10-30 | `2026-10-30-tease-just-happen` | ✅ | published | [link](https://www.instagram.com/reel/DfKBemnCh4F/) | — |
 | 2026-10-30 | `2026-10-30-reel-toothbrush` | ✅ | published | [link](https://www.instagram.com/reel/DfH5CGZAIjo/) | — |
