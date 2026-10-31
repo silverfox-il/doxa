@@ -1,5 +1,6 @@
 id: 2026-11-02-reel-eight-dates
 publish_at: 2026-11-02 10:00
+approved: false
 mode: reel
 caption: |-
   שמונה דייטים. מסעדות, יין, שיחות עד אחת בלילה. היא בכתה לך על האקס, על אמא, על המנהל המניאק.
@@ -7,6 +8,7 @@ caption: |-
   איזה משפט פה תפס אותך? תכתוב בתגובות.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות
+slides: []
 reel:
   lines:
   - שמונה דייטים. מסעדות, יין, שיחות עד אחת בלילה. היא בכתה לך על האקס, על אמא, על המנהל המניאק.
@@ -18,7 +20,22 @@ reel:
   music: kulakovka-dark-trap-304356.mp3
   per_line: 1.5
   hold: 7.5
+  stories: null
+  style: null
   video: man45-gray-wine.mp4
+  prebuilt: null
+  share_story: null
 source: null
+format: null
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

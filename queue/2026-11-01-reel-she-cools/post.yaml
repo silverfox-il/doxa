@@ -1,5 +1,6 @@
 id: 2026-11-01-reel-she-cools
 publish_at: 2026-11-01 10:00
+approved: false
 mode: reel
 caption: |-
   בהתחלה היא שלחה לך "בוקר טוב מאמי" עם שלושה לבבות, וסיפרה לך כל שטות מהיום שלה.
@@ -7,6 +8,7 @@ caption: |-
   תייג חבר שצריך לשמוע את זה.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות
+slides: []
 reel:
   lines:
   - בהתחלה היא שלחה לך "בוקר טוב מאמי" עם שלושה לבבות, וסיפרה לך כל שטות מהיום שלה.
@@ -18,7 +20,22 @@ reel:
   music: vaitsez-dark-dark-beat-620108.mp3
   per_line: 1.5
   hold: 7.5
+  stories: null
+  style: null
   video: man40-suit-whiskey.mp4
+  prebuilt: null
+  share_story: null
 source: null
+format: null
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
