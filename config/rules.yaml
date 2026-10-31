@@ -4,7 +4,8 @@
 
 # block: the post can never publish while one of these appears.
 block_words:
-  # No hint of a book, an edition, or a sale before 500 followers.
+  # No hint of a book, an edition, or a sale before 200 followers (owner, 2026-10-31;
+  # was 500). From 200: soft caption mentions only ("מתוך הספר שלי"), never a sale link.
   # "book(s)" with the prefixes ה ב ו ש; "מספר"/"לספר" (number, to tell) stay legal.
   - "re:(?<![א-ת])[והבש]{0,3}ספר(?:ים)?(?![א-ת])"
   - מהדורה
