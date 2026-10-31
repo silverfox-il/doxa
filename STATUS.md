@@ -22,7 +22,7 @@
 | 2026-11-02 | `2026-11-02-the-invitation` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
-| 2026-11-02 | `2026-11-02-reel-eight-dates` | — | rendered | — | — |
+| 2026-11-02 | `2026-11-02-reel-eight-dates` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-11-01-glass-or-bottle` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |

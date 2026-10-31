@@ -1,6 +1,6 @@
 id: 2026-11-02-reel-eight-dates
 publish_at: 2026-11-02 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   שמונה דייטים. מסעדות, יין, שיחות עד אחת בלילה. היא בכתה לך על האקס, על אמא, על המנהל המניאק.
@@ -28,9 +28,9 @@ reel:
 source: null
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:55c457b6a68a22268b0359ef9cd17a1afd58b7d97c8f8f4e5efd7aad6fc47cdf
+approved_by: owner
+approved_at: '2026-10-31T20:28:01+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
