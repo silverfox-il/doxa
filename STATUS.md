@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-02-reel-eight-dates` at 2026-11-02 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -26,7 +26,7 @@
 | 2026-11-01 | `2026-11-01-glass-or-bottle` | ✅ | published | [link](https://www.instagram.com/p/DfNXiY-mGzG/) | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
-| 2026-11-01 | `2026-11-01-reel-she-cools` | ✅ | publishing | — | — |
+| 2026-11-01 | `2026-11-01-reel-she-cools` | ✅ | published | [link](https://www.instagram.com/reel/DfNowitAQLI/) | — |
 | 2026-10-31 | `2026-10-31-peacock-feather` | ✅ | published | [link](https://www.instagram.com/p/DfKytrQIKhy/) | — |
 | 2026-10-31 | `2026-10-31-tease-two-units` | ✅ | published | [link](https://www.instagram.com/reel/DfMnY1UkbFN/) | — |
 | 2026-10-31 | `2026-10-31-reel-empty-hands` | ✅ | published | [link](https://www.instagram.com/reel/DfLD4m4ilEC/) | — |
