@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-02-reel-eight-dates` at 2026-11-02 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 9/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -23,7 +23,7 @@
 | 2026-11-02 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-11-02-reel-eight-dates` | ✅ | rendered | — | — |
-| 2026-11-01 | `2026-11-01-glass-or-bottle` | ✅ | publishing | — | — |
+| 2026-11-01 | `2026-11-01-glass-or-bottle` | ✅ | published | [link](https://www.instagram.com/p/DfNXiY-mGzG/) | — |
 | 2026-11-01 | `2026-10-18-tease-hotel-lobby` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-10-18-reel-her-mirror` | ✅ | rendered | — | — |
 | 2026-11-01 | `2026-11-01-reel-she-cools` | ✅ | rendered | — | — |
