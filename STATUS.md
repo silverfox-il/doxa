@@ -16,9 +16,11 @@
 | 2026-11-04 | `2026-10-21-reel-ready-to-leave` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-three-musts` | ✅ | rendered | — | — |
+| 2026-11-03 | `2026-11-03-reel-leash` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
+| 2026-11-03 | `2026-11-03-alona-case` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-11-02-the-invitation` | ✅ | published | [link](https://www.instagram.com/p/DfP6-RQFAuM/) | — |
 | 2026-11-02 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
