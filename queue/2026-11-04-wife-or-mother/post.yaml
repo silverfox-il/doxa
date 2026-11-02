@@ -1,5 +1,6 @@
 id: 2026-11-04-wife-or-mother
 publish_at: 2026-11-04 10:00
+approved: false
 mode: render
 caption: |-
   מבחן עצמי: אתה מחפש אישה, או אמא?
@@ -64,4 +65,14 @@ source:
   section: 4 סימנים שאמא שלך עדיין מנהלת לך את הזוגיות
 format: bold
 pillar: status
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
