@@ -1,6 +1,6 @@
 id: 2026-11-03-reel-leash
 publish_at: 2026-11-03 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא רוצה את הסיסמה לטלפון שלך?
@@ -32,9 +32,9 @@ source:
   section: 'נורה 9: הקנאה שהופכת לחקירה'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e49424f40955a823a05cc1f42cb97db7aec2a24bbc96eac59a11d8bee6326bf2
+approved_by: auto
+approved_at: '2026-11-02T21:20:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
