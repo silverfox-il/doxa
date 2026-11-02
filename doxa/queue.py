@@ -71,7 +71,7 @@ REEL_MAX_LINES = 6
 # A teaser series reel may run longer lists (owner's example has 7 lines).
 TEASE_MAX_LINES = 8
 # Teaser series: the reel plus up to 3 follow-up story images.
-MAX_SERIES_STORIES = 3
+MAX_SERIES_STORIES = 8  # owner, 2026-11-02: a detailed series before the reel
 MAX_STORY_CHARS = 160
 
 

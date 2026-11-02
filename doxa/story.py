@@ -3,10 +3,11 @@
 The Instagram API cannot add a link sticker or a "share post" card to a story,
 so the owner shares regular posts to his story himself, from the app (that card
 links to the post). The system publishes stories automatically only for a
-teaser series: a reel with ``reel.stories``. Story 1 is the reel video itself
-(the reel is also a feed post, which brings the traffic), then
-``series/1.jpg..N.jpg``, one image per follow-up text; the last one carries a
-banner that points to the profile (tap the name at the top).
+teaser series: a reel with ``reel.stories``. First ``series/1.jpg..N.jpg``,
+one image per text, which build the topic up; the last image carries a banner
+that points to the profile (tap the name at the top). Then the reel video
+itself closes the series (owner, 2026-11-02: the reel nails it). The reel is
+also a feed post, which brings the traffic.
 
 ``post_story_html`` / ``reel_story_html`` are kept for previews only.
 
@@ -89,14 +90,14 @@ def reel_story_html(hook: str) -> str:
 
 
 def series_html(text: str, index: int, total: int) -> str:
-    """Follow-up story ``index`` (2..total; story 1 is the reel video)."""
-    last = index == total
+    """Series story ``index`` (1..total-1; story ``total`` is the reel video)."""
+    last = index == total - 1
     body = (
         f"<div class='counter'>{index}/{total}</div>"
         f"<div class='text series'>{html.escape(text)}</div>"
     )
     if last:
-        body += _banner(BANNER_MORE)
+        body += _banner(BANNER_REEL)
     return _doc(body, "accent" if index % 2 == 0 else "")
 
 
@@ -105,7 +106,7 @@ def story_docs(post: Post, post_dir: Path) -> list[tuple[Path, str]]:
     if post.mode == Mode.reel and post.reel is not None and post.reel.stories:
         total = len(post.reel.stories) + 1
         return [
-            (post_dir / SERIES_DIR / f"{i}.jpg", series_html(text, i + 1, total))
+            (post_dir / SERIES_DIR / f"{i}.jpg", series_html(text, i, total))
             for i, text in enumerate(post.reel.stories, start=1)
         ]
     return []
@@ -140,7 +141,7 @@ def render_stories(post: Post, post_dir: Path) -> list[Path]:
 def story_files(post: Post, post_dir: Path) -> list[str]:
     """Names (inside ``queue/<id>/``) to share as stories, in order.
 
-    Only a teaser series has any: the reel video, then its follow-up images.
+    Only a teaser series has any: its series images, then the reel video.
     Regular posts get none; the owner shares them himself.
     """
     if post.mode == Mode.reel and post.reel is not None and post.reel.stories:
@@ -149,7 +150,7 @@ def story_files(post: Post, post_dir: Path) -> list[str]:
             for i in range(1, len(post.reel.stories) + 1)
             if (post_dir / SERIES_DIR / f"{i}.jpg").is_file()
         ]
-        return ["reel.mp4", *series]
+        return [*series, "reel.mp4"]
     if post.mode == Mode.reel and post.reel is not None and post.reel.share_story:
         return ["reel.mp4"]
     return []

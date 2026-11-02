@@ -80,13 +80,13 @@ def _series_post(repo, monkeypatch, stories=("שני", "שלישי")):
     return path
 
 
-def test_series_files_start_with_the_reel(repo, monkeypatch):
+def test_series_files_end_with_the_reel(repo, monkeypatch):
     path = _series_post(repo, monkeypatch)
     post = load_post(path)
-    assert story.story_files(post, path.parent) == ["reel.mp4", "series/1.jpg", "series/2.jpg"]
+    assert story.story_files(post, path.parent) == ["series/1.jpg", "series/2.jpg", "reel.mp4"]
 
 
-def test_series_publishes_reel_then_each_story_in_order(repo, gh_calls, monkeypatch):  # noqa: F811
+def test_series_publishes_each_story_then_the_reel(repo, gh_calls, monkeypatch):  # noqa: F811
     path = _series_post(repo, monkeypatch)
     urls = []
 
@@ -103,7 +103,7 @@ def test_series_publishes_reel_then_each_story_in_order(repo, gh_calls, monkeypa
     client.create_story_container = create
     client.create_reel_container = lambda url, caption: "reel-parent"
     assert p.run(dry_run=False) == 0
-    assert urls == ["reel.mp4", "series/1.jpg", "series/2.jpg"]
+    assert urls == ["series/1.jpg", "series/2.jpg", "reel.mp4"]
     post = load_post(path)
     assert post.story_id == "media-1,media-1,media-1" and post.story_error is None
 
@@ -132,16 +132,16 @@ def test_story_count_and_length_are_limited():
     from doxa.queue import Reel
 
     base = {"lines": ["א", "ב"], "music": "a.mp3", "per_line": 4, "hold": 7}
-    with pytest.raises(ValueError, match="1-3 follow-up"):
-        Reel.model_validate({**base, "stories": ["א", "ב", "ג", "ד"]})
+    with pytest.raises(ValueError, match="1-8 follow-up"):
+        Reel.model_validate({**base, "stories": ["א"] * 9})
     with pytest.raises(ValueError, match="characters"):
         Reel.model_validate({**base, "stories": ["א" * 161]})
 
 
 def test_story_html_has_banner_and_counter():
-    last = story.series_html("ההמשך", 3, 3)
-    assert story.BANNER_MORE in last and "3/3" in last
-    assert story.BANNER_MORE not in story.series_html("אמצע", 2, 3)
+    last = story.series_html("ההמשך", 2, 3)  # story 3 is the reel video
+    assert story.BANNER_REEL in last and "2/3" in last
+    assert story.BANNER_REEL not in story.series_html("אמצע", 1, 3)
     assert story.BANNER_REEL in story.reel_story_html("הוק")
     assert story.BANNER_POST in story.post_story_html(b"x")
 

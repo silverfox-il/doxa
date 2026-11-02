@@ -1,0 +1,67 @@
+id: 2026-11-03-alona-case
+publish_at: 2026-11-03 10:00
+mode: render
+caption: |-
+  לילה ראשון איתה. מה אתה שולח לה בבוקר?
+  דני של פעם, מול דני של היום.
+
+  שמור את הפוסט. תחזור אליו כשתצטרך.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות
+slides:
+- background: null
+  kicker: מקרה
+  title: לילה ראשון איתה. מה אתה שולח לה בבוקר?
+  accent: דני של פעם, מול דני של היום.
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: דני, גרוש, הכיר את אלונה בסדנת צילום.
+  accent: ''
+  body: שני דייטים של קפה ויין. בשלישי היא נשארה אצלו.
+  layout: bottom
+  items: []
+- background: null
+  kicker: דני של פעם
+  title: בבוקר הודעה ארוכה.
+  accent: ''
+  body: בצהריים עוד אחת. בערב טלפון, "רק לבדוק שהכל טוב". ככה מבריחים אישה תוך שבוע.
+  layout: bottom
+  items: []
+- background: null
+  kicker: דני של היום
+  title: הודעה אחת. קצרה. חמה.
+  accent: ''
+  body: ואז שבוע רגיל. עבודה, אימון, ערב עם הבן, כדורגל עם החבר'ה ביום חמישי.
+  layout: bottom
+  items: []
+- background: null
+  kicker: יום שני
+  title: היא כתבה לו.
+  accent: ''
+  body: '"נו, אתה נרשם לסדנה של השבוע הבא? ומה אתה עושה בשבת? יש לי רעיון."'
+  layout: bottom
+  items: []
+- background: null
+  kicker: יום רביעי
+  title: שקיעה מהמרפסת.
+  accent: ''
+  body: '"הייתי צריכה אותך פה עם המצלמה." ובשבת היא הגיעה עם עוגיות שאפתה לבן שלו.'
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: בנישואים אתה סחבת הכל.
+  accent: עם האישה הנכונה אתה לא סוחב. היא באה בעצמה.
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 11.md
+  section: דני, אלונה, והשבוע של השקט
+format: bold
+pillar: mind
+status: queued
