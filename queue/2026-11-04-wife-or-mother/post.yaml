@@ -1,0 +1,67 @@
+id: 2026-11-04-wife-or-mother
+publish_at: 2026-11-04 10:00
+mode: render
+caption: |-
+  מבחן עצמי: אתה מחפש אישה, או אמא?
+  4 שאלות. תענה בכנות, אף אחד לא רואה.
+
+  מסכים או לא? תכתוב בתגובות.
+  .
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות
+slides:
+- background: null
+  kicker: מבחן עצמי
+  title: 'מבחן עצמי: אתה מחפש אישה, או אמא?'
+  accent: 4 שאלות. תענה בכנות, אף אחד לא רואה.
+  body: ''
+  layout: bottom
+  items: []
+- background: null
+  kicker: שאלה 1
+  title: אתה נופל כל פעם על אישה שלוקחת פיקוד?
+  accent: ''
+  body: אומרת לך מה ללבוש, מה לאכול ומתי ללכת לישון. ולידה אתה מרגיש כמו ילד שחזר הביתה מאוחר.
+  layout: bottom
+  items: []
+- background: null
+  kicker: שאלה 2
+  title: אתה שותק כשהיא מזלזלת בך מול החבר'ה?
+  accent: ''
+  body: לא אומר "ככה אני לא מוכן שידברו אליי", כי אתה מפחד מהפרצוף הכועס. בדיוק כמו שפחדת מאמא כשהיית ילד.
+  layout: bottom
+  items: []
+- background: null
+  kicker: שאלה 3
+  title: כל האקסיות שלך הן אותה אישה, רק עם שם אחר?
+  accent: ''
+  body: מבזה אותך, מתפשרת עליך, מחליפה גברים בקצב של גרביים. ואתה בטוח שהפעם תציל אותה.
+  layout: bottom
+  items: []
+- background: null
+  kicker: שאלה 4
+  title: ערב לבד בבית מרגיש לך כמו עונש?
+  accent: ''
+  body: אתה חייב אישה לידך, חייב הודעה, חייב שמישהי תגיד לך שאתה בסדר. כמו ילד שמראה לאמא ציור.
+  layout: bottom
+  items: []
+- background: null
+  kicker: התוצאה
+  title: ענית "כן" אפילו על אחת?
+  accent: ''
+  body: אתה לא מחפש בת זוג. אתה מחפש אמא. ואין אש בבית הזה, כי אף אחד לא רוצה לZיין את אמא שלו.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: גבר בריא רוצה אישה, לא מפקדת בסיס.
+  accent: אישה רכה ושמחה, שסומכת על ההובלה שלך ונהנית ממנה.
+  body: ''
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 02.md
+  section: 4 סימנים שאמא שלך עדיין מנהלת לך את הזוגיות
+format: bold
+pillar: status
+status: queued
