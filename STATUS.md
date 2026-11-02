@@ -12,9 +12,11 @@
 | 2026-11-05 | `2026-10-22-reel-sauce-steak` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-the-beard` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-the-frame` | ✅ | rendered | — | — |
+| 2026-11-04 | `2026-11-04-reel-what-are-we` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-tease-worth-testing` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-reel-ready-to-leave` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |
+| 2026-11-04 | `2026-11-04-wife-or-mother` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-three-musts` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-11-03-reel-leash` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
