@@ -1,5 +1,6 @@
 id: 2026-11-05-reel-dont-be-him
 publish_at: 2026-11-05 20:00
+approved: false
 mode: reel
 caption: |-
   אני לא מבין איך גברים שמשחקים אותה גברים אמיתיים מכירים נשים ונותנים להן זוגיות מההתחלה,
@@ -34,4 +35,14 @@ source:
   section: הכדור שהיא זורקת עליך
 format: null
 pillar: status
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
