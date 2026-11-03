@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-21-starts-inside` at 2026-11-04 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -20,7 +20,7 @@
 | 2026-11-04 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-11-04-wife-or-mother` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-three-musts` | ✅ | rendered | — | — |
-| 2026-11-03 | `2026-11-03-reel-leash` | ✅ | publishing | — | — |
+| 2026-11-03 | `2026-11-03-reel-leash` | ✅ | published | [link](https://www.instagram.com/reel/DfSe8T5EleI/) | — |
 | 2026-11-03 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
