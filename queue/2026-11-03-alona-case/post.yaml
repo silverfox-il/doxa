@@ -68,7 +68,7 @@ pillar: mind
 approved_hash: sha256:c8afe2ce73a18d18d1b711d750bc3b4c1868fc97b4f0e4c0552ed65f79cb9881
 approved_by: owner
 approved_at: '2026-11-02T21:22:53+02:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
