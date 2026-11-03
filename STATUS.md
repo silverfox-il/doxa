@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-20-reel-for-free` at 2026-11-03 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -22,7 +22,7 @@
 | 2026-11-03 | `2026-10-20-tease-happy-default` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-reel-for-free` | ✅ | rendered | — | — |
 | 2026-11-03 | `2026-10-20-her-and-your-friends` | ✅ | rendered | — | — |
-| 2026-11-03 | `2026-11-03-alona-case` | ✅ | publishing | — | — |
+| 2026-11-03 | `2026-11-03-alona-case` | ✅ | published | [link](https://www.instagram.com/p/DfRcdWqlWVV/) | — |
 | 2026-11-02 | `2026-11-02-the-invitation` | ✅ | published | [link](https://www.instagram.com/p/DfP6-RQFAuM/) | — |
 | 2026-11-02 | `2026-10-19-tease-base-commander` | ✅ | rendered | — | — |
 | 2026-11-02 | `2026-10-19-reel-two-men` | ✅ | rendered | — | — |
