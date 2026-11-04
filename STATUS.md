@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-22-the-beard` at 2026-11-05 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -14,7 +14,7 @@
 | 2026-11-05 | `2026-10-22-the-beard` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-11-05-melting` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-the-frame` | ✅ | rendered | — | — |
-| 2026-11-04 | `2026-11-04-reel-what-are-we` | ✅ | publishing | — | — |
+| 2026-11-04 | `2026-11-04-reel-what-are-we` | ✅ | published | [link](https://www.instagram.com/reel/DfVGAmkie9R/) | — |
 | 2026-11-04 | `2026-10-21-tease-worth-testing` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-reel-ready-to-leave` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-10-21-starts-inside` | ✅ | rendered | — | — |

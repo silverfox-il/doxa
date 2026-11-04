@@ -36,10 +36,10 @@ pillar: second-round
 approved_hash: sha256:55bc418709c3d51b2fcf84a781f89db46096b5965e971c55b8711f8c4948baad
 approved_by: owner
 approved_at: '2026-11-02T21:45:44+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18650594203020621'
+permalink: https://www.instagram.com/reel/DfVGAmkie9R/
+published_at: 2026-11-04T18:25:02+0000
 error: null
 story_id: null
 story_error: null
