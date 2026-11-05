@@ -38,10 +38,10 @@ pillar: status
 approved_hash: sha256:d317958b298cacb66fc1aeced415d7469b70f08db51bdc40b7bf4d8754beb7d5
 approved_by: owner
 approved_at: '2026-11-03T18:24:24+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18031705007883433'
+permalink: https://www.instagram.com/reel/DfXquweliGV/
+published_at: 2026-11-05T18:24:15+0000
 error: null
 story_id: null
 story_error: null

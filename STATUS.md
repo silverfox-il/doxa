@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-06-reel-she-asks` at 2026-11-06 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 8/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -28,7 +28,7 @@
 | 2026-11-06 | `2026-11-06-tease-five-minutes` | ✅ | rendered | — | — |
 | 2026-11-06 | `2026-11-06-reel-she-asks` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-small-requests` | ✅ | rendered | — | — |
-| 2026-11-05 | `2026-11-05-reel-dont-be-him` | ✅ | publishing | — | — |
+| 2026-11-05 | `2026-11-05-reel-dont-be-him` | ✅ | published | [link](https://www.instagram.com/reel/DfXquweliGV/) | — |
 | 2026-11-05 | `2026-10-22-tease-twenty-minutes` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-reel-sauce-steak` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-the-beard` | ✅ | rendered | — | — |
