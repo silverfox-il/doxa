@@ -2,8 +2,6 @@ id: 2026-11-10-eight-months
 publish_at: 2026-11-10 20:00
 approved: false
 mode: render
-format: tweet
-pillar: second-round
 caption: |-
   קל מאוד לזייף עניין במשך כמה שבועות.
 
@@ -11,16 +9,55 @@ caption: |-
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
-- title: קל מאוד לזייף עניין במשך כמה שבועות.
+- background: null
+  kicker: ''
+  title: קל מאוד לזייף עניין במשך כמה שבועות.
+  accent: ''
+  body: ''
   layout: bottom
-- title: מה שאף אחד לא יכול לעשות זה לשחק תפקיד שמונה חודשים ברצף.
+  items: []
+- background: null
+  kicker: ''
+  title: מה שאף אחד לא יכול לעשות זה לשחק תפקיד שמונה חודשים ברצף.
+  accent: ''
+  body: ''
   layout: bottom
-- title: בשלב מסוים המסכה נופלת, וזה בדיוק מה שאתה מחכה לראות.
+  items: []
+- background: null
+  kicker: ''
+  title: בשלב מסוים המסכה נופלת, וזה בדיוק מה שאתה מחכה לראות.
+  accent: ''
+  body: ''
   layout: bottom
-- title: אתה לא לבד בסיפור הזה. יש לך ילדים, אולי כבר גדולים, אולי עוד בתיכון, ויש לך אקסית שאיתה אתה עוד מתאם הסעות, חגים וחשבונות.
+  items: []
+- background: null
+  kicker: ''
+  title: אתה לא לבד בסיפור הזה. יש לך ילדים, אולי כבר גדולים, אולי עוד בתיכון, ויש לך אקסית שאיתה אתה עוד מתאם הסעות, חגים וחשבונות.
+  accent: ''
+  body: ''
   layout: bottom
-- title: כל אישה שנכנסת לחיים שלך נכנסת גם לתוך המערכת הזו.
+  items: []
+- background: null
+  kicker: ''
+  title: כל אישה שנכנסת לחיים שלך נכנסת גם לתוך המערכת הזו.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 11.md
   section: חצי שנה בלי הבטחות
+format: tweet
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

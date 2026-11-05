@@ -2,8 +2,6 @@ id: 2026-11-07-stories-not-resume
 publish_at: 2026-11-07 20:00
 approved: false
 mode: render
-format: tweet
-pillar: status
 caption: |-
   הכלל הראשון הוא סיפורים ולא רזומה.
 
@@ -11,18 +9,62 @@ caption: |-
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides:
-- title: הכלל הראשון הוא סיפורים ולא רזומה.
+- background: null
+  kicker: ''
+  title: הכלל הראשון הוא סיפורים ולא רזומה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: כשהיא שואלת מה אתה עושה, היא לא רוצה לשמוע את התואר שלך, את שם החברה ואת מספר העובדים שמתחתיך (אם אתה מתחיל לספור לה עובדים, שיט, כבר הפסדת)
+  items: []
+- background: null
+  kicker: ''
+  title: כשהיא שואלת מה אתה עושה, היא לא רוצה לשמוע את התואר שלך, את שם החברה ואת מספר העובדים שמתחתיך (אם אתה מתחיל לספור לה עובדים, שיט, כבר הפסדת)
+  accent: ''
+  body: ''
   layout: bottom
-- title: '"אני האיש שמתקשרים אליו כשמשאית תקועה בנמל בשתיים בלילה. זה פחות זוהר ממה שזה נשמע, אבל אני טוב בזה ואני ישן מצוין כשזה נפתר".'
+  items: []
+- background: null
+  kicker: ''
+  title: '"אני האיש שמתקשרים אליו כשמשאית תקועה בנמל בשתיים בלילה. זה פחות זוהר ממה שזה נשמע, אבל אני טוב בזה ואני ישן מצוין כשזה נפתר".'
+  accent: ''
+  body: ''
   layout: bottom
-- title: '"התגרשנו לפני ארבע שנים, זה היה נכון לשנינו, והיום אנחנו מסתדרים יפה בשביל הילדים" היא תשובה מושלמת, גם אם בפנים זה עדיין קצת כואב'
+  items: []
+- background: null
+  kicker: ''
+  title: '"התגרשנו לפני ארבע שנים, זה היה נכון לשנינו, והיום אנחנו מסתדרים יפה בשביל הילדים" היא תשובה מושלמת, גם אם בפנים זה עדיין קצת כואב'
+  accent: ''
+  body: ''
   layout: bottom
-- title: כן, גברים משקרים גם על הגובה, ואז מגיעים לבית הקפה ומגלים שהיא הגיעה בנעליים שטוחות במיוחד בשבילם
+  items: []
+- background: null
+  kicker: ''
+  title: כן, גברים משקרים גם על הגובה, ואז מגיעים לבית הקפה ומגלים שהיא הגיעה בנעליים שטוחות במיוחד בשבילם
+  accent: ''
+  body: ''
   layout: bottom
-- title: אם שיקרת על דבר קטן, היא תניח שאתה משקר גם על הדברים הגדולים.
+  items: []
+- background: null
+  kicker: ''
+  title: אם שיקרת על דבר קטן, היא תניח שאתה משקר גם על הדברים הגדולים.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 02.md
   section: מה אתה מספר על עצמך
+format: tweet
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

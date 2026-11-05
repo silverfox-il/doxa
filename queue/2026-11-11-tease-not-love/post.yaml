@@ -2,13 +2,13 @@ id: 2026-11-11-tease-not-love
 publish_at: 2026-11-11 18:00
 approved: false
 mode: reel
-pillar: mind
 caption: |-
   יש משהו שקורה לגברים בגילך אחרי הלילה הראשון
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
+slides: []
 reel:
   lines:
   - יש משהו שקורה לגברים בגילך אחרי הלילה הראשון
@@ -16,13 +16,29 @@ reel:
   - אתה חושב עליה כל היום. אתה בטוח שזו היא.
   - אתה מתחיל לדמיין חופשות משותפות, ארוחות שישי, את הילדים שלכם נפגשים.
   - תעצור. זה לא אהבה, זה רעב.
+  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  per_line: 1.8
+  hold: 4.0
   stories:
   - זו הפעם הראשונה מזה זמן רב שמישהי נגעה בך ככה, והמוח שלך מציף אותך בכל מה שהוא לא קיבל שנים.
   - ואם היא נעלמה אחרי שבוע, תשמח שלא בנית עליה ארמון.
-  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  style: null
   video: beach-walk.mp4
-  per_line: 1.8
-  hold: 4.0
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: ואתה, בלב
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

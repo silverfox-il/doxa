@@ -2,13 +2,13 @@ id: 2026-11-07-tease-third-glass
 publish_at: 2026-11-07 18:00
 approved: false
 mode: reel
-pillar: dating
 caption: |-
   ערב, סלון, כוס יין, שנייה, שלישית.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - ערב, סלון, כוס יין, שנייה, שלישית.
@@ -17,13 +17,29 @@ reel:
   - '"רק רציתי שתדעי שאת עושה לי טוב".'
   - '"למה את לא עונה? את ישנה?".'
   - ובבוקר אתה מתעורר, פותח את הטלפון, ורוצה לקבור את עצמך
+  music: soulprodmusic-smoke-143172.mp3
+  per_line: 1.7
+  hold: 4.0
   stories:
   - אחרי הכוס השנייה, הטלפון הולך לשולחן בצד השני של החדר.
   - הוא לא הפסיכולוג שלך, והיא עוד פחות.
-  music: soulprodmusic-smoke-143172.mp3
+  style: null
   video: wine-sea.mp4
-  per_line: 1.7
-  hold: 4.0
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: הכוס השלישית
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

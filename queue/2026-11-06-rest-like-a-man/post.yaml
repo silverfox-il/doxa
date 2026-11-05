@@ -2,8 +2,6 @@ id: 2026-11-06-rest-like-a-man
 publish_at: 2026-11-06 20:00
 approved: false
 mode: render
-format: photo
-pillar: body
 caption: |-
   תנוח כמו גבר, לא כמו מי שממהר לאסוף ילדים
 
@@ -12,23 +10,61 @@ caption: |-
   #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
 slides:
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: תנוח כמו גבר, לא כמו מי שממהר לאסוף ילדים
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: אתה לא בא לשרוף קלוריות בין הסטים, אתה בא להרים משקל שמאתגר אותך
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: בסטים הכבדים של התרגילים הגדולים, סקוואט, דדליפט, לחיצת חזה, לחיצת כתפיים וחתירה, תן לעצמך בין שלוש לחמש דקות
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: לא גוללים את הפיד של האקסית בפייסבוק ולא עונים לקבוצת הווטסאפ של ההורים של כיתה ד'.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: כשאתה עובד קרוב לגבול היכולת שלך עם מעט תרגילים, המנוחה היא חלק מהעבודה, לא הפסקה ממנה.
+  accent: ''
+  body: ''
   layout: center
+  items: []
 - background: assets/backgrounds/2026-11-06-rest-like-a-man.jpg
+  kicker: ''
   title: ואם יום אחד תשמע איזה בחור צעיר עם אוזניות רוטן שאתה "תופס את המתקן כבר עשרים דקות", תחייך לעצמך.
+  accent: ''
+  body: ''
   layout: center
+  items: []
+reel: null
 source:
   file: 08.md
   section: תנוח כמו גבר, לא כמו מי שממהר לאסוף ילדים
+format: photo
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

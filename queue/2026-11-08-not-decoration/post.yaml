@@ -2,8 +2,6 @@ id: 2026-11-08-not-decoration
 publish_at: 2026-11-08 20:00
 approved: false
 mode: render
-format: bold
-pillar: body
 caption: |-
   הגוף שלך הוא לא קישוט
 
@@ -11,18 +9,62 @@ caption: |-
   .
   #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
 slides:
-- title: הגוף שלך הוא לא קישוט
+- background: null
+  kicker: ''
+  title: הגוף שלך הוא לא קישוט
+  accent: ''
+  body: ''
   layout: bottom
-- title: עם הגיל, הטסטוסטרון יורד. זה ביולוגיה, זה לא אשמתך.
+  items: []
+- background: null
+  kicker: ''
+  title: עם הגיל, הטסטוסטרון יורד. זה ביולוגיה, זה לא אשמתך.
+  accent: ''
+  body: ''
   layout: bottom
-- title: 'אבל יש לך השפעה על זה: אימוני כוח, שינה טובה, פחות אלכוהול, פחות סוכר, פחות לחץ'
+  items: []
+- background: null
+  kicker: ''
+  title: 'אבל יש לך השפעה על זה: אימוני כוח, שינה טובה, פחות אלכוהול, פחות סוכר, פחות לחץ'
+  accent: ''
+  body: ''
   layout: bottom
-- title: לא תוספים מאינטרנט שמבטיחים ניסים, לא "בוסטרים" מחבר בחדר כושר, רופא.
+  items: []
+- background: null
+  kicker: ''
+  title: לא תוספים מאינטרנט שמבטיחים ניסים, לא "בוסטרים" מחבר בחדר כושר, רופא.
+  accent: ''
+  body: ''
   layout: bottom
-- title: אם אתה נותן לעצמך להשמין, להיחלש, לשקוע, היא תראה את זה.
+  items: []
+- background: null
+  kicker: ''
+  title: אם אתה נותן לעצמך להשמין, להיחלש, לשקוע, היא תראה את זה.
+  accent: ''
+  body: ''
   layout: bottom
-- title: ההבדל הוא שאתה אחראי רק על הצד שלך.
+  items: []
+- background: null
+  kicker: ''
+  title: ההבדל הוא שאתה אחראי רק על הצד שלך.
+  accent: ''
+  body: ''
   layout: bottom
+  items: []
+reel: null
 source:
   file: 11.md
   section: הגוף שלך הוא לא קישוט
+format: bold
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

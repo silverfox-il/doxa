@@ -2,22 +2,39 @@ id: 2026-11-10-reel-no-shortcuts
 publish_at: 2026-11-10 13:00
 approved: false
 mode: reel
-pillar: body
 caption: |-
   אני לא רוצה שתבדוק בכלל את המקסימום האמיתי שלך.
 
   תייג חבר שצריך לשמוע את זה.
   .
   #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+slides: []
 reel:
   lines:
   - אני לא רוצה שתבדוק בכלל את המקסימום האמיתי שלך.
   - זה המספר שלך, הוא אמיתי, הוא בטוח, והוא מספיק.
   - מי שמחפש קיצורי דרך בגיל הזה מוצא בדרך כלל כתף תפוסה.
   music: the_mountain-hip-hop-soul-317779.mp3
-  video: gym-workout.mp4
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
+  video: gym-workout.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 08.md
   section: כמה זה "כבד" כשאתה בן 45 פלוס
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

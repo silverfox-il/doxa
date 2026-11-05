@@ -2,13 +2,13 @@ id: 2026-11-08-tease-boring-evening
 publish_at: 2026-11-08 18:00
 approved: false
 mode: reel
-pillar: second-round
 caption: |-
   מה היא עושה כשאין אקשן?
 
   מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - מה היא עושה כשאין אקשן?
@@ -16,13 +16,29 @@ reel:
   - או שכל עשר דקות היא נכנסת לחדר, מתלוננת שמשעמם לה, עושה פרצוף, יוצרת אווירה?
   - יש נשים שצריכות בידור קבוע.
   - זה נחמד בתור מאהבת לחודשיים, אבל אי אפשר לבנות ככה חיים.
+  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  per_line: 1.8
+  hold: 4.0
   stories:
   - אישה שטוב לה איתך גם בערב בבית, בפיג'מה, מול נטפליקס, בזמן שאתה מסיים עבודה, היא אישה עם פוטנציאל.
   - אתה צריך מישהי שתתמוך בדרך שלך, לא מישהי ששותה לך את כל הזמן והכוח.
-  music: music-for-videos-rnb-hip-hop-beat-150390.mp3
+  style: null
   video: city-crossing.mp4
-  per_line: 1.8
-  hold: 4.0
+  prebuilt: null
+  share_story: null
 source:
   file: 11.md
   section: ערב אחד משעמם
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

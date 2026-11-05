@@ -2,22 +2,39 @@ id: 2026-11-07-reel-after-she-got-it
 publish_at: 2026-11-07 13:00
 approved: false
 mode: reel
-pillar: second-round
 caption: |-
   כל עוד היא רצתה משהו, היא הייתה מתוקה, קשובה, זורמת.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
+slides: []
 reel:
   lines:
   - כל עוד היא רצתה משהו, היא הייתה מתוקה, קשובה, זורמת.
   - אחרי שהיא קיבלה אותו, משהו השתנה.
   - '"אחי, היא הייתה מלאך, ופתאום אחרי חודשיים היא התחילה לזלזל בי".'
   music: the_mountain-hip-hop-soul-317779.mp3
-  video: couple-beach-sunset.mp4
   per_line: 3.0
   hold: 5.0
+  stories: null
+  style: null
+  video: couple-beach-sunset.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 11.md
   section: 'אחרי הקידום: היא נשארה אותה אחת?'
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
