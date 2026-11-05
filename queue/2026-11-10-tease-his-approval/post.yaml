@@ -1,6 +1,6 @@
 id: 2026-11-10-tease-his-approval
 publish_at: 2026-11-10 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כולנו רוצים אישור, גם נשים חזקות, עצמאיות (ובעיקר הן, אם תשאל אותי).
@@ -31,9 +31,9 @@ source:
   section: האישור שלך שווה משהו
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:550c8d15c621ffc5481406ca907dbfe073ebd8662c8824c171430f13a016a7e5
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

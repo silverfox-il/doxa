@@ -1,6 +1,6 @@
 id: 2026-11-09-mommy-issues
 publish_at: 2026-11-09 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   טראומה זה לא רק מלחמה או תאונת דרכים
@@ -64,9 +64,9 @@ source:
   section: פצעים שאף אחד לא חבש
 format: photo
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:02b2a166bf3d014f75530181ef303252925e0e876cf42401f1b87c74ad82466b
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

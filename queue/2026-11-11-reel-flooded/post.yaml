@@ -1,6 +1,6 @@
 id: 2026-11-11-reel-flooded
 publish_at: 2026-11-11 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תשומת לב של גבר ברשת כמעט לא שווה אצלה כלום.
@@ -27,9 +27,9 @@ source:
   section: המטבע לא השתנה
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:82514bf2ece96a7fa0764031a7e2fa9fb4634c34239d2b2d643b03156a5039c0
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

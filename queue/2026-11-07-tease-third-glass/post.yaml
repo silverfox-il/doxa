@@ -1,6 +1,6 @@
 id: 2026-11-07-tease-third-glass
 publish_at: 2026-11-07 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   ערב, סלון, כוס יין, שנייה, שלישית.
@@ -32,9 +32,9 @@ source:
   section: הכוס השלישית
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:53faf40d8d869ca7c11b84302be937c764b82220dc0eec97a3a53a03ef314b01
+approved_by: auto
+approved_at: '2026-11-05T08:22:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

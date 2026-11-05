@@ -1,6 +1,6 @@
 id: 2026-11-12-half-and-half
 publish_at: 2026-11-12 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   בגיל שלך השיער הוא שדה מוקשים
@@ -57,9 +57,9 @@ source:
   section: שיער
 format: photo
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f297d96a32dbc4b192ba7603929142dcc2ee1f5a8ec7d2891a6998360e2e0f43
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

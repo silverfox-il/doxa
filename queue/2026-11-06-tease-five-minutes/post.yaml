@@ -1,6 +1,6 @@
 id: 2026-11-06-tease-five-minutes
 publish_at: 2026-11-06 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הרבה גברים, בטח אחרי גירושים, נותנים משקל אדיר למה שאישה אומרת עליהם.
@@ -31,9 +31,9 @@ source:
   section: חמש דקות לא קובעות מי אתה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cf658b432ccc2b2ee59ad6b9529f61760d6171684dfee0d16eb0445f069b79e9
+approved_by: auto
+approved_at: '2026-11-05T08:22:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

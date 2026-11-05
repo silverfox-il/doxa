@@ -1,6 +1,6 @@
 id: 2026-11-11-tease-not-love
 publish_at: 2026-11-11 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   יש משהו שקורה לגברים בגילך אחרי הלילה הראשון
@@ -31,9 +31,9 @@ source:
   section: ואתה, בלב
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b8aa06fd23eec45bf026ac016764662b86cfcef43471ac3eee9c747333d63e09
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

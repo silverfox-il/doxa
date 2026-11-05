@@ -1,6 +1,6 @@
 id: 2026-11-08-not-decoration
 publish_at: 2026-11-08 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   הגוף שלך הוא לא קישוט
@@ -57,9 +57,9 @@ source:
   section: הגוף שלך הוא לא קישוט
 format: bold
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7342196ff4c47d55ebc2a9e70d20b33b7935f9a4eea26bd8a9e9347587be6644
+approved_by: auto
+approved_at: '2026-11-05T08:22:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

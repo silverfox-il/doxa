@@ -1,6 +1,6 @@
 id: 2026-11-08-tease-boring-evening
 publish_at: 2026-11-08 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   מה היא עושה כשאין אקשן?
@@ -31,9 +31,9 @@ source:
   section: ערב אחד משעמם
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2713e0d0e25889bdc04d0873ad56d8cd91497c47dd4ef578bea8c73e26f0ba03
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

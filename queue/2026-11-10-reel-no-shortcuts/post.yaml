@@ -1,6 +1,6 @@
 id: 2026-11-10-reel-no-shortcuts
 publish_at: 2026-11-10 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אני לא רוצה שתבדוק בכלל את המקסימום האמיתי שלך.
@@ -27,9 +27,9 @@ source:
   section: כמה זה "כבד" כשאתה בן 45 פלוס
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:03b32d29e638c213b9f433b942e6a01322a6a9a71f280fa7d72cfb0ab78306af
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

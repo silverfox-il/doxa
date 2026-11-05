@@ -1,6 +1,6 @@
 id: 2026-11-07-reel-after-she-got-it
 publish_at: 2026-11-07 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כל עוד היא רצתה משהו, היא הייתה מתוקה, קשובה, זורמת.
@@ -27,9 +27,9 @@ source:
   section: 'אחרי הקידום: היא נשארה אותה אחת?'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:089f2abf0552b633ea19652889a2de4af0cf09bd6d743bfa6abda26c6051df88
+approved_by: auto
+approved_at: '2026-11-05T08:22:40+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

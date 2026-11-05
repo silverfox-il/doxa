@@ -1,6 +1,6 @@
 id: 2026-11-10-eight-months
 publish_at: 2026-11-10 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   קל מאוד לזייף עניין במשך כמה שבועות.
@@ -50,9 +50,9 @@ source:
   section: חצי שנה בלי הבטחות
 format: tweet
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6d877871b50b7875d4dc22157af9d44a3b50fd86d24515607b827829db0279f8
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

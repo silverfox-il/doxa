@@ -1,6 +1,6 @@
 id: 2026-11-12-tease-endless-tests
 publish_at: 2026-11-12 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כל אישה בודקת.
@@ -32,9 +32,9 @@ source:
   section: 'נורה 22: מבחנים בלי סוף'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:99f60b3fe26d770b502fe03a8c2474d9128ca86f0ee51c0931dd092118b4ae83
+approved_by: auto
+approved_at: '2026-11-05T08:22:41+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
