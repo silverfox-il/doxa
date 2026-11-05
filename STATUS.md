@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-10-22-reel-sauce-steak` at 2026-11-05 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 8/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-11-05 | `2026-10-22-tease-twenty-minutes` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-reel-sauce-steak` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-10-22-the-beard` | ✅ | rendered | — | — |
-| 2026-11-05 | `2026-11-05-melting` | ✅ | publishing | — | — |
+| 2026-11-05 | `2026-11-05-melting` | ✅ | published | [link](https://www.instagram.com/p/DfWmJ-NmxGI/) | — |
 | 2026-11-04 | `2026-10-21-the-frame` | ✅ | rendered | — | — |
 | 2026-11-04 | `2026-11-04-reel-what-are-we` | ✅ | published | [link](https://www.instagram.com/reel/DfVGAmkie9R/) | — |
 | 2026-11-04 | `2026-10-21-tease-worth-testing` | ✅ | rendered | — | — |
