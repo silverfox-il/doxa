@@ -1,0 +1,34 @@
+id: 2026-11-12-half-and-half
+publish_at: 2026-11-12 20:00
+approved: false
+mode: render
+format: photo
+pillar: body
+caption: |-
+  בגיל שלך השיער הוא שדה מוקשים
+
+  מסכים או לא? תכתוב בתגובות.
+  .
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+slides:
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: בגיל שלך השיער הוא שדה מוקשים
+  layout: center
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: גבר עם שיער כסוף, מטופח ומסודר נראה כמו מישהו שיש לו מה לספר
+  layout: center
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: אל תצבע אותו בשחור נעליים, כי צבע כזה צועק "אני מפחד להזדקן" יותר מכל קמט.
+  layout: center
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: אין דבר יותר עצוב מגבר שמסרק את השערות האחרונות מצד אחד לצד השני ומקווה שאף אחד לא ישים לב, כולם שמים לב.
+  layout: center
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: תוסיף לזה גוף מאומן, זקן מטופח ושפת גוף של גבר שיודע מה הוא רוצה, ואתה נראה פתאום קצת מסוכן
+  layout: center
+- background: assets/backgrounds/2026-11-12-half-and-half.jpg
+  title: רק לא חצי חצי, כי ראש חצי קירח ולא מטופח מוריד לך נקודות בשוק בלי שתבין בכלל למה.
+  layout: center
+source:
+  file: 02.md
+  section: שיער

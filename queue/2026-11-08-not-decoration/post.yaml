@@ -1,0 +1,28 @@
+id: 2026-11-08-not-decoration
+publish_at: 2026-11-08 20:00
+approved: false
+mode: render
+format: bold
+pillar: body
+caption: |-
+  הגוף שלך הוא לא קישוט
+
+  איזה משפט פה תפס אותך? תכתוב בתגובות.
+  .
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+slides:
+- title: הגוף שלך הוא לא קישוט
+  layout: bottom
+- title: עם הגיל, הטסטוסטרון יורד. זה ביולוגיה, זה לא אשמתך.
+  layout: bottom
+- title: 'אבל יש לך השפעה על זה: אימוני כוח, שינה טובה, פחות אלכוהול, פחות סוכר, פחות לחץ'
+  layout: bottom
+- title: לא תוספים מאינטרנט שמבטיחים ניסים, לא "בוסטרים" מחבר בחדר כושר, רופא.
+  layout: bottom
+- title: אם אתה נותן לעצמך להשמין, להיחלש, לשקוע, היא תראה את זה.
+  layout: bottom
+- title: ההבדל הוא שאתה אחראי רק על הצד שלך.
+  layout: bottom
+source:
+  file: 11.md
+  section: הגוף שלך הוא לא קישוט
