@@ -60,10 +60,10 @@ pillar: body
 approved_hash: sha256:fb767e9a508cc8d938c71e02a9dd8ec4c1e4a15294889827db30bdb60ee64d1e
 approved_by: auto
 approved_at: '2026-11-05T08:22:40+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18119410064006711'
+permalink: https://www.instagram.com/p/DfaS_XkFLXR/
+published_at: 2026-11-06T18:54:26+0000
 error: null
 story_id: null
 story_error: null
