@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-06-tease-five-minutes` at 2026-11-06 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 10/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -26,7 +26,7 @@
 | 2026-11-07 | `2026-11-07-reel-after-she-got-it` | ✅ | rendered | — | — |
 | 2026-11-06 | `2026-11-06-rest-like-a-man` | ✅ | rendered | — | — |
 | 2026-11-06 | `2026-11-06-tease-five-minutes` | ✅ | rendered | — | — |
-| 2026-11-06 | `2026-11-06-reel-she-asks` | ✅ | publishing | — | — |
+| 2026-11-06 | `2026-11-06-reel-she-asks` | ✅ | published | [link](https://www.instagram.com/reel/DfZfZqPFJnx/) | — |
 | 2026-11-05 | `2026-10-22-small-requests` | ✅ | rendered | — | — |
 | 2026-11-05 | `2026-11-05-reel-dont-be-him` | ✅ | published | [link](https://www.instagram.com/reel/DfXquweliGV/) | — |
 | 2026-11-05 | `2026-10-22-tease-twenty-minutes` | ✅ | rendered | — | — |
