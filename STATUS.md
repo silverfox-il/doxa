@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-07-stories-not-resume` at 2026-11-07 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -22,7 +22,7 @@
 | 2026-11-08 | `2026-11-08-tease-boring-evening` | ✅ | rendered | — | — |
 | 2026-11-08 | `2026-11-08-reel-not-your-mother` | ✅ | rendered | — | — |
 | 2026-11-07 | `2026-11-07-stories-not-resume` | ✅ | rendered | — | — |
-| 2026-11-07 | `2026-11-07-tease-third-glass` | ✅ | publishing | — | — |
+| 2026-11-07 | `2026-11-07-tease-third-glass` | ✅ | published | [link](https://www.instagram.com/reel/DfcmnqXGeWr/) | — |
 | 2026-11-07 | `2026-11-07-reel-after-she-got-it` | ✅ | published | [link](https://www.instagram.com/reel/DfcEOzHE0o4/) | — |
 | 2026-11-06 | `2026-11-06-rest-like-a-man` | ✅ | published | [link](https://www.instagram.com/p/DfaS_XkFLXR/) | — |
 | 2026-11-06 | `2026-11-06-tease-five-minutes` | ✅ | published | [link](https://www.instagram.com/reel/DfaBw-TAj9R/) | — |
