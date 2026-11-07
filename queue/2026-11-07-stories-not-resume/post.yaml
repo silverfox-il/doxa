@@ -60,10 +60,10 @@ pillar: status
 approved_hash: sha256:c30cb639ff617ebc0b67d7ecf0fafb9bf6ab6e1ecc93ded33fcf8cd141872da9
 approved_by: auto
 approved_at: '2026-11-05T08:22:40+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '17910767625572368'
+permalink: https://www.instagram.com/p/Dfc3uHEFvuf/
+published_at: 2026-11-07T18:53:52+0000
 error: null
 story_id: null
 story_error: null
