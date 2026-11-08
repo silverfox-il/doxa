@@ -60,7 +60,7 @@ pillar: body
 approved_hash: sha256:7342196ff4c47d55ebc2a9e70d20b33b7935f9a4eea26bd8a9e9347587be6644
 approved_by: auto
 approved_at: '2026-11-05T08:22:40+02:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
