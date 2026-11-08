@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-08-not-decoration` at 2026-11-08 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -19,7 +19,7 @@
 | 2026-11-09 | `2026-11-09-tease-rented-ferrari` | ✅ | rendered | — | — |
 | 2026-11-09 | `2026-11-09-reel-takes-a-no` | ✅ | rendered | — | — |
 | 2026-11-08 | `2026-11-08-not-decoration` | ✅ | rendered | — | — |
-| 2026-11-08 | `2026-11-08-tease-boring-evening` | ✅ | publishing | — | — |
+| 2026-11-08 | `2026-11-08-tease-boring-evening` | ✅ | published | [link](https://www.instagram.com/reel/DffLVLEDtZA/) | — |
 | 2026-11-08 | `2026-11-08-reel-not-your-mother` | ✅ | published | [link](https://www.instagram.com/reel/DfepHNJHJx7/) | — |
 | 2026-11-07 | `2026-11-07-stories-not-resume` | ✅ | published | [link](https://www.instagram.com/p/Dfc3uHEFvuf/) | — |
 | 2026-11-07 | `2026-11-07-tease-third-glass` | ✅ | published | [link](https://www.instagram.com/reel/DfcmnqXGeWr/) | — |
