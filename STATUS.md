@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-09-reel-takes-a-no` at 2026-11-09 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -18,7 +18,7 @@
 | 2026-11-09 | `2026-11-09-mommy-issues` | ✅ | rendered | — | — |
 | 2026-11-09 | `2026-11-09-tease-rented-ferrari` | ✅ | rendered | — | — |
 | 2026-11-09 | `2026-11-09-reel-takes-a-no` | ✅ | rendered | — | — |
-| 2026-11-08 | `2026-11-08-not-decoration` | ✅ | publishing | — | — |
+| 2026-11-08 | `2026-11-08-not-decoration` | ✅ | published | [link](https://www.instagram.com/p/DffZ33sIGwk/) | — |
 | 2026-11-08 | `2026-11-08-tease-boring-evening` | ✅ | published | [link](https://www.instagram.com/reel/DffLVLEDtZA/) | — |
 | 2026-11-08 | `2026-11-08-reel-not-your-mother` | ✅ | published | [link](https://www.instagram.com/reel/DfepHNJHJx7/) | — |
 | 2026-11-07 | `2026-11-07-stories-not-resume` | ✅ | published | [link](https://www.instagram.com/p/Dfc3uHEFvuf/) | — |
