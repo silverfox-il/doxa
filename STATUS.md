@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-09-mommy-issues` at 2026-11-09 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -16,7 +16,7 @@
 | 2026-11-10 | `2026-11-10-tease-his-approval` | ✅ | rendered | — | — |
 | 2026-11-10 | `2026-11-10-reel-no-shortcuts` | ✅ | rendered | — | — |
 | 2026-11-09 | `2026-11-09-mommy-issues` | ✅ | rendered | — | — |
-| 2026-11-09 | `2026-11-09-tease-rented-ferrari` | ✅ | publishing | — | — |
+| 2026-11-09 | `2026-11-09-tease-rented-ferrari` | ✅ | published | [link](https://www.instagram.com/reel/DfhwP2nCIyP/) | — |
 | 2026-11-09 | `2026-11-09-reel-takes-a-no` | ✅ | published | [link](https://www.instagram.com/reel/DfhN4WMDMW9/) | — |
 | 2026-11-08 | `2026-11-08-not-decoration` | ✅ | published | [link](https://www.instagram.com/p/DffZ33sIGwk/) | — |
 | 2026-11-08 | `2026-11-08-tease-boring-evening` | ✅ | published | [link](https://www.instagram.com/reel/DffLVLEDtZA/) | — |
