@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-11-reel-flooded` at 2026-11-11 13:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 6/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -12,7 +12,7 @@
 | 2026-11-11 | `2026-11-11-she-knows-why` | ✅ | rendered | — | — |
 | 2026-11-11 | `2026-11-11-tease-not-love` | ✅ | rendered | — | — |
 | 2026-11-11 | `2026-11-11-reel-flooded` | ✅ | rendered | — | — |
-| 2026-11-10 | `2026-11-10-eight-months` | ✅ | publishing | — | — |
+| 2026-11-10 | `2026-11-10-eight-months` | ✅ | published | [link](https://www.instagram.com/p/DfkmHghH6s6/) | — |
 | 2026-11-10 | `2026-11-10-tease-his-approval` | ✅ | published | [link](https://www.instagram.com/reel/DfkU9iDDmze/) | — |
 | 2026-11-10 | `2026-11-10-reel-no-shortcuts` | ✅ | published | [link](https://www.instagram.com/reel/DfjzI60khZI/) | — |
 | 2026-11-09 | `2026-11-09-mommy-issues` | ✅ | published | [link](https://www.instagram.com/p/DfiBVx8o1qA/) | — |
