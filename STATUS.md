@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-10-tease-his-approval` at 2026-11-10 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -14,7 +14,7 @@
 | 2026-11-11 | `2026-11-11-reel-flooded` | ✅ | rendered | — | — |
 | 2026-11-10 | `2026-11-10-eight-months` | ✅ | rendered | — | — |
 | 2026-11-10 | `2026-11-10-tease-his-approval` | ✅ | rendered | — | — |
-| 2026-11-10 | `2026-11-10-reel-no-shortcuts` | ✅ | publishing | — | — |
+| 2026-11-10 | `2026-11-10-reel-no-shortcuts` | ✅ | published | [link](https://www.instagram.com/reel/DfjzI60khZI/) | — |
 | 2026-11-09 | `2026-11-09-mommy-issues` | ✅ | published | [link](https://www.instagram.com/p/DfiBVx8o1qA/) | — |
 | 2026-11-09 | `2026-11-09-tease-rented-ferrari` | ✅ | published | [link](https://www.instagram.com/reel/DfhwP2nCIyP/) | — |
 | 2026-11-09 | `2026-11-09-reel-takes-a-no` | ✅ | published | [link](https://www.instagram.com/reel/DfhN4WMDMW9/) | — |
