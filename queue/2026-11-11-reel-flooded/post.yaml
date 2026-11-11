@@ -30,7 +30,7 @@ pillar: status
 approved_hash: sha256:82514bf2ece96a7fa0764031a7e2fa9fb4634c34239d2b2d643b03156a5039c0
 approved_by: auto
 approved_at: '2026-11-05T08:22:41+02:00'
-status: rendered
+status: publishing
 ig_media_id: null
 permalink: null
 published_at: null
