@@ -60,10 +60,10 @@ pillar: dating
 approved_hash: sha256:1444ab60fd0d450e0e71e84bf9a82408130a07730ab3c3d7a6a51a10d5e0bb97
 approved_by: auto
 approved_at: '2026-11-05T08:22:41+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18104017187549746'
+permalink: https://www.instagram.com/p/DfnOVdmCdCr/
+published_at: 2026-11-11T19:23:54+0000
 error: null
 story_id: null
 story_error: null

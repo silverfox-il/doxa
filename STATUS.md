@@ -3,13 +3,13 @@
 
 - **Next scheduled:** `2026-11-12-tease-endless-tests` at 2026-11-12 18:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 5/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
 | 2026-11-12 | `2026-11-12-half-and-half` | ✅ | rendered | — | — |
 | 2026-11-12 | `2026-11-12-tease-endless-tests` | ✅ | rendered | — | — |
-| 2026-11-11 | `2026-11-11-she-knows-why` | ✅ | publishing | — | — |
+| 2026-11-11 | `2026-11-11-she-knows-why` | ✅ | published | [link](https://www.instagram.com/p/DfnOVdmCdCr/) | — |
 | 2026-11-11 | `2026-11-11-tease-not-love` | ✅ | published | [link](https://www.instagram.com/reel/Dfm9fFXiE9H/) | — |
 | 2026-11-11 | `2026-11-11-reel-flooded` | ✅ | published | [link](https://www.instagram.com/reel/DfmXZZfFOKF/) | — |
 | 2026-11-10 | `2026-11-10-eight-months` | ✅ | published | [link](https://www.instagram.com/p/DfkmHghH6s6/) | — |
