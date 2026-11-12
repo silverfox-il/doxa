@@ -1,6 +1,6 @@
 id: 2026-11-15-unpopular-steady
 publish_at: 2026-11-15 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   דעה לא פופולרית: "הוא כזה יציב" זו לא מחמאה.
@@ -29,9 +29,9 @@ source:
   section: 'נורה 5: האקס עדיין גר לה בראש'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c43abae87b0701be389eebfb703b457b48ab0de7c49acab4c06d37f82f0ede65
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

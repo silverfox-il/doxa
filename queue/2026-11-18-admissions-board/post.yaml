@@ -1,6 +1,6 @@
 id: 2026-11-18-admissions-board
 publish_at: 2026-11-18 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא צחקה פעמיים, ומשהו זז אצלה בעיניים.
@@ -29,9 +29,9 @@ source:
   section: תוריד את הרגל מהגז
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d3b5a139ddee5e9a19da0eadc1629a43603c503fa57f94d05008e06085478f3a
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

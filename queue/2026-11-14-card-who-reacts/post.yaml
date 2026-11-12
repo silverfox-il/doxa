@@ -1,6 +1,6 @@
 id: 2026-11-14-card-who-reacts
 publish_at: 2026-11-14 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   השעה 23:40 ואתה בודק בפעם הרביעית אם היא ראתה את הסטורי.
@@ -29,9 +29,9 @@ source:
   section: מי מגיב למי
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:30ff4ce660a8a42d84457c757e27b27ba7c47b6f15fdc8ddd55229854ad16376
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

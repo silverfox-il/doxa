@@ -1,6 +1,6 @@
 id: 2026-11-19-card-train
 publish_at: 2026-11-19 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה כמו קטר על הפסים שלו.
@@ -29,9 +29,9 @@ source:
   section: כמו קטר על פסים
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:06f84226492b1bea92cf17ab7f93bf718e3913c8fa0c9afd26a5ebf326ecfee4
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

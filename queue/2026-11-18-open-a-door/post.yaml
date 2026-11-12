@@ -1,6 +1,6 @@
 id: 2026-11-18-open-a-door
 publish_at: 2026-11-18 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   כולם אומרים לך להיות קשוח.
@@ -78,9 +78,9 @@ source:
   section: להראות שאתה בן אדם
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6cae5fc6e57a190a6f772ddb87842dc3a4de827b7b292898e80cb3ebbecfcdac
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

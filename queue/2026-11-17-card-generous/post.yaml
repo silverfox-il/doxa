@@ -1,6 +1,6 @@
 id: 2026-11-17-card-generous
 publish_at: 2026-11-17 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גבר נדיב זה יפה.
@@ -30,9 +30,9 @@ source:
   section: 'נורה 12: הילדים שלה, האקס שלה והארנק שלך'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f9c4b774d8a06549669bbfc1cf8bab57127672daa4847ebc6aa1cc192e253f3f
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

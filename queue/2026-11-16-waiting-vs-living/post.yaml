@@ -1,6 +1,6 @@
 id: 2026-11-16-waiting-vs-living
 publish_at: 2026-11-16 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר שעוד מחכה. גבר שהתחיל לחיות.
@@ -64,9 +64,9 @@ source:
   section: החיים הנוחים מרדימים אותך
 format: bold
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a9d3de33875ce23421cd7e0623286a345ca75b167983ebef6349d9cd21ed3dd0
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

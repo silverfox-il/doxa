@@ -1,6 +1,6 @@
 id: 2026-11-16-card-high-school-crush
 publish_at: 2026-11-16 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא הבריזה לך פעמיים.
@@ -30,9 +30,9 @@ source:
   section: אוהב, או מאוהב
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c4e387b44f1e1bf697b5d064ae8a16f3c86dd38afb77cab4f1adcb65d90003f3
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

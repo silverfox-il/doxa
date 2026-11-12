@@ -1,6 +1,6 @@
 id: 2026-11-14-dont-cancel-six
 publish_at: 2026-11-14 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   תפסיק לבטל את האימון של שש בבוקר בשבילה.
@@ -78,9 +78,9 @@ source:
   section: המטרה שלך באה ראשונה
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:31025eaf449b29a67b072ef1100b14958e3f3d74fa313840ad8fe043d0f73ecc
+approved_by: auto
+approved_at: '2026-11-13T01:00:24+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
