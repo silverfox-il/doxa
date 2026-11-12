@@ -1,6 +1,6 @@
 id: 2026-11-17-tease-finger-on-lens
 publish_at: 2026-11-17 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אור של צהריים חזקים מעמיק כל קמט
@@ -32,9 +32,9 @@ source:
   section: תמונות, בלי להיראות כמו פרסומת
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:36cf2873f602d2f161dfb2700a0de7a24e9c4a2fefaaef150f3a1642be861d02
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-19-reel-steady-eyes
 publish_at: 2026-11-19 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הכול רואים בעיניים.
@@ -27,9 +27,9 @@ source:
   section: העיניים עושות את העבודה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a81714cd15b7f6b32c19a18fd6a1c4265eee601d7aaafcabbb75f88157990401
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

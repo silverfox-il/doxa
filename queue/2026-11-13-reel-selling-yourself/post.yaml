@@ -1,6 +1,6 @@
 id: 2026-11-13-reel-selling-yourself
 publish_at: 2026-11-13 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גבר שמוכר את עצמו, מריחים אותו מקילומטר.
@@ -27,9 +27,9 @@ source:
   section: לא מוכר את עצמך
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a73eeff234a73097e8f8b3dc8d2bf86bf9cfb93b0886f985bbf067f413042f29
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

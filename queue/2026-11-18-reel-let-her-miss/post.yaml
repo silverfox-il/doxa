@@ -1,6 +1,6 @@
 id: 2026-11-18-reel-let-her-miss
 publish_at: 2026-11-18 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אחרי ערב טוב, אתה לא חייב לראות אותה מחר.
@@ -27,9 +27,9 @@ source:
   section: תן לה להתגעגע
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b506b2a2ace90e21c8f7fcacc7e52fae6e9ba53cfd85cb719cd5a6cbdc7eaa59
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-19-reel-kitchen-abs
 publish_at: 2026-11-19 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הבטן שלך עובדת כמו משוגעת בכל תרגיל חופשי
@@ -27,9 +27,9 @@ source:
   section: ומה עם הבטן?
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2cfaa289899d03781e7524feeda64a9e222d41713efaa1420bded721bceb6477
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

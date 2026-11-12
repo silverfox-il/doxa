@@ -1,6 +1,6 @@
 id: 2026-11-19-tease-go-with-flow
 publish_at: 2026-11-19 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הטעות שרוב הגברים האפורים עושים
@@ -33,9 +33,9 @@ source:
   section: מה כבר יכול לקרות?
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:53cd0feb78cf80af1dea4ffe9d7bcc7b951575f4228ee895f0504e00eca21185
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

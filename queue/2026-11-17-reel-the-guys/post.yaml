@@ -1,6 +1,6 @@
 id: 2026-11-17-reel-the-guys
 publish_at: 2026-11-17 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   החברים שלך הם לא מותרות, הם חמצן.
@@ -27,9 +27,9 @@ source:
   section: החבר'ה
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:54bfb7ce2d10f43af7f8fd8771cb06b7dd067dd965e7caeafb309fca4e066db1
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-14-reel-already-attractive
 publish_at: 2026-11-14 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה מושך, זו עובדה, והשאלה היחידה היא אם היא כבר קלטה את זה.
@@ -27,9 +27,9 @@ source:
   section: אתה מניח שכבר יש משיכה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:a1a0b11ffb93dfda328ca7c5b33280870ad169120c3ad914d91e7f9999c1b9ff
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-17-reel-one-sentence
 publish_at: 2026-11-17 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   השעה לפני הפגישה קובעת הרבה יותר ממה שנדמה.
@@ -27,9 +27,9 @@ source:
   section: הראש, לפני שיוצאים
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0499652119f60e527ac999401e48ce94a8517083105d61ae01ed66b7e639d554
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

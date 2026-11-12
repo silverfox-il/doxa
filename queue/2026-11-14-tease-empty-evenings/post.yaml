@@ -1,6 +1,6 @@
 id: 2026-11-14-tease-empty-evenings
 publish_at: 2026-11-14 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אם הערבים שלך ריקים,
@@ -31,9 +31,9 @@ source:
   section: ואתה, אחרי כל זה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5456d556db34aae07fe8e0156f908738170cedf78122f50ee7c0c76342f8a975
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

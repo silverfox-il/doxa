@@ -1,6 +1,6 @@
 id: 2026-11-14-reel-spotter
 publish_at: 2026-11-14 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הרמת משקולות היא ספורט של אדם אחד.
@@ -27,9 +27,9 @@ source:
   section: אף אחד לא מרים בשבילך
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d1414cf380a7369d6b3707037cac73583d7ab70807b329a97727a55c2107a910
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

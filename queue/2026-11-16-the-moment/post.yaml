@@ -1,6 +1,6 @@
 id: 2026-11-16-the-moment
 publish_at: 2026-11-16 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   זה הזמן. לא עוד כוס, לא עוד סיפור
@@ -64,9 +64,9 @@ source:
   section: לקום וללכת
 format: photo
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ede847bebe101f86030d3f8374222322cc2993748a1215d27dd484d94ebeaf66
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

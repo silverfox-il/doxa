@@ -1,6 +1,6 @@
 id: 2026-11-18-tease-overdraft
 publish_at: 2026-11-18 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אישה שנמצאת כל הזמן במינוס,
@@ -31,9 +31,9 @@ source:
   section: 'נורה 7: הכסף מספר את הסיפור האמיתי'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:99a2a16135df4521d44f3546c9f0ae048fdbeb07cd63b94a5f0b948fd932a784
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

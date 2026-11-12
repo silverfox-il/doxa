@@ -1,6 +1,6 @@
 id: 2026-11-18-three-red-lines
 publish_at: 2026-11-18 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   בגיל שלך יש לך דברים להפסיד
@@ -57,9 +57,9 @@ source:
   section: שלושה קווים אדומים
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d7f8573b9127d98b98f82f60d8450f9d724dd19edfc89d910865b555bc882a72
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

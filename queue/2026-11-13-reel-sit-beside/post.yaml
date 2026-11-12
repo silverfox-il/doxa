@@ -1,6 +1,6 @@
 id: 2026-11-13-reel-sit-beside
 publish_at: 2026-11-13 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   שב לידה, לא מולה.
@@ -27,9 +27,9 @@ source:
   section: שב לידה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b28ce350ba9721361ae6fa2d760f06678b8db228d2c0ae4b5e67055e916b8cd5
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

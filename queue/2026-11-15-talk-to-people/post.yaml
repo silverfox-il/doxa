@@ -1,6 +1,6 @@
 id: 2026-11-15-talk-to-people
 publish_at: 2026-11-15 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   לפני שאתה בכלל חושב על נשים, אתה צריך לחזור לדבר עם אנשים.
@@ -57,9 +57,9 @@ source:
   section: לחזור לדבר עם בני אדם
 format: bold
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d8cfdecc44f1dc7f5a0693101b050c83908d5d37320346998c334a86b69f2685
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

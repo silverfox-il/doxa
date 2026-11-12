@@ -1,6 +1,6 @@
 id: 2026-11-17-twice-is-fine
 publish_at: 2026-11-17 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   דני ניסה בהתחלה ארבעה ימים עליון ותחתון, כי קרא באיזה פורום שזה "הכי יעיל".
@@ -57,9 +57,9 @@ source:
   section: ומה מתאים לאבא גרוש
 format: tweet
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2694c7000eb2cdc1092f06f6c91184e59576312d94e2ce762dad96d55d679107
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

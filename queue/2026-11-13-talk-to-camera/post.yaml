@@ -1,6 +1,6 @@
 id: 2026-11-13-talk-to-camera
 publish_at: 2026-11-13 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   הדבר שהכי מפחיד גברים בגילך, וגם הכי אפקטיבי: לדבר למצלמה.
@@ -64,9 +64,9 @@ source:
   section: הגבר שמדבר למצלמה
 format: photo
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:52dd6b14262655811d2929689202bf72d8d4aaa6d3ddf2ca9d7fd87afed81774
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

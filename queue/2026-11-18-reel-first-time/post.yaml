@@ -1,6 +1,6 @@
 id: 2026-11-18-reel-first-time
 publish_at: 2026-11-18 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הפעם הראשונה עם אישה חדשה, בכל גיל, היא לא ההופעה הכי טובה שלך.
@@ -27,9 +27,9 @@ source:
   section: הפעם הראשונה שלך, אחרי כל השנים
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9029cc0bd5b2f307dac0c88e0def20583c211ad2f94dadc8a2f553c9e3896207
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

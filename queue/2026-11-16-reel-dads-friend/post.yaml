@@ -1,6 +1,6 @@
 id: 2026-11-16-reel-dads-friend
 publish_at: 2026-11-16 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אישה חדשה לא פוגשת את הילדים שלך אחרי שלושה דייטים ולא אחרי חודש.
@@ -27,9 +27,9 @@ source:
   section: הקצב של הילדים, לא שלך
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7e3b83729228c88dd16983e2481a9ba73cfe0dd1f0028709a80119ae2bba0344
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-14-not-at-her-place
 publish_at: 2026-11-14 20:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה מכיר אישה באמת רק כשאתם גרים תחת אותה קורת גג.
@@ -57,9 +57,9 @@ source:
   section: לגור ביחד? לאט מאוד
 format: tweet
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9a8aced413b4f7d242d363e3f13744ef2949a4c82224212c3e0a2bd3bde55206
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-15-tease-seven-years
 publish_at: 2026-11-15 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   זה יקרה. אני אומר לך מראש כדי שלא תופתע.
@@ -31,9 +31,9 @@ source:
   section: כשהיא לא נראית כמו בתמונות
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:1dd1d1fff618de07cebcac9d5e84afb49e73552b8f3d397ac45b7415ad984ead
+approved_by: auto
+approved_at: '2026-11-12T08:30:59+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

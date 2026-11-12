@@ -1,6 +1,6 @@
 id: 2026-11-15-reel-the-gate
 publish_at: 2026-11-15 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   גבר רוצה כמות, אישה רוצה איכות.
@@ -27,9 +27,9 @@ source:
   section: זרע זול, ביצית יקרה
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5f684d3221f8343ef0208ef26a6962fd7f6e8571dafae8ce236cb78b926babb5
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

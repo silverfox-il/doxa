@@ -1,6 +1,6 @@
 id: 2026-11-15-reel-v-shape
 publish_at: 2026-11-15 13:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   להעלות מסת שריר זה הדבר הכי קשה שתעשה
@@ -27,9 +27,9 @@ source:
   section: מסת שריר
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:ed577c8debb548aaa62a9a472e0ef3d6f732fec4187f8def42f0da194ac23637
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

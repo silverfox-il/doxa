@@ -1,6 +1,6 @@
 id: 2026-11-13-tease-heavy-weapon
 publish_at: 2026-11-13 18:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אני אתקשר למשטרה".
@@ -32,9 +32,9 @@ source:
   section: אישה שמשתמשת באיומים כנשק
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:90332d9f718266b2c09588e134cbeb34cb716fe183423a88a1f47a185d62e633
+approved_by: auto
+approved_at: '2026-11-12T08:30:58+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
