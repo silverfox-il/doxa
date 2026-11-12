@@ -1,14 +1,13 @@
 id: 2026-11-13-who-reacts
 publish_at: 2026-11-13 10:00
+approved: false
 mode: render
-caption: 'בכל אינטראקציה בין שני אנשים, יש אחד שמגיב לשני יותר.
-
+caption: |-
+  בכל אינטראקציה בין שני אנשים, יש אחד שמגיב לשני יותר.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
-
   .
-
-  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel'
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
 - background: null
   kicker: ''
@@ -65,4 +64,14 @@ source:
   section: מי מגיב למי
 format: bold
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

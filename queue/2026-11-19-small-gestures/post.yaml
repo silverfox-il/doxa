@@ -1,14 +1,13 @@
 id: 2026-11-19-small-gestures
 publish_at: 2026-11-19 10:00
+approved: false
 mode: render
-caption: 'מערכת יחסים טובה היא לא מלחמה, ואתה לא טרמינייטור.
-
+caption: |-
+  מערכת יחסים טובה היא לא מלחמה, ואתה לא טרמינייטור.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
-
   .
-
-  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל'
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides:
 - background: null
   kicker: ''
@@ -65,4 +64,14 @@ source:
   section: לאהוב אותה בדרך שעובדת
 format: bold
 pillar: mind
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

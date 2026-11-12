@@ -1,14 +1,13 @@
 id: 2026-11-17-old-wound
 publish_at: 2026-11-17 10:00
+approved: false
 mode: render
-caption: 'כשהפצע הישן מנהל לה את החיים.
-
+caption: |-
+  כשהפצע הישן מנהל לה את החיים.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
-
   .
-
-  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel'
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
 - background: null
   kicker: נורה אדומה
@@ -65,4 +64,14 @@ source:
   section: 'נורה 1: כשהפצע הישן מנהל לה את החיים'
 format: bold
 pillar: second-round
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

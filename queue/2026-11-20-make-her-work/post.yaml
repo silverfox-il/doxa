@@ -1,14 +1,13 @@
 id: 2026-11-20-make-her-work
 publish_at: 2026-11-20 10:00
+approved: false
 mode: render
-caption: 'איך נותנים לה להתאמץ, בלי להיות חמור.
-
+caption: |-
+  איך נותנים לה להתאמץ, בלי להיות חמור.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
-
   .
-
-  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל'
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides:
 - background: null
   kicker: 4 דרכים
@@ -65,4 +64,14 @@ source:
   section: איך נותנים לה להתאמץ, בלי להיות חמור
 format: bold
 pillar: status
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

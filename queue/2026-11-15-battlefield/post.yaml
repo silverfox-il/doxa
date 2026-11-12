@@ -1,14 +1,13 @@
 id: 2026-11-15-battlefield
 publish_at: 2026-11-15 10:00
+approved: false
 mode: render
-caption: 'אישה שרואה בזוגיות מלחמה.
-
+caption: |-
+  אישה שרואה בזוגיות מלחמה.
 
   מסכים או לא? תכתוב בתגובות.
-
   .
-
-  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel'
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides:
 - background: null
   kicker: נורה אדומה
@@ -72,4 +71,14 @@ source:
   section: 'נורה 2: כשהזוגיות נהיית שדה קרב'
 format: bold
 pillar: second-round
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

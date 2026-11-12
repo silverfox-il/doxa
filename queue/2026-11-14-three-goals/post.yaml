@@ -1,14 +1,13 @@
 id: 2026-11-14-three-goals
 publish_at: 2026-11-14 10:00
+approved: false
 mode: render
-caption: 'גבר בלי מטרה הוא גבר שמחכה.
-
+caption: |-
+  גבר בלי מטרה הוא גבר שמחכה.
 
   תגיב "בפנים" אם אתה מתחיל היום.
-
   .
-
-  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל'
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides:
 - background: null
   kicker: ''
@@ -72,4 +71,14 @@ source:
   section: מטרות, רעב והכבוד העצמי שבא איתם
 format: bold
 pillar: mind
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
