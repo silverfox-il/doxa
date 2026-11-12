@@ -1,6 +1,6 @@
 id: 2026-11-20-reel-not-your-project
 publish_at: 2026-11-20 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אם אתה נכנס לתפקיד הזה,
@@ -33,9 +33,9 @@ source:
   section: 'נורה 25: כשמשהו אחר מנהל אותה (וגם אותך)'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:1b83b979b85ca306ba0d71753b26d2e1d0205851f49d5d147fc4b59ffa6abee5
+approved_by: auto
+approved_at: '2026-11-13T00:33:33+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

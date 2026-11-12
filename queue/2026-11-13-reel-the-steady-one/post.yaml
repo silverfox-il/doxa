@@ -1,6 +1,6 @@
 id: 2026-11-13-reel-the-steady-one
 publish_at: 2026-11-13 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אני לא רוצה להיות היציב שבאים אליו אחרי הבלגן.
@@ -34,9 +34,9 @@ source:
   section: 'נורה 5: האקס עדיין גר לה בראש'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f9392386724699208646c13387bc6204df717209145c9683aff2919195c0dae3
+approved_by: auto
+approved_at: '2026-11-13T00:33:32+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

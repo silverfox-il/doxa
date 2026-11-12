@@ -1,6 +1,6 @@
 id: 2026-11-19-reel-admissions-board
 publish_at: 2026-11-19 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   איפה עבדתי, כמה ילדים, מתי התגרשתי, איזה רכב יש לי.
@@ -33,9 +33,9 @@ source:
   section: תוריד את הרגל מהגז
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:3804b701b8517326f669bc4fa0747331bb0e7327fa93308ac794d62fc03feae8
+approved_by: auto
+approved_at: '2026-11-13T00:33:33+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

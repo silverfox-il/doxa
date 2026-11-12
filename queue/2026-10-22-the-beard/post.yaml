@@ -1,6 +1,6 @@
 id: 2026-10-22-the-beard
 publish_at: 2026-11-05 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר בוגר צריך שיער פנים.
@@ -57,9 +57,9 @@ source:
   section: זקן
 format: photo
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:e061258b1cf8facf32f8c4c0dd66b51a288b349fe441adca516fc3b67147ac47
+approved_by: auto
+approved_at: '2026-11-13T00:33:32+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

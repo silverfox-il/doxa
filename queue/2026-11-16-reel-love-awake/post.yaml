@@ -1,6 +1,6 @@
 id: 2026-11-16-reel-love-awake
 publish_at: 2026-11-16 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תאהב במודע, לאט, לפי מעשים.
@@ -32,9 +32,9 @@ source:
   section: אוהב, או מאוהב
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fad129ac5f0ac2f6cc14b6864f2f458625db0d5fce9ff6f9fb40242bb66668c6
+approved_by: auto
+approved_at: '2026-11-13T00:33:32+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

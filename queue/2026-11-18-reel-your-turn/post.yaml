@@ -1,6 +1,6 @@
 id: 2026-11-18-reel-your-turn
 publish_at: 2026-11-18 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בהתחלה היא בדקה אותך.
@@ -33,9 +33,9 @@ source:
   section: גם אתה עומד למבחן
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4b58149e5fc149ecf62d4bc82f4ff11872610fbbb7947e69b3d568ce9f284b43
+approved_by: auto
+approved_at: '2026-11-13T00:33:32+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-14-reel-stay-there
 publish_at: 2026-11-14 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "למה אתה צריך לקום בשש לחדר כושר, תישאר איתי במיטה."
@@ -34,9 +34,9 @@ source:
   section: המטרה שלך באה ראשונה
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0b6e6cb98d44d395b401fd485da16100b0e1aef3e950daf983a55004ec9eead2
+approved_by: auto
+approved_at: '2026-11-13T00:33:32+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
