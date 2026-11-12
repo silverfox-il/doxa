@@ -1,0 +1,40 @@
+id: 2026-11-14-reel-spotter
+publish_at: 2026-11-14 10:00
+approved: false
+mode: reel
+caption: |-
+  הרמת משקולות היא ספורט של אדם אחד.
+
+  תגיב "בפנים" אם אתה מתחיל היום.
+  .
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
+slides: []
+reel:
+  lines:
+  - הרמת משקולות היא ספורט של אדם אחד.
+  - אם מישהו עוזר לך, אתה לא יודע כמה באמת הרמת, ואם אתה לא יודע כמה הרמת, אתה לא יכול לדעת אם אתה מתקדם.
+  - נכשלת? מחזירים את המוט, ונגמר הסט.
+  music: soulprodmusic-smoke-143172.mp3
+  per_line: 3.0
+  hold: 5.0
+  stories: null
+  style: null
+  video: man45-gray-training.mp4
+  prebuilt: null
+  share_story: null
+source:
+  file: 08.md
+  section: אף אחד לא מרים בשבילך
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: queued
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
