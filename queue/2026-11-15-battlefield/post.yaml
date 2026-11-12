@@ -1,6 +1,6 @@
 id: 2026-11-15-battlefield
 publish_at: 2026-11-15 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אישה שרואה בזוגיות מלחמה.
@@ -71,9 +71,9 @@ source:
   section: 'נורה 2: כשהזוגיות נהיית שדה קרב'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:51a4c47f307e59a7e2bb99336bb886a7ac3f7a5622c560a198963d56cd0712f6
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

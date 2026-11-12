@@ -1,6 +1,6 @@
 id: 2026-11-13-who-reacts
 publish_at: 2026-11-13 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   בכל אינטראקציה בין שני אנשים, יש אחד שמגיב לשני יותר.
@@ -64,9 +64,9 @@ source:
   section: מי מגיב למי
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7b37f539dbf0ffe019d281ff87ea2134c41df2a486498854541bf9ca4aa42388
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-17-old-wound
 publish_at: 2026-11-17 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   כשהפצע הישן מנהל לה את החיים.
@@ -64,9 +64,9 @@ source:
   section: 'נורה 1: כשהפצע הישן מנהל לה את החיים'
 format: bold
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:dc82c292acf6908129951bc6009c12c85cb10e099ff2296890eaa11e21e4eaaf
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

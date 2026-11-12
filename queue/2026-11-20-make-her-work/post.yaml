@@ -1,6 +1,6 @@
 id: 2026-11-20-make-her-work
 publish_at: 2026-11-20 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   איך נותנים לה להתאמץ, בלי להיות חמור.
@@ -64,9 +64,9 @@ source:
   section: איך נותנים לה להתאמץ, בלי להיות חמור
 format: bold
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7128bd7ce568b1ca9a87fd6ddc24cece302ed4795a4fc52776783765925c4d7d
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

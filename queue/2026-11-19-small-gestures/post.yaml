@@ -1,6 +1,6 @@
 id: 2026-11-19-small-gestures
 publish_at: 2026-11-19 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   מערכת יחסים טובה היא לא מלחמה, ואתה לא טרמינייטור.
@@ -64,9 +64,9 @@ source:
   section: לאהוב אותה בדרך שעובדת
 format: bold
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d30c17dd1b16f325ac169ef6679522268357f76237fabc56b8e96d149210b544
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

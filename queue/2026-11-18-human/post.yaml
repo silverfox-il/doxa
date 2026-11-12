@@ -1,6 +1,6 @@
 id: 2026-11-18-human
 publish_at: 2026-11-18 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   יש גברים שנכנסים לשיחה עם אישה כאילו הם שחקני פעולה.
@@ -64,9 +64,9 @@ source:
   section: להראות שאתה בן אדם
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0604ec695ef88cc9dabc777173b0daf3a3f074a86ba680639029a3425621b740
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

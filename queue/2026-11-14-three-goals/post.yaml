@@ -1,6 +1,6 @@
 id: 2026-11-14-three-goals
 publish_at: 2026-11-14 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   גבר בלי מטרה הוא גבר שמחכה.
@@ -71,9 +71,9 @@ source:
   section: מטרות, רעב והכבוד העצמי שבא איתם
 format: bold
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6cac67b6bf264869e035f6388ea51c37d87285e238a15011fad757b4d4818afe
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

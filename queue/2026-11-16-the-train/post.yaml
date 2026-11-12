@@ -1,6 +1,6 @@
 id: 2026-11-16-the-train
 publish_at: 2026-11-16 10:00
-approved: false
+approved: true
 mode: render
 caption: |-
   אתה כמו קטר שנוסע על הפסים שלו,
@@ -64,9 +64,9 @@ source:
   section: כמו קטר על פסים
 format: bold
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:d9b47de84eb2843dfff4d9441507dfb8e030a247d08d41388dd49ea6baf65168
+approved_by: auto
+approved_at: '2026-11-13T00:21:15+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
