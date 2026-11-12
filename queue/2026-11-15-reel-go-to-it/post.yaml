@@ -1,14 +1,13 @@
 id: 2026-11-15-reel-go-to-it
 publish_at: 2026-11-15 20:00
+approved: false
 mode: reel
-caption: 'אתה לא בורח מאתגרים, אתה הולך אליהם.
-
+caption: |-
+  אתה לא בורח מאתגרים, אתה הולך אליהם.
 
   תגיב "בפנים" אם אתה מתחיל היום.
-
   .
-
-  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle'
+  #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
 slides: []
 reel:
   lines:
@@ -35,4 +34,14 @@ source:
   section: החיים הנוחים מרדימים אותך
 format: null
 pillar: body
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

@@ -1,14 +1,13 @@
 id: 2026-11-20-reel-not-your-project
 publish_at: 2026-11-20 20:00
+approved: false
 mode: reel
-caption: 'אם אתה נכנס לתפקיד הזה,
-
+caption: |-
+  אם אתה נכנס לתפקיד הזה,
 
   תייג חבר שצריך לשמוע את זה.
-
   .
-
-  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel'
+  #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
 slides: []
 reel:
   lines:
@@ -34,4 +33,14 @@ source:
   section: 'נורה 25: כשמשהו אחר מנהל אותה (וגם אותך)'
 format: null
 pillar: second-round
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

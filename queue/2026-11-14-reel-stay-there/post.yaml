@@ -1,14 +1,13 @@
 id: 2026-11-14-reel-stay-there
 publish_at: 2026-11-14 20:00
+approved: false
 mode: reel
-caption: '"למה אתה צריך לקום בשש לחדר כושר, תישאר איתי במיטה."
-
+caption: |-
+  "למה אתה צריך לקום בשש לחדר כושר, תישאר איתי במיטה."
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
-
   .
-
-  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל'
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides: []
 reel:
   lines:
@@ -35,4 +34,14 @@ source:
   section: המטרה שלך באה ראשונה
 format: null
 pillar: status
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

@@ -1,14 +1,13 @@
 id: 2026-11-16-reel-love-awake
 publish_at: 2026-11-16 20:00
+approved: false
 mode: reel
-caption: 'תאהב במודע, לאט, לפי מעשים.
-
+caption: |-
+  תאהב במודע, לאט, לפי מעשים.
 
   איזה משפט פה תפס אותך? תכתוב בתגובות.
-
   .
-
-  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל'
+  #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
 slides: []
 reel:
   lines:
@@ -33,4 +32,14 @@ source:
   section: אוהב, או מאוהב
 format: null
 pillar: mind
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
