@@ -1,14 +1,13 @@
 id: 2026-11-15-unpopular-steady
 publish_at: 2026-11-15 20:00
+approved: false
 mode: reel
-caption: 'דעה לא פופולרית: "הוא כזה יציב" זו לא מחמאה.
-
+caption: |-
+  דעה לא פופולרית: "הוא כזה יציב" זו לא מחמאה.
 
   הכל כתוב בספר.
-
   .
-
-  #גרושים #פרקב #זוגיות #גירושין #היכרויות #lifeafterdivorce #divorcedmen'
+  #גרושים #פרקב #זוגיות #גירושין #היכרויות #lifeafterdivorce #divorcedmen
 slides: []
 reel:
   lines:
@@ -30,4 +29,14 @@ source:
   section: 'נורה 5: האקס עדיין גר לה בראש'
 format: null
 pillar: second-round
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

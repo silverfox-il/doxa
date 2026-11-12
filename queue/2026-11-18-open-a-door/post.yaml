@@ -1,14 +1,13 @@
 id: 2026-11-18-open-a-door
 publish_at: 2026-11-18 10:00
+approved: false
 mode: render
-caption: 'כולם אומרים לך להיות קשוח.
-
+caption: |-
+  כולם אומרים לך להיות קשוח.
 
   הכל כתוב בספר.
-
   .
-
-  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen
 slides:
 - background: null
   kicker: ''
@@ -79,4 +78,14 @@ source:
   section: להראות שאתה בן אדם
 format: bold
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

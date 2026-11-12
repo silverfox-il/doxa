@@ -1,14 +1,13 @@
 id: 2026-11-16-waiting-vs-living
 publish_at: 2026-11-16 10:00
+approved: false
 mode: render
-caption: 'גבר שעוד מחכה. גבר שהתחיל לחיות.
-
+caption: |-
+  גבר שעוד מחכה. גבר שהתחיל לחיות.
 
   זה מפורט בספר.
-
   .
-
-  #גברבשנותהארבעים #גבריות #כושר #fitover40 #menshealth'
+  #גברבשנותהארבעים #גבריות #כושר #fitover40 #menshealth
 slides:
 - background: null
   kicker: ''
@@ -65,4 +64,14 @@ source:
   section: החיים הנוחים מרדימים אותך
 format: bold
 pillar: body
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

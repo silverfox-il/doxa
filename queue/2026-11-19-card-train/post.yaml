@@ -1,14 +1,13 @@
 id: 2026-11-19-card-train
 publish_at: 2026-11-19 20:00
+approved: false
 mode: reel
-caption: 'אתה כמו קטר על הפסים שלו.
-
+caption: |-
+  אתה כמו קטר על הפסים שלו.
 
   הכל כתוב בספר.
-
   .
-
-  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen
 slides: []
 reel:
   lines:
@@ -30,4 +29,14 @@ source:
   section: כמו קטר על פסים
 format: null
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

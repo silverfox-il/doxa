@@ -1,14 +1,13 @@
 id: 2026-11-13-card-waiting-man
 publish_at: 2026-11-13 20:00
+approved: false
 mode: reel
-caption: 'גבר בלי מטרה הוא גבר שמחכה.
-
+caption: |-
+  גבר בלי מטרה הוא גבר שמחכה.
 
   זה מפורט בספר.
-
   .
-
-  #גבריות #גרושים #גירושין #mindset #divorcerecovery'
+  #גבריות #גרושים #גירושין #mindset #divorcerecovery
 slides: []
 reel:
   lines:
@@ -30,4 +29,14 @@ source:
   section: מטרות, רעב והכבוד העצמי שבא איתם
 format: null
 pillar: mind
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

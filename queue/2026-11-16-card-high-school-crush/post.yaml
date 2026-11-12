@@ -1,14 +1,13 @@
 id: 2026-11-16-card-high-school-crush
 publish_at: 2026-11-16 20:00
+approved: false
 mode: reel
-caption: 'היא הבריזה לך פעמיים.
-
+caption: |-
+  היא הבריזה לך פעמיים.
 
   הכל כתוב בספר.
-
   .
-
-  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen
 slides: []
 reel:
   lines:
@@ -31,4 +30,14 @@ source:
   section: אוהב, או מאוהב
 format: null
 pillar: dating
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

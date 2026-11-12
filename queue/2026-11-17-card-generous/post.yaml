@@ -1,14 +1,13 @@
 id: 2026-11-17-card-generous
 publish_at: 2026-11-17 20:00
+approved: false
 mode: reel
-caption: 'גבר נדיב זה יפה.
-
+caption: |-
+  גבר נדיב זה יפה.
 
   זה מפורט בספר.
-
   .
-
-  #גרושים #פרקב #זוגיות #גירושין #היכרויות #lifeafterdivorce #divorcedmen'
+  #גרושים #פרקב #זוגיות #גירושין #היכרויות #lifeafterdivorce #divorcedmen
 slides: []
 reel:
   lines:
@@ -31,4 +30,14 @@ source:
   section: 'נורה 12: הילדים שלה, האקס שלה והארנק שלך'
 format: null
 pillar: second-round
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
