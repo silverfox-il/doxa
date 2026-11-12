@@ -180,8 +180,10 @@ class Reel(BaseModel):
     hold: float = 4.0  # seconds the full text stays on screen at the end
     # Teaser series: follow-up story texts. Story 1 is this reel; these come next.
     stories: list[str] | None = None
-    # Look of the frames: None = default; "boxes" = text in black boxes on dark red.
-    style: Literal["boxes"] | None = None
+    # Look of the frames: None = default; "boxes" = text in black boxes on dark red;
+    # "card" = static tweet-style card (owner's brief, 2026-11-13): black, brand
+    # avatar and name on top, every line visible from the first frame.
+    style: Literal["boxes", "card"] | None = None
     # Background clip (file name in the private video folder); None = flat colour.
     video: str | None = None
     # True: reel.mp4 is made by hand and committed with the post; render never

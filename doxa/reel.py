@@ -32,6 +32,9 @@ DURATION_SLACK = 0.3
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 FONT = REPO_ROOT / "assets" / "fonts" / "Heebo[wght].ttf"
+# Card reels: the brand's profile picture and display name in the card header.
+AVATAR = REPO_ROOT / "assets" / "brand" / "avatar.jpg"
+CARD_NAME = "סילבר פוקס"
 
 
 class ReelError(Exception):
@@ -74,6 +77,17 @@ def _css() -> str:
         ".boxes p{background:#000;border-radius:40px;padding:26px 46px;margin:0;"
         "font-size:62px;font-weight:500;line-height:1.28;max-width:940px}"
         ".boxes .tag{color:#c9a3a3}"
+        # Card (owner's brief, 2026-11-13): a tweet-style card, black, white text,
+        # brand avatar and name above the text, right aligned.
+        "body.card{background:#000;padding:220px 120px 420px 200px}"
+        ".card .c{width:100%}"
+        ".card .hd{display:flex;align-items:center;gap:28px;margin:0 0 56px}"
+        ".card .av{width:120px;height:120px;border-radius:50%;background:#333 center/cover}"
+        ".card .nm{font-size:48px;font-weight:700;line-height:1.1}"
+        ".card .hn{font-size:36px;color:#8a8a8a;direction:ltr;text-align:right;margin-top:6px}"
+        ".card .w{text-align:right}"
+        ".card p{font-size:60px;font-weight:400;line-height:1.32;margin:0 0 34px}"
+        ".card .tag{display:none}"
         # Over a background video: transparent page, text with a soft shadow.
         "html.video,html.video body{background:transparent}"
         ".video p{text-shadow:0 2px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9)}"
@@ -86,15 +100,33 @@ def frame_html(
 ) -> str:
     """Frame with the first ``shown`` lines visible. Hidden lines keep their space,
     so text never jumps as new lines appear."""
+    if look == "card":
+        shown = len(lines)  # a card is static: the whole text from the first frame
     ps = "".join(
         f"<p class='{'' if i < shown else 'h'}'>{html.escape(t)}</p>" for i, t in enumerate(lines)
     )
+    body = f"<div class='w'>{ps}</div>"
+    if look == "card":
+        body = f"<div class='c'>{_card_header()}{body}</div>"
     return (
         f"<!DOCTYPE html><html dir='rtl' lang='he' class='{'video' if video else ''}'>"
         "<head><meta charset='utf-8'>"
         f"<style>{_css()}</style></head><body class='{look or ('tease' if tease else '')}'>"
-        f"<div class='w'>{ps}</div>"
+        f"{body}"
         f"<div class='tag'>{html.escape(IG_HANDLE)}</div></body></html>"
+    )
+
+
+@lru_cache(maxsize=1)
+def _card_header() -> str:
+    avatar = ""
+    if AVATAR.is_file():
+        data = base64.b64encode(AVATAR.read_bytes()).decode("ascii")
+        avatar = f" style=\"background-image:url('data:image/jpeg;base64,{data}')\""
+    return (
+        f"<div class='hd'><div class='av'{avatar}></div><div>"
+        f"<div class='nm'>{html.escape(CARD_NAME)}</div>"
+        f"<div class='hn'>{html.escape(IG_HANDLE)}</div></div></div>"
     )
 
 

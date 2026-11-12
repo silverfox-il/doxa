@@ -225,3 +225,16 @@ def test_background_video_reel():
     graph = cmd[cmd.index("-filter_complex") + 1]
     assert "overlay" in graph and "crop=1080:1920" in graph
     assert "class='video'" in reel.frame_html(["א"], 1, video=True)
+
+
+def test_card_reel_style_is_static_with_header():
+    from doxa import reel
+    from doxa.queue import Reel
+
+    r = Reel.model_validate(
+        {"lines": ["א", "ב", "ג"], "music": "a.mp3", "per_line": 1, "hold": 9, "style": "card"}
+    )
+    assert r.style == "card"
+    doc = reel.frame_html(r.lines, 1, look="card")
+    assert "class='h'" not in doc  # every line visible from the first frame
+    assert reel.CARD_NAME in doc and "class='hd'" in doc

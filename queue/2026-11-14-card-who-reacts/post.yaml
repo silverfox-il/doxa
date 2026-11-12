@@ -1,0 +1,33 @@
+id: 2026-11-14-card-who-reacts
+publish_at: 2026-11-14 20:00
+mode: reel
+caption: 'השעה 23:40 ואתה בודק בפעם הרביעית אם היא ראתה את הסטורי.
+
+
+  זה מפורט בספר.
+
+  .
+
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+slides: []
+reel:
+  lines:
+  - השעה 23:40 ואתה בודק בפעם הרביעית אם היא ראתה את הסטורי.
+  - היא חייכה, אתה על הגג.
+  - היא לא ענתה, אתה מתרסק.
+  - מי שמגיב יותר, מחזיק פחות את ההגה.
+  - תהיה הגבר שהיא מגיבה אליו. לא ההפך.
+  music: atlasaudio-piano-motivation-512261.mp3
+  per_line: 1.0
+  hold: 9.0
+  stories: null
+  style: card
+  video: null
+  prebuilt: null
+  share_story: null
+source:
+  file: 06.md
+  section: מי מגיב למי
+format: null
+pillar: dating
+status: queued

@@ -1,0 +1,34 @@
+id: 2026-11-16-card-high-school-crush
+publish_at: 2026-11-16 20:00
+mode: reel
+caption: 'היא הבריזה לך פעמיים.
+
+
+  הכל כתוב בספר.
+
+  .
+
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+slides: []
+reel:
+  lines:
+  - היא הבריזה לך פעמיים.
+  - ענתה לך אחרי יומיים.
+  - השאירה אותך על "אולי".
+  - ואתה עדיין מוצא לה תירוצים.
+  - זה לא אהבה. זה קראש של תיכון, עם שיער לבן.
+  - תאהב במודע. לאט. לפי מעשים.
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 1.0
+  hold: 8.0
+  stories: null
+  style: card
+  video: null
+  prebuilt: null
+  share_story: null
+source:
+  file: 07.md
+  section: אוהב, או מאוהב
+format: null
+pillar: dating
+status: queued

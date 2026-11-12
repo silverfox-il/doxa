@@ -1,22 +1,26 @@
 # Weekly content routine
 
-A scheduled agent runs this every Thursday. It fills the queue for the next 7 days
-with posts written in the book's voice. Nobody reviews the output before it is queued, so
-follow every rule below exactly. The automatic checks (`doxa rules`, `doxa validate`)
-are a safety net; they do not replace them.
+A scheduled agent runs this every Thursday. It fills the queue for the next 7 days.
+Nobody reviews the output before it is queued, so follow every rule below exactly.
+The automatic checks (`doxa rules`, `doxa validate`) are a safety net; they do not
+replace them.
+
+**Rewritten 2026-11-13 for the owner's writing brief.** The owner rejected the old
+routine's output (4 posts a day, teaser series, list carousels) as low quality.
+Everything below replaces it.
 
 ## Inputs
 
 - This repo, `silverfox-il/doxa` (public).
 - The private repo `silverfox-il/doxa-private`, checked out next to this one:
-  - `book/*.md`: the book, new edition. **The only source of ideas, tone and positions.**
-  - `book/old/*.txt`: the OLD edition (PDF extract, broken line order). It sold 4,000
-    copies; its ideas and voice are the gold standard. Take IDEAS from it, never copy it.
-  - `voice/VOICE.md`: the voice bible built from the old edition. Read it fully first.
+  - `voice/BRIEF.md`: **the owner's writing brief. Read it fully first. It is the
+    law for voice, formats, what is forbidden, and the self-check.**
+  - `book/*.md`: the book, new edition. **The only source of ideas.** Never invent a
+    principle the book does not hold. If a week cannot be filled from fresh book
+    material, queue fewer posts and say so.
   - `rules_private.yaml`: identity terms. Read it, never copy it anywhere.
-- `content/used.yaml`: every line and book section already in the queue. Never repeat a line,
-  and prefer sections no post has used yet.
-- `assets/pool/pool.yaml`: licensed background photos (`used_by: null` = free).
+  - `video/`: licensed background clips. `music/`: licensed tracks.
+- `content/used.yaml` and `queue/`: never reuse a book section, a line or a clip.
 
 Set up:
 
@@ -27,363 +31,121 @@ git config user.name silverfox-il
 git config user.email 333442913+silverfox-il@users.noreply.github.com
 ```
 
-## What to produce
+## What to produce (weekly mix from the brief)
 
-Owner's mix (2026-10-17, from the stats: reels reach ~110 non-followers each, carousels
-almost nobody): **3 reels and 1 carousel a day** (the teaser counts as one of the reels).
-Pacing allows at most 4 posts in 24h.
-
-Write every post with the `silverfox-voice` skill (user skill in ~/.claude/skills): the
-owner's mentor/bar-friend voice, short reels, list carousels, and his approved/rejected
-examples. Reels are now SHORT: 3 lines, 7 to 10 seconds, line 1 a hook of about 8 words.
-
-1. D1 is the first day from tomorrow on that does not yet have all four daily slots
-   (10:00, 13:00, 18:00, 20:00) in `queue/`. Fill only the empty slots; never move or
+1. D1 is the first day from tomorrow on with no post in `queue/`. Never move or
    replace an existing post.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
-3. For D1 through D7 create:
-   - one **reel** at `10:00`, id `YYYY-MM-DD-reel-<slug>`
-   - one **reel** at `13:00`, id `YYYY-MM-DD-reel-<slug>`
-   - one **teaser series** at `18:00`, id `YYYY-MM-DD-tease-<slug>` (see below)
-   - one **list carousel** at `20:00`, id `YYYY-MM-DD-<slug>` (mentor format, e.g.
-     `2026-10-17-six-red-lights`)
+3. For D1 through D7 create **10 posts**:
+   - 5 **card reels** (the main format), id `YYYY-MM-DD-card-<slug>`
+   - 2 **text reels on faceless footage**, one of them "דעה לא פופולרית",
+     id `YYYY-MM-DD-<slug>`
+   - 2 **carousels** built on a reversal, id `YYYY-MM-DD-<slug>`
+   - 1 **comparison** carousel (5 or 6 matching pairs), id `YYYY-MM-DD-<slug>`
+4. Schedule: one post at `20:00` every day, plus a second post at `10:00` on three
+   of the days (carousels and the comparison go at 10:00). Never more than 2 a day.
 
-That makes 28 posts. The slug is 1 to 4 lowercase English words joined by `-`.
+Stories: the daily 12 to 15 frame sequence in the brief needs stickers, other
+creators' reels and real proof, which the API cannot post. Do not queue it. The
+owner asks for it in chat.
 
-Regular posts get no automatic story: the owner shares them to his story himself
-(only the app can attach a link to the post).
+## Formats in DOXA terms
 
-## Hashtags (rotate by pillar)
-
-Replace the hashtag line with the set that fits the post's pillar (researched
-2026-10-07). Never use #dating, #single, #singlelife, #date or #sexy (banned-list
-risk), and avoid #silverfox / #menover50 (they pull an unrelated audience).
-
-- dating, second-round: #גרושים #גירושין #פרקב #זוגיות #היכרויות #דייטינג #גבריות #datingafterdivorce #lifeafterdivorce #divorcedmen #israel
-- body: #כושר #אימוןכושר #כושרגופני #גברבשנותהארבעים #גבריות #fitover40 #menshealth #mensfitness #greyhair #mensstyle
-- mind, status: #גירושין #גרוש #אבאגרוש #הורותמשותפת #אבא #mindset #divorcerecovery #divorceddad #coparenting #singledad #ישראל
-
-## Teaser series (daily, 18:00)
-
-A reel that provokes, plus 2 follow-up stories. The reel goes to the feed and
-brings the traffic; the system then posts the reel video and the 2 follow-ups to
-stories, in order. It is a `mode: reel` post with `reel.stories`:
-
-- **Story 1 = the reel** (5 to 8 short lines; per_line 1.4 to 1.8 so it stays
-  10 to 15 seconds): the owner's trolling style. A detached, cynical narrator,
-  not a coach:
-  - open with a sweeping "state of the world" claim ("אנחנו בעידן ...",
-    "רוב הנשים היום ...", "רוב הגברים בגילך ...");
-  - every line escalates one short step, dry, no explanations, no advice;
-  - third person narration is fine here ("הוא", "הן");
-  - end on a sarcastic sting ("פלקס אדיר.", "בונוס.", "כל הכבוד, אלוף.").
-  The owner's example: "אנחנו בעידן הפראייר-מקס של נשים בדייטים / רוב הנשים כיום
-  מחפשות גברים חלשים לניצול / אחד שיסבול את כל חוסר הכבוד ולא יעזוב לעולם /
-  מוכן להיות מנוצל שוב למחרת / אם הוא נראה טוב וגם עשיר? אז בכלל / פלקס אדיר".
-  The rendered reel is black, right aligned, like that example.
-- **Story 2** (up to ~120 characters): the twist that makes it worse, or proves
-  the point. Short, punchy, it should make him want to answer.
-- **Story 3** (up to ~120 characters): the payoff or a cliffhanger that sends him
-  to the profile ("זה בדיוק מה שנפרק בפוסט של הערב"), or asks him to answer the
-  story. The image gets a banner pointing to the profile automatically.
-
-The owner decided (2026-10-04) that teaser series MAY generalize about women
-("רוב הנשים ...") like his example. Still never slurs (כלבה, Zונה as an insult,
-and the like), never contempt for their worth as people, nothing about consent,
-never fake urgency or fake numbers. Regular posts keep the rule: no generalizing
-about women as a group. Every hard rule applies to all
-three parts. Pillar and call to action rotate like any post (`doxa validate`
-checks both).
+**Card reel** (`style: card`): a static tweet-style card. It has a black background,
+the brand avatar (`assets/brand/avatar.jpg`), the name "סילבר פוקס" and white
+right-aligned text. All lines are visible from the first frame. The brief's
+structure is 4 to 6 short lines: a scroll-stopping opener, then 3 or 4 lines of
+diagnosis, then a closer that lands like a punch.
 
 ```yaml
-id: 2026-10-11-tease-good-morning
-publish_at: "2026-10-11 18:00"
-approved: false
+id: 2026-11-20-card-example
+publish_at: "2026-11-20 20:00"
 mode: reel
 pillar: dating
 caption: |-
-  <the hook: reel line 1>
+  <line 1 of the card>
 
-  <one line from config/cta.yaml, verbatim>
+  <one line from config/cta.yaml, verbatim; prefer the book lines>
   .
-  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
+  <5 hashtags>
 reel:
-  lines:
-  - <the hook, 3 to 12 words>
-  - <next line>
-  stories:
-  - <story 2>
-  - <story 3>
-  music: <a file name from doxa-private/music/>
-  per_line: 3.0
-  hold: 5.0
+  lines: [<4 to 6 short lines>]
+  music: <slow, confident instrumental from doxa-private/music/>
+  per_line: 1.0
+  hold: <13 minus (number of lines minus 1)>
+  style: card
 source:
-  file: 02.md
-  section: <heading the idea comes from>
+  file: 06.md
+  section: <the ### heading>
+status: queued
 ```
 
-## Pillars (rotate, never two in a row)
+**Text reel on footage**: the same reel post with `video:` and no `style`.
+- The clip must have **no faces**: a night drive, hands on a wheel, a watch, morning
+  coffee, a gym from behind, a walk alone on the beach, a silhouette.
+- Up to 6 lines (the validator caps plain reels at 6).
+- Timing: `per_line 2.2`, `hold = 13 - 2.2 x (lines - 1)`.
+- Every clip is used once. If no unused faceless clip fits, add a free Pexels clip
+  to `doxa-private/video/` and credit it in `video/CREDITS.md`. If you cannot, use
+  a card reel instead.
 
-Every post has `pillar:`. Ordered by `publish_at` across the whole queue (including
-the last posts already queued before D1), two consecutive posts may never share a
-pillar; `doxa validate` blocks it. Over a week use each pillar 2 or 3 times.
+**Carousel / comparison**: `mode: render`, `format: bold`, slides with `title` and,
+where needed, `body`. Follow the brief:
+- 7 to 10 slides, one idea per slide.
+- Slide 1 is the hook.
+- Slides 2 and 3 show a scene the reader recognises.
+- The middle slide holds the reversal (a one-question slide is allowed).
+- The second to last slide holds the principle in one quotable sentence.
+- The last slide is one step for tomorrow morning.
+- A comparison puts the first man in the `title` and the second in the `body`, same
+  length and rhythm, 5 or 6 pairs.
 
-| pillar | what | where in the book |
-|---|---|---|
-| `dating` | dating at 45+, approaching, the man is the prize | `06.md`, `02.md` |
-| `body` | body, gym, sleep, looks | `08.md`, `02.md` |
-| `status` | money, status, image, the market | `02.md`, `01.md` |
-| `mind` | the head after the divorce, fear, ego | `06.md`, `02.md` |
-| `second-round` | a second relationship, red flags | `11.md` |
+## Pillars, hook, call to action
 
-## The hook (mandatory)
+- `pillar:` one of `dating`, `body`, `status`, `mind`, `second-round`. Two
+  consecutive posts (by `publish_at`, across the whole queue) never share a pillar.
+- Line 1 (reel) or slide 1 title (carousel) is the hook, 3 to 18 words. The caption
+  opens with the same line.
+- Exactly one line from `config/cta.yaml`, word for word, never the same as the
+  previous post. Prefer the soft book lines ("זה מפורט בספר." / "הכל כתוב בספר.").
+  Never "buy", never a price, never "link in bio" (there is no link yet).
+- At most 5 hashtags, at the end of the caption only.
 
-Slide 1 of a carousel and line 1 of a reel are the hook: the single most
-provocative, scroll-stopping line of the post, 3 to 12 words. Never a connector
-("תזכור:", "אז"). The caption opens with the same hook line.
+## Hard rules (owner's, all mandatory)
 
-## Formats (rotate)
-
-Carousels set `format:` and rotate it through the week: `photo` (text over a pool
-photo, needs `background:` on every slide), `tweet` (the quote as a post card; no
-`background:`; up to ~200 characters per slide) and `bold` (huge type on flat colour;
-no `background:`; up to ~90 characters per slide). Use each at least twice a week.
-Reels have no `format`.
-
-## Call to action (mandatory)
-
-Every caption has exactly one line copied word for word from `config/cta.yaml`.
-Never write your own. Do not use the same line on two consecutive posts.
-
-## THE METHOD: curate the new book, don't write (the owner's rule, 2026-10-08)
-
-Everything written "in the style of" the book sounds artificial to the owner. What
-he loves is his own writing. So carousels and reels are built from the NEW book
-(`book/*.md`) almost word for word: pick the strongest passage, cut it into slides
-or reel lines at natural sentence breaks, keep his exact words, quotes, asides and
-punctuation. Allowed changes are only cuts (dropping sentences or clauses), removing
-dashes, masking crude words, and adapting nothing else. Never paraphrase, never
-"improve". The new book is unpublished, so quoting it is fine; never quote the OLD
-edition (4,000 readers know it). Owner-approved examples:
-`2026-10-15-always-available` (11.md, jealousy), `2026-10-16-reel-the-one-who-pays`
-(02.md, the one who lights her up vs the one who pays),
-`2026-10-15-tease-came-to-eat` (02.md, "זו שבאה לאכול"). Teaser series may
-add the owner's trolling frame around a quoted core. Keep `source:` exact.
-
-## Reels: truths about men and women (the owner's rule, 2026-10-07)
-
-Reels (13:00) follow the approach of @shiraz_mizrahi777, whose text reels reach 5K to
-37K views on 9K followers, combined with the NEW book (quote it freely):
-plain everyday Hebrew, no slang to decode; a claim, a contrast, an ironic sting
-("אמרו לגברים: ... אז הם ... והיא? ... תודה על העצה 👏"); truths about men and women
-in the third person ("רוב הגברים...", "גבר לא...") are welcome (as the book has them;
-talk to him); describe, never instruct; short lines; one line that stays in the head,
-often a verbatim new-book line. Approved examples: `2026-10-05-reel-turned-on`,
-`2026-10-09-reel-garden`, `2026-10-11-reel-second-round`.
-
-Every reel, the 18:00 teaser too, sets `reel.video` to a background clip from `doxa-private/video/`
-(licensed Pexels clips, see its CREDITS.md) that fits the text: `gray-hair`,
-`gym-tattoo`, `gym-workout`, `gym-treadmill`, `phone-texting`, `phone-bed`,
-`wine-pour`, `wine-sea`, `bar-cheers`, `dinner-candles`, `coffee-garden`,
-`coffee-window`, `city-night-walk`, `city-crossing`, `drive-tunnel`, `beach-walk`,
-`beach-sunset`, `suit-watch`, `window-silhouette` (file name + `.mp4`). Don't use the
-same clip two days in a row.
-Owner (2026-10-15): NOTHING is recycled without his approval. Every reel gets a clip no
-other post has used (published or queued); every post uses a book section no other post
-has used; no reel opens with the same first words as another post ("אמרו לגברים",
-"רוב הגברים", "יש נשים", "אנחנו בעידן"... are used up). `doxa validate` blocks clip and
-section reuse. If the clip library runs short, download new Pexels clips (adult men in
-their 40s, couples) into doxa-private/video with a CREDITS.md line; never reuse one.
-Owner's emphasis (2026-10-08): show attractive, fit men around 45 to 50 (everyone
-wants to look younger). Prefer the `man45-*` clips: `man45-sweater`,
-`man45-pensive-beard`, `man45-suit-city`, `man45-gym-fly`, `date-couple-hands`,
-`man45-park-walk`, `man45-silver-fox`, `man45-coat-city`, `man45-smile-wine`,
-`man45-profile`, `man45-closeup`, `man45-suit-profile`; at least 4 of the week's 7
-reels use one. Owner (2026-10-10, 2026-10-14): `man45-fit-boxing`, `man45-gray-wine`
-and `gray-hair` look too old; don't use them. No black background without a clip.
-
-## Writing: an experienced man telling it (the owner's rule, 2026-10-07)
-
-Thousands already read the old book, so posts must NOT repeat its wording: they'd
-be bored. Take ONE idea from the old edition (or the new one), keep the idea, and
-retell it fresh, in smart, human words, the way an experienced man who has been
-through it explains it to a friend over a beer. The owner approved this through
-review rounds; these posts are the reference, match them:
-
-- `2026-10-05-what-looking-for` ("מה אתה מחפש?" היא שואלת. ופה רוב הגברים נופלים.)
-- `2026-10-06-first-message` (אם כבר החלטת לשלוח לה הודעה, אז לפחות תעשה את זה נכון:)
-- `2026-10-05-approval-chase` (אתה בודק כל חמש דקות אם היא מרוצה ממך? אחי, אתה לא מלצר.)
-- `2026-10-05-old-flame` (יש אקס אחד שהיא עוד לא שחררה...)
-
-What the owner asked for, round by round:
-
-- **Spice.** Be a bit cheeky, a bit cynical, a bit chauvinist in a charming way: a
-  real man's man, a charmer. Tease her, never humiliate women as a group.
-- **Bluntness that lands.** Short lines, real situations ("תראי, אני אחרי גירושים, אני
-  עוד לא יודע, תלוי..."), dialogue in quotes, a concrete image, one street word.
-- **Open straight into the situation.** "אם כבר החלטת ..., אז לפחות תעשה את זה נכון:"
-- **Clear in one read.** If a line needs a second read, rewrite it. Natural spoken
-  Hebrew, right verb forms ("להידלק", "וזה מייבש אותה ממש מהר").
-- **Closers rotate, and only about one post in three gets one.** Never the same twice
-  in a row: "תלמד לשחק את המשחק." / "ככה זה עובד. תתרגל." / "ברוך הבא לסבב השני." /
-  "תתחיל להתנהג כמו הפרס." / "אל תהיה עוד אחד בתור." / "תן לה סיבה לרדוף." / "זה לא
-  אכזרי. זה המשחק." / "אתה צריך להיות הסיבה – לא האפקט." The rest end on their own punch.
-- **Tell, don't lecture or judge.** Describe a scene he recognizes and land an
-  insight with a wink. Few imperatives, no "do this, do that" lists, no looking down
-  on him ("זה קורה לכולנו" beats "אתה מגוחך"). Rejected round 3 (2026-10-07) read as
-  instructions and judgment; approved rewrites read as a story.
-- **No clever metaphors that need decoding.** The owner rejected every line he had
-  to stop and think about: "תמדוד אותך כמו דירה", "ככה רק קונים מקום בתור", "החולצה
-  המהוהה" (literary word). Fixed versions say it plainly: "תעשה לך ראיון עבודה לתפקיד
-  'בעל' כבר בדייט הראשון", "ככה קונים תשומת לב. לא משיכה.", "החולצה הדהויה". Use only
-  words a 45+ Israeli says out loud; if an image needs explaining, drop it.
-- **When she disappears (owner's firm position, 2026-10-08):** he sends NO message at
-  all, doesn't watch her stories, doesn't like anything, shows no sign; he just keeps
-  living. Never advise "one short message after a few days".
-- **No repeated ideas.** Before writing, read `content/used.yaml` and the queue: a post
-  may not repeat an idea that already ran, even in new words (the owner caught a second
-  "seeking her approval" reel). Never recycle an image or line (e.g. "ילד שמראה לאמא
-  ציור" ran twice), and don't lean on fixed formulas; the owner calls that "AI-ish".
-- **"אחי" sparingly:** at most once in a post, and not in most posts.
-- **The audience is 45 and up, not "50".** Say "אחרי 45", "בגיל שלך", or nothing.
-- **Avoid the copywriter tic.** "אתה לא X. אתה Y" at most once per post.
-- **45+ only in the technical details:** ages (women 37+), divorce, kids, alimony, the
-  ex, the second round, the body after 50, "נשים"/"היא" instead of "בחורות". Never
-  soften the expressions, humor, rhythm or attitude.
-- **Voice follows the book.** Second person or third person, exactly as the quoted passage has it.
-- **The book's positions only.** Never invent advice the book does not give. Keep
-  `source:` with the section the idea comes from (internal only, never in the post).
-- **Spread across topics:** dating, approaching, texting, red flags, body, the head
-  after divorce, money and status. Skip anything explicitly sexual.
-
-### Crude words: keep the edge, mask the word
-
-Instagram restricts accounts that are too explicit. Keep the attitude, but write
-crude words masked, as `config/rules.yaml` (`masked_words`) lists them. The raw word
-blocks the post. Examples:
-
-| never write | write |
-|---|---|
-| זונה, זונות | Zונה, Zונות |
-| לזיין, מזדיין, זיון | לעשות את המעשה, עושה את המעשה, המעשה |
-| זין | Zין |
-| סקס | Sקס |
-| אורגזמה | אורגZמה |
-| שרמוטה | שרמו*ה |
-| כוסית | Kוסית |
-
-An idiom that is crude only by its word ("לזיין את השכל") is rephrased in the
-same spirit ("לבלבל את השכל").
-
-## Hard rules (the owner's, all mandatory)
-
-- No hint of a book, an edition, a sale, a price or a course before 500 followers.
-  Never mention "fire your boss". Never "the original book", "the old version".
-- Examples use "דני". Never the owner's name or any identifying detail (name, city,
-  workplace). See `rules_private.yaml`.
-- Ages: the audience is men 45+. A 45 year old dates women from 37, a 50 year old
-  from 42. Skip any passage that implies younger women.
-- The book's positions: the man is the prize and does not chase. No date without a
-  phone number. First date at his home over good wine (in summer also a beach, a
-  lookout or a night swim). Never a restaurant on a first date. Nothing about going
-  down on her or vibrators.
-- Consent is a red line. No humiliating women as a group. No ethnic stereotypes.
-- No dashes of any kind (`-`, `–`, `—`, the Hebrew maqaf `־`), except in the
-  signature line "אתה צריך להיות הסיבה – לא האפקט".
-- Never the word "זרג".
-- No calls to buy followers, follow/unfollow, fake reviews or fake urgency.
-
-## Format
-
-Carousel (4 to 7 slides, one quote per slide, `title` only):
-
-```yaml
-id: 2026-10-11-example
-publish_at: "2026-10-11 20:00"
-approved: false
-mode: render
-format: photo            # or tweet / bold (then no background: lines)
-pillar: dating
-caption: |-
-  <the hook: slide 1>
-
-  <one line from config/cta.yaml, verbatim>
-  .
-  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
-slides:
-- background: assets/backgrounds/2026-10-11-example.jpg
-  title: <the hook, 3 to 12 words>
-  layout: center         # photo format: text centered; tweet/bold: bottom
-# ...one block per slide, same background
-source:
-  file: 02.md
-  section: <the ### heading the passage sits under>
-```
-
-For `format: photo`, get the background with `doxa pool-take <post-id> --tag <whiskey|wine|watch|gym|city|sea|car|home|bar|balcony|work|rain|coffee|style>`.
-Pick a tag that fits the passage. It copies a free pool photo and marks it used.
-
-Reel (2 to 6 short lines that appear one by one, 10 to 15 seconds):
-
-```yaml
-id: 2026-10-11-reel-example
-publish_at: "2026-10-11 13:00"
-approved: false
-mode: reel
-pillar: status
-caption: |-
-  <the hook: reel line 1>
-
-  <one line from config/cta.yaml, verbatim>
-  .
-  #גרושים #פרק_ב #היכרויות #גברים_מעל_45 #סילברפוקס
-reel:
-  lines:
-  - <the hook, 3 to 12 words>
-  - <next line>
-  music: <a file name from doxa-private/music/>
-  per_line: 3.0
-  hold: 5.0
-source:
-  file: 02.md
-  section: <heading>
-```
-
-Timing by line count: 2 lines: `per_line 4.0, hold 7.0`. 3 lines: `3.0, 5.0`.
-4 lines: `2.4, 4.0`. 5 lines: `2.2, 4.0`. 6 lines: `1.9, 4.0`.
-Music (owner, 2026-10-14): Black music, R&B and hip-hop, never motivation/piano tracks.
-Use only the royalty-free R&B/hip-hop tracks in `doxa-private/music/`
-(`music-for-videos-rnb-hip-hop-beat-150390`, `nveravetyanmusic-rnb-hip-hop-149310`,
-`gr0za-rnb-rnb-type-beat-561707`, `soulprodmusic-love-stylish-modern-hip-hop-music-127449`,
-`the_mountain-hip-hop-soul-317779`, `soulprodmusic-smoke-143172`,
-`keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134`; file name + `.mp3`).
-Commercial hits are copyrighted and can't be put in an API-published reel.
-Don't repeat the previous reel's track.
+- Everything in `voice/BRIEF.md` "מה אסור". The rules that matter most:
+  - no contempt for women and no generalizing about them
+  - no mocking a person
+  - no clichés
+  - no "5 tips" lists
+  - no promised results
+  - nothing invented: no reader messages, numbers or stories
+- The brand is anonymous. Never the owner's name, his life story or any identifying
+  detail (see `rules_private.yaml`). Examples use "דני".
+- The book's positions win: the man is the prize and does not chase. When she
+  vanishes, nothing is sent. Never a restaurant on a first date. Consent is a red line.
+- No dashes (`-`, `–`, `—`, `־`) except in the signature line. No "!". No emoji.
+- No exact ages for people in the text. Write "בגילך" or "בשנות הארבעים".
+- Mask crude words (Zונה, Sקס, לZיין). The brief prefers sharp over crude anyway.
+- The reader is a doer: never build a post around a lonely man drinking at home and
+  texting.
 
 ## Check, then publish to the queue
 
 ```bash
-doxa rules --strict <all new ids>   # must print ✓ for every post, no findings at all
+doxa rules --strict <all new ids>   # ✓ for every post, no findings
 doxa validate                       # must pass
 doxa used                           # refresh content/used.yaml
 pytest -q                           # must pass
-git add queue assets content && git commit -m "content: week of <D1> (7 reels, 7 teaser series, 7 carousels)"
+git add queue assets content && git commit -m "content: week of <D1> (brief mix)"
 git push origin HEAD:main
 ```
 
-If any post has a finding, fix it by rewriting the line in the book's voice. Never edit the rules
-to make a post pass. If you cannot fill all 14 slots cleanly, queue fewer and say
-so in the summary. If the push to `main` is refused, push a branch and open a pull
-request instead.
-
-GitHub then renders everything. If the owner has set `DOXA_AUTO_APPROVE=true`,
-posts with zero findings are approved and wait 24 hours. The owner can veto any
-post with the `hold` label on its issue.
-
-Every published post is also shared once as a story automatically (the reel
-itself, or slide 1 of a carousel framed 9:16). Nothing to do for that.
+If a post has a finding, rewrite the line. Never edit the rules to make a post pass.
+GitHub then renders everything. Auto-approved posts wait 24 hours, and the owner can
+veto any post with the `hold` label on its issue.
 
 ## Summary to print at the end
 
-A table: date, time, id, type, format, pillar, source section, hook. Then the number of free
-photos left in the pool (`doxa pool-take` prints it); warn below 20.
+A table: date, time, id, format (card / text reel / carousel / comparison), pillar,
+source section, hook.

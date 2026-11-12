@@ -1,6 +1,7 @@
 # Call to action lines. Every post from 2026-10-04 on carries exactly one of
 # these in its caption, word for word (doxa/rules.py checks it). The owner approves this list; edit it here.
-# No dashes, no book or sale hints, no fake urgency.
+# No dashes, no sale words, no fake urgency. Soft book lines allowed since 2026-11-13
+# (owner's brief: "זה מפורט בספר", never "buy now").
 lines:
   - שמור את הפוסט. תחזור אליו כשתצטרך.
   - תייג חבר שצריך לשמוע את זה.
@@ -8,3 +9,5 @@ lines:
   - תגיב "בפנים" אם אתה מתחיל היום.
   - מסכים או לא? תכתוב בתגובות.
   - איזה משפט פה תפס אותך? תכתוב בתגובות.
+  - זה מפורט בספר.
+  - הכל כתוב בספר.

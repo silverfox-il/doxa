@@ -108,7 +108,7 @@ def test_raw_old_edition_txt_never_proves_a_quote(tmp_path):
 @pytest.mark.parametrize(
     "title,rule",
     [
-        ("הספר הזה לא נכתב בשביל בחורים בני 25.", "banned-word"),
+        ("זה שיעור הנחה של פעם בחיים.", "banned-word"),
         ("תפטר את הבוס שלך.", "banned-word"),
         ("ספרו לי על אפי.", "identity"),
         ("בגיל ה־20 הכל אחרת.", "no-dashes"),
@@ -137,11 +137,8 @@ def test_word_match_respects_hebrew_word_boundaries():
     # "בוס" inside another word is fine; with prefixes it is caught.
     assert not rules._word_re("בוס").search("אוטובוס")
     assert rules._word_re("בוס").search("והבוס שלך")
-    book_re = rules._word_re(next(w for w in CFG.block_words if "ספר" in w))
-    for blocked in ("הספר הזה", "בספר", "שבספר", "ספרים", "והספרים"):
-        assert book_re.search(blocked), blocked
-    for legal in ("מספרים", "לספר לך", "מספר עליך", "סיפור"):
-        assert not book_re.search(legal), legal
+    # Since 2026-11-13 the owner allows soft book mentions ("זה מפורט בספר").
+    assert not any("ספר" in w for w in CFG.block_words)
 
 
 def test_blocked_hashtag(book):

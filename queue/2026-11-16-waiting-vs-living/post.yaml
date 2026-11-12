@@ -1,0 +1,68 @@
+id: 2026-11-16-waiting-vs-living
+publish_at: 2026-11-16 10:00
+mode: render
+caption: 'גבר שעוד מחכה. גבר שהתחיל לחיות.
+
+
+  זה מפורט בספר.
+
+  .
+
+  #גברבשנותהארבעים #גבריות #כושר #fitover40 #menshealth'
+slides:
+- background: null
+  kicker: ''
+  title: גבר שעוד מחכה. גבר שהתחיל לחיות.
+  accent: ''
+  body: אותו גיל. שני גברים אחרים לגמרי.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: 'הראשון: משרד, רכב, ספה, נטפליקס.'
+  accent: ''
+  body: 'השני: ליגת ותיקים בשלישי, ריצה בשישי.'
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: הראשון מחכה שהיא תכתוב.
+  accent: ''
+  body: השני לא שם לב שעבר יום.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: הראשון בורח מאתגרים.
+  accent: ''
+  body: השני הולך אליהם.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: הראשון רודף אחרי נשים.
+  accent: ''
+  body: השני בונה את עצמו, והן רואות.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: הראשון מחפש מישהי שתחזיר לו טעם לחיים.
+  accent: ''
+  body: השני כבר חי. היא מוזמנת להצטרף.
+  layout: bottom
+  items: []
+- background: null
+  kicker: ''
+  title: אותו שיער אפור.
+  accent: ''
+  body: רק אחד מהם מחזיק את ההגה.
+  layout: bottom
+  items: []
+reel: null
+source:
+  file: 07.md
+  section: החיים הנוחים מרדימים אותך
+format: bold
+pillar: body
+status: queued

@@ -4,10 +4,9 @@
 
 # block: the post can never publish while one of these appears.
 block_words:
-  # No hint of a book, an edition, or a sale before 200 followers (owner, 2026-10-31;
-  # was 500). From 200: soft caption mentions only ("מתוך הספר שלי"), never a sale link.
-  # "book(s)" with the prefixes ה ב ו ש; "מספר"/"לספר" (number, to tell) stay legal.
-  - "re:(?<![א-ת])[והבש]{0,3}ספר(?:ים)?(?![א-ת])"
+  # The word "book" is allowed since 2026-11-13 (owner's writing brief): soft
+  # caption mentions such as "זה מפורט בספר". Still no sale words, no prices and
+  # no "link in bio" until there is a real link.
   - מהדורה
   - מהדורת
   - הגרסה הישנה
@@ -26,6 +25,11 @@ block_words:
   - תפטר
   - להתפטר
   - לפטר
+  # Clichés the owner's brief (2026-11-13) bans.
+  - בעולם של היום
+  - הגרסה הטובה ביותר של עצמך
+  - הנה הסוד
+  - בוא נדבר על
   # Word list from the owner: use "בילבל" or "החבר שם למטה" instead.
   - זרג
 

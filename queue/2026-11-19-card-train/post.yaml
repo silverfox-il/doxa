@@ -1,0 +1,33 @@
+id: 2026-11-19-card-train
+publish_at: 2026-11-19 20:00
+mode: reel
+caption: 'אתה כמו קטר על הפסים שלו.
+
+
+  הכל כתוב בספר.
+
+  .
+
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות #datingafterdivorce #divorcedmen'
+slides: []
+reel:
+  lines:
+  - אתה כמו קטר על הפסים שלו.
+  - מישהו בתחנה עשה פרצוף? אתה לא מאט.
+  - היא רוצה? היא עולה.
+  - היא לא רוצה? הרכבת ממשיכה.
+  - בלי דרמה. בלי הודעה חמוצה.
+  music: vadim_makes_sound-atlas-israel-594455.mp3
+  per_line: 1.0
+  hold: 9.0
+  stories: null
+  style: card
+  video: null
+  prebuilt: null
+  share_story: null
+source:
+  file: 06.md
+  section: כמו קטר על פסים
+format: null
+pillar: dating
+status: queued
