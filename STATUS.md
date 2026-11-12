@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-13-reel-sit-beside` at 2026-11-13 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 0/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -36,7 +36,7 @@
 | 2026-11-13 | `2026-11-13-reel-selling-yourself` | ✅ | rendered | — | — |
 | 2026-11-13 | `2026-11-13-reel-sit-beside` | ✅ | rendered | — | — |
 | 2026-11-12 | `2026-11-12-half-and-half` | ✅ | rendered | — | — |
-| 2026-11-12 | `2026-11-12-tease-endless-tests` | ✅ | publishing | — | — |
+| 2026-11-12 | `2026-11-12-tease-endless-tests` | ✅ | published | [link](https://www.instagram.com/reel/Dfp6iFNGbYo/) | — |
 | 2026-11-11 | `2026-11-11-she-knows-why` | ✅ | published | [link](https://www.instagram.com/p/DfnOVdmCdCr/) | — |
 | 2026-11-11 | `2026-11-11-tease-not-love` | ✅ | published | [link](https://www.instagram.com/reel/Dfm9fFXiE9H/) | — |
 | 2026-11-11 | `2026-11-11-reel-flooded` | ✅ | published | [link](https://www.instagram.com/reel/DfmXZZfFOKF/) | — |
