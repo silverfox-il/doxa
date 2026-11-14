@@ -81,10 +81,10 @@ pillar: status
 approved_hash: sha256:31025eaf449b29a67b072ef1100b14958e3f3d74fa313840ad8fe043d0f73ecc
 approved_by: auto
 approved_at: '2026-11-13T01:00:24+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '17888394288690159'
+permalink: https://www.instagram.com/p/Dft0pJqm683/
+published_at: 2026-11-14T08:54:05+0000
 error: null
 story_id: null
 story_error: null
