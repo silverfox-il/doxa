@@ -70,7 +70,7 @@ caption: |-
   <5 hashtags>
 reel:
   lines: [<4 to 6 short lines>]
-  music: <slow, confident instrumental from doxa-private/music/>
+  music: <rhythmic hip hop / R&B instrumental from doxa-private/music/ (owner, 2026-11-14: "black music, good and rhythmic"; no piano, no motivation tracks)>
   per_line: 1.0
   hold: <13 minus (number of lines minus 1)>
   style: card
