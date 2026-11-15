@@ -1,6 +1,6 @@
 id: 2026-11-17-card-voice-drops
 publish_at: 2026-11-17 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   תקשיב איך אתה מסיים משפטים.
@@ -30,9 +30,9 @@ source:
   section: הקול שלך מספר עליך
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:751ecb2bb0b74dae8d87469509a9c59cc3f319b2e732d4c77a3b34a5d97ee2fb
+approved_by: auto
+approved_at: '2026-11-15T18:38:08+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
