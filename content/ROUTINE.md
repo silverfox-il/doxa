@@ -36,14 +36,14 @@ git config user.email 333442913+silverfox-il@users.noreply.github.com
 1. D1 is the first day from tomorrow on with no post in `queue/`. Never move or
    replace an existing post.
 2. Do nothing (report "queue already full") if D1 is more than 10 days from today.
-3. For D1 through D7 create **10 posts**:
-   - 5 **card reels** (the main format), id `YYYY-MM-DD-card-<slug>`
+3. For D1 through D7 create **14 posts, all reels** (owner, 2026-11-15: carousels
+   got 4 to 25 views against 180 for a card reel, so they are dropped):
+   - 12 **card reels** (the main format), id `YYYY-MM-DD-card-<slug>`. One of them
+     may be a comparison written as a card (5 or 6 short matching lines).
    - 2 **text reels on faceless footage**, one of them "דעה לא פופולרית",
      id `YYYY-MM-DD-<slug>`
-   - 2 **carousels** built on a reversal, id `YYYY-MM-DD-<slug>`
-   - 1 **comparison** carousel (5 or 6 matching pairs), id `YYYY-MM-DD-<slug>`
-4. Schedule: one post at `20:00` every day, plus a second post at `10:00` on three
-   of the days (carousels and the comparison go at 10:00). Never more than 2 a day.
+4. Schedule: a card reel at `10:00` and a reel at `20:00` every day. Never more
+   than 2 a day. No carousels unless the owner asks for one.
 
 Stories: the daily 12 to 15 frame sequence in the brief needs stickers, other
 creators' reels and real proof, which the API cannot post. Do not queue it. The

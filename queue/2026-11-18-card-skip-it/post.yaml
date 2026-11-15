@@ -1,0 +1,34 @@
+id: 2026-11-18-card-skip-it
+publish_at: 2026-11-18 10:00
+mode: reel
+caption: '"אז מה, זה המשפט שאתה אומר לכל אחת?"
+
+
+  הכל כתוב בספר.
+
+  .
+
+  #גרושים #פרקב #דייטינג #גבריות #היכרויות'
+slides: []
+reel:
+  lines:
+  - '"אז מה, זה המשפט שאתה אומר לכל אחת?"'
+  - אתה לא חייב לענות על כל שאלה.
+  - תדלג עליה, כאילו לא שמעת. בגילנו זה אפילו אמין.
+  - 'ותמשיך: "היום בבוקר קרה לי משהו מטורף בריצה..."'
+  - אל תהפוך למרצה שמסביר כל דבר.
+  - אז היא שאלה. אז מה.
+  music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
+  per_line: 1.0
+  hold: 8.0
+  stories: null
+  style: card
+  video: null
+  prebuilt: null
+  share_story: null
+source:
+  file: 06.md
+  section: אתה לא חייב לענות
+format: null
+pillar: dating
+status: queued

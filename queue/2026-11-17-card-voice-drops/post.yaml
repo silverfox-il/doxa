@@ -1,0 +1,34 @@
+id: 2026-11-17-card-voice-drops
+publish_at: 2026-11-17 10:00
+mode: reel
+caption: 'תקשיב איך אתה מסיים משפטים.
+
+
+  שלח את זה לחבר שחוזר עכשיו למשחק.
+
+  .
+
+  #גבריות #גרושים #פרקב #mindset #divorcedmen'
+slides: []
+reel:
+  lines:
+  - תקשיב איך אתה מסיים משפטים.
+  - '"אולי נצא רגע למרפסת?" והקול עולה בסוף, כמו בקשת אישור.'
+  - גבר שמוביל מסיים כשהקול יורד.
+  - '"בואי נצא רגע למרפסת." נקודה.'
+  - לא שאלה. הזמנה.
+  - ואם היא אומרת לא, אתה מחייך ועובר לרעיון אחר.
+  music: nveravetyanmusic-rnb-hip-hop-149310.mp3
+  per_line: 1.0
+  hold: 8.0
+  stories: null
+  style: card
+  video: null
+  prebuilt: null
+  share_story: null
+source:
+  file: 06.md
+  section: הקול שלך מספר עליך
+format: null
+pillar: status
+status: queued
