@@ -1,14 +1,13 @@
 id: 2026-11-19-card-unfair-weapon
 publish_at: 2026-11-19 10:00
+approved: false
 mode: reel
-caption: 'רזה בלי שרירים זה לא נחשב.
-
+caption: |-
+  רזה בלי שרירים זה לא נחשב.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
-
   .
-
-  #גברבשנותהארבעים #גבריות #כושר #fitover40 #menshealth'
+  #גברבשנותהארבעים #גבריות #כושר #fitover40 #menshealth
 slides: []
 reel:
   lines:
@@ -31,4 +30,14 @@ source:
   section: מסת שריר
 format: null
 pillar: body
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

@@ -1,14 +1,13 @@
 id: 2026-11-17-card-voice-drops
 publish_at: 2026-11-17 10:00
+approved: false
 mode: reel
-caption: 'תקשיב איך אתה מסיים משפטים.
-
+caption: |-
+  תקשיב איך אתה מסיים משפטים.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
-
   .
-
-  #גבריות #גרושים #פרקב #mindset #divorcedmen'
+  #גבריות #גרושים #פרקב #mindset #divorcedmen
 slides: []
 reel:
   lines:
@@ -31,4 +30,14 @@ source:
   section: הקול שלך מספר עליך
 format: null
 pillar: status
-status: queued
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
