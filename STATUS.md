@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-16-card-high-school-crush` at 2026-11-16 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/100 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -14,7 +14,7 @@
 | 2026-11-17 | `2026-11-17-card-generous` | ✅ | rendered | — | — |
 | 2026-11-17 | `2026-11-17-card-voice-drops` | ✅ | rendered | — | — |
 | 2026-11-16 | `2026-11-16-card-high-school-crush` | ✅ | rendered | — | — |
-| 2026-11-16 | `2026-11-16-waiting-vs-living` | ✅ | publishing | — | — |
+| 2026-11-16 | `2026-11-16-waiting-vs-living` | ✅ | published | [link](https://www.instagram.com/p/Dfy635Pm69h/) | — |
 | 2026-11-15 | `2026-11-15-unpopular-steady` | ✅ | published | [link](https://www.instagram.com/reel/DfxamwZDmd_/) | — |
 | 2026-11-14 | `2026-11-14-card-who-reacts` | ✅ | published | [link](https://www.instagram.com/reel/Dfu12edAZ9s/) | — |
 | 2026-11-14 | `2026-11-14-dont-cancel-six` | ✅ | published | [link](https://www.instagram.com/p/Dft0pJqm683/) | — |
