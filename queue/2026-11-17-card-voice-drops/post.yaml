@@ -33,10 +33,10 @@ pillar: status
 approved_hash: sha256:751ecb2bb0b74dae8d87469509a9c59cc3f319b2e732d4c77a3b34a5d97ee2fb
 approved_by: auto
 approved_at: '2026-11-15T18:38:08+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18106202039034141'
+permalink: https://www.instagram.com/reel/Df1flybEs-Z/
+published_at: 2026-11-17T08:24:13+0000
 error: null
 story_id: null
 story_error: null
