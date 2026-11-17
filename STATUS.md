@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-18-card-skip-it` at 2026-11-18 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -11,7 +11,7 @@
 | 2026-11-19 | `2026-11-19-card-unfair-weapon` | ✅ | rendered | — | — |
 | 2026-11-18 | `2026-11-18-admissions-board` | ✅ | rendered | — | — |
 | 2026-11-18 | `2026-11-18-card-skip-it` | ✅ | rendered | — | — |
-| 2026-11-17 | `2026-11-17-card-generous` | ✅ | publishing | — | — |
+| 2026-11-17 | `2026-11-17-card-generous` | ✅ | published | [link](https://www.instagram.com/reel/Df2kYb4jsa9/) | — |
 | 2026-11-17 | `2026-11-17-card-voice-drops` | ✅ | published | [link](https://www.instagram.com/reel/Df1flybEs-Z/) | — |
 | 2026-11-16 | `2026-11-16-card-high-school-crush` | ✅ | published | [link](https://www.instagram.com/reel/Dfz_aOoDZ4y/) | — |
 | 2026-11-16 | `2026-11-16-waiting-vs-living` | ✅ | published | [link](https://www.instagram.com/p/Dfy635Pm69h/) | — |
