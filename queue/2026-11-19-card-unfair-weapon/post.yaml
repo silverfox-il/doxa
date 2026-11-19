@@ -33,10 +33,10 @@ pillar: body
 approved_hash: sha256:eff93f5d8de42c148f957b79935cb12e138ee311d112c2a2e5a652a3926a3475
 approved_by: auto
 approved_at: '2026-11-15T18:38:08+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18107919296003333'
+permalink: https://www.instagram.com/reel/Df6nM3-gp_e/
+published_at: 2026-11-19T08:06:55+0000
 error: null
 story_id: null
 story_error: null

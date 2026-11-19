@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-19-card-train` at 2026-11-19 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -22,7 +22,7 @@
 | 2026-11-20 | `2026-11-20-card-time-tells` | — | queued | — | — |
 | 2026-11-20 | `2026-11-20-card-hunger-inside` | — | queued | — | — |
 | 2026-11-19 | `2026-11-19-card-train` | ✅ | rendered | — | — |
-| 2026-11-19 | `2026-11-19-card-unfair-weapon` | ✅ | publishing | — | — |
+| 2026-11-19 | `2026-11-19-card-unfair-weapon` | ✅ | published | [link](https://www.instagram.com/reel/Df6nM3-gp_e/) | — |
 | 2026-11-18 | `2026-11-18-admissions-board` | ✅ | published | [link](https://www.instagram.com/reel/Df5HqZUDsJA/) | — |
 | 2026-11-18 | `2026-11-18-card-skip-it` | ✅ | published | [link](https://www.instagram.com/reel/Df4B_Jfiao0/) | — |
 | 2026-11-17 | `2026-11-17-card-generous` | ✅ | published | [link](https://www.instagram.com/reel/Df2kYb4jsa9/) | — |
