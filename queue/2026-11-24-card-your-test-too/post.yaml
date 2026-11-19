@@ -1,0 +1,25 @@
+id: 2026-11-24-card-your-test-too
+publish_at: 2026-11-24 10:00
+mode: reel
+pillar: second-round
+caption: |-
+  עכשיו מתחלף התפקיד, ועכשיו אתה זה שבודק.
+
+  זה מפורט בספר.
+  .
+  #גרושים #זוגיות #פרקב #גירושין #divorcedmen
+reel:
+  lines:
+  - עכשיו מתחלף התפקיד, ועכשיו אתה זה שבודק.
+  - רוב הגברים בגיל שלנו מדלגים על השלב הזה. למה? כי הם רעבים.
+  - בתוך חודש הם נותנים לה מפתח
+  - המבחן הזה הוא לא רק שלה. הוא גם שלך.
+  - אם אתה צף, היא תצוף.
+  music: nveravetyanmusic-rnb-hip-hop-149310.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 11.md
+  section: גם אתה עומד למבחן
+status: queued

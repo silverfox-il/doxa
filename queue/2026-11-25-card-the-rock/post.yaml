@@ -1,0 +1,25 @@
+id: 2026-11-25-card-the-rock
+publish_at: 2026-11-25 10:00
+mode: reel
+pillar: status
+caption: |-
+  היא לא רוצה לגדל עוד ילד. יש לה כבר.
+
+  זה מפורט בספר.
+  .
+  #גבריות #סילברפוקס #גרושים #פרקב #silverfox
+reel:
+  lines:
+  - היא לא רוצה לגדל עוד ילד. יש לה כבר.
+  - המקום שלך הוא הפוך. אתה הסלע.
+  - כשהיא צריכה עצה, היא שואלת אותך.
+  - להוביל זה לא לשלוט.
+  - אם אתה מפסיק להתפתח, מפסיק להשיג, מפסיק להיות מישהו שהיא גאה בו, אל תתפלא אם משהו בה מתקרר.
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 11.md
+  section: להוביל, לא להסתתר מאחוריה
+status: queued

@@ -1,0 +1,25 @@
+id: 2026-11-21-unpopular-separate-homes
+publish_at: 2026-11-21 20:00
+mode: reel
+pillar: second-round
+caption: |-
+  לא כל זוג בגיל הזה צריך לגור ביחד.
+
+  הכל כתוב בספר.
+  .
+  #גרושים #זוגיות #פרקב #גירושין #divorcedmen
+reel:
+  lines:
+  - לא כל זוג בגיל הזה צריך לגור ביחד.
+  - יש זוגות שחיים ככה שנים, כל אחד בבית שלו
+  - אתה מכיר אישה באמת רק כשאתם גרים תחת אותה קורת גג.
+  - המבחן האמיתי הוא הבית המשותף ביום רגיל, בשגרה, כשנגמר החלב ומישהו צריך לקום.
+  - אתה לא עובר לגור אצלה.
+  music: the_mountain-hip-hop-soul-317779.mp3
+  per_line: 2.2
+  hold: 4.2
+  video: night-drive-wheel.mp4
+source:
+  file: 11.md
+  section: לגור ביחד? לאט מאוד
+status: queued
