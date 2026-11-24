@@ -1,6 +1,6 @@
 id: 2026-11-20-card-hunger-inside
 publish_at: 2026-11-25 10:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   רוב הגברים מדברים עם אישה עם רעב בבטן.
@@ -29,9 +29,9 @@ source:
   section: לצחוק מבפנים
 format: null
 pillar: mind
-approved_hash: sha256:fc1be4f18c3bb174c14cb66f413b59bbf853555f6bbfe20cc00e1c7b502304a5
-approved_by: auto
-approved_at: '2026-11-24T20:53:49+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

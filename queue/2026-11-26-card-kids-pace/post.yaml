@@ -1,6 +1,6 @@
 id: 2026-11-26-card-kids-pace
 publish_at: 2026-12-01 20:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אישה חדשה לא פוגשת את הילדים שלך אחרי שלושה דייטים ולא אחרי חודש.
@@ -29,9 +29,9 @@ source:
   section: הקצב של הילדים, לא שלך
 format: null
 pillar: second-round
-approved_hash: sha256:487568e6c15a9be69d5e9df387f957608a3a8be7534cee4e48dbd8b7bbf8a254
-approved_by: auto
-approved_at: '2026-11-24T20:53:50+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
