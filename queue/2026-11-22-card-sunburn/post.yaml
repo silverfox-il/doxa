@@ -1,6 +1,6 @@
 id: 2026-11-22-card-sunburn
 publish_at: 2026-11-27 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הגוף לא משתנה מעבודה קלה, הוא לא משתנה מעבודה שהוא כבר רגיל אליה
@@ -30,9 +30,9 @@ source:
   section: שלושת השלבים של הזעזוע
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:7f600b45ff24fbede1f47ed155627627afdbd4e5e67d939232f50dc257a70e39
+approved_by: auto
+approved_at: '2026-11-24T21:00:46+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

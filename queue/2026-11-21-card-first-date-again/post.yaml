@@ -1,6 +1,6 @@
 id: 2026-11-21-card-first-date-again
 publish_at: 2026-11-26 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הפגישה הראשונה לא אמורה להיות מושלמת. היא אמורה לקרות.
@@ -29,9 +29,9 @@ source:
   section: הפגישה הראשונה אחרי עשרים שנה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c75572103a6f0bd0456712ad46b1b56b38b137b68ca5110ec9dbb098f23ea204
+approved_by: auto
+approved_at: '2026-11-24T21:00:46+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

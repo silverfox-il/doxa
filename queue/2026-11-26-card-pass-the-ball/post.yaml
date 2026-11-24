@@ -1,6 +1,6 @@
 id: 2026-11-26-card-pass-the-ball
 publish_at: 2026-12-01 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אחי, איך היא תישען לכיוונך אם אתה כבר נמצא לה בתוך הפרצוף?
@@ -29,9 +29,9 @@ source:
   section: תעביר לה את הכדור
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:456fe6bf838ebd0abfbe1fc59073390e4012197ffef7906711793d070c2e5b88
+approved_by: auto
+approved_at: '2026-11-24T21:00:47+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
