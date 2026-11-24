@@ -1,6 +1,6 @@
 id: 2026-11-21-unpopular-separate-homes
 publish_at: 2026-11-26 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   דעה לא פופולרית: בגיל שלנו לא כל זוג צריך לגור ביחד.
@@ -30,9 +30,9 @@ source:
   section: לגור ביחד? לאט מאוד
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:96ea25005847d2c8d1f0203a64e174ce206436ffdf0143e740c37185bf55b0ce
+approved_by: auto
+approved_at: '2026-11-24T21:11:12+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

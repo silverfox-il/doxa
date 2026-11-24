@@ -1,6 +1,6 @@
 id: 2026-11-21-card-first-date-again
 publish_at: 2026-11-26 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בפעם האחרונה שישבת מול אישה זרה בבר, הבירה עלתה תשעה שקלים.
@@ -30,9 +30,9 @@ source:
   section: הפגישה הראשונה אחרי עשרים שנה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6dbfdaa8f2cb811661160f6b3c74fb82abd0d2dd9971f47d2c72ea18083b1218
+approved_by: auto
+approved_at: '2026-11-24T21:11:12+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

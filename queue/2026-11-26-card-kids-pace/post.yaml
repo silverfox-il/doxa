@@ -1,6 +1,6 @@
 id: 2026-11-26-card-kids-pace
 publish_at: 2026-12-01 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   שלושה דייטים, ואתה כבר מושיב אותה בארוחת שישי עם הילדים.
@@ -30,9 +30,9 @@ source:
   section: הקצב של הילדים, לא שלך
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:eb33e81c7fe16d051890ab76bc66e2c6c05f76639450fed27fbcc3889472f56d
+approved_by: auto
+approved_at: '2026-11-24T21:11:13+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

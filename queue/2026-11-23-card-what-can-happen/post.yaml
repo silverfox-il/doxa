@@ -1,6 +1,6 @@
 id: 2026-11-23-card-what-can-happen
 publish_at: 2026-11-28 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "נכון, לגמרי, גם אני חושב ככה."
@@ -30,9 +30,9 @@ source:
   section: מה כבר יכול לקרות?
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c8a3533cffe5571936d18d184cf78a568ec5b5d5fc0bf2ffe82226bee18aec5b
+approved_by: auto
+approved_at: '2026-11-24T21:11:12+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

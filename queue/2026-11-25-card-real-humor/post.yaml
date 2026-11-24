@@ -1,6 +1,6 @@
 id: 2026-11-25-card-real-humor
 publish_at: 2026-11-30 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כאב גב כי ישנת לא נכון.
@@ -29,9 +29,9 @@ source:
   section: הומור של מי שכבר ראה כמה דברים
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0830e5c26c042bc162ca2919e302515f5e81852ea8b0c37e21c41db7fe5d00b5
+approved_by: auto
+approved_at: '2026-11-24T21:11:13+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

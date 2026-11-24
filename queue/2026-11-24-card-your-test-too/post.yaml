@@ -1,6 +1,6 @@
 id: 2026-11-24-card-your-test-too
 publish_at: 2026-11-29 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   חורף אחד לבד בדירה שכורה, עם מקרר ריק.
@@ -30,9 +30,9 @@ source:
   section: גם אתה עומד למבחן
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:93f63de9c99465864eea925d9ef86ccc1c2afa6850c644ae89141384ecde73d0
+approved_by: auto
+approved_at: '2026-11-24T21:11:12+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

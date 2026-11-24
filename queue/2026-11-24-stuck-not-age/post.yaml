@@ -1,6 +1,6 @@
 id: 2026-11-24-stuck-not-age
 publish_at: 2026-11-29 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   חמש וחצי בבוקר, קפה ביד, והמוט לא זז בחזרה הרביעית.
@@ -30,9 +30,9 @@ source:
   section: הרגע שבו זה נתקע
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:49c3987bc4144b0ad903719f33b7d3843ff07c2e868c983d0083aac1b5f06af9
+approved_by: auto
+approved_at: '2026-11-24T21:11:13+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

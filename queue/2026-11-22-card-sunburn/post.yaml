@@ -1,6 +1,6 @@
 id: 2026-11-22-card-sunburn
 publish_at: 2026-11-27 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   חצי שעה בשמש זה שיזוף. שש שעות זה כוויה עם שלפוחיות.
@@ -30,9 +30,9 @@ source:
   section: שלושת השלבים של הזעזוע
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:1bad75e4f45a085e393c7166115a8f2cca870a2e8795a974b0c928067ff6c6f5
+approved_by: auto
+approved_at: '2026-11-24T21:11:12+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
