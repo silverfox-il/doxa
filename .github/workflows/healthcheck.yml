@@ -63,6 +63,22 @@ jobs:
             gh issue create --title "$title" --body "@the_silver_fox_men has ${followers} followers. Lift the book block in config/rules.yaml (soft caption mentions only, no sale link)."
           fi
 
+      - name: Queue stall
+        # 2026-11-19: a render run hung and was cancelled, nothing was approved,
+        # and nothing published for 6 days without any alert. Fail (and alert)
+        # when no post has published in the last 36 hours.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since="$(date -u -d '36 hours ago' +%Y-%m-%dT%H:%M:%SZ)"
+          n="$(gh api "repos/${GITHUB_REPOSITORY}/commits?sha=main&since=${since}&per_page=100" \
+                --jq '[.[] | select(.commit.message | test("^publish: .* published"))] | length')"
+          echo "posts published in the last 36h: ${n}"
+          if [ "${n:-0}" -eq 0 ]; then
+            echo "QUEUE STALL: nothing published since ${since}. Check the last render run and approved_at in queue/." | tee -a check.log
+            exit 1
+          fi
+
       - name: Alert the owner
         if: failure()
         env:
