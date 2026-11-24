@@ -1,0 +1,25 @@
+id: 2026-11-28-card-job-interview
+publish_at: "2026-11-28 20:00"
+mode: reel
+pillar: dating
+caption: |-
+  אתה מושיב אותה מולך, עם שולחן באמצע.
+
+  זה מפורט בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - "אתה מושיב אותה מולך, עם שולחן באמצע."
+  - "מזל טוב, הזמנת אותה לראיון עבודה."
+  - "שב לידה. על הבר, על ספסל, על ספה בפינה."
+  - "הברכיים נוגעות בלי שאף אחד התכוון, ואפשר ללחוש."
+  - "אותן שטויות בדיוק נשמעות מהצד הרבה יותר מיניות."
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 02.md
+  section: "שב לידה"
+status: queued
