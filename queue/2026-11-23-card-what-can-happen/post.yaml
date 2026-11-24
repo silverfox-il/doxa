@@ -1,6 +1,6 @@
 id: 2026-11-23-card-what-can-happen
 publish_at: 2026-11-29 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   מה כבר יכול לקרות?
@@ -30,9 +30,9 @@ source:
   section: מה כבר יכול לקרות?
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:913ec869fc91854442991f61c1934c453022968250bb8e0958b5d5e72a64a1c8
+approved_by: auto
+approved_at: '2026-11-24T20:53:50+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

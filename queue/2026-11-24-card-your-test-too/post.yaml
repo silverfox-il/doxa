@@ -1,6 +1,6 @@
 id: 2026-11-24-card-your-test-too
 publish_at: 2026-11-30 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   עכשיו מתחלף התפקיד, ועכשיו אתה זה שבודק.
@@ -29,9 +29,9 @@ source:
   section: גם אתה עומד למבחן
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:1409ef59af5f8cb9d7822065d632f87123c3c6ef59cb74aba4de7b5919f49e90
+approved_by: auto
+approved_at: '2026-11-24T20:53:50+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

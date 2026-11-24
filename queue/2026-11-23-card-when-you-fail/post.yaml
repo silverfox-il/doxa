@@ -1,6 +1,6 @@
 id: 2026-11-23-card-when-you-fail
 publish_at: 2026-11-29 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   בוא נהיה כנים, אתה תיכשל.
@@ -30,9 +30,9 @@ source:
   section: כשנכשלת, וזה יקרה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:620854e4f883904d1919ac87ec27eae58332c8968bd577b86946caab79f0ebc0
+approved_by: auto
+approved_at: '2026-11-24T20:53:50+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

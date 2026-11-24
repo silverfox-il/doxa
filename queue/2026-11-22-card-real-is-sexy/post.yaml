@@ -1,6 +1,6 @@
 id: 2026-11-22-card-real-is-sexy
 publish_at: 2026-11-28 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   מה שהכי נדיר, ולכן הכי מושך, זה אמיתי.
@@ -29,9 +29,9 @@ source:
   section: אמיתי זה הסקסי החדש
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:af9ffb5d8d8e1f931319903ceb687178853df75b68abf66bd4040ec6f9f1d4a9
+approved_by: auto
+approved_at: '2026-11-24T20:53:49+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

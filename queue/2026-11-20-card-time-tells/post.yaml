@@ -1,6 +1,6 @@
 id: 2026-11-20-card-time-tells
 publish_at: 2026-11-26 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הכלי הראשון להגנה הוא לא מסמך, הוא הזמן.
@@ -30,9 +30,9 @@ source:
   section: הבדיקה הכי חשובה לוקחת זמן
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:be18522d483abfc5d43ae3922cc31e2ecc7f0e342ddff808367883dea288a523
+approved_by: auto
+approved_at: '2026-11-24T20:53:49+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

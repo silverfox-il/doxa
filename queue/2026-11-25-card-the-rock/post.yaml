@@ -1,6 +1,6 @@
 id: 2026-11-25-card-the-rock
 publish_at: 2026-12-01 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא לא רוצה לגדל עוד ילד. יש לה כבר.
@@ -29,9 +29,9 @@ source:
   section: להוביל, לא להסתתר מאחוריה
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:13fac9559fbc09ec037b198e14be996e04b748d80d883cc24ab93ae4ba4c4497
+approved_by: auto
+approved_at: '2026-11-24T20:53:50+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

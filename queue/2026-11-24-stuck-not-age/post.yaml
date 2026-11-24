@@ -1,6 +1,6 @@
 id: 2026-11-24-stuck-not-age
 publish_at: 2026-11-30 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   ואז, יום אחד, זה נתקע.
@@ -29,9 +29,9 @@ source:
   section: הרגע שבו זה נתקע
 format: null
 pillar: body
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:751d98c0dd98e6c6f1e279d381c40dc98835a91cf86f9859a868963e043baf57
+approved_by: auto
+approved_at: '2026-11-24T20:53:50+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
