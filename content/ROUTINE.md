@@ -80,11 +80,38 @@ source:
 status: queued
 ```
 
+**How a card is written (owner rejected the week of 11-20 on 2026-11-24: "not
+worded well at all"):** the routine had copied book sentences one after another.
+The lines did not follow each other, some pointed at nothing ("כל הודעה כזו",
+"הבחור הזה"), and some were about "רוב הגברים" instead of you. The cards that got
+the most views and were approved (`2026-11-14-card-who-reacts`,
+`2026-11-16-card-high-school-crush`, `2026-11-19-card-train`) are built like this:
+
+1. **Line 1 is a moment the reader has lived, with one small real detail** ("השעה
+   23:40 ואתה בודק בפעם הרביעית אם היא ראתה את הסטורי.", "היא הבריזה לך פעמיים.").
+   Use a sharp reversal claim instead only if it is concrete. Never an abstraction
+   such as "מה שהכי נדיר הוא אמיתי".
+2. **Write to you (אתה), never about "רוב הגברים", "גברים" or "הם".** A weak man
+   may appear once as a contrast ("גבר רעב מתכווץ"), not as the subject.
+3. **Each line follows from the one before it, like a man telling a friend.** If two
+   lines can swap places, or a line needs the book to be understood, rewrite it.
+4. **Use short lines with rhythm:** mirror pairs ("היא חייכה, אתה על הגג. / היא לא
+   ענתה, אתה מתרסק."), questions answered at once, or 2 or 3 word sentences in a row.
+5. **The last line lands:** a verdict, a line he can say, or one move. It must not
+   explain the joke.
+6. **Take from the book** the idea, the details (the 9 shekel beer, the photos with
+   the ex on the fridge) and its quips in quotes. Never copy its explaining sentences
+   in a row. Never balance the sides ("גבר או אישה").
+7. **Every line ends with a full stop or a question mark.** Use "זה לא X. זה Y." at
+   most twice a week. Check the validator's banned words (for example מכירה, קורס).
+8. Before committing, read every card aloud next to the three approved ones above.
+   If it does not sound the same, rewrite it.
+
 **Text reel on footage**: the same reel post with `video:` and no `style`.
 - The clip must have **no faces**: a night drive, hands on a wheel, a watch, morning
   coffee, a gym from behind, a walk alone on the beach, a silhouette.
 - Up to 6 lines (the validator caps plain reels at 6).
-- Timing: `per_line 2.2`, `hold = 13 - 2.2 x (lines - 1)`.
+- Timing: `per_line 2.0`, `hold 4.2`, at most 6 lines (the reel must last 10 to 15 s).
 - Every clip is used once. If no unused faceless clip fits, add a free Pexels clip
   to `doxa-private/video/` and credit it in `video/CREDITS.md`. If you cannot, use
   a card reel instead.
