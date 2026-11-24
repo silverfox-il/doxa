@@ -1,13 +1,14 @@
 id: 2026-11-22-card-real-is-sexy
 publish_at: 2026-11-28 20:00
+approved: false
 mode: reel
-pillar: status
 caption: |-
   מה שהכי נדיר, ולכן הכי מושך, זה אמיתי.
 
   הכל כתוב בספר.
   .
   #גבריות #סילברפוקס #גרושים #פרקב #silverfox
+slides: []
 reel:
   lines:
   - מה שהכי נדיר, ולכן הכי מושך, זה אמיתי.
@@ -18,8 +19,24 @@ reel:
   music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: אמיתי זה הסקסי החדש
-status: queued
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

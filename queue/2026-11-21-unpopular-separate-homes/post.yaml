@@ -1,13 +1,14 @@
 id: 2026-11-21-unpopular-separate-homes
 publish_at: 2026-11-27 20:00
+approved: false
 mode: reel
-pillar: second-round
 caption: |-
   לא כל זוג בגיל הזה צריך לגור ביחד.
 
   הכל כתוב בספר.
   .
   #גרושים #זוגיות #פרקב #גירושין #divorcedmen
+slides: []
 reel:
   lines:
   - לא כל זוג בגיל הזה צריך לגור ביחד.
@@ -18,8 +19,24 @@ reel:
   music: the_mountain-hip-hop-soul-317779.mp3
   per_line: 2.2
   hold: 4.2
+  stories: null
+  style: null
   video: night-drive-wheel.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 11.md
   section: לגור ביחד? לאט מאוד
-status: queued
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

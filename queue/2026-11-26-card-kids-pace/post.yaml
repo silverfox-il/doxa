@@ -1,13 +1,14 @@
 id: 2026-11-26-card-kids-pace
 publish_at: 2026-12-02 20:00
+approved: false
 mode: reel
-pillar: second-round
 caption: |-
   אישה חדשה לא פוגשת את הילדים שלך אחרי שלושה דייטים ולא אחרי חודש.
 
   הכל כתוב בספר.
   .
   #גרושים #זוגיות #פרקב #גירושין #divorcedmen
+slides: []
 reel:
   lines:
   - אישה חדשה לא פוגשת את הילדים שלך אחרי שלושה דייטים ולא אחרי חודש.
@@ -18,8 +19,24 @@ reel:
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 11.md
   section: הקצב של הילדים, לא שלך
-status: queued
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

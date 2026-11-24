@@ -1,13 +1,14 @@
 id: 2026-11-21-card-first-date-again
 publish_at: 2026-11-27 10:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   הפגישה הראשונה לא אמורה להיות מושלמת. היא אמורה לקרות.
 
   זה מפורט בספר.
   .
   #גרושים #דייטינג #היכרויות #פרקב #datingafterdivorce
+slides: []
 reel:
   lines:
   - הפגישה הראשונה לא אמורה להיות מושלמת. היא אמורה לקרות.
@@ -18,8 +19,24 @@ reel:
   music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: הפגישה הראשונה אחרי עשרים שנה
-status: queued
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

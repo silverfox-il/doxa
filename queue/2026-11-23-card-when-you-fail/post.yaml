@@ -1,13 +1,14 @@
 id: 2026-11-23-card-when-you-fail
 publish_at: 2026-11-29 10:00
+approved: false
 mode: reel
-pillar: mind
 caption: |-
   בוא נהיה כנים, אתה תיכשל.
 
   זה מפורט בספר.
   .
   #גבריות #ביטחוןעצמי #גרושים #mindset #divorcedmen
+slides: []
 reel:
   lines:
   - בוא נהיה כנים, אתה תיכשל.
@@ -19,8 +20,24 @@ reel:
   music: gr0za-rnb-rnb-type-beat-561707.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: כשנכשלת, וזה יקרה
-status: queued
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

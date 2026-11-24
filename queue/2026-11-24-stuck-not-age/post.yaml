@@ -1,13 +1,14 @@
 id: 2026-11-24-stuck-not-age
 publish_at: 2026-11-30 20:00
+approved: false
 mode: reel
-pillar: body
 caption: |-
   ואז, יום אחד, זה נתקע.
 
   הכל כתוב בספר.
   .
   #כושר #חדרכושר #גבריות #גרושים #fitnessover40
+slides: []
 reel:
   lines:
   - ואז, יום אחד, זה נתקע.
@@ -18,8 +19,24 @@ reel:
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 2.2
   hold: 4.2
+  stories: null
+  style: null
   video: man-runner-seafront.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 08.md
   section: הרגע שבו זה נתקע
-status: queued
+format: null
+pillar: body
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
