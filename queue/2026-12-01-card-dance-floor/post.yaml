@@ -1,26 +1,43 @@
 id: 2026-12-01-card-dance-floor
-publish_at: "2026-12-01 20:00"
+publish_at: 2026-12-01 20:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   הדי ג'יי שם שנות התשעים, והיא על הרחבה עם החברות.
 
   זה מפורט בספר.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "הדי ג'יי שם שנות התשעים, והיא על הרחבה עם החברות."
-  - "ואתה קופץ שם כמו ילד בבר מצווה. מחר בבוקר הגב."
-  - "גבר שמתחרה בה על אנרגיה נראה כמו ליצן של אירועים."
-  - "קצב שלך. עיניים עליה. ריקוד אחד או שניים."
-  - "\"בואי נשתה משהו, אני כבר לא שומע את עצמי.\""
-  - "הרחבה היא נקודת מפגש, לא נקודת סיום."
+  - הדי ג'יי שם שנות התשעים, והיא על הרחבה עם החברות.
+  - ואתה קופץ שם כמו ילד בבר מצווה. מחר בבוקר הגב.
+  - גבר שמתחרה בה על אנרגיה נראה כמו ליצן של אירועים.
+  - קצב שלך. עיניים עליה. ריקוד אחד או שניים.
+  - '"בואי נשתה משהו, אני כבר לא שומע את עצמי."'
+  - הרחבה היא נקודת מפגש, לא נקודת סיום.
   music: soulprodmusic-smoke-143172.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 06.md
-  section: "רחבת הריקודים בחתונה"
-status: queued
+  section: רחבת הריקודים בחתונה
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

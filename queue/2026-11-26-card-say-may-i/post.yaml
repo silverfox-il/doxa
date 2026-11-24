@@ -1,25 +1,42 @@
 id: 2026-11-26-card-say-may-i
-publish_at: "2026-11-26 10:00"
+publish_at: 2026-11-26 10:00
+approved: false
 mode: reel
-pillar: mind
 caption: |-
   "אפשר לנשק אותך? את לא תכעסי?"
 
   תייג חבר שצריך לשמוע את זה.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "\"אפשר לנשק אותך? את לא תכעסי?\""
-  - "אחי, הרגע הרגת את כל המתח שהיה בשולחן."
-  - "אתה לא מבקש בקול מתחנן. ואתה גם לא קופץ עליה."
-  - "אתה מתקרב חצי מהדרך, לאט, ועוצר."
-  - "את החצי השני היא סוגרת. ואם היא זזה אחורה, גם זו תשובה."
+  - '"אפשר לנשק אותך? את לא תכעסי?"'
+  - אחי, הרגע הרגת את כל המתח שהיה בשולחן.
+  - אתה לא מבקש בקול מתחנן. ואתה גם לא קופץ עליה.
+  - אתה מתקרב חצי מהדרך, לאט, ועוצר.
+  - את החצי השני היא סוגרת. ואם היא זזה אחורה, גם זו תשובה.
   music: mondamusic-dark-trap-491674.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
-  section: "הנשיקה"
-status: queued
+  section: הנשיקה
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

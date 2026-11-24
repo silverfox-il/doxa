@@ -1,25 +1,42 @@
 id: 2026-11-27-card-cracked-you
-publish_at: "2026-11-27 10:00"
+publish_at: 2026-11-27 10:00
+approved: false
 mode: reel
-pillar: second-round
 caption: |-
   התלבשת, התבשמת, נסעת. ובשש וחצי: "סליחה, קרה משהו, נדחה?"
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "התלבשת, התבשמת, נסעת. ובשש וחצי: \"סליחה, קרה משהו, נדחה?\""
-  - "זה לא מזל רע, אחי."
-  - "או שלחצת על אחת שענתה לך בחצאי משפטים."
-  - "או ששלחת לה כמה אתה מחכה, כמה היא מיוחדת."
-  - "ברגע שהיא הרגישה שפיצחה אותך, נגמרה הסיבה לצאת מהבית ביום רביעי."
+  - 'התלבשת, התבשמת, נסעת. ובשש וחצי: "סליחה, קרה משהו, נדחה?"'
+  - זה לא מזל רע, אחי.
+  - או שלחצת על אחת שענתה לך בחצאי משפטים.
+  - או ששלחת לה כמה אתה מחכה, כמה היא מיוחדת.
+  - ברגע שהיא הרגישה שפיצחה אותך, נגמרה הסיבה לצאת מהבית ביום רביעי.
   music: the_mountain-hip-hop-soul-317779.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
-  section: "למה הן מבריזות, ואיך מונעים את זה"
-status: queued
+  section: למה הן מבריזות, ואיך מונעים את זה
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

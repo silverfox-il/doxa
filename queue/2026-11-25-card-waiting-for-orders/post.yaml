@@ -1,26 +1,43 @@
 id: 2026-11-25-card-waiting-for-orders
-publish_at: "2026-11-25 10:00"
+publish_at: 2026-11-25 10:00
+approved: false
 mode: reel
-pillar: status
 caption: |-
   דייט שלישי. בחרת בר, הזמנת, הצחקת, חצית איתה את הכביש יד ביד.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "דייט שלישי. בחרת בר, הזמנת, הצחקת, חצית איתה את הכביש יד ביד."
-  - "ואז הגעתם אליך, ושכבת על הגב עם חיוך מבויש. מחכה להוראות."
-  - "על הפנים, לא?"
-  - "כל היום היא מחליטה, מארגנת, זוכרת מי צריך לקחת את מי מחוג."
-  - "במיטה היא רוצה שמישהו אחר יחזיק את ההגה."
-  - "הדלת נסגרת? אתה מנשק ראשון. אתה קובע את הקצב."
+  - דייט שלישי. בחרת בר, הזמנת, הצחקת, חצית איתה את הכביש יד ביד.
+  - ואז הגעתם אליך, ושכבת על הגב עם חיוך מבויש. מחכה להוראות.
+  - על הפנים, לא?
+  - כל היום היא מחליטה, מארגנת, זוכרת מי צריך לקחת את מי מחוג.
+  - במיטה היא רוצה שמישהו אחר יחזיק את ההגה.
+  - הדלת נסגרת? אתה מנשק ראשון. אתה קובע את הקצב.
   music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 07.md
-  section: "הטעות הראשונה: לשכב על הגב ולחכות להוראות"
-status: queued
+  section: 'הטעות הראשונה: לשכב על הגב ולחכות להוראות'
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

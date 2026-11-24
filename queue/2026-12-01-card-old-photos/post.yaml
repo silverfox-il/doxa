@@ -1,25 +1,42 @@
 id: 2026-12-01-card-old-photos
-publish_at: "2026-12-01 10:00"
+publish_at: 2026-12-01 10:00
+approved: false
 mode: reel
-pillar: mind
 caption: |-
   היא נכנסת בדלת, ואתה מבין שהתמונות היו מלפני שבע שנים.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "היא נכנסת בדלת, ואתה מבין שהתמונות היו מלפני שבע שנים."
-  - "לא עושים פרצוף. לא בורחים לטלפון. היא הגיעה, והיא בן אדם."
-  - "כוס אחת. ארבעים דקות."
-  - "\"היה נחמד להכיר, אני צריך לזוז.\""
-  - "ובפעם הבאה? שיחת וידאו לפני. נקודה."
+  - היא נכנסת בדלת, ואתה מבין שהתמונות היו מלפני שבע שנים.
+  - לא עושים פרצוף. לא בורחים לטלפון. היא הגיעה, והיא בן אדם.
+  - כוס אחת. ארבעים דקות.
+  - '"היה נחמד להכיר, אני צריך לזוז."'
+  - ובפעם הבאה? שיחת וידאו לפני. נקודה.
   music: gr0za-rnb-rnb-type-beat-561707.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
-  section: "כשהיא לא נראית כמו בתמונות"
-status: queued
+  section: כשהיא לא נראית כמו בתמונות
+format: null
+pillar: mind
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

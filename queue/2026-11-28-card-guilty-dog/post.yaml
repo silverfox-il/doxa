@@ -1,25 +1,42 @@
 id: 2026-11-28-card-guilty-dog
-publish_at: "2026-11-28 10:00"
+publish_at: 2026-11-28 10:00
+approved: false
 mode: reel
-pillar: status
 caption: |-
   העיניים שלך בורחות כל פעם שהיא מסתכלת עליך.
 
   שלח את זה לחבר שחוזר עכשיו למשחק.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "העיניים שלך בורחות כל פעם שהיא מסתכלת עליך."
-  - "היא קולטת את זה בשנייה. היא קוראת גברים מגיל אפס."
-  - "זה בדיוק הכלב שתפסת על הספה. ראש למטה, עיניים בורחות."
-  - "מבט ישיר, רגוע, שנשאר. לא בהייה של רוצח סדרתי."
-  - "ובמיטה מבט כזה שווה יותר מאלף מחמאות."
+  - העיניים שלך בורחות כל פעם שהיא מסתכלת עליך.
+  - היא קולטת את זה בשנייה. היא קוראת גברים מגיל אפס.
+  - זה בדיוק הכלב שתפסת על הספה. ראש למטה, עיניים בורחות.
+  - מבט ישיר, רגוע, שנשאר. לא בהייה של רוצח סדרתי.
+  - ובמיטה מבט כזה שווה יותר מאלף מחמאות.
   music: soulprodmusic-smoke-143172.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 07.md
-  section: "הטעות החמישית: להוריד את העיניים"
-status: queued
+  section: 'הטעות החמישית: להוריד את העיניים'
+format: null
+pillar: status
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

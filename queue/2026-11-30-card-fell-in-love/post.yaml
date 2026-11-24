@@ -1,25 +1,42 @@
 id: 2026-11-30-card-fell-in-love
-publish_at: "2026-11-30 10:00"
+publish_at: 2026-11-30 10:00
+approved: false
 mode: reel
-pillar: second-round
 caption: |-
   "היה מדהים, את מיוחדת, לא הפסקתי לחשוב עלייך כל הלילה."
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "\"היה מדהים, את מיוחדת, לא הפסקתי לחשוב עלייך כל הלילה.\""
-  - "יופי. עכשיו היא יודעת שהתאהבת. והיא עוד לא."
-  - "הודעה אחת, קצרה, באותו יום, עם קריצה לרגע מהערב."
-  - "\"המרפסת עוד מתגעגעת.\""
-  - "ואז אתה חוזר לחיים שלך."
+  - '"היה מדהים, את מיוחדת, לא הפסקתי לחשוב עלייך כל הלילה."'
+  - יופי. עכשיו היא יודעת שהתאהבת. והיא עוד לא.
+  - הודעה אחת, קצרה, באותו יום, עם קריצה לרגע מהערב.
+  - '"המרפסת עוד מתגעגעת."'
+  - ואז אתה חוזר לחיים שלך.
   music: vaitsez-dark-dark-beat-620108.mp3
   per_line: 1.0
   hold: 9.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
-  section: "ההודעה של למחרת"
-status: queued
+  section: ההודעה של למחרת
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

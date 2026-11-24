@@ -1,26 +1,43 @@
 id: 2026-11-25-card-straight-line
-publish_at: "2026-11-25 20:00"
+publish_at: 2026-11-25 20:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   היא חייכה פעמיים, ועומדת עם כוס יין ליד שולחן הקינוחים.
 
   זה מפורט בספר.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "היא חייכה פעמיים, ועומדת עם כוס יין ליד שולחן הקינוחים."
-  - "ואתה עושה סיבוב מסביב לשולחן, שייראה במקרה."
-  - "כולם רואים שזה לא במקרה, אחי."
-  - "קו ישר. גב ישר. ידיים מחוץ לכיסים."
-  - "מגיע קצת מהצד, אף פעם לא מאחור."
-  - "ומסתכל לה בעיניים. לא על הכוס, לא על הנעליים שלך."
+  - היא חייכה פעמיים, ועומדת עם כוס יין ליד שולחן הקינוחים.
+  - ואתה עושה סיבוב מסביב לשולחן, שייראה במקרה.
+  - כולם רואים שזה לא במקרה, אחי.
+  - קו ישר. גב ישר. ידיים מחוץ לכיסים.
+  - מגיע קצת מהצד, אף פעם לא מאחור.
+  - ומסתכל לה בעיניים. לא על הכוס, לא על הנעליים שלך.
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 06.md
-  section: "ההליכה אליה"
-status: queued
+  section: ההליכה אליה
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

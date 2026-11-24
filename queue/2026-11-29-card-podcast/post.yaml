@@ -1,26 +1,43 @@
 id: 2026-11-29-card-podcast
-publish_at: "2026-11-29 20:00"
+publish_at: 2026-11-29 20:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   הקלטה של שלוש דקות על החיים, מהרכב, עם החלון פתוח.
 
   הכל כתוב בספר.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
-  - "הקלטה של שלוש דקות על החיים, מהרכב, עם החלון פתוח."
-  - "אחי, היא מקפלת כביסה. היא לא נרשמה להרצאה."
-  - "עשרים עד ארבעים שניות. בשקט. על משהו שהיא כתבה."
-  - "קול רגוע עם צחוק קטן בסוף המשפט עושה מה שעשר הודעות לא יעשו."
-  - "רק אל תשלח שבע ביום."
-  - "אף אחת לא רוצה לשכב עם פודקאסט."
+  - הקלטה של שלוש דקות על החיים, מהרכב, עם החלון פתוח.
+  - אחי, היא מקפלת כביסה. היא לא נרשמה להרצאה.
+  - עשרים עד ארבעים שניות. בשקט. על משהו שהיא כתבה.
+  - קול רגוע עם צחוק קטן בסוף המשפט עושה מה שעשר הודעות לא יעשו.
+  - רק אל תשלח שבע ביום.
+  - אף אחת לא רוצה לשכב עם פודקאסט.
   music: mondamusic-dark-trap-491674.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
-  section: "הקול שלך, הנשק שהצעירים לא יודעים להשתמש בו"
-status: queued
+  section: הקול שלך, הנשק שהצעירים לא יודעים להשתמש בו
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
