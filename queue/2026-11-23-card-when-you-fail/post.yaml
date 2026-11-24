@@ -1,6 +1,6 @@
 id: 2026-11-23-card-when-you-fail
 publish_at: 2026-11-28 10:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   כתבת לה משהו חמוץ. חמש דקות אחר כך אתה כבר מצטער.
@@ -30,9 +30,9 @@ source:
   section: כשנכשלת, וזה יקרה
 format: null
 pillar: mind
-approved_hash: sha256:1db7a8ffba231e437e512d3086398a85afab1ece650eceaf35254f3b8c63c290
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

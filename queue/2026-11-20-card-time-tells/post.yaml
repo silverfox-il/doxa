@@ -1,6 +1,6 @@
 id: 2026-11-20-card-time-tells
 publish_at: 2026-11-25 20:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   שלושה חודשים של אהבה בוערת, וכבר יש לה מפתח לדירה.
@@ -30,9 +30,9 @@ source:
   section: הבדיקה הכי חשובה לוקחת זמן
 format: null
 pillar: second-round
-approved_hash: sha256:dd9970b304fea9f17d50a8669cbbe5596bb958c5badd1566ce404b20c44e4989
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

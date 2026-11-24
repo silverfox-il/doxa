@@ -1,6 +1,6 @@
 id: 2026-11-25-card-the-rock
 publish_at: 2026-11-30 10:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   אתה בא אליה עם כל בעיה, ומחכה שתגיד לך מה לעשות.
@@ -30,9 +30,9 @@ source:
   section: להוביל, לא להסתתר מאחוריה
 format: null
 pillar: status
-approved_hash: sha256:97123b4ef95c0659f3cdae5ed892ccb8b764e1bae9a6bc77c703ba093bded1ae
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-11-20-card-hunger-inside
 publish_at: 2026-11-25 10:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   היא אמרה "אני בזוגיות, סליחה".
@@ -29,9 +29,9 @@ source:
   section: לצחוק מבפנים
 format: null
 pillar: mind
-approved_hash: sha256:36a446961a315cb0dd7ba40f8f5603545b204dcd6a400dcec18b0966803defb2
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

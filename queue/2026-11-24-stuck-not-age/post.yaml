@@ -1,6 +1,6 @@
 id: 2026-11-24-stuck-not-age
 publish_at: 2026-11-29 20:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   חמש וחצי בבוקר, קפה ביד, והמוט לא זז בחזרה הרביעית.
@@ -12,7 +12,7 @@ slides: []
 reel:
   lines:
   - חמש וחצי בבוקר, קפה ביד, והמוט לא זז בחזרה הרביעית.
-  - "גם ביום רביעי. ביום שישי הכתף מזמזמת, ואתה חושב: זהו, זה הגיל."
+  - 'גם ביום רביעי. ביום שישי הכתף מזמזמת, ואתה חושב: זהו, זה הגיל.'
   - זה לא הגיל. עלית שלב.
   - מה שעבד אצל טירון כבר לא עובד. שלושה אימונים כבדים בשבוע ישרפו אותך.
   - אחד מעמיס. אחד מתאושש. אחד בודק.
@@ -30,9 +30,9 @@ source:
   section: הרגע שבו זה נתקע
 format: null
 pillar: body
-approved_hash: sha256:5f2b4edb1c5892a124e31177019b163097c5e9cba50353bf5f1f79ab1181db47
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null

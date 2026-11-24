@@ -1,6 +1,6 @@
 id: 2026-11-22-card-real-is-sexy
 publish_at: 2026-11-27 20:00
-approved: true
+approved: false
 mode: reel
 caption: |-
   תמונה מלפני עשר שנים מחזיקה בדיוק עד בית הקפה.
@@ -29,9 +29,9 @@ source:
   section: אמיתי זה הסקסי החדש
 format: null
 pillar: status
-approved_hash: sha256:196dffa7a29ccae70edf2484f3cb6f52cd07baa82beb84164019ad69923c10bb
-approved_by: auto
-approved_at: '2026-11-24T21:00:46+02:00'
+approved_hash: null
+approved_by: null
+approved_at: null
 status: rendered
 ig_media_id: null
 permalink: null
