@@ -107,6 +107,18 @@ the most views and were approved (`2026-11-14-card-who-reacts`,
 8. Before committing, read every card aloud next to the three approved ones above.
    If it does not sound the same, rewrite it.
 
+**Voice and topics (owner, 2026-11-24, overrides the calm tone of the brief):**
+"יותר עוקצני ובוטה כמו באוקטובר... דגש על טכניקות דייטינג בישראל כולל הכל, תפסיק להיות מנומס מדי, אני רוצה תוכן ויראלי".
+- Most cards are concrete dating technique from the book: approach, texting, voice
+  notes, the date, the kiss, logistics, sex. Use chapters 02, 06 and 07.
+- Jab the reader's mistake ("גאון.", "כל הכבוד, אלוף.", "מזל טוב, הזמנת אותה לראיון
+  עבודה.", "על הפנים, לא?"). End on the book's quip when it has one ("אף אחת לא
+  רוצה לשכב עם פודקאסט.").
+- Still in force: mask crude words, consent is a red line, no contempt for women
+  (the jab is aimed at the man), no exact ages.
+- Reference week: queue ids from `2026-11-25-card-waiting-for-orders` to
+  `2026-12-01-card-dance-floor`.
+
 **Text reel on footage**: the same reel post with `video:` and no `style`.
 - The clip must have **no faces**: a night drive, hands on a wheel, a watch, morning
   coffee, a gym from behind, a walk alone on the beach, a silhouette.
