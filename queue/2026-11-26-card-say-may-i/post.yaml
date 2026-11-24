@@ -1,6 +1,6 @@
 id: 2026-11-26-card-say-may-i
 publish_at: 2026-11-26 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אפשר לנשק אותך? את לא תכעסי?"
@@ -29,9 +29,9 @@ source:
   section: הנשיקה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:846ed7328060b4afdf5c85a9ce643c372e1c4011ae80b25a7d0ea91cdee2f357
+approved_by: auto
+approved_at: '2026-11-24T21:25:51+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

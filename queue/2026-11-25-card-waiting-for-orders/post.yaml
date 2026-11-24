@@ -1,6 +1,6 @@
 id: 2026-11-25-card-waiting-for-orders
 publish_at: 2026-11-25 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   דייט שלישי. בחרת בר, הזמנת, הצחקת, חצית איתה את הכביש יד ביד.
@@ -30,9 +30,9 @@ source:
   section: 'הטעות הראשונה: לשכב על הגב ולחכות להוראות'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bc0fa3ff133cc8c4f76ebe80d9c62e87b9dd7742fc06662e25e4c88c53c8d73b
+approved_by: auto
+approved_at: '2026-11-24T21:25:51+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

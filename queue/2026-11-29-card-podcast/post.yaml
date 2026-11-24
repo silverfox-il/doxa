@@ -1,6 +1,6 @@
 id: 2026-11-29-card-podcast
 publish_at: 2026-11-29 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הקלטה של שלוש דקות על החיים, מהרכב, עם החלון פתוח.
@@ -30,9 +30,9 @@ source:
   section: הקול שלך, הנשק שהצעירים לא יודעים להשתמש בו
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b84d55cdb6b610158b7646a003171f049351c914d5466ba0035b61e0c9526c80
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

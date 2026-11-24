@@ -1,6 +1,6 @@
 id: 2026-11-29-card-parking-lot
 publish_at: 2026-11-29 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   נשיקה בחניה, ונסיעה הביתה לבד. שוב.
@@ -30,9 +30,9 @@ source:
   section: לוגיסטיקה, המילה הכי לא סקסית שתעשה לך הכי הרבה סקס
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:dbedac2e3986d464ae84d07d05738b4310883d27d414ee27f35223b85beb12ec
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

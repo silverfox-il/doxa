@@ -1,6 +1,6 @@
 id: 2026-11-30-card-fell-in-love
 publish_at: 2026-11-30 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "היה מדהים, את מיוחדת, לא הפסקתי לחשוב עלייך כל הלילה."
@@ -29,9 +29,9 @@ source:
   section: ההודעה של למחרת
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bd23414bb37b468c71044ca59b4ee9a165528239f7e8a6a62b94b395fe1f2f1c
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

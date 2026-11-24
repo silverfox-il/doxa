@@ -1,6 +1,6 @@
 id: 2026-12-01-card-old-photos
 publish_at: 2026-12-01 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא נכנסת בדלת, ואתה מבין שהתמונות היו מלפני שבע שנים.
@@ -29,9 +29,9 @@ source:
   section: כשהיא לא נראית כמו בתמונות
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:f78218c218fc05cf0875947b2eb07db333930bbc7b839ea96db0be3b84e52f19
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

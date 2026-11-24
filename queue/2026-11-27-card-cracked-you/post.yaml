@@ -1,6 +1,6 @@
 id: 2026-11-27-card-cracked-you
 publish_at: 2026-11-27 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   התלבשת, התבשמת, נסעת. ובשש וחצי: "סליחה, קרה משהו, נדחה?"
@@ -29,9 +29,9 @@ source:
   section: למה הן מבריזות, ואיך מונעים את זה
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:daa667bcc1cc42eb54c5285688df04d21c36b8061a9ce5d527ec397336b32303
+approved_by: auto
+approved_at: '2026-11-24T21:25:51+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

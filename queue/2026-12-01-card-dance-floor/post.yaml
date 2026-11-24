@@ -1,6 +1,6 @@
 id: 2026-12-01-card-dance-floor
 publish_at: 2026-12-01 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הדי ג'יי שם שנות התשעים, והיא על הרחבה עם החברות.
@@ -30,9 +30,9 @@ source:
   section: רחבת הריקודים בחתונה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:0c38d8bd8284bc03fa7cfa5ee1a77b9b73336fb3f292e5ae720f6c3b7940ad2c
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

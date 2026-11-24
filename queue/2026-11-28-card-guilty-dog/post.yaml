@@ -1,6 +1,6 @@
 id: 2026-11-28-card-guilty-dog
 publish_at: 2026-11-28 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   העיניים שלך בורחות כל פעם שהיא מסתכלת עליך.
@@ -29,9 +29,9 @@ source:
   section: 'הטעות החמישית: להוריד את העיניים'
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c924465a64df1aa52f4d6b6a072963cb58ffca6596c1585b9dd834830667d5b2
+approved_by: auto
+approved_at: '2026-11-24T21:25:51+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

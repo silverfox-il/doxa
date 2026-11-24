@@ -1,6 +1,6 @@
 id: 2026-11-30-card-just-a-peek
 publish_at: 2026-11-30 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   הטלפון על השולחן, מסך למעלה.
@@ -29,9 +29,9 @@ source:
   section: הטלפון שלך
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c249b90fb29d515dc70a90757dcb74a7e25f6d31ab2fc176b26e82b860bcab81
+approved_by: auto
+approved_at: '2026-11-24T21:25:52+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

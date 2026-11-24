@@ -1,6 +1,6 @@
 id: 2026-11-25-card-straight-line
 publish_at: 2026-11-25 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא חייכה פעמיים, ועומדת עם כוס יין ליד שולחן הקינוחים.
@@ -30,9 +30,9 @@ source:
   section: ההליכה אליה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:cd499a5c272924fd9e738328ca2ba28e3f4cea179bf5f39c93467997e5b1fe30
+approved_by: auto
+approved_at: '2026-11-24T21:25:51+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
