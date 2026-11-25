@@ -33,10 +33,10 @@ pillar: status
 approved_hash: sha256:bc0fa3ff133cc8c4f76ebe80d9c62e87b9dd7742fc06662e25e4c88c53c8d73b
 approved_by: owner
 approved_at: '2026-11-24T21:41:26+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '17917382310492747'
+permalink: https://www.instagram.com/reel/DgKF8JjqG_1/
+published_at: 2026-11-25T08:24:08+0000
 error: null
 story_id: null
 story_error: null

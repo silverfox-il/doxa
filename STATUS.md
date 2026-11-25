@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-25-card-straight-line` at 2026-11-25 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 0/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -20,7 +20,7 @@
 | 2026-11-26 | `2026-11-26-card-caught-watching` | ✅ | rendered | — | — |
 | 2026-11-26 | `2026-11-26-card-say-may-i` | ✅ | rendered | — | — |
 | 2026-11-25 | `2026-11-25-card-straight-line` | ✅ | rendered | — | — |
-| 2026-11-25 | `2026-11-25-card-waiting-for-orders` | ✅ | publishing | — | — |
+| 2026-11-25 | `2026-11-25-card-waiting-for-orders` | ✅ | published | [link](https://www.instagram.com/reel/DgKF8JjqG_1/) | — |
 | 2026-11-19 | `2026-11-19-card-train` | ✅ | published | [link](https://www.instagram.com/reel/Df7uwcvlU7q/) | — |
 | 2026-11-19 | `2026-11-19-card-unfair-weapon` | ✅ | published | [link](https://www.instagram.com/reel/Df6nM3-gp_e/) | — |
 | 2026-11-18 | `2026-11-18-admissions-board` | ✅ | published | [link](https://www.instagram.com/reel/Df5HqZUDsJA/) | — |
