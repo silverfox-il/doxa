@@ -1,0 +1,26 @@
+id: 2026-12-08-card-before-you-fall
+publish_at: "2026-12-08 10:00"
+mode: reel
+pillar: mind
+caption: |-
+  "טוב, אני משחרר אותך, לפני שתתאהבי".
+
+  הכל כתוב בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - '"טוב, אני משחרר אותך, לפני שתתאהבי".'
+  - היא צוחקת, ונוסעת עם הרגע הכי טוב של הערב בראש, לא עם השתיקה המביכה של סוף הערב.
+  - 'חיבוק ארוך, נשיקה אם היא שם, ומשפט אחד, בלי הבטחות: "היה טוב. נמשיך".'
+  - לא "אני אתקשר מחר", לא "מתי נתראה שוב?", לא "את מדהימה".
+  - משפט קצר, ואתה הולך.
+  - היא תכתוב, ואם לא, לא.
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 1.0
+  hold: 8.0
+  style: card
+source:
+  file: 02.md
+  section: איך נפרדים מערב טוב
+status: queued

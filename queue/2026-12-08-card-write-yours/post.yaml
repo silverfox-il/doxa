@@ -1,0 +1,25 @@
+id: 2026-12-08-card-write-yours
+publish_at: "2026-12-08 20:00"
+mode: reel
+pillar: dating
+caption: |-
+  "תן לי את שלך, אני אכתוב לך".
+
+  זה מפורט בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - '"תן לי את שלך, אני אכתוב לך".'
+  - 'תרגום: אולי כן, כנראה לא.'
+  - 'אז אתה מחייך ואומר: "ככה זה לא עובד אצלי. אם את רוצה, תרשמי את שלך".'
+  - אם היא רושמת, יופי. אם לא, זה גם יופי, קיבלת תשובה.
+  - היא לא מבושלת, ואתה לא שף שמחכה ליד התנור.
+  music: the_mountain-hip-hop-soul-317779.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 06.md
+  section: כשהיא לא נותנת
+status: queued

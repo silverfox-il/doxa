@@ -1,0 +1,25 @@
+id: 2026-12-04-card-pick-you-up
+publish_at: "2026-12-04 10:00"
+mode: reel
+pillar: status
+caption: |-
+  "אני אוסף אותך בשמונה, תהיי מוכנה".
+
+  זה מפורט בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - '"אני אוסף אותך בשמונה, תהיי מוכנה".'
+  - והרכב עצמו? נקי.
+  - מבפנים ומבחוץ.
+  - ריח טוב, מוזיקה טובה ברקע, לא חדשות.
+  - רכב הוא חלק מהבית שלך, והיא תשפוט אותך לפיו, בדיוק כמו שהיא תשפוט אותך לפי המטבח.
+  music: the_mountain-hip-hop-soul-317779.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 02.md
+  section: לאסוף אותה, או לא
+status: queued

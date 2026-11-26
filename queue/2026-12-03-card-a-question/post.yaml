@@ -1,0 +1,26 @@
+id: 2026-12-03-card-a-question
+publish_at: "2026-12-03 10:00"
+mode: reel
+pillar: mind
+caption: |-
+  כל מגע, גם הכי קטן, הוא שאלה, לא החלטה.
+
+  תייג חבר שצריך לשמוע את זה.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - כל מגע, גם הכי קטן, הוא שאלה, לא החלטה.
+  - ולשאלה יש תשובה.
+  - התשובה היא לא, לפחות לא עכשיו.
+  - ואתה נסוג.
+  - בלי דרמה, בלי להיעלב, בלי "מה, מה עשיתי?", בלי לנסות שוב אחרי דקה כדי "לבדוק".
+  - אם זה לא בא ממנה, זה לא קורה.
+  music: keyframe_audio-seductive-chill-hip-hop-instrumental-hear-me-134134.mp3
+  per_line: 1.0
+  hold: 8.0
+  style: card
+source:
+  file: 06.md
+  section: כשהיא נסוגה
+status: queued

@@ -1,0 +1,26 @@
+id: 2026-12-02-card-only-an-hour
+publish_at: "2026-12-02 10:00"
+mode: reel
+pillar: second-round
+caption: |-
+  "רק שתדע, יש לי רק שעה, אני צריכה לחזור לבת שלי".
+
+  הכל כתוב בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - '"רק שתדע, יש לי רק שעה, אני צריכה לחזור לבת שלי".'
+  - אתה לא נעלב ולא מתווכח.
+  - '"מצוין, גם לי יש מחר יום ארוך. אז נעשה את השעה הזו שווה".'
+  - ואז אתה עושה אותה שווה.
+  - ואם היא באמת קמה אחרי שעה?
+  - אתה מלווה אותה, מחבק, ואומר "בפעם הבאה אני מזמין את השעה השנייה".
+  music: soulprodmusic-love-stylish-modern-hip-hop-music-127449.mp3
+  per_line: 1.0
+  hold: 8.0
+  style: card
+source:
+  file: 02.md
+  section: '"יש לי רק שעה"'
+status: queued

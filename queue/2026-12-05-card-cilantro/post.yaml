@@ -1,0 +1,25 @@
+id: 2026-12-05-card-cilantro
+publish_at: "2026-12-05 10:00"
+mode: reel
+pillar: mind
+caption: |-
+  אמרה לך שאתה מבוגר ממנה? מעולה.
+
+  הכל כתוב בספר.
+  .
+  #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+reel:
+  lines:
+  - אמרה לך שאתה מבוגר ממנה? מעולה.
+  - עשרים דקות אחר כך, כשהיא מתלוננת שהרגליים כואבות לה מהעקבים, אתה אומר לה "רואה? ואני הזקן פה".
+  - זה אומר לה שהקשבת, ושהיא לא עוד שיחה בערב.
+  - צא מהראש של עצמך.
+  - באת לתת, לא לקחת.
+  music: vaitsez-dark-dark-trap-beat-595789.mp3
+  per_line: 1.0
+  hold: 9.0
+  style: card
+source:
+  file: 06.md
+  section: כל עקיצה היא עוד תבלין
+status: queued
