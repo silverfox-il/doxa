@@ -1,13 +1,14 @@
 id: 2026-12-06-card-dusty-thread
-publish_at: "2026-12-06 10:00"
+publish_at: 2026-12-06 10:00
+approved: false
 mode: reel
-pillar: second-round
 caption: |-
   עברו שבוע, שבועיים, והשרשור ביניכם מתכסה באבק.
 
   שמור את הפוסט. תחזור אליו כשתצטרך.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
   - עברו שבוע, שבועיים, והשרשור ביניכם מתכסה באבק.
@@ -19,8 +20,24 @@ reel:
   music: mondamusic-dark-trap-491674.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: כשהשיחה מתה באמצע
-status: queued
+format: null
+pillar: second-round
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

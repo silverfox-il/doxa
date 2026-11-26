@@ -1,13 +1,14 @@
 id: 2026-12-03-card-traffic-cop
-publish_at: "2026-12-03 20:00"
+publish_at: 2026-12-03 20:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   היא כבר עם המעיל, מנשקת את בעלת השמחה, עם המפתחות ביד.
 
   הכל כתוב בספר.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
   - היא כבר עם המעיל, מנשקת את בעלת השמחה, עם המפתחות ביד.
@@ -19,8 +20,24 @@ reel:
   music: music-for-videos-rnb-hip-hop-beat-150390.mp3
   per_line: 1.0
   hold: 8.0
+  stories: null
   style: card
+  video: null
+  prebuilt: null
+  share_story: null
 source:
   file: 06.md
   section: כשהיא כבר בדרך החוצה
-status: queued
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null

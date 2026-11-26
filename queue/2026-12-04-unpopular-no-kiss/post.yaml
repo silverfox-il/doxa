@@ -1,13 +1,14 @@
 id: 2026-12-04-unpopular-no-kiss
-publish_at: "2026-12-04 20:00"
+publish_at: 2026-12-04 20:00
+approved: false
 mode: reel
-pillar: dating
 caption: |-
   יש מיתוס שנשיקה בסוף פגישה ראשונה היא חובה.
 
   מסכים או לא? תכתוב בתגובות.
   .
   #גרושים #דייטינג #גבריות #datingafterdivorce #divorcedmen
+slides: []
 reel:
   lines:
   - יש מיתוס שנשיקה בסוף פגישה ראשונה היא חובה.
@@ -19,8 +20,24 @@ reel:
   music: nveravetyanmusic-rnb-hip-hop-149310.mp3
   per_line: 2.0
   hold: 4.2
+  stories: null
+  style: null
   video: night-drive-wheel.mp4
+  prebuilt: null
+  share_story: null
 source:
   file: 02.md
   section: לא לנשק בכוונה
-status: queued
+format: null
+pillar: dating
+approved_hash: null
+approved_by: null
+approved_at: null
+status: rendered
+ig_media_id: null
+permalink: null
+published_at: null
+error: null
+story_id: null
+story_error: null
+urgent: null
