@@ -1,6 +1,6 @@
 id: 2026-12-04-unpopular-no-kiss
 publish_at: 2026-12-04 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   יש מיתוס שנשיקה בסוף פגישה ראשונה היא חובה.
@@ -30,9 +30,9 @@ source:
   section: לא לנשק בכוונה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:c87df692d6c1aa9ad946a8b43fb359bc577f58f69abb50df0acd136bc4b0d217
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

@@ -1,6 +1,6 @@
 id: 2026-12-05-card-blues-bar
 publish_at: 2026-12-05 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אחרי זה אני קופץ עם החבר'ה לבר הקטן ליד הנמל, יש שם הופעת בלוז".
@@ -29,9 +29,9 @@ source:
   section: לזרוק הצעה לאוויר
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:6e3bfddb4c229f78da6d2bf90805c750d746fde07f8054cc3ec9e49ade3db95b
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

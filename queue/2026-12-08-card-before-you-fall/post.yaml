@@ -1,6 +1,6 @@
 id: 2026-12-08-card-before-you-fall
 publish_at: 2026-12-08 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "טוב, אני משחרר אותך, לפני שתתאהבי".
@@ -30,9 +30,9 @@ source:
   section: איך נפרדים מערב טוב
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:4cc10cace2b0eba2caa44c4470431b24c80dec5392480cf357ba609643757fee
+approved_by: auto
+approved_at: '2026-11-26T09:20:22+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

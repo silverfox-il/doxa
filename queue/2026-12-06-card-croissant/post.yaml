@@ -1,6 +1,6 @@
 id: 2026-12-06-card-croissant
 publish_at: 2026-12-06 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "את יודעת מה? אני ואת לא הולכים להסתדר".
@@ -29,9 +29,9 @@ source:
   section: מה כבר יכול לקרות?
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:fe0fc0701556f3d99a6e795f4d296a590e2233c552d75b8173cc281b0eefedb7
+approved_by: auto
+approved_at: '2026-11-26T09:20:22+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

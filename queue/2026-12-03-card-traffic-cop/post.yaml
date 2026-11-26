@@ -1,6 +1,6 @@
 id: 2026-12-03-card-traffic-cop
 publish_at: 2026-12-03 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   היא כבר עם המעיל, מנשקת את בעלת השמחה, עם המפתחות ביד.
@@ -30,9 +30,9 @@ source:
   section: כשהיא כבר בדרך החוצה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b9434d16ad57fcea82d6ba7c136953e6ada1bcc0613e04be91340183eb906dd3
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

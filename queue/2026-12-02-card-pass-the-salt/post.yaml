@@ -1,6 +1,6 @@
 id: 2026-12-02-card-pass-the-salt
 publish_at: 2026-12-02 20:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "בואי נעבור לוואטסאפ, פה זה מסורבל. תשלחי לי את המספר שלך".
@@ -30,9 +30,9 @@ source:
   section: המספר שלה
 format: null
 pillar: dating
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:741cea5f287a422042021f32a4ddc1e65acc4f51b361e5cc80c046079af42303
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

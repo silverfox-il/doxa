@@ -1,6 +1,6 @@
 id: 2026-12-03-card-a-question
 publish_at: 2026-12-03 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   כל מגע, גם הכי קטן, הוא שאלה, לא החלטה.
@@ -30,9 +30,9 @@ source:
   section: כשהיא נסוגה
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:b173fbd033f07e524228ec9a03eba8e8a54feccd32e40b7b7858646b5a9dc746
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

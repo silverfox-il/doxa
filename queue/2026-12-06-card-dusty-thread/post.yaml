@@ -1,6 +1,6 @@
 id: 2026-12-06-card-dusty-thread
 publish_at: 2026-12-06 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   עברו שבוע, שבועיים, והשרשור ביניכם מתכסה באבק.
@@ -30,9 +30,9 @@ source:
   section: כשהשיחה מתה באמצע
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:9adcebbaa1ba182651f9d426c69c573f434b69c13987d648b168ba5106f53d8b
+approved_by: auto
+approved_at: '2026-11-26T09:20:22+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

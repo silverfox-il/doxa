@@ -1,6 +1,6 @@
 id: 2026-12-05-card-cilantro
 publish_at: 2026-12-05 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אמרה לך שאתה מבוגר ממנה? מעולה.
@@ -29,9 +29,9 @@ source:
   section: כל עקיצה היא עוד תבלין
 format: null
 pillar: mind
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:bcc23e509751b7e0588c63d57316793487e0e1c53ac2896f1dcf95acfef94467
+approved_by: auto
+approved_at: '2026-11-26T09:20:22+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

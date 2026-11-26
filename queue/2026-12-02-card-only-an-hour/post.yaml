@@ -1,6 +1,6 @@
 id: 2026-12-02-card-only-an-hour
 publish_at: 2026-12-02 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "רק שתדע, יש לי רק שעה, אני צריכה לחזור לבת שלי".
@@ -30,9 +30,9 @@ source:
   section: '"יש לי רק שעה"'
 format: null
 pillar: second-round
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2387b1350e08d55140a3d97c281066c9088cad35ed59056298f4c69a15fed884
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

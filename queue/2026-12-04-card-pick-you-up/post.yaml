@@ -1,6 +1,6 @@
 id: 2026-12-04-card-pick-you-up
 publish_at: 2026-12-04 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   "אני אוסף אותך בשמונה, תהיי מוכנה".
@@ -29,9 +29,9 @@ source:
   section: לאסוף אותה, או לא
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:2ecab8f1d0ed0746b48845ff7d0ac44972c66d4dcd18bab8212212b0878060f6
+approved_by: auto
+approved_at: '2026-11-26T09:20:21+02:00'
 status: rendered
 ig_media_id: null
 permalink: null

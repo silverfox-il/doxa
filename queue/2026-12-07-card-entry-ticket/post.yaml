@@ -1,6 +1,6 @@
 id: 2026-12-07-card-entry-ticket
 publish_at: 2026-12-07 10:00
-approved: false
+approved: true
 mode: reel
 caption: |-
   אתה לא נשאר לידה עוד חצי שעה עם ההרגשה שעכשיו "אתם ביחד".
@@ -30,9 +30,9 @@ source:
   section: אחרי שהמספר אצלך
 format: null
 pillar: status
-approved_hash: null
-approved_by: null
-approved_at: null
+approved_hash: sha256:5ac716c715322237592d4f9ca51561681d9cbfba3266f2a95c75b58545d8a163
+approved_by: auto
+approved_at: '2026-11-26T09:20:22+02:00'
 status: rendered
 ig_media_id: null
 permalink: null
