@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-26-card-caught-watching` at 2026-11-26 20:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 1/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -32,7 +32,7 @@
 | 2026-11-27 | `2026-11-27-card-the-ratio` | ✅ | rendered | — | — |
 | 2026-11-27 | `2026-11-27-card-cracked-you` | ✅ | rendered | — | — |
 | 2026-11-26 | `2026-11-26-card-caught-watching` | ✅ | rendered | — | — |
-| 2026-11-26 | `2026-11-26-card-say-may-i` | ✅ | publishing | — | — |
+| 2026-11-26 | `2026-11-26-card-say-may-i` | ✅ | published | [link](https://www.instagram.com/reel/DgMrMklARAJ/) | — |
 | 2026-11-25 | `2026-11-25-card-straight-line` | ✅ | published | [link](https://www.instagram.com/reel/DgLKozyBsGn/) | — |
 | 2026-11-25 | `2026-11-25-card-waiting-for-orders` | ✅ | published | [link](https://www.instagram.com/reel/DgKF8JjqG_1/) | — |
 | 2026-11-19 | `2026-11-19-card-train` | ✅ | published | [link](https://www.instagram.com/reel/Df7uwcvlU7q/) | — |
