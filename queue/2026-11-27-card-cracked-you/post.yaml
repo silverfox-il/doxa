@@ -32,10 +32,10 @@ pillar: second-round
 approved_hash: sha256:daa667bcc1cc42eb54c5285688df04d21c36b8061a9ce5d527ec397336b32303
 approved_by: auto
 approved_at: '2026-11-24T21:25:51+02:00'
-status: publishing
-ig_media_id: null
-permalink: null
-published_at: null
+status: published
+ig_media_id: '18136267921667442'
+permalink: https://www.instagram.com/reel/DgPPkp4KCHx/
+published_at: 2026-11-27T08:24:31+0000
 error: null
 story_id: null
 story_error: null
