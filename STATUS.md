@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-28-card-guilty-dog` at 2026-11-28 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -29,7 +29,7 @@
 | 2026-11-29 | `2026-11-29-card-parking-lot` | ✅ | rendered | — | — |
 | 2026-11-28 | `2026-11-28-card-job-interview` | ✅ | rendered | — | — |
 | 2026-11-28 | `2026-11-28-card-guilty-dog` | ✅ | rendered | — | — |
-| 2026-11-27 | `2026-11-27-card-the-ratio` | ✅ | publishing | — | — |
+| 2026-11-27 | `2026-11-27-card-the-ratio` | ✅ | published | [link](https://www.instagram.com/reel/DgQUQ7lBonw/) | — |
 | 2026-11-27 | `2026-11-27-card-cracked-you` | ✅ | published | [link](https://www.instagram.com/reel/DgPPkp4KCHx/) | — |
 | 2026-11-26 | `2026-11-26-card-caught-watching` | ✅ | published | [link](https://www.instagram.com/reel/DgNvcNIS6vL/) | — |
 | 2026-11-26 | `2026-11-26-card-say-may-i` | ✅ | published | [link](https://www.instagram.com/reel/DgMrMklARAJ/) | — |
