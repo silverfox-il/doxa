@@ -3,7 +3,7 @@
 
 - **Next scheduled:** `2026-11-29-card-parking-lot` at 2026-11-29 10:00 (Asia/Jerusalem)
 - **Token expiry:** unknown
-- **Today's quota:** 2/50 in the last 24h
+- **Today's quota:** unknown
 
 | date | id | approved | status | permalink | error |
 |------|----|----------|--------|-----------|-------|
@@ -27,7 +27,7 @@
 | 2026-11-30 | `2026-11-30-card-fell-in-love` | ✅ | rendered | — | — |
 | 2026-11-29 | `2026-11-29-card-podcast` | ✅ | rendered | — | — |
 | 2026-11-29 | `2026-11-29-card-parking-lot` | ✅ | rendered | — | — |
-| 2026-11-28 | `2026-11-28-card-job-interview` | ✅ | publishing | — | — |
+| 2026-11-28 | `2026-11-28-card-job-interview` | ✅ | published | [link](https://www.instagram.com/reel/DgS48r0vhhv/) | — |
 | 2026-11-28 | `2026-11-28-card-guilty-dog` | ✅ | published | [link](https://www.instagram.com/reel/DgR0URvvmKq/) | — |
 | 2026-11-27 | `2026-11-27-card-the-ratio` | ✅ | published | [link](https://www.instagram.com/reel/DgQUQ7lBonw/) | — |
 | 2026-11-27 | `2026-11-27-card-cracked-you` | ✅ | published | [link](https://www.instagram.com/reel/DgPPkp4KCHx/) | — |
